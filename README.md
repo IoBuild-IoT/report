@@ -446,12 +446,13 @@ Estos supuestos formarán la estructura de nuestra estrategia de diseño y propo
 | *Amenazas* | Posible resistencia de las constructoras a adoptar un modelo de suscripción. Ciberseguridad como riesgo crítico al centralizar el control del edificio. Rápida evolución de estándares y protocolos IoT que exigen actualización constante. | Vulnerabilidad a cambios en protocolos de asistentes de voz o plataformas smart grandes. Volatilidad del mercado inmobiliario. Ciberseguridad como preocupación creciente. | Entradas de nuevas startups globales con soluciones más económicas o DIY. Cambio rápido de estándares (protocolos, compatibilidad). Piratería tecnológica. | Competencia de multinacionales o integradores globales. Cambios regulatorios en el sector técnico. Riesgo tecnológico por obsolescencia rápida de equipos o sistemas. |
 
 ### 2.1.2. Estrategias y tácticas frente a competidores.
-| Competidores -> | Nosotros (IoBuild) | Competidor 1 | Competidor 2 |
-|---|---|---|---|
-| Fortalezas | | | |
-| Debilidades | | | |
-| Oportunidades | | | |
-| Amenazas | | | |
+A partir del análisis competitivo realizado, se propone la siguiente tabla de estrategias y tácticas. El objetivo es identificar oportunidades de mejora y diseñar acciones específicas que permitan a **IoBuild** superar las debilidades detectadas en los principales competidores, fortalecer su propuesta de valor y consolidar una ventaja competitiva sostenible en el mercado.
+
+| Competidores | ¿Qué debemos hacer para destacar más frente a nuestros principales competidores? |
+| :--- | :--- |
+| **Domotec Perú** | La fortaleza de Domotec es la alta personalización. Debemos posicionar nuestro modelo de suscripción como una solución **más escalable y financieramente predecible** para las constructoras. Enfatizar que ofrecemos un ecosistema estandarizado y fácil de implementar en proyectos inmobiliarios completos, reduciendo la complejidad y el costo por unidad en comparación con sus soluciones a medida. |
+| **Orvibo Perú** | Su enfoque es el cliente final (B2C) y la "llave en mano" en hogares ya construidos. Nuestra estrategia debe ser resaltar el valor de una **integración nativa desde la fase de construcción**. Debemos demostrar a las inmobiliarias cómo nuestra plataforma no solo beneficia al residente, sino que ofrece una herramienta de gestión y mantenimiento centralizada para el administrador del edificio, una ventaja competitiva que Orvibo no posee. |
+| **MWF Solutions** | Este competidor se enfoca en proyectos industriales complejos y de gran escala. Debemos posicionarnos como los **especialistas en el sector residencial inteligente**. Nuestra plataforma es más ágil, está diseñada para la experiencia del usuario residencial y nuestro modelo de negocio (suscripción) es más adecuado para la gestión de propiedades que el modelo de proyecto único y de alto costo de MWF. |
 
 ## 2.2. Entrevistas.
 ### 2.2.1. Diseño de entrevistas.
