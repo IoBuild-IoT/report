@@ -455,22 +455,36 @@ A partir del análisis competitivo realizado, se propone la siguiente tabla de e
 | **MWF Solutions** | Este competidor se enfoca en proyectos industriales complejos y de gran escala. Debemos posicionarnos como los **especialistas en el sector residencial inteligente**. Nuestra plataforma es más ágil, está diseñada para la experiencia del usuario residencial y nuestro modelo de negocio (suscripción) es más adecuado para la gestión de propiedades que el modelo de proyecto único y de alto costo de MWF. |
 
 ## 2.2. Entrevistas.
+Para comprender a fondo las necesidades, expectativas y frustraciones de nuestros segmentos clave —ingenieros y arquitectos de constructoras, y propietarios o residentes de viviendas e inmuebles— realizamos entrevistas estructuradas con formularios diseñados específicamente para cada grupo. Las preguntas abiertas permitieron explorar su experiencia en el uso de tecnologías inteligentes, sus prioridades al diseñar o habitar un espacio, y sus percepciones sobre personalización, accesibilidad y eficiencia.
+
+Las entrevistas fueron registradas, resumidas y posteriormente analizadas para identificar patrones de comportamiento y criterios de decisión. Los resultados sirvieron de base para elaborar User Personas, Empathy Maps y User Task Matrices, herramientas que nos permitieron captar con mayor claridad los puntos clave de cada segmento.
+
+Las entrevistas realizadas aportaron información clave para definir los requisitos y guiar el diseño de IoBuild, asegurando que la plataforma responda a las expectativas de constructores y propietarios en la gestión de espacios inteligentes.
+
 ### 2.2.1. Diseño de entrevistas.
-**Preguntas generales:**
-1. ¿Cuál es su nombre?
-2. ¿Qué edad tiene?
-3. ¿A qué se dedica?
-4. ¿Qué experiencia previa tiene con sistemas de monitoreo o soluciones IoT?
+En esta sección se define la información a recolectar de los segmentos objetivos. Los datos demográficos y de perfil básico de los entrevistados se registran previamente mediante el siguiente formulario: [Formulario de Registro de Entrevistas](https://docs.google.com/forms/d/e/1FAIpQLSd4m5vmdvWBw-Lr2Kmbf6e4agyUNKCXlsnA6-H6IMEBz90eTg/viewform?usp=dialog).
 
-**Entrevistas usuario Segmento 1:**
-1. ¿... ?
-2. ¿... ?
-3. ¿... ?
+A fin de garantizar sesiones dinámicas con una duración máxima estimada de **5 minutos** por participante, las preguntas han sido sintetizadas y adaptadas al alcance específico de **IoBuild**: integración accesible de hardware IoT (sensores de temperatura y humedad, y control de iluminación mediante actuadores/relés) en proyectos multifamiliares y residenciales.
 
-**Entrevistas usuario Segmento 2:**
-1. ¿... ?
-2. ¿... ?
-3. ¿... ?
+---
+
+#### Segmento 1: Arquitectos e Ingenieros Civiles (B2B)
+1. **Demanda y experiencia:** En los proyectos inmobiliarios multifamiliares que ha diseñado o liderado, ¿ha recibido solicitudes para incorporar automatización o domótica (como control eficiente de iluminación o monitoreo ambiental)? ¿Con qué frecuencia?
+2. **Frustraciones y costos:** ¿Cuáles han sido los mayores obstáculos al intentar integrar tecnología inteligente en obra (ej. sobrecostos de soluciones industriales cerradas, complejidad de cableado o falta de estandarización)?
+3. **Viabilidad técnica en planos:** Desde la etapa de planos, ¿qué tan viable considera preinstalar una infraestructura IoT accesible (sensores ambientales y relés/actuadores para iluminación en pasillos, áreas comunes o departamentos) sin encarecer significativamente el metro cuadrado?
+4. **Valor comercial y diferenciación:** En una escala del 1 al 10, ¿cuánto valor o atractivo comercial cree que aporta a una torre de apartamentos incluir preinstalación IoT y una plataforma de control centralizada frente a la competencia?
+5. **Mantenimiento y gestión post-construcción:** ¿De qué manera un panel web unificado que permita supervisar dispositivos y estados en tiempo real facilitaría el trabajo de entrega y mantenimiento entre constructora y administración del edificio?
+6. **Modelo de suscripción:** ¿Qué disposición observa en promotores o juntas de administración hacia un modelo SaaS (suscripción mensual/anual accesible) que garantice soporte técnico continuo, actualizaciones y compatibilidad del ecosistema?
+
+---
+
+#### Segmento 2: Propietarios y Residentes de Apartamentos (B2C)
+1. **Hábitos y uso actual:** En su día a día dentro del departamento, ¿utiliza o le interesaría utilizar dispositivos inteligentes para gestionar la iluminación o supervisar el confort térmico (temperatura y humedad)?
+2. **Frustraciones tecnológicas:** ¿Ha enfrentado problemas con soluciones inteligentes previas (ej. configuraciones complejas, tener múltiples aplicaciones incompatibles entre sí o caídas de conexión)?
+3. **Casos de uso prioritarios:** Si pudiera gestionar su departamento desde una app unificada, ¿en qué momentos le resultaría más valioso (ej. programar el apagado automático de luces al salir/dormir, o recibir alertas si la humedad o temperatura varían fuera de lo normal)?
+4. **Influencia en la decisión de compra/alquiler:** En una escala del 1 al 10, ¿cuánto influiría en su decisión de compra o alquiler que el departamento ya cuente con automatización de luces y monitoreo ambiental integrado desde el primer día?
+5. **Preocupaciones clave:** Al utilizar una aplicación para gestionar el confort y la energía de su hogar, ¿cuáles son sus mayores inquietudes (facilidad de uso para toda la familia, privacidad de datos o estabilidad del servicio)?
+6. **Disposición al modelo de servicio:** Si el departamento ya viene con los sensores y actuadores instalados, ¿estaría dispuesto a mantener una suscripción mensual accesible por funciones avanzadas como reportes de eficiencia de energía, automatizaciones personalizadas y soporte garantizado?
 
 ### 2.2.2. Registro de entrevistas.
 **Segmento 1:**
