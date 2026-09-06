@@ -333,87 +333,89 @@ Estos supuestos formarán la estructura de nuestra estrategia de diseño y propo
 
 #### 1.2.2.3. Lean UX Hypothesis Statements.
 
-- **Creemos que lograremos** una tasa de retención de licencias B2C del 75% en el primer año<br>
-  **Si** propietarios y arrendatarios<br>
-  **Obtienen** una calificación de satisfacción un 25% superior en la experiencia de habitar<br>
-  **Con** el panel de control unificado de la plataforma.<br>
+- **Creemos que lograremos** una tasa de retención de licencias B2C del 75% en el primer año  
+  **Si** propietarios y arrendatarios  
+  **Obtienen** una calificación de satisfacción un 25% superior en la experiencia de habitar  
+  **Con** el panel de control unificado de la plataforma.<br><br>
 
-- **Creemos** que lograremos reducir los costos de soporte y atención al cliente en un 30% en seis meses <br>
-  **Si** usuarios finales (propietarios) <br>
-  **Obtienen** una reducción significativa de la frustración al gestionar múltiples funciones <br>
-  **Con** la funcionalidad de gestión centralizada de seguridad, energía y confort.<br>
+- **Creemos** que lograremos reducir los costos de soporte y atención al cliente en un 30% en seis meses  
+  **Si** usuarios finales (propietarios)  
+  **Obtienen** una reducción significativa de la frustración al gestionar múltiples funciones  
+  **Con** la funcionalidad de gestión centralizada de seguridad, energía y confort.<br><br>
 
-- **Creemos** que lograremos reducir en un 40% los costos de implementación en sitio <br>
-  **Si** ingenieros y técnicos de la construcción <br>
-  **Obtienen** la posibilidad de configurar y desplegar sistemas de forma remota y sin interrupciones <br>
-  **Con** la funcionalidad de acceso remoto para proyectos inteligentes.<br>
+- **Creemos** que lograremos reducir en un 40% los costos de implementación en sitio  
+  **Si** ingenieros y técnicos de la construcción  
+  **Obtienen** la posibilidad de configurar y desplegar sistemas de forma remota y sin interrupciones  
+  **Con** la funcionalidad de acceso remoto para proyectos inteligentes.<br><br>
 
-- **Creemos** que lograremos una reducción del 15% en el CAC gracias a alianzas estratégicas <br>
-  **Si** constructoras y arquitectos <br>
-  **Obtienen** un 30% de aceleración en la fase de diseño conceptual <br>
-  **Con** el constructor de espacios inteligentes y la simulación en modelos BIM.<br>
+- **Creemos** que lograremos una reducción del 15% en el CAC gracias a alianzas estratégicas  
+  **Si** constructoras y arquitectos  
+  **Obtienen** un 30% de aceleración en la fase de diseño conceptual  
+  **Con** el constructor de espacios inteligentes y la simulación en modelos BIM.<br><br>
 
-- **Creemos** que lograremos incrementar la tasa de conversión de proyectos de prueba a clientes de pago en un 25% durante el primer semestre <br>
-  **Si** empresas constructoras <br>
-  **Obtienen** una reducción del 40% en el tiempo de implementación de tecnologías inteligentes <br>
-  **Con** el simulador en tiempo real de flujos de automatización.<br>
+- **Creemos** que lograremos incrementar la tasa de conversión de proyectos de prueba a clientes de pago en un 25% durante el primer semestre  
+  **Si** empresas constructoras  
+  **Obtienen** una reducción del 40% en el tiempo de implementación de tecnologías inteligentes  
+  **Con** el simulador en tiempo real de flujos de automatización.<br><br>
 
-- **Creemos** que lograremos un flujo de ingresos recurrente gracias a una tasa de retención B2C del 75% <br>
-  **Si** propietarios <br>
-  **Obtienen** una gestión centralizada que reduce en un 60% la frustración de usar múltiples aplicaciones <br>
-  **Con** la integración con asistentes de voz y el panel unificado de IoBuild.<br>
-  
-- **Creemos** que lograremos reducir los costos de soporte en un 30% en los primeros seis meses <br>
-  **Si** propietarios de viviendas inteligentes <br>
-  **Obtienen** un aumento del 25% en su satisfacción con la experiencia de habitar <br>
-  **Con** la funcionalidad de personalización de escenas como “Modo cine”<br>
-  
-- **Creemos** que lograremos escalar nuestra operación a más proyectos simultáneamente reduciendo en un 40% los costos de implementación <br>
-  **Si** ingenieros y técnicos de construcción <br>
-  **Obtienen** mayor flexibilidad y control remoto de los sistemas inteligentes <br>
-  **Con** el sistema de gestión remota y reportes energéticos en la plataforma.<br>
-  
-- **Creemos** que lograremos incrementar los ingresos directos en un 25% al convertir proyectos de prueba en clientes de pago <br>
-  **Si** constructoras y promotores inmobiliarios <br>
-  **Obtienen** una reducción del 40% en el tiempo de integración de tecnologías inteligentes en sus proyectos <br>
-  **Con** la prueba de concepto gratuita y el simulador en tiempo real de automatización.<br>
-  
-- **Creemos** que lograremos reducir en un 40% los costos y tiempos de implementación en sitio <br>
-  **Si** ingenieros de proyectos <br>
-  **Obtienen** una aceleración del 30% en la fase de diseño conceptual <br>
-  **Con** el simulador en tiempo real y la integración con modelos BIM.<br>
-  
-- **Creemos** que lograremos una reducción del 15% en el CAC gracias a recomendaciones de socios estratégicos <br>
-  **Si** promotores inmobiliarios <br>
-  **Obtienen** una experiencia de integración simplificada y modular que disminuye el tiempo de implementación en un 40% <br>
-  **Con** la integración directa con marcas de hardware compatibles.<br>
-  
-- **Creemos** que lograremos incrementar los ingresos directos en un 25% durante el primer semestre <br>
-  **Si** constructoras <br>
-  **Obtienen** una disminución del 60% en la frustración por la fragmentación de aplicaciones <br>
-  **Con** la gestión centralizada de funciones en un solo panel de control.<br>
-  
-- **Creemos** que lograremos un flujo de ingresos recurrente mediante la retención del 75% de usuarios B2C <br>
-  **Si** propietarios y arrendatarios <br>
-  **Obtienen** un 20% de reducción en su consumo energético anual <br>
-  **Con** el sistema de reportes y análisis de consumo de energía.<br>
-  
-- **Creemos** que lograremos reducir los costos de soporte en un 30% en seis meses <br>
-  **Si** usuarios residenciales <br>
-  **Obtienen** una experiencia personalizada sin necesidad de conocimientos técnicos <br>
-  **Con** la funcionalidad de creación de escenas y automatizaciones adaptadas al usuario.<br>
+- **Creemos** que lograremos un flujo de ingresos recurrente gracias a una tasa de retención B2C del 75%  
+  **Si** propietarios  
+  **Obtienen** una gestión centralizada que reduce en un 60% la frustración de usar múltiples aplicaciones  
+  **Con** la integración con asistentes de voz y el panel unificado de IoBuild.<br><br>
+
+- **Creemos** que lograremos reducir los costos de soporte en un 30% en los primeros seis meses  
+  **Si** propietarios de viviendas inteligentes  
+  **Obtienen** un aumento del 25% en su satisfacción con la experiencia de habitar  
+  **Con** la funcionalidad de personalización de escenas como “Modo cine”.<br><br>
+
+- **Creemos** que lograremos escalar nuestra operación a más proyectos simultáneamente reduciendo en un 40% los costos de implementación  
+  **Si** ingenieros y técnicos de construcción  
+  **Obtienen** mayor flexibilidad y control remoto de los sistemas inteligentes  
+  **Con** el sistema de gestión remota y reportes energéticos en la plataforma.<br><br>
+
+- **Creemos** que lograremos incrementar los ingresos directos en un 25% al convertir proyectos de prueba en clientes de pago  
+  **Si** constructoras y promotores inmobiliarios  
+  **Obtienen** una reducción del 40% en el tiempo de integración de tecnologías inteligentes en sus proyectos  
+  **Con** la prueba de concepto gratuita y el simulador en tiempo real de automatización.<br><br>
+
+- **Creemos** que lograremos reducir en un 40% los costos y tiempos de implementación en sitio  
+  **Si** ingenieros de proyectos  
+  **Obtienen** una aceleración del 30% en la fase de diseño conceptual  
+  **Con** el simulador en tiempo real y la integración con modelos BIM.<br><br>
+
+- **Creemos** que lograremos una reducción del 15% en el CAC gracias a recomendaciones de socios estratégicos  
+  **Si** promotores inmobiliarios  
+  **Obtienen** una experiencia de integración simplificada y modular que disminuye el tiempo de implementación en un 40%  
+  **Con** la integración directa con marcas de hardware compatibles.<br><br>
+
+- **Creemos** que lograremos incrementar los ingresos directos en un 25% durante el primer semestre  
+  **Si** constructoras  
+  **Obtienen** una disminución del 60% en la frustración por la fragmentación de aplicaciones  
+  **Con** la gestión centralizada de funciones en un solo panel de control.<br><br>
+
+- **Creemos** que lograremos un flujo de ingresos recurrente mediante la retención del 75% de usuarios B2C  
+  **Si** propietarios y arrendatarios  
+  **Obtienen** un 20% de reducción en su consumo energético anual  
+  **Con** el sistema de reportes y análisis de consumo de energía.<br><br>
+
+- **Creemos** que lograremos reducir los costos de soporte en un 30% en seis meses  
+  **Si** usuarios residenciales  
+  **Obtienen** una experiencia personalizada sin necesidad de conocimientos técnicos  
+  **Con** la funcionalidad de creación de escenas y automatizaciones adaptadas al usuario.<br><br>
 
 
 #### 1.2.2.4. Lean UX Canvas.
 ![Lean UX Canvas](assets/Lean_UX_Canvas.png)
 
 ## 1.3. Segmentos objetivo.
-| Variables | Segmento 1 | Segmento 2 |
+
+| Variables | Segmento 1: Arquitectos e Ingenieros Civiles (B2B) | Segmento 2: Dueños y Residentes de Apartamentos (B2C) |
 |---|---|---|
-| Geográfica | | |
-| Demográfica | | |
-| Psicológica | | |
-| Función de comportamiento | | |
+| **Definición del segmento** | Profesionales de la construcción, diseño arquitectónico e ingeniería civil involucrados en la planificación, edificación o administración de proyectos inmobiliarios multifamiliares y condominios residenciales. | Propietarios e inquilinos que habitan departamentos en condominios residenciales y buscan modernizar su vivienda con soluciones prácticas de confort, supervisión ambiental y automatización. |
+| **Geográfica** | Principalmente en áreas urbanas de alto crecimiento inmobiliario en Latinoamérica, con especial énfasis en ciudades capitales (como Lima Metropolitana, Bogotá o Ciudad de México), donde la demanda y densificación de proyectos de vivienda colectiva y torres de departamentos es intensiva. | Residentes en zonas urbanas consolidadas y distritos de media y alta densidad residencial (como distritos céntricos o suburbanos de Lima y principales urbes). Priorizan la conectividad, la accesibilidad a servicios y la modernidad de su entorno habitacional. |
+| **Demográfica** | • **Edad:** 30 a 55 años.<br>• **Género:** Hombres y mujeres profesionales.<br>• **Educación:** Superior universitaria completa (Arquitectura, Ingeniería Civil, Edificaciones o afines).<br>• **Nivel de Ingresos:** Medio-alto a alto.<br>• **Ocupación:** Proyectistas independientes, contratistas o líderes técnicos en empresas constructoras e inmobiliarias. | • **Edad:** 25 a 45 años.<br>• **Género:** Mixto.<br>• **Educación:** Nivel universitario o técnico superior.<br>• **Nivel de Ingresos:** Medio a medio-alto.<br>• **Estado Civil / Hogar:** Solteros, parejas jóvenes o familias pequeñas que adquieren su primera o segunda vivienda.<br>• **Ocupación:** Profesionales urbanos, colaboradores en modalidad remota/híbrida o emprendedores. |
+| **Psicológica (Psicográfica)** | Orientados a la innovación y sostenibilidad, valoran la diferenciación competitiva y la eficiencia de costos. Buscan integrar tecnología domótica e IoT sin complicaciones de instalación industrial ni sobrecostos que encarezcan el metro cuadrado. Son meticulosos, analíticos y pragmáticos, motivados por entregar edificaciones modernas y atractivas para la venta o arriendo. | Buscadores de confort térmico, lumínico y tranquilidad. Tienen una actitud práctica ante la tecnología: valoran la conveniencia del día a día, la privacidad y el ahorro energético. Su estilo de vida es dinámico y aprecian llegar a un hogar con ambientes acogedores, automatizados y fáciles de controlar sin requerir soporte técnico constante. |
+| **Función de comportamiento** | Evalúan e incorporan soluciones tecnológicas desde la etapa de diseño de planos y memoria descriptiva. Valoran la estandarización y compatibilidad con hardware accesible (sensores ambientales y actuadores/relés para iluminación en pasillos o áreas comunes). Se frustran enormemente por sistemas propietarios cerrados, costosos o difíciles de configurar en obra. Su meta es entregar condominios con valor agregado inteligente garantizando viabilidad técnica y operativa. | Uso frecuente y diario de aplicaciones móviles y asistentes para el hogar. Su adopción de tecnología se basa estrictamente en la facilidad de uso y la inmediatez: desean verificar la temperatura/humedad de sus habitaciones y controlar las luces (o activar escenas como "Modo Noche" o "Modo Cine") con un toque. Se frustran ante la multiplicidad de apps incompatibles o fallas de configuración. Su meta es maximizar el bienestar dentro de su vivienda de forma intuitiva. |
 
 ---
 
