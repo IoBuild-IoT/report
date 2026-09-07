@@ -563,9 +563,47 @@ En esta sección se elaboraron perfiles representativos, denominados "User Perso
 <img src="assets/UserPersona_Segmento2.png" alt="User Persona 2 - Carla Flores" width="650" style="max-width: 100%; height: auto; border-radius: 6px;" />
 
 ### 2.3.2. User Task Matrix.
-| ID | Tarea / Task | Importancia (Seg. 1) | Frecuencia (Seg. 1) | Importancia (Seg. 2) | Frecuencia (Seg. 2) |
-|---|---|---|---|---|---|
-| UT01 | [Descripción de la tarea] | Alta | Alta | Media | Baja |
+A continuación se presenta el **User Task Matrix**, elaborado a partir del análisis cualitativo y empírico de las entrevistas realizadas a los dos segmentos clave para el proyecto. Este artefacto concentra las actividades que los usuarios realizan habitualmente para satisfacer sus metas y necesidades, independientemente de la existencia de una solución de software específica.
+
+Para este estudio se consideran los dos segmentos objetivo del proyecto:
+- **Segmento #1: Arquitectos e Ingenieros Civiles (B2B)**, representado por el User Persona **Miguel Veramendi**, enfocado en la viabilidad técnica, habitabilidad, coordinación de especialidades y eficiencia constructiva.
+- **Segmento #2: Propietarios y Residentes de Apartamentos (B2C)**, representado por la User Persona **Carla Flores**, centrada en el confort térmico, la seguridad, la conveniencia doméstica y el ahorro familiar.
+
+El cuadro presenta como columnas a cada User Persona, desglosando como subcolumnas la **Frecuencia** (*Frequency*) y la **Importancia** (*Importance*) que le otorgan a cada tarea. En las filas se ubican las tareas identificadas en el dominio de gestión energética, confort ambiental, automatización e instalaciones residenciales.
+
+| N° | Tarea (Task) | Miguel Veramendi (Arquitectos / Ingenieros) | | Carla Flores (Dueños de apartamentos) | |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| | | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
+| 1 | Revisar el consumo eléctrico en recibos mensuales | Mensual | Alta | Mensual | Alta |
+| 2 | Estimar el gasto energético de dispositivos y equipos instalados | Semanal | Alta | Ocasional | Media |
+| 3 | Supervisar el encendido/apagado y uso responsable de luminarias y equipos | Diaria | Alta | Diaria | Alta |
+| 4 | Monitorear el confort ambiental interior (temperatura, humedad y ventilación) | Semanal | Alta | Diaria | Alta |
+| 5 | Verificar la seguridad física y el control de accesos a las instalaciones | Diaria | Alta | Diaria | Alta |
+| 6 | Identificar picos de consumo y momentos de sobrecarga o mayor gasto | Semanal | Alta | Semanal | Alta |
+| 7 | Coordinar con proveedores, especialistas o servicios de mantenimiento | Semanal | Alta | Ocasional | Media |
+| 8 | Buscar alternativas de sostenibilidad, automatización y eficiencia energética | Semanal | Alta | Ocasional | Alta |
+| 9 | Establecer metas de ahorro y presupuestos de consumo | Mensual | Alta | Continua / Siempre | Alta |
+| 10 | Comparar el consumo y comportamiento entre diferentes periodos | Mensual | Alta | Ocasional | Media |
+| 11 | Revisar gastos generales y balances económicos (de obra o del hogar) | Mensual | Alta | Mensual | Alta |
+| 12 | Asistir a capacitaciones o talleres de actualización técnica y normativa | Trimestral | Media | Ocasional | Baja |
+
+#### Análisis y Hallazgos del User Task Matrix
+
+A partir de la matriz de tareas, se identifican las prioridades funcionales que orientan el desarrollo de la solución digital de **IoBuild**:
+
+1. **Tareas con mayor frecuencia e importancia (Tareas Críticas):**
+   - **Para Miguel Veramendi (B2B):** Las tareas más críticas corresponden a la *supervisión diaria del estado de luminarias y equipos* (Tarea 3), *verificación de seguridad y accesos* (Tarea 5), y el *seguimiento semanal de consumos y condiciones ambientales de los proyectos* (Tareas 2, 4 y 6). Para el segmento profesional, desatender estos puntos genera sobrecostos operativos, riesgo de penalidades eléctricas en faena o entregas con deficiencias de confort para los futuros compradores.
+   - **Para Carla Flores (B2C):** Sus tareas prioritarias y más frecuentes son de periodicidad diaria: *apagar y regular luminarias y aparatos para evitar consumos fantasma* (Tarea 3), *asegurar los accesos del departamento al salir o dormir* (Tarea 5) y *verificar el confort térmico interior* (Tarea 4). Estas actividades se articulan con la *revisión mensual del recibo eléctrico* (Tarea 1) y el esfuerzo continuo por *mantener metas de ahorro* (Tarea 9).
+
+2. **Principales coincidencias entre User Personas:**
+   - **Preocupación central por el ahorro energético y la prevención de sobrecostos:** Ambos perfiles asignan importancia **Alta** a la revisión de recibos (Tarea 1), detección de picos de gasto (Tarea 6) y balance general de gastos (Tarea 11), evidenciando que el costo de la energía es un factor de fricción transversal.
+   - **Control de iluminación y accesos como rutina obligada:** Tanto en la gestión de un edificio/obra como dentro de la vivienda, asegurar que no queden luces encendidas innecesariamente y constatar el cierre seguro de puertas son hábitos diarios esenciales.
+   - **Interés creciente en la sostenibilidad y automatización:** Ambos segmentos buscan soluciones que optimicen el uso de recursos y aporten sostenibilidad (Tarea 8), siempre que no impliquen complejidades técnicas o costos desproporcionados.
+
+3. **Principales diferencias entre lo realizado por los User Personas:**
+   - **Perspectiva macro y técnica vs. micro y doméstica:** Miguel ejecuta tareas con rigor normativo, cálculo de cargas eléctricas y proyección a escala de edificio multifamiliar (coordinación con ingenierías y subcontratistas), mientras que Carla se concentra en la practicidad inmediata, la sencillez de uso y el bienestar familiar directo.
+   - **Frecuencia operativa en estimación y mantenimiento:** Para Miguel, la *estimación de consumos* (Tarea 2) y la *coordinación con especialistas y servicios técnicos* (Tarea 7) son actividades semanales indispensables para su labor constructiva, mientras que para Carla son esporádicas, suscitadas únicamente ante fallas puntuales o la compra de nuevos electrodomésticos.
+   - **Enfoque de fijación de metas:** Miguel establece metas de ahorro enmarcadas en cierres contables mensuales de obra, en tanto que Carla mantiene una actitud de vigilancia continua y constante sobre los hábitos de consumo en su vivienda.
 
 ### 2.3.3. User Journey Mapping.
 **Registro e inicio:**
