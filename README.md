@@ -45,8 +45,7 @@
 </center>
 
 # Project Report Collaboration Insights
-[URL del repositorio](https://www.example.com)
-
+URL del repositorio: https://github.com/IoBuild-IoT/report
 (Imagenes de los commits cada entrega)
 
 
@@ -262,7 +261,7 @@ IoBuild es una plataforma digital que permite a empresas constructoras, arquitec
 
 #### 1.2.2.2. Lean UX Assumptions.
 
-En la fase inicial de desarrollo de la plataforma IoBuild, hemos identificado y articulado una serie de supuestos fundamentales siguiendo los principios de la metodología Lean UX. Estos supuestos son nuestras hipótesis iniciales sobre quiénes son nuestros usuarios, qué beneficios esperan, cómo operará el negocio, el impacto que anticipamos generar y las características clave que necesitamos para lograrlo. Formalizar estas creencias nos permite enfocar el desarrollo del producto en la validación temprana, la minimización de riesgos y la toma de decisiones estratégicas basada en datos.
+En la fase inicial de desarrollo de la plataforma IoBuild, hemos identificado y articulado una serie de supuestos fundamentales siguiendo los principios del marco de trabajo Lean UX. Estos supuestos son nuestras hipótesis iniciales sobre quiénes son nuestros usuarios, qué beneficios esperan, cómo operará el negocio, el impacto que anticipamos generar y las características clave que necesitamos para lograrlo. Formalizar estas creencias nos permite enfocar el desarrollo del producto en la validación temprana, la minimización de riesgos y la toma de decisiones estratégicas basada en datos.
 
 Los supuestos se han clasificado en cinco categorías principales para una estructuración clara:
 
@@ -320,7 +319,7 @@ Estos supuestos formarán la estructura de nuestra estrategia de diseño y propo
 
 - **Feature Assumptions**
     - **Creemos que la funcionalidad de un constructor de espacios inteligentes permitirá a los arquitectos e ingenieros diseñar layouts arrastrando y soltando dispositivos IoT**, de modo que el 60 % de ellos lo utilice para planificar sus proyectos en la plataforma.
-    - **Creemos que el simulador en tiempo real de flujos de automatización permitirá a las constructoras validar la lógica de sus sistemas antes de la instalación**, de forma que el 90 % lo utilice para testear sus configuraciones.
+    - **Creemos que el simulador en tiempo real de flujos de automatización permitirá a las constructoras validar la lógica de sus sistemas antes de la instalación**, de forma que el 90 % lo utilice para probar sus configuraciones.
     - **Creemos que el panel de control unificado permitirá a los propietarios gestionar su espacio desde una sola interfaz**, consiguiendo que el 80 % lo use como su herramienta principal de control diario.
     - **Creemos que la integración con marcas de hardware permitirá a los usuarios conectar sus dispositivos existentes a la plataforma**, logrando que el 70 % de los clientes B2C lo use en su primera semana de activación.
     - **Creemos que las notificaciones y alertas personalizables permitirán a los usuarios estar al tanto de la seguridad y el consumo de energía en sus propiedades**, de forma que el 50 % de ellos configure al menos 3 alertas en los primeros 30 días.
@@ -487,7 +486,7 @@ A fin de garantizar sesiones dinámicas con una duración máxima estimada de **
 6. **Disposición al modelo de servicio:** Si el departamento ya viene con los sensores y actuadores instalados, ¿estaría dispuesto a mantener una suscripción mensual accesible por funciones avanzadas como reportes de eficiencia de energía, automatizaciones personalizadas y soporte garantizado?
 
 ### 2.2.2. Registro de entrevistas.
-En este apartado se documenta detalladamente cada entrevista realizada a los distintos segmentos objetivo. Se incluye información relevante como el perfil del entrevistado, sus respuestas y los principales hallazgos obtenidos.
+En esta sección se documenta detalladamente cada entrevista realizada a los distintos segmentos objetivo. Se incluye información relevante como el perfil del entrevistado, sus respuestas y los principales hallazgos obtenidos.
 
 #### Segmento objetivo #1: Arquitectos e Ingenieros Civiles (B2B)
 
@@ -547,7 +546,7 @@ En este apartado se documenta detalladamente cada entrevista realizada a los dis
 | **Segmento #2: Propietarios de apartamentos** | **Sexo:** Mixto<br>**Edad:** 24-63 años<br>**Dispositivos:** Laptop, smartphone, televisores, computadoras<br>**Programas:** Apps de noticias, organización y movilidad, no uso de software profesional<br>**Canales de información:** Redes sociales, aplicaciones móviles, medios digitales<br>**Marcas preferidas:** Samsung, HP, Lenovo, Android, Apple | • Priorizar comodidad y seguridad en el hogar.<br><br>• Optimizar el uso de tecnología para facilitar la vida diaria.<br><br>• Garantizar privacidad y control de datos personales.<br><br>• Disposición a pagar por suscripción si aporta valor.<br><br>• Mejorar la eficiencia y el control de dispositivos en el hogar. | **Motivación:** Mejorar la experiencia en el hogar con tecnología interactiva, gestionar dispositivos de forma personalizada, optimizar comodidad y seguridad, y recibir retroalimentación por el uso eficiente.<br><br>**Frustración:** Carencia de plataformas atractivas y flexibles, limitaciones en dispositivos inteligentes, dificultad de adaptación a cada hogar y barreras técnicas que complican su integración. |
 
 ## 2.3. Needfinding.
-El Needfinding, como proceso de investigación, se enfocó en descubrir las necesidades y frustraciones subyacentes de dos segmentos de usuario clave: arquitectos e ingenieros civiles, representados por Miguel Veramendi; y dueños de apartamentos, representados por Carla Flores. A través de entrevistas cualitativas, se identificaron patrones comunes y específicos que revelaron la necesidad de herramientas tecnológicas para optimizar la colaboración y la gestión de proyectos en el sector de la construcción, así como la demanda de control intuitivo y centralizado en el hogar, priorizando la seguridad y la funcionalidad para el usuario final. Este entendimiento profundo de los deseos y expectativas de los usuarios fue fundamental para sentar las bases de una solución que responda genuinamente a sus requerimientos.
+El Needfinding, como proceso de investigación, se enfocó en descubrir las necesidades y frustraciones subyacentes de dos segmentos de usuario clave: arquitectos e ingenieros civiles, representados por Miguel Veramendi; y dueños de apartamentos, representados por Carla Flores. A través de entrevistas cualitativas, se identificaron patrones comunes y específicos que revelaron la necesidad de herramientas tecnológicas para optimizar la colaboración y la gestión de proyectos en el sector de la construcción, así como la demanda de control intuitivo y centralizado en el hogar, priorizando la seguridad y la funcionalidad para el usuario final. Este entendimiento profundo de los deseos y expectativas de los usuarios fue fundamental para sentar las bases de una solución que responda genuinamente a sus necesidades y requisitos.
 
 ### 2.3.1. User Personas.
 En esta sección se elaboraron perfiles representativos, denominados "User Personas", que compilan los rasgos esenciales de los usuarios a partir del estudio cualitativo de entrevistas. Este recurso permite transformar los datos de los individuos en arquetipos comprensibles que guían la estrategia de diseño, facilitando decisiones clave sobre funcionalidades y experiencia de usuario. Se crearon dos perfiles principales para el proyecto: uno correspondiente a arquitectos e ingenieros civiles, y otro vinculado a los dueños de apartamentos.
@@ -606,14 +605,29 @@ A partir de la matriz de tareas, se identifican las prioridades funcionales que 
    - **Enfoque de fijación de metas:** Miguel establece metas de ahorro enmarcadas en cierres contables mensuales de obra, en tanto que Carla mantiene una actitud de vigilancia continua y constante sobre los hábitos de consumo en su vivienda.
 
 ### 2.3.3. User Journey Mapping.
-**Registro e inicio:**
-- ...
+Con el propósito de obtener una comprensión integral de las necesidades, comportamientos, emociones y principales dificultades de nuestros segmentos de usuario, elaboramos un User Journey Map empleando la herramienta especializada UXPressia. Este ejercicio facilitó la representación clara y empática del recorrido que cada perfil de usuario experimenta, desde la detección de una necesidad inicial hasta la interacción final con el producto o servicio, permitiéndonos identificar oportunidades de mejora y optimización en su experiencia.
 
-**Uso principal y monitoreo:**
-- ...
+La actividad se centró en dos segmentos clave:
 
-**Interacción avanzada y reportes:**
-- ...
+1. **Miguel Veramendi:** Arquitecto e ingeniero civil que busca garantizar la viabilidad técnica de los proyectos mediante la integración de tecnologías para lograr diseños más innovadores.
+2. **Carla Flores:** Dueña de apartamento que busca soluciones que le permitan automatizar sus rutinas y tener un control sencillo y centralizado sobre sus dispositivos.
+
+Para ambos perfiles se diseñó un mapa que incluye:
+
+- Las fases del proceso.
+- Los objetivos del usuario en cada etapa.
+- El detalle de acciones realizadas, canales utilizados y emociones experimentadas.
+- Los problemas identificados y las oportunidades de mejora a lo largo del recorrido.
+
+Mediante el uso de UXPressia se obtuvo una representación visual clara y dinámica que favorece la toma de decisiones con un enfoque centrado en el usuario. Este proceso no solo profundiza en la comprensión de sus motivaciones y retos, sino que también orienta el diseño de soluciones más pertinentes, empáticas y funcionales para cada perfil identificado.
+
+**Segmento Objetivo #1: Arquitectos e Ingenieros Civiles**
+<br>
+<img src="assets/UserJourneyMap_Segmento1.png" alt="Imagen User Journey Mapping 1 - Segmento 1" width="700" style="max-width: 100%; height: auto; border-radius: 6px;" />
+
+**Segmento Objetivo #2: Dueños de apartamentos**
+<br>
+<img src="assets/UserJourneyMap_Segmento2.png" alt="Imagen User Journey Mapping 2 - Segmento 2" width="700" style="max-width: 100%; height: auto; border-radius: 6px;" />
 
 ### 2.3.4. Empathy Mapping.
 **Segmento 1:**
