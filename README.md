@@ -888,9 +888,78 @@ De manera complementaria, la segunda parte de este objetivo busca incrementar la
 ![Impact-Mapping-2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%203/Impact-Mapping-2.png)
 
 ## 3.3. Product Backlog.
-| # Orden | User Story ID | Título | Descripción | Story Points | Sprint |
-|---|---|---|---|---|---|
-| 1 | US01 | [Título] | [Descripción] | [1/2/3/5/8] | Sprint 1 |
+
+A continuación, se presenta el Product Backlog con las historias de usuario y tareas técnicas priorizadas para el desarrollo del proyecto IoBuild. Cada ítem incluye su orden de priorización basado en el valor generado para el negocio, identificador, título, descripción y su estimación en puntos de historia (Story Points).
+
+Para el control, priorización y diseño del Product Backlog se utilizó la herramienta colaborativa Trello, la cual permitió organizar y visualizar el backlog en etapas de desarrollo, facilitando el seguimiento continuo del progreso y la gestión ágil del trabajo.
+
+**Enlace del tablero colaborativo en Trello:** [https://goo.su/DYSGr6](https://goo.su/DYSGr6)
+
+<br>
+
+![Product-Backlog](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%203/Product-Backlog.png)
+
+<br>
+
+| #Orden | User Story ID | Título | Descripción | Story Points (1/2/3/5/8) |
+|---|---|---|---|---|
+| 1 | US01 | Sección "Sobre Nosotros" | Como visitante del sitio, quiero conocer la historia y valores de la aplicación, para tener mayor conexión y confianza con la empresa. | 2 |
+| 2 | US02 | Sección testimonios del cliente | Como visitante del sitio, quiero consultar testimonios de otros clientes, para generar confianza en la propuesta de valor de la start up | 5 |
+| 3 | US03 | Acceso a información de contacto | Como visitante del sitio, quiero acceder fácilmente a la información de contacto de IoBuild, para comunicarme en caso de dudas | 5 |
+| 4 | US04 | Visualización de servicios principales | Como visitante del sitio, quiero conocer los servicios que ofrece IoBuild, para entender su propuesta de valor. | 3 |
+| 5 | US05 | Opción de registro | Como visitante del sitio, quiero registrarme en la aplicación, para tener acceso a las funcionalidades de la aplicación | 3 |
+| 6 | US06 | Preguntas frecuentes | Como visitante del sitio, quiero consultar una sección de preguntas frecuentes, para resolver dudas comunes sin necesidad de contactar a la start up | 5 |
+| 7 | US07 | Internacionalización de la landing page | Como visitante del sitio, quiero poder encontrar más de un idioma disponible, para poder elegir el idioma de mi preferencia. | 3 |
+| 8 | US08 | Dashboard Personalizado | Como usuario, quiero tener un dashboard personalizado, para visualizar la información relevante de manera rápida y eficiente. | 5 |
+| 9 | US09 | Acceso a Proyectos Activos | Como ingeniero, quiero tener acceso a los proyectos que se encuentran activos, para poder realizar un seguimiento de su progreso y gestionar los recursos necesarios. | 5 |
+| 10 | US10 | Acceso a Dispositivos Conectados | Como usuario, quiero tener acceso a los dispositivos conectados, para poder monitorear su estado y uso. | 5 |
+| 11 | US11 | Acceso a la Capacidad de Ocupación de Cada Proyecto | Como ingeniero, quiero tener acceso a la capacidad de ocupación de cada proyecto, para poder analizar el uso de los recursos y planificar de manera eficiente. | 5 |
+| 12 | US12 | Gráfico de Consumo de Energía por Hora | Como ingeniero, quiero ver un gráfico sobre la energía que se consume por hora, para poder evaluar el rendimiento energético de los proyectos en tiempo real. | 8 |
+| 13 | US13 | Gráfico de Registro de Ocupación | Como ingeniero, quiero ver un gráfico sobre el registro de ocupación, para poder analizar la evolución de la ocupación a lo largo del tiempo. | 5 |
+| 14 | US14 | Resumen de Proyecto | Como ingeniero, quiero ver un resumen sobre cada proyecto, para saber si está activo, su ubicación y cuántos departamentos están ocupados. | 5 |
+| 15 | US15 | Visualización de Dispositivos y Distribución por Tipo | Como ingeniero, quiero ver cuáles son los dispositivos y cómo están distribuidos por tipo, para realizar un análisis más detallado de los recursos disponibles. | 8 |
+| 16 | US16 | Acceso a Perfil del Usuario | Como usuario, quiero tener acceso a mi perfil, para ver datos como mi nombre, email, número de teléfono y mi dirección. | 3 |
+| 17 | US17 | Edición de Información del Perfil | Como usuario, quiero poder editar alguna parte de mi información, como mi email, número de teléfono o dirección, para mantener mis datos actualizados. | 3 |
+| 18 | US18 | Ver Imagen que Representa al Usuario | Como usuario, quiero poder ver una imagen que me represente, para tener una experiencia más personalizada. | 3 |
+| 19 | US19 | Ver el Rol de la Cuenta | Como usuario, quiero poder ver el rol de mi cuenta, para entender qué permisos tengo dentro de la aplicación. | 5 |
+| 20 | US20 | Ver lista de proyectos | Como ingeniero, quiero ver una lista de todos mis proyectos para poder conocer el estado y detalles de cada uno. | 5 |
+| 21 | US21 | Agregar un nuevo proyecto | Como arquitecto, quiero agregar un nuevo proyecto para poder registrar nuevos desarrollos inmobiliarios. | 8 |
+| 22 | US22 | Ver detalles de un proyecto | Como arquitecto, quiero ver los detalles de un proyecto específico para poder revisar su información completa. | 5 |
+| 23 | US23 | Ver Lista de Clientes | Como Arquitecto, quiero ver una lista de todos los clientes para poder gestionar sus proyectos asociados y el estado de su cuenta. | 5 |
+| 24 | US24 | Buscar/Ordenar Clientes | Como Ingeniero, quiero poder ordenar la lista de clientes por columnas (Nombre Completo, Proyecto Asociado, Estado de Cuenta) para poder encontrar u organizar clientes rápidamente según criterios específicos. | 5 |
+| 25 | US25 | Agregar un Nuevo Cliente | Como Arquitecto, quiero poder agregar un nuevo cliente para poder registrarlo en el sistema. | 3 |
+| 26 | US26 | Ver Perfil del Cliente | Como Ingeniero, quiero ver el perfil detallado de un cliente para poder acceder a toda su información y opciones de gestión. | 8 |
+| 27 | US27 | Acceder a la Configuración del Cliente | Como Arquitecto, quiero acceder a la configuración específica de un cliente para poder realizar acciones de gestión como editar o gestionar el estado de su cuenta. | 5 |
+| 28 | US28 | Ver Plan de Suscripción Actual | Como ingeniero, quiero ver mi plan de suscripción actual y su estado para confirmar los beneficios que tengo y el costo mensual. | 8 |
+| 29 | US29 | Ver Planes de Suscripción Alternativos | Como ingeniero, quiero ver planes de suscripción alternativos (Professional y Starter) para poder comparar sus precios y beneficios con mi plan actual. | 5 |
+| 30 | US30 | Iniciar Cambio de Plan | Como arquitecto, quiero iniciar el proceso de cambio de plan para poder seleccionar un nivel de servicio diferente que se ajuste mejor a mis necesidades. | 2 |
+| 31 | US31 | Renovar Plan Activo | Como arquitecto, quiero renovar mi plan actual para asegurar la continuidad del servicio si estoy cerca de la fecha de expiración o si mi plan no está configurado para renovación automática. | 5 |
+| 32 | US32 | Cancelar Plan Actual | Como ingeniero, quiero cancelar mi plan actual para finalizar mi suscripción al término del ciclo de facturación. | 8 |
+| 33 | US33 | Ver Lista de Dispositivos | Como propietario, quiero ver una lista de todos los dispositivos registrados para poder monitorear su estado y ubicación. | 5 |
+| 34 | US34 | Agregar un Nuevo Dispositivo | Como propietario, quiero agregar un nuevo dispositivo al sistema para expandir la cobertura de monitoreo y control. | 8 |
+| 35 | US35 | Editar/Configurar Ajustes de Dispositivo | Como propietario, quiero acceder a la configuración específica de un dispositivo para modificar sus parámetros o revisar su información detallada. | 5 |
+| 36 | US36 | Eliminar un Dispositivo | Como propietario, quiero poder eliminar un dispositivo que ya no está en uso o está defectuoso, para mantener la lista limpia y precisa. | 8 |
+| 37 | US37 | Gestionar Notificaciones | Como Usuario, quiero poder activar o desactivar varios tipos de notificaciones para controlar qué alertas recibo del sistema. | 5 |
+| 38 | US38 | Cambiar Contraseña de la Cuenta | Como Usuario, quiero poder cambiar mi contraseña periódicamente para mantener la seguridad de mi cuenta. | 5 |
+| 39 | US39 | Gestionar Autenticación de Dos Factores | Como Usuario, quiero activar o gestionar la Autenticación de Dos Factores (2FA) para añadir una capa extra de seguridad a mi cuenta. | 3 |
+| 40 | US40 | Gestionar Sesiones Activas | Como Usuario, quiero ver y gestionar mis sesiones activas para poder cerrar la sesión en dispositivos que ya no uso o que han sido comprometidos. | 8 |
+| 41 | US41 | Añadir Correo Electrónico Alternativo | Como Usuario, quiero añadir una dirección de correo electrónico alternativa para recuperación de cuenta o notificaciones secundarias. | 5 |
+| 42 | US42 | Acceder a Ayuda y Soporte | Como Usuario, quiero acceder rápidamente a las secciones de Soporte para resolver mis dudas o contactar con el equipo de soporte. | 8 |
+| 43 | TS01 | Listar proyectos por Constructor | Como desarrollador, quiero solicitar a la API que liste todos los proyectos asociados a un constructor específico, para poder mostrar la vista principal de Proyectos. | 5 |
+| 44 | TS02 | Crear un Proyecto | Como desarrollador, quiero añadir un nuevo proyecto a través de la API para poder implementar la funcionalidad de registro de nuevos desarrollos. | 2 |
+| 45 | TS03 | Recuperar un Proyecto por ID | Como desarrollador, quiero solicitar un proyecto por su {id} para poder mostrar la vista de detalles del proyecto. | 5 |
+| 46 | TS04 | Actualizar la información de un cliente | Como desarrollador, quiero enviar a la API una solicitud para modificar los datos de un cliente existente, para poder implementar la edición de su perfil y la gestión de su estado de cuenta. | 8 |
+| 47 | TS05 | Eliminar un cliente | Como desarrollador, quiero solicitar a la API la eliminación de un cliente por su {id}, para poder implementar la funcionalidad de dar de baja clientes que ya no se utilizarán. | 5 |
+| 48 | TS06 | Soportar ordenación en la lista de clientes | Como desarrollador, quiero poder enviar parámetros de ordenación a la API (nombre de columna y dirección), para poder implementar las funcionalidades de Buscar/Ordenar Clientes. | 8 |
+| 49 | TS07 | Listar clientes | Como desarrollador, quiero solicitar a la API que liste los clientes, opcionalmente filtrados por estado o nombre, para poder mostrar la vista de la lista de clientes. | 5 |
+| 50 | TS08 | Crear un cliente | Como desarrollador, quiero añadir un nuevo cliente a través de la API para poder implementar la funcionalidad de creación de clientes. | 8 |
+| 51 | TS09 | Recuperar un cliente por id | Como desarrollador, quiero solicitar un recurso de cliente por su {id} para poder implementar la vista detallada del perfil. | 5 |
+| 52 | TS10 | Listar dispositivos | Como desarrollador, quiero solicitar a la API que liste todos los dispositivos, filtrados por ubicación o estado, para poder mostrar la lista de Gestión de Dispositivos. | 5 |
+| 53 | TS11 | Eliminar un dispositivo por id | Como desarrollador, quiero solicitar a la API que elimine un dispositivo por su {id} para poder retirar hardware que ya no se utiliza del sistema. | 3 |
+| 54 | TS12 | Actualizar información de un proyecto | Como desarrollador, quiero solicitar a la API que actualice la información de un proyecto (nombre, ubicación y descripción) para mantener los datos actualizados en la vista de gestión de proyectos. | 8 |
+| 55 | TS13 | Actualizar información de un dispositivo | Como desarrollador, quiero solicitar a la API que actualice la información de un dispositivo (nombre y ubicación) para reflejar los cambios en la gestión de dispositivos. | 5 |
+| 56 | TS14 | Crear un nuevo dispositivo | Como desarrollador, quiero solicitar a la API que cree un nuevo dispositivo especificando su nombre, tipo y ubicación, para registrar nuevos equipos en el sistema. | 8 |
+| 57 | TS15 | Crear ruta segura y mostrar datos específicos | Como desarrollador, quiero proteger el dashboard de fabricantes para que solo los fabricantes puedan visualizarlo | 8 |
 
 ---
 
