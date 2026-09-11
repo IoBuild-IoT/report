@@ -908,7 +908,7 @@ De manera complementaria, la segunda parte de este objetivo busca incrementar la
 
 ## 3.3. Product Backlog.
 
-A continuación, se presenta el Product Backlog con las historias de usuario y tareas técnicas priorizadas para el desarrollo del proyecto IoBuild. Cada ítem incluye su orden de priorización basado en el valor generado para el negocio, identificador, título, descripción y su estimación en puntos de historia (Story Points).
+A continuación, se presenta el Product Backlog consolidado con las 45 historias de usuario y 24 tareas técnicas priorizadas para el desarrollo de la plataforma IoBuild. Cada ítem incluye su orden de priorización basado en el valor de negocio y dependencias arquitectónicas, identificador, título, descripción en formato ágil, su estimación en puntos de historia (Story Points bajo la secuencia Fibonacci 1, 2, 3, 5 y 8) y el Sprint planificado para su entrega.
 
 Para el control, priorización y diseño del Product Backlog se utilizó la herramienta colaborativa Trello, la cual permitió organizar y visualizar el backlog en etapas de desarrollo, facilitando el seguimiento continuo del progreso y la gestión ágil del trabajo.
 
@@ -920,65 +920,77 @@ Para el control, priorización y diseño del Product Backlog se utilizó la herr
 
 <br>
 
-| #Orden | User Story ID | Título | Descripción | Story Points (1/2/3/5/8) |
-|---|---|---|---|---|
-| 1 | US01 | Sección "Sobre Nosotros" | Como visitante del sitio, quiero conocer la historia y valores de la aplicación, para tener mayor conexión y confianza con la empresa. | 2 |
-| 2 | US02 | Sección testimonios del cliente | Como visitante del sitio, quiero consultar testimonios de otros clientes, para generar confianza en la propuesta de valor de la startup | 5 |
-| 3 | US03 | Acceso a información de contacto | Como visitante del sitio, quiero acceder fácilmente a la información de contacto de IoBuild, para comunicarme en caso de dudas | 5 |
-| 4 | US04 | Visualización de servicios principales | Como visitante del sitio, quiero conocer los servicios que ofrece IoBuild, para entender su propuesta de valor. | 3 |
-| 5 | US05 | Opción de registro | Como visitante del sitio, quiero registrarme en la aplicación, para tener acceso a las funcionalidades de la aplicación | 3 |
-| 6 | US06 | Preguntas frecuentes | Como visitante del sitio, quiero consultar una sección de preguntas frecuentes, para resolver dudas comunes sin necesidad de contactar a la startup | 5 |
-| 7 | US07 | Internacionalización de la landing page | Como visitante del sitio, quiero poder encontrar más de un idioma disponible, para poder elegir el idioma de mi preferencia. | 3 |
-| 8 | US08 | Dashboard Personalizado | Como usuario, quiero tener un dashboard personalizado, para visualizar la información relevante de manera rápida y eficiente. | 5 |
-| 9 | US09 | Acceso a Proyectos Activos | Como ingeniero, quiero tener acceso a los proyectos que se encuentran activos, para poder realizar un seguimiento de su progreso y gestionar los recursos necesarios. | 5 |
-| 10 | US10 | Acceso a Dispositivos Conectados | Como usuario, quiero tener acceso a los dispositivos conectados, para poder monitorear su estado y uso. | 5 |
-| 11 | US11 | Acceso a la Capacidad de Ocupación de Cada Proyecto | Como ingeniero, quiero tener acceso a la capacidad de ocupación de cada proyecto, para poder analizar el uso de los recursos y planificar de manera eficiente. | 5 |
-| 12 | US12 | Gráfico de Consumo de Energía por Hora | Como ingeniero, quiero ver un gráfico sobre la energía que se consume por hora, para poder evaluar el rendimiento energético de los proyectos en tiempo real. | 8 |
-| 13 | US13 | Gráfico de Registro de Ocupación | Como ingeniero, quiero ver un gráfico sobre el registro de ocupación, para poder analizar la evolución de la ocupación a lo largo del tiempo. | 5 |
-| 14 | US14 | Resumen de Proyecto | Como ingeniero, quiero ver un resumen sobre cada proyecto, para saber si está activo, su ubicación y cuántos departamentos están ocupados. | 5 |
-| 15 | US15 | Visualización de Dispositivos y Distribución por Tipo | Como ingeniero, quiero ver cuáles son los dispositivos y cómo están distribuidos por tipo, para realizar un análisis más detallado de los recursos disponibles. | 8 |
-| 16 | US16 | Acceso a Perfil del Usuario | Como usuario, quiero tener acceso a mi perfil, para ver datos como mi nombre, email, número de teléfono y mi dirección. | 3 |
-| 17 | US17 | Edición de Información del Perfil | Como usuario, quiero poder editar alguna parte de mi información, como mi email, número de teléfono o dirección, para mantener mis datos actualizados. | 3 |
-| 18 | US18 | Ver Imagen que Representa al Usuario | Como usuario, quiero poder ver una imagen que me represente, para tener una experiencia más personalizada. | 3 |
-| 19 | US19 | Ver el Rol de la Cuenta | Como usuario, quiero poder ver el rol de mi cuenta, para entender qué permisos tengo dentro de la aplicación. | 5 |
-| 20 | US20 | Ver lista de proyectos | Como ingeniero, quiero ver una lista de todos mis proyectos para poder conocer el estado y detalles de cada uno. | 5 |
-| 21 | US21 | Agregar un nuevo proyecto | Como arquitecto, quiero agregar un nuevo proyecto para poder registrar nuevos desarrollos inmobiliarios. | 8 |
-| 22 | US22 | Ver detalles de un proyecto | Como arquitecto, quiero ver los detalles de un proyecto específico para poder revisar su información completa. | 5 |
-| 23 | US23 | Ver Lista de Clientes | Como Arquitecto, quiero ver una lista de todos los clientes para poder gestionar sus proyectos asociados y el estado de su cuenta. | 5 |
-| 24 | US24 | Buscar/Ordenar Clientes | Como Ingeniero, quiero poder ordenar la lista de clientes por columnas (Nombre Completo, Proyecto Asociado, Estado de Cuenta) para poder encontrar u organizar clientes rápidamente según criterios específicos. | 5 |
-| 25 | US25 | Agregar un Nuevo Cliente | Como Arquitecto, quiero poder agregar un nuevo cliente para poder registrarlo en el sistema. | 3 |
-| 26 | US26 | Ver Perfil del Cliente | Como Ingeniero, quiero ver el perfil detallado de un cliente para poder acceder a toda su información y opciones de gestión. | 8 |
-| 27 | US27 | Acceder a la Configuración del Cliente | Como Arquitecto, quiero acceder a la configuración específica de un cliente para poder realizar acciones de gestión como editar o gestionar el estado de su cuenta. | 5 |
-| 28 | US28 | Ver Plan de Suscripción Actual | Como ingeniero, quiero ver mi plan de suscripción actual y su estado para confirmar los beneficios que tengo y el costo mensual. | 8 |
-| 29 | US29 | Ver Planes de Suscripción Alternativos | Como ingeniero, quiero ver planes de suscripción alternativos (Professional y Starter) para poder comparar sus precios y beneficios con mi plan actual. | 5 |
-| 30 | US30 | Iniciar Cambio de Plan | Como arquitecto, quiero iniciar el proceso de cambio de plan para poder seleccionar un nivel de servicio diferente que se ajuste mejor a mis necesidades. | 2 |
-| 31 | US31 | Renovar Plan Activo | Como arquitecto, quiero renovar mi plan actual para asegurar la continuidad del servicio si estoy cerca de la fecha de expiración o si mi plan no está configurado para renovación automática. | 5 |
-| 32 | US32 | Cancelar Plan Actual | Como ingeniero, quiero cancelar mi plan actual para finalizar mi suscripción al término del ciclo de facturación. | 8 |
-| 33 | US33 | Ver Lista de Dispositivos | Como ingeniero, quiero ver una lista de todos los dispositivos registrados en el proyecto para monitorear su estado operativo y ubicación. | 5 |
-| 34 | US34 | Agregar un Nuevo Dispositivo | Como arquitecto, quiero registrar un nuevo dispositivo inteligente en la plataforma para expandir la cobertura de monitoreo y automatización. | 8 |
-| 35 | US35 | Editar/Configurar Ajustes de Dispositivo | Como ingeniero, quiero modificar los parámetros técnicos de un dispositivo para ajustar umbrales de medición y asegurar su funcionamiento. | 5 |
-| 36 | US36 | Eliminar un Dispositivo | Como arquitecto, quiero dar de baja un dispositivo que ya no está en uso o presenta fallas irreversibles para depurar el inventario. | 8 |
-| 37 | US37 | Gestionar Notificaciones | Como Usuario, quiero poder activar o desactivar varios tipos de notificaciones para controlar qué alertas recibo del sistema. | 5 |
-| 38 | US38 | Cambiar Contraseña de la Cuenta | Como Usuario, quiero poder cambiar mi contraseña periódicamente para mantener la seguridad de mi cuenta. | 5 |
-| 39 | US39 | Gestionar Autenticación de Dos Factores | Como Usuario, quiero activar o gestionar la Autenticación de Dos Factores (2FA) para añadir una capa extra de seguridad a mi cuenta. | 3 |
-| 40 | US40 | Gestionar Sesiones Activas | Como Usuario, quiero ver y gestionar mis sesiones activas para poder cerrar la sesión en dispositivos que ya no uso o que han sido comprometidos. | 8 |
-| 41 | US41 | Añadir Correo Electrónico Alternativo | Como Usuario, quiero añadir una dirección de correo electrónico alternativa para recuperación de cuenta o notificaciones secundarias. | 5 |
-| 42 | US42 | Acceder a Ayuda y Soporte | Como Usuario, quiero acceder rápidamente a las secciones de Soporte para resolver mis dudas o contactar con el equipo de soporte. | 8 |
-| 43 | TS01 | Listar proyectos por Constructor | Como desarrollador, quiero solicitar a la API que liste todos los proyectos asociados a un constructor específico, para poder mostrar la vista principal de Proyectos. | 5 |
-| 44 | TS02 | Crear un Proyecto | Como desarrollador, quiero añadir un nuevo proyecto a través de la API para poder implementar la funcionalidad de registro de nuevos desarrollos. | 2 |
-| 45 | TS03 | Recuperar un Proyecto por ID | Como desarrollador, quiero solicitar un proyecto por su {id} para poder mostrar la vista de detalles del proyecto. | 5 |
-| 46 | TS04 | Actualizar la información de un cliente | Como desarrollador, quiero enviar a la API una solicitud para modificar los datos de un cliente existente, para poder implementar la edición de su perfil y la gestión de su estado de cuenta. | 8 |
-| 47 | TS05 | Eliminar un cliente | Como desarrollador, quiero solicitar a la API la eliminación de un cliente por su {id}, para poder implementar la funcionalidad de dar de baja clientes que ya no se utilizarán. | 5 |
-| 48 | TS06 | Soportar ordenación en la lista de clientes | Como desarrollador, quiero poder enviar parámetros de ordenación a la API (nombre de columna y dirección), para poder implementar las funcionalidades de Buscar/Ordenar Clientes. | 8 |
-| 49 | TS07 | Listar clientes | Como desarrollador, quiero solicitar a la API que liste los clientes, opcionalmente filtrados por estado o nombre, para poder mostrar la vista de la lista de clientes. | 5 |
-| 50 | TS08 | Crear un cliente | Como desarrollador, quiero añadir un nuevo cliente a través de la API para poder implementar la funcionalidad de creación de clientes. | 8 |
-| 51 | TS09 | Recuperar un cliente por id | Como desarrollador, quiero solicitar un recurso de cliente por su {id} para poder implementar la vista detallada del perfil. | 5 |
-| 52 | TS10 | Listar dispositivos | Como desarrollador, quiero solicitar a la API que liste todos los dispositivos, filtrados por ubicación o estado, para poder mostrar la lista de Gestión de Dispositivos. | 5 |
-| 53 | TS11 | Eliminar un dispositivo por id | Como desarrollador, quiero solicitar a la API que elimine un dispositivo por su {id} para poder retirar hardware que ya no se utiliza del sistema. | 3 |
-| 54 | TS12 | Actualizar información de un proyecto | Como desarrollador, quiero solicitar a la API que actualice la información de un proyecto (nombre, ubicación y descripción) para mantener los datos actualizados en la vista de gestión de proyectos. | 8 |
-| 55 | TS13 | Actualizar información de un dispositivo | Como desarrollador, quiero solicitar a la API que actualice la información de un dispositivo (nombre y ubicación) para reflejar los cambios en la gestión de dispositivos. | 5 |
-| 56 | TS14 | Crear un nuevo dispositivo | Como desarrollador, quiero solicitar a la API que cree un nuevo dispositivo especificando su nombre, tipo y ubicación, para registrar nuevos equipos en el sistema. | 8 |
-| 57 | TS15 | Crear ruta protegida y restringir acceso a la consola de gestión | Como desarrollador, quiero implementar rutas protegidas con verificación de roles para asegurar que únicamente los ingenieros y constructores autorizados accedan a la consola de gestión técnica. | 8 |
+| #Orden | User Story / Task ID | Título | Descripción | Story Points (1/2/3/5/8) | Sprint |
+|---|---|---|---|---|---|
+| 1 | US01 | Seccion "Sobre Nosotros" | Como visitante del sitio, quiero conocer la historia y valores de la empresa, para tener mayor conexion y confianza con IoBuild. | 2 | Sprint 1 |
+| 2 | US02 | Seccion testimonios del cliente | Como visitante del sitio, quiero consultar testimonios de otros clientes, para generar confianza en la propuesta de valor de la startup. | 2 | Sprint 1 |
+| 3 | US03 | Acceso a informacion de contacto | Como visitante del sitio, quiero acceder facilmente a los canales de contacto de IoBuild, para comunicarme ante dudas comerciales. | 1 | Sprint 1 |
+| 4 | US04 | Visualizacion de servicios principales | Como visitante del sitio, quiero conocer los servicios que ofrece IoBuild, para comprender su propuesta de valor en edificaciones inteligentes. | 2 | Sprint 1 |
+| 5 | US05 | Opcion de registro en Landing | Como visitante del sitio, quiero acceder a la opcion de registro desde la pagina principal, para iniciar la creacion de mi cuenta. | 1 | Sprint 1 |
+| 6 | US06 | Preguntas frecuentes (FAQ) | Como visitante del sitio, quiero consultar una seccion de preguntas frecuentes, para resolver inquietudes comunes de forma inmediata. | 2 | Sprint 1 |
+| 7 | US07 | Internacionalizacion de la landing page | Como visitante del sitio, quiero disponer de mas de un idioma disponible (español e ingles), para navegar en mi idioma de preferencia. | 3 | Sprint 1 |
+| 8 | US43 | Registrarse en la plataforma | Como Usuario, quiero crear una cuenta nueva con mis datos basicos y rol para acceder a las capacidades de IoBuild. | 5 | Sprint 1 |
+| 9 | US44 | Iniciar Sesion (Login) | Como Usuario, quiero ingresar mis credenciales para acceder a mi cuenta y utilizar los servicios de IoBuild. | 3 | Sprint 1 |
+| 10 | US45 | Cerrar Sesion (Logout) | Como Usuario, quiero cerrar mi sesion actual para proteger mi cuenta y revocar los tokens locales. | 1 | Sprint 1 |
+| 11 | TS23 | Registrar nuevo usuario en API | Como desarrollador, quiero enviar los datos de registro (nombre, email, contraseña y rol) a la API, para crear una nueva identidad en el sistema. | 5 | Sprint 1 |
+| 12 | TS24 | Validar token de sesion | Como desarrollador, quiero que la API valide que el token JWT enviado en los encabezados es legitimo y no ha expirado, protegiendo las rutas privadas. | 3 | Sprint 1 |
+| 13 | US16 | Acceso a Perfil del Usuario | Como usuario, quiero acceder a mi perfil para visualizar mis datos registrados (nombre, email, telefono y direccion). | 2 | Sprint 1 |
+| 14 | US17 | Edicion de Informacion del Perfil | Como usuario, quiero modificar datos de mi perfil (telefono o direccion) para mantener mi informacion actualizada. | 3 | Sprint 1 |
+| 15 | US18 | Ver Imagen que Representa al Usuario | Como usuario, quiero visualizar mi fotografia o avatar de perfil, para contar con una experiencia personalizada. | 2 | Sprint 1 |
+| 16 | US19 | Ver el Rol de la Cuenta | Como usuario, quiero visualizar el rol asignado a mi cuenta, para conocer los permisos operativos disponibles. | 1 | Sprint 1 |
+| 17 | TS02 | Crear un Proyecto en API | Como desarrollador, quiero añadir un nuevo proyecto arquitectonico a traves de la API para implementar el registro de nuevos desarrollos. | 5 | Sprint 2 |
+| 18 | TS01 | Listar proyectos por Constructor | Como desarrollador, quiero solicitar a la API que liste todos los proyectos asociados a un constructor, para abastecer la vista principal de Proyectos. | 3 | Sprint 2 |
+| 19 | TS03 | Recuperar un Proyecto por ID | Como desarrollador, quiero solicitar un proyecto por su identificador unico para mostrar la vista de detalles y zonificacion. | 3 | Sprint 2 |
+| 20 | TS12 | Actualizar informacion de un proyecto | Como desarrollador, quiero enviar a la API modificaciones de un proyecto (nombre, ubicacion y descripcion) para mantener la informacion al dia. | 3 | Sprint 2 |
+| 21 | US20 | Ver lista de proyectos | Como ingeniero, quiero ver una lista de todos mis proyectos para conocer el estado y caracteristicas de cada obra. | 3 | Sprint 2 |
+| 22 | US21 | Agregar un nuevo proyecto | Como arquitecto, quiero registrar un nuevo proyecto inteligente para parametrizar nuevos desarrollos inmobiliarios. | 5 | Sprint 2 |
+| 23 | US22 | Ver detalles de un proyecto | Como arquitecto, quiero examinar los detalles tecnicos de un proyecto especifico para revisar su estructura fisica y configuracion. | 3 | Sprint 2 |
+| 24 | TS14 | Crear un nuevo dispositivo en API | Como desarrollador, quiero solicitar a la API que registre un nuevo dispositivo con nombre, tipo y ubicacion, integrando nuevo hardware al sistema. | 5 | Sprint 2 |
+| 25 | TS10 | Listar dispositivos en API | Como desarrollador, quiero solicitar a la API la lista de dispositivos filtrada por ubicacion o estado, para alimentar la vista de inventario. | 3 | Sprint 2 |
+| 26 | TS13 | Actualizar informacion de un dispositivo | Como desarrollador, quiero enviar a la API cambios en el nombre o ubicacion de un dispositivo para reflejar su reasignacion fisica. | 3 | Sprint 2 |
+| 27 | TS11 | Eliminar un dispositivo por ID | Como desarrollador, quiero solicitar a la API la baja de un dispositivo por su identificador para retirar hardware desincorporado. | 2 | Sprint 2 |
+| 28 | US33 | Ver Lista de Dispositivos | Como ingeniero, quiero consultar la lista de dispositivos registrados en el proyecto para supervisar su operatividad y ubicacion fisica. | 3 | Sprint 2 |
+| 29 | US34 | Agregar un Nuevo Dispositivo | Como arquitecto, quiero incorporar un nuevo sensor o actuador inteligente para ampliar la cobertura de monitoreo de la edificacion. | 5 | Sprint 2 |
+| 30 | US35 | Editar/Configurar Ajustes de Dispositivo | Como ingeniero, quiero modificar los parametros tecnicos de un dispositivo para calibrar umbrales y asegurar su correcto funcionamiento. | 5 | Sprint 2 |
+| 31 | US36 | Eliminar un Dispositivo | Como arquitecto, quiero desvincular un dispositivo en desuso o defectuoso para mantener depurado el inventario del proyecto. | 3 | Sprint 2 |
+| 32 | TS15 | Crear ruta protegida y restringir acceso a la consola de gestion | Como desarrollador, quiero implementar rutas protegidas con verificacion de roles para asegurar que unicamente ingenieros y constructores autorizados gestionen hardware. | 5 | Sprint 2 |
+| 33 | US08 | Dashboard Personalizado | Como usuario, quiero acceder a un panel principal con metricas clave, para monitorear el estado de las instalaciones de forma eficiente. | 5 | Sprint 3 |
+| 34 | US09 | Acceso a Proyectos Activos en Dashboard | Como ingeniero, quiero consultar los proyectos activos desde el panel, para verificar su progreso y administrar recursos en obra. | 3 | Sprint 3 |
+| 35 | US10 | Acceso a Dispositivos Conectados | Como usuario, quiero verificar el estado de conexion de los dispositivos, para identificar equipos activos o desconectados. | 3 | Sprint 3 |
+| 36 | US11 | Acceso a la Capacidad de Ocupacion | Como ingeniero, quiero consultar la capacidad de ocupacion por proyecto, para optimizar el dimensionamiento de servicios e instalaciones. | 3 | Sprint 3 |
+| 37 | US12 | Grafico de Consumo de Energia por Hora | Como ingeniero, quiero visualizar un grafico de consumo energetico horario, para evaluar el rendimiento electrico en tiempo real. | 8 | Sprint 3 |
+| 38 | US13 | Grafico de Registro de Ocupacion | Como ingeniero, quiero observar un grafico historico de ocupacion, para correlacionar la afluencia de personas con el uso de recursos. | 5 | Sprint 3 |
+| 39 | US14 | Resumen Ejecutivo de Proyecto | Como ingeniero, quiero visualizar un resumen de proyecto con su estado, ubicacion y aforo habitacional, obteniendo un balance rapido de obra. | 3 | Sprint 3 |
+| 40 | US15 | Visualizacion de Dispositivos y Distribucion por Tipo | Como ingeniero, quiero analizar la distribucion de dispositivos por tipologia mediante graficos, planificando ampliaciones de red. | 5 | Sprint 3 |
+| 41 | TS08 | Crear un cliente/residente en API | Como desarrollador, quiero añadir un nuevo perfil de residente a traves de la API para asociarlo a un departamento especifico. | 5 | Sprint 3 |
+| 42 | TS07 | Listar clientes en API | Como desarrollador, quiero consultar a la API la lista de clientes con soporte a paginacion para la gestion de residentes. | 3 | Sprint 3 |
+| 43 | TS09 | Recuperar un cliente por ID | Como desarrollador, quiero consultar los datos de un cliente especifico por su identificador para mostrar su ficha detallada. | 2 | Sprint 3 |
+| 44 | TS04 | Actualizar la informacion de un cliente | Como desarrollador, quiero enviar a la API modificaciones en los datos del cliente para mantener actualizada su informacion de contacto. | 3 | Sprint 3 |
+| 45 | TS06 | Soportar ordenacion en la lista de clientes | Como desarrollador, quiero enviar parametros de ordenacion (columna y sentido) a la API para agilizar la busqueda de residentes. | 5 | Sprint 3 |
+| 46 | TS05 | Eliminar un cliente en API | Como desarrollador, quiero solicitar a la API la baja de un cliente para desvincular usuarios que ya no residen en el inmueble. | 3 | Sprint 3 |
+| 47 | US23 | Ver Lista de Clientes | Como Arquitecto, quiero visualizar la lista de clientes para supervisar sus departamentos asignados y el estado de su cuenta. | 3 | Sprint 3 |
+| 48 | US24 | Buscar/Ordenar Clientes | Como Ingeniero, quiero ordenar la lista de residentes por columnas para localizar cuentas con rapidez segun criterios operativos. | 3 | Sprint 3 |
+| 49 | US25 | Agregar un Nuevo Cliente | Como Arquitecto, quiero dar de alta un nuevo cliente o propietario para otorgarle acceso a su unidad habitacional. | 3 | Sprint 3 |
+| 50 | US26 | Ver Perfil del Cliente | Como Ingeniero, quiero consultar el perfil detallado de un residente para verificar sus unidades asignadas y dispositivos en uso. | 3 | Sprint 3 |
+| 51 | US27 | Acceder a la Configuracion del Cliente | Como Arquitecto, quiero gestionar los permisos y estado de cuenta de un cliente para adecuar su nivel de acceso. | 3 | Sprint 3 |
+| 52 | TS17 | Listar catalogo de planes en API | Como desarrollador, quiero solicitar a la API el catalogo de planes disponibles para poblar las opciones de suscripcion. | 3 | Sprint 4 |
+| 53 | TS16 | Obtener suscripcion actual en API | Como desarrollador, quiero solicitar la informacion del plan activo del usuario para presentar su vigencia y costo en la interfaz. | 3 | Sprint 4 |
+| 54 | TS18 | Cambiar plan de suscripcion en API | Como desarrollador, quiero enviar a la API la actualizacion de nivel de suscripcion para procesar el cambio de categoria de servicio. | 5 | Sprint 4 |
+| 55 | TS19 | Renovar suscripcion en API | Como desarrollador, quiero enviar a la API la solicitud de renovacion de suscripcion para extender la vigencia del servicio. | 5 | Sprint 4 |
+| 56 | TS20 | Cancelar suscripcion en API | Como desarrollador, quiero solicitar a la API la cancelacion de la renovacion automatica, finalizando el servicio al termino del ciclo. | 3 | Sprint 4 |
+| 57 | US28 | Ver Plan de Suscripcion Actual | Como ingeniero, quiero consultar mi plan de suscripcion y vigencia para validar los beneficios contratados y costo mensual. | 3 | Sprint 4 |
+| 58 | US29 | Ver Planes de Suscripcion Alternativos | Como ingeniero, quiero comparar los planes disponibles (Professional y Starter) para evaluar mejoras de cobertura tecnica. | 3 | Sprint 4 |
+| 59 | US30 | Iniciar Cambio de Plan | Como arquitecto, quiero seleccionar un nuevo plan de suscripcion para adaptar la plataforma al crecimiento de mis proyectos. | 5 | Sprint 4 |
+| 60 | US31 | Renovar Plan Activo | Como arquitecto, quiero tramitar la renovacion de mi suscripcion para asegurar la continuidad operativa de los sensores en obra. | 5 | Sprint 4 |
+| 61 | US32 | Cancelar Plan Actual | Como ingeniero, quiero cancelar mi plan contratado al finalizar los proyectos para suspender cobros recurrentes. | 3 | Sprint 4 |
+| 62 | TS21 | Cambiar contraseña en API | Como desarrollador, quiero enviar la contraseña actual y la nueva a la API para actualizar las credenciales de manera segura. | 3 | Sprint 4 |
+| 63 | TS22 | Solicitar adicion de correo alternativo en API | Como desarrollador, quiero enviar una direccion de correo secundaria a la API para iniciar el proceso de verificacion. | 3 | Sprint 4 |
+| 64 | US37 | Gestionar Notificaciones | Como Usuario, quiero configurar que alertas operativas y de consumo deseo recibir para evitar saturacion de mensajes. | 3 | Sprint 4 |
+| 65 | US38 | Cambiar Contraseña de la Cuenta | Como Usuario, quiero renovar periodicamente mi contraseña para mantener protegidas mis credenciales de acceso. | 3 | Sprint 4 |
+| 66 | US39 | Gestionar Autenticacion de Dos Factores | Como Usuario, quiero habilitar la Autenticacion de Dos Factores (2FA) para robustecer la seguridad en accesos criticos. | 5 | Sprint 4 |
+| 67 | US40 | Gestionar Sesiones Activas | Como Usuario, quiero monitorear sesiones abiertas en diferentes navegadores y cerrarlas remotamente ante sospechas. | 5 | Sprint 4 |
+| 68 | US41 | Añadir Correo Electronico Alternativo | Como Usuario, quiero registrar una cuenta de correo secundaria para facilitar la recuperacion de acceso. | 3 | Sprint 4 |
+| 69 | US42 | Acceder a Ayuda y Soporte | Como Usuario, quiero consultar la base de conocimientos y contactar al equipo tecnico para resolver incidencias de plataforma. | 2 | Sprint 4 |
 
 ---
 
