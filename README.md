@@ -98,15 +98,34 @@ URL del repositorio: https://github.com/IoBuild-IoT/report
       - [4.1.3.3. Software Architecture Container Level Diagrams.](#4133-software-architecture-container-level-diagrams)
       - [4.1.3.4. Software Architecture Deployment Diagrams.](#4134-software-architecture-deployment-diagrams)
   - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-    - [4.2.X. Bounded Context: &lt;Bounded Context Name&gt;](#42x-bounded-context-bounded-context-name)
-      - [4.2.X.1. Domain Layer.](#42x1-domain-layer)
-      - [4.2.X.2. Interface Layer.](#42x2-interface-layer)
-      - [4.2.X.3. Application Layer.](#42x3-application-layer)
-      - [4.2.X.4. Infrastructure Layer.](#42x4-infrastructure-layer)
-      - [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams.](#42x5-bounded-context-software-architecture-component-level-diagrams)
-      - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams.](#42x6-bounded-context-software-architecture-code-level-diagrams)
-        - [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.](#42x61-bounded-context-domain-layer-class-diagrams)
-        - [4.2.X.6.2. Bounded Context Database Design Diagram.](#42x62-bounded-context-database-design-diagram)
+    - [4.2.1. Bounded Context: Smart Project Setup.](#421-bounded-context-smart-project-setup)
+      - [4.2.1.1. Domain Layer.](#4211-domain-layer)
+      - [4.2.1.2. Interface Layer.](#4212-interface-layer)
+      - [4.2.1.3. Application Layer.](#4213-application-layer)
+      - [4.2.1.4. Infrastructure Layer.](#4214-infrastructure-layer)
+      - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams.](#4215-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams.](#4216-bounded-context-software-architecture-code-level-diagrams)
+    - [4.2.2. Bounded Context: Service Execution and Monitoring.](#422-bounded-context-service-execution-and-monitoring)
+      - [4.2.2.1. Domain Layer.](#4221-domain-layer)
+      - [4.2.2.2. Interface Layer.](#4222-interface-layer)
+      - [4.2.2.3. Application Layer.](#4223-application-layer)
+      - [4.2.2.4. Infrastructure Layer.](#4224-infrastructure-layer)
+      - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams.](#4225-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams.](#4226-bounded-context-software-architecture-code-level-diagrams)
+    - [4.2.3. Bounded Context: Smart Assistant.](#423-bounded-context-smart-assistant)
+      - [4.2.3.1. Domain Layer.](#4231-domain-layer)
+      - [4.2.3.2. Interface Layer.](#4232-interface-layer)
+      - [4.2.3.3. Application Layer.](#4233-application-layer)
+      - [4.2.3.4. Infrastructure Layer.](#4234-infrastructure-layer)
+      - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams.](#4235-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams.](#4236-bounded-context-software-architecture-code-level-diagrams)
+    - [4.2.4. Bounded Context: Energy Management.](#424-bounded-context-energy-management)
+      - [4.2.4.1. Domain Layer.](#4241-domain-layer)
+      - [4.2.4.2. Interface Layer.](#4242-interface-layer)
+      - [4.2.4.3. Application Layer.](#4243-application-layer)
+      - [4.2.4.4. Infrastructure Layer.](#4244-infrastructure-layer)
+      - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams.](#4245-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams.](#4246-bounded-context-software-architecture-code-level-diagrams)
 - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
   - [5.1. Style Guidelines.](#51-style-guidelines)
     - [5.1.1. General Style Guidelines.](#511-general-style-guidelines)
@@ -1125,7 +1144,9 @@ Para el diseño de la arquitectura, se han considerado principios clave de ingen
 - **Escalabilidad y mantenibilidad:** Facilidad de evolución independiente entre las aplicaciones cliente y los servicios backend.
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram.
-A continuación se presenta la visualización del ecosistema global de IoBuild, mostrando la relación entre los usuarios y los límites de la plataforma respecto a los sistemas complementarios.
+El diagrama de paisaje del sistema (*System Landscape*) dentro de la metodología C4 está concebido para modelar ecosistemas empresariales a gran escala, donde operan múltiples sistemas de software independientes dentro de una misma organización. 
+
+En el caso de **IoBuild**, al tratarse de una plataforma tecnológica autónoma y autocontenida de producto (SaaS B2B/B2C para edificaciones inteligentes), la frontera tecnológica y las interacciones con todos los actores humanos (Ingenieros/Constructores y Propietarios/Residentes) y servicios externos (Cloudinary, OpenAI Chatbot Service y Stripe) se consolidan de manera exhaustiva y sin duplicidades conceptuales directamente en el **Diagrama de Contexto del Sistema (System Context Diagram)** presentado en la sección [4.1.3.2](#4132-software-architecture-context-level-diagrams).
 
 <br>
 
