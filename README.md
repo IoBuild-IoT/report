@@ -966,33 +966,239 @@ Para el control, priorización y diseño del Product Backlog se utilizó la herr
 # Capítulo IV: Solution Software Design
 
 ## 4.1. Strategic-Level Domain-Driven Design.
+
+El enfoque de **Strategic-Level Domain-Driven Design** sirve como pilar esencial en el desarrollo de la plataforma **IoBuild**. Mediante este marco de diseño estratégico, es posible identificar y delimitar los distintos contextos del dominio, definir cómo se relacionan entre sí y construir una arquitectura de software modular que responda a los objetivos del negocio en edificaciones inteligentes y telemetría IoT.
+
+En esta etapa estratégica, se prioriza:
+
+- Un entendimiento profundo del dominio, mediante la identificación de los procesos clave del negocio.
+- La definición de *Bounded Contexts*, estableciendo límites claros entre las distintas áreas funcionales.
+- El modelado de las relaciones y contratos de integración entre los diferentes contextos.
+- El diseño de una arquitectura de software estructurada e integral basada en el modelo C4.
+
 ### 4.1.1. Design-Level EventStorming.
+
+El Design-Level EventStorming es una técnica de modelado colaborativo que permite analizar y entender en profundidad el dominio de IoBuild. A través de sesiones de trabajo conjunto, esta práctica ayuda a identificar elementos clave como eventos de dominio, comandos, agregados y bounded contexts.
+
 #### 4.1.1.1 Candidate Context Discovery.
-[Identificación y justificación de los Bounded Contexts candidatos descubiertos]
+El Candidate Context Discovery es el proceso mediante el cual identificamos los posibles bounded contexts dentro del dominio de IoBuild. Este proceso se basa en el análisis de los eventos, comandos y agregados identificados durante las sesiones de EventStorming.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%209.jpg?raw=true)<br>
+Representa la frontera administrativa inicial de la plataforma. El flujo muestra a la **Constructora** ejecutando comandos para crear propietarios y asignar departamentos, estableciendo el evento crítico de **Apartamento Asignado**. Además, define la regla de negocio para adquirir unidades adicionales condicionada a la validación de **Fondos Suficientes**.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2010.jpg?raw=true)<br>
+Define el límite de seguridad y autenticación. El diagrama expone el proceso donde un usuario inicia un intento de sesión, el sistema verifica las credenciales y, tras validarlas, genera un **Token Acceso**, marcando la sesión como iniciada de forma segura.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2011.jpg?raw=true)<br>
+Agrupa todas las interacciones operativas directas con el hardware. El flujo refleja al **Propietario** vinculando nuevos equipos, y ejecutando comandos para encender, apagar o modificar parámetros, lo que genera los eventos de **Estado de Dispositivo Cambio** en el entorno físico.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2012.jpg?raw=true)<br>
+Aísla el núcleo de cálculo analítico y procesamiento de telemetría. Se observa al **Sistema de Monitoreo** registrando lecturas de sensores y voltaje para calcular el gasto energético acumulado. El evento pivotal aquí es el **Limite de Energia Superado**, el cual actúa como detonante para emitir alertas automáticas.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2013.jpg?raw=true)<br>
+Delimita el módulo encargado de las consultas (*Queries*) del sistema. Ilustra cómo el **Propietario** y la **Constructora** solicitan métricas y datos históricos, lo cual desencadena la generación de un **Reporte de Consumo** y culmina con el evento de **Dashboard Presentado**.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2014.jpg?raw=true)<br>
+Muestra un módulo transversal dedicado a la comunicación saliente. El flujo detalla cómo el sistema formatea mensajes de alerta y utiliza canales externos como **Email Provider** y **Push Notification** para despachar la información hasta que la notificación es confirmada por el usuario.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2015.jpg?raw=true)<br>
+Representa la capa de valor agregado y optimización autónoma. El diagrama muestra al **Motor IA** recibiendo consultas, analizando patrones de consumo y generando sugerencias de ahorro. Finaliza con un evento de alto impacto donde la IA ejecuta la **Sugerencia Aplicada al Dispositivo** de forma directa.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2016.jpg?raw=true)<br>
+Enmarca el modelo de negocio financiero de la plataforma. La imagen ilustra a la **Constructora** ingresando un método de pago para procesar la suscripción. El evento de **Suscripción Activada** es la frontera comercial que permite la renovación del acceso al servicio.
+
+<br>
 
 #### 4.1.1.2 Domain Message Flows Modeling.
-[Modelado de flujos de mensajes, comandos y eventos entre los contextos]
+El Domain Message Flows Modeling mapea cómo los mensajes (eventos, comandos) fluyen entre los diferentes bounded contexts identificados. Este modelado es crucial para entender las dependencias y patrones de comunicación del sistema.
+
+<br>
+
+![Domain Message Flows Modeling](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2017.jpg?raw=true)<br>
+Este diagrama ilustra el flujo inicial de habilitación de un usuario en el sistema. Comienza con la **Constructora** ejecutando el comando síncrono para **Asignar Apartamento** dentro del contexto de **Smart Project Setup**. Esto detona un evento asíncrono **Apartamento Asignado** que viaja hacia **Service Execution**, dándole habilitación al **Propietario** para ejecutar el comando de **Vincular dispositivo**. El ciclo concluye cuando Service Execution emite el evento **Dispositivo Vinculado Integration** hacia Energy Management, preparándolo para recibir futuras métricas de ese nuevo hardware.
+
+<br>
+
+![Domain Message Flows Modeling](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2018.jpg?raw=true)<br>
+Este diagrama representa el comportamiento reactivo y autónomo del sistema frente a un pico de consumo. Se inicia cuando un **Sensor IoT** envía continuamente el comando **Registrar Lectura** hacia **Energy Management**. Al detectarse una anomalía, este contexto publica el evento **Limite Energía Superado Integration** para despertar al **Smart Assistant**. La IA evalúa la situación y envía un comando de ejecución directa **Aplicar Optimización** hacia **Service Execution and Monitoring**, el cual apaga o regula el actuador y notifica de vuelta a **Energy Management** mediante un evento de cambio de estado.
+
+<br>
+
+![Domain Message Flows Modeling](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2019.jpg?raw=true)<br>
+Esta imagen detalla cómo el usuario interactúa con el hardware utilizando la IA como intermediario contextual. El flujo muestra al **Propietario** utilizando la aplicación para enviar comandos de **Consultar Asistente** y posteriormente **Aceptar Sugerencia** hacia el **Smart Assistant**. Una vez autorizado, el asistente toma el control y manda el comando imperativo de **Modificar Parametros** hacia **Service Execution and Monitoring**. Finalmente, el hardware ejecuta el cambio y emite un evento de **Parametros Configurados Integration** hacia **Energy Management** para ajustar sus cálculos de consumo eléctrico.
+
+<br>
 
 #### 4.1.1.3 Bounded Context Canvases.
-[Canvas descriptivo para cada Bounded Context identificado]
+Los Bounded Context Canvases proporcionan una visión detallada de cada contexto delimitado, documentando sus responsabilidades, interfaces, eventos y relaciones con otros contextos.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Smart%20Project%20Setup.jpg?raw=true)<br>
+Esta imagen representa el contrato formal del módulo administrativo e inmobiliario. Se clasifica como un Supporting Domain cuyo rol es gestionar la infraestructura física. El diagrama central mapea su comunicación entrante (los comandos **Asignar Apartamento** de la Constructora y **Adquirir Apartamento** del Propietario) y su comunicación saliente (el evento **Apartamento Asignado Integration Event** dirigido hacia **Service Execution**). En la parte inferior, se documentan las reglas de negocio estrictas, como la validación de fondos y la restricción de que un usuario no puede operar dispositivos sin un departamento formalmente asignado.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Service%20Execution%20and%20Monitoring.jpg?raw=true)<br>
+Este lienzo expone la arquitectura del núcleo operativo en tiempo real de la plataforma IoT (un **Core Domain**). Define sus roles como **Orquestador de Hardware** y **Ejecutor de Órdenes**. El mapa de dependencias ilustra una alta interacción: recibe comandos físicos (**Vincular**, **Encender/Apagar**) tanto del Propietario como órdenes directas de la IA (**Aplicar Optimización**), y a su vez publica los eventos de **Estado Dispositivo Cambio** hacia los medidores. Sus decisiones de negocio garantizan que todo cambio físico se notifique inmediatamente para no perder precisión en el sistema.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Energy%20Management.jpg?raw=true)<br>
+Este diagrama delimita el motor analítico y cuantitativo del sistema (también un **Core Domain**). El lienzo muestra que su comunicación entrante se basa en telemetría (**Registrar Lectura Command**) proveniente de los sensores y en los cambios de estado del hardware. Visualmente, destaca que su salida más importante es la emisión del evento **Limite Energía Superado Integration Event** hacia el **asistente inteligente**. Entre sus políticas documentadas se subraya que el procesamiento debe ser asíncrono para evitar cuellos de botella en la red de los condominios.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Smart%20Assistant.jpg?raw=true)<br>
+Este lienzo detalla el módulo de Inteligencia Artificial que aporta valor agregado a la plataforma (**Core Domain**). Establece sus roles como **Optimizador** y **Agente Autónomo**. El diagrama central mapea cómo la IA se alimenta de las alertas de **Energy Management** y de las consultas a demanda del usuario, para luego emitir el comando imperativo de **Aplicar Optimización** hacia Service Execution. En la base del lienzo, consolida decisiones críticas del negocio, como la capacidad del sistema para enviar órdenes de ajuste o apagado preventivo en **Modo Autónomo** sin tener que esperar la aprobación manual del usuario.
+
+<br>
 
 ### 4.1.2. Context Mapping.
-[Mapa de contextos que define las relaciones: Upstream/Downstream, Customer/Supplier, Shared Kernel, Conformist, Open Host Service, etc.]
 
-![Context Map](image.jpg)
+##### Resumen del Proceso
+El Context Mapping es la fase donde definimos las relaciones estructurales y los contratos de comunicación entre nuestros Bounded Contexts. En IoBuild, este proceso se realizó mediante un análisis crítico de dependencias, buscando maximizar la autonomía de los microservicios y proteger el lenguaje ubicuo de cada contexto.
+
+##### Análisis de Alternativas (Exploración de Diseño)
+
+Para llegar a la arquitectura final, el equipo evaluó diversas configuraciones respondiendo a preguntas críticas de diseño:
+
+###### 1. ¿Qué pasaría si movemos la capacidad de "Monitoreo de Umbrales" a Smart Assistant?
+* **Análisis:** Si el motor de IA procesara directamente las lecturas de voltaje y sensores, se generaría un acoplamiento masivo de datos innecesarios hacia la IA.
+* **Decisión:** Mantenerlo en **Energy Management**. Esto permite que la IA sea reactiva y solo actúe cuando ocurre un evento de negocio relevante (Límite Superado), siguiendo el principio de segregación de responsabilidades.
+
+###### 2. ¿Qué pasaría si creamos un Shared Kernel para la entidad "Propietario"?
+* **Análisis:** Aunque todos los contextos usan el concepto de "Propietario", su definición cambia: en *Smart Project Setup* es un titular legal del inmueble; en *Service Execution* es un operador de hardware.
+* **Decisión:** Rechazado. Un Shared Kernel crearía un acoplamiento rígido en la base de datos. Se optó por duplicar el ID del propietario y usar una capa de traducción para mantener la autonomía de los modelos.
+
+###### 3. ¿Qué pasaría si aislamos los Core Capabilities y movemos los otros a un contexto aparte?
+* **Análisis:** Identificamos que *Smart Project Setup* es un dominio de soporte (SaaS B2B).
+* **Decisión:** Se aisló completamente. Al ser Upstream, permite que el "Core IoT" (Execution, Energy, Assistant) evolucione técnicamente sin verse afectado por cambios en las reglas de negocio administrativas de la constructora.
+
+##### Patrones de Relación y Mapa de Contextos
+
+La arquitectura de IoBuild se define bajo una arquitectura orientada a eventos (EDA). A continuación se detallan las relaciones y patrones DDD establecidos:
+
+###### A. Smart Project Setup (Upstream) -> Service Execution (Downstream)
+* **Patrón:** **Customer-Supplier / Anti-Corruption Layer (ACL)**.
+* **Motivo:** *Service Execution* depende de la información de departamentos asignados. Implementamos una ACL en *Service Execution* para evitar que cambios en el modelo de datos inmobiliario contaminen la lógica de control de dispositivos.
+
+###### B. Service Execution (Upstream) -> Energy Management (Downstream)
+* **Patrón:** **Published Language (PL)**.
+* **Motivo:** La comunicación es asíncrona y continua. *Service Execution* publica eventos de telemetría en un formato estándar (JSON) que *Energy Management* consume para sus cálculos sin que ambos componentes se acoplen.
+
+###### C. Energy Management (Upstream) -> Smart Assistant (Downstream)
+* **Patrón:** **Published Language (PL)**.
+* **Motivo:** El asistente se suscribe a eventos de alerta de consumo. La relación es de bajo acoplamiento, permitiendo que el motor de IA evolucione o se actualice sin afectar los medidores de energía.
+
+###### D. Smart Assistant (Upstream) -> Service Execution (Downstream)
+* **Patrón:** **Customer-Supplier**.
+* **Motivo:** En este flujo de comando, el asistente actúa como el cliente que solicita una acción de ahorro. *Service Execution* actúa como el proveedor de la capacidad física de apagar o regular el actuador correspondiente.
+
+##### Discusión de Alternativas y Conclusión
+Tras evaluar modelos de *Conformist* (donde todos se adaptan al modelo de la constructora), el equipo decidió rechazarlo por el alto riesgo de deuda técnica. La aproximación elegida de **Customer-Supplier con ACL** y **Published Language** garantiza que IoBuild sea escalable, permitiendo manejar múltiples dispositivos simultáneamente sin que una falla en un módulo administrativo afecte la inteligencia operativa de la IA o el monitoreo de energía.
+
+<br>
 
 ### 4.1.3. Software Architecture.
+La arquitectura de software de IoBuild se ha diseñado utilizando el modelo C4, ya que este permite representar el sistema en diferentes niveles de abstracción como Contexto, Contenedores y Despliegue. Gracias a este enfoque, es más sencillo comprender cómo opera la plataforma de forma global, cómo interactúan los usuarios con ella y cómo se vincula con los servicios externos.
+
+Para el diseño de la arquitectura, se han considerado principios clave de ingeniería de software:
+- **Separación de responsabilidades:** Cada componente asume funciones delimitadas y cohesivas.
+- **Bajo acoplamiento y alta cohesión:** Se minimizan dependencias directas entre módulos y se agrupan capacidades afines.
+- **Escalabilidad y mantenibilidad:** Facilidad de evolución independiente entre las aplicaciones cliente y los servicios backend.
+
 #### 4.1.3.1. Software Architecture System Landscape Diagram.
-![System Landscape Diagram](image.jpg)
+A continuación se presenta la visualización del ecosistema global de IoBuild, mostrando la relación entre los usuarios y los límites de la plataforma respecto a los sistemas complementarios.
+
+<br>
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
-![C4 Context Diagram](image.jpg)
+El diagrama de contexto presenta el sistema IoBuild como una plataforma central, mostrando cómo interactúa con los usuarios y con distintos sistemas externos. Este nivel permite entender de manera general el alcance del sistema y cómo se integra con otros servicios.
+
+**Enlace del Diagrama de Contexto:** [https://shorturl.at/EbWzU](https://shorturl.at/EbWzU)
+
+<br>
+
+![Context Level Diagrams](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%202/Software%20Architecture%20Context%20Diagram.png)
+
+<br>
+
+**Explicación del Diagrama:**
+
+**Sistema Central (IoBuild):**  
+Es la plataforma principal encargada de gestionar proyectos de construcción inteligente. Permite a los usuarios configurar entornos, administrar dispositivos conectados y consultar información relevante como reportes y datos del sistema.
+
+**Usuarios:**
+- **Builder (Constructor / Ingeniero):** Usuario encargado de diseñar y parametrizar entornos inteligentes. Interactúa con IoBuild para registrar dispositivos y gestionar proyectos a través de la interfaz web.
+- **Landlord / Resident (Propietario / Administrador):** Usuario que utiliza la plataforma para supervisar y administrar sus propiedades o departamentos. Consulta métricas y realiza seguimiento continuo.
+
+**Sistemas Externos:**
+- **Cloudinary:** Servicio utilizado para la gestión y almacenamiento seguro de archivos multimedia relacionados con los proyectos.
+- **AI Chatbot Service:** Proporciona asistencia inteligente contextual a los usuarios, orientando decisiones de optimización.
+- **Stripe:** Pasarela encargada de procesar pagos y gestionar las suscripciones de los clientes en IoBuild.
+
+<br>
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams.
-![C4 Container Diagram](image.jpg)
+El diagrama de contenedores muestra la arquitectura de alto nivel del sistema IoBuild, permitiendo entender cómo se organizan sus principales componentes ejecutables, qué tecnologías se utilizan y cómo interactúan entre sí.
+
+**Enlace del Diagrama de Contenedores:** [https://shorturl.at/FEOTa](https://shorturl.at/FEOTa)
+
+<br>
+
+![Container Level Diagrams](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%202/Software%20Architecture%20Container%20Diagram.png)
+
+<br>
+
+**Descripción del Container Diagram:**
+
+**Capa de Presentación:**
+- **Landing Page:** Sitio público estático que brinda información general y canaliza el acceso hacia la aplicación web.
+- **Web App (SPA):** Aplicación web interactiva donde los ingenieros y propietarios gestionan proyectos, dispositivos y telemetría.
+- **Mobile Application:** Aplicación móvil que permite el control ágil y remoto de dispositivos y estados de alerta.
+
+**Capa de Backend:**
+- **Web Service API:** Backend central desarrollado en ASP.NET Core. Procesa la lógica del negocio, expone endpoints RESTful y gestiona la comunicación con la base de datos y pasarelas externas.
+
+**Capa de Persistencia:**
+- **Database (MySQL):** Motor relacional que garantiza persistencia transaccional y consistencia en los datos de usuarios, proyectos y configuraciones.
+
+<br>
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams.
-![Deployment Diagram](image.jpg)
+El diagrama de despliegue detalla la distribución de los componentes del sistema IoBuild en la infraestructura cliente y de nube (*Cloud Tier*).
+
+**Enlace del Diagrama de Despliegue:** [https://shorturl.at/2DSHw](https://shorturl.at/2DSHw)
+
+<br>
+
+![Deployment Level Diagrams](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%202/Software%20Architecture%20Deployment%20Diagram.png)
+
+<br>
+
+**Descripción del Deployment Diagram:**
+
+- **Client Tier:** Navegadores web de los usuarios (acceso a Landing Page y Web App) y dispositivos móviles con la aplicación cliente.
+- **Cloud Tier (Frontend):** Despliegue en GitHub Pages (Landing Page) y Vercel (Web Application SPA).
+- **Cloud Tier (Backend):** Contenedores Docker sobre servidores de aplicación que ejecutan el API en ASP.NET Core con comunicación segura HTTPS.
+- **Data Tier:** Servidor de base de datos MySQL para la persistencia centralizada.
 
 ## 4.2. Tactical-Level Domain-Driven Design
 ### 4.2.X. Bounded Context: &lt;Bounded Context Name&gt;
