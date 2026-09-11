@@ -848,7 +848,44 @@ En esta sección se detallan los requisitos del sistema especificados mediante u
 | TS24 | Validar token de sesión | Como desarrollador, quiero que la API valide que el token enviado en los headers es legítimo y no ha expirado, para proteger las rutas privadas. | **Escenario 1:**<br>Dado que se realiza una petición a un recurso protegido con un header Authorization: Bearer {token}.<br>Cuando la API verifica la firma y fecha del token.<br>Entonces la API permite el acceso y devuelve el recurso solicitado.<br><br>**Escenario 2:**<br>Dado que el token está caducado o malformado.<br>Cuando la API intenta decodificarlo.<br>Entonces la API responde con **401 Unauthorized** o **403 Forbidden**. | EP10 |
 
 ## 3.2. Impact Mapping.
-![Impact Mapping](image.jpg)
+
+El Impact Mapping es una técnica visual colaborativa que permite conectar los objetivos estratégicos del negocio con las acciones concretas de los usuarios y las funcionalidades del producto digital. Mediante un esquema jerárquico en forma de árbol, esta técnica muestra cómo las metas comerciales se traducen en cambios de comportamiento esperados en los actores clave y en entregables que hacen posible dichos cambios.
+
+En el caso del presente proyecto, se utilizó esta herramienta para estructurar de manera clara la relación entre las metas SMART del modelo digital, los User Personas previamente definidos y las funcionalidades necesarias. El trabajo incluyó:
+
+* **Business Goals SMART:** Plantean metas específicas, medibles, alcanzables, relevantes y con plazos definidos, orientadas tanto a la adquisición de usuarios como a la retención y recurrencia.
+* **Actores principales:** Representados por Miguel Veramendi (Constructor / Arquitecto) y Carla Flores (Residente / Propietaria), definidos a partir de sus motivaciones y del rol que cumplen en el ecosistema domótico.
+* **Impactos esperados:** Expresados como conductas observables que cada actor debe realizar para contribuir al cumplimiento de los objetivos (ejemplo: incorporar la solución en propuestas de diseño o personalizar perfiles de confort en el hogar).
+* **Deliverables funcionales:** Características y componentes del producto digital diseñados para provocar esos impactos (plantillas de propuesta, consolas de telemetría o notificaciones guiadas).
+
+El mapa fue diseñado siguiendo un enfoque centrado en el usuario y buenas prácticas colaborativas para asegurar la trazabilidad entre las metas de negocio y el desarrollo técnico de la solución.
+
+**Anexo: Impact Mapping (Enlace interactivo):**  
+[https://drive.google.com/file/d/1fFT-OfL06jICOptImqpWyogQl_eAtWj3/view?usp=sharing](https://drive.google.com/file/d/1fFT-OfL06jICOptImqpWyogQl_eAtWj3/view?usp=sharing)
+
+<br>
+
+**Business Goal 1: Alcanzar 600 suscripciones activas al plan inicial en un periodo de 8 meses.**
+
+Este objetivo representa el primer paso estratégico para la consolidación del modelo de negocio digital de IoBuild. Se centra en la adquisición de usuarios iniciales, quienes validarán la propuesta de valor y permitirán generar un flujo de ingresos recurrente en la etapa temprana. La meta de 600 suscripciones en 8 meses no solo es medible y alcanzable según el análisis de mercado de edificaciones en Lima Metropolitana, sino que también responde a la necesidad de alcanzar un punto de equilibrio temprano, garantizando tracción sostenible.
+
+Asimismo, este Business Goal está alineado con las actividades de los principales actores identificados (Miguel Veramendi y Carla Flores), quienes, a través de comportamientos clave (incorporar la solución en proyectos, usarla e interactuar activamente), impulsan la adopción de la plataforma.
+
+<br>
+
+![Impact-Mapping-1](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%203/Impact-Mapping-1.png)
+
+<br><br>
+
+**Business Goal 2: Automatizar el 70 % de los procesos de personalización en un periodo de 6 meses y aumentar la retención de clientes recurrentes en un 25 % en 9 meses.**
+
+Este objetivo se enfoca en la optimización y sostenibilidad operativa del negocio en el mediano plazo. Una vez consolidada la primera base de clientes, el siguiente reto es reducir la fricción en el uso de la solución domótica a través de automatizaciones que hagan la experiencia de control ambiental más fluida e intuitiva. Lograr que al menos el 70 % de los procesos de personalización ambiental se realicen automáticamente en 6 meses permitirá que los usuarios perciban mayor comodidad y ahorro de tiempo.
+
+De manera complementaria, la segunda parte de este objetivo busca incrementar la retención de clientes en un 25 % en 9 meses, consolidando relaciones duraderas y disminuyendo la tasa de abandono de la suscripción SaaS.
+
+<br>
+
+![Impact-Mapping-2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%203/Impact-Mapping-2.png)
 
 ## 3.3. Product Backlog.
 | # Orden | User Story ID | Título | Descripción | Story Points | Sprint |
