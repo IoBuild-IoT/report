@@ -45,8 +45,7 @@
 </center>
 
 # Project Report Collaboration Insights
-[URL del repositorio](https://www.example.com)
-
+URL del repositorio: https://github.com/IoBuild-IoT/report
 (Imagenes de los commits cada entrega)
 
 
@@ -262,7 +261,7 @@ IoBuild es una plataforma digital que permite a empresas constructoras, arquitec
 
 #### 1.2.2.2. Lean UX Assumptions.
 
-En la fase inicial de desarrollo de la plataforma IoBuild, hemos identificado y articulado una serie de supuestos fundamentales siguiendo los principios de la metodología Lean UX. Estos supuestos son nuestras hipótesis iniciales sobre quiénes son nuestros usuarios, qué beneficios esperan, cómo operará el negocio, el impacto que anticipamos generar y las características clave que necesitamos para lograrlo. Formalizar estas creencias nos permite enfocar el desarrollo del producto en la validación temprana, la minimización de riesgos y la toma de decisiones estratégicas basada en datos.
+En la fase inicial de desarrollo de la plataforma IoBuild, hemos identificado y articulado una serie de supuestos fundamentales siguiendo los principios del marco de trabajo Lean UX. Estos supuestos son nuestras hipótesis iniciales sobre quiénes son nuestros usuarios, qué beneficios esperan, cómo operará el negocio, el impacto que anticipamos generar y las características clave que necesitamos para lograrlo. Formalizar estas creencias nos permite enfocar el desarrollo del producto en la validación temprana, la minimización de riesgos y la toma de decisiones estratégicas basada en datos.
 
 Los supuestos se han clasificado en cinco categorías principales para una estructuración clara:
 
@@ -320,13 +319,13 @@ Estos supuestos formarán la estructura de nuestra estrategia de diseño y propo
 
 - **Feature Assumptions**
     - **Creemos que la funcionalidad de un constructor de espacios inteligentes permitirá a los arquitectos e ingenieros diseñar layouts arrastrando y soltando dispositivos IoT**, de modo que el 60 % de ellos lo utilice para planificar sus proyectos en la plataforma.
-    - **Creemos que el simulador en tiempo real de flujos de automatización permitirá a las constructoras validar la lógica de sus sistemas antes de la instalación**, de forma que el 90 % lo utilice para testear sus configuraciones.
+    - **Creemos que el simulador en tiempo real de flujos de automatización permitirá a las constructoras validar la lógica de sus sistemas antes de la instalación**, de forma que el 90 % lo utilice para probar sus configuraciones.
     - **Creemos que el panel de control unificado permitirá a los propietarios gestionar su espacio desde una sola interfaz**, consiguiendo que el 80 % lo use como su herramienta principal de control diario.
     - **Creemos que la integración con marcas de hardware permitirá a los usuarios conectar sus dispositivos existentes a la plataforma**, logrando que el 70 % de los clientes B2C lo use en su primera semana de activación.
     - **Creemos que las notificaciones y alertas personalizables permitirán a los usuarios estar al tanto de la seguridad y el consumo de energía en sus propiedades**, de forma que el 50 % de ellos configure al menos 3 alertas en los primeros 30 días.
     - **Creemos que la funcionalidad de acceso remoto permitirá a los ingenieros y propietarios gestionar sus espacios desde cualquier lugar**, alcanzando que el 75 % de las gestiones fuera de la oficina se realicen en dispositivos móviles.
     - **Creemos que el sistema de reportes de consumo de energía permitirá a los usuarios tomar decisiones para optimizar sus gastos**, logrando una disminución del 20 % en el consumo energético reportado en el primer año.
-    - **Creemos que la funcionalidad de creación de "escenas" o ambientes (ej. "Modo cine") simplificará la vida de los propietarios**, con el 60 % de ellos creando al menos una escena en el primer mes de uso.
+    - **Creemos que la funcionalidad de creación de escenas o perfiles ambientales personalizados (ej. "Modo descanso", "Modo concentración") simplificará la vida de los propietarios**, con el 60 % de ellos creando al menos una escena en el primer mes de uso.
     - **Creemos que la integración con asistentes de voz (ej. Alexa, Google Home) mejorará la experiencia del usuario**, consiguiendo que el 40 % de los usuarios de hogares inteligentes conecte su cuenta en los primeros tres meses.
     - **Creemos que un sistema de permisos y roles permitirá a los administradores de proyectos controlar quién puede acceder a qué funciones**, logrando una reducción del 95 % en los problemas de seguridad o acceso no autorizado reportados.
 <br>
@@ -366,7 +365,7 @@ Estos supuestos formarán la estructura de nuestra estrategia de diseño y propo
 - **Creemos** que lograremos reducir los costos de soporte en un 30% en los primeros seis meses  
   **Si** propietarios de viviendas inteligentes  
   **Obtienen** un aumento del 25% en su satisfacción con la experiencia de habitar  
-  **Con** la funcionalidad de personalización de escenas como “Modo cine”.<br><br>
+  **Con** la funcionalidad de personalización de escenas y perfiles ambientales para optimizar el confort y el consumo.<br><br>
 
 - **Creemos** que lograremos escalar nuestra operación a más proyectos simultáneamente reduciendo en un 40% los costos de implementación  
   **Si** ingenieros y técnicos de construcción  
@@ -405,7 +404,10 @@ Estos supuestos formarán la estructura de nuestra estrategia de diseño y propo
 
 
 #### 1.2.2.4. Lean UX Canvas.
-![Lean UX Canvas](assets/Lean_UX_Canvas.png)
+
+<div align="center">
+  <img src="assets/Lean_UX_Canvas.png" alt="Lean UX Canvas" width="650" />
+</div>
 
 ## 1.3. Segmentos objetivo.
 
@@ -415,7 +417,7 @@ Estos supuestos formarán la estructura de nuestra estrategia de diseño y propo
 | **Geográfica** | Principalmente en áreas urbanas de alto crecimiento inmobiliario en Latinoamérica, con especial énfasis en ciudades capitales (como Lima Metropolitana, Bogotá o Ciudad de México), donde la demanda y densificación de proyectos de vivienda colectiva y torres de departamentos es intensiva. | Residentes en zonas urbanas consolidadas y distritos de media y alta densidad residencial (como distritos céntricos o suburbanos de Lima y principales urbes). Priorizan la conectividad, la accesibilidad a servicios y la modernidad de su entorno habitacional. |
 | **Demográfica** | • **Edad:** 30 a 55 años.<br>• **Género:** Hombres y mujeres profesionales.<br>• **Educación:** Superior universitaria completa (Arquitectura, Ingeniería Civil, Edificaciones o afines).<br>• **Nivel de Ingresos:** Medio-alto a alto.<br>• **Ocupación:** Proyectistas independientes, contratistas o líderes técnicos en empresas constructoras e inmobiliarias. | • **Edad:** 25 a 45 años.<br>• **Género:** Mixto.<br>• **Educación:** Nivel universitario o técnico superior.<br>• **Nivel de Ingresos:** Medio a medio-alto.<br>• **Estado Civil / Hogar:** Solteros, parejas jóvenes o familias pequeñas que adquieren su primera o segunda vivienda.<br>• **Ocupación:** Profesionales urbanos, colaboradores en modalidad remota/híbrida o emprendedores. |
 | **Psicológica (Psicográfica)** | Orientados a la innovación y sostenibilidad, valoran la diferenciación competitiva y la eficiencia de costos. Buscan integrar tecnología domótica e IoT sin complicaciones de instalación industrial ni sobrecostos que encarezcan el metro cuadrado. Son meticulosos, analíticos y pragmáticos, motivados por entregar edificaciones modernas y atractivas para la venta o arriendo. | Buscadores de confort térmico, lumínico y tranquilidad. Tienen una actitud práctica ante la tecnología: valoran la conveniencia del día a día, la privacidad y el ahorro energético. Su estilo de vida es dinámico y aprecian llegar a un hogar con ambientes acogedores, automatizados y fáciles de controlar sin requerir soporte técnico constante. |
-| **Función de comportamiento** | Evalúan e incorporan soluciones tecnológicas desde la etapa de diseño de planos y memoria descriptiva. Valoran la estandarización y compatibilidad con hardware accesible (sensores ambientales y actuadores/relés para iluminación en pasillos o áreas comunes). Se frustran enormemente por sistemas propietarios cerrados, costosos o difíciles de configurar en obra. Su meta es entregar condominios con valor agregado inteligente garantizando viabilidad técnica y operativa. | Uso frecuente y diario de aplicaciones móviles y asistentes para el hogar. Su adopción de tecnología se basa estrictamente en la facilidad de uso y la inmediatez: desean verificar la temperatura/humedad de sus habitaciones y controlar las luces (o activar escenas como "Modo Noche" o "Modo Cine") con un toque. Se frustran ante la multiplicidad de apps incompatibles o fallas de configuración. Su meta es maximizar el bienestar dentro de su vivienda de forma intuitiva. |
+| **Función de comportamiento** | Evalúan e incorporan soluciones tecnológicas desde la etapa de diseño de planos y memoria descriptiva. Valoran la estandarización y compatibilidad con hardware accesible (sensores ambientales y actuadores/relés para iluminación en pasillos o áreas comunes). Se frustran enormemente por sistemas propietarios cerrados, costosos o difíciles de configurar en obra. Su meta es entregar condominios con valor agregado inteligente garantizando viabilidad técnica y operativa. | Uso frecuente y diario de aplicaciones móviles y asistentes para el hogar. Su adopción de tecnología se basa estrictamente en la facilidad de uso y la inmediatez: desean verificar la temperatura/humedad de sus habitaciones y controlar las luces (o activar escenas como "Modo Noche" o "Modo Fuera de Casa") con un toque. Se frustran ante la multiplicidad de apps incompatibles o fallas de configuración. Su meta es maximizar el bienestar dentro de su vivienda de forma intuitiva. |
 
 ---
 
@@ -423,105 +425,334 @@ Estos supuestos formarán la estructura de nuestra estrategia de diseño y propo
 
 ## 2.1. Competidores.
 ### 2.1.1. Análisis competitivo.
-| Competitive Analysis Landscape | |
-|---|---|
-| ¿Por qué llevar a cabo este análisis? | [Justificación del análisis] |
+|  | **Competitive Analysis** |
+| :---: | :--- |
+| ¿Por qué llevar acabo este análisis? | El objetivo es identificar oportunidades de mejora y diferenciación frente a nuestros principales competidores en el sector de automatización, control de acceso y domótica. |
 
-| PERFIL | Nosotros (IoBuild) | Competidor 1 | Competidor 2 |
-|---|---|---|---|
-| Overview | [Resumen] | [Resumen] | [Resumen] |
-| Ventaja competitiva (Valor ofrecido) | [Propuesta de valor] | [Valor ofrecido] | [Valor ofrecido] |
-| Mercado Objetivo | [Público objetivo] | [Público objetivo] | [Público objetivo] |
-| Estrategia de Marketing | [Estrategia] | [Estrategia] | [Estrategia] |
-| Productos y servicios | [Servicios ofrecidos] | [Servicios ofrecidos] | [Servicios ofrecidos] |
-| Precios y costos | [Modelo de monetización] | [Modelo de monetización] | [Modelo de monetización] |
-| Canales de distribución | [Web / Móvil / IoT] | [Canales] | [Canales] |
+|  | IoBuild | MWF Solutions | Orvibo Perú | Domotec Perú |
+| :---: | :--- | :--- | :--- | :--- |
+| *Logo* | <img src="assets/iobuild_logo.png" alt="IoBuild" width="115" style="max-height: 42px; object-fit: contain;" /> | <img src="assets/mwf_solutions_logo.jpeg" alt="MWF Solutions" width="55" height="55" style="object-fit: contain;" /> | <img src="assets/orvibo_logo.jpg" alt="Orvibo" width="55" height="55" style="object-fit: contain;" /> | <img src="assets/domotec_logo.png" alt="Domotec Perú" width="100" style="max-height: 42px; object-fit: contain;" /> |
+| *Overview* | Startup que transforma edificios y espacios en entornos inteligentes, accesibles y personalizables. Ofrece una plataforma digital sencilla para constructoras, arquitectos y propietarios, facilitando la integración de soluciones smart. | Empresa líder en soluciones multitécnicas. Especialistas en diseño, ejecución y mantenimiento de proyectos de ingeniería. | Empresa dedicada a soluciones de domótica y automatización de hogares. | Especialistas en convertir hogares y edificios en Smart Home, ofreciendo control desde dispositivos móviles y asistentes de voz. |
+| *Ventaja competitiva ¿Qué valor ofrece a los clientes?* | Enfoque low-barrier: integración simplificada, costos accesibles y experiencia de usuario unificada. Prioriza la personalización, escalabilidad y eficiencia energética. | Equipo de ingenieros altamente capacitados. Experiencia comprobada en proyectos exitosos. Alta calidad, eficiencia energética y estándares internacionales. Partner estratégico en todas las fases del proyecto (diseño, ejecución, mantenimiento). | Ofrecen soluciones completas de domótica personalizadas para hogares y empresas. Control y monitoreo fácil desde app, voz y diversos equipos smart. | Soluciones profesionales, completas y fáciles de usar. Integración con asistentes de voz (Apple, Alexa, Google). Garantizan la ciberseguridad y control centralizado de todos los dispositivos. |
+| *Mercado Objetivo* | Constructoras que buscan diferenciarse con proyectos inteligentes sin complejidad tecnológica. Propietarios que desean personalizar y gestionar sus hogares de manera práctica y accesible. | Empresas constructoras de oficinas, edificaciones industriales, comerciales y residenciales que necesiten ingeniería multitécnica. | Oficinas y hogares interesados en automatización y domótica. | Hogares, edificios, hoteles y oficinas interesados en automatización y modernización smart. |
+| *Estrategia de Marketing* | Redes sociales (Facebook, Instagram, Youtube, Linkedin). Marketing de contenidos (demos). | Activos en Facebook, Linkedin, Instagram y Youtube. Promoción de servicios, casos de éxito, y artículos de ingeniería. | Redes Sociales (Facebook, Instagram, Youtube). Promocionan productos y nuevas tecnologías en posts. | Redes Sociales (Facebook, Instagram, Linkedin); Enfocados en la experiencia de usuario y difusión de soluciones smart. |
+| *Productos y servicios* | Control unificado de iluminación, clima, seguridad, riego y energía. Funcionalidades avanzadas: escenas personalizadas, reportes de consumo, permisos multiusuario, integración con Alexa/Google Home. | Aire acondicionado, ventilación, clima, seguridad electrónica, domótica, automatización, energía, instalación eléctrica, sistemas contra incendio, refrigeración, mantenimiento. | Smart Film, cortinas inteligentes, gestión y ahorro de energía, seguridad smart, equipos Sonoff, luces smart, audio, jardín smart. | Cerraduras inteligentes, cortinas inteligentes, iluminación inteligente, seguridad, redes unificadas, interfaces, soluciones de automatización personalizadas. |
+| *Precios y costos* | B2B: licencias por proyecto + servicios de integración. Instalación inicial con costo fijo ajustado al proyecto. B2C: suscripción mensual/anual según tamaño del espacio. | Cotización personalizada, generalmente modelo proyecto a medida (no disponibles en línea). | Servicios personalizados. Contacto para cotización (no disponibles en línea) basado en la selección del cliente. | Servicios personalizados. Contacto para cotización. Ventas por proyecto, cada solución es a medida. |
+| *Canales de distribución (Web y/o Móvil)* | Plataforma web y aplicación móvil. Contacto directo vía sitio web, WhatsApp, correo y redes sociales. | Web, contacto vía sitio, redes sociales, WhatsApp, email, móvil para atención y soporte. | Web, contacto por teléfono, correo, WhatsApp, y redes sociales. | Web, WhatsApp, contacto por teléfono, presencial. |
+| *Fortalezas* | Modelo de negocio por suscripción (ingresos recurrentes). Alianza directa con constructoras. Servicio integral que incluye instalación, soporte de cableado y plataforma centralizada. Doble interfaz para administradores y residentes. | Especialistas en experiencia de cliente smart y conectividad centralizada. Trabajan múltiples verticales (hogares, hoteles, edificios). Alto nivel de integración. | Propuesta innovadora con soluciones “llave en mano” para hogares inteligentes. Fácil integración y foco en simplificar la tecnología al usuario doméstico. | Experiencia multisectorial, enfoque integral en proyectos. Soluciones personalizadas para empresas. Alta capacidad técnica y enfoque en eficiencia y cumplimiento normativo. |
+| *Debilidades* | Alta dependencia del sector construcción e inmobiliario. Ciclo de ventas potencialmente largo con las constructoras. Requiere una inversión inicial fuerte en tecnología y personal técnico especializado. | Foco muy avanzado puede limitar llegada a usuarios menos familiarizados. Reto en escalar por requerir asesoría y soporte muy personalizado. | Menor penetración en segmento corporativo. Posible dependencia de productos de marcas externas/globales para domótica. Segmentación principalmente residencial. | Dependencia de proyectos grandes (segmento corporativo/industrial). Requiere relaciones comerciales de largo plazo. Adaptación tecnológica constante frente a nuevas tendencias globales. |
+| *Oportunidades* | Auge de los "edificios inteligentes" como estándar en nuevos proyectos inmobiliarios. Potencial para ofrecer servicios de valor añadido (mantenimiento predictivo, analítica de datos). Expansión a otros mercados verticales. | Hoteles y edificios buscan modernización. Auge de viviendas premium smart. Oportunidad de crear plataformas propias de gestión y control. Potencial expansión internacional. | Tendencia de adopción masiva de IoT y hogares inteligentes en Latinoamérica. Posibilidad de alianzas con desarrolladoras inmobiliarias. Ampliación de servicios postventa y soporte. | Crecimiento del mercado en automatización industrial y sostenibilidad. Expansión a nuevos mercados verticales (hospitales, data centers, infraestructuras especiales). Alianzas con marcas globales. |
+| *Amenazas* | Posible resistencia de las constructoras a adoptar un modelo de suscripción. Ciberseguridad como riesgo crítico al centralizar el control del edificio. Rápida evolución de estándares y protocolos IoT que exigen actualización constante. | Vulnerabilidad a cambios en protocolos de asistentes de voz o plataformas smart grandes. Volatilidad del mercado inmobiliario. Ciberseguridad como preocupación creciente. | Entradas de nuevas startups globales con soluciones más económicas o DIY. Cambio rápido de estándares (protocolos, compatibilidad). Piratería tecnológica. | Competencia de multinacionales o integradores globales. Cambios regulatorios en el sector técnico. Riesgo tecnológico por obsolescencia rápida de equipos o sistemas. |
 
 ### 2.1.2. Estrategias y tácticas frente a competidores.
-| Competidores -> | Nosotros (IoBuild) | Competidor 1 | Competidor 2 |
-|---|---|---|---|
-| Fortalezas | | | |
-| Debilidades | | | |
-| Oportunidades | | | |
-| Amenazas | | | |
+A partir del análisis competitivo realizado, se propone la siguiente tabla de estrategias y tácticas. El objetivo es identificar oportunidades de mejora y diseñar acciones específicas que permitan a **IoBuild** superar las debilidades detectadas en los principales competidores, fortalecer su propuesta de valor y consolidar una ventaja competitiva sostenible en el mercado.
+
+| Competidores | ¿Qué debemos hacer para destacar más frente a nuestros principales competidores? |
+| :--- | :--- |
+| **Domotec Perú** | La fortaleza de Domotec es la alta personalización. Debemos posicionar nuestro modelo de suscripción como una solución **más escalable y financieramente predecible** para las constructoras. Enfatizar que ofrecemos un ecosistema estandarizado y fácil de implementar en proyectos inmobiliarios completos, reduciendo la complejidad y el costo por unidad en comparación con sus soluciones a medida. |
+| **Orvibo Perú** | Su enfoque es el cliente final (B2C) y la "llave en mano" en hogares ya construidos. Nuestra estrategia debe ser resaltar el valor de una **integración nativa desde la fase de construcción**. Debemos demostrar a las inmobiliarias cómo nuestra plataforma no solo beneficia al residente, sino que ofrece una herramienta de gestión y mantenimiento centralizada para el administrador del edificio, una ventaja competitiva que Orvibo no posee. |
+| **MWF Solutions** | Este competidor se enfoca en proyectos industriales complejos y de gran escala. Debemos posicionarnos como los **especialistas en el sector residencial inteligente**. Nuestra plataforma es más ágil, está diseñada para la experiencia del usuario residencial y nuestro modelo de negocio (suscripción) es más adecuado para la gestión de propiedades que el modelo de proyecto único y de alto costo de MWF. |
 
 ## 2.2. Entrevistas.
+Para comprender a fondo las necesidades, expectativas y frustraciones de nuestros segmentos clave —ingenieros y arquitectos de constructoras, y propietarios o residentes de viviendas e inmuebles— realizamos entrevistas estructuradas con formularios diseñados específicamente para cada grupo. Las preguntas abiertas permitieron explorar su experiencia en el uso de tecnologías inteligentes, sus prioridades al diseñar o habitar un espacio, y sus percepciones sobre personalización, accesibilidad y eficiencia.
+
+Las entrevistas fueron registradas, resumidas y posteriormente analizadas para identificar patrones de comportamiento y criterios de decisión. Los resultados sirvieron de base para elaborar User Personas, Empathy Maps y User Task Matrices, herramientas que nos permitieron captar con mayor claridad los puntos clave de cada segmento.
+
+Las entrevistas realizadas aportaron información clave para definir los requisitos y guiar el diseño de IoBuild, asegurando que la plataforma responda a las expectativas de constructores y propietarios en la gestión de espacios inteligentes.
+
 ### 2.2.1. Diseño de entrevistas.
-**Preguntas generales:**
-1. ¿Cuál es su nombre?
-2. ¿Qué edad tiene?
-3. ¿A qué se dedica?
-4. ¿Qué experiencia previa tiene con sistemas de monitoreo o soluciones IoT?
+En esta sección se define la información a recolectar de los segmentos objetivos. Los datos demográficos y de perfil básico de los entrevistados se registran previamente mediante el siguiente formulario: [Formulario de Registro de Entrevistas](https://docs.google.com/forms/d/e/1FAIpQLSd4m5vmdvWBw-Lr2Kmbf6e4agyUNKCXlsnA6-H6IMEBz90eTg/viewform?usp=dialog).
 
-**Entrevistas usuario Segmento 1:**
-1. ¿... ?
-2. ¿... ?
-3. ¿... ?
+A fin de garantizar sesiones dinámicas con una duración máxima estimada de **5 minutos** por participante, las preguntas han sido sintetizadas y adaptadas al alcance específico de **IoBuild**: integración accesible de hardware IoT (sensores de temperatura y humedad, y control de iluminación mediante actuadores/relés) en proyectos multifamiliares y residenciales.
 
-**Entrevistas usuario Segmento 2:**
-1. ¿... ?
-2. ¿... ?
-3. ¿... ?
+---
+
+#### Segmento 1: Arquitectos e Ingenieros Civiles (B2B)
+1. **Demanda y experiencia:** En los proyectos inmobiliarios multifamiliares que ha diseñado o liderado, ¿ha recibido solicitudes para incorporar automatización o domótica (como control eficiente de iluminación o monitoreo ambiental)? ¿Con qué frecuencia?
+2. **Frustraciones y costos:** ¿Cuáles han sido los mayores obstáculos al intentar integrar tecnología inteligente en obra (ej. sobrecostos de soluciones industriales cerradas, complejidad de cableado o falta de estandarización)?
+3. **Viabilidad técnica en planos:** Desde la etapa de planos, ¿qué tan viable considera preinstalar una infraestructura IoT accesible (sensores ambientales y relés/actuadores para iluminación en pasillos, áreas comunes o departamentos) sin encarecer significativamente el metro cuadrado?
+4. **Valor comercial y diferenciación:** En una escala del 1 al 10, ¿cuánto valor o atractivo comercial cree que aporta a una torre de apartamentos incluir preinstalación IoT y una plataforma de control centralizada frente a la competencia?
+5. **Mantenimiento y gestión post-construcción:** ¿De qué manera un panel web unificado que permita supervisar dispositivos y estados en tiempo real facilitaría el trabajo de entrega y mantenimiento entre constructora y administración del edificio?
+6. **Modelo de suscripción:** ¿Qué disposición observa en promotores o juntas de administración hacia un modelo SaaS (suscripción mensual/anual accesible) que garantice soporte técnico continuo, actualizaciones y compatibilidad del ecosistema?
+
+---
+
+#### Segmento 2: Propietarios y Residentes de Apartamentos (B2C)
+1. **Hábitos y uso actual:** En su día a día dentro del departamento, ¿utiliza o le interesaría utilizar dispositivos inteligentes para gestionar la iluminación o supervisar el confort térmico (temperatura y humedad)?
+2. **Frustraciones tecnológicas:** ¿Ha enfrentado problemas con soluciones inteligentes previas (ej. configuraciones complejas, tener múltiples aplicaciones incompatibles entre sí o caídas de conexión)?
+3. **Casos de uso prioritarios:** Si pudiera gestionar su departamento desde una app unificada, ¿en qué momentos le resultaría más valioso (ej. programar el apagado automático de luces al salir/dormir, o recibir alertas si la humedad o temperatura varían fuera de lo normal)?
+4. **Influencia en la decisión de compra/alquiler:** En una escala del 1 al 10, ¿cuánto influiría en su decisión de compra o alquiler que el departamento ya cuente con automatización de luces y monitoreo ambiental integrado desde el primer día?
+5. **Preocupaciones clave:** Al utilizar una aplicación para gestionar el confort y la energía de su hogar, ¿cuáles son sus mayores inquietudes (facilidad de uso para toda la familia, privacidad de datos o estabilidad del servicio)?
+6. **Disposición al modelo de servicio:** Si el departamento ya viene con los sensores y actuadores instalados, ¿estaría dispuesto a mantener una suscripción mensual accesible por funciones avanzadas como reportes de eficiencia de energía, automatizaciones personalizadas y soporte garantizado?
 
 ### 2.2.2. Registro de entrevistas.
-**Segmento 1:**
-- **Nombre:** _____
-- **Edad:** _____
-- **Ocupación:** _____
-- **Foto/Captura:** ![Entrevista 1](image.jpg)
-- **Resumen/Transcripción:** [Detalle de la entrevista]
+En esta sección se documenta detalladamente cada entrevista realizada a los distintos segmentos objetivo. Se incluye información relevante como el perfil del entrevistado, sus respuestas y los principales hallazgos obtenidos.
 
-**Segmento 2:**
-- **Nombre:** _____
-- **Edad:** _____
-- **Ocupación:** _____
-- **Foto/Captura:** ![Entrevista 2](image.jpg)
-- **Resumen/Transcripción:** [Detalle de la entrevista]
+#### Segmento objetivo #1: Arquitectos e Ingenieros Civiles (B2B)
+
+| Segmento objetivo #1: Arquitectos/Ingenieros | |
+|---|---|
+| **Entrevista 1:** Javier Maximo Ordoñez Cordova | |
+| **Enlace de la entrevista:** | [https://youtu.be/l9eikn4YOmw](https://youtu.be/l9eikn4YOmw) |
+| **Sexo:** Masculino | **Edad**: 59 |
+| **Instante en el que inicia:** 0 minutos y 0 segundos | **Duración:** 5 minutos y 7 segundos |
+| **Imagen del entrevistado:**<br><img src="assets/Entrevistdo1.png" alt="Entrevistado 1 - Javier Ordóñez" height="180" style="max-height: 180px; border-radius: 4px;" /> | |
+| **Resumen de la entrevista:**<br>Javier Ordóñez Córdoba es arquitecto con 30 años de experiencia en el sector. A lo largo de su trayectoria ha ejercido como docente en construcción civil, perito judicial en obras públicas, funcionario en municipalidades en áreas de desarrollo urbano y obras, además de supervisor y residente de proyectos arquitectónicos. Su trabajo está centrado en el diseño de viviendas, departamentos y otras edificaciones, siempre buscando garantizar buenas condiciones de ventilación, iluminación natural y distribución de espacios que favorezcan el bienestar de los usuarios.<br>Considera esencial mantenerse actualizado en el uso de software y herramientas tecnológicas como Revit, que simplifican procesos constructivos y permiten una mejor colaboración. Está abierto a la integración de tecnologías inteligentes en viviendas, como sistemas de iluminación automatizada, accesos inteligentes y control inalámbrico de dispositivos, aunque reconoce que esto incrementa ligeramente los costos de construcción. En cuanto a sostenibilidad, enfatiza la necesidad de priorizar energías renovables, como la solar y la eólica, para reducir la dependencia de fuentes contaminantes y costosas.<br>Entre sus frustraciones destaca la falta de apoyo gubernamental al desarrollo de la arquitectura y los bajos sueldos en comparación con el aporte profesional que se brinda. Pese a ello, se mantiene enfocado en incorporar innovaciones que satisfagan a los usuarios y en fomentar edificaciones modernas, sostenibles y adaptadas a las tendencias actuales del mercado inmobiliario.<br><br>**Datos adicionales del entrevistado:**<br>**Navegador preferido:** Google Chrome<br>**Sistema operativo de preferencia:** Windows<br>**Dispositivo usado con más frecuencia:** Computadora estacionaria, Laptop, Smartphone<br>**Dispositivo móvil preferido:** Android<br>**Principal medio de contacto:** Apps de colaboración<br>**Herramientas utilizadas:** Revit y software de diseño arquitectónico.<br>**Enfoque de diseño:** Distribución eficiente de espacios, ventilación e iluminación natural.<br>**Tecnologías inteligentes incorporadas:** Iluminación automatizada, accesos inteligentes, control inalámbrico de agua, desagüe y comunicación.<br>**Factores clave en diseño residencial:** Necesidades del usuario, satisfacción del cliente final y adaptación a tendencias tecnológicas.<br>**Motivaciones:** Crear edificaciones sostenibles y modernas, incorporar tecnologías inteligentes, mejorar procesos constructivos con software especializado.<br>**Frustraciones:** Falta de apoyo gubernamental, bajos sueldos en el sector, limitaciones presupuestarias de los clientes. | |
+| | |
+| **Entrevista 2:** Arturo Velazco | |
+| **Enlace de la entrevista:** | [https://youtu.be/zBm7PVg4cjI](https://youtu.be/zBm7PVg4cjI) |
+| **Sexo:** Masculino | **Edad:** 57 |
+| **Instante en el que inicia:** 11 minutos y 6 segundos | **Duración:** 4 minutos y 59 segundos |
+| **Imagen del entrevistado:**<br><img src="assets/Entrevistdo3.png" alt="Entrevistado 2 - Arturo Velazco" height="180" style="max-height: 180px; border-radius: 4px;" /> | |
+| **Resumen de la entrevista:**<br>Arturo Velasco es ingeniero civil colegiado desde 1994, con más de 30 años de experiencia en el sector construcción, especialmente en proyectos inmobiliarios y multifamiliares. Ha participado en obras de gran envergadura, como la ciudad de Nueva Cuerabamba, una central termoeléctrica y diversos edificios residenciales. Actualmente se desempeña como jefe de producción en una empresa inmobiliaria, donde prioriza la eficiencia en la gestión de obra, la coordinación de planos y tableros eléctricos, así como la integración de sistemas de automatización. En su labor enfatiza la comodidad del cliente, la eficiencia en las instalaciones y la coordinación entre especialidades. Sus objetivos incluyen escalar a puestos de mayor responsabilidad, fundar su propia constructora y aplicar su experiencia en proyectos modernos y altamente competitivos.<br>Entre los principales retos que identifica se encuentran la incompatibilidad de planos, las limitaciones técnicas de contratistas y el incremento de costos al integrar nuevas tecnologías. Reconoce que la automatización de luminarias, audio, cortinas, tomas eléctricas y electrodomésticos aporta un valor agregado de 7 a 8 en el mercado, aunque su adopción en el Perú aún es limitada. Considera viable una implementación progresiva con factibilidad de 6 sobre 10, siempre que no incremente significativamente los costos, y resalta que la clave está en alinear a clientes, constructores y autoridades. Además, señala como factores clave en el diseño residencial la adaptación a las necesidades del cliente, la integración tecnológica, la sostenibilidad y la eficiencia energética, recomendando que toda innovación se implemente de forma práctica y enfocada en la confianza y la eficiencia para los usuarios finales.<br><br>**Datos adicionales del entrevistado:**<br>**Navegador preferido:** Google Chrome<br>**Sistema operativo de preferencia:** Windows<br>**Dispositivo usado con más frecuencia:** Laptop<br>**Dispositivo móvil preferido:** iOS<br>**Principal medio de contacto:** LinkedIn<br>**Herramientas utilizadas:** Revit.<br>**Enfoque de diseño:** Optimiza procesos, unifica sistemas y prioriza la eficiencia y satisfacción del cliente.<br>**Tecnologías inteligentes incorporadas:** Uso de BIM (Revit) y automatización en puertas y semáforos, con visión de integración futura.<br>**Factores clave en diseño residencial:** Demanda del mercado, eficiencia energética, seguimiento postventa e innovación progresiva.<br>**Motivaciones:** Centralizar herramientas, mantener competitividad y modernizar la gestión con nuevas tecnologías.<br>**Frustraciones:** Resistencia tecnológica, burocracia estatal, tecnologías inestables y falta de apoyo institucional. | |
+| | |
+| **Entrevista 3:** Miguel Díaz | |
+| **Enlace de la entrevista:** | [https://youtu.be/M1nDEEuHymI](https://youtu.be/M1nDEEuHymI) |
+| **Sexo:** Masculino | **Edad:** 31 |
+| **Instante en el que inicia:** 16 minutos y 5 segundos | **Duración:** 6 minutos y 18 segundos |
+| **Imagen del entrevistado:**<br><img src="assets/Entrevistdo4.png" alt="Entrevistado 3 - Miguel Díaz" height="180" style="max-height: 180px; border-radius: 4px;" /> | |
+| **Resumen de la entrevista:**<br>Miguel es ingeniero civil con aproximadamente 10 años de experiencia profesional, 3 de ellos en Venezuela y 7 en Perú. Actualmente se desempeña como ingeniero residente en Nexo Ingeniería, empresa enfocada en la construcción de edificios multifamiliares. A lo largo de su trayectoria ha participado en proyectos de remodelaciones residenciales, habilitaciones urbanas, viviendas unifamiliares y plantas industriales. Su labor está centrada en el control de obra, asegurando que los proyectos se ejecuten conforme a los planos aprobados y a los presupuestos establecidos.<br>Considera esencial regirse por el Reglamento Nacional de Edificaciones, que constituye la base normativa para cualquier proyecto, y trabajar en conjunto con arquitectos y desarrolladores inmobiliarios para alinear las tendencias del mercado con las necesidades de los usuarios. Está abierto a la integración de tecnologías inteligentes en departamentos, como sistemas de control de iluminación o seguridad, a los que asigna un alto valor en términos de atractivo comercial. Sin embargo, reconoce que su implementación incrementa inevitablemente los costos, por lo que estima su viabilidad en un nivel medio. Recomienda que los planos que integren estas tecnologías sigan la claridad de los planos eléctricos, de modo que sean comprensibles para diferentes especialistas en obra.<br>Entre las principales dificultades de su rol actual, destaca los procesos burocráticos que surgen cuando se presentan modificaciones en los proyectos, ya que implican nuevos trámites y aprobaciones municipales. A pesar de ello, sostiene que una buena planificación y programación de obra reduce los contratiempos y permite ejecutar proyectos con eficiencia.<br><br>**Datos adicionales:**<br>**Navegador preferido:** Google Chrome<br>**Sistema operativo de preferencia:** Windows<br>**Dispositivo usado con más frecuencia:** Laptop<br>**Dispositivo móvil preferido:** Android<br>**Principal medio de contacto:** Email<br>**Herramientas utilizadas:** AutoCAD, Excel, Project, Mathcad.<br>**Ocupación actual:** Ingeniero residente en Nexo Ingeniería.<br>**Enfoque de diseño:** Cumplimiento del Reglamento Nacional de Edificaciones, alineación con tendencias del mercado y satisfacción del cliente final.<br>**Tecnologías inteligentes incorporadas:** Control de iluminación y seguridad.<br>**Motivaciones:** Garantizar calidad y rentabilidad en los proyectos, mantenerse abierto a la innovación tecnológica, mejorar procesos constructivos.<br>**Frustraciones:** Burocracia en modificaciones de obra y lentitud en aprobaciones municipales. | |
+| | |
+| **Entrevista 4:** Jorge Gomez | |
+| **Enlace de la entrevista:** | [https://www.youtube.com/watch?v=3jIZBLw9X-8](https://www.youtube.com/watch?v=3jIZBLw9X-8) |
+| **Sexo:** Masculino | **Edad:** 31 |
+| **Instante en el que inicia:** 16 minutos y 5 segundos | **Duración:** 6 minutos y 18 segundos |
+| **Imagen del entrevistado:**<br><img src="assets/Entrevistdo9.png" alt="Entrevistado 4 - Jorge Gómez" height="180" style="max-height: 180px; border-radius: 4px;" /> | |
+| **Resumen de la entrevista:**<br>Jorge Gómez es arquitecto con 4 años de experiencia en proyectos residenciales. Actualmente apoya en el desarrollo, coordinación y revisión de diseños en una constructora. Su labor se centra en asegurar que los planos sean funcionales y ejecutables.<br>Considera vital el equilibrio entre estética, funcionalidad y presupuesto. Valora altamente la integración de domótica (iluminación, cerraduras, seguridad) por la modernidad que aportan, pero estima su viabilidad en un nivel medio (5/10) por altos costos y falta de especialistas. Recomienda dejar preparadas las bases de conectividad desde la fase inicial.<br>Entre sus principales frustraciones están los cambios de último momento y la información poco clara, además de la incompatibilidad entre sistemas domóticos. Afronta esto con orden y coordinación constante.<br><br>**Datos adicionales:**<br>**Navegador preferido:** No especificado<br>**Sistema operativo de preferencia:** No especificado<br>**Dispositivo usado con más frecuencia:** No especificado<br>**Dispositivo móvil preferido:** No especificado<br>**Principal medio de contacto:** No especificado<br>**Herramientas utilizadas:** AutoCAD, Revit, SketchUp.<br>**Ocupación actual:** Arquitecto de apoyo en constructora.<br>**Enfoque de diseño:** Funcionalidad, estética moderna y viabilidad presupuestaria.<br>**Tecnologías inteligentes incorporadas:** Cerraduras, iluminación y seguridad básicas.<br>**Motivaciones:** Ganar experiencia para liderar proyectos multifamiliares a futuro.<br>**Frustraciones:** Cambios de diseño tardíos e incompatibilidad técnica entre sistemas. | |
+
+#### Segmento objetivo #2: Propietarios y Residentes de Apartamentos (B2C)
+
+| Segmento objetivo #2: Dueños de apartamentos | |
+|---|---|
+| **Entrevista 1:** Angela Alvarado Ordóñez | |
+| **Enlace de la entrevista:** | [https://youtu.be/z5K2cowIBxg](https://youtu.be/z5K2cowIBxg) |
+| **Sexo:** Femenino | **Edad:** 35 |
+| **Instante en el que inicia:** 27 minutos y 19 segundos | **Duración:** 5 minutos y 18 segundos |
+| **Imagen del entrevistado:**<br><img src="assets/Entrevistdo6.png" alt="Entrevistado 1 - Ángela Alvarado" height="180" style="max-height: 180px; border-radius: 4px;" /> | |
+| **Resumen de la entrevista:**<br>Ángela Alvarado Ordóñez es abogada de 35 años y reside desde el 2022 en un departamento en Jesús María, adquirido en 2021 por su ubicación céntrica y el precio accesible. Sus principales objetivos al vivir en un departamento son la comodidad, la seguridad y el acceso a una vivienda que se ajuste a su presupuesto. Su rutina diaria transcurre principalmente fuera de casa debido a su trabajo, por lo que utiliza el departamento sobre todo para descansar, aunque dedica tiempo a actividades como correr por las mañanas. Entre sus frustraciones actuales menciona la falta de consideración de algunos vecinos en la limpieza y uso de áreas comunes, el olor a cigarro en pasillos, la saturación de ascensores en horas pico y la percepción de un control insuficiente por parte del personal de seguridad.<br>Aunque no utiliza dispositivos inteligentes en su hogar, muestra interés en soluciones de domótica orientadas a la seguridad, como cerraduras electrónicas y cámaras en pasillos, así como en el control remoto de luces y electrodomésticos para evitar olvidos. Considera que una aplicación que integre estas funciones sería de gran utilidad, especialmente en las noches y al salir de casa, y asegura que la disponibilidad de esta tecnología influiría significativamente en su decisión de compra de un nuevo departamento. No obstante, expresa preocupaciones en torno a la privacidad, el manejo de datos y los posibles sobrecostos en electricidad, aunque estaría dispuesta a pagar una suscripción mensual si incluye funciones avanzadas como reportes de energía y alertas personalizadas, siempre que su costo guarde relación con la utilidad percibida.<br><br>**Datos adicionales:**<br>**Navegador preferido:** Brave<br>**Sistema operativo de preferencia:** Windows<br>**Dispositivo usado con más frecuencia:** Laptop<br>**Dispositivo móvil preferido:** Android<br>**Principal medio de contacto:** Email<br>**Personalidad tecnológica:** Cautelosa, interesada en tecnología práctica y segura.<br>**Objetivos principales:** Comodidad, seguridad y precio accesible.<br>**Tecnologías inteligentes de interés:** Cerraduras inteligentes, cámaras en pasillos, control remoto de luces y electrodomésticos.<br>**Motivaciones:** Garantizar seguridad, comodidad y evitar preocupaciones por olvidos o accesos no controlados.<br>**Frustraciones:** Vecinos poco considerados, olor a cigarro, saturación de ascensores, falta de control en seguridad y desorden en áreas comunes.<br>**Preocupaciones:** Privacidad de datos, control de imágenes y posibles sobrecostos de electricidad.<br>**Disposición de pago:** Sí, por suscripción mensual si aporta funciones útiles como reportes de energía y alertas. | |
+| | |
+| **Entrevista 2:** Christy Karen Callata Alvarez | |
+| **Enlace de la entrevista:** | [https://youtu.be/aDa8HZ03PWQ](https://youtu.be/aDa8HZ03PWQ) |
+| **Sexo:** Femenino | **Edad:** 24 |
+| **Instante en el que inicia:** 32 minutos y 37 segundos | **Duración:** 4 minutos y 56 segundos |
+| **Imagen del entrevistado:**<br><img src="assets/Entrevistdo7.png" alt="Entrevistado 2 - Christy Callata" height="180" style="max-height: 180px; border-radius: 4px;" /> | |
+| **Resumen de la entrevista:**<br>Cristi Karen Callata Álvarez vive desde hace menos de un año en un departamento, elegido por el espacio y la cantidad de habitaciones necesarias para compartir. Valora principalmente la tranquilidad de la zona, lo que le permite descansar, aunque reconoce como principal frustración la distancia hacia su centro laboral, que le implica viajes de hasta una hora y veinte minutos. Su rutina diaria transcurre mayormente fuera de casa, por lo que busca que ciertas tareas domésticas se realicen de forma más automática y práctica, como el encendido y apagado de luces. Actualmente no cuenta con dispositivos inteligentes, pero muestra interés en incorporarlos para simplificar su día a día y mejorar la seguridad.<br>Callata considera útil una aplicación que permita controlar luces, cámaras y accesos de manera remota, ya que mejoraría su comodidad y seguridad dentro del hogar. Valora especialmente que la app sea fácil de usar, intuitiva y accesible. Puntúa con un 6 o 7 sobre 10 la influencia de estas funcionalidades en la decisión de adquirir un nuevo apartamento. Reconoce que la principal preocupación sería la seguridad de sus datos personales al usar una aplicación de este tipo. Además, estaría dispuesta a pagar una suscripción mensual por funciones avanzadas, siempre que estas ofrezcan mayores facilidades y control en su vivienda.<br><br>**Datos adicionales:**<br>**Navegador preferido:** Google Chrome<br>**Sistema operativo de preferencia:** Windows<br>**Dispositivo usado con más frecuencia:** Laptop<br>**Dispositivo móvil preferido:** Android<br>**Principal medio de contacto:** Apps de colaboración<br>**Personalidad tecnológica:** Interesada, pero aún sin adopción.<br>**Objetivos principales:** Tranquilidad, comodidad y seguridad en el hogar.<br>**Tecnologías inteligentes de interés:** Automatización de luces, cámaras de seguridad conectadas al celular, control de accesos.<br>**Motivaciones:** Ahorrar tiempo, simplificar tareas y reforzar seguridad.<br>**Frustraciones:** Larga distancia al trabajo y tiempo de traslado.<br>**Preocupaciones:** Seguridad y privacidad de datos personales.<br>**Disposición de pago:** Sí, suscripción mensual por funciones avanzadas. | |
 
 ### 2.2.3. Análisis de entrevistas.
-- **Análisis Segmento 1:** [Hallazgos clave]
-- **Análisis Segmento 2:** [Hallazgos clave]
+
+| Segmento | Características | Objetivos comunes | Características subjetivas comunes |
+|---|---|---|---|
+| **Segmento #1: Ingenieros/Arquitectos** | **Sexo:** Masculino<br>**Edad:** 29-59 años<br>**Dispositivos:** Laptop/PC con software especializado<br>**Programas:** Revit, AutoCAD, software de diseño arquitectónico, coordinación de planos eléctricos<br>**Canales de información:** Actualización constante en tendencias tecnológicas, uso de correo de forma empresarial<br>**Canales de trabajo:** Colaboración con equipos multidisciplinarios, comunicación y liderazgo | • Garantizar eficiencia y calidad en el diseño y ejecución de proyectos residenciales.<br><br>• Incorporar tecnologías inteligentes y sostenibles en sus proyectos.<br><br>• Adaptarse a las tendencias del mercado y necesidades del usuario final.<br><br>• Mejorar procesos constructivos mediante software especializado.<br><br>• Escalar profesionalmente y/o fundar su propia empresa.<br><br>• Superar retos técnicos y de coordinación entre especialidades. | **Motivación:** Usar tecnología para optimizar proyectos, mostrarlos a más público, personalizar funciones y recibir retroalimentación.<br><br>**Frustración:** Falta de plataformas flexibles, baja exposición de diseños y trabas técnicas que dificultan la integración tecnológica. |
+| **Segmento #2: Propietarios de apartamentos** | **Sexo:** Mixto<br>**Edad:** 24-63 años<br>**Dispositivos:** Laptop, smartphone, televisores, computadoras<br>**Programas:** Apps de noticias, organización y movilidad, no uso de software profesional<br>**Canales de información:** Redes sociales, aplicaciones móviles, medios digitales<br>**Marcas preferidas:** Samsung, HP, Lenovo, Android, Apple | • Priorizar comodidad y seguridad en el hogar.<br><br>• Optimizar el uso de tecnología para facilitar la vida diaria.<br><br>• Garantizar privacidad y control de datos personales.<br><br>• Disposición a pagar por suscripción si aporta valor.<br><br>• Mejorar la eficiencia y el control de dispositivos en el hogar. | **Motivación:** Mejorar la experiencia en el hogar con tecnología interactiva, gestionar dispositivos de forma personalizada, optimizar comodidad y seguridad, y recibir retroalimentación por el uso eficiente.<br><br>**Frustración:** Carencia de plataformas atractivas y flexibles, limitaciones en dispositivos inteligentes, dificultad de adaptación a cada hogar y barreras técnicas que complican su integración. |
 
 ## 2.3. Needfinding.
-### 2.3.1. User Personas.
-**Segmento 1:**
-![User Persona 1](image.jpg)
+El Needfinding, como proceso de investigación, se enfocó en descubrir las necesidades y frustraciones subyacentes de dos segmentos de usuario clave: arquitectos e ingenieros civiles, representados por Miguel Veramendi; y dueños de apartamentos, representados por Carla Flores. A través de entrevistas cualitativas, se identificaron patrones comunes y específicos que revelaron la necesidad de herramientas tecnológicas para optimizar la colaboración y la gestión de proyectos en el sector de la construcción, así como la demanda de control intuitivo y centralizado en el hogar, priorizando la seguridad y la funcionalidad para el usuario final. Este entendimiento profundo de los deseos y expectativas de los usuarios fue fundamental para sentar las bases de una solución que responda genuinamente a sus necesidades y requisitos.
 
-**Segmento 2:**
-![User Persona 2](image.jpg)
+### 2.3.1. User Personas.
+En esta sección se elaboraron perfiles representativos, denominados "User Personas", que compilan los rasgos esenciales de los usuarios a partir del estudio cualitativo de entrevistas. Este recurso permite transformar los datos de los individuos en arquetipos comprensibles que guían la estrategia de diseño, facilitando decisiones clave sobre funcionalidades y experiencia de usuario. Se crearon dos perfiles principales para el proyecto: uno correspondiente a arquitectos e ingenieros civiles, y otro vinculado a los dueños de apartamentos.
+
+**Anexo Diagrama User Persona:** [https://goo.su/nQxos3](https://goo.su/nQxos3)
+
+**Segmento 1: Arquitectos e Ingenieros Civiles**
+<br>
+<img src="assets/UserPersona_Segmento1.png" alt="User Persona 1 - Miguel Veramendi" width="650" style="max-width: 100%; height: auto; border-radius: 6px;" />
+
+**Segmento 2: Dueños de apartamentos**
+<br>
+<img src="assets/UserPersona_Segmento2.png" alt="User Persona 2 - Carla Flores" width="650" style="max-width: 100%; height: auto; border-radius: 6px;" />
 
 ### 2.3.2. User Task Matrix.
-| ID | Tarea / Task | Importancia (Seg. 1) | Frecuencia (Seg. 1) | Importancia (Seg. 2) | Frecuencia (Seg. 2) |
-|---|---|---|---|---|---|
-| UT01 | [Descripción de la tarea] | Alta | Alta | Media | Baja |
+A continuación se presenta el **User Task Matrix**, elaborado a partir del análisis cualitativo y empírico de las entrevistas realizadas a los dos segmentos clave para el proyecto. Este artefacto concentra las actividades que los usuarios realizan habitualmente para satisfacer sus metas y necesidades, independientemente de la existencia de una solución de software específica.
+
+Para este estudio se consideran los dos segmentos objetivo del proyecto:
+- **Segmento #1: Arquitectos e Ingenieros Civiles (B2B)**, representado por el User Persona **Miguel Veramendi**, enfocado en la viabilidad técnica, habitabilidad, coordinación de especialidades y eficiencia constructiva.
+- **Segmento #2: Propietarios y Residentes de Apartamentos (B2C)**, representado por la User Persona **Carla Flores**, centrada en el confort térmico, la seguridad, la conveniencia doméstica y el ahorro familiar.
+
+El cuadro presenta como columnas a cada User Persona, desglosando como subcolumnas la **Frecuencia** (*Frequency*) y la **Importancia** (*Importance*) que le otorgan a cada tarea. En las filas se ubican las tareas identificadas en el dominio de gestión energética, confort ambiental, automatización e instalaciones residenciales.
+
+| N° | Tarea (Task) | Miguel Veramendi (Arquitectos / Ingenieros) | | Carla Flores (Dueños de apartamentos) | |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| | | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
+| 1 | Revisar el consumo eléctrico en recibos mensuales | Mensual | Alta | Mensual | Alta |
+| 2 | Estimar el gasto energético de dispositivos y equipos instalados | Semanal | Alta | Ocasional | Media |
+| 3 | Supervisar el encendido/apagado y uso responsable de luminarias y equipos | Diaria | Alta | Diaria | Alta |
+| 4 | Monitorear el confort ambiental interior (temperatura, humedad y ventilación) | Semanal | Alta | Diaria | Alta |
+| 5 | Verificar la seguridad física y el control de accesos a las instalaciones | Diaria | Alta | Diaria | Alta |
+| 6 | Identificar picos de consumo y momentos de sobrecarga o mayor gasto | Semanal | Alta | Semanal | Alta |
+| 7 | Coordinar con proveedores, especialistas o servicios de mantenimiento | Semanal | Alta | Ocasional | Media |
+| 8 | Buscar alternativas de sostenibilidad, automatización y eficiencia energética | Semanal | Alta | Ocasional | Alta |
+| 9 | Establecer metas de ahorro y presupuestos de consumo | Mensual | Alta | Continua / Siempre | Alta |
+| 10 | Comparar el consumo y comportamiento entre diferentes periodos | Mensual | Alta | Ocasional | Media |
+| 11 | Revisar gastos generales y balances económicos (de obra o del hogar) | Mensual | Alta | Mensual | Alta |
+| 12 | Asistir a capacitaciones o talleres de actualización técnica y normativa | Trimestral | Media | Ocasional | Baja |
+
+#### Análisis y Hallazgos del User Task Matrix
+
+A partir de la matriz de tareas, se identifican las prioridades funcionales que orientan el desarrollo de la solución digital de **IoBuild**:
+
+1. **Tareas con mayor frecuencia e importancia (Tareas Críticas):**
+   - **Para Miguel Veramendi (B2B):** Las tareas más críticas corresponden a la *supervisión diaria del estado de luminarias y equipos* (Tarea 3), *verificación de seguridad y accesos* (Tarea 5), y el *seguimiento semanal de consumos y condiciones ambientales de los proyectos* (Tareas 2, 4 y 6). Para el segmento profesional, desatender estos puntos genera sobrecostos operativos, riesgo de penalidades eléctricas en faena o entregas con deficiencias de confort para los futuros compradores.
+   - **Para Carla Flores (B2C):** Sus tareas prioritarias y más frecuentes son de periodicidad diaria: *apagar y regular luminarias y aparatos para evitar consumos fantasma* (Tarea 3), *asegurar los accesos del departamento al salir o dormir* (Tarea 5) y *verificar el confort térmico interior* (Tarea 4). Estas actividades se articulan con la *revisión mensual del recibo eléctrico* (Tarea 1) y el esfuerzo continuo por *mantener metas de ahorro* (Tarea 9).
+
+2. **Principales coincidencias entre User Personas:**
+   - **Preocupación central por el ahorro energético y la prevención de sobrecostos:** Ambos perfiles asignan importancia **Alta** a la revisión de recibos (Tarea 1), detección de picos de gasto (Tarea 6) y balance general de gastos (Tarea 11), evidenciando que el costo de la energía es un factor de fricción transversal.
+   - **Control de iluminación y accesos como rutina obligada:** Tanto en la gestión de un edificio/obra como dentro de la vivienda, asegurar que no queden luces encendidas innecesariamente y constatar el cierre seguro de puertas son hábitos diarios esenciales.
+   - **Interés creciente en la sostenibilidad y automatización:** Ambos segmentos buscan soluciones que optimicen el uso de recursos y aporten sostenibilidad (Tarea 8), siempre que no impliquen complejidades técnicas o costos desproporcionados.
+
+3. **Principales diferencias entre lo realizado por los User Personas:**
+   - **Perspectiva macro y técnica vs. micro y doméstica:** Miguel ejecuta tareas con rigor normativo, cálculo de cargas eléctricas y proyección a escala de edificio multifamiliar (coordinación con ingenierías y subcontratistas), mientras que Carla se concentra en la practicidad inmediata, la sencillez de uso y el bienestar familiar directo.
+   - **Frecuencia operativa en estimación y mantenimiento:** Para Miguel, la *estimación de consumos* (Tarea 2) y la *coordinación con especialistas y servicios técnicos* (Tarea 7) son actividades semanales indispensables para su labor constructiva, mientras que para Carla son esporádicas, suscitadas únicamente ante fallas puntuales o la compra de nuevos electrodomésticos.
+   - **Enfoque de fijación de metas:** Miguel establece metas de ahorro enmarcadas en cierres contables mensuales de obra, en tanto que Carla mantiene una actitud de vigilancia continua y constante sobre los hábitos de consumo en su vivienda.
 
 ### 2.3.3. User Journey Mapping.
-**Registro e inicio:**
-- ...
+Con el propósito de obtener una comprensión integral de las necesidades, comportamientos, emociones y principales dificultades de nuestros segmentos de usuario, elaboramos un User Journey Map empleando la herramienta especializada UXPressia. Este ejercicio facilitó la representación clara y empática del recorrido que cada perfil de usuario experimenta, desde la detección de una necesidad inicial hasta la interacción final con el producto o servicio, permitiéndonos identificar oportunidades de mejora y optimización en su experiencia.
 
-**Uso principal y monitoreo:**
-- ...
+La actividad se centró en dos segmentos clave:
 
-**Interacción avanzada y reportes:**
-- ...
+1. **Miguel Veramendi:** Arquitecto e ingeniero civil que busca garantizar la viabilidad técnica de los proyectos mediante la integración de tecnologías para lograr diseños más innovadores.
+2. **Carla Flores:** Dueña de apartamento que busca soluciones que le permitan automatizar sus rutinas y tener un control sencillo y centralizado sobre sus dispositivos.
+
+Para ambos perfiles se diseñó un mapa que incluye:
+
+- Las fases del proceso.
+- Los objetivos del usuario en cada etapa.
+- El detalle de acciones realizadas, canales utilizados y emociones experimentadas.
+- Los problemas identificados y las oportunidades de mejora a lo largo del recorrido.
+
+Mediante el uso de UXPressia se obtuvo una representación visual clara y dinámica que favorece la toma de decisiones con un enfoque centrado en el usuario. Este proceso no solo profundiza en la comprensión de sus motivaciones y retos, sino que también orienta el diseño de soluciones más pertinentes, empáticas y funcionales para cada perfil identificado.
+
+**Segmento Objetivo #1: Arquitectos e Ingenieros Civiles**
+<br>
+<img src="assets/UserJourneyMap_Segmento1.png" alt="Imagen User Journey Mapping 1 - Segmento 1" width="700" style="max-width: 100%; height: auto; border-radius: 6px;" />
+
+**Segmento Objetivo #2: Dueños de apartamentos**
+<br>
+<img src="assets/UserJourneyMap_Segmento2.png" alt="Imagen User Journey Mapping 2 - Segmento 2" width="700" style="max-width: 100%; height: auto; border-radius: 6px;" />
 
 ### 2.3.4. Empathy Mapping.
-**Segmento 1:**
-![Empathy Map Segmento 1](image.jpg)
+Como parte del enfoque de diseño centrado en el usuario, se desarrollaron mapas de empatía (*Empathy Maps*) para los dos segmentos principales identificados: Propietarios y Constructoras. Esta técnica, introducida por Dave Gray, permite plasmar de manera visual lo que los usuarios piensan, sienten, expresan y hacen en relación con el producto o servicio, facilitando una comprensión más profunda de su experiencia tanto emocional como cognitiva.
 
-**Segmento 2:**
-![Empathy Map Segmento 2](image.jpg)
+#### Objetivo del Empathy Mapping
+El mapa de empatía tiene como finalidad ampliar la visión sobre el usuario más allá de sus conductas observables, explorando sus motivaciones, temores, frustraciones y aspiraciones implícitas. Se trata de una herramienta clave para identificar oportunidades de mejora desde un enfoque cualitativo, complementando los hallazgos obtenidos a través de entrevistas, observaciones y análisis de comportamientos.
+
+<div style="page-break-before: always;"></div>
+
+#### Segmento 1: Arquitectos e Ingenieros Civiles (Miguel Veramendi)
+
+<img src="assets/EmpathyMap_Segmento1.png" width="75%" alt="Imagen Empathy Map Segmento 1" style="max-width: 100%; height: auto; border-radius: 6px;">
+
+##### Desglose del Empathy Map 1 (Miguel Veramendi)
+- **¿Con quién estamos empatizando?** Miguel Veramendi, 40 años, arquitecto peruano enfocado en integrar tecnología innovadora y sostenible en edificaciones, pero que enfrenta barreras de costo, complejidad técnica y regulaciones.
+- **¿Qué necesita hacer?** Integrar tecnologías inteligentes y sostenibles en sus proyectos arquitectónicos; garantizar la viabilidad técnica y estructural; optimizar costos sin comprometer la calidad; y posicionar a su empresa como referente en innovación.
+- **¿Qué ve?** Soluciones tecnológicas innovadoras en el mercado pero costosas y complejas; tendencias crecientes hacia energías renovables y automatización; competencia que busca diferenciarse; y clientes exigentes que valoran eficiencia, seguridad y modernidad.
+- **¿Qué escucha?** De colegas: *"Estas tecnologías aún no están maduras o son muy caras"*; de clientes: *"Queremos proyectos innovadores, eficientes y sostenibles"*; de autoridades: *"Existen muchas trabas para implementar nuevas soluciones"*; y del mercado: *"La competencia también busca diferenciarse con innovación"*.
+- **¿Qué dice?** *“Quiero ofrecer espacios innovadores, sostenibles y seguros”*, *“Las soluciones inteligentes existen, pero son muy costosas y difíciles de integrar”*, *“Necesitamos tecnologías accesibles y compatibles para realmente transformar el sector”*, y *“Lo más importante es asegurar la calidad estructural de mis proyectos”*.
+- **¿Qué hace?** Investiga constantemente nuevas tecnologías y tendencias del mercado; evalúa proveedores y soluciones con rigurosidad técnica; realiza pruebas piloto para medir la viabilidad de integración; y colabora con ingenieros y clientes para validar propuestas.
+- **¿Qué piensa y siente?**
+  - *Piensa:* *“Quiero que mis proyectos sean innovadores, pero muchas tecnologías son demasiado costosas”*, *“Necesito asegurarme de que cada propuesta sea viable técnica y económicamente”*, *“La innovación es clave para diferenciarme, pero siento que aún hay demasiados obstáculos”*, y *“Si logro integrar soluciones inteligentes accesibles, mi trabajo tendrá un impacto real en el sector”*.
+  - *Siente:* *“Me frustra que las regulaciones retrasen la implementación de soluciones sostenibles”*.
+- **Pains (Dolores y Frustraciones):** Frustración por los altos costos y complejidad de las soluciones inteligentes; estrés por la falta de compatibilidad tecnológica entre sistemas; preocupación por trabas regulatorias que frenan la innovación; y carga constante de garantizar viabilidad técnica y optimización de costos.
+- **Gains (Aspiraciones y Beneficios):** Satisfacción al lograr proyectos modernos, eficientes y sostenibles; orgullo de posicionar a su empresa como líder en innovación arquitectónica; confianza al ofrecer edificaciones seguras y funcionales; y tranquilidad al verificar que la inversión tecnológica aporta valor agregado y reconocimiento.
+
+<div style="page-break-before: always;"></div>
+
+#### Segmento 2: Propietarios y Residentes de Apartamentos (Carla Flores)
+
+<img src="assets/EmpathyMap_Segmento2.png" width="75%" alt="Imagen Empathy Map Segmento 2" style="max-width: 100%; height: auto; border-radius: 6px;">
+
+##### Desglose del Empathy Map 2 (Carla Flores)
+- **¿Con quién estamos empatizando?** Carla Flores, 32 años, abogada peruana. Es sociable, activa en redes sociales y suele salir de noche con sus amigos. Siente una constante preocupación por la inseguridad en su ciudad, especialmente al movilizarse en horarios nocturnos.
+- **¿Qué necesita hacer?** Acceder de manera sencilla a una plataforma tecnológica que simplifique sus tareas diarias; contar con información clara y útil para tomar decisiones en el momento adecuado; tener un sistema confiable que le genere tranquilidad y reduzca preocupaciones; y lograr que la tecnología se integre de forma natural en su rutina.
+- **¿Qué ve?** Opciones tecnológicas en el mercado que suelen ser complejas o poco adaptadas a sus necesidades reales; personas que recurren a soluciones digitales para organizarse; recomendaciones de familiares y amigos sobre aplicaciones que prometen mejorar la calidad de vida; y una brecha notable entre lo que ofrecen las herramientas digitales y lo que realmente necesita en su día a día.
+- **¿Qué escucha?** De amigos: *"Yo uso esta aplicación, te podría servir"*; de la familia: *"Ten cuidado con lo que descargas, algunas cosas no son seguras"*; de publicidad: *"La mejor herramienta para cambiar tu rutina"*; y de su comunidad: historias de éxito y fracaso con soluciones tecnológicas similares.
+- **¿Qué dice?** *“Necesito algo fácil de usar, que no me complique más de lo que ya estoy”*, *“Si me ayuda a organizarme y me ahorra tiempo, vale la pena”*, *“No quiero perderme entre mil funciones innecesarias”*, y *“Lo más importante es que sea confiable y que realmente me sirva”*.
+- **¿Qué hace?** Prueba aplicaciones o servicios digitales para evaluar su utilidad; pide referencias a conocidos antes de comprometerse con una nueva herramienta; abandona plataformas confusas que no cumplen sus expectativas; e integra gradualmente en su rutina aquellas soluciones que percibe como beneficiosas.
+- **¿Qué piensa y siente?**
+  - *Piensa:* *“Si esta solución es confiable, podría integrarla sin problema en mi rutina diaria”*, *“Me preocupa que una herramienta nueva sea complicada y me haga perder tiempo en lugar de ayudarme”*, *“Quiero sentir que estoy en control de mis actividades y no depender de procesos confusos”*, y *“Sería un alivio encontrar algo que realmente me simplifique la vida y me haga sentir más organizada”*.
+  - *Siente:* *“Me frustra cuando una aplicación promete mucho y no cumple con lo que necesito”*.
+- **Pains (Dolores y Frustraciones):** Estrés al sentir que la tecnología puede complicar más que ayudar; inseguridad frente a plataformas poco claras o con baja confiabilidad; y frustración cuando una herramienta no cumple con lo prometido.
+- **Gains (Aspiraciones y Beneficios):** Tranquilidad al encontrar una solución ajustada a sus necesidades; confianza al integrar una herramienta digital estable en su rutina diaria; satisfacción por ahorrar tiempo y sentir mayor control de sus actividades; y motivación para recomendar la herramienta con su círculo cercano.
+
+<div style="page-break-before: always;"></div>
 
 ## 2.4. Big Picture EventStorming.
-[Diagrama y narrativa del Big Picture EventStorming que modela el dominio del negocio de extremo a extremo: Domain Events, Commands, Read Models, Aggregates y Policies]
 
-![Big Picture EventStorming](image.jpg)
+Para el desarrollo del Big Picture EventStorming, se utilizó la herramienta colaborativa Miro, la cual facilitó la exploración visual, dinámica y consensuada de los diferentes elementos y flujos del negocio de extremo a extremo. A continuación, se presentan los componentes identificados durante las sesiones de modelado del dominio:
+
+Primero, se definieron las leyendas y códigos visuales para los diferentes artefactos utilizados en el modelado del EventStorming:
+
+![Big-Picture-EventStorming-Leyenda](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%202/Big-Picture-EventStorming-Leyenda.png)
+<br>
+
+- **Domain Events (Naranja):** Representa un hecho significativo del negocio que ya ocurrió en el pasado y es inmutable.<br>
+- **Hotspot Question Improvement (Rojo/Púrpura):** Señala un punto de incertidumbre, duda o posible conflicto en el proceso para visibilizar preguntas que requieren análisis y mejora continua.<br>
+- **Definition (Amarillo claro):** Aporta una explicación breve y precisa de un concepto clave dentro del dominio del negocio.<br>
+- **Actor (Amarillo pequeño):** Representa a la persona, rol u organización que interactúa con el sistema o desencadena acciones directas.<br>
+- **Command (Azul):** Expresa la intención o petición explícita de realizar una acción dentro del sistema promovida por un actor o política.<br>
+- **Comment (Gris/Blanco):** Sirve para registrar notas, aclaraciones u observaciones de contexto que enriquecen la discusión del equipo sin alterar el flujo principal.<br>
+- **Policy (Lila/Gris claro):** Define una regla o condición de negocio que conecta reactivamente un evento previo con un nuevo comando consecuente.<br>
+- **External System (Rosa/Fucsia):** Representa plataformas, APIs o servicios externos con los que el sistema interactúa (ej. pasarelas de pago o brokers MQTT).<br>
+
+El proceso colaborativo de EventStorming permitió mapear el flujo de valor integral del negocio, partiendo de la exploración temporal de los domain events, la identificación de los actores involucrados, la formulación de comandos disparadores y la definición de políticas operativas. A partir de ello, se estructuraron los 5 flujos clave del landscape de IoBuild:
+
+<br>
+
+**Big Picture EventStorming 1: Onboarding de Constructora y Asignación de Unidades**<br>
+Modela la incorporación de las empresas inmobiliarias y constructoras en la plataforma. Se identifican domain events clave como la creación de la cuenta corporativa y la parametrización de edificios y departamentos. El actor principal (la constructora) inicia sesión, accede al módulo de gestión y registra la infraestructura. El sistema valida la disponibilidad física de las unidades habitacionales y emite notificaciones operativas en caso de duplicidad o conflicto.
+<br>
+![Big-Picture-EventStorming-1](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%202/Big-Picture-EventStorming-1.png)
+<br><br>
+
+**Big Picture EventStorming 2: Suscripción y Contratación de Planes SaaS**<br>
+Representa el ciclo comercial y financiero. Los domain events abarcan la selección de planes empresariales, la emisión de órdenes de pago, la confirmación o rechazo transaccional y la posterior activación del servicio. La constructora evalúa el catálogo de planes según el volumen de unidades gestionadas; el sistema se conecta con la pasarela de pagos externa para verificar la transacción y actualiza automáticamente los límites operativos del cliente.
+<br>
+![Big-Picture-EventStorming-2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%202/Big-Picture-EventStorming-2.png)
+<br><br>
+
+**Big Picture EventStorming 3: Planificación e Integración de Proyectos Inteligentes**<br>
+Describe la configuración técnica de nuevas edificaciones residenciales. El actor principal (equipo técnico de la constructora) recibe los requisitos y especificaciones del proyecto, registra la obra en IoBuild y carga la distribución espacial junto a las especificaciones técnicas de zonificación. El sistema asiste en la asignación de módulos IoT (sensores ambientales y relés de control) y facilita la validación técnica previa a la entrega final y transferencia de control al residente o junta de propietarios.
+<br>
+![Big-Picture-EventStorming-3](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%202/Big-Picture-EventStorming-3.png)
+<br><br>
+
+**Big Picture EventStorming 4: Telemetría, Monitoreo y Automatización en Operación**<br>
+Modela la fase operativa del sistema en los departamentos y áreas comunes. Los domain events incluyen la recepción periódica de telemetría ambiental, el registro de métricas de consumo y el disparo de alertas por superación de umbrales. El residente o supervisor consulta el estado de las instalaciones, ajusta perfiles de confort y recibe notificaciones inmediatas ante anomalías o consumos atípicos de energía.
+<br>
+![Big-Picture-EventStorming-4](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%202/Big-Picture-EventStorming-4.png)
+<br><br>
+
+**Big Picture EventStorming 5: Emparejamiento y Provisión de Dispositivos IoT**<br>
+Detalla el aprovisionamiento e inicialización de hardware en las propiedades. Los domain events cubren la detección de hardware, la verificación de credenciales de red, la confirmación de enlace exitoso o la notificación de error en la sincronización. El residente o técnico instalador vincula nuevos sensores o actuadores guiado por la plataforma, que valida la compatibilidad e incorpora el dispositivo al registro activo.
+<br>
+![Big-Picture-EventStorming-5](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%202/Big-Picture-EventStorming-5.png)
+
+---
 
 ## 2.5. Ubiquitous Language.
-```
-- Término 1: Definición clara dentro del contexto delimitado del negocio.
-- Término 2: Definición clara dentro del contexto delimitado del negocio.
-```
+
+Con el objetivo de garantizar una comunicación precisa, libre de ambigüedades y compartida entre el equipo de desarrollo, los especialistas del sector inmobiliario y los usuarios finales, se definió el siguiente lenguaje ubicuo correspondiente al dominio de edificaciones inteligentes y gestión IoT:
+
+| Ubiquitous Term | Definición del Dominio Funcional |
+| :--- | :--- |
+| **Client** *(Cliente Inmobiliario)* | Empresa constructora, promotora o inmobiliaria que contrata la suscripción de IoBuild para equipar y gestionar proyectos residenciales con valor domótico. |
+| **Property Manager** *(Administrador de Edificación)* | Rol responsable de supervisar la operatividad general, consumo energético de áreas comunes y mantenimiento de una o varias edificaciones. |
+| **Resident** *(Residente / Propietario)* | Usuario que habita una unidad residencial y hace uso directo de las funciones de confort, visualización de consumo y automatización en su espacio. |
+| **Platform Operator** *(Operador de Plataforma)* | Responsable interno del servicio SaaS que administra la disponibilidad global, planes comerciales y catálogo de dispositivos certificados. |
+| **Property / Building** *(Propiedad / Edificio)* | Estructura inmobiliaria colectiva que agrupa un conjunto de unidades habitacionales y áreas compartidas bajo una misma gestión técnica. |
+| **Unit** *(Unidad Habitacional / Departamento)* | Espacio habitacional individualizado dentro de un edificio al cual se asocian residentes y una red específica de dispositivos IoT. |
+| **Device** *(Dispositivo IoT)* | Nodo físico compuesto por microcontrolador, sensores o actuadores que interactúa con el entorno físico y transmite datos hacia la plataforma. |
+| **Environmental Sensor** *(Sensor Ambiental)* | Componente de hardware destinado a medir variables de habitabilidad física como temperatura ambiente, humedad relativa o presencia. |
+| **Actuator** *(Actuador / Conmutador)* | Dispositivo electrónico (ej. relé, servomotor) capaz de alterar el estado de un circuito físico para encender iluminación o controlar accesos. |
+| **Device Profile** *(Perfil de Dispositivo)* | Especificación y plantilla estandarizada de configuración que define los parámetros de telemetría y rangos operativos para un tipo de hardware. |
+| **Provisioning** *(Aprovisionamiento / Emparejamiento)* | Secuencia técnica mediante la cual un nuevo nodo IoT es registrado, autenticado y vinculado de manera segura a una unidad específica. |
+| **Telemetry** *(Telemetría)* | Flujo de lecturas continuas de variables físicas y métricas de consumo energético emitidas por los sensores hacia el sistema de procesamiento. |
+| **Device State** *(Estado de Dispositivo)* | Condición operativa reportada por el nodo físico (ej. *En línea*, *Fuera de línea*, *Alerta*, *Batería crítica*). |
+| **Control Action** *(Acción de Control)* | Instrucción emitida hacia un actuador para inducir un cambio físico inmediato (ej. corte preventivo, apertura o encendido). |
+| **Environmental Profile / Scene** *(Perfil Ambiental / Escena)* | Conjunto de parámetros de confort y automatización predefinidos que ajustan simultáneamente el comportamiento de múltiples actuadores y sensores. |
+| **Threshold Alert** *(Alerta de Umbral)* | Notificación automática desencadenada cuando una variable física o de consumo supera los rangos máximos o mínimos establecidos por la regla de negocio. |
+| **Monitoring Console** *(Consola de Monitoreo)* | Espacio centralizado de supervisión donde se presenta la síntesis del estado operativo de los dispositivos y el histórico de métricas recopiladas. |
+| **Subscription** *(Suscripción SaaS)* | Modalidad contractual que regula el nivel de servicio, cantidad de edificios admitidos y cupos de dispositivos soportados en la plataforma. |
+| **Billing Cycle** *(Ciclo de Facturación)* | Periodo temporal recurrente bajo el cual se calculan los costos y cargos por el servicio de gestión y soporte contratado. |
 
 ---
 
