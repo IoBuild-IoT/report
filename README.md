@@ -966,57 +966,721 @@ Para el control, priorización y diseño del Product Backlog se utilizó la herr
 # Capítulo IV: Solution Software Design
 
 ## 4.1. Strategic-Level Domain-Driven Design.
+
+El enfoque de **Strategic-Level Domain-Driven Design** sirve como pilar esencial en el desarrollo de la plataforma **IoBuild**. Mediante este marco de diseño estratégico, es posible identificar y delimitar los distintos contextos del dominio, definir cómo se relacionan entre sí y construir una arquitectura de software modular que responda a los objetivos del negocio en edificaciones inteligentes y telemetría IoT.
+
+En esta etapa estratégica, se prioriza:
+
+- Un entendimiento profundo del dominio, mediante la identificación de los procesos clave del negocio.
+- La definición de *Bounded Contexts*, estableciendo límites claros entre las distintas áreas funcionales.
+- El modelado de las relaciones y contratos de integración entre los diferentes contextos.
+- El diseño de una arquitectura de software estructurada e integral basada en el modelo C4.
+
 ### 4.1.1. Design-Level EventStorming.
+
+El Design-Level EventStorming es una técnica de modelado colaborativo que permite analizar y entender en profundidad el dominio de IoBuild. A través de sesiones de trabajo conjunto, esta práctica ayuda a identificar elementos clave como eventos de dominio, comandos, agregados y bounded contexts.
+
 #### 4.1.1.1 Candidate Context Discovery.
-[Identificación y justificación de los Bounded Contexts candidatos descubiertos]
+El Candidate Context Discovery es el proceso mediante el cual identificamos los posibles bounded contexts dentro del dominio de IoBuild. Este proceso se basa en el análisis de los eventos, comandos y agregados identificados durante las sesiones de EventStorming.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%209.jpg?raw=true)<br>
+Representa la frontera administrativa inicial de la plataforma. El flujo muestra a la **Constructora** ejecutando comandos para crear propietarios y asignar departamentos, estableciendo el evento crítico de **Apartamento Asignado**. Además, define la regla de negocio para adquirir unidades adicionales condicionada a la validación de **Fondos Suficientes**.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2010.jpg?raw=true)<br>
+Define el límite de seguridad y autenticación. El diagrama expone el proceso donde un usuario inicia un intento de sesión, el sistema verifica las credenciales y, tras validarlas, genera un **Token Acceso**, marcando la sesión como iniciada de forma segura.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2011.jpg?raw=true)<br>
+Agrupa todas las interacciones operativas directas con el hardware. El flujo refleja al **Propietario** vinculando nuevos equipos, y ejecutando comandos para encender, apagar o modificar parámetros, lo que genera los eventos de **Estado de Dispositivo Cambio** en el entorno físico.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2012.jpg?raw=true)<br>
+Aísla el núcleo de cálculo analítico y procesamiento de telemetría. Se observa al **Sistema de Monitoreo** registrando lecturas de sensores y voltaje para calcular el gasto energético acumulado. El evento pivotal aquí es el **Limite de Energia Superado**, el cual actúa como detonante para emitir alertas automáticas.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2013.jpg?raw=true)<br>
+Delimita el módulo encargado de las consultas (*Queries*) del sistema. Ilustra cómo el **Propietario** y la **Constructora** solicitan métricas y datos históricos, lo cual desencadena la generación de un **Reporte de Consumo** y culmina con el evento de **Dashboard Presentado**.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2014.jpg?raw=true)<br>
+Muestra un módulo transversal dedicado a la comunicación saliente. El flujo detalla cómo el sistema formatea mensajes de alerta y utiliza canales externos como **Email Provider** y **Push Notification** para despachar la información hasta que la notificación es confirmada por el usuario.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2015.jpg?raw=true)<br>
+Representa la capa de valor agregado y optimización autónoma. El diagrama muestra al **Motor IA** recibiendo consultas, analizando patrones de consumo y generando sugerencias de ahorro. Finaliza con un evento de alto impacto donde la IA ejecuta la **Sugerencia Aplicada al Dispositivo** de forma directa.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2016.jpg?raw=true)<br>
+Enmarca el modelo de negocio financiero de la plataforma. La imagen ilustra a la **Constructora** ingresando un método de pago para procesar la suscripción. El evento de **Suscripción Activada** es la frontera comercial que permite la renovación del acceso al servicio.
+
+<br>
 
 #### 4.1.1.2 Domain Message Flows Modeling.
-[Modelado de flujos de mensajes, comandos y eventos entre los contextos]
+El Domain Message Flows Modeling mapea cómo los mensajes (eventos, comandos) fluyen entre los diferentes bounded contexts identificados. Este modelado es crucial para entender las dependencias y patrones de comunicación del sistema.
+
+<br>
+
+![Domain Message Flows Modeling](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2017.jpg?raw=true)<br>
+Este diagrama ilustra el flujo inicial de habilitación de un usuario en el sistema. Comienza con la **Constructora** ejecutando el comando síncrono para **Asignar Apartamento** dentro del contexto de **Smart Project Setup**. Esto detona un evento asíncrono **Apartamento Asignado** que viaja hacia **Service Execution**, dándole habilitación al **Propietario** para ejecutar el comando de **Vincular dispositivo**. El ciclo concluye cuando Service Execution emite el evento **Dispositivo Vinculado Integration** hacia Energy Management, preparándolo para recibir futuras métricas de ese nuevo hardware.
+
+<br>
+
+![Domain Message Flows Modeling](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2018.jpg?raw=true)<br>
+Este diagrama representa el comportamiento reactivo y autónomo del sistema frente a un pico de consumo. Se inicia cuando un **Sensor IoT** envía continuamente el comando **Registrar Lectura** hacia **Energy Management**. Al detectarse una anomalía, este contexto publica el evento **Limite Energía Superado Integration** para despertar al **Smart Assistant**. La IA evalúa la situación y envía un comando de ejecución directa **Aplicar Optimización** hacia **Service Execution and Monitoring**, el cual apaga o regula el actuador y notifica de vuelta a **Energy Management** mediante un evento de cambio de estado.
+
+<br>
+
+![Domain Message Flows Modeling](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2019.jpg?raw=true)<br>
+Esta imagen detalla cómo el usuario interactúa con el hardware utilizando la IA como intermediario contextual. El flujo muestra al **Propietario** utilizando la aplicación para enviar comandos de **Consultar Asistente** y posteriormente **Aceptar Sugerencia** hacia el **Smart Assistant**. Una vez autorizado, el asistente toma el control y manda el comando imperativo de **Modificar Parametros** hacia **Service Execution and Monitoring**. Finalmente, el hardware ejecuta el cambio y emite un evento de **Parametros Configurados Integration** hacia **Energy Management** para ajustar sus cálculos de consumo eléctrico.
+
+<br>
 
 #### 4.1.1.3 Bounded Context Canvases.
-[Canvas descriptivo para cada Bounded Context identificado]
+Los Bounded Context Canvases proporcionan una visión detallada de cada contexto delimitado, documentando sus responsabilidades, interfaces, eventos y relaciones con otros contextos.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Smart%20Project%20Setup.jpg?raw=true)<br>
+Esta imagen representa el contrato formal del módulo administrativo e inmobiliario. Se clasifica como un Supporting Domain cuyo rol es gestionar la infraestructura física. El diagrama central mapea su comunicación entrante (los comandos **Asignar Apartamento** de la Constructora y **Adquirir Apartamento** del Propietario) y su comunicación saliente (el evento **Apartamento Asignado Integration Event** dirigido hacia **Service Execution**). En la parte inferior, se documentan las reglas de negocio estrictas, como la validación de fondos y la restricción de que un usuario no puede operar dispositivos sin un departamento formalmente asignado.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Service%20Execution%20and%20Monitoring.jpg?raw=true)<br>
+Este lienzo expone la arquitectura del núcleo operativo en tiempo real de la plataforma IoT (un **Core Domain**). Define sus roles como **Orquestador de Hardware** y **Ejecutor de Órdenes**. El mapa de dependencias ilustra una alta interacción: recibe comandos físicos (**Vincular**, **Encender/Apagar**) tanto del Propietario como órdenes directas de la IA (**Aplicar Optimización**), y a su vez publica los eventos de **Estado Dispositivo Cambio** hacia los medidores. Sus decisiones de negocio garantizan que todo cambio físico se notifique inmediatamente para no perder precisión en el sistema.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Energy%20Management.jpg?raw=true)<br>
+Este diagrama delimita el motor analítico y cuantitativo del sistema (también un **Core Domain**). El lienzo muestra que su comunicación entrante se basa en telemetría (**Registrar Lectura Command**) proveniente de los sensores y en los cambios de estado del hardware. Visualmente, destaca que su salida más importante es la emisión del evento **Limite Energía Superado Integration Event** hacia el **asistente inteligente**. Entre sus políticas documentadas se subraya que el procesamiento debe ser asíncrono para evitar cuellos de botella en la red de los condominios.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Smart%20Assistant.jpg?raw=true)<br>
+Este lienzo detalla el módulo de Inteligencia Artificial que aporta valor agregado a la plataforma (**Core Domain**). Establece sus roles como **Optimizador** y **Agente Autónomo**. El diagrama central mapea cómo la IA se alimenta de las alertas de **Energy Management** y de las consultas a demanda del usuario, para luego emitir el comando imperativo de **Aplicar Optimización** hacia Service Execution. En la base del lienzo, consolida decisiones críticas del negocio, como la capacidad del sistema para enviar órdenes de ajuste o apagado preventivo en **Modo Autónomo** sin tener que esperar la aprobación manual del usuario.
+
+<br>
 
 ### 4.1.2. Context Mapping.
-[Mapa de contextos que define las relaciones: Upstream/Downstream, Customer/Supplier, Shared Kernel, Conformist, Open Host Service, etc.]
 
-![Context Map](image.jpg)
+##### Resumen del Proceso
+El Context Mapping es la fase donde definimos las relaciones estructurales y los contratos de comunicación entre nuestros Bounded Contexts. En IoBuild, este proceso se realizó mediante un análisis crítico de dependencias, buscando maximizar la autonomía de los microservicios y proteger el lenguaje ubicuo de cada contexto.
+
+##### Análisis de Alternativas (Exploración de Diseño)
+
+Para llegar a la arquitectura final, el equipo evaluó diversas configuraciones respondiendo a preguntas críticas de diseño:
+
+###### 1. ¿Qué pasaría si movemos la capacidad de "Monitoreo de Umbrales" a Smart Assistant?
+* **Análisis:** Si el motor de IA procesara directamente las lecturas de voltaje y sensores, se generaría un acoplamiento masivo de datos innecesarios hacia la IA.
+* **Decisión:** Mantenerlo en **Energy Management**. Esto permite que la IA sea reactiva y solo actúe cuando ocurre un evento de negocio relevante (Límite Superado), siguiendo el principio de segregación de responsabilidades.
+
+###### 2. ¿Qué pasaría si creamos un Shared Kernel para la entidad "Propietario"?
+* **Análisis:** Aunque todos los contextos usan el concepto de "Propietario", su definición cambia: en *Smart Project Setup* es un titular legal del inmueble; en *Service Execution* es un operador de hardware.
+* **Decisión:** Rechazado. Un Shared Kernel crearía un acoplamiento rígido en la base de datos. Se optó por duplicar el ID del propietario y usar una capa de traducción para mantener la autonomía de los modelos.
+
+###### 3. ¿Qué pasaría si aislamos los Core Capabilities y movemos los otros a un contexto aparte?
+* **Análisis:** Identificamos que *Smart Project Setup* es un dominio de soporte (SaaS B2B).
+* **Decisión:** Se aisló completamente. Al ser Upstream, permite que el "Core IoT" (Execution, Energy, Assistant) evolucione técnicamente sin verse afectado por cambios en las reglas de negocio administrativas de la constructora.
+
+##### Patrones de Relación y Mapa de Contextos
+
+La arquitectura de IoBuild se define bajo una arquitectura orientada a eventos (EDA). A continuación se detallan las relaciones y patrones DDD establecidos:
+
+###### A. Smart Project Setup (Upstream) -> Service Execution (Downstream)
+* **Patrón:** **Customer-Supplier / Anti-Corruption Layer (ACL)**.
+* **Motivo:** *Service Execution* depende de la información de departamentos asignados. Implementamos una ACL en *Service Execution* para evitar que cambios en el modelo de datos inmobiliario contaminen la lógica de control de dispositivos.
+
+###### B. Service Execution (Upstream) -> Energy Management (Downstream)
+* **Patrón:** **Published Language (PL)**.
+* **Motivo:** La comunicación es asíncrona y continua. *Service Execution* publica eventos de telemetría en un formato estándar (JSON) que *Energy Management* consume para sus cálculos sin que ambos componentes se acoplen.
+
+###### C. Energy Management (Upstream) -> Smart Assistant (Downstream)
+* **Patrón:** **Published Language (PL)**.
+* **Motivo:** El asistente se suscribe a eventos de alerta de consumo. La relación es de bajo acoplamiento, permitiendo que el motor de IA evolucione o se actualice sin afectar los medidores de energía.
+
+###### D. Smart Assistant (Upstream) -> Service Execution (Downstream)
+* **Patrón:** **Customer-Supplier**.
+* **Motivo:** En este flujo de comando, el asistente actúa como el cliente que solicita una acción de ahorro. *Service Execution* actúa como el proveedor de la capacidad física de apagar o regular el actuador correspondiente.
+
+##### Discusión de Alternativas y Conclusión
+Tras evaluar modelos de *Conformist* (donde todos se adaptan al modelo de la constructora), el equipo decidió rechazarlo por el alto riesgo de deuda técnica. La aproximación elegida de **Customer-Supplier con ACL** y **Published Language** garantiza que IoBuild sea escalable, permitiendo manejar múltiples dispositivos simultáneamente sin que una falla en un módulo administrativo afecte la inteligencia operativa de la IA o el monitoreo de energía.
+
+<br>
 
 ### 4.1.3. Software Architecture.
+La arquitectura de software de IoBuild se ha diseñado utilizando el modelo C4, ya que este permite representar el sistema en diferentes niveles de abstracción como Contexto, Contenedores y Despliegue. Gracias a este enfoque, es más sencillo comprender cómo opera la plataforma de forma global, cómo interactúan los usuarios con ella y cómo se vincula con los servicios externos.
+
+Para el diseño de la arquitectura, se han considerado principios clave de ingeniería de software:
+- **Separación de responsabilidades:** Cada componente asume funciones delimitadas y cohesivas.
+- **Bajo acoplamiento y alta cohesión:** Se minimizan dependencias directas entre módulos y se agrupan capacidades afines.
+- **Escalabilidad y mantenibilidad:** Facilidad de evolución independiente entre las aplicaciones cliente y los servicios backend.
+
 #### 4.1.3.1. Software Architecture System Landscape Diagram.
-![System Landscape Diagram](image.jpg)
+A continuación se presenta la visualización del ecosistema global de IoBuild, mostrando la relación entre los usuarios y los límites de la plataforma respecto a los sistemas complementarios.
+
+<br>
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
-![C4 Context Diagram](image.jpg)
+El diagrama de contexto presenta el sistema IoBuild como una plataforma central, mostrando cómo interactúa con los usuarios y con distintos sistemas externos. Este nivel permite entender de manera general el alcance del sistema y cómo se integra con otros servicios.
+
+**Enlace del Diagrama de Contexto:** [https://shorturl.at/EbWzU](https://shorturl.at/EbWzU)
+
+<br>
+
+![Context Level Diagrams](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%202/Software%20Architecture%20Context%20Diagram.png)
+
+<br>
+
+**Explicación del Diagrama:**
+
+**Sistema Central (IoBuild):**  
+Es la plataforma principal encargada de gestionar proyectos de construcción inteligente. Permite a los usuarios configurar entornos, administrar dispositivos conectados y consultar información relevante como reportes y datos del sistema.
+
+**Usuarios:**
+- **Builder (Constructor / Ingeniero):** Usuario encargado de diseñar y parametrizar entornos inteligentes. Interactúa con IoBuild para registrar dispositivos y gestionar proyectos a través de la interfaz web.
+- **Landlord / Resident (Propietario / Administrador):** Usuario que utiliza la plataforma para supervisar y administrar sus propiedades o departamentos. Consulta métricas y realiza seguimiento continuo.
+
+**Sistemas Externos:**
+- **Cloudinary:** Servicio utilizado para la gestión y almacenamiento seguro de archivos multimedia relacionados con los proyectos.
+- **AI Chatbot Service:** Proporciona asistencia inteligente contextual a los usuarios, orientando decisiones de optimización.
+- **Stripe:** Pasarela encargada de procesar pagos y gestionar las suscripciones de los clientes en IoBuild.
+
+<br>
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams.
-![C4 Container Diagram](image.jpg)
+El diagrama de contenedores muestra la arquitectura de alto nivel del sistema IoBuild, permitiendo entender cómo se organizan sus principales componentes ejecutables, qué tecnologías se utilizan y cómo interactúan entre sí.
+
+**Enlace del Diagrama de Contenedores:** [https://shorturl.at/FEOTa](https://shorturl.at/FEOTa)
+
+<br>
+
+![Container Level Diagrams](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%202/Software%20Architecture%20Container%20Diagram.png)
+
+<br>
+
+**Descripción del Container Diagram:**
+
+**Capa de Presentación:**
+- **Landing Page:** Sitio público estático que brinda información general y canaliza el acceso hacia la aplicación web.
+- **Web App (SPA):** Aplicación web interactiva donde los ingenieros y propietarios gestionan proyectos, dispositivos y telemetría.
+- **Mobile Application:** Aplicación móvil que permite el control ágil y remoto de dispositivos y estados de alerta.
+
+**Capa de Backend:**
+- **Web Service API:** Backend central desarrollado en ASP.NET Core. Procesa la lógica del negocio, expone endpoints RESTful y gestiona la comunicación con la base de datos y pasarelas externas.
+
+**Capa de Persistencia:**
+- **Database (MySQL):** Motor relacional que garantiza persistencia transaccional y consistencia en los datos de usuarios, proyectos y configuraciones.
+
+<br>
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams.
-![Deployment Diagram](image.jpg)
+El diagrama de despliegue detalla la distribución de los componentes del sistema IoBuild en la infraestructura cliente y de nube (*Cloud Tier*).
 
-## 4.2. Tactical-Level Domain-Driven Design
-### 4.2.X. Bounded Context: &lt;Bounded Context Name&gt;
-#### 4.2.X.1. Domain Layer.
-[Entidades, Value Objects, Agregados, Domain Events, Repositorios e interfaces de dominio]
+**Enlace del Diagrama de Despliegue:** [https://shorturl.at/2DSHw](https://shorturl.at/2DSHw)
 
-#### 4.2.X.2. Interface Layer.
-[Controladores REST, DTOs, Handlers de mensajería o WebSockets]
+<br>
 
-#### 4.2.X.3. Application Layer.
-[Casos de uso / Command Handlers / Query Handlers / Application Services]
+![Deployment Level Diagrams](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%202/Software%20Architecture%20Deployment%20Diagram.png)
 
-#### 4.2.X.4. Infrastructure Layer.
-[Implementación de repositorios, clientes externos, adaptadores IoT/MQTT/HTTP, persistencia]
+<br>
 
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams.
-![C4 Component Diagram](image.jpg)
+**Descripción del Deployment Diagram:**
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams.
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.
-![Class Diagram](image.jpg)
+- **Client Tier:** Navegadores web de los usuarios (acceso a Landing Page y Web App) y dispositivos móviles con la aplicación cliente.
+- **Cloud Tier (Frontend):** Despliegue en GitHub Pages (Landing Page) y Vercel (Web Application SPA).
+- **Cloud Tier (Backend):** Contenedores Docker sobre servidores de aplicación que ejecutan el API en ASP.NET Core con comunicación segura HTTPS.
+- **Data Tier:** Servidor de base de datos MySQL para la persistencia centralizada.
 
-##### 4.2.X.6.2. Bounded Context Database Design Diagram.
-![Database Design Diagram](image.jpg)
+## 4.2. Tactical-Level Domain-Driven Design.
+
+### Introducción al Diseño Táctico
+El Tactical-Level Domain-Driven Design de **IoBuild** representa la materialización concreta del diseño estratégico definido previamente. En esta sección se detalla cómo cada bounded context implementa sus capas Domain, Interface, Application e Infrastructure, así como sus componentes internos, contratos y mecanismos de persistencia. Este enfoque táctico asegura que las decisiones de negocio se traduzcan en una arquitectura modular, desacoplada, mantenible y lista para evolucionar conforme crezca la plataforma.
+
+Para IoBuild se han identificado cuatro bounded contexts principales que cubren las capacidades nucleares de la solución:
+1. **Smart Project Setup:** Configuración inicial de proyectos, zonas físicas, planos y perfiles IoT.
+2. **Service Execution and Monitoring:** Orquestación operativa de servicios y supervisión de hardware en tiempo real.
+3. **Smart Assistant:** Asistencia inteligente contextual y recomendaciones accionables para optimización del confort y habitabilidad.
+4. **Energy Management:** Medición, telemetría, análisis de patrones y optimización del consumo energético en las edificaciones.
+
+---
+
+### 4.2.1. Bounded Context: Smart Project Setup.
+#### 4.2.1.1. Domain Layer.
+En **IoBuild**, este bounded context define cómo se prepara un proyecto inteligente antes de su ejecución operativa. El dominio cubre el modelado del sitio, la selección de perfiles IoT y la configuración de conectividad para dejar el proyecto listo para su despliegue en obra.
+
+**Entities y Aggregates:**
+- **SmartProjectSetup (Aggregate Root):** Representa la configuración principal del proyecto (*id, ownerId, projectName, buildingType, status, createdAt, updatedAt*).
+- **SiteZone:** Representa un espacio físico del proyecto (piso, ambiente o sector) donde se desplegarán dispositivos.
+- **DeviceProfile:** Representa la configuración funcional de un tipo de dispositivo IoT (sensor, intervalo de lectura, umbrales y protocolo).
+- **ConnectivityProfile:** Representa la configuración de conectividad del proyecto (gateway, protocolo, credenciales y políticas de reconexión).
+
+**Value Objects:**
+- **SetupId, OwnerId, ZoneId, DeviceProfileId, ConnectivityProfileId:** Identificadores únicos del dominio.
+- **SetupStatus:** Estado del setup (*DRAFT, VALIDATED, PROVISIONED, ARCHIVED*).
+- **BuildingType:** Tipo de edificación (*RESIDENTIAL, COMMERCIAL, INDUSTRIAL, EDUCATIONAL*).
+- **SensorType:** Tipo de sensor (*TEMPERATURE, HUMIDITY, OCCUPANCY, ENERGY_METER, AIR_QUALITY*).
+- **ProtocolType:** Protocolo de comunicación (*MQTT, HTTP, MODBUS, BACNET*).
+
+**Commands:**
+- CreateSmartProjectSetupCommand
+- UpdateSmartProjectSetupCommand
+- DefineSiteZoneCommand
+- UpdateSiteZoneCommand
+- AssignDeviceProfileCommand
+- ConfigureConnectivityProfileCommand
+- ValidateSmartProjectSetupCommand
+- ProvisionSmartProjectSetupCommand
+
+**Queries:**
+- GetSmartProjectSetupByIdQuery
+- GetSmartProjectSetupsByOwnerIdQuery
+- GetSetupChecklistByIdQuery
+- GetZonesBySetupIdQuery
+- GetAvailableDeviceProfilesQuery
+- GetConnectivityProfileBySetupIdQuery
+
+**Domain Services (Contratos):**
+- SmartProjectSetupCommandService
+- SmartProjectSetupQueryService
+- ZoneConfigurationCommandService
+- DeviceProfileConfigurationService
+- SetupValidationService
+
+#### 4.2.1.2. Interface Layer.
+La capa de interfaz expone endpoints RESTful para crear y configurar proyectos en IoBuild, registrar zonas del sitio y asignar perfiles técnicos.
+
+**Controllers:**
+- **SmartProjectSetupsController:** Create, update, validate, provision y consultas principales del setup.
+- **SetupZonesController:** Define y actualiza zonas físicas del proyecto.
+- **SetupProfilesController:** Asigna perfiles de dispositivo y configura parámetros de conectividad.
+
+**Resources (Request/Query DTOs):**
+- **Setup:** CreateSmartProjectSetupResource, UpdateSmartProjectSetupResource, ValidateSmartProjectSetupResource, ProvisionSmartProjectSetupResource.
+- **Zones:** DefineSiteZoneResource, UpdateSiteZoneResource.
+- **Profiles:** AssignDeviceProfileResource, ConfigureConnectivityProfileResource.
+- **Queries:** GetSmartProjectSetupByIdResource, GetSmartProjectSetupsByOwnerIdResource, GetSetupChecklistByIdResource, GetZonesBySetupIdResource.
+
+**Smart Project Setup Interface Diagram:**  
+![Smart Project Setup Interface Diagram](https://instasize.com/api/image/ac46962e9edde3cbfc8e372f387b207c489713181446b1a16f8ce49facd5b3b2.png)
+
+#### 4.2.1.3. Application Layer.
+La capa de aplicación orquesta comandos y consultas para preparar el proyecto IoBuild y validar que la configuración cumpla los requisitos mínimos antes del aprovisionamiento.
+
+**Command Handlers:**
+- **SmartProjectSetupCommandServiceImpl:** CreateSmartProjectSetupCommand, UpdateSmartProjectSetupCommand, ValidateSmartProjectSetupCommand, ProvisionSmartProjectSetupCommand.
+- **ZoneConfigurationCommandServiceImpl:** DefineSiteZoneCommand, UpdateSiteZoneCommand.
+- **DeviceProfileConfigurationServiceImpl:** AssignDeviceProfileCommand, ConfigureConnectivityProfileCommand.
+
+**Query Handlers:**
+- **SmartProjectSetupQueryServiceImpl:** GetSmartProjectSetupByIdQuery, GetSmartProjectSetupsByOwnerIdQuery, GetSetupChecklistByIdQuery, GetZonesBySetupIdQuery.
+- **SetupCatalogQueryServiceImpl:** GetAvailableDeviceProfilesQuery, GetConnectivityProfileBySetupIdQuery.
+
+**Smart Project Setup Application Diagram:**  
+![Smart Project Setup Application Diagram](https://instasize.com/api/image/e9c9db4b1c8d1417d7243363b80201317c2b75e261099bf4500fee76ca9d9dea.png)
+
+#### 4.2.1.4. Infrastructure Layer.
+La capa de infraestructura implementa la persistencia del setup de IoBuild, incluyendo zonas, perfiles de dispositivos y configuración de conectividad.
+
+**Repositories:**
+- **SmartProjectSetupRepository:** Búsquedas por ownerId, status y validaciones por nombre del proyecto.
+- **SiteZoneRepository:** Consultas de zonas por setup y validación de nombres repetidos por setup.
+- **DeviceProfileRepository:** Catálogo de perfiles por sensor y tipo de edificio.
+- **ConnectivityProfileRepository:** Obtención y reemplazo de configuración de conectividad por setup.
+
+**Smart Project Setup Infrastructure Diagram:**  
+![Smart Project Setup Infrastructure Diagram](https://instasize.com/api/image/7b5799c5a59f8baa058ce64b7ac8c866100f4a3f54a18da83b6da5bd5d9c55f4.png)
+
+#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams.
+
+![Diagram C4 - Smart Project Setup](https://i.imgur.com/EZ0QtVR.png)
+
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams.
+En esta sección se presentan los diagramas de nivel de código para **Smart Project Setup**, cubriendo el modelo del Domain Layer y su persistencia relacional.
+
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams.
+
+![Diagrama de Clases - Smart Project Setup](https://i.imgur.com/aqFCKUf.png)
+
+##### 4.2.1.6.2. Bounded Context Database Design Diagram.
+
+![Diagrama de Base de Datos - Smart Project Setup](https://i.imgur.com/szDoLl0.png)
+
+---
+
+### 4.2.2. Bounded Context: Service Execution and Monitoring.
+#### 4.2.2.1. Domain Layer.
+En **IoBuild**, este bounded context gestiona la ejecución operativa de servicios y el monitoreo continuo de su comportamiento. El dominio cubre la orquestación de ejecuciones, el registro de métricas de observabilidad y la gestión de alertas operativas en los dispositivos.
+
+**Entities y Aggregates:**
+- **ServiceExecution (Aggregate Root):** Representa una ejecución de servicio (*id, projectId, serviceId, triggerType, status, startedAt, finishedAt, resultSummary*).
+- **ExecutionTask:** Representa una tarea interna ejecutada dentro de un flujo de servicio (*id, executionId, taskOrder, command, status, durationMs*).
+- **MonitoringMetric:** Representa una medición técnica asociada a una ejecución o servicio (*id, executionId, type, value, unit, timestamp*).
+- **ServiceAlert:** Representa una alerta operativa generada por fallos, degradación o umbrales excedidos (*id, projectId, severity, message, resolved, createdAt*).
+
+**Value Objects:**
+- **ExecutionId, TaskId, ProjectId, ServiceId, MetricId, AlertId:** Identificadores únicos del dominio.
+- **ExecutionStatus:** Estado de ejecución (*QUEUED, RUNNING, SUCCESS, FAILED, CANCELLED, TIMEOUT*).
+- **TaskStatus:** Estado de tarea (*PENDING, RUNNING, COMPLETED, FAILED, SKIPPED*).
+- **HealthStatus:** Salud del servicio (*HEALTHY, DEGRADED, OFFLINE*).
+- **MetricType:** Tipo de métrica (*CPU_USAGE, MEMORY_USAGE, LATENCY, ERROR_RATE, THROUGHPUT*).
+- **AlertSeverity:** Severidad de alerta (*INFO, WARNING, CRITICAL*).
+
+##### Domain Behavior and Invariants:
+- **ServiceExecution Behavior:** `startExecution()`, `stopExecution()`, `retryExecution()`, `completeExecution()`, `failExecution(reason)`, `registerMonitoringMetric(metric)`, `evaluateServiceHealth()`.
+- **Domain Invariants:**
+  - Una ejecución solo puede estar en estado *RUNNING* si posee *startTime*.
+  - Una ejecución finalizada no puede reiniciarse sin crear una nueva instancia.
+  - Las métricas solo pueden registrarse para ejecuciones activas.
+
+##### Domain Events:
+- ServiceExecutionStarted
+- ServiceExecutionCompleted
+- ServiceExecutionFailed
+- MonitoringMetricRegistered
+- ServiceHealthDegraded
+- ServiceAlertRaised
+- ServiceAlertResolved
+
+**Commands:**
+- StartServiceExecutionCommand
+- StopServiceExecutionCommand
+- RetryServiceExecutionCommand
+- CancelServiceExecutionCommand
+- RegisterMonitoringMetricCommand
+- UpdateServiceHealthStatusCommand
+- RaiseServiceAlertCommand
+- ResolveServiceAlertCommand
+
+**Queries:**
+- GetExecutionByIdQuery
+- GetExecutionsByProjectIdQuery
+- GetActiveExecutionsQuery
+- GetMetricsByExecutionIdQuery
+- GetServiceHealthByProjectIdQuery
+- GetOpenAlertsByProjectIdQuery
+
+**Domain Services (Contratos):**
+- ServiceExecutionCommandService
+- ServiceExecutionQueryService
+- MonitoringCommandService
+- MonitoringQueryService
+- AlertManagementService
+- AlertQueryService
+
+#### 4.2.2.2. Interface Layer.
+La capa de interfaz expone endpoints RESTful para ejecutar servicios, consultar el estado operativo y administrar alertas del proyecto.
+
+**Controllers:**
+- **ServiceExecutionsController:** Start, stop, retry, cancel y consultas de ejecuciones.
+- **ServiceMonitoringController:** Registro de métricas y consulta de salud operativa.
+- **ServiceAlertsController:** Apertura, resolución y consulta de alertas activas.
+
+**Resources (Request/Query DTOs):**
+- **Execution:** StartServiceExecutionResource, StopServiceExecutionResource, RetryServiceExecutionResource, CancelServiceExecutionResource.
+- **Monitoring:** RegisterMonitoringMetricResource, UpdateServiceHealthStatusResource.
+- **Alerts:** RaiseServiceAlertResource, ResolveServiceAlertResource.
+- **Queries:** GetExecutionByIdResource, GetExecutionsByProjectIdResource, GetMetricsByExecutionIdResource, GetServiceHealthByProjectIdResource, GetOpenAlertsByProjectIdResource.
+
+**Service Execution and Monitoring Interface Diagram:**  
+![Service Execution and Monitoring Interface Diagram](https://instasize.com/api/image/d237f139e3bd29eea6ef5698a4e4f57140679000ed1d00c23baaec4157afae78.png)
+
+#### 4.2.2.3. Application Layer.
+La capa de aplicación orquesta la ejecución de servicios y los procesos de observabilidad para garantizar trazabilidad y control operativo del sistema.
+
+**Command Handlers:**
+- **ServiceExecutionCommandServiceImpl:** StartServiceExecutionCommand, StopServiceExecutionCommand, RetryServiceExecutionCommand, CancelServiceExecutionCommand.
+- **MonitoringCommandServiceImpl:** RegisterMonitoringMetricCommand, UpdateServiceHealthStatusCommand.
+- **AlertManagementServiceImpl:** RaiseServiceAlertCommand, ResolveServiceAlertCommand.
+
+**Query Handlers:**
+- **ServiceExecutionQueryServiceImpl:** GetExecutionByIdQuery, GetExecutionsByProjectIdQuery, GetActiveExecutionsQuery.
+- **MonitoringQueryServiceImpl:** GetMetricsByExecutionIdQuery, GetServiceHealthByProjectIdQuery.
+- **AlertQueryServiceImpl:** GetOpenAlertsByProjectIdQuery.
+
+**Service Execution and Monitoring Application Diagram:**  
+![Service Execution and Monitoring Application Diagram](https://instasize.com/api/image/20b81bd5a2eecdf45ebe39b3305e475644b4581e030069c24911def098e3a3c8.png)
+
+#### 4.2.2.4. Infrastructure Layer.
+La capa de infraestructura implementa la persistencia de ejecuciones, métricas y alertas para soportar monitoreo histórico y operación en tiempo real.
+
+**Repositories:**
+- **ServiceExecutionRepository:** Búsquedas por projectId, estado de ejecución y ejecuciones activas.
+- **ExecutionTaskRepository:** Tareas por executionId y estado de tarea.
+- **MonitoringMetricRepository:** Métricas por executionId y por tipo de métrica.
+- **ServiceAlertRepository:** Alertas por projectId, severidad y estado de resolución.
+
+**Service Execution and Monitoring Infrastructure Diagram:**  
+![Service Execution and Monitoring Infrastructure Diagram](https://instasize.com/api/image/6c9a8603ca4cac961870fdedc0c763647510ccd982a43e0e2128bb56cbe5cdd4.png)
+
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams.
+
+![Diagram C4 - Service Execution and Monitoring](https://i.imgur.com/p8nHO38.png)
+
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams.
+En esta sección se presenta el detalle de implementación para **Service Execution and Monitoring**, incluyendo estructura de dominio y modelo de persistencia.
+
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams.
+
+![Diagrama de Clases - Service Execution and Monitoring](https://i.imgur.com/Ngsgh4D.png)
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram.
+
+![Diagrama de Base de Datos - Service Execution and Monitoring](https://i.imgur.com/xtReovF.png)
+
+---
+
+### 4.2.3. Bounded Context: Smart Assistant.
+#### 4.2.3.1. Domain Layer.
+En **IoBuild**, este bounded context implementa la asistencia inteligente contextual para apoyar decisiones operativas. El dominio cubre conversaciones asistidas, generación de recomendaciones técnicas y construcción de planes de acción sobre eventos del proyecto.
+
+**Entities y Aggregates:**
+- **AssistantConversation (Aggregate Root):** Representa una sesión conversacional asociada a un proyecto (*id, projectId, userId, channel, status, startedAt, closedAt*).
+- **AssistantMessage:** Representa cada mensaje de una conversación (*id, conversationId, role, content, metadataJson, sentAt*).
+- **AssistantRecommendation:** Representa una recomendación accionable generada por el asistente para optimizar operación, mantenimiento o rendimiento.
+- **AssistantActionPlan:** Representa el plan de acción derivado de una recomendación, con pasos, prioridad y estado de ejecución sugerido.
+
+**Value Objects:**
+- **ConversationId, MessageId, RecommendationId, ActionPlanId, ProjectId, UserId:** Identificadores únicos del dominio.
+- **ConversationStatus:** Estado de conversación (*OPEN, WAITING_CONTEXT, RESOLVED, CLOSED*).
+- **MessageRole:** Rol del mensaje (*USER, ASSISTANT, SYSTEM*).
+- **AssistantChannel:** Canal de interacción (*WEB_CHAT, MOBILE_CHAT, API*).
+- **RecommendationType:** Tipo de recomendación (*ALERT_TRIAGE, SERVICE_TUNING, ENERGY_OPTIMIZATION, MAINTENANCE*).
+- **RecommendationPriority:** Prioridad (*LOW, MEDIUM, HIGH, CRITICAL*).
+
+##### Domain Behavior and Invariants:
+- **AssistantConversation Behavior:** `startConversation()`, `receiveUserMessage()`, `generateAssistantResponse()`, `closeConversation()`, `createRecommendation()`.
+- **Domain Invariants:**
+  - Una conversación en estado *CLOSED* no acepta nuevos mensajes.
+  - Toda recomendación debe estar asociada a una conversación activa.
+  - Los planes de acción solo pueden generarse a partir de recomendaciones existentes.
+
+##### Domain Events:
+- AssistantConversationStarted
+- AssistantMessageReceived
+- AssistantResponseGenerated
+- AssistantRecommendationGenerated
+- AssistantActionPlanCreated
+
+**Commands:**
+- StartAssistantConversationCommand
+- SendUserMessageCommand
+- GenerateAssistantResponseCommand
+- CloseAssistantConversationCommand
+- CreateAssistantRecommendationCommand
+- AcceptAssistantRecommendationCommand
+- DismissAssistantRecommendationCommand
+- GenerateAssistantActionPlanCommand
+
+**Queries:**
+- GetConversationByIdQuery
+- GetConversationsByProjectIdQuery
+- GetConversationMessagesQuery
+- GetRecommendationsByProjectIdQuery
+- GetPendingRecommendationsQuery
+- GetActionPlanByRecommendationIdQuery
+
+**Domain Services (Contratos):**
+- AssistantConversationCommandService
+- AssistantConversationQueryService
+- AssistantRecommendationCommandService
+- AssistantRecommendationQueryService
+- AssistantActionPlanCommandService
+- AssistantActionPlanQueryService
+
+#### 4.2.3.2. Interface Layer.
+La capa de interfaz expone endpoints RESTful para interactuar con el asistente, administrar recomendaciones y consultar planes de acción.
+
+**Controllers:**
+- **AssistantConversationsController:** Inicio de conversación, envío de mensajes, cierre y consultas de historial.
+- **AssistantRecommendationsController:** Creación, aceptación, descarte y consulta de recomendaciones.
+- **AssistantActionPlansController:** Generación y consulta de planes de acción asociados a recomendaciones.
+
+**Resources (Request/Query DTOs):**
+- **Conversations:** StartAssistantConversationResource, SendUserMessageResource, GenerateAssistantResponseResource, CloseAssistantConversationResource.
+- **Recommendations:** CreateAssistantRecommendationResource, AcceptAssistantRecommendationResource, DismissAssistantRecommendationResource.
+- **Action Plans:** GenerateAssistantActionPlanResource.
+- **Queries:** GetConversationByIdResource, GetConversationsByProjectIdResource, GetConversationMessagesResource, GetRecommendationsByProjectIdResource, GetPendingRecommendationsResource, GetActionPlanByRecommendationIdResource.
+
+**Smart Assistant Interface Diagram:**  
+![Smart Assistant Interface Diagram](https://instasize.com/api/image/f00d4edcae97cb8e384659f46342e12d43ad825eec9ea7cdeaf51d53e584f900.png)
+
+#### 4.2.3.3. Application Layer.
+La capa de aplicación orquesta la interacción del asistente con el contexto del proyecto para responder consultas, generar recomendaciones y proponer planes accionables.
+
+**Command Handlers:**
+- **AssistantConversationCommandServiceImpl:** StartAssistantConversationCommand, SendUserMessageCommand, GenerateAssistantResponseCommand, CloseAssistantConversationCommand.
+- **AssistantRecommendationCommandServiceImpl:** CreateAssistantRecommendationCommand, AcceptAssistantRecommendationCommand, DismissAssistantRecommendationCommand.
+- **AssistantActionPlanCommandServiceImpl:** GenerateAssistantActionPlanCommand.
+
+**Query Handlers:**
+- **AssistantConversationQueryServiceImpl:** GetConversationByIdQuery, GetConversationsByProjectIdQuery, GetConversationMessagesQuery.
+- **AssistantRecommendationQueryServiceImpl:** GetRecommendationsByProjectIdQuery, GetPendingRecommendationsQuery.
+- **AssistantActionPlanQueryServiceImpl:** GetActionPlanByRecommendationIdQuery.
+
+**Smart Assistant Application Diagram:**  
+![Smart Assistant Application Diagram](https://instasize.com/api/image/c1e93fdfadf169bc27b0c35f392c880a7e7cf8277875b5ca32146081bf2f4cae.png)
+
+#### 4.2.3.4. Infrastructure Layer.
+La capa de infraestructura implementa la persistencia de conversaciones, mensajes, recomendaciones y planes de acción para asegurar la trazabilidad de la asistencia inteligente.
+
+**Repositories:**
+- **AssistantConversationRepository:** Consultas por projectId, estado de conversación y usuario.
+- **AssistantMessageRepository:** Historial de mensajes por conversationId y orden cronológico.
+- **AssistantRecommendationRepository:** Recomendaciones por proyecto, prioridad y estado de aceptación.
+- **AssistantActionPlanRepository:** Planes de acción por recommendationId.
+
+**Smart Assistant Infrastructure Diagram:**  
+![Smart Assistant Infrastructure Diagram](https://instasize.com/api/image/30c135e534c0d290f7f1eb2b52a4639e2d8ea4d833724136d9d91420f37e6c99.png)
+
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams.
+
+![Diagram C4 - Smart Assistant](https://i.imgur.com/AQmKgPv.png)
+
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams.
+En esta sección se presenta el nivel de código del bounded context **Smart Assistant**, incluyendo su modelo de dominio y esquema de base de datos.
+
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams.
+
+![Diagrama de Clases - Smart Assistant](https://i.imgur.com/nHDNIB3.png)
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram.
+
+![Diagrama de Base de Datos - Smart Assistant](https://i.imgur.com/2b7dggg.png)
+
+---
+
+### 4.2.4. Bounded Context: Energy Management.
+#### 4.2.4.1. Domain Layer.
+En **IoBuild**, este bounded context gestiona la medición, análisis y optimización del consumo energético de los edificios inteligentes. El dominio cubre planes de optimización, registro de consumo, detección de anomalías y eventos de respuesta a la demanda.
+
+**Entities y Aggregates:**
+- **EnergyOptimizationPlan (Aggregate Root):** Representa el plan de optimización energética de un proyecto (*id, projectId, baselineKwh, reductionTargetPercent, status, windowStart, windowEnd, createdAt*).
+- **EnergyConsumptionRecord:** Representa una lectura de consumo energético por zona, medidor y período de tiempo (*id, energyPlanId, projectId, zoneId, meterId, value, unit, period, recordedAt*).
+- **EnergyAnomaly:** Representa una desviación del patrón esperado de consumo como picos, sobrecargas o caídas (*id, energyPlanId, projectId, zoneId, severity, detectedPattern, acknowledged, detectedAt*).
+- **DemandResponseEvent:** Representa un evento operativo para ajustar la carga eléctrica en períodos críticos (*id, energyPlanId, projectId, eventName, status, startsAt, endsAt*).
+
+**Value Objects:**
+- **EnergyPlanId, ConsumptionRecordId, AnomalyId, ResponseEventId, ProjectId, ZoneId, MeterId:** Identificadores únicos del dominio.
+- **OptimizationStatus:** Estado del plan (*DRAFT, ACTIVE, PAUSED, COMPLETED, CANCELLED*).
+- **ConsumptionPeriod:** Granularidad de lectura (*HOURLY, DAILY, WEEKLY, MONTHLY*).
+- **EnergyUnit:** Unidad de energía (*WH, KWH, MWH*).
+- **AnomalySeverity:** Severidad de anomalía (*LOW, MEDIUM, HIGH, CRITICAL*).
+- **DemandResponseStatus:** Estado del evento de respuesta (*CREATED, IN_PROGRESS, EXECUTED, FAILED, CLOSED*).
+
+##### Domain Behavior and Invariants:
+- **EnergyOptimizationPlan Behavior:** `activate()`, `pause()`, `complete()`, `recordConsumption(record)`, `detectAnomaly(anomaly)`, `triggerDemandResponse(event)`.
+- **Domain Invariants:**
+  - El objetivo de reducción de energía (`reductionTargetPercent`) debe ser un valor porcentual positivo menor al 100%.
+  - No se pueden registrar lecturas de consumo con marcas de tiempo futuras.
+  - Una anomalía no puede ser marcada como reconocida (`acknowledged`) sin registrar la identidad del operador o regla responsable.
+
+##### Domain Events:
+- EnergyOptimizationPlanCreated
+- EnergyOptimizationPlanActivated
+- EnergyConsumptionRecorded
+- EnergyAnomalyDetected
+- DemandResponseEventTriggered
+- EnergySavingsTargetAchieved
+
+**Commands:**
+- CreateEnergyOptimizationPlanCommand
+- ActivateEnergyOptimizationPlanCommand
+- PauseEnergyOptimizationPlanCommand
+- RegisterEnergyConsumptionCommand
+- DetectEnergyAnomalyCommand
+- AcknowledgeEnergyAnomalyCommand
+- CreateDemandResponseEventCommand
+- CompleteDemandResponseEventCommand
+
+**Queries:**
+- GetOptimizationPlanByIdQuery
+- GetOptimizationPlansByProjectIdQuery
+- GetConsumptionByProjectIdQuery
+- GetConsumptionByZoneIdQuery
+- GetEnergyAnomaliesByProjectIdQuery
+- GetActiveDemandResponseEventsQuery
+- GetEnergySavingsSummaryByProjectIdQuery
+
+**Domain Services (Contratos):**
+- EnergyOptimizationCommandService
+- EnergyOptimizationQueryService
+- EnergyMonitoringCommandService
+- EnergyMonitoringQueryService
+- DemandResponseCommandService
+- DemandResponseQueryService
+- EnergySavingsAnalysisService
+
+#### 4.2.4.2. Interface Layer.
+La capa de interfaz expone endpoints RESTful para crear planes de optimización, registrar consumo, gestionar anomalías y ejecutar eventos de respuesta a la demanda.
+
+**Controllers:**
+- **EnergyOptimizationPlansController:** Creación, activación, pausa y consultas de planes de optimización.
+- **EnergyMonitoringController:** Registro de consumo, detección/revisión de anomalías y consultas operativas.
+- **DemandResponseController:** Apertura, cierre y consulta de eventos de respuesta a la demanda.
+
+**Resources (Request/Query DTOs):**
+- **Optimization:** CreateEnergyOptimizationPlanResource, ActivateEnergyOptimizationPlanResource, PauseEnergyOptimizationPlanResource.
+- **Monitoring:** RegisterEnergyConsumptionResource, DetectEnergyAnomalyResource, AcknowledgeEnergyAnomalyResource.
+- **Demand Response:** CreateDemandResponseEventResource, CompleteDemandResponseEventResource.
+- **Queries:** GetOptimizationPlanByIdResource, GetOptimizationPlansByProjectIdResource, GetConsumptionByProjectIdResource, GetConsumptionByZoneIdResource, GetEnergyAnomaliesByProjectIdResource, GetActiveDemandResponseEventsResource, GetEnergySavingsSummaryByProjectIdResource.
+
+**Energy Management Interface Diagram:**  
+![Energy Management Interface Diagram](https://instasize.com/api/image/3be25a2e254b035f27c7ecdb7b05bb59883da84db0dbb2b70a1b26ef89bff79b.png)
+
+#### 4.2.4.3. Application Layer.
+La capa de aplicación orquesta comandos y consultas para convertir datos de consumo en decisiones operativas de eficiencia energética.
+
+**Command Handlers:**
+- **EnergyOptimizationCommandServiceImpl:** CreateEnergyOptimizationPlanCommand, ActivateEnergyOptimizationPlanCommand, PauseEnergyOptimizationPlanCommand.
+- **EnergyMonitoringCommandServiceImpl:** RegisterEnergyConsumptionCommand, DetectEnergyAnomalyCommand, AcknowledgeEnergyAnomalyCommand.
+- **DemandResponseCommandServiceImpl:** CreateDemandResponseEventCommand, CompleteDemandResponseEventCommand.
+
+**Query Handlers:**
+- **EnergyOptimizationQueryServiceImpl:** GetOptimizationPlanByIdQuery, GetOptimizationPlansByProjectIdQuery.
+- **EnergyMonitoringQueryServiceImpl:** GetConsumptionByProjectIdQuery, GetConsumptionByZoneIdQuery, GetEnergyAnomaliesByProjectIdQuery, GetEnergySavingsSummaryByProjectIdQuery.
+- **DemandResponseQueryServiceImpl:** GetActiveDemandResponseEventsQuery.
+
+**Energy Management Application Diagram:**  
+![Energy Management Application Diagram](https://instasize.com/api/image/5bb792141cfabc4249c13bd8e17c84a6a90107bd2fd33d9f018e89a5e9a35127.png)
+
+#### 4.2.4.4. Infrastructure Layer.
+La capa de infraestructura implementa persistencia de planes de optimización, lecturas de consumo, anomalías y eventos de respuesta para soportar analítica histórica y operación en tiempo real.
+
+**Repositories:**
+- **EnergyOptimizationPlanRepository:** Planes por projectId, estado de optimización y planes activos.
+- **EnergyConsumptionRecordRepository:** Lecturas por projectId, zoneId, meterId y rango temporal.
+- **EnergyAnomalyRepository:** Anomalías por proyecto, severidad y estado abierto/cerrado.
+- **DemandResponseEventRepository:** Eventos por proyecto, estado y eventos activos.
+
+**Energy Management Infrastructure Diagram:**  
+![Energy Management Infrastructure Diagram](https://instasize.com/api/image/ebde2d543f68889ecb0ca0460f113851d31f2dafc5549e80d83402882b863d54.png)
+
+##### AI Integration Anti-Corruption Layer (ACL):
+Para evitar el acoplamiento directo con proveedores externos de inteligencia artificial, el sistema define la interfaz de dominio `AssistantAIService`. En la capa de infraestructura se implementan los adaptadores `OpenAIAssistantAdapter` y `ExternalLLMAdapter`, protegiendo el modelo de dominio ante evoluciones tecnológicas del proveedor.
+
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams.
+
+![Diagram C4 - Energy Management](https://i.imgur.com/XKGyZ20.png)
+
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams.
+En esta sección se presenta el detalle de implementación de **Energy Management** a nivel de clases de dominio y persistencia relacional.
+
+##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams.
+
+![Diagrama de Clases - Energy Management](https://i.imgur.com/VxFxqqC.png)
+
+##### 4.2.4.6.2. Bounded Context Database Design Diagram.
+
+![Diagrama de Base de Datos - Energy Management](https://i.imgur.com/bxwcuZp.png)
 
 ---
 
