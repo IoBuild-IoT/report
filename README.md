@@ -39,8 +39,18 @@
 <center>
 
 | Version | Fecha | Autor | Descripcion de Modificacion |
-| ----------- | ----------- | ----------- | ----------- |
-| 0.0 | 05/09/2026 |CcaritaTech |Se crea el documento |  
+| :---: | :---: | :--- | :--- |
+| 0.0 | 05/09/2026 | Ccarita Cruz, Brayan Roberto | Inicialización del repositorio y estructura base del informe del proyecto. |
+| 0.1 | 06/09/2026 | Ordoñez Ricaldi, Axel Randall | Redacción del Capítulo 1: Startup Profile, descripción de la organización y perfiles profesionales de los integrantes. |
+| 0.2 | 07/09/2026 | Panta Castro, Fabrizio Martin | Elaboración del Solution Profile, antecedentes, problemática, proceso Lean UX (Problem Statements, Assumptions, Hypothesis, Canvas) y segmentos objetivo. |
+| 0.3 | 08/09/2026 | Loechle Arias, Mateo Italo | Desarrollo del Capítulo 2: Análisis competitivo, benchmarking de competidores directos e indirectos y estrategias frente a la competencia. |
+| 0.4 | 09/09/2026 | Guia Carrasco, Pedro Andre | Elaboración de entrevistas: diseño de guía de preguntas, registro audiovisual, transcripción y análisis de respuestas de los segmentos objetivo. |
+| 0.5 | 10/09/2026 | Alejo Jesus, Anyelo Bill | Desarrollo de Needfinding: creación de User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping. |
+| 0.6 | 11/09/2026 | Escalante Baygorrea, Janiel Franz | Modelado de Big Picture EventStorming y definición formal del Ubiquitous Language del dominio de la solución. |
+| 0.7 | 12/09/2026 | Ccarita Cruz, Brayan Roberto | Desarrollo del Capítulo 3: Especificación de requerimientos, definición de Épicas, User Stories con criterios de aceptación (Gherkin) y Technical Stories. |
+| 0.8 | 13/09/2026 | Ordoñez Ricaldi, Axel Randall | Construcción del Impact Mapping y estructuración del Product Backlog general con estimación de puntos de historia y priorización por Sprints. |
+| 0.9 | 15/09/2026 | Panta Castro, Fabrizio Martin | Elaboración del Capítulo 4: Strategic-Level DDD (Design-Level EventStorming, Candidate Contexts, Bounded Context Canvases y Context Mapping). |
+| 1.0 | 16/09/2026 | Loechle Arias, Mateo Italo | Tactical-Level DDD para los 4 Bounded Contexts, diagramas de arquitectura de software C4, conclusiones, bibliografía, anexos y consolidación final de la entrega hasta el Capítulo 4. |  
 
 </center>
 
