@@ -126,49 +126,6 @@ URL del repositorio: https://github.com/IoBuild-IoT/report
       - [4.2.4.4. Infrastructure Layer.](#4244-infrastructure-layer)
       - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams.](#4245-bounded-context-software-architecture-component-level-diagrams)
       - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams.](#4246-bounded-context-software-architecture-code-level-diagrams)
-- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
-  - [5.1. Style Guidelines.](#51-style-guidelines)
-    - [5.1.1. General Style Guidelines.](#511-general-style-guidelines)
-    - [5.1.2. Web, Mobile and IoT Style Guidelines.](#512-web-mobile-and-iot-style-guidelines)
-  - [5.2. Information Architecture.](#52-information-architecture)
-    - [5.2.1. Organization Systems.](#521-organization-systems)
-    - [5.2.2. Labeling Systems.](#522-labeling-systems)
-    - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
-    - [5.2.4. Searching Systems.](#524-searching-systems)
-    - [5.2.5. Navigation Systems.](#525-navigation-systems)
-  - [5.3. Landing Page UI Design.](#53-landing-page-ui-design)
-    - [5.3.1. Landing Page Wireframe.](#531-landing-page-wireframe)
-    - [5.3.2. Landing Page Mock-up.](#532-landing-page-mock-up)
-  - [5.4. Applications UX/UI Design.](#54-applications-uxui-design)
-    - [5.4.1. Applications Wireframes.](#541-applications-wireframes)
-    - [5.4.2. Applications Wireflow Diagrams.](#542-applications-wireflow-diagrams)
-    - [5.4.3. Applications Mock-ups.](#543-applications-mock-ups)
-    - [5.4.4. Applications User Flow Diagrams.](#544-applications-user-flow-diagrams)
-  - [5.5. Applications Prototyping.](#55-applications-prototyping)
-  - [5.6. IoT Device Design.](#56-iot-device-design)
-- [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
-  - [6.1. Software Configuration Management.](#61-software-configuration-management)
-    - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
-    - [6.1.2. Source Code Management.](#612-source-code-management)
-    - [6.1.3. Source Code Style Guide & Conventions.](#613-source-code-style-guide--conventions)
-    - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
-  - [6.2. Landing Page, Services & Applications Implementation.](#62-landing-page-services--applications-implementation)
-    - [6.2.X. Sprint n](#62x-sprint-n)
-      - [6.2.X.1. Sprint Planning n.](#62x1-sprint-planning-n)
-      - [6.2.X.2. Aspect Leaders and Collaborators.](#62x2-aspect-leaders-and-collaborators)
-      - [6.2.X.3. Sprint Backlog n.](#62x3-sprint-backlog-n)
-      - [6.2.X.4. Development Evidence for Sprint Review.](#62x4-development-evidence-for-sprint-review)
-      - [6.2.X.5. Testing Suite Evidence for Sprint Review.](#62x5-testing-suite-evidence-for-sprint-review)
-      - [6.2.X.6. Execution Evidence for Sprint Review.](#62x6-execution-evidence-for-sprint-review)
-      - [6.2.X.7. Services Documentation Evidence for Sprint Review.](#62x7-services-documentation-evidence-for-sprint-review)
-      - [6.2.X.8. Software Deployment Evidence for Sprint Review.](#62x8-software-deployment-evidence-for-sprint-review)
-      - [6.2.X.9. Team Collaboration Insights during Sprint.](#62x9-team-collaboration-insights-during-sprint)
-  - [6.3. Validation Interviews.](#63-validation-interviews)
-    - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
-    - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
-    - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
-  - [6.4. Video About-the-Product.](#64-video-about-the-product)
-- [Conclusiones](#conclusiones)
 - [Conclusiones y recomendaciones.](#conclusiones-y-recomendaciones)
 - [Video About-the-Team.](#video-about-the-team)
 - [Bibliografía](#bibliografía)
@@ -1745,147 +1702,56 @@ En esta sección se presenta el detalle de implementación de **Energy Managemen
 
 ---
 
-# Capítulo V: Solution UI/UX Design
-
-## 5.1. Style Guidelines.
-### 5.1.1. General Style Guidelines.
-- **Color:** [Descripción de la paleta de colores corporativos y su justificación]
-- **Tipografía:** [Fuentes, tamaños y jerarquía tipográfica]
-- **Branding:** [Identidad visual, logotipo e iconografía]
-
-### 5.1.2. Web, Mobile and IoT Style Guidelines.
-- **Web App:** [Fondos, estilos de botones, formularios, alertas y componentes web]
-- **Mobile App:** [Diseño adaptativo, directrices iOS/Android, componentes táctiles]
-- **IoT Dashboard/Display:** [Visualización de telemetría, estados de dispositivos y alertas visuales]
-
-## 5.2. Information Architecture.
-### 5.2.1. Organization Systems.
-[Estructura jerárquica, secuencial y matricial de la información]
-
-### 5.2.2. Labeling Systems.
-[Etiquetado claro de navegación, menús y formularios]
-
-### 5.2.3. SEO Tags and Meta Tags
-- **Title Tag:** `<title>IoBuild - Soluciones Inteligentes IoT</title>`
-- **Description Meta:** `<meta name="description" content="Plataforma de monitoreo y gestión IoT." />`
-- **Keywords:** `<meta name="keywords" content="IoT, monitoreo, sensores, dashboards" />`
-
-### 5.2.4. Searching Systems.
-[Mecanismos de filtrado, búsqueda de dispositivos, eventos e historiales]
-
-### 5.2.5. Navigation Systems.
-[Sistemas de navegación jerárquica, global, local y contextual]
-
-## 5.3. Landing Page UI Design.
-### 5.3.1. Landing Page Wireframe.
-![Landing Page Wireframe](image.jpg)
-
-### 5.3.2. Landing Page Mock-up.
-![Landing Page Mock-up](image.jpg)
-
-## 5.4. Applications UX/UI Design.
-### 5.4.1. Applications Wireframes.
-![Applications Wireframes](image.jpg)
-
-### 5.4.2. Applications Wireflow Diagrams.
-![Applications Wireflow Diagrams](image.jpg)
-
-### 5.4.3. Applications Mock-ups.
-![Applications Mock-ups](image.jpg)
-
-### 5.4.4. Applications User Flow Diagrams.
-![Applications User Flow Diagrams](image.jpg)
-
-## 5.5. Applications Prototyping.
-[URL del Prototipo Interactivo (Figma u otra herramienta)](https://www.example.com)
-
-## 5.6. IoT Device Design.
-[Diseño conceptual y físico del dispositivo IoT: microcontroladores (ESP32/Arduino/Raspberry Pi), sensores, actuadores, esquemático de conexiones, protocolo de comunicación (MQTT/HTTP) y carcasa/empaque]
-
-![IoT Device Schematic](image.jpg)
-
----
-
-# Capítulo VI: Product Implementation, Validation & Deployment
-
-## 6.1. Software Configuration Management.
-### 6.1.1. Software Development Environment Configuration.
-[Configuración de IDEs, SDKs, herramientas de desarrollo y extensiones recomendadas]
-
-### 6.1.2. Source Code Management.
-[Estrategia de ramas (Gitflow), convenciones de commits y repositorios en GitHub]
-
-### 6.1.3. Source Code Style Guide & Conventions.
-[Guías de estilo de código para Backend, Frontend, Firmware IoT y linters configurados]
-
-### 6.1.4. Software Deployment Configuration.
-[Configuración de entornos CI/CD, Docker, pipelines de despliegue y servidores en la nube]
-
-## 6.2. Landing Page, Services & Applications Implementation.
-### 6.2.X. Sprint n
-#### 6.2.X.1. Sprint Planning n.
-[Objetivos del Sprint, alcance y acuerdos del equipo]
-
-#### 6.2.X.2. Aspect Leaders and Collaborators.
-| Aspecto / Módulo | Líder Responsable | Colaboradores |
-|---|---|---|
-| Firmware IoT & Hardware | [Nombre] | [Nombres] |
-| Backend & APIs | [Nombre] | [Nombres] |
-| Frontend Web & Landing | [Nombre] | [Nombres] |
-| Mobile Application | [Nombre] | [Nombres] |
-| QA & Testing | [Nombre] | [Nombres] |
-
-#### 6.2.X.3. Sprint Backlog n.
-| User Story ID | Tarea | Responsable | Estimación | Estado |
-|---|---|---|---|---|
-| US01 | [Tarea técnica] | [Nombre] | [Horas/Puntos] | Done / In Progress |
-
-#### 6.2.X.4. Development Evidence for Sprint Review.
-![Development Evidence](image.jpg)
-
-#### 6.2.X.5. Testing Suite Evidence for Sprint Review.
-![Testing Suite Evidence](image.jpg)
-
-#### 6.2.X.6. Execution Evidence for Sprint Review.
-![Execution Evidence](image.jpg)
-
-#### 6.2.X.7. Services Documentation Evidence for Sprint Review.
-![Services Documentation (Swagger/Postman)](image.jpg)
-
-#### 6.2.X.8. Software Deployment Evidence for Sprint Review.
-![Deployment Evidence](image.jpg)
-
-#### 6.2.X.9. Team Collaboration Insights during Sprint.
-![GitHub Insights & Commits](image.jpg)
-
-## 6.3. Validation Interviews.
-### 6.3.1. Diseño de Entrevistas.
-[Guía y preguntas estructuradas para la validación con usuarios finales]
-
-### 6.3.2. Registro de Entrevistas.
-[Evidencias fotográficas, grabaciones y resúmenes de las sesiones de validación]
-
-### 6.3.3. Evaluaciones según heurísticas.
-[Evaluación heurística de usabilidad de Nielsen aplicada a la solución]
-
-## 6.4. Video About-the-Product.
-[Enlace del video promocional y demostrativo del producto IoT]
-
----
-
-# Conclusiones
-[Conclusiones generales del desarrollo de la solución]
-
 # Conclusiones y recomendaciones.
-[Recomendaciones y lecciones aprendidas para futuros proyectos]
+
+## Conclusiones
+- **Alineación del Dominio y Propuesta de Valor:** A través de la fase inicial de empatía, entrevistas en profundidad y la construcción de User Personas y Journey Maps, se consolidó la orientación de IoBuild hacia dos segmentos clave: empresas constructoras / administradores de condominios y residentes particulares. La delimitación de la problemática permitió enfocar la plataforma en la automatización eficiente de iluminación y la supervisión del confort ambiental (temperatura y humedad), reduciendo costos e integrando espacios compartidos y privados de forma accesible.
+- **Modelado Estratégico y Desacoplamiento Arquitectónico:** La aplicación de Strategic-Level Domain-Driven Design (DDD) y el EventStorming (Big Picture y Design-Level) permitió identificar y estructurar con claridad cuatro Bounded Contexts: *Smart Project Setup*, *Service Execution and Monitoring*, *Smart Assistant* y *Energy Management*. La definición explícita de mapas de contexto (Context Mapping) y diagramas C4 (System Landscape, Context, Container y Deployment) garantiza un diseño de arquitectura escalable, desacoplado y preparado para la coexistencia de microservicios con comunicación asíncrona y telemetría de dispositivos IoT.
+- **Rigurosidad en el Diseño Táctico y Trazabilidad de Requisitos:** En el nivel táctico, la implementación de la Clean Architecture / Arquitectura Hexagonal en cuatro capas (Domain, Application, Interface e Infrastructure) asegura que las reglas de negocio permanezcan independientes de tecnologías o frameworks de infraestructura. Asimismo, la especificación de 69 historias de usuario con criterios de aceptación detallados en formato Gherkin (Given-When-Then) y un Product Backlog formalmente estimado en Story Points garantiza una trazabilidad directa entre las expectativas de los interesados y el diseño técnico.
+- **Viabilidad Tecnológica y Sinergia IoT:** El diseño de software integra de manera coherente el hardware perimetral (sensores DHT22 y actuadores relé conectados a microcontroladores) con servicios en la nube a través de protocolos ligeros como MQTT y HTTP REST, demostrando que la solución es técnicamente viable, robusta y económicamente sostenible para el mercado inmobiliario local.
+
+## Recomendaciones
+- **Fidelidad al Modelo de Dominio:** Se recomienda preservar la integridad de los Bounded Contexts y el Lenguaje Ubicuo durante las etapas de codificación y construcción de servicios, evitando la filtración de lógica de negocio en las capas de controladores o persistencia.
+- **Estrategia de Pruebas Tempranas en Firmware y Telemetría:** Es recomendable implementar bancos de pruebas automatizadas y simuladores de dispositivos IoT antes de la integración física final, validando la estabilidad en la reconexión de red Wi-Fi, la tolerancia a fallas de conexión y la gestión de la concurrencia en la ingesta de telemetría ambiental.
+- **Monitoreo de Eficiencia y Latencia:** Para los servicios encargados de la ejecución de comandos y el procesamiento de reglas de automatización, se sugiere establecer métricas estrictas de latencia y consumo de memoria, asegurando tiempos de respuesta inmediatos ante eventos ambientales o solicitudes del usuario.
+- **Consistencia en la Experiencia de Usuario (UI/UX):** Al abordar los siguientes hitos de implementación de las interfaces de usuario (web y móvil), se recomienda mantener una guía de estilos visuales unificada, con especial atención a la claridad en el reporte de estados de dispositivos y la simplicidad en la configuración de zonas comunes y privadas.
 
 # Video About-the-Team.
-[Enlace al video de presentación del equipo CcaritaTech]
+A continuación, se presenta el enlace al video de presentación del equipo:
+- **Enlace del video About-the-Team:** [Video de presentación del equipo CcaritaTech](https://youtu.be/...)
 
 # Bibliografía
-[Referencias bibliográficas en formato APA o IEEE]
+
+- CEELA. (2024). *Perú – Proyecto CEELA – Eficiencia energética en edificios*. Recuperado de https://proyectoceela.com/
+- Digi International. (2024). *IoT Applications for Smart Buildings: Use Cases and Key Benefits*. Recuperado de https://www.digi.com/
+- Domotec Perú. (2024). *Soluciones de domótica e integración residencial*. Recuperado de https://www.domotecperu.com/
+- Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley Professional.
+- Fowler, M. (2013). *GivenWhenThen*. Recuperado de https://martinfowler.com/bliki/GivenWhenThen.html
+- JLL. (2024). *Evolución sostenible: Edificios verdes en América Latina*. Jones Lang LaSalle IP, Inc. Recuperado de https://shorturl.at/QNYAH
+- Lucid Software Inc. (2024). *Lucidchart: Diagramming and Visual Collaboration*. Recuperado de https://www.lucidchart.com/
+- MWF Solutions. (2024). *Automatización y eficiencia de edificios inteligentes*. Recuperado de https://mwfsolutions.pe/
+- Nexoinmobiliario. (2025). *¿Vale la pena comprar un departamento con certificación LEED Lima?*. Recuperado de https://shorturl.at/aRS1m
+- Orvibo Perú. (2024). *Sistemas inteligentes para el hogar y la edificación*. Recuperado de https://orviboperu.com.pe/
+- Structurizr Ltd. (2024). *The C4 model for visualising software architecture*. Recuperado de https://structurizr.com/
+- Vernimmen, V. (2019). *Domain-Driven Design Reference: Definitions and Pattern Summaries*. Domain Language.
 
 # Anexos
-[Documentación complementaria, hojas de datos de sensores, diagramas adicionales]
+
+#### ANEXO A: Investigación y Análisis de Usuarios
+Este anexo recopila las evidencias de investigación, elicitación y validación con los usuarios finales que sustentan la solución IoBuild:
+- **Repositorio de la organización:** [https://github.com/IoBuild-IoT](https://github.com/IoBuild-IoT)
+- **Repositorio del informe de proyecto:** [https://github.com/IoBuild-IoT/report](https://github.com/IoBuild-IoT/report)
+- **Registro de entrevistas en video:**
+  - Entrevista 1 (Javier Ortiz - Constructor / Arquitecto): [https://youtu.be/l9eikn4YOmw](https://youtu.be/l9eikn4YOmw)
+  - Entrevista 2 (Arturo Velásquez - Constructor / Arquitecto): [https://youtu.be/zBm7PVg4cjI](https://youtu.be/zBm7PVg4cjI)
+  - Entrevista 3 (Mathias Gabriel Quispe Pariona - Propietario / Residente): [https://lix.li/neaB](https://lix.li/neaB)
+  - Entrevista 4 (Franco Bautista Salazar - Propietario / Residente): [https://lix.li/seV508](https://lix.li/seV508)
+  - Entrevista 5 (Alex Moreno - Constructor / Arquitecto): [https://youtu.be/M1nDEEuHymI](https://youtu.be/M1nDEEuHymI)
+
+#### ANEXO B: Documentación de Diseño, Requisitos y Arquitectura
+Este anexo incluye los enlaces hacia los tableros de trabajo colaborativo, artefactos de diseño UX y diagramas arquitectónicos de soporte:
+- **Lean UX Canvas:** [https://url-shortener.me/16XS](https://url-shortener.me/16XS)
+- **Repositorio de imágenes y diagramas de arquitectura:** [https://github.com/F4brizio24/Imagenes-Proyecto](https://github.com/F4brizio24/Imagenes-Proyecto)
+- **Impact Mapping:** [https://tinyurl.com/ytzz3rdn](https://tinyurl.com/ytzz3rdn)
 
 
