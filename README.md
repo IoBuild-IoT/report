@@ -98,15 +98,34 @@ URL del repositorio: https://github.com/IoBuild-IoT/report
       - [4.1.3.3. Software Architecture Container Level Diagrams.](#4133-software-architecture-container-level-diagrams)
       - [4.1.3.4. Software Architecture Deployment Diagrams.](#4134-software-architecture-deployment-diagrams)
   - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-    - [4.2.X. Bounded Context: &lt;Bounded Context Name&gt;](#42x-bounded-context-bounded-context-name)
-      - [4.2.X.1. Domain Layer.](#42x1-domain-layer)
-      - [4.2.X.2. Interface Layer.](#42x2-interface-layer)
-      - [4.2.X.3. Application Layer.](#42x3-application-layer)
-      - [4.2.X.4. Infrastructure Layer.](#42x4-infrastructure-layer)
-      - [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams.](#42x5-bounded-context-software-architecture-component-level-diagrams)
-      - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams.](#42x6-bounded-context-software-architecture-code-level-diagrams)
-        - [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.](#42x61-bounded-context-domain-layer-class-diagrams)
-        - [4.2.X.6.2. Bounded Context Database Design Diagram.](#42x62-bounded-context-database-design-diagram)
+    - [4.2.1. Bounded Context: Smart Project Setup.](#421-bounded-context-smart-project-setup)
+      - [4.2.1.1. Domain Layer.](#4211-domain-layer)
+      - [4.2.1.2. Interface Layer.](#4212-interface-layer)
+      - [4.2.1.3. Application Layer.](#4213-application-layer)
+      - [4.2.1.4. Infrastructure Layer.](#4214-infrastructure-layer)
+      - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams.](#4215-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams.](#4216-bounded-context-software-architecture-code-level-diagrams)
+    - [4.2.2. Bounded Context: Service Execution and Monitoring.](#422-bounded-context-service-execution-and-monitoring)
+      - [4.2.2.1. Domain Layer.](#4221-domain-layer)
+      - [4.2.2.2. Interface Layer.](#4222-interface-layer)
+      - [4.2.2.3. Application Layer.](#4223-application-layer)
+      - [4.2.2.4. Infrastructure Layer.](#4224-infrastructure-layer)
+      - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams.](#4225-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams.](#4226-bounded-context-software-architecture-code-level-diagrams)
+    - [4.2.3. Bounded Context: Smart Assistant.](#423-bounded-context-smart-assistant)
+      - [4.2.3.1. Domain Layer.](#4231-domain-layer)
+      - [4.2.3.2. Interface Layer.](#4232-interface-layer)
+      - [4.2.3.3. Application Layer.](#4233-application-layer)
+      - [4.2.3.4. Infrastructure Layer.](#4234-infrastructure-layer)
+      - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams.](#4235-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams.](#4236-bounded-context-software-architecture-code-level-diagrams)
+    - [4.2.4. Bounded Context: Energy Management.](#424-bounded-context-energy-management)
+      - [4.2.4.1. Domain Layer.](#4241-domain-layer)
+      - [4.2.4.2. Interface Layer.](#4242-interface-layer)
+      - [4.2.4.3. Application Layer.](#4243-application-layer)
+      - [4.2.4.4. Infrastructure Layer.](#4244-infrastructure-layer)
+      - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams.](#4245-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams.](#4246-bounded-context-software-architecture-code-level-diagrams)
 - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
   - [5.1. Style Guidelines.](#51-style-guidelines)
     - [5.1.1. General Style Guidelines.](#511-general-style-guidelines)
@@ -787,74 +806,942 @@ Con el objetivo de garantizar una comunicación precisa, libre de ambigüedades 
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories.
-| ID | Título | Como... | Quiero... | Para... | Criterios de Aceptación |
-|---|---|---|---|---|---|
-| US01 | [Título de historia] | [Rol/Usuario] | [Acción/Deseo] | [Beneficio/Valor] | **Escenario 1:** Dado... Cuando... Entonces... |
+
+En esta sección se detallan los requisitos del sistema especificados mediante un conjunto integrado de Epics, User Stories y Technical Stories. Cada historia de usuario sigue la estructura estándar («Como... deseo... para...») y cuenta con Criterios de Aceptación comprobables definidos bajo la sintaxis Gherkin (Dado... Cuando... Entonces...). Asimismo, se incorporan Technical Stories orientadas a la interacción técnica con los servicios y RESTful APIs de la plataforma IoBuild con el rol base *Developer*.
+
+| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|---|---|---|---|---|
+| EP01 | Landing page informativa | Como visitante del sitio, quiero tener acceso a una plataforma web, para conocer los servicios que brinda la aplicación. | | |
+| EP02 | Gestión de cuentas y acceso | Como ingeniero quiero crear una cuenta para acceder a las funcionalidades de la aplicación | | |
+| EP03 | Internacionalización de la plataforma | Como arquitecto, quiero que la aplicación esté disponible en más de un idioma para seleccionar el idioma de mi preferencia. | | |
+| EP04 | Personalización de espacios inteligentes | Como propietario, quiero personalizar la configuración de mi vivienda y/o edificio, para adaptar el espacio a mis necesidades. | | |
+| EP05 | Gestión de notificaciones | Como propietario, quiero recibir notificaciones relevantes sobre mis proyectos o configuraciones, para mantenerme informado en tiempo real. | | |
+| EP06 | Gestión de perfil de usuario | Como usuario propietario, quiero actualizar la información de mi perfil, para personalizar mi experiencia en la plataforma. | | |
+| EP07 | Dashboard de personalización del espacio | Como propietario, quiero acceder a un dashboard, para supervisar los dispositivos de mi departamento. | | |
+| EP08 | Gestión de clientes y entregables | Como ingeniero, quiero gestionar la información de mis clientes, para mantener un control organizado de los proyectos. | | |
+| EP09 | Gestión de proyectos inteligentes | Como arquitecto, quiero gestionar proyectos de construcción en la plataforma, para integrar funcionalidades inteligentes desde la planificación. | | |
+| EP10 | Seguridad y Privacidad de Datos | Como desarrollador, quiero implementar protocolos de seguridad y privacidad de datos, para proteger la información de los usuarios. | | |
+| EP11 | Gestión de dispositivos inteligentes | Como Desarrollador, quiero implementar un sistema de gestión de dispositivos inteligentes, para que permita registrar, modificar y asignar dispositivos disponibles dentro de un espacio. | | |
+| EP12 | Gestión de energía en tiempo real | Como Desarrollador, quiero implementar un sistema de monitoreo energético, para que los usuarios puedan consultar el uso de energía en sus espacios. | | |
+| EP13 | Gestión de usuarios | Como desarrollador, quiero gestionar a los usuarios de la plataforma, para asegurar un control adecuado de accesos, roles y permisos | | |
+| US01 | Sección "Sobre Nosotros" | Como visitante del sitio, quiero conocer la historia y valores de la aplicación, para tener mayor conexión y confianza con la empresa. | **Escenario 1:**<br>Dado que el visitante está explorando la landing page,<br> Cuando llega a la sección “Sobre Nosotros”, <br>Entonces debe visualizar una descripción breve de la historia de IoBuild, su equipo y valores, acompañada de imágenes. | EP01 |
+| US02 | Sección testimonios del cliente | Como visitante del sitio, quiero consultar testimonios de otros clientes, para generar confianza en la propuesta de valor de la startup | **Escenario 1:**<br>Dado que el visitante accede al sitio web<br>Cuando consulta la sección de testimonios<br>Entonces visualiza opiniones de clientes<br>Y percibe la experiencia de otros usuarios.<br><br>**Escenario 2:**<br>Dado que existen varios testimonios disponibles<br>Cuando el visitante desea revisar más testimonios<br>Entonces el sistema le muestra todos los testimonios | EP01 |
+| US03 | Acceso a información de contacto | Como visitante del sitio, quiero acceder fácilmente a la información de contacto de IoBuild, para comunicarme en caso de dudas | **Escenario 1:**<br>Dado que el visitante accede a la landing page<br>Cuando consulta la sección de contacto<br>Entonces visualiza información clara como correo y teléfono <br>Y puede identificar rápidamente los medios de comunicación disponibles. | EP01 |
+| US04 | Visualización de servicios principales | Como visitante del sitio, quiero conocer los servicios que ofrece IoBuild, para entender su propuesta de valor. | **Escenario 1:**<br>Dado que el visitante accede a la landing page<br>Cuando navega a la sección de servicios<br>Entonces visualiza una lista de los servicios principales<br><br>**Escenario 2:**<br>Dado que el visitante accede a la landing page <br>Cuando quiere conocer más sobre un servicio de su interés<br>Entonces selecciona la opción de “ver más”<br>Y se muestra un texto más completo sobre el servicio seleccionado | EP01 |
+| US05 | Opción de registro | Como visitante del sitio, quiero registrarme en la aplicación, para tener acceso a las funcionalidades de la aplicación | **Escenario 1:**<br>Dado que el visitante accede a la landing page<br>Cuando se dirige a la parte superior de la página<br>Y selecciona la opción registrarse<br>Entonces la aplicación lo redirige al formulario de registro | EP02 |
+| US06 | Preguntas frecuentes | Como visitante del sitio, quiero consultar una sección de preguntas frecuentes, para resolver dudas comunes sin necesidad de contactar a la startup | **Escenario 1:**<br>Dado que el visitante accede a la landing page<br>Cuando entra a la sección de preguntas frecuentes<br>Entonces puede desplegar las respuestas a cada pregunta común<br>Y encuentra información organizada y clara.<br><br>**Escenario 2:**<br>Dado que el visitante accede a la sección de preguntas frecuentes<br>Cuando revisa la lista de preguntas disponibles<br>Entonces el sistema debe mostrar múltiples preguntas frecuentes <br>Y cada pregunta debe poder expandirse para visualizar su respuesta correspondiente. | EP01 |
+| US07 | Internacionalización de la landing page | Como visitante del sitio, quiero poder encontrar más de un idioma disponible, para poder elegir el idioma de mi preferencia. | **Escenario 1:**<br>Dado que el visitante accede a la landing page<br>Cuando selecciona un idioma distinto<br>Entonces todo el contenido de la landing page debe mostrarse automáticamente en el idioma seleccionado.<br><br>**Escenario 2:**<br>Dado que el visitante seleccionó un idioma previamente<br>Cuando vuelve a ingresar al sitio<br>Entonces la landing page debe mostrarse en el último idioma elegido, sin necesidad de volver a configurarlo. | EP03 |
+| US08 | Dashboard Personalizado | Como usuario, quiero tener un dashboard personalizado, para visualizar la información relevante de manera rápida y eficiente. | **Escenario 1:**<br>Dado que el usuario accede al sistema,<br>Cuando el dashboard se carga,<br>Entonces verá una interfaz con widgets configurables (gráficos, estadísticas, alertas) según sus preferencias.<br><br>**Escenario 2:**<br>Dado que el usuario tiene acceso a múltiples secciones,<br>Cuando elige personalizar su dashboard,<br>Entonces podrá agregar, eliminar o reorganizar los widgets.<br><br>**Escenario 3:**<br>Dado que el usuario guarda los cambios en su dashboard,<br>Cuando vuelva a acceder,<br>Entonces verá el dashboard con las configuraciones guardadas. | EP07 |
+| US09 | Acceso a Proyectos Activos | Como ingeniero, quiero tener acceso a los proyectos que se encuentran activos, para poder realizar un seguimiento de su progreso y gestionar los recursos necesarios. | **Escenario 1:**<br>Dado que el ingeniero accede al sistema,<br>Cuando consulta la lista de proyectos,<br>Entonces verá solo los proyectos con estado "activo".<br><br>**Escenario 2:**<br>Dado que el ingeniero tiene acceso a los proyectos activos,<br>Cuando selecciona un proyecto,<br>Entonces puede acceder a detalles como el progreso, recursos y métricas del proyecto.<br><br>**Escenario 3:**<br>Dado que el ingeniero está visualizando proyectos activos,<br>Cuando hay cambios en el estado de algún proyecto (e.g., transición a "completado"),<br>Entonces la lista se actualiza automáticamente. | EP09 |
+| US10 | Acceso a Dispositivos Conectados | Como usuario, quiero tener acceso a los dispositivos conectados, para poder monitorear su estado y uso. | **Escenario 1:**<br>Dado que el usuario accede a la aplicación,<br>Cuando consulta los dispositivos conectados,<br>Entonces verá una lista de dispositivos con su estado actual (activo, inactivo, etc.).<br><br>**Escenario 2:**<br>Dado que el usuario tiene acceso a los dispositivos,<br>Cuando selecciona un dispositivo,<br>Entonces puede ver información detallada sobre su configuración, tipo y uso.<br><br>**Escenario 3:**<br>Dado que hay dispositivos conectados,<br>Cuando un dispositivo cambia su estado,<br>Entonces la interfaz se actualiza automáticamente. | EP04 |
+| US11 | Acceso a la Capacidad de Ocupación de Cada Proyecto | Como ingeniero, quiero tener acceso a la capacidad de ocupación de cada proyecto, para poder analizar el uso de los recursos y planificar de manera eficiente. | **Escenario 1:**<br>Dado que el ingeniero accede al sistema,<br>Cuando consulta la información de ocupación,<br>Entonces verá la capacidad de ocupación de cada proyecto, expresada como porcentaje o número de espacios ocupados.<br><br>**Escenario 2:**<br>Dado que el ingeniero tiene acceso a los proyectos,<br>Cuando selecciona un proyecto,<br>Entonces puede ver su capacidad de ocupación histórica y proyectada.<br><br>**Escenario 3:**<br>Dado que un proyecto tiene capacidad de ocupación variable,<br>Cuando cambia su ocupación,<br>Entonces la información se actualiza en tiempo real. | EP09 |
+| US12 | Gráfico de Consumo de Energía por Hora | Como ingeniero, quiero ver un gráfico sobre la energía que se consume por hora, para poder evaluar el rendimiento energético de los proyectos en tiempo real. | **Escenario 1:**<br>Dado que el ingeniero accede a la sección de consumo energético,<br>Cuando visualiza los datos,<br>Entonces verá un gráfico que muestra el consumo de energía de cada proyecto por hora.<br><br>**Escenario 2:**<br>Dado que el gráfico muestra el consumo energético,<br>Cuando se actualizan los datos de consumo,<br>Entonces el gráfico se refresca en tiempo real.<br><br>**Escenario 3:**<br>Dado que el ingeniero necesita analizar tendencias,<br>Cuando selecciona un rango de tiempo específico,<br>Entonces el gráfico ajusta el intervalo de horas. | EP12 |
+| US13 | Gráfico de Registro de Ocupación | Como ingeniero, quiero ver un gráfico sobre el registro de ocupación, para poder analizar la evolución de la ocupación a lo largo del tiempo. | **Escenario 1:**<br>Dado que el ingeniero accede a la sección de ocupación,<br>Cuando consulta los datos históricos,<br>Entonces verá un gráfico que representa la evolución de la ocupación de los proyectos a lo largo del tiempo.<br><br>**Escenario 2:**<br>Dado que el gráfico de ocupación está disponible,<br>Cuando el ingeniero selecciona diferentes proyectos,<br>Entonces puede visualizar la ocupación de cada uno por separado.<br><br>**Escenario 3:**<br>Dado que los datos de ocupación se actualizan con frecuencia,<br>Cuando se produce un cambio en la ocupación,<br>Entonces el gráfico se actualiza automáticamente. | EP09 |
+| US14 | Resumen de Proyecto | Como ingeniero, quiero ver un resumen sobre cada proyecto, para saber si está activo, su ubicación y cuántos departamentos están ocupados. | **Escenario 1:**<br>Dado que el ingeniero accede a los proyectos,<br>Cuando selecciona un proyecto,<br>Entonces verá un resumen con la información clave: estado (activo/inactivo), ubicación y número de departamentos ocupados.<br><br>**Escenario 2:**<br>Dado que el ingeniero puede ver el resumen,<br>Cuando se actualiza algún dato clave del proyecto (e.g., cambio de ubicación o estado),<br>Entonces el resumen se actualiza automáticamente.<br><br>**Escenario 3:**<br>Dado que el ingeniero tiene acceso a múltiples proyectos,<br>Cuando consulta la lista,<br>Entonces puede ver una visión general de todos los proyectos activos con esta información resumida. | EP09 |
+| US15 | Visualización de Dispositivos y Distribución por Tipo | Como ingeniero, quiero ver cuáles son los dispositivos y cómo están distribuidos por tipo, para realizar un análisis más detallado de los recursos disponibles. | **Escenario 1:**<br>Dado que el ingeniero accede a la sección de dispositivos,<br>Cuando consulta los dispositivos,<br>Entonces verá una lista detallada de todos los dispositivos conectados, clasificados por tipo.<br><br>**Escenario 2:**<br>Dado que los dispositivos están clasificados por tipo,<br>Cuando selecciona un tipo específico,<br>Entonces verá solo los dispositivos de ese tipo.<br><br>**Escenario 3:**<br>Dado que el ingeniero puede ver la distribución de dispositivos,<br>Cuando se agrega o elimina un dispositivo,<br>Entonces la distribución se actualiza automáticamente. | EP11 |
+| US16 | Acceso a Perfil del Usuario | Como usuario, quiero tener acceso a mi perfil, para ver datos como mi nombre, email, número de teléfono y mi dirección. | **Escenario 1:**<br>Dado que el usuario accede a la aplicación,<br>Cuando consulta su perfil,<br>Entonces verá una página o sección con la siguiente información: nombre, email, número de teléfono y dirección.<br><br>**Escenario 2:**<br>Dado que el usuario está visualizando su perfil,<br>Cuando la información de contacto está desactualizada,<br>Entonces puede identificar qué datos están desactualizados (si es el caso).<br><br>**Escenario 3:**<br>Dado que el usuario accede a su perfil,<br>Cuando realiza un cambio en la información personal,<br>Entonces la información se guarda correctamente y se actualiza en la base de datos. | EP06 |
+| US17 | Edición de Información del Perfil | Como usuario, quiero poder editar alguna parte de mi información, como mi email, número de teléfono o dirección, para mantener mis datos actualizados. | **Escenario 1:**<br>Dado que el usuario accede a su perfil,<br>Cuando selecciona la opción para editar su información,<br>Entonces podrá modificar los siguientes campos: email, número de teléfono y dirección.<br><br>**Escenario 2:**<br>Dado que el usuario está editando su información,<br>Cuando hace un cambio en uno de estos campos,<br>Entonces la aplicación valida que el formato del email y número de teléfono sea correcto antes de guardar los cambios.<br><br>**Escenario 3:**<br>Dado que el usuario ha editado la información,<br>Cuando guarda los cambios,<br>Entonces recibirá una confirmación de que los datos fueron actualizados exitosamente.<br><br>**Escenario 4:**<br>Dado que el usuario intenta editar un campo,<br>Cuando el campo es obligatorio (por ejemplo, dirección),<br>Entonces se mostrará un mensaje de error si el campo está vacío. | EP06 |
+| US18 | Ver Imagen que Representa al Usuario | Como usuario, quiero poder ver una imagen que me represente, para tener una experiencia más personalizada. | **Escenario 1:**<br>Dado que el usuario accede a su perfil,<br>Cuando visualiza la información personal,<br>Entonces verá una imagen o avatar asociado a su cuenta (si está disponible).<br><br>**Escenario 2:**<br>Dado que el usuario desea cambiar su imagen,<br>Cuando selecciona la opción para editar la foto de perfil,<br>Entonces podrá cargar una nueva imagen desde su dispositivo.<br><br>**Escenario 3:**<br>Dado que el usuario cambia su imagen de perfil,<br>Cuando la nueva imagen se guarda,<br>Entonces se actualiza correctamente en el perfil y se refleja en todas las pantallas donde se visualiza el avatar del usuario.<br><br>**Escenario 4:**<br>Dado que el usuario no ha subido una imagen de perfil,<br>Cuando no se encuentra una imagen,<br>Entonces se muestra una imagen predeterminada (por ejemplo, un avatar de usuario predeterminado). | EP06 |
+| US19 | Ver el Rol de la Cuenta | Como usuario, quiero poder ver el rol de mi cuenta, para entender qué permisos tengo dentro de la aplicación. | **Escenario 1:**<br>Dado que el usuario accede a su perfil,<br>Cuando consulta los detalles de su cuenta,<br>Entonces verá un campo que indica su rol (por ejemplo: "Administrador", "Usuario", "Invitado").<br><br>**Escenario 2:**<br>Dado que el usuario tiene un rol específico,<br>Cuando el sistema identifica un cambio en el rol,<br>Entonces actualizará la información visible en el perfil en tiempo real.<br><br>**Escenario 3:**<br>Dado que el usuario ve su rol,<br>Cuando accede a secciones de la aplicación,<br>Entonces verá solo las opciones que correspondan a su nivel de acceso (por ejemplo, un "Administrador" verá opciones de configuración, mientras que un "Usuario" verá solo las opciones básicas).<br><br>**Escenario 4:**<br>Dado que el rol puede cambiar,<br>Cuando un administrador o un usuario con permisos lo actualiza,<br>Entonces la modificación se refleja inmediatamente en el perfil del usuario. | EP06 |
+| US20 | Ver lista de proyectos | Como ingeniero, quiero ver una lista de todos mis proyectos para poder conocer el estado y detalles de cada uno. | **Escenario 1:**<br>Dado que existen proyectos registrados para el constructor,<br>Cuando el constructor accede a la vista de “Proyectos”,<br>Entonces el sistema muestra una lista con todos los proyectos incluyendo imagen, nombre, estado, tasa de ocupación y fecha de creación.<br><br>**Escenario 2:**<br>Dado que no existen proyectos registrados para el constructor,<br>Cuando el constructor accede a la vista de “Proyectos”,<br>Entonces el sistema muestra un mensaje indicando que no hay proyectos disponibles. | EP09 |
+| US21 | Agregar un nuevo proyecto | Como arquitecto, quiero agregar un nuevo proyecto para poder registrar nuevos desarrollos inmobiliarios. | **Escenario 1:**<br>Dado que el constructor proporciona datos válidos (nombre, imagen, estado, unidades totales, fecha de creación, etc.),<br>Cuando el constructor envía la solicitud para agregar el proyecto,<br>Entonces el sistema crea el proyecto y lo muestra en la lista de proyectos.<br><br>**Escenario 2:**<br>Dado que el constructor proporciona datos inválidos (por ejemplo, nombre vacío o formato incorrecto),<br>Cuando el constructor envía la solicitud para agregar el proyecto,<br>Entonces el sistema rechaza la creación y muestra un mensaje de error. | EP09 |
+| US22 | Ver detalles de un proyecto | Como arquitecto, quiero ver los detalles de un proyecto específico para poder revisar su información completa. | **Escenario 1:**<br>Dado que el proyecto existe en el sistema,<br>Cuando el constructor selecciona la opción “Ver Detalles” de ese proyecto,<br>Entonces el sistema muestra la información completa del proyecto seleccionado.<br><br>**Escenario 2:**<br>Dado que el proyecto no existe en el sistema,<br>Cuando el constructor intenta acceder a los detalles del proyecto,<br>Entonces el sistema muestra un mensaje de error indicando que el proyecto no se encuentra disponible. | EP09 |
+| US23 | Ver Lista de Clientes | Como Arquitecto, quiero ver una lista de todos los clientes para poder gestionar sus proyectos asociados y el estado de su cuenta. | **Escenario 1:**<br>Dado que hay clientes registrados en el sistema,<br>Cuando el Arquitecto solicita la lista de clientes,<br>Entonces el sistema presenta el listado de clientes con su Nombre Completo, Proyecto Asociado, Estado de Cuenta y opciones de gestión disponibles.<br><br>**Escenario 2:**<br>Dado que no existen clientes registrados,<br>Cuando el Arquitecto solicita la lista de clientes,<br>Entonces el sistema notifica que no se encontraron clientes registrados.<br><br>**Escenario 3:**<br>Dado que la cantidad de clientes supera el límite por página,<br>Cuando el Arquitecto navega en la lista,<br>Entonces el sistema habilita controles de paginación para consultar los registros restantes. | EP08 |
+| US24 | Buscar/Ordenar Clientes | Como Ingeniero, quiero ordenar la lista de clientes por columnas (Nombre Completo, Proyecto Asociado, Estado de Cuenta) para organizar clientes rápidamente según criterios específicos. | **Escenario 1:**<br>Dado que el usuario consulta la lista de clientes,<br>Cuando solicita ordenar por Nombre Completo,<br>Entonces el sistema organiza los registros alfabéticamente de forma ascendente o descendente.<br><br>**Escenario 2:**<br>Dado que el usuario consulta la lista de clientes,<br>Cuando solicita ordenar por Proyecto Asociado,<br>Entonces el sistema clasifica los registros según el nombre del proyecto correspondiente.<br><br>**Escenario 3:**<br>Dado que el usuario consulta la lista de clientes,<br>Cuando solicita ordenar por Estado de Cuenta,<br>Entonces el sistema agrupa los registros según su condición operativa (Activo, Stand by o Suspendido). | EP08 |
+| US25 | Agregar un Nuevo Cliente | Como Arquitecto, quiero agregar un nuevo cliente para registrarlo en el sistema. | **Escenario 1:**<br>Dado que el Arquitecto suministra datos obligatorios y válidos de un nuevo cliente,<br>Cuando confirma la solicitud de registro,<br>Entonces el sistema persiste el registro y lo incorpora en la lista activa de clientes.<br><br>**Escenario 2:**<br>Dado que el formulario carece de información obligatoria o presenta formatos erróneos,<br>Cuando el Arquitecto confirma la solicitud de registro,<br>Entonces el sistema rechaza la operación y señala los campos con error. | EP08 |
+| US26 | Ver Perfil del Cliente | Como Ingeniero, quiero ver el perfil detallado de un cliente para acceder a su información completa y opciones de gestión. | **Escenario 1:**<br>Dado que se consulta un cliente registrado en la lista,<br>Cuando el Ingeniero solicita visualizar su perfil detallado,<br>Entonces el sistema presenta la ficha completa con los proyectos asociados e historial del cliente. | EP08 |
+| US27 | Acceder a la Configuración del Cliente | Como Arquitecto, quiero acceder a la configuración específica de un cliente para gestionar el estado de su cuenta y permisos. | **Escenario 1:**<br>Dado que se selecciona un cliente registrado,<br>Cuando el Arquitecto solicita gestionar su configuración,<br>Entonces el sistema presenta las opciones operativas para actualizar datos, suspender, activar o dar de baja la cuenta del cliente. | EP08 |
+| US28 | Ver Plan de Suscripción Actual | Como ingeniero, quiero ver mi plan de suscripción actual y su estado para confirmar los beneficios que tengo y el costo mensual. | **Escenario 1:**<br>Dado que el ingeniero accede a la sección de suscripción,<br>Cuando el sistema carga la vista,<br>Entonces el sistema muestra el nombre del plan actual (Enterprise), su costo total, el estado de la suscripción (Active) y una lista detallada de todos los beneficios incluidos. | EP02 |
+| US29 | Ver Planes de Suscripción Alternativos | Como ingeniero, quiero ver planes de suscripción alternativos (Professional y Starter) para poder comparar sus precios y beneficios con mi plan actual. | **Escenario 1:**<br>Dado que el ingeniero accede a la sección de suscripción,<br>Cuando el sistema carga la vista,<br>Entonces el sistema muestra, junto al plan actual, las tarjetas informativas de los planes Professional y Starter, incluyendo sus costos y sus listas de beneficios específicos. | EP02 |
+| US30 | Iniciar Cambio de Plan | Como arquitecto, quiero solicitar un cambio de plan de suscripción para adaptar el nivel de servicio a las necesidades del proyecto. | **Escenario 1:**<br>Dado que el arquitecto consulta la suscripción de la empresa,<br>Cuando solicita cambiar de plan,<br>Entonces el sistema habilita el catálogo de planes disponibles y permite seleccionar el nuevo nivel tarifario. | EP02 |
+| US31 | Renovar Plan Activo | Como arquitecto, quiero renovar el plan de suscripción activo para garantizar la continuidad del servicio en obra. | **Escenario 1:**<br>Dado que la cuenta posee una suscripción activa próxima a vencer,<br>Cuando el arquitecto confirma la orden de renovación,<br>Entonces el sistema procesa la transacción y actualiza la vigencia del servicio emitiendo el comprobante correspondiente. | EP02 |
+| US32 | Cancelar Plan Actual | Como ingeniero, quiero solicitar la cancelación del plan de suscripción para suspender cobros al término del ciclo de facturación. | **Escenario 1:**<br>Dado que existe una suscripción activa,<br>Cuando el ingeniero solicita la cancelación del servicio,<br>Entonces el sistema registra la solicitud, programa el cese de cobros al fin del ciclo y notifica la confirmación respectiva. | EP02 |
+| US33 | Ver Lista de Dispositivos | Como ingeniero, quiero ver una lista de todos los dispositivos registrados en el proyecto para monitorear su estado operativo y ubicación. | **Escenario 1:**<br>Dado que existen dispositivos aprovisionados en el sistema,<br>Cuando el ingeniero consulta el inventario de dispositivos,<br>Entonces el sistema presenta los registros con nombre, tipo, ubicación y estado en tiempo real, habilitando opciones de configuración y baja técnica.<br><br>**Escenario 2:**<br>Dado que existen dispositivos desconectados de la red,<br>Cuando el ingeniero consulta el inventario,<br>Entonces el sistema indica de forma clara y distintiva la condición fuera de línea (*Offline*).<br><br>**Escenario 3:**<br>Dado que se visualiza el inventario de dispositivos,<br>Cuando el ingeniero solicita ordenar por nombre, tipo o ubicación,<br>Entonces el sistema reordena los registros según el criterio establecido. | EP11 |
+| US34 | Agregar un Nuevo Dispositivo | Como arquitecto, quiero registrar un nuevo dispositivo inteligente en la plataforma para expandir la cobertura de monitoreo y automatización. | **Escenario 1:**<br>Dado que el arquitecto solicita incorporar un nuevo equipo,<br>Cuando el sistema presenta el formulario de aprovisionamiento,<br>Entonces permite ingresar los identificadores técnicos, tipo de sensor o actuador y espacio asignado.<br><br>**Escenario 2:**<br>Dado que el arquitecto proporciona los datos válidos del dispositivo,<br>Cuando confirma el aprovisionamiento,<br>Entonces el sistema valida la compatibilidad, registra el nodo en la base de datos y lo incorpora a la red operativa. | EP11 |
+| US35 | Editar/Configurar Ajustes de Dispositivo | Como ingeniero, quiero modificar los parámetros técnicos de un dispositivo para ajustar umbrales de medición y asegurar su funcionamiento. | **Escenario 1:**<br>Dado que se selecciona un dispositivo activo en la plataforma,<br>Cuando el ingeniero solicita editar su configuración,<br>Entonces el sistema permite modificar parámetros de lectura, frecuencia de telemetría y reglas de alerta asociadas. | EP11 |
+| US36 | Eliminar un Dispositivo | Como arquitecto, quiero dar de baja un dispositivo que ya no está en uso o presenta fallas irreversibles para depurar el inventario. | **Escenario 1:**<br>Dado que un dispositivo es seleccionado para desincorporación,<br>Cuando el arquitecto confirma la orden de baja técnica,<br>Entonces el sistema desvincula el dispositivo de la unidad y actualiza su estado a inactivo.<br><br>**Escenario 2:**<br>Dado que un dispositivo tiene dependencias críticas en reglas de automatización activas,<br>Cuando el arquitecto solicita su baja,<br>Entonces el sistema previene la eliminación y señala las dependencias operativas vigentes. | EP11 |
+| US37 | Gestionar Notificaciones | Como Usuario, quiero activar o desactivar diferentes tipos de alertas para controlar las notificaciones recibidas del sistema. | **Escenario 1:**<br>Dado que el usuario gestiona sus preferencias de notificación,<br>Cuando modifica la activación de las Alertas de Expiración,<br>Entonces el sistema actualiza inmediatamente la configuración guardada.<br><br>**Escenario 2:**<br>Dado que el usuario gestiona sus preferencias de notificación,<br>Cuando modifica la recepción de Actualizaciones del Sistema,<br>Entonces el sistema habilita o inhabilita dichos avisos periódicos.<br><br>**Escenario 3:**<br>Dado que el usuario gestiona sus preferencias de notificación,<br>Cuando modifica las Notificaciones Push,<br>Entonces el sistema actualiza la suscripción de eventos en tiempo real hacia su terminal. | EP05 |
+| US38 | Cambiar Contraseña de la Cuenta | Como Usuario, quiero cambiar mi contraseña periódicamente para mantener la seguridad de mi cuenta. | **Escenario 1:**<br>Dado que el usuario se encuentra autenticado,<br>Cuando suministra la credencial actual y define una nueva clave con su respectiva confirmación,<br>Entonces el sistema valida los requisitos de seguridad y actualiza la contraseña de acceso. | EP10 |
+| US39 | Gestionar Autenticación de Dos Factores | Como Usuario, quiero configurar la Autenticación de Dos Factores (2FA) para añadir un nivel adicional de seguridad a mi cuenta. | **Escenario 1:**<br>Dado que el usuario desea robustecer el acceso a su cuenta,<br>Cuando activa la opción de autenticación en dos factores,<br>Entonces el sistema genera los códigos de verificación necesarios y activa el segundo factor para inicios de sesión posteriores. | EP10 |
+| US40 | Gestionar Sesiones Activas | Como Usuario, quiero monitorear y gestionar las sesiones activas de mi cuenta para revocar accesos en terminales no reconocidos. | **Escenario 1:**<br>Dado que el usuario consulta las conexiones activas asociadas a su cuenta,<br>Cuando solicita cerrar una o todas las sesiones abiertas,<br>Entonces el sistema invalida los tokens correspondientes impidiendo el acceso continuado desde dichos terminales. | EP10 |
+| US41 | Añadir Correo Electrónico Alternativo | Como Usuario, quiero asociar una dirección de correo alternativa para facilitar la recuperación de la cuenta y avisos secundarios. | **Escenario 1:**<br>Dado que el usuario ingresa una dirección de correo complementaria,<br>Cuando confirma la solicitud de adición,<br>Entonces el sistema remite un código de verificación para validar la titularidad antes de registrarla como cuenta secundaria. | EP10 |
+| US42 | Acceder a Ayuda y Soporte | Como Usuario, quiero consultar recursos de ayuda y contactar a soporte técnico para resolver incidencias operativas. | **Escenario 1:**<br>Dado que el usuario requiere asistencia técnica,<br>Cuando solicita consultar las preguntas frecuentes,<br>Entonces el sistema presenta el catálogo de soluciones a dudas comunes.<br><br>**Escenario 2:**<br>Dado que la consulta requiere atención personalizada,<br>Cuando el usuario envía una solicitud de soporte,<br>Entonces el sistema genera un ticket de atención y notifica al equipo técnico. | EP01 |
+| US43 | Registrarse en la plataforma | Como Usuario, quiero crear una cuenta nueva con mis datos básicos y rol para acceder a las capacidades de IoBuild. | **Escenario 1:**<br>Dado que el visitante proporciona información válida de contacto y credenciales de acceso,<br>Cuando envía el formulario de registro,<br>Entonces el sistema crea la cuenta, autentica al usuario y lo canaliza a la vista de bienvenida.<br><br>**Escenario 2:**<br>Dado que el correo suministrado ya se encuentra asociado a una cuenta existente,<br>Cuando el visitante intenta registrarse,<br>Entonces el sistema previene la duplicidad y notifica que el correo ya está en uso. | EP02 |
+| US44 | Iniciar Sesión (Login) | Como Usuario, quiero ingresar mis credenciales para acceder a mi cuenta y utilizar los servicios de IoBuild. | **Escenario 1:**<br>Dado que el usuario ingresa sus credenciales correctas de acceso,<br>Cuando confirma la autenticación,<br>Entonces el sistema valida la identidad, genera la sesión activa y presenta la consola principal correspondiente a su rol.<br><br>**Escenario 2:**<br>Dado que se ingresan credenciales erróneas o no registradas,<br>Cuando se solicita la autenticación,<br>Entonces el sistema deniega el acceso y presenta un mensaje seguro de advertencia. | EP02 |
+| US45 | Cerrar Sesión (Logout) | Como Usuario, quiero cerrar mi sesión actual para proteger mi cuenta, especialmente si estoy en un dispositivo compartido. | **Escenario 1:**<br>Dado que el usuario tiene una sesión activa.<br>Cuando selecciona la opción "Cerrar Sesión".<br>Entonces el sistema invalida su acceso actual y lo redirige a la página de inicio o login pública. | EP02 |
+| TS01 | Listar proyectos por Constructor | Como desarrollador, quiero solicitar a la API que liste todos los proyectos asociados a un constructor específico, para poder mostrar la vista principal de Proyectos. | **Escenario 1:**<br>Dado que se recibe una solicitud para listar proyectos filtrados por el identificador del constructor (ej. *builderId*),<br>Cuando la API encuentra uno o más recursos de proyecto que coinciden,<br>Entonces la API responde con **200 OK** y devuelve un arreglo no vacío de recursos de proyecto, cada uno incluyendo los campos: *id, imagen, nombre, estado, tasaDeOcupacion y fechaDeCreacion.*<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud para listar proyectos de un constructor,<br>Cuando la API no encuentra recursos que coincidan,<br>Entonces la API responde con **200 OK** y devuelve un arreglo vacío. | EP09 |
+| TS02 | Crear un Proyecto | Como desarrollador, quiero añadir un nuevo proyecto a través de la API para poder implementar la funcionalidad de registro de nuevos desarrollos. | **Escenario 1:**<br>Dado que se recibe una solicitud de creación que incluye todos los campos obligatorios y válidos (ej. *nombre, unidadesTotales, fechaDeCreacion*),<br>Cuando la API valida y persiste el nuevo recurso de proyecto exitosamente,<br>Entonces la API responde con **201 Created**, y devuelve la representación del recurso creado (incluyendo *id* y los datos proporcionados).<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud de creación con campos obligatorios faltantes o con valores inválidos (ej. un campo numérico incorrecto),<br>Cuando la validación de la API falla,<br>Entonces la API responde con **400 Bad Request** y un payload de error que describe los errores de validación específicos. | EP09 |
+| TS03 | Recuperar un Proyecto por ID | Como desarrollador, quiero solicitar un proyecto por su *{id}* para poder mostrar la vista de detalles del proyecto. | **Escenario 1:**<br>Dado que se recibe una solicitud para un proyecto identificado por *{id}*,<br>Cuando la API encuentra el recurso,<br>Entonces la API responde con **200 OK** y devuelve el recurso de proyecto completo (con todos sus atributos detallados).<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud para un proyecto identificado por un *{id}* no existente,<br>Cuando la API no encuentra el recurso,<br>Entonces la API responde con **404 Not Found** y un payload de error indicando que el proyecto no existe. | EP09 |
+| TS04 | Actualizar la información de un cliente | Como desarrollador, quiero enviar a la API una solicitud para modificar los datos de un cliente existente, para poder implementar la edición de su perfil y la gestión de su estado de cuenta. | **Escenario 1:**<br>Dado que se recibe una solicitud **PUT** o **PATCH** para actualizar el cliente identificado por *{id}* con datos válidos (ej. un nuevo *accountStatement*),<br>Cuando la API valida y persiste los cambios exitosamente,<br>Entonces la API responde con **200 OK** y devuelve la representación del recurso de cliente actualizado.<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud de actualización con campos obligatorios faltantes o que contienen valores inválidos,<br>Cuando la validación de la API falla,<br>Entonces la API responde con **400 Bad Request** y un payload de error que describe los errores de validación.<br><br>**Escenario 3:**<br>Dado que se recibe una solicitud para actualizar un cliente con un *{id}* no existente,<br>Cuando la API no encuentra el recurso,<br>Entonces la API responde con **404 Not Found** y un payload de error. | EP08 |
+| TS05 | Eliminar un cliente | Como desarrollador, quiero solicitar a la API la eliminación de un cliente por su *{id}*, para poder implementar la funcionalidad de dar de baja clientes que ya no se utilizarán. | **Escenario 1:**<br>Dado que se recibe una solicitud **DELETE** para eliminar un cliente identificado por *{id}*,<br>Cuando la API elimina el recurso exitosamente,<br>Entonces la API responde con **204 No Content** (estándar para eliminación exitosa).<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud para eliminar un cliente identificado por un *{id}* no existente,<br>Cuando la API no encuentra el recurso,<br>Entonces la API responde con **404 Not Found** y un payload de error.<br><br>**Escenario 3:**<br>Dado que se recibe una solicitud para eliminar un cliente identificado por *{id}* que tiene proyectos activos o dependencias críticas,<br>Cuando la API detecta una restricción de dependencia,<br>Entonces la API responde con **409 Conflict** y un payload de error explicando que la acción fue rechazada debido a dependencias. | EP08 |
+| TS06 | Soportar ordenación en la lista de clientes | Como desarrollador, quiero poder enviar parámetros de ordenación a la API (nombre de columna y dirección), para poder implementar las funcionalidades de Buscar/Ordenar Clientes. | **Escenario 1:**<br>Dado que se recibe una solicitud para listar clientes incluyendo parámetros de ordenación válidos (ej. *sort=fullName,desc* o *sort=accountStatement,asc*),<br>Cuando la API procesa los datos y aplica la ordenación,<br>Entonces la API responde con **200 OK** y los clientes son devueltos en el orden especificado.<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud para listar clientes incluyendo un parámetro de ordenación inválido o una columna no soportada,<br>Cuando la API valida los parámetros de entrada,<br>Entonces la API responde con **400 Bad Request** y un payload de error indicando que el parámetro de ordenación es incorrecto o no está permitido. | EP08 |
+| TS07 | Listar clientes | Como desarrollador, quiero solicitar a la API que liste los clientes, opcionalmente filtrados por estado o nombre, para poder mostrar la vista de la lista de clientes. | **Escenario 1:**<br>Dado que se recibe una solicitud para listar clientes, potencialmente incluyendo parámetros de paginación (*límite*, *offset*) y ordenamiento,<br>Cuando la API encuentra uno o más clientes,<br>Entonces la API responde con **200 OK** y devuelve un arreglo de recursos de cliente, incluyendo *id*, *fullName*, *associatedProject* y *accountStatement*, junto con metadatos de paginación.<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud para listar clientes,<br>Cuando la API no encuentra recursos que coincidan,<br>Entonces la API responde con **200 OK** y devuelve un arreglo vacío. | EP08 |
+| TS08 | Crear un cliente | Como desarrollador, quiero añadir un nuevo cliente a través de la API para poder implementar la funcionalidad de creación de clientes. | **Escenario 1:**<br>Dado que se recibe una solicitud de creación que incluye campos obligatorios (ej. *fullName*),<br>Cuando la API valida y persiste el nuevo cliente exitosamente,<br>Entonces la API responde con **201 Created** y devuelve la representación del recurso de cliente creado (incluyendo *id*).<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud de creación con campos obligatorios faltantes o que contienen valores inválidos,<br>Cuando la validación de la API falla,<br>Entonces la API responde con **400 Bad Request** y un payload de error que describe los errores de validación.<br><br>**Escenario 3:**<br>Dado que se recibe una solicitud de creación para un *fullName* que ya existe,<br>Cuando la API detecta la violación de la restricción de duplicado,<br>Entonces la API responde con **409 Conflict** y un payload de error explicativo. | EP08 |
+| TS09 | Recuperar un cliente por id | Como desarrollador, quiero solicitar un recurso de cliente por su *{id}* para poder implementar la vista detallada del perfil. | **Escenario 1:**<br>Dado que se recibe una solicitud para un cliente identificado por *{id}*,<br>Cuando la API encuentra el recurso,<br>Entonces la API responde con **200 OK** y devuelve el recurso de cliente completo.<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud para un cliente identificado por un *{id}* no existente,<br>Cuando la API no encuentra el recurso,<br>Entonces la API responde con **404 Not Found** y un payload de error. | EP08 |
+| TS10 | Listar dispositivos | Como desarrollador, quiero solicitar a la API que liste todos los dispositivos, filtrados por ubicación o estado, para poder mostrar la lista de Gestión de Dispositivos. | **Escenario 1:**<br>Dado que se recibe una solicitud para listar dispositivos,<br>Cuando la API encuentra uno o más recursos de dispositivo,<br>Entonces la API responde con **200 OK** y devuelve un arreglo no vacío de recursos de dispositivo, cada uno incluyendo *id*, *name*, *type*, *location* y *realTimeStatus*.<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud para listar dispositivos,<br>Cuando la API no encuentra recursos que coincidan,<br>Entonces la API responde con **200 OK** y devuelve un arreglo vacío.<br><br>**Escenario 3:**<br>Dado que se recibe una solicitud para listar dispositivos filtrados por un parámetro de *status* (ej. “Offline”),<br>Cuando la API filtra los recursos,<br>Entonces la API responde con **200 OK** y devuelve solo los dispositivos que coinciden con el estado solicitado. | EP11 |
+| TS11 | Eliminar un dispositivo por id | Como desarrollador, quiero solicitar a la API que elimine un dispositivo por su *{id}* para poder retirar hardware que ya no se utiliza del sistema. | **Escenario 1:**<br>Dado que se recibe una solicitud para eliminar un dispositivo identificado por *{id}*,<br>Cuando la API elimina el recurso exitosamente,<br>Entonces la API responde con **204 No Content** (estándar para eliminación exitosa).<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud para eliminar un dispositivo identificado por un *{id}* no existente,<br>Cuando la API no encuentra el recurso,<br>Entonces la API responde con **404 Not Found** y un payload de error.<br><br>**Escenario 3:**<br>Dado que se recibe una solicitud para eliminar un dispositivo identificado por *{id}* que está actualmente en uso o vinculado a datos críticos,<br>Cuando la API detecta una restricción de dependencia,<br>Entonces la API responde con **409 Conflict** y un payload de error explicando la dependencia. | EP11 |
+| TS12 | Actualizar información de un proyecto | Como desarrollador, quiero solicitar a la API que actualice la información de un proyecto (nombre, ubicación y descripción) para mantener los datos actualizados en la vista de gestión de proyectos. | **Escenario 1:**<br>Dado que se recibe una solicitud para actualizar un proyecto identificado por *{id}*, incluyendo campos válidos como *name*, *location* y *description*,<br>Cuando la API valida y persiste los cambios correctamente,<br>Entonces la API responde con **200 OK** y devuelve la representación actualizada del recurso de proyecto.<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud de actualización con campos faltantes o valores inválidos,<br>Cuando la validación de la API falla,<br>Entonces la API responde con **400 Bad Request** y un payload que describe los errores de validación.<br><br>**Escenario 3:**<br>Dado que se recibe una solicitud para actualizar un proyecto identificado por un *{id}* inexistente,<br>Cuando la API no encuentra el recurso,<br>Entonces la API responde con **404 Not Found** y un mensaje de error apropiado. | EP09 |
+| TS13 | Actualizar información de un dispositivo | Como desarrollador, quiero solicitar a la API que actualice la información de un dispositivo (nombre y ubicación) para reflejar los cambios en la gestión de dispositivos. | **Escenario 1:**<br>Dado que se recibe una solicitud para actualizar un dispositivo identificado por *{id}*, incluyendo campos válidos como *name* y *location*,<br>Cuando la API valida y persiste los cambios exitosamente,<br>Entonces la API responde con **200 OK** y devuelve el recurso de dispositivo actualizado.<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud con campos inválidos o formatos incorrectos,<br>Cuando la API valida la información y detecta errores,<br>Entonces la API responde con **400 Bad Request** y un payload con los detalles del error.<br><br>**Escenario 3:**<br>Dado que se recibe una solicitud para actualizar un dispositivo con un *{id}* inexistente,<br>Cuando la API no encuentra el recurso,<br>Entonces la API responde con **404 Not Found** y un mensaje de error. | EP11 |
+| TS14 | Crear un nuevo dispositivo | Como desarrollador, quiero solicitar a la API que cree un nuevo dispositivo especificando su nombre, tipo y ubicación, para registrar nuevos equipos en el sistema. | **Escenario 1:**<br>Dado que se recibe una solicitud de creación de un dispositivo con los campos obligatorios (*name*, *type*, *location*),<br>Cuando la API valida y persiste el nuevo recurso,<br>Entonces la API responde con **201 Created** y devuelve la representación del dispositivo creado, incluyendo su *id*.<br><br>**Escenario 2:**<br>Dado que se recibe una solicitud con campos faltantes o datos inválidos,<br>Cuando la API detecta errores de validación,<br>Entonces la API responde con **400 Bad Request** y un payload con los mensajes de error.<br><br>**Escenario 3:**<br>Dado que se recibe una solicitud para crear un dispositivo con un *name* duplicado,<br>Cuando la API detecta una violación de unicidad,<br>Entonces la API responde con **409 Conflict** y un mensaje explicativo. | EP11 |
+| TS15 | Crear ruta protegida y restringir acceso a la consola de gestión | Como desarrollador, quiero implementar rutas protegidas con verificación de roles para asegurar que únicamente los ingenieros y constructores autorizados accedan a la consola de gestión técnica. | **Escenario 1:**<br>Dado que se configura una ruta protegida para el rol de constructor/ingeniero,<br>Cuando un usuario con dicho rol solicita acceder a la consola,<br>Entonces el sistema autoriza el acceso y suministra la información del proyecto.<br><br>**Escenario 2:**<br>Dado que un usuario sin privilegios de constructor intenta ingresar a la ruta protegida,<br>Cuando la API o router intercepta la solicitud,<br>Entonces el sistema restringe el acceso y responde con código de estado HTTP **403 Forbidden**. | EP10 |
+| TS16 | Obtener suscripción actual | Como desarrollador, quiero solicitar la información de la suscripción activa del usuario actual, para mostrar el plan, costo y beneficios en la vista principal de suscripciones. | **Escenario 1:**<br>Dado que se recibe una solicitud GET para recuperar la suscripción del usuario autenticado<br>Cuando la API encuentra una suscripción activa asociada al usuario.<br>Entonces la API responde con **200 OK** y devuelve un objeto con los detalles del plan.<br><br>**Escenario 2:**<br>Dado que el usuario no cuenta con una suscripción vigente.<br>Cuando la API procesa la solicitud.<br>Entonces la API responde con **404 Not Found** indicando que no hay plan contratado. | EP02 |
+| TS17 | Listar catálogo de planes | Como desarrollador, quiero solicitar la lista de todos los planes de suscripción disponibles en el sistema, para mostrarlos como alternativas en la interfaz de comparación. | **Escenario 1:**<br>Dado que se recibe una solicitud GET al endpoint de catálogo de planes.<br>Cuando la API recupera la configuración de planes disponibles en la base de datos.<br>Entonces la API responde con **200 OK** y devuelve un arreglo de objetos, donde cada uno contiene el nombre del plan, precio mensual y la lista de beneficios específicos. | EP02 |
+| TS18 | Cambiar plan de suscripción | Como desarrollador, quiero enviar una solicitud para actualizar el plan de suscripción del usuario, para hacer efectivo el cambio de nivel de servicio seleccionado en la interfaz. | **Escenario 1:**<br>Dado que se recibe una solicitud PUT con el identificador del nuevo plan seleccionado.<br>Cuando la API valida que el plan existe y procesa la actualización de la suscripción.<br>Entonces la API responde con **200 OK** y devuelve los detalles de la suscripción actualizada con el nuevo plan.<br><br>**Escenario 2:**<br>Dado que se intenta cambiar a un plan inválido o no disponible.<br>Cuando la validación de la API falla.<br>Entonces la API responde con **400 Bad Request** indicando que el plan seleccionado no es válido para la transición. | EP02 |
+| TS19 | Renovar suscripción | Como desarrollador, quiero solicitar la renovación de la suscripción actual, para extender la vigencia del servicio cuando el usuario confirma la acción. | **Escenario 1:**<br>Dado que se recibe una solicitud POST al endpoint de renovación para la suscripción actual.<br>Cuando la API procesa el pago o extiende la fecha de expiración exitosamente.<br>Entonces la API responde con **200 OK** y devuelve la suscripción con la nueva fecha de vencimiento actualizada.<br><br>**Escenario 2:**<br>Dado que hay un problema con el método de pago o el estado de la cuenta.<br>Cuando el proceso de renovación falla en el backend.<br>Entonces la API responde con **402 Payment Required** o **400 Bad Request** con el detalle del error. | EP02 |
+| TS20 | Cancelar suscripción | Como desarrollador, quiero solicitar la cancelación de la suscripción activa, para detener la renovación automática y finalizar el servicio al terminar el ciclo. | **Escenario 1:**<br>Dado que se recibe una solicitud DELETE sobre la suscripción activa.<br>Cuando la API registra la solicitud de cancelación y actualiza el estado a "Cancelled" o "Pending Cancellation".<br>Entonces la API responde con **200 OK** confirmando que la suscripción no se renovará, pero manteniendo el acceso hasta el final del periodo actual si aplica. | EP02 |
+| TS21 | Cambiar contraseña del usuario | Como desarrollador, quiero enviar la contraseña actual y la nueva contraseña del usuario a la API, para actualizar sus credenciales de acceso de forma segura. | **Escenario 1:**<br>Dado que se recibe una solicitud PUT al endpoint de cambio de contraseña que incluye currentPassword y newPassword.<br>Cuando la API verifica que la currentPassword coincide con la almacenada y la newPassword cumple con los requisitos de complejidad.<br>Entonces la API actualiza la contraseña (hashing), responde con **200 OK** y opcionalmente invalida otras sesiones activas o genera un nuevo token.<br><br>**Escenario 2:**<br>Dado que se intenta cambiar la contraseña proporcionando una currentPassword errónea.<br>Cuando la API detecta que la contraseña actual no coincide con la registrada.<br>Entonces la API responde con **400 Bad Request** con un mensaje indicando que la contraseña actual es inválida. | EP10 |
+| TS22 | Solicitar adición de correo alternativo | Como desarrollador, quiero enviar una solicitud para agregar un correo electrónico secundario, para que el backend inicie el proceso de validación y verificación de dicha cuenta. | **Escenario 1:**<br>Dado que se recibe una solicitud POST con un email válido que no está registrado previamente.<br>Cuando la API registra el correo en estado "Pendiente" y dispara el servicio de envío de emails con el código o enlace de verificación.<br>Entonces la API responde con **200 OK** indicando que se ha enviado el correo de confirmación al usuario.<br><br>**Escenario 2:**<br>Dado que se intenta agregar un correo con formato incorrecto o que ya está en uso por otro usuario.<br>Cuando la API valida la unicidad y el formato del correo.<br>Entonces la API responde con **400 Bad Request**. | EP10 |
+| TS23 | Registrar nuevo usuario | Como desarrollador, quiero enviar los datos de registro (nombre, email, password, rol) a la API, para crear una nueva identidad en el sistema y permitir el acceso futuro. | **Escenario 1:**<br>Dado que se recibe una solicitud POST con payload válido (email único, password cumple requisitos).<br>Cuando la API persiste el nuevo usuario y encripta la contraseña.<br>Entonces la API responde con **201 Created** y devuelve los datos del usuario creado o un token de acceso inicial.<br><br>**Escenario 2:**<br>Dado que se recibe un email que ya está registrado en la base de datos.<br>Cuando la API valida la unicidad del usuario.<br>Entonces la API responde con **409 Conflict** indicando que el recurso ya existe. | EP13 |
+| TS24 | Validar token de sesión | Como desarrollador, quiero que la API valide que el token enviado en los headers es legítimo y no ha expirado, para proteger las rutas privadas. | **Escenario 1:**<br>Dado que se realiza una petición a un recurso protegido con un header Authorization: Bearer {token}.<br>Cuando la API verifica la firma y fecha del token.<br>Entonces la API permite el acceso y devuelve el recurso solicitado.<br><br>**Escenario 2:**<br>Dado que el token está caducado o malformado.<br>Cuando la API intenta decodificarlo.<br>Entonces la API responde con **401 Unauthorized** o **403 Forbidden**. | EP10 |
 
 ## 3.2. Impact Mapping.
-![Impact Mapping](image.jpg)
+
+El Impact Mapping es una técnica visual colaborativa que permite conectar los objetivos estratégicos del negocio con las acciones concretas de los usuarios y las funcionalidades del producto digital. Mediante un esquema jerárquico en forma de árbol, esta técnica muestra cómo las metas comerciales se traducen en cambios de comportamiento esperados en los actores clave y en entregables que hacen posible dichos cambios.
+
+En el caso del presente proyecto, se utilizó esta herramienta para estructurar de manera clara la relación entre las metas SMART del modelo digital, los User Personas previamente definidos y las funcionalidades necesarias. El trabajo incluyó:
+
+* **Business Goals SMART:** Plantean metas específicas, medibles, alcanzables, relevantes y con plazos definidos, orientadas tanto a la adquisición de usuarios como a la retención y recurrencia.
+* **Actores principales:** Representados por Miguel Veramendi (Constructor / Arquitecto) y Carla Flores (Residente / Propietaria), definidos a partir de sus motivaciones y del rol que cumplen en el ecosistema domótico.
+* **Impactos esperados:** Expresados como conductas observables que cada actor debe realizar para contribuir al cumplimiento de los objetivos (ejemplo: incorporar la solución en propuestas de diseño o personalizar perfiles de confort en el hogar).
+* **Deliverables funcionales:** Características y componentes del producto digital diseñados para provocar esos impactos (plantillas de propuesta, consolas de telemetría o notificaciones guiadas).
+
+El mapa fue diseñado siguiendo un enfoque centrado en el usuario y buenas prácticas colaborativas para asegurar la trazabilidad entre las metas de negocio y el desarrollo técnico de la solución.
+
+**Anexo: Impact Mapping (Enlace interactivo):**  
+[https://drive.google.com/file/d/1fFT-OfL06jICOptImqpWyogQl_eAtWj3/view?usp=sharing](https://drive.google.com/file/d/1fFT-OfL06jICOptImqpWyogQl_eAtWj3/view?usp=sharing)
+
+<br>
+
+**Business Goal 1: Alcanzar 600 suscripciones activas al plan inicial en un periodo de 8 meses.**
+
+Este objetivo representa el primer paso estratégico para la consolidación del modelo de negocio digital de IoBuild. Se centra en la adquisición de usuarios iniciales, quienes validarán la propuesta de valor y permitirán generar un flujo de ingresos recurrente en la etapa temprana. La meta de 600 suscripciones en 8 meses no solo es medible y alcanzable según el análisis de mercado de edificaciones en Lima Metropolitana, sino que también responde a la necesidad de alcanzar un punto de equilibrio temprano, garantizando tracción sostenible.
+
+Asimismo, este Business Goal está alineado con las actividades de los principales actores identificados (Miguel Veramendi y Carla Flores), quienes, a través de comportamientos clave (incorporar la solución en proyectos, usarla e interactuar activamente), impulsan la adopción de la plataforma.
+
+<br>
+
+![Impact-Mapping-1](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%203/Impact-Mapping-1.png)
+
+<br><br>
+
+**Business Goal 2: Automatizar el 70 % de los procesos de personalización en un periodo de 6 meses y aumentar la retención de clientes recurrentes en un 25 % en 9 meses.**
+
+Este objetivo se enfoca en la optimización y sostenibilidad operativa del negocio en el mediano plazo. Una vez consolidada la primera base de clientes, el siguiente reto es reducir la fricción en el uso de la solución domótica a través de automatizaciones que hagan la experiencia de control ambiental más fluida e intuitiva. Lograr que al menos el 70 % de los procesos de personalización ambiental se realicen automáticamente en 6 meses permitirá que los usuarios perciban mayor comodidad y ahorro de tiempo.
+
+De manera complementaria, la segunda parte de este objetivo busca incrementar la retención de clientes en un 25 % en 9 meses, consolidando relaciones duraderas y disminuyendo la tasa de abandono de la suscripción SaaS.
+
+<br>
+
+![Impact-Mapping-2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%203/Impact-Mapping-2.png)
 
 ## 3.3. Product Backlog.
-| # Orden | User Story ID | Título | Descripción | Story Points | Sprint |
+
+A continuación, se presenta el Product Backlog consolidado con las 45 historias de usuario y 24 tareas técnicas priorizadas para el desarrollo de la plataforma IoBuild. Cada ítem incluye su orden de priorización basado en el valor de negocio y dependencias arquitectónicas, identificador, título, descripción en formato ágil, su estimación en puntos de historia (Story Points bajo la secuencia Fibonacci 1, 2, 3, 5 y 8) y el Sprint planificado para su entrega.
+
+Para el control, priorización y diseño del Product Backlog se utilizó la herramienta colaborativa Trello, la cual permitió organizar y visualizar el backlog en etapas de desarrollo, facilitando el seguimiento continuo del progreso y la gestión ágil del trabajo.
+
+**Enlace del tablero colaborativo en Trello:** [https://goo.su/DYSGr6](https://goo.su/DYSGr6)
+
+<br>
+
+![Product-Backlog](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%203/Product-Backlog.png)
+
+<br>
+
+| #Orden | User Story / Task ID | Título | Descripción | Story Points (1/2/3/5/8) | Sprint |
 |---|---|---|---|---|---|
-| 1 | US01 | [Título] | [Descripción] | [1/2/3/5/8] | Sprint 1 |
+| 1 | US01 | Seccion "Sobre Nosotros" | Como visitante del sitio, quiero conocer la historia y valores de la empresa, para tener mayor conexion y confianza con IoBuild. | 2 | Sprint 1 |
+| 2 | US02 | Seccion testimonios del cliente | Como visitante del sitio, quiero consultar testimonios de otros clientes, para generar confianza en la propuesta de valor de la startup. | 2 | Sprint 1 |
+| 3 | US03 | Acceso a informacion de contacto | Como visitante del sitio, quiero acceder facilmente a los canales de contacto de IoBuild, para comunicarme ante dudas comerciales. | 1 | Sprint 1 |
+| 4 | US04 | Visualizacion de servicios principales | Como visitante del sitio, quiero conocer los servicios que ofrece IoBuild, para comprender su propuesta de valor en edificaciones inteligentes. | 2 | Sprint 1 |
+| 5 | US05 | Opcion de registro en Landing | Como visitante del sitio, quiero acceder a la opcion de registro desde la pagina principal, para iniciar la creacion de mi cuenta. | 1 | Sprint 1 |
+| 6 | US06 | Preguntas frecuentes (FAQ) | Como visitante del sitio, quiero consultar una seccion de preguntas frecuentes, para resolver inquietudes comunes de forma inmediata. | 2 | Sprint 1 |
+| 7 | US07 | Internacionalizacion de la landing page | Como visitante del sitio, quiero disponer de mas de un idioma disponible (español e ingles), para navegar en mi idioma de preferencia. | 3 | Sprint 1 |
+| 8 | US43 | Registrarse en la plataforma | Como Usuario, quiero crear una cuenta nueva con mis datos basicos y rol para acceder a las capacidades de IoBuild. | 5 | Sprint 1 |
+| 9 | US44 | Iniciar Sesion (Login) | Como Usuario, quiero ingresar mis credenciales para acceder a mi cuenta y utilizar los servicios de IoBuild. | 3 | Sprint 1 |
+| 10 | US45 | Cerrar Sesion (Logout) | Como Usuario, quiero cerrar mi sesion actual para proteger mi cuenta y revocar los tokens locales. | 1 | Sprint 1 |
+| 11 | TS23 | Registrar nuevo usuario en API | Como desarrollador, quiero enviar los datos de registro (nombre, email, contraseña y rol) a la API, para crear una nueva identidad en el sistema. | 5 | Sprint 1 |
+| 12 | TS24 | Validar token de sesion | Como desarrollador, quiero que la API valide que el token JWT enviado en los encabezados es legitimo y no ha expirado, protegiendo las rutas privadas. | 3 | Sprint 1 |
+| 13 | US16 | Acceso a Perfil del Usuario | Como usuario, quiero acceder a mi perfil para visualizar mis datos registrados (nombre, email, telefono y direccion). | 2 | Sprint 1 |
+| 14 | US17 | Edicion de Informacion del Perfil | Como usuario, quiero modificar datos de mi perfil (telefono o direccion) para mantener mi informacion actualizada. | 3 | Sprint 1 |
+| 15 | US18 | Ver Imagen que Representa al Usuario | Como usuario, quiero visualizar mi fotografia o avatar de perfil, para contar con una experiencia personalizada. | 2 | Sprint 1 |
+| 16 | US19 | Ver el Rol de la Cuenta | Como usuario, quiero visualizar el rol asignado a mi cuenta, para conocer los permisos operativos disponibles. | 1 | Sprint 1 |
+| 17 | TS02 | Crear un Proyecto en API | Como desarrollador, quiero añadir un nuevo proyecto arquitectonico a traves de la API para implementar el registro de nuevos desarrollos. | 5 | Sprint 2 |
+| 18 | TS01 | Listar proyectos por Constructor | Como desarrollador, quiero solicitar a la API que liste todos los proyectos asociados a un constructor, para abastecer la vista principal de Proyectos. | 3 | Sprint 2 |
+| 19 | TS03 | Recuperar un Proyecto por ID | Como desarrollador, quiero solicitar un proyecto por su identificador unico para mostrar la vista de detalles y zonificacion. | 3 | Sprint 2 |
+| 20 | TS12 | Actualizar informacion de un proyecto | Como desarrollador, quiero enviar a la API modificaciones de un proyecto (nombre, ubicacion y descripcion) para mantener la informacion al dia. | 3 | Sprint 2 |
+| 21 | US20 | Ver lista de proyectos | Como ingeniero, quiero ver una lista de todos mis proyectos para conocer el estado y caracteristicas de cada obra. | 3 | Sprint 2 |
+| 22 | US21 | Agregar un nuevo proyecto | Como arquitecto, quiero registrar un nuevo proyecto inteligente para parametrizar nuevos desarrollos inmobiliarios. | 5 | Sprint 2 |
+| 23 | US22 | Ver detalles de un proyecto | Como arquitecto, quiero examinar los detalles tecnicos de un proyecto especifico para revisar su estructura fisica y configuracion. | 3 | Sprint 2 |
+| 24 | TS14 | Crear un nuevo dispositivo en API | Como desarrollador, quiero solicitar a la API que registre un nuevo dispositivo con nombre, tipo y ubicacion, integrando nuevo hardware al sistema. | 5 | Sprint 2 |
+| 25 | TS10 | Listar dispositivos en API | Como desarrollador, quiero solicitar a la API la lista de dispositivos filtrada por ubicacion o estado, para alimentar la vista de inventario. | 3 | Sprint 2 |
+| 26 | TS13 | Actualizar informacion de un dispositivo | Como desarrollador, quiero enviar a la API cambios en el nombre o ubicacion de un dispositivo para reflejar su reasignacion fisica. | 3 | Sprint 2 |
+| 27 | TS11 | Eliminar un dispositivo por ID | Como desarrollador, quiero solicitar a la API la baja de un dispositivo por su identificador para retirar hardware desincorporado. | 2 | Sprint 2 |
+| 28 | US33 | Ver Lista de Dispositivos | Como ingeniero, quiero consultar la lista de dispositivos registrados en el proyecto para supervisar su operatividad y ubicacion fisica. | 3 | Sprint 2 |
+| 29 | US34 | Agregar un Nuevo Dispositivo | Como arquitecto, quiero incorporar un nuevo sensor o actuador inteligente para ampliar la cobertura de monitoreo de la edificacion. | 5 | Sprint 2 |
+| 30 | US35 | Editar/Configurar Ajustes de Dispositivo | Como ingeniero, quiero modificar los parametros tecnicos de un dispositivo para calibrar umbrales y asegurar su correcto funcionamiento. | 5 | Sprint 2 |
+| 31 | US36 | Eliminar un Dispositivo | Como arquitecto, quiero desvincular un dispositivo en desuso o defectuoso para mantener depurado el inventario del proyecto. | 3 | Sprint 2 |
+| 32 | TS15 | Crear ruta protegida y restringir acceso a la consola de gestion | Como desarrollador, quiero implementar rutas protegidas con verificacion de roles para asegurar que unicamente ingenieros y constructores autorizados gestionen hardware. | 5 | Sprint 2 |
+| 33 | US08 | Dashboard Personalizado | Como usuario, quiero acceder a un panel principal con metricas clave, para monitorear el estado de las instalaciones de forma eficiente. | 5 | Sprint 3 |
+| 34 | US09 | Acceso a Proyectos Activos en Dashboard | Como ingeniero, quiero consultar los proyectos activos desde el panel, para verificar su progreso y administrar recursos en obra. | 3 | Sprint 3 |
+| 35 | US10 | Acceso a Dispositivos Conectados | Como usuario, quiero verificar el estado de conexion de los dispositivos, para identificar equipos activos o desconectados. | 3 | Sprint 3 |
+| 36 | US11 | Acceso a la Capacidad de Ocupacion | Como ingeniero, quiero consultar la capacidad de ocupacion por proyecto, para optimizar el dimensionamiento de servicios e instalaciones. | 3 | Sprint 3 |
+| 37 | US12 | Grafico de Consumo de Energia por Hora | Como ingeniero, quiero visualizar un grafico de consumo energetico horario, para evaluar el rendimiento electrico en tiempo real. | 8 | Sprint 3 |
+| 38 | US13 | Grafico de Registro de Ocupacion | Como ingeniero, quiero observar un grafico historico de ocupacion, para correlacionar la afluencia de personas con el uso de recursos. | 5 | Sprint 3 |
+| 39 | US14 | Resumen Ejecutivo de Proyecto | Como ingeniero, quiero visualizar un resumen de proyecto con su estado, ubicacion y aforo habitacional, obteniendo un balance rapido de obra. | 3 | Sprint 3 |
+| 40 | US15 | Visualizacion de Dispositivos y Distribucion por Tipo | Como ingeniero, quiero analizar la distribucion de dispositivos por tipologia mediante graficos, planificando ampliaciones de red. | 5 | Sprint 3 |
+| 41 | TS08 | Crear un cliente/residente en API | Como desarrollador, quiero añadir un nuevo perfil de residente a traves de la API para asociarlo a un departamento especifico. | 5 | Sprint 3 |
+| 42 | TS07 | Listar clientes en API | Como desarrollador, quiero consultar a la API la lista de clientes con soporte a paginacion para la gestion de residentes. | 3 | Sprint 3 |
+| 43 | TS09 | Recuperar un cliente por ID | Como desarrollador, quiero consultar los datos de un cliente especifico por su identificador para mostrar su ficha detallada. | 2 | Sprint 3 |
+| 44 | TS04 | Actualizar la informacion de un cliente | Como desarrollador, quiero enviar a la API modificaciones en los datos del cliente para mantener actualizada su informacion de contacto. | 3 | Sprint 3 |
+| 45 | TS06 | Soportar ordenacion en la lista de clientes | Como desarrollador, quiero enviar parametros de ordenacion (columna y sentido) a la API para agilizar la busqueda de residentes. | 5 | Sprint 3 |
+| 46 | TS05 | Eliminar un cliente en API | Como desarrollador, quiero solicitar a la API la baja de un cliente para desvincular usuarios que ya no residen en el inmueble. | 3 | Sprint 3 |
+| 47 | US23 | Ver Lista de Clientes | Como Arquitecto, quiero visualizar la lista de clientes para supervisar sus departamentos asignados y el estado de su cuenta. | 3 | Sprint 3 |
+| 48 | US24 | Buscar/Ordenar Clientes | Como Ingeniero, quiero ordenar la lista de residentes por columnas para localizar cuentas con rapidez segun criterios operativos. | 3 | Sprint 3 |
+| 49 | US25 | Agregar un Nuevo Cliente | Como Arquitecto, quiero dar de alta un nuevo cliente o propietario para otorgarle acceso a su unidad habitacional. | 3 | Sprint 3 |
+| 50 | US26 | Ver Perfil del Cliente | Como Ingeniero, quiero consultar el perfil detallado de un residente para verificar sus unidades asignadas y dispositivos en uso. | 3 | Sprint 3 |
+| 51 | US27 | Acceder a la Configuracion del Cliente | Como Arquitecto, quiero gestionar los permisos y estado de cuenta de un cliente para adecuar su nivel de acceso. | 3 | Sprint 3 |
+| 52 | TS17 | Listar catalogo de planes en API | Como desarrollador, quiero solicitar a la API el catalogo de planes disponibles para poblar las opciones de suscripcion. | 3 | Sprint 4 |
+| 53 | TS16 | Obtener suscripcion actual en API | Como desarrollador, quiero solicitar la informacion del plan activo del usuario para presentar su vigencia y costo en la interfaz. | 3 | Sprint 4 |
+| 54 | TS18 | Cambiar plan de suscripcion en API | Como desarrollador, quiero enviar a la API la actualizacion de nivel de suscripcion para procesar el cambio de categoria de servicio. | 5 | Sprint 4 |
+| 55 | TS19 | Renovar suscripcion en API | Como desarrollador, quiero enviar a la API la solicitud de renovacion de suscripcion para extender la vigencia del servicio. | 5 | Sprint 4 |
+| 56 | TS20 | Cancelar suscripcion en API | Como desarrollador, quiero solicitar a la API la cancelacion de la renovacion automatica, finalizando el servicio al termino del ciclo. | 3 | Sprint 4 |
+| 57 | US28 | Ver Plan de Suscripcion Actual | Como ingeniero, quiero consultar mi plan de suscripcion y vigencia para validar los beneficios contratados y costo mensual. | 3 | Sprint 4 |
+| 58 | US29 | Ver Planes de Suscripcion Alternativos | Como ingeniero, quiero comparar los planes disponibles (Professional y Starter) para evaluar mejoras de cobertura tecnica. | 3 | Sprint 4 |
+| 59 | US30 | Iniciar Cambio de Plan | Como arquitecto, quiero seleccionar un nuevo plan de suscripcion para adaptar la plataforma al crecimiento de mis proyectos. | 5 | Sprint 4 |
+| 60 | US31 | Renovar Plan Activo | Como arquitecto, quiero tramitar la renovacion de mi suscripcion para asegurar la continuidad operativa de los sensores en obra. | 5 | Sprint 4 |
+| 61 | US32 | Cancelar Plan Actual | Como ingeniero, quiero cancelar mi plan contratado al finalizar los proyectos para suspender cobros recurrentes. | 3 | Sprint 4 |
+| 62 | TS21 | Cambiar contraseña en API | Como desarrollador, quiero enviar la contraseña actual y la nueva a la API para actualizar las credenciales de manera segura. | 3 | Sprint 4 |
+| 63 | TS22 | Solicitar adicion de correo alternativo en API | Como desarrollador, quiero enviar una direccion de correo secundaria a la API para iniciar el proceso de verificacion. | 3 | Sprint 4 |
+| 64 | US37 | Gestionar Notificaciones | Como Usuario, quiero configurar que alertas operativas y de consumo deseo recibir para evitar saturacion de mensajes. | 3 | Sprint 4 |
+| 65 | US38 | Cambiar Contraseña de la Cuenta | Como Usuario, quiero renovar periodicamente mi contraseña para mantener protegidas mis credenciales de acceso. | 3 | Sprint 4 |
+| 66 | US39 | Gestionar Autenticacion de Dos Factores | Como Usuario, quiero habilitar la Autenticacion de Dos Factores (2FA) para robustecer la seguridad en accesos criticos. | 5 | Sprint 4 |
+| 67 | US40 | Gestionar Sesiones Activas | Como Usuario, quiero monitorear sesiones abiertas en diferentes navegadores y cerrarlas remotamente ante sospechas. | 5 | Sprint 4 |
+| 68 | US41 | Añadir Correo Electronico Alternativo | Como Usuario, quiero registrar una cuenta de correo secundaria para facilitar la recuperacion de acceso. | 3 | Sprint 4 |
+| 69 | US42 | Acceder a Ayuda y Soporte | Como Usuario, quiero consultar la base de conocimientos y contactar al equipo tecnico para resolver incidencias de plataforma. | 2 | Sprint 4 |
 
 ---
 
 # Capítulo IV: Solution Software Design
 
 ## 4.1. Strategic-Level Domain-Driven Design.
+
+El enfoque de **Strategic-Level Domain-Driven Design** sirve como pilar esencial en el desarrollo de la plataforma **IoBuild**. Mediante este marco de diseño estratégico, es posible identificar y delimitar los distintos contextos del dominio, definir cómo se relacionan entre sí y construir una arquitectura de software modular que responda a los objetivos del negocio en edificaciones inteligentes y telemetría IoT.
+
+En esta etapa estratégica, se prioriza:
+
+- Un entendimiento profundo del dominio, mediante la identificación de los procesos clave del negocio.
+- La definición de *Bounded Contexts*, estableciendo límites claros entre las distintas áreas funcionales.
+- El modelado de las relaciones y contratos de integración entre los diferentes contextos.
+- El diseño de una arquitectura de software estructurada e integral basada en el modelo C4.
+
 ### 4.1.1. Design-Level EventStorming.
+
+El Design-Level EventStorming es una técnica de modelado colaborativo que permite analizar y entender en profundidad el dominio de IoBuild. A través de sesiones de trabajo conjunto, esta práctica ayuda a identificar elementos clave como eventos de dominio, comandos, agregados y bounded contexts.
+
 #### 4.1.1.1 Candidate Context Discovery.
-[Identificación y justificación de los Bounded Contexts candidatos descubiertos]
+El Candidate Context Discovery es el proceso mediante el cual identificamos los posibles bounded contexts dentro del dominio de IoBuild. Este proceso se basa en el análisis de los eventos, comandos y agregados identificados durante las sesiones de EventStorming.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%209.jpg?raw=true)<br>
+Representa la frontera administrativa inicial de la plataforma. El flujo muestra a la **Constructora** ejecutando comandos para crear propietarios y asignar departamentos, estableciendo el evento crítico de **Apartamento Asignado**. Además, define la regla de negocio para adquirir unidades adicionales condicionada a la validación de **Fondos Suficientes**.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2010.jpg?raw=true)<br>
+Define el límite de seguridad y autenticación. El diagrama expone el proceso donde un usuario inicia un intento de sesión, el sistema verifica las credenciales y, tras validarlas, genera un **Token Acceso**, marcando la sesión como iniciada de forma segura.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2011.jpg?raw=true)<br>
+Agrupa todas las interacciones operativas directas con el hardware. El flujo refleja al **Propietario** vinculando nuevos equipos, y ejecutando comandos para encender, apagar o modificar parámetros, lo que genera los eventos de **Estado de Dispositivo Cambio** en el entorno físico.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2012.jpg?raw=true)<br>
+Aísla el núcleo de cálculo analítico y procesamiento de telemetría. Se observa al **Sistema de Monitoreo** registrando lecturas de sensores y voltaje para calcular el gasto energético acumulado. El evento pivotal aquí es el **Limite de Energia Superado**, el cual actúa como detonante para emitir alertas automáticas.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2013.jpg?raw=true)<br>
+Delimita el módulo encargado de las consultas (*Queries*) del sistema. Ilustra cómo el **Propietario** y la **Constructora** solicitan métricas y datos históricos, lo cual desencadena la generación de un **Reporte de Consumo** y culmina con el evento de **Dashboard Presentado**.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2014.jpg?raw=true)<br>
+Muestra un módulo transversal dedicado a la comunicación saliente. El flujo detalla cómo el sistema formatea mensajes de alerta y utiliza canales externos como **Email Provider** y **Push Notification** para despachar la información hasta que la notificación es confirmada por el usuario.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2015.jpg?raw=true)<br>
+Representa la capa de valor agregado y optimización autónoma. El diagrama muestra al **Motor IA** recibiendo consultas, analizando patrones de consumo y generando sugerencias de ahorro. Finaliza con un evento de alto impacto donde la IA ejecuta la **Sugerencia Aplicada al Dispositivo** de forma directa.
+
+<br>
+
+![Candidate Context Discovery](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2016.jpg?raw=true)<br>
+Enmarca el modelo de negocio financiero de la plataforma. La imagen ilustra a la **Constructora** ingresando un método de pago para procesar la suscripción. El evento de **Suscripción Activada** es la frontera comercial que permite la renovación del acceso al servicio.
+
+<br>
 
 #### 4.1.1.2 Domain Message Flows Modeling.
-[Modelado de flujos de mensajes, comandos y eventos entre los contextos]
+El Domain Message Flows Modeling mapea cómo los mensajes (eventos, comandos) fluyen entre los diferentes bounded contexts identificados. Este modelado es crucial para entender las dependencias y patrones de comunicación del sistema.
+
+<br>
+
+![Domain Message Flows Modeling](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2017.jpg?raw=true)<br>
+Este diagrama ilustra el flujo inicial de habilitación de un usuario en el sistema. Comienza con la **Constructora** ejecutando el comando síncrono para **Asignar Apartamento** dentro del contexto de **Smart Project Setup**. Esto detona un evento asíncrono **Apartamento Asignado** que viaja hacia **Service Execution**, dándole habilitación al **Propietario** para ejecutar el comando de **Vincular dispositivo**. El ciclo concluye cuando Service Execution emite el evento **Dispositivo Vinculado Integration** hacia Energy Management, preparándolo para recibir futuras métricas de ese nuevo hardware.
+
+<br>
+
+![Domain Message Flows Modeling](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2018.jpg?raw=true)<br>
+Este diagrama representa el comportamiento reactivo y autónomo del sistema frente a un pico de consumo. Se inicia cuando un **Sensor IoT** envía continuamente el comando **Registrar Lectura** hacia **Energy Management**. Al detectarse una anomalía, este contexto publica el evento **Limite Energía Superado Integration** para despertar al **Smart Assistant**. La IA evalúa la situación y envía un comando de ejecución directa **Aplicar Optimización** hacia **Service Execution and Monitoring**, el cual apaga o regula el actuador y notifica de vuelta a **Energy Management** mediante un evento de cambio de estado.
+
+<br>
+
+![Domain Message Flows Modeling](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Frame%2019.jpg?raw=true)<br>
+Esta imagen detalla cómo el usuario interactúa con el hardware utilizando la IA como intermediario contextual. El flujo muestra al **Propietario** utilizando la aplicación para enviar comandos de **Consultar Asistente** y posteriormente **Aceptar Sugerencia** hacia el **Smart Assistant**. Una vez autorizado, el asistente toma el control y manda el comando imperativo de **Modificar Parametros** hacia **Service Execution and Monitoring**. Finalmente, el hardware ejecuta el cambio y emite un evento de **Parametros Configurados Integration** hacia **Energy Management** para ajustar sus cálculos de consumo eléctrico.
+
+<br>
 
 #### 4.1.1.3 Bounded Context Canvases.
-[Canvas descriptivo para cada Bounded Context identificado]
+Los Bounded Context Canvases proporcionan una visión detallada de cada contexto delimitado, documentando sus responsabilidades, interfaces, eventos y relaciones con otros contextos.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Smart%20Project%20Setup.jpg?raw=true)<br>
+Esta imagen representa el contrato formal del módulo administrativo e inmobiliario. Se clasifica como un Supporting Domain cuyo rol es gestionar la infraestructura física. El diagrama central mapea su comunicación entrante (los comandos **Asignar Apartamento** de la Constructora y **Adquirir Apartamento** del Propietario) y su comunicación saliente (el evento **Apartamento Asignado Integration Event** dirigido hacia **Service Execution**). En la parte inferior, se documentan las reglas de negocio estrictas, como la validación de fondos y la restricción de que un usuario no puede operar dispositivos sin un departamento formalmente asignado.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Service%20Execution%20and%20Monitoring.jpg?raw=true)<br>
+Este lienzo expone la arquitectura del núcleo operativo en tiempo real de la plataforma IoT (un **Core Domain**). Define sus roles como **Orquestador de Hardware** y **Ejecutor de Órdenes**. El mapa de dependencias ilustra una alta interacción: recibe comandos físicos (**Vincular**, **Encender/Apagar**) tanto del Propietario como órdenes directas de la IA (**Aplicar Optimización**), y a su vez publica los eventos de **Estado Dispositivo Cambio** hacia los medidores. Sus decisiones de negocio garantizan que todo cambio físico se notifique inmediatamente para no perder precisión en el sistema.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Energy%20Management.jpg?raw=true)<br>
+Este diagrama delimita el motor analítico y cuantitativo del sistema (también un **Core Domain**). El lienzo muestra que su comunicación entrante se basa en telemetría (**Registrar Lectura Command**) proveniente de los sensores y en los cambios de estado del hardware. Visualmente, destaca que su salida más importante es la emisión del evento **Limite Energía Superado Integration Event** hacia el **asistente inteligente**. Entre sus políticas documentadas se subraya que el procesamiento debe ser asíncrono para evitar cuellos de botella en la red de los condominios.
+
+<br>
+
+![Bounded Context Canvases](https://github.com/F4brizio24/Imagenes-Proyecto/blob/main/Web%20App/Cap%C3%ADtulo%202/CcaritaTech%20-%20BIG%20Picture%20Eventstorming%20-%20Smart%20Assistant.jpg?raw=true)<br>
+Este lienzo detalla el módulo de Inteligencia Artificial que aporta valor agregado a la plataforma (**Core Domain**). Establece sus roles como **Optimizador** y **Agente Autónomo**. El diagrama central mapea cómo la IA se alimenta de las alertas de **Energy Management** y de las consultas a demanda del usuario, para luego emitir el comando imperativo de **Aplicar Optimización** hacia Service Execution. En la base del lienzo, consolida decisiones críticas del negocio, como la capacidad del sistema para enviar órdenes de ajuste o apagado preventivo en **Modo Autónomo** sin tener que esperar la aprobación manual del usuario.
+
+<br>
 
 ### 4.1.2. Context Mapping.
-[Mapa de contextos que define las relaciones: Upstream/Downstream, Customer/Supplier, Shared Kernel, Conformist, Open Host Service, etc.]
 
-![Context Map](image.jpg)
+##### Resumen del Proceso
+El Context Mapping es la fase donde definimos las relaciones estructurales y los contratos de comunicación entre nuestros Bounded Contexts. En IoBuild, este proceso se realizó mediante un análisis crítico de dependencias, buscando maximizar la autonomía de los microservicios y proteger el lenguaje ubicuo de cada contexto.
+
+##### Análisis de Alternativas (Exploración de Diseño)
+
+Para llegar a la arquitectura final, el equipo evaluó diversas configuraciones respondiendo a preguntas críticas de diseño:
+
+###### 1. ¿Qué pasaría si movemos la capacidad de "Monitoreo de Umbrales" a Smart Assistant?
+* **Análisis:** Si el motor de IA procesara directamente las lecturas de voltaje y sensores, se generaría un acoplamiento masivo de datos innecesarios hacia la IA.
+* **Decisión:** Mantenerlo en **Energy Management**. Esto permite que la IA sea reactiva y solo actúe cuando ocurre un evento de negocio relevante (Límite Superado), siguiendo el principio de segregación de responsabilidades.
+
+###### 2. ¿Qué pasaría si creamos un Shared Kernel para la entidad "Propietario"?
+* **Análisis:** Aunque todos los contextos usan el concepto de "Propietario", su definición cambia: en *Smart Project Setup* es un titular legal del inmueble; en *Service Execution* es un operador de hardware.
+* **Decisión:** Rechazado. Un Shared Kernel crearía un acoplamiento rígido en la base de datos. Se optó por duplicar el ID del propietario y usar una capa de traducción para mantener la autonomía de los modelos.
+
+###### 3. ¿Qué pasaría si aislamos los Core Capabilities y movemos los otros a un contexto aparte?
+* **Análisis:** Identificamos que *Smart Project Setup* es un dominio de soporte (SaaS B2B).
+* **Decisión:** Se aisló completamente. Al ser Upstream, permite que el "Core IoT" (Execution, Energy, Assistant) evolucione técnicamente sin verse afectado por cambios en las reglas de negocio administrativas de la constructora.
+
+##### Patrones de Relación y Mapa de Contextos
+
+La arquitectura de IoBuild se define bajo una arquitectura orientada a eventos (EDA). A continuación se detallan las relaciones y patrones DDD establecidos:
+
+###### A. Smart Project Setup (Upstream) -> Service Execution (Downstream)
+* **Patrón:** **Customer-Supplier / Anti-Corruption Layer (ACL)**.
+* **Motivo:** *Service Execution* depende de la información de departamentos asignados. Implementamos una ACL en *Service Execution* para evitar que cambios en el modelo de datos inmobiliario contaminen la lógica de control de dispositivos.
+
+###### B. Service Execution (Upstream) -> Energy Management (Downstream)
+* **Patrón:** **Published Language (PL)**.
+* **Motivo:** La comunicación es asíncrona y continua. *Service Execution* publica eventos de telemetría en un formato estándar (JSON) que *Energy Management* consume para sus cálculos sin que ambos componentes se acoplen.
+
+###### C. Energy Management (Upstream) -> Smart Assistant (Downstream)
+* **Patrón:** **Published Language (PL)**.
+* **Motivo:** El asistente se suscribe a eventos de alerta de consumo. La relación es de bajo acoplamiento, permitiendo que el motor de IA evolucione o se actualice sin afectar los medidores de energía.
+
+###### D. Smart Assistant (Upstream) -> Service Execution (Downstream)
+* **Patrón:** **Customer-Supplier**.
+* **Motivo:** En este flujo de comando, el asistente actúa como el cliente que solicita una acción de ahorro. *Service Execution* actúa como el proveedor de la capacidad física de apagar o regular el actuador correspondiente.
+
+##### Discusión de Alternativas y Conclusión
+Tras evaluar modelos de *Conformist* (donde todos se adaptan al modelo de la constructora), el equipo decidió rechazarlo por el alto riesgo de deuda técnica. La aproximación elegida de **Customer-Supplier con ACL** y **Published Language** garantiza que IoBuild sea escalable, permitiendo manejar múltiples dispositivos simultáneamente sin que una falla en un módulo administrativo afecte la inteligencia operativa de la IA o el monitoreo de energía.
+
+<br>
 
 ### 4.1.3. Software Architecture.
+La arquitectura de software de IoBuild se ha diseñado utilizando el modelo C4, ya que este permite representar el sistema en diferentes niveles de abstracción como Contexto, Contenedores y Despliegue. Gracias a este enfoque, es más sencillo comprender cómo opera la plataforma de forma global, cómo interactúan los usuarios con ella y cómo se vincula con los servicios externos.
+
+Para el diseño de la arquitectura, se han considerado principios clave de ingeniería de software:
+- **Separación de responsabilidades:** Cada componente asume funciones delimitadas y cohesivas.
+- **Bajo acoplamiento y alta cohesión:** Se minimizan dependencias directas entre módulos y se agrupan capacidades afines.
+- **Escalabilidad y mantenibilidad:** Facilidad de evolución independiente entre las aplicaciones cliente y los servicios backend.
+
 #### 4.1.3.1. Software Architecture System Landscape Diagram.
-![System Landscape Diagram](image.jpg)
+El diagrama de paisaje del sistema (*System Landscape*) dentro de la metodología C4 está concebido para modelar ecosistemas empresariales a gran escala, donde operan múltiples sistemas de software independientes dentro de una misma organización. 
+
+En el caso de **IoBuild**, al tratarse de una plataforma tecnológica autónoma y autocontenida de producto (SaaS B2B/B2C para edificaciones inteligentes), la frontera tecnológica y las interacciones con todos los actores humanos (Ingenieros/Constructores y Propietarios/Residentes) y servicios externos (Cloudinary, OpenAI Chatbot Service y Stripe) se consolidan de manera exhaustiva y sin duplicidades conceptuales directamente en el **Diagrama de Contexto del Sistema (System Context Diagram)** presentado en la sección [4.1.3.2](#4132-software-architecture-context-level-diagrams).
+
+<br>
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
-![C4 Context Diagram](image.jpg)
+El diagrama de contexto presenta el sistema IoBuild como una plataforma central, mostrando cómo interactúa con los usuarios y con distintos sistemas externos. Este nivel permite entender de manera general el alcance del sistema y cómo se integra con otros servicios.
+
+**Enlace del Diagrama de Contexto:** [https://shorturl.at/EbWzU](https://shorturl.at/EbWzU)
+
+<br>
+
+![Context Level Diagrams](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%202/Software%20Architecture%20Context%20Diagram.png)
+
+<br>
+
+**Explicación del Diagrama:**
+
+**Sistema Central (IoBuild):**  
+Es la plataforma principal encargada de gestionar proyectos de construcción inteligente. Permite a los usuarios configurar entornos, administrar dispositivos conectados y consultar información relevante como reportes y datos del sistema.
+
+**Usuarios:**
+- **Builder (Constructor / Ingeniero):** Usuario encargado de diseñar y parametrizar entornos inteligentes. Interactúa con IoBuild para registrar dispositivos y gestionar proyectos a través de la interfaz web.
+- **Landlord / Resident (Propietario / Administrador):** Usuario que utiliza la plataforma para supervisar y administrar sus propiedades o departamentos. Consulta métricas y realiza seguimiento continuo.
+
+**Sistemas Externos:**
+- **Cloudinary:** Servicio utilizado para la gestión y almacenamiento seguro de archivos multimedia relacionados con los proyectos.
+- **AI Chatbot Service:** Proporciona asistencia inteligente contextual a los usuarios, orientando decisiones de optimización.
+- **Stripe:** Pasarela encargada de procesar pagos y gestionar las suscripciones de los clientes en IoBuild.
+
+<br>
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams.
-![C4 Container Diagram](image.jpg)
+El diagrama de contenedores muestra la arquitectura de alto nivel del sistema IoBuild, permitiendo entender cómo se organizan sus principales componentes ejecutables, qué tecnologías se utilizan y cómo interactúan entre sí.
+
+**Enlace del Diagrama de Contenedores:** [https://shorturl.at/FEOTa](https://shorturl.at/FEOTa)
+
+<br>
+
+![Container Level Diagrams](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%202/Software%20Architecture%20Container%20Diagram.png)
+
+<br>
+
+**Descripción del Container Diagram:**
+
+**Capa de Presentación:**
+- **Landing Page:** Sitio público estático que brinda información general y canaliza el acceso hacia la aplicación web.
+- **Web App (SPA):** Aplicación web interactiva donde los ingenieros y propietarios gestionan proyectos, dispositivos y telemetría.
+- **Mobile Application:** Aplicación móvil que permite el control ágil y remoto de dispositivos y estados de alerta.
+
+**Capa de Backend:**
+- **Web Service API:** Backend central desarrollado en ASP.NET Core. Procesa la lógica del negocio, expone endpoints RESTful y gestiona la comunicación con la base de datos y pasarelas externas.
+
+**Capa de Persistencia:**
+- **Database (MySQL):** Motor relacional que garantiza persistencia transaccional y consistencia en los datos de usuarios, proyectos y configuraciones.
+
+<br>
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams.
-![Deployment Diagram](image.jpg)
+El diagrama de despliegue detalla la distribución de los componentes del sistema IoBuild en la infraestructura cliente y de nube (*Cloud Tier*).
 
-## 4.2. Tactical-Level Domain-Driven Design
-### 4.2.X. Bounded Context: &lt;Bounded Context Name&gt;
-#### 4.2.X.1. Domain Layer.
-[Entidades, Value Objects, Agregados, Domain Events, Repositorios e interfaces de dominio]
+**Enlace del Diagrama de Despliegue:** [https://shorturl.at/2DSHw](https://shorturl.at/2DSHw)
 
-#### 4.2.X.2. Interface Layer.
-[Controladores REST, DTOs, Handlers de mensajería o WebSockets]
+<br>
 
-#### 4.2.X.3. Application Layer.
-[Casos de uso / Command Handlers / Query Handlers / Application Services]
+![Deployment Level Diagrams](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%202/Software%20Architecture%20Deployment%20Diagram.png)
 
-#### 4.2.X.4. Infrastructure Layer.
-[Implementación de repositorios, clientes externos, adaptadores IoT/MQTT/HTTP, persistencia]
+<br>
 
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams.
-![C4 Component Diagram](image.jpg)
+**Descripción del Deployment Diagram:**
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams.
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.
-![Class Diagram](image.jpg)
+- **Client Tier:** Navegadores web de los usuarios (acceso a Landing Page y Web App) y dispositivos móviles con la aplicación cliente.
+- **Cloud Tier (Frontend):** Despliegue en GitHub Pages (Landing Page) y Vercel (Web Application SPA).
+- **Cloud Tier (Backend):** Contenedores Docker sobre servidores de aplicación que ejecutan el API en ASP.NET Core con comunicación segura HTTPS.
+- **Data Tier:** Servidor de base de datos MySQL para la persistencia centralizada.
 
-##### 4.2.X.6.2. Bounded Context Database Design Diagram.
-![Database Design Diagram](image.jpg)
+## 4.2. Tactical-Level Domain-Driven Design.
+
+### Introducción al Diseño Táctico
+El Tactical-Level Domain-Driven Design de **IoBuild** representa la materialización concreta del diseño estratégico definido previamente. En esta sección se detalla cómo cada bounded context implementa sus capas Domain, Interface, Application e Infrastructure, así como sus componentes internos, contratos y mecanismos de persistencia. Este enfoque táctico asegura que las decisiones de negocio se traduzcan en una arquitectura modular, desacoplada, mantenible y lista para evolucionar conforme crezca la plataforma.
+
+Para IoBuild se han identificado cuatro bounded contexts principales que cubren las capacidades nucleares de la solución:
+1. **Smart Project Setup:** Configuración inicial de proyectos, zonas físicas, planos y perfiles IoT.
+2. **Service Execution and Monitoring:** Orquestación operativa de servicios y supervisión de hardware en tiempo real.
+3. **Smart Assistant:** Asistencia inteligente contextual y recomendaciones accionables para optimización del confort y habitabilidad.
+4. **Energy Management:** Medición, telemetría, análisis de patrones y optimización del consumo energético en las edificaciones.
+
+---
+
+### 4.2.1. Bounded Context: Smart Project Setup.
+#### 4.2.1.1. Domain Layer.
+En **IoBuild**, este bounded context define cómo se prepara un proyecto inteligente antes de su ejecución operativa. El dominio cubre el modelado del sitio, la selección de perfiles IoT y la configuración de conectividad para dejar el proyecto listo para su despliegue en obra.
+
+**Entities y Aggregates:**
+- **SmartProjectSetup (Aggregate Root):** Representa la configuración principal del proyecto (*id, ownerId, projectName, buildingType, status, createdAt, updatedAt*).
+- **SiteZone:** Representa un espacio físico del proyecto (piso, ambiente o sector) donde se desplegarán dispositivos.
+- **DeviceProfile:** Representa la configuración funcional de un tipo de dispositivo IoT (sensor, intervalo de lectura, umbrales y protocolo).
+- **ConnectivityProfile:** Representa la configuración de conectividad del proyecto (gateway, protocolo, credenciales y políticas de reconexión).
+
+**Value Objects:**
+- **SetupId, OwnerId, ZoneId, DeviceProfileId, ConnectivityProfileId:** Identificadores únicos del dominio.
+- **SetupStatus:** Estado del setup (*DRAFT, VALIDATED, PROVISIONED, ARCHIVED*).
+- **BuildingType:** Tipo de edificación (*RESIDENTIAL, COMMERCIAL, INDUSTRIAL, EDUCATIONAL*).
+- **SensorType:** Tipo de sensor (*TEMPERATURE, HUMIDITY, OCCUPANCY, ENERGY_METER, AIR_QUALITY*).
+- **ProtocolType:** Protocolo de comunicación (*MQTT, HTTP, MODBUS, BACNET*).
+
+**Commands:**
+- CreateSmartProjectSetupCommand
+- UpdateSmartProjectSetupCommand
+- DefineSiteZoneCommand
+- UpdateSiteZoneCommand
+- AssignDeviceProfileCommand
+- ConfigureConnectivityProfileCommand
+- ValidateSmartProjectSetupCommand
+- ProvisionSmartProjectSetupCommand
+
+**Queries:**
+- GetSmartProjectSetupByIdQuery
+- GetSmartProjectSetupsByOwnerIdQuery
+- GetSetupChecklistByIdQuery
+- GetZonesBySetupIdQuery
+- GetAvailableDeviceProfilesQuery
+- GetConnectivityProfileBySetupIdQuery
+
+**Domain Services (Contratos):**
+- SmartProjectSetupCommandService
+- SmartProjectSetupQueryService
+- ZoneConfigurationCommandService
+- DeviceProfileConfigurationService
+- SetupValidationService
+
+#### 4.2.1.2. Interface Layer.
+La capa de interfaz expone endpoints RESTful para crear y configurar proyectos en IoBuild, registrar zonas del sitio y asignar perfiles técnicos.
+
+**Controllers:**
+- **SmartProjectSetupsController:** Create, update, validate, provision y consultas principales del setup.
+- **SetupZonesController:** Define y actualiza zonas físicas del proyecto.
+- **SetupProfilesController:** Asigna perfiles de dispositivo y configura parámetros de conectividad.
+
+**Resources (Request/Query DTOs):**
+- **Setup:** CreateSmartProjectSetupResource, UpdateSmartProjectSetupResource, ValidateSmartProjectSetupResource, ProvisionSmartProjectSetupResource.
+- **Zones:** DefineSiteZoneResource, UpdateSiteZoneResource.
+- **Profiles:** AssignDeviceProfileResource, ConfigureConnectivityProfileResource.
+- **Queries:** GetSmartProjectSetupByIdResource, GetSmartProjectSetupsByOwnerIdResource, GetSetupChecklistByIdResource, GetZonesBySetupIdResource.
+
+**Smart Project Setup Interface Diagram:**  
+![Smart Project Setup Interface Diagram](https://instasize.com/api/image/ac46962e9edde3cbfc8e372f387b207c489713181446b1a16f8ce49facd5b3b2.png)
+
+#### 4.2.1.3. Application Layer.
+La capa de aplicación orquesta comandos y consultas para preparar el proyecto IoBuild y validar que la configuración cumpla los requisitos mínimos antes del aprovisionamiento.
+
+**Command Handlers:**
+- **SmartProjectSetupCommandServiceImpl:** CreateSmartProjectSetupCommand, UpdateSmartProjectSetupCommand, ValidateSmartProjectSetupCommand, ProvisionSmartProjectSetupCommand.
+- **ZoneConfigurationCommandServiceImpl:** DefineSiteZoneCommand, UpdateSiteZoneCommand.
+- **DeviceProfileConfigurationServiceImpl:** AssignDeviceProfileCommand, ConfigureConnectivityProfileCommand.
+
+**Query Handlers:**
+- **SmartProjectSetupQueryServiceImpl:** GetSmartProjectSetupByIdQuery, GetSmartProjectSetupsByOwnerIdQuery, GetSetupChecklistByIdQuery, GetZonesBySetupIdQuery.
+- **SetupCatalogQueryServiceImpl:** GetAvailableDeviceProfilesQuery, GetConnectivityProfileBySetupIdQuery.
+
+**Smart Project Setup Application Diagram:**  
+![Smart Project Setup Application Diagram](https://instasize.com/api/image/e9c9db4b1c8d1417d7243363b80201317c2b75e261099bf4500fee76ca9d9dea.png)
+
+#### 4.2.1.4. Infrastructure Layer.
+La capa de infraestructura implementa la persistencia del setup de IoBuild, incluyendo zonas, perfiles de dispositivos y configuración de conectividad.
+
+**Repositories:**
+- **SmartProjectSetupRepository:** Búsquedas por ownerId, status y validaciones por nombre del proyecto.
+- **SiteZoneRepository:** Consultas de zonas por setup y validación de nombres repetidos por setup.
+- **DeviceProfileRepository:** Catálogo de perfiles por sensor y tipo de edificio.
+- **ConnectivityProfileRepository:** Obtención y reemplazo de configuración de conectividad por setup.
+
+**Smart Project Setup Infrastructure Diagram:**  
+![Smart Project Setup Infrastructure Diagram](https://instasize.com/api/image/7b5799c5a59f8baa058ce64b7ac8c866100f4a3f54a18da83b6da5bd5d9c55f4.png)
+
+#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams.
+
+![Diagram C4 - Smart Project Setup](https://i.imgur.com/EZ0QtVR.png)
+
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams.
+En esta sección se presentan los diagramas de nivel de código para **Smart Project Setup**, cubriendo el modelo del Domain Layer y su persistencia relacional.
+
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams.
+
+![Diagrama de Clases - Smart Project Setup](https://i.imgur.com/aqFCKUf.png)
+
+##### 4.2.1.6.2. Bounded Context Database Design Diagram.
+
+![Diagrama de Base de Datos - Smart Project Setup](https://i.imgur.com/szDoLl0.png)
+
+---
+
+### 4.2.2. Bounded Context: Service Execution and Monitoring.
+#### 4.2.2.1. Domain Layer.
+En **IoBuild**, este bounded context gestiona la ejecución operativa de servicios y el monitoreo continuo de su comportamiento. El dominio cubre la orquestación de ejecuciones, el registro de métricas de observabilidad y la gestión de alertas operativas en los dispositivos.
+
+**Entities y Aggregates:**
+- **ServiceExecution (Aggregate Root):** Representa una ejecución de servicio (*id, projectId, serviceId, triggerType, status, startedAt, finishedAt, resultSummary*).
+- **ExecutionTask:** Representa una tarea interna ejecutada dentro de un flujo de servicio (*id, executionId, taskOrder, command, status, durationMs*).
+- **MonitoringMetric:** Representa una medición técnica asociada a una ejecución o servicio (*id, executionId, type, value, unit, timestamp*).
+- **ServiceAlert:** Representa una alerta operativa generada por fallos, degradación o umbrales excedidos (*id, projectId, severity, message, resolved, createdAt*).
+
+**Value Objects:**
+- **ExecutionId, TaskId, ProjectId, ServiceId, MetricId, AlertId:** Identificadores únicos del dominio.
+- **ExecutionStatus:** Estado de ejecución (*QUEUED, RUNNING, SUCCESS, FAILED, CANCELLED, TIMEOUT*).
+- **TaskStatus:** Estado de tarea (*PENDING, RUNNING, COMPLETED, FAILED, SKIPPED*).
+- **HealthStatus:** Salud del servicio (*HEALTHY, DEGRADED, OFFLINE*).
+- **MetricType:** Tipo de métrica (*CPU_USAGE, MEMORY_USAGE, LATENCY, ERROR_RATE, THROUGHPUT*).
+- **AlertSeverity:** Severidad de alerta (*INFO, WARNING, CRITICAL*).
+
+##### Domain Behavior and Invariants:
+- **ServiceExecution Behavior:** `startExecution()`, `stopExecution()`, `retryExecution()`, `completeExecution()`, `failExecution(reason)`, `registerMonitoringMetric(metric)`, `evaluateServiceHealth()`.
+- **Domain Invariants:**
+  - Una ejecución solo puede estar en estado *RUNNING* si posee *startTime*.
+  - Una ejecución finalizada no puede reiniciarse sin crear una nueva instancia.
+  - Las métricas solo pueden registrarse para ejecuciones activas.
+
+##### Domain Events:
+- ServiceExecutionStarted
+- ServiceExecutionCompleted
+- ServiceExecutionFailed
+- MonitoringMetricRegistered
+- ServiceHealthDegraded
+- ServiceAlertRaised
+- ServiceAlertResolved
+
+**Commands:**
+- StartServiceExecutionCommand
+- StopServiceExecutionCommand
+- RetryServiceExecutionCommand
+- CancelServiceExecutionCommand
+- RegisterMonitoringMetricCommand
+- UpdateServiceHealthStatusCommand
+- RaiseServiceAlertCommand
+- ResolveServiceAlertCommand
+
+**Queries:**
+- GetExecutionByIdQuery
+- GetExecutionsByProjectIdQuery
+- GetActiveExecutionsQuery
+- GetMetricsByExecutionIdQuery
+- GetServiceHealthByProjectIdQuery
+- GetOpenAlertsByProjectIdQuery
+
+**Domain Services (Contratos):**
+- ServiceExecutionCommandService
+- ServiceExecutionQueryService
+- MonitoringCommandService
+- MonitoringQueryService
+- AlertManagementService
+- AlertQueryService
+
+#### 4.2.2.2. Interface Layer.
+La capa de interfaz expone endpoints RESTful para ejecutar servicios, consultar el estado operativo y administrar alertas del proyecto.
+
+**Controllers:**
+- **ServiceExecutionsController:** Start, stop, retry, cancel y consultas de ejecuciones.
+- **ServiceMonitoringController:** Registro de métricas y consulta de salud operativa.
+- **ServiceAlertsController:** Apertura, resolución y consulta de alertas activas.
+
+**Resources (Request/Query DTOs):**
+- **Execution:** StartServiceExecutionResource, StopServiceExecutionResource, RetryServiceExecutionResource, CancelServiceExecutionResource.
+- **Monitoring:** RegisterMonitoringMetricResource, UpdateServiceHealthStatusResource.
+- **Alerts:** RaiseServiceAlertResource, ResolveServiceAlertResource.
+- **Queries:** GetExecutionByIdResource, GetExecutionsByProjectIdResource, GetMetricsByExecutionIdResource, GetServiceHealthByProjectIdResource, GetOpenAlertsByProjectIdResource.
+
+**Service Execution and Monitoring Interface Diagram:**  
+![Service Execution and Monitoring Interface Diagram](https://instasize.com/api/image/d237f139e3bd29eea6ef5698a4e4f57140679000ed1d00c23baaec4157afae78.png)
+
+#### 4.2.2.3. Application Layer.
+La capa de aplicación orquesta la ejecución de servicios y los procesos de observabilidad para garantizar trazabilidad y control operativo del sistema.
+
+**Command Handlers:**
+- **ServiceExecutionCommandServiceImpl:** StartServiceExecutionCommand, StopServiceExecutionCommand, RetryServiceExecutionCommand, CancelServiceExecutionCommand.
+- **MonitoringCommandServiceImpl:** RegisterMonitoringMetricCommand, UpdateServiceHealthStatusCommand.
+- **AlertManagementServiceImpl:** RaiseServiceAlertCommand, ResolveServiceAlertCommand.
+
+**Query Handlers:**
+- **ServiceExecutionQueryServiceImpl:** GetExecutionByIdQuery, GetExecutionsByProjectIdQuery, GetActiveExecutionsQuery.
+- **MonitoringQueryServiceImpl:** GetMetricsByExecutionIdQuery, GetServiceHealthByProjectIdQuery.
+- **AlertQueryServiceImpl:** GetOpenAlertsByProjectIdQuery.
+
+**Service Execution and Monitoring Application Diagram:**  
+![Service Execution and Monitoring Application Diagram](https://instasize.com/api/image/20b81bd5a2eecdf45ebe39b3305e475644b4581e030069c24911def098e3a3c8.png)
+
+#### 4.2.2.4. Infrastructure Layer.
+La capa de infraestructura implementa la persistencia de ejecuciones, métricas y alertas para soportar monitoreo histórico y operación en tiempo real.
+
+**Repositories:**
+- **ServiceExecutionRepository:** Búsquedas por projectId, estado de ejecución y ejecuciones activas.
+- **ExecutionTaskRepository:** Tareas por executionId y estado de tarea.
+- **MonitoringMetricRepository:** Métricas por executionId y por tipo de métrica.
+- **ServiceAlertRepository:** Alertas por projectId, severidad y estado de resolución.
+
+**Service Execution and Monitoring Infrastructure Diagram:**  
+![Service Execution and Monitoring Infrastructure Diagram](https://instasize.com/api/image/6c9a8603ca4cac961870fdedc0c763647510ccd982a43e0e2128bb56cbe5cdd4.png)
+
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams.
+
+![Diagram C4 - Service Execution and Monitoring](https://i.imgur.com/p8nHO38.png)
+
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams.
+En esta sección se presenta el detalle de implementación para **Service Execution and Monitoring**, incluyendo estructura de dominio y modelo de persistencia.
+
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams.
+
+![Diagrama de Clases - Service Execution and Monitoring](https://i.imgur.com/Ngsgh4D.png)
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram.
+
+![Diagrama de Base de Datos - Service Execution and Monitoring](https://i.imgur.com/xtReovF.png)
+
+---
+
+### 4.2.3. Bounded Context: Smart Assistant.
+#### 4.2.3.1. Domain Layer.
+En **IoBuild**, este bounded context implementa la asistencia inteligente contextual para apoyar decisiones operativas. El dominio cubre conversaciones asistidas, generación de recomendaciones técnicas y construcción de planes de acción sobre eventos del proyecto.
+
+**Entities y Aggregates:**
+- **AssistantConversation (Aggregate Root):** Representa una sesión conversacional asociada a un proyecto (*id, projectId, userId, channel, status, startedAt, closedAt*).
+- **AssistantMessage:** Representa cada mensaje de una conversación (*id, conversationId, role, content, metadataJson, sentAt*).
+- **AssistantRecommendation:** Representa una recomendación accionable generada por el asistente para optimizar operación, mantenimiento o rendimiento.
+- **AssistantActionPlan:** Representa el plan de acción derivado de una recomendación, con pasos, prioridad y estado de ejecución sugerido.
+
+**Value Objects:**
+- **ConversationId, MessageId, RecommendationId, ActionPlanId, ProjectId, UserId:** Identificadores únicos del dominio.
+- **ConversationStatus:** Estado de conversación (*OPEN, WAITING_CONTEXT, RESOLVED, CLOSED*).
+- **MessageRole:** Rol del mensaje (*USER, ASSISTANT, SYSTEM*).
+- **AssistantChannel:** Canal de interacción (*WEB_CHAT, MOBILE_CHAT, API*).
+- **RecommendationType:** Tipo de recomendación (*ALERT_TRIAGE, SERVICE_TUNING, ENERGY_OPTIMIZATION, MAINTENANCE*).
+- **RecommendationPriority:** Prioridad (*LOW, MEDIUM, HIGH, CRITICAL*).
+
+##### Domain Behavior and Invariants:
+- **AssistantConversation Behavior:** `startConversation()`, `receiveUserMessage()`, `generateAssistantResponse()`, `closeConversation()`, `createRecommendation()`.
+- **Domain Invariants:**
+  - Una conversación en estado *CLOSED* no acepta nuevos mensajes.
+  - Toda recomendación debe estar asociada a una conversación activa.
+  - Los planes de acción solo pueden generarse a partir de recomendaciones existentes.
+
+##### Domain Events:
+- AssistantConversationStarted
+- AssistantMessageReceived
+- AssistantResponseGenerated
+- AssistantRecommendationGenerated
+- AssistantActionPlanCreated
+
+**Commands:**
+- StartAssistantConversationCommand
+- SendUserMessageCommand
+- GenerateAssistantResponseCommand
+- CloseAssistantConversationCommand
+- CreateAssistantRecommendationCommand
+- AcceptAssistantRecommendationCommand
+- DismissAssistantRecommendationCommand
+- GenerateAssistantActionPlanCommand
+
+**Queries:**
+- GetConversationByIdQuery
+- GetConversationsByProjectIdQuery
+- GetConversationMessagesQuery
+- GetRecommendationsByProjectIdQuery
+- GetPendingRecommendationsQuery
+- GetActionPlanByRecommendationIdQuery
+
+**Domain Services (Contratos):**
+- AssistantConversationCommandService
+- AssistantConversationQueryService
+- AssistantRecommendationCommandService
+- AssistantRecommendationQueryService
+- AssistantActionPlanCommandService
+- AssistantActionPlanQueryService
+
+#### 4.2.3.2. Interface Layer.
+La capa de interfaz expone endpoints RESTful para interactuar con el asistente, administrar recomendaciones y consultar planes de acción.
+
+**Controllers:**
+- **AssistantConversationsController:** Inicio de conversación, envío de mensajes, cierre y consultas de historial.
+- **AssistantRecommendationsController:** Creación, aceptación, descarte y consulta de recomendaciones.
+- **AssistantActionPlansController:** Generación y consulta de planes de acción asociados a recomendaciones.
+
+**Resources (Request/Query DTOs):**
+- **Conversations:** StartAssistantConversationResource, SendUserMessageResource, GenerateAssistantResponseResource, CloseAssistantConversationResource.
+- **Recommendations:** CreateAssistantRecommendationResource, AcceptAssistantRecommendationResource, DismissAssistantRecommendationResource.
+- **Action Plans:** GenerateAssistantActionPlanResource.
+- **Queries:** GetConversationByIdResource, GetConversationsByProjectIdResource, GetConversationMessagesResource, GetRecommendationsByProjectIdResource, GetPendingRecommendationsResource, GetActionPlanByRecommendationIdResource.
+
+**Smart Assistant Interface Diagram:**  
+![Smart Assistant Interface Diagram](https://instasize.com/api/image/f00d4edcae97cb8e384659f46342e12d43ad825eec9ea7cdeaf51d53e584f900.png)
+
+#### 4.2.3.3. Application Layer.
+La capa de aplicación orquesta la interacción del asistente con el contexto del proyecto para responder consultas, generar recomendaciones y proponer planes accionables.
+
+**Command Handlers:**
+- **AssistantConversationCommandServiceImpl:** StartAssistantConversationCommand, SendUserMessageCommand, GenerateAssistantResponseCommand, CloseAssistantConversationCommand.
+- **AssistantRecommendationCommandServiceImpl:** CreateAssistantRecommendationCommand, AcceptAssistantRecommendationCommand, DismissAssistantRecommendationCommand.
+- **AssistantActionPlanCommandServiceImpl:** GenerateAssistantActionPlanCommand.
+
+**Query Handlers:**
+- **AssistantConversationQueryServiceImpl:** GetConversationByIdQuery, GetConversationsByProjectIdQuery, GetConversationMessagesQuery.
+- **AssistantRecommendationQueryServiceImpl:** GetRecommendationsByProjectIdQuery, GetPendingRecommendationsQuery.
+- **AssistantActionPlanQueryServiceImpl:** GetActionPlanByRecommendationIdQuery.
+
+**Smart Assistant Application Diagram:**  
+![Smart Assistant Application Diagram](https://instasize.com/api/image/c1e93fdfadf169bc27b0c35f392c880a7e7cf8277875b5ca32146081bf2f4cae.png)
+
+#### 4.2.3.4. Infrastructure Layer.
+La capa de infraestructura implementa la persistencia de conversaciones, mensajes, recomendaciones y planes de acción para asegurar la trazabilidad de la asistencia inteligente.
+
+**Repositories:**
+- **AssistantConversationRepository:** Consultas por projectId, estado de conversación y usuario.
+- **AssistantMessageRepository:** Historial de mensajes por conversationId y orden cronológico.
+- **AssistantRecommendationRepository:** Recomendaciones por proyecto, prioridad y estado de aceptación.
+- **AssistantActionPlanRepository:** Planes de acción por recommendationId.
+
+**Smart Assistant Infrastructure Diagram:**  
+![Smart Assistant Infrastructure Diagram](https://instasize.com/api/image/30c135e534c0d290f7f1eb2b52a4639e2d8ea4d833724136d9d91420f37e6c99.png)
+
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams.
+
+![Diagram C4 - Smart Assistant](https://i.imgur.com/AQmKgPv.png)
+
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams.
+En esta sección se presenta el nivel de código del bounded context **Smart Assistant**, incluyendo su modelo de dominio y esquema de base de datos.
+
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams.
+
+![Diagrama de Clases - Smart Assistant](https://i.imgur.com/nHDNIB3.png)
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram.
+
+![Diagrama de Base de Datos - Smart Assistant](https://i.imgur.com/2b7dggg.png)
+
+---
+
+### 4.2.4. Bounded Context: Energy Management.
+#### 4.2.4.1. Domain Layer.
+En **IoBuild**, este bounded context gestiona la medición, análisis y optimización del consumo energético de los edificios inteligentes. El dominio cubre planes de optimización, registro de consumo, detección de anomalías y eventos de respuesta a la demanda.
+
+**Entities y Aggregates:**
+- **EnergyOptimizationPlan (Aggregate Root):** Representa el plan de optimización energética de un proyecto (*id, projectId, baselineKwh, reductionTargetPercent, status, windowStart, windowEnd, createdAt*).
+- **EnergyConsumptionRecord:** Representa una lectura de consumo energético por zona, medidor y período de tiempo (*id, energyPlanId, projectId, zoneId, meterId, value, unit, period, recordedAt*).
+- **EnergyAnomaly:** Representa una desviación del patrón esperado de consumo como picos, sobrecargas o caídas (*id, energyPlanId, projectId, zoneId, severity, detectedPattern, acknowledged, detectedAt*).
+- **DemandResponseEvent:** Representa un evento operativo para ajustar la carga eléctrica en períodos críticos (*id, energyPlanId, projectId, eventName, status, startsAt, endsAt*).
+
+**Value Objects:**
+- **EnergyPlanId, ConsumptionRecordId, AnomalyId, ResponseEventId, ProjectId, ZoneId, MeterId:** Identificadores únicos del dominio.
+- **OptimizationStatus:** Estado del plan (*DRAFT, ACTIVE, PAUSED, COMPLETED, CANCELLED*).
+- **ConsumptionPeriod:** Granularidad de lectura (*HOURLY, DAILY, WEEKLY, MONTHLY*).
+- **EnergyUnit:** Unidad de energía (*WH, KWH, MWH*).
+- **AnomalySeverity:** Severidad de anomalía (*LOW, MEDIUM, HIGH, CRITICAL*).
+- **DemandResponseStatus:** Estado del evento de respuesta (*CREATED, IN_PROGRESS, EXECUTED, FAILED, CLOSED*).
+
+##### Domain Behavior and Invariants:
+- **EnergyOptimizationPlan Behavior:** `activate()`, `pause()`, `complete()`, `recordConsumption(record)`, `detectAnomaly(anomaly)`, `triggerDemandResponse(event)`.
+- **Domain Invariants:**
+  - El objetivo de reducción de energía (`reductionTargetPercent`) debe ser un valor porcentual positivo menor al 100%.
+  - No se pueden registrar lecturas de consumo con marcas de tiempo futuras.
+  - Una anomalía no puede ser marcada como reconocida (`acknowledged`) sin registrar la identidad del operador o regla responsable.
+
+##### Domain Events:
+- EnergyOptimizationPlanCreated
+- EnergyOptimizationPlanActivated
+- EnergyConsumptionRecorded
+- EnergyAnomalyDetected
+- DemandResponseEventTriggered
+- EnergySavingsTargetAchieved
+
+**Commands:**
+- CreateEnergyOptimizationPlanCommand
+- ActivateEnergyOptimizationPlanCommand
+- PauseEnergyOptimizationPlanCommand
+- RegisterEnergyConsumptionCommand
+- DetectEnergyAnomalyCommand
+- AcknowledgeEnergyAnomalyCommand
+- CreateDemandResponseEventCommand
+- CompleteDemandResponseEventCommand
+
+**Queries:**
+- GetOptimizationPlanByIdQuery
+- GetOptimizationPlansByProjectIdQuery
+- GetConsumptionByProjectIdQuery
+- GetConsumptionByZoneIdQuery
+- GetEnergyAnomaliesByProjectIdQuery
+- GetActiveDemandResponseEventsQuery
+- GetEnergySavingsSummaryByProjectIdQuery
+
+**Domain Services (Contratos):**
+- EnergyOptimizationCommandService
+- EnergyOptimizationQueryService
+- EnergyMonitoringCommandService
+- EnergyMonitoringQueryService
+- DemandResponseCommandService
+- DemandResponseQueryService
+- EnergySavingsAnalysisService
+
+#### 4.2.4.2. Interface Layer.
+La capa de interfaz expone endpoints RESTful para crear planes de optimización, registrar consumo, gestionar anomalías y ejecutar eventos de respuesta a la demanda.
+
+**Controllers:**
+- **EnergyOptimizationPlansController:** Creación, activación, pausa y consultas de planes de optimización.
+- **EnergyMonitoringController:** Registro de consumo, detección/revisión de anomalías y consultas operativas.
+- **DemandResponseController:** Apertura, cierre y consulta de eventos de respuesta a la demanda.
+
+**Resources (Request/Query DTOs):**
+- **Optimization:** CreateEnergyOptimizationPlanResource, ActivateEnergyOptimizationPlanResource, PauseEnergyOptimizationPlanResource.
+- **Monitoring:** RegisterEnergyConsumptionResource, DetectEnergyAnomalyResource, AcknowledgeEnergyAnomalyResource.
+- **Demand Response:** CreateDemandResponseEventResource, CompleteDemandResponseEventResource.
+- **Queries:** GetOptimizationPlanByIdResource, GetOptimizationPlansByProjectIdResource, GetConsumptionByProjectIdResource, GetConsumptionByZoneIdResource, GetEnergyAnomaliesByProjectIdResource, GetActiveDemandResponseEventsResource, GetEnergySavingsSummaryByProjectIdResource.
+
+**Energy Management Interface Diagram:**  
+![Energy Management Interface Diagram](https://instasize.com/api/image/3be25a2e254b035f27c7ecdb7b05bb59883da84db0dbb2b70a1b26ef89bff79b.png)
+
+#### 4.2.4.3. Application Layer.
+La capa de aplicación orquesta comandos y consultas para convertir datos de consumo en decisiones operativas de eficiencia energética.
+
+**Command Handlers:**
+- **EnergyOptimizationCommandServiceImpl:** CreateEnergyOptimizationPlanCommand, ActivateEnergyOptimizationPlanCommand, PauseEnergyOptimizationPlanCommand.
+- **EnergyMonitoringCommandServiceImpl:** RegisterEnergyConsumptionCommand, DetectEnergyAnomalyCommand, AcknowledgeEnergyAnomalyCommand.
+- **DemandResponseCommandServiceImpl:** CreateDemandResponseEventCommand, CompleteDemandResponseEventCommand.
+
+**Query Handlers:**
+- **EnergyOptimizationQueryServiceImpl:** GetOptimizationPlanByIdQuery, GetOptimizationPlansByProjectIdQuery.
+- **EnergyMonitoringQueryServiceImpl:** GetConsumptionByProjectIdQuery, GetConsumptionByZoneIdQuery, GetEnergyAnomaliesByProjectIdQuery, GetEnergySavingsSummaryByProjectIdQuery.
+- **DemandResponseQueryServiceImpl:** GetActiveDemandResponseEventsQuery.
+
+**Energy Management Application Diagram:**  
+![Energy Management Application Diagram](https://instasize.com/api/image/5bb792141cfabc4249c13bd8e17c84a6a90107bd2fd33d9f018e89a5e9a35127.png)
+
+#### 4.2.4.4. Infrastructure Layer.
+La capa de infraestructura implementa persistencia de planes de optimización, lecturas de consumo, anomalías y eventos de respuesta para soportar analítica histórica y operación en tiempo real.
+
+**Repositories:**
+- **EnergyOptimizationPlanRepository:** Planes por projectId, estado de optimización y planes activos.
+- **EnergyConsumptionRecordRepository:** Lecturas por projectId, zoneId, meterId y rango temporal.
+- **EnergyAnomalyRepository:** Anomalías por proyecto, severidad y estado abierto/cerrado.
+- **DemandResponseEventRepository:** Eventos por proyecto, estado y eventos activos.
+
+**Energy Management Infrastructure Diagram:**  
+![Energy Management Infrastructure Diagram](https://instasize.com/api/image/ebde2d543f68889ecb0ca0460f113851d31f2dafc5549e80d83402882b863d54.png)
+
+##### AI Integration Anti-Corruption Layer (ACL):
+Para evitar el acoplamiento directo con proveedores externos de inteligencia artificial, el sistema define la interfaz de dominio `AssistantAIService`. En la capa de infraestructura se implementan los adaptadores `OpenAIAssistantAdapter` y `ExternalLLMAdapter`, protegiendo el modelo de dominio ante evoluciones tecnológicas del proveedor.
+
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams.
+
+![Diagram C4 - Energy Management](https://i.imgur.com/XKGyZ20.png)
+
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams.
+En esta sección se presenta el detalle de implementación de **Energy Management** a nivel de clases de dominio y persistencia relacional.
+
+##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams.
+
+![Diagrama de Clases - Energy Management](https://i.imgur.com/VxFxqqC.png)
+
+##### 4.2.4.6.2. Bounded Context Database Design Diagram.
+
+![Diagrama de Base de Datos - Energy Management](https://i.imgur.com/bxwcuZp.png)
 
 ---
 
