@@ -35,6 +35,8 @@
 <br> Setiembre 2026
 </center>  
 
+<div style="page-break-before: always;"></div>
+
 # Registro de Versiones del Informe
 <center>
 
@@ -47,17 +49,20 @@
 | 0.4 | 09/09/2026 | Guia Carrasco, Pedro Andre | Elaboración de entrevistas: diseño de guía de preguntas, registro audiovisual, transcripción y análisis de respuestas de los segmentos objetivo. |
 | 0.5 | 10/09/2026 | Alejo Jesus, Anyelo Bill | Desarrollo de Needfinding: creación de User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping. |
 | 0.6 | 11/09/2026 | Escalante Baygorrea, Janiel Franz | Modelado de Big Picture EventStorming y definición formal del Ubiquitous Language del dominio de la solución. |
-| 0.7 | 12/09/2026 | Ccarita Cruz, Brayan Roberto | Desarrollo del Capítulo 3: Especificación de requerimientos, definición de Épicas, User Stories con criterios de aceptación (Gherkin) y Technical Stories. |
+| 0.7 | 12/09/2026 | Ccarita Cruz, Brayan Roberto | Desarrollo del Capítulo 3: Especificación de requisitos, definición de Épicas, User Stories con criterios de aceptación (Gherkin) y Technical Stories. |
 | 0.8 | 13/09/2026 | Ordoñez Ricaldi, Axel Randall | Construcción del Impact Mapping y estructuración del Product Backlog general con estimación de puntos de historia y priorización por Sprints. |
 | 0.9 | 15/09/2026 | Panta Castro, Fabrizio Martin | Elaboración del Capítulo 4: Strategic-Level DDD (Design-Level EventStorming, Candidate Contexts, Bounded Context Canvases y Context Mapping). |
 | 1.0 | 16/09/2026 | Loechle Arias, Mateo Italo | Tactical-Level DDD para los 4 Bounded Contexts, diagramas de arquitectura de software C4, conclusiones, bibliografía, anexos y consolidación final de la entrega hasta el Capítulo 4. |  
 
 </center>
 
+<div style="page-break-before: always;"></div>
+
 # Project Report Collaboration Insights
 URL del repositorio: https://github.com/IoBuild-IoT/report
 (Imagenes de los commits cada entrega)
 
+<div style="page-break-before: always;"></div>
 
 # Contenido
 
@@ -141,14 +146,18 @@ URL del repositorio: https://github.com/IoBuild-IoT/report
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)  
 
+<div style="page-break-before: always;"></div>
+
 # Student Outcome
 
 | Criterio Específico | Acciones Realizadas | Conclusiones |
 |---|---|---|
-| Participa en equipos multidisciplinarios con eficacia, eficiencia y objetividad, en el marco de un proyecto en soluciones de ingeniería de software. | **Ordoñez Ricaldi, Axel Randall:**<br>*TB1:* Participé activamente en la coordinación del equipo para la elaboración del Capítulo I y en la estructuración y priorización del Product Backlog en el Capítulo III, facilitando sesiones de trabajo colaborativo y asegurando una división equitativa de responsabilidades en la definición de historias de usuario y estimación de puntos de historia con objetividad y eficacia.<br><br>**Ccarita Cruz, Brayan Roberto:**<br>*TB1:* Lideré la sincronización del equipo multidisciplinario en la inicialización y estructuración del repositorio en GitHub, promoviendo una comunicación técnica fluida y eficaz para la definición de la arquitectura de la solución, e integrando los aportes de todos los miembros en la especificación de requerimientos y diseño de bounded contexts.<br><br>**Panta Castro, Fabrizio Martin:**<br>*TB1:* Contribuí con objetividad en las dinámicas colaborativas del enfoque Lean UX en el Capítulo I y en el modelado de Domain-Driven Design (DDD) estratégico en el Capítulo IV, coordinando con el equipo la definición de contextos acotados y asegurando que las decisiones de diseño arquitectónico respondieran fielmente a los objetivos acordados.<br><br>**Loechle Arias, Mateo Italo:**<br>*TB1:* Colaboré eficientemente con el equipo en la investigación y análisis competitivo del Capítulo II, así como en la consolidación del diseño táctico de los bounded contexts y la revisión general del informe, fomentando la retroalimentación constructiva y asegurando el cumplimiento puntual y ordenado de los entregables.<br><br>**Guia Carrasco, Pedro Andre:**<br>*TB1:* Participé de forma activa en la planificación y ejecución de las entrevistas a los segmentos objetivo en el Capítulo II, coordinando los roles del equipo para la moderación, registro audiovisual y análisis sistemático de respuestas, garantizando objetividad en la recolección de hallazgos para el diseño de IoBuild.<br><br>**Alejo Jesus, Anyelo Bill:**<br>*TB1:* Contribuí en las sesiones de ideación y needfinding del Capítulo II, colaborando en la construcción de los User Personas, Empathy Maps y User Journey Maps junto al equipo, manteniendo una comunicación constante y asegurando que los requerimientos identificados reflejaran fielmente las necesidades del usuario de forma consensuada.<br><br>**Escalante Baygorrea, Janiel Franz:**<br>*TB1:* Aporté con eficacia en la moderación y registro de los talleres de Big Picture EventStorming y la consolidación del Ubiquitous Language en el Capítulo II, integrando las distintas visiones multidisciplinarias de los miembros del equipo y alineando la terminología técnica y de negocio del proyecto con rigor y claridad. | En TB1, el equipo demostró un alto nivel de eficacia, eficiencia y objetividad al organizarse de manera multidisciplinaria mediante metodologías ágiles y herramientas colaborativas como Git, GitHub y entornos de modelado. Se logró una distribución equitativa de responsabilidades desde la concepción de la startup hasta el diseño de la arquitectura DDD y C4, manteniendo una comunicación constante, resolviendo discrepancias mediante consensos técnicos y asegurando entregables integrados, robustos y alineados con las buenas prácticas de la ingeniería de software. |
-| Conoce al menos un sector empresarial o dominio de aplicación de soluciones de software. | **Ordoñez Ricaldi, Axel Randall:**<br>*TB1:* Profundicé en el dominio de la administración residencial y condominios al elaborar el perfil de la solución y estructurar el Impact Mapping y Backlog, identificando los dolores operativos en el control manual de áreas comunes y cómo una solución IoT aporta valor tangible y medible al sector inmobiliario.<br><br>**Ccarita Cruz, Brayan Roberto:**<br>*TB1:* Analicé a profundidad el ecosistema de la domótica residencial y la gestión de infraestructura de edificios para formular los requisitos y la arquitectura de IoBuild, comprendiendo cómo los dispositivos IoT de monitoreo ambiental y conmutación de luminarias se integran funcionalmente en los procesos operativos de un condominio moderno.<br><br>**Panta Castro, Fabrizio Martin:**<br>*TB1:* Estudié el contexto de la gestión residencial y el comportamiento de los residentes en condominios mediante el desarrollo del Lean UX Canvas y el Bounded Context de Energy Management, analizando los patrones de consumo energético y las necesidades de confort térmico y lumínico en entornos habitacionales.<br><br>**Loechle Arias, Mateo Italo:**<br>*TB1:* Adquirí un conocimiento sólido del sector proptech y del mercado de automatización para edificios residenciales al realizar el benchmarking competitivo frente a plataformas comerciales, identificando brechas de costo, complejidad y oportunidades de mercado para IoBuild en el entorno residencial local.<br><br>**Guia Carrasco, Pedro Andre:**<br>*TB1:* Obtuve un entendimiento directo del sector inmobiliario y de administración de condominios al liderar las entrevistas con residentes y administradores, reconociendo de primera mano las deficiencias en la comunicación de incidencias, la falta de automatización en espacios compartidos y los requerimientos del sector.<br><br>**Alejo Jesus, Anyelo Bill:**<br>*TB1:* Interioricé las dinámicas cotidianas del sector residencial y las expectativas de los copropietarios y administradores durante la elaboración de los User Personas y mapas de empatía, comprendiendo cómo las soluciones de software IoT deben adaptarse al estilo de vida de los residentes y a las reglas de administración condominal.<br><br>**Escalante Baygorrea, Janiel Franz:**<br>*TB1:* Desarrollé una comprensión integral de los flujos operativos del sector residencial al modelar los eventos de negocio en el Big Picture EventStorming y definir el lenguaje ubicuo, contextualizando términos como telemetría ambiental, actuadores de relé y zonas comunes dentro del dominio inmobiliario. | En TB1, el equipo evidenció un conocimiento riguroso y fundamentado del sector empresarial inmobiliario y de administración residencial (PropTech y domótica IoT en condominios). A través del levantamiento de información con usuarios reales, análisis exhaustivo de competidores y el modelado de dominio con EventStorming y DDD, el equipo comprendió a fondo los desafíos de eficiencia energética, automatización de áreas comunes y confort habitacional, logrando diseñar una solución de software que responde con precisión a las necesidades reales del mercado. |
+| Participa en equipos multidisciplinarios con eficacia, eficiencia y objetividad, en el marco de un proyecto en soluciones de ingeniería de software. | **Ordoñez Ricaldi, Axel Randall:**<br>*TB1:* Participé activamente en la coordinación del equipo para la elaboración del Capítulo I y en la estructuración y priorización del Product Backlog en el Capítulo III, facilitando sesiones de trabajo colaborativo y asegurando una división equitativa de responsabilidades en la definición de historias de usuario y estimación de puntos de historia con objetividad y eficacia.<br><br>**Ccarita Cruz, Brayan Roberto:**<br>*TB1:* Lideré la sincronización del equipo multidisciplinario en la inicialización y estructuración del repositorio en GitHub, promoviendo una comunicación técnica fluida y eficaz para la definición de la arquitectura de la solución, e integrando los aportes de todos los miembros en la especificación de requisitos y diseño de bounded contexts.<br><br>**Panta Castro, Fabrizio Martin:**<br>*TB1:* Contribuí con objetividad en las dinámicas colaborativas del enfoque Lean UX en el Capítulo I y en el modelado de Domain-Driven Design (DDD) estratégico en el Capítulo IV, coordinando con el equipo la definición de contextos acotados y asegurando que las decisiones de diseño arquitectónico respondieran fielmente a los objetivos acordados.<br><br>**Loechle Arias, Mateo Italo:**<br>*TB1:* Colaboré eficientemente con el equipo en la investigación y análisis competitivo del Capítulo II, así como en la consolidación del diseño táctico de los bounded contexts y la revisión general del informe, fomentando la retroalimentación constructiva y asegurando el cumplimiento puntual y ordenado de los entregables.<br><br>**Guia Carrasco, Pedro Andre:**<br>*TB1:* Participé de forma activa en la planificación y ejecución de las entrevistas a los segmentos objetivo en el Capítulo II, coordinando los roles del equipo para la moderación, registro audiovisual y análisis sistemático de respuestas, garantizando objetividad en la recolección de hallazgos para el diseño de IoBuild.<br><br>**Alejo Jesus, Anyelo Bill:**<br>*TB1:* Contribuí en las sesiones de ideación y needfinding del Capítulo II, colaborando en la construcción de los User Personas, Empathy Maps y User Journey Maps junto al equipo, manteniendo una comunicación constante y asegurando que los requisitos identificados reflejaran fielmente las necesidades del usuario de forma consensuada.<br><br>**Escalante Baygorrea, Janiel Franz:**<br>*TB1:* Aporté con eficacia en la moderación y registro de los talleres de Big Picture EventStorming y la consolidación del Ubiquitous Language en el Capítulo II, integrando las distintas visiones multidisciplinarias de los miembros del equipo y alineando la terminología técnica y de negocio del proyecto con rigor y claridad. | En TB1, el equipo demostró un alto nivel de eficacia, eficiencia y objetividad al organizarse de manera multidisciplinaria mediante metodologías ágiles y herramientas colaborativas como Git, GitHub y entornos de modelado. Se logró una distribución equitativa de responsabilidades desde la concepción de la startup hasta el diseño de la arquitectura DDD y C4, manteniendo una comunicación constante, resolviendo discrepancias mediante consensos técnicos y asegurando entregables integrados, robustos y alineados con las buenas prácticas de la ingeniería de software. |
+| Conoce al menos un sector empresarial o dominio de aplicación de soluciones de software. | **Ordoñez Ricaldi, Axel Randall:**<br>*TB1:* Profundicé en el dominio de la administración residencial y condominios al elaborar el perfil de la solución y estructurar el Impact Mapping y Backlog, identificando los dolores operativos en el control manual de áreas comunes y cómo una solución IoT aporta valor tangible y medible al sector inmobiliario.<br><br>**Ccarita Cruz, Brayan Roberto:**<br>*TB1:* Analicé a profundidad el ecosistema de la domótica residencial y la gestión de infraestructura de edificios para formular los requisitos y la arquitectura de IoBuild, comprendiendo cómo los dispositivos IoT de monitoreo ambiental y conmutación de luminarias se integran funcionalmente en los procesos operativos de un condominio moderno.<br><br>**Panta Castro, Fabrizio Martin:**<br>*TB1:* Estudié el contexto de la gestión residencial y el comportamiento de los residentes en condominios mediante el desarrollo del Lean UX Canvas y el Bounded Context de Energy Management, analizando los patrones de consumo energético y las necesidades de confort térmico y lumínico en entornos habitacionales.<br><br>**Loechle Arias, Mateo Italo:**<br>*TB1:* Adquirí un conocimiento sólido del sector proptech y del mercado de automatización para edificios residenciales al realizar el benchmarking competitivo frente a plataformas comerciales, identificando brechas de costo, complejidad y oportunidades de mercado para IoBuild en el entorno residencial local.<br><br>**Guia Carrasco, Pedro Andre:**<br>*TB1:* Obtuve un entendimiento directo del sector inmobiliario y de administración de condominios al liderar las entrevistas con residentes y administradores, reconociendo de primera mano las deficiencias en la comunicación de incidencias, la falta de automatización en espacios compartidos y los requisitos del sector.<br><br>**Alejo Jesus, Anyelo Bill:**<br>*TB1:* Interioricé las dinámicas cotidianas del sector residencial y las expectativas de los copropietarios y administradores durante la elaboración de los User Personas y mapas de empatía, comprendiendo cómo las soluciones de software IoT deben adaptarse al estilo de vida de los residentes y a las reglas de administración condominal.<br><br>**Escalante Baygorrea, Janiel Franz:**<br>*TB1:* Desarrollé una comprensión integral de los flujos operativos del sector residencial al modelar los eventos de negocio en el Big Picture EventStorming y definir el lenguaje ubicuo, contextualizando términos como telemetría ambiental, actuadores de relé y zonas comunes dentro del dominio inmobiliario. | En TB1, el equipo evidenció un conocimiento riguroso y fundamentado del sector empresarial inmobiliario y de administración residencial (PropTech y domótica IoT en condominios). A través del levantamiento de información con usuarios reales, análisis exhaustivo de competidores y el modelado de dominio con EventStorming y DDD, el equipo comprendió a fondo los desafíos de eficiencia energética, automatización de áreas comunes y confort habitacional, logrando diseñar una solución de software que responde con precisión a las necesidades reales del mercado. |
 
 ---
+
+<div style="page-break-before: always;"></div>
 
 # Capítulo I: Introducción
 
@@ -406,6 +415,8 @@ Estos supuestos formarán la estructura de nuestra estrategia de diseño y propo
 | **Función de comportamiento** | Evalúan e incorporan soluciones tecnológicas desde la etapa de diseño de planos y memoria descriptiva. Valoran la estandarización y compatibilidad con hardware accesible (sensores ambientales y actuadores/relés para iluminación en pasillos o áreas comunes). Se frustran enormemente por sistemas propietarios cerrados, costosos o difíciles de configurar en obra. Su meta es entregar condominios con valor agregado inteligente garantizando viabilidad técnica y operativa. | Uso frecuente y diario de aplicaciones móviles y asistentes para el hogar. Su adopción de tecnología se basa estrictamente en la facilidad de uso y la inmediatez: desean verificar la temperatura/humedad de sus habitaciones y controlar las luces (o activar escenas como "Modo Noche" o "Modo Fuera de Casa") con un toque. Se frustran ante la multiplicidad de apps incompatibles o fallas de configuración. Su meta es maximizar el bienestar dentro de su vivienda de forma intuitiva. |
 
 ---
+
+<div style="page-break-before: always;"></div>
 
 # Capítulo II: Requirements Elicitation & Analysis
 
@@ -770,6 +781,8 @@ Con el objetivo de garantizar una comunicación precisa, libre de ambigüedades 
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories.
@@ -988,6 +1001,8 @@ Para el control, priorización y diseño del Product Backlog se utilizó la herr
 | 69 | US42 | Acceder a Ayuda y Soporte | Como Usuario, quiero consultar la base de conocimientos y contactar al equipo tecnico para resolver incidencias de plataforma. | 2 | Sprint 4 |
 
 ---
+
+<div style="page-break-before: always;"></div>
 
 # Capítulo IV: Solution Software Design
 
@@ -1227,6 +1242,8 @@ El diagrama de despliegue detalla la distribución de los componentes del sistem
 - **Cloud Tier (Frontend):** Despliegue en GitHub Pages (Landing Page) y Vercel (Web Application SPA).
 - **Cloud Tier (Backend):** Contenedores Docker sobre servidores de aplicación que ejecutan el API en ASP.NET Core con comunicación segura HTTPS.
 - **Data Tier:** Servidor de base de datos MySQL para la persistencia centralizada.
+
+<div style="page-break-before: always;"></div>
 
 ## 4.2. Tactical-Level Domain-Driven Design.
 
@@ -1712,6 +1729,8 @@ En esta sección se presenta el detalle de implementación de **Energy Managemen
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 # Conclusiones y recomendaciones.
 
 ## Conclusiones
@@ -1726,9 +1745,13 @@ En esta sección se presenta el detalle de implementación de **Energy Managemen
 - **Monitoreo de Eficiencia y Latencia:** Para los servicios encargados de la ejecución de comandos y el procesamiento de reglas de automatización, se sugiere establecer métricas estrictas de latencia y consumo de memoria, asegurando tiempos de respuesta inmediatos ante eventos ambientales o solicitudes del usuario.
 - **Consistencia en la Experiencia de Usuario (UI/UX):** Al abordar los siguientes hitos de implementación de las interfaces de usuario (web y móvil), se recomienda mantener una guía de estilos visuales unificada, con especial atención a la claridad en el reporte de estados de dispositivos y la simplicidad en la configuración de zonas comunes y privadas.
 
+<div style="page-break-before: always;"></div>
+
 # Video About-the-Team.
 A continuación, se presenta el enlace al video de presentación del equipo:
 - **Enlace del video About-the-Team:** [Video de presentación del equipo CcaritaTech](https://youtu.be/...)
+
+<div style="page-break-before: always;"></div>
 
 # Bibliografía
 
@@ -1745,6 +1768,8 @@ A continuación, se presenta el enlace al video de presentación del equipo:
 - Structurizr Ltd. (2024). *The C4 model for visualising software architecture*. Recuperado de https://structurizr.com/
 - Vernimmen, V. (2019). *Domain-Driven Design Reference: Definitions and Pattern Summaries*. Domain Language.
 
+<div style="page-break-before: always;"></div>
+
 # Anexos
 
 #### ANEXO A: Investigación y Análisis de Usuarios
@@ -1757,6 +1782,8 @@ Este anexo recopila las evidencias de investigación, elicitación y validación
   - Entrevista 3 (Mathias Gabriel Quispe Pariona - Propietario / Residente): [https://lix.li/neaB](https://lix.li/neaB)
   - Entrevista 4 (Franco Bautista Salazar - Propietario / Residente): [https://lix.li/seV508](https://lix.li/seV508)
   - Entrevista 5 (Alex Moreno - Constructor / Arquitecto): [https://youtu.be/M1nDEEuHymI](https://youtu.be/M1nDEEuHymI)
+
+<div style="page-break-before: always;"></div>
 
 #### ANEXO B: Documentación de Diseño, Requisitos y Arquitectura
 Este anexo incluye los enlaces hacia los tableros de trabajo colaborativo, artefactos de diseño UX y diagramas arquitectónicos de soporte:
