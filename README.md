@@ -195,7 +195,6 @@ A continuación, se presentan las métricas de participación de los miembros de
       - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams.](#4245-bounded-context-software-architecture-component-level-diagrams)
       - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams.](#4246-bounded-context-software-architecture-code-level-diagrams)
 - [Conclusiones y recomendaciones.](#conclusiones-y-recomendaciones)
-- [Video About-the-Team.](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)  
 
@@ -1809,12 +1808,6 @@ En esta sección se presenta el detalle de implementación de **Energy Managemen
 - **Estrategia de Pruebas Tempranas en Firmware y Telemetría:** Es recomendable implementar bancos de pruebas automatizadas y simuladores de dispositivos IoT antes de la integración física final, validando la estabilidad en la reconexión de red Wi-Fi, la tolerancia a fallas de conexión y la gestión de la concurrencia en la ingesta de telemetría ambiental.
 - **Monitoreo de Eficiencia y Latencia:** Para los servicios encargados de la ejecución de comandos y el procesamiento de reglas de automatización, se sugiere establecer métricas estrictas de latencia y consumo de memoria, asegurando tiempos de respuesta inmediatos ante eventos ambientales o solicitudes del usuario.
 - **Consistencia en la Experiencia de Usuario (UI/UX):** Al abordar los siguientes hitos de implementación de las interfaces de usuario (web y móvil), se recomienda mantener una guía de estilos visuales unificada, con especial atención a la claridad en el reporte de estados de dispositivos y la simplicidad en la configuración de zonas comunes y privadas.
-
-<div style="page-break-before: always;"></div>
-
-# Video About-the-Team.
-A continuación, se presenta el enlace al video de presentación del equipo:
-- **Enlace del video About-the-Team:** [Video de presentación del equipo CcaritaTech](https://youtu.be/...)
 
 <div style="page-break-before: always;"></div>
 
