@@ -59,8 +59,61 @@
 <div style="page-break-before: always;"></div>
 
 # Project Report Collaboration Insights
-URL del repositorio: https://github.com/IoBuild-IoT/report
-(Imagenes de los commits cada entrega)
+
+**Enlace del repositorio:** [https://github.com/IoBuild-IoT/report](https://github.com/IoBuild-IoT/report)
+
+El desarrollo del presente informe fue producto de un trabajo colaborativo, riguroso y planificado mediante el flujo de trabajo GitFlow sobre la plataforma GitHub. Las responsabilidades se distribuyeron equitativamente entre los integrantes del equipo cubriendo desde la investigación de mercado y elicitación de requisitos, hasta el modelado conceptual, arquitectónico y diseño de software bajo el estándar Domain-Driven Design (DDD).
+
+### Evidencias de Contribución y Control de Versiones
+
+A continuación, se presentan las métricas de participación de los miembros del equipo y la red de integración de ramas correspondientes al desarrollo del informe de la plataforma **IoBuild**:
+
+#### Contribuidores del Repositorio (Contributors)
+<img src="assets/Contributors-IoT.png" alt="Contributors - IoBuild Report" style="max-width: 100%; height: auto; border-radius: 6px;" />
+
+<br>
+
+#### Red de Ramas y Commits (Network Graph)
+<img src="assets/Network-IoT.png" alt="Network Graph - IoBuild Report" style="max-width: 100%; height: auto; border-radius: 6px;" />
+
+<br>
+
+### Detalle de Aportes por Integrante
+
+- **Ordoñez Ricaldi, Axel Randall:**
+  - Coordinó la redacción inicial del **Capítulo I**, participando en la definición del perfil de la startup y la consolidación de los perfiles de los integrantes del equipo.
+  - Estructuró la sección de **Impact Mapping** (3.2), alineando las metas estratégicas de negocio con los actores, impactos deseados y entregables funcionales.
+  - Lideró la priorización y estimación del **Product Backlog** (3.3), calibrando los Story Points bajo la serie Fibonacci y organizando las historias en sprints para la planificación ágil.
+
+- **Ccarita Cruz, Brayan Roberto:**
+  - Inicializó y configuró la estructura del repositorio en GitHub bajo la metodología GitFlow, estableciendo las ramas de desarrollo, estándares de commit y buenas prácticas de colaboración.
+  - Desarrolló la especificación de requisitos en la sección de **User Stories** (3.1), redactando las historias de usuario con criterios de aceptación bajo la sintaxis formal Gherkin (Given-When-Then) y formulando las historias técnicas de integración.
+  - Participó en la definición y revisión de la arquitectura de software, colaborando en el alineamiento estratégico entre los casos de uso y los Bounded Contexts.
+
+- **Panta Castro, Fabrizio Martin:**
+  - Lideró el desarrollo del proceso **Lean UX** en el Capítulo I, estructurando los Problem Statements, Assumptions, Hypothesis Statements y el Lean UX Canvas de la solución IoBuild.
+  - Diseñó y documentó la etapa de **Strategic-Level Domain-Driven Design** en el Capítulo IV, ejecutando las sesiones de Design-Level EventStorming, Candidate Context Discovery, Bounded Context Canvases y el Context Mapping del ecosistema.
+  - Administró y mantuvo el repositorio de recursos gráficos y diagramas de arquitectura de la plataforma.
+
+- **Loechle Arias, Mateo Italo:**
+  - Desarrolló el **análisis competitivo** y benchmarking de competidores directos e indirectos en la sección 2.1 del Capítulo II, definiendo las ventajas competitivas y la matriz FODA.
+  - Lideró la especificación del **Tactical-Level Domain-Driven Design** en el Capítulo IV para los cuatro Bounded Contexts, detallando las capas Domain, Application, Interface e Infrastructure, así como los diagramas de clases y esquemas de base de datos relacional.
+  - Consolidó la versión final de la entrega, redactando las conclusiones, recomendaciones, bibliografía formal bajo normas APA y anexos del informe.
+
+- **Guia Carrasco, Pedro Andre:**
+  - Planificó y ejecutó el diseño de las **entrevistas semiestructuradas** en la sección 2.2 del Capítulo II, formulando las guías de preguntas orientadas a los dos segmentos objetivo del proyecto.
+  - Realizó y moderó las entrevistas a representantes de empresas constructoras y propietarios residenciales, gestionando el registro audiovisual y el análisis de hallazgos.
+  - Documentó la síntesis de validación con usuarios para fundamentar la necesidad de una plataforma IoT unificada en la supervisión de confort ambiental y automatización de iluminación.
+
+- **Alejo Jesus, Anyelo Bill:**
+  - Lideró el desarrollo de la sección de **Needfinding** en el Capítulo II, construyendo las **User Personas** representativas para el segmento B2B (arquitectos e ingenieros) y B2C (propietarios y residentes).
+  - Diseñó y documentó la **User Task Matrix**, los **User Journey Maps** y los **Empathy Maps** de ambos segmentos, identificando puntos de dolor, necesidades latentes y oportunidades de mejora para la plataforma.
+  - Aseguró que los requisitos de usuario reflejaran fielmente la experiencia cotidiana y las expectativas prácticas de los clientes.
+
+- **Escalante Baygorrea, Janiel Franz:**
+  - Facilitó y moderó las dinámicas de **Big Picture EventStorming** en la sección 2.4 del Capítulo II, identificando eventos del dominio, comandos, agregados y políticas de negocio de extremo a extremo.
+  - Formalizó el **Ubiquitous Language** en la sección 2.5, estableciendo un glosario unificado de términos de negocio e ingeniería IoT para todo el equipo.
+  - Contribuyó en la definición de la arquitectura de software C4 (System Landscape, Context, Container y Deployment diagrams) y en la revisión de consistencia técnica del informe.
 
 <div style="page-break-before: always;"></div>
 
