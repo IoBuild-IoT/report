@@ -2403,6 +2403,24 @@ En esta seccion se documentan los componentes del entorno de desarrollo, su prop
 
 ### 6.1.1. Software Development Environment Configuration.
 
+- Web Applications
+
+| Producto                                                                                                                                                               | Propósito en el proyecto                                                      | Categoría | Ruta de descarga / acceso | Descripción |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|-----------|---------------------------|-------------|
+| JetBrains WebStorm  ![Logo de WebStorm](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Web_Storm_logo.png)  | Desarrollo web moderno utilizando tecnologías actuales como Vue y TypeScript. | Software Development | https://www.jetbrains.com/webstorm/ | IDE de JetBrains para desarrollo web moderno con soporte para JavaScript, TypeScript y frameworks frontend como Vue.js. |
+| Vue.js  ![Logo de Vue.js](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Vue_logo.png)                      | Administración del ciclo de vida en aplicaciones desarrolladas con Vue.js.    | Software Development | https://vuejs.org/guide/introduction.html | Framework progresivo de JavaScript para construir interfaces de usuario de forma declarativa y eficiente. |
+| UXPressia  ![Logo de UXPressia](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Uxpressia_logo.png)          | Representación gráfica de la experiencia del usuario.                         | Product UX/UI Design | https://uxpressia.com/ | Plataforma orientada a la elaboración de journey maps y perfiles de usuario, que permite representar y analizar de forma visual la experiencia dentro del sistema. |
+| Lucidchart  ![Logo de Lucidchart](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Lucidchart_logo.png)       | Planificación estructurada del software mediante representaciones gráficas.   | Product UX/UI Design | https://www.lucidchart.com/ | Herramienta diseñada para elaborar diagramas de procesos, flujos y arquitecturas de sistemas, que optimiza la planificación visual y la organización del software. |
+| Structurizr  ![Logo de Structurizr](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Structurizr_logo.png)    | Diseño y documentación de arquitecturas de software basadas en el modelo C4.  | Product UX/UI Design | https://structurizr.com/ | Aplicación especializada en la creación de modelos de arquitectura de software con base en el modelo C4, ideal para documentar y comprender sistemas complejos. |
+| GitHub  ![Logo de GitHub](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/GitHub_logo.png)                   | Plataforma para la gestión de código fuente y control de versiones.           | Collaboration & Version Control Tools | https://github.com/ | Plataforma de desarrollo colaborativo para alojar, revisar y gestionar proyectos de software. |
+| MySQL Workbench  ![Logo de MySQL Workbench](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/MySQL_logo.jpg) | Desarrollo y depuración del backend basado en .NET.                           |Software Development |https://dev.mysql.com/downloads/workbench/ | Aplicación visual para diseñar esquemas, ejecutar consultas SQL, gestionar usuarios y administrar servidores MySQL de manera integrada.|
+| Docker Desktop  ![Logo de Docker Desktop](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Docker_logo.jpg)   |Contenerización del backend y servicios asociados para facilitar despliegues.|DevOps / Containerization|https://www.docker.com/products/docker-desktop/|Herramienta que permite crear, ejecutar y gestionar contenedores Docker, asegurando entornos reproducibles para desarrollo y producción.   |
+| Swagger UI  ![Logo de Swagger UI](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Logo.jpg)           |Documentación interactiva de la API.|API Documentation Tool|https://swagger.io/tools/swagger-ui/|Interfaz que genera documentación dinámica de APIs REST, permitiendo visualizar rutas, parámetros y probar los endpoints directamente desde el navegador.|
+| Git CLI (Git)  ![Logo de Git CLI](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Git_logo.jpg)           |Manejo local de control de versiones.|Version Control|https://git-scm.com/|Sistema de control de versiones distribuido que permite gestionar cambios, trabajar con ramas y sincronizar código con repositorios remotos como GitHub.|
+
+
+- Mobile Applications
+
 Para la implementacion de la solucion, se configuro un entorno de desarrollo orientado a aplicaciones moviles Android, integracion con servicios backend y soporte para diseno UX/UI, documentacion y colaboracion del equipo.
 
 | Producto/Herramienta | Categoria | Ruta de Descarga/Acceso | Proposito en el Proyecto |
@@ -2424,6 +2442,20 @@ Para la implementacion de la solucion, se configuro un entorno de desarrollo ori
 | Firebase Cloud Messaging | Notificaciones Push | https://firebase.google.com/ | Servicio de notificaciones push para dispositivos moviles |
 
 ### 6.1.2. Source Code Management.
+
+- Web Applications
+
+El proyecto IoBuild, una plataforma SaaS para la gestión y personalización de dispositivos IoT en entornos de construcción y apartamentos inteligentes, se desarrolla bajo un enfoque profesional que prioriza las buenas prácticas de arquitectura, la colaboración en equipo, la automatización de flujos y la estandarización del entorno de desarrollo. La configuración del entorno se ha diseñado con base en el modelo C4 (Context, Container, Component, Code) y en los principios de la Clean Architecture, lo que asegura una separación clara de responsabilidades, la reutilización de componentes y la escalabilidad del sistema a futuro.
+
+Para el frontend, el equipo utiliza WebStorm como IDE principal, administrado a través de JetBrains Toolbox, lo que garantiza una configuración uniforme en todos los integrantes del equipo. Este entorno de trabajo ofrece integración nativa con Vue.js, framework elegido para el desarrollo de la interfaz, lo que facilita la generación de componentes, servicios y módulos directamente desde el IDE. Además, se aprovechan funciones avanzadas como la navegación semántica, la refactorización inteligente, la depuración integrada y la administración de dependencias, optimizando la productividad y reduciendo errores en el proceso de implementación.
+
+Vue.js se seleccionó como la tecnología central para el frontend debido a su arquitectura reactiva y declarativa, basada en componentes reutilizables que permiten un diseño flexible y modular. Gracias a su Vue CLI, la integración de librerías externas y su compatibilidad con metodologías modernas de desarrollo, la plataforma puede estructurarse en torno a bounded contexts, separando de forma clara la vista, la lógica y los servicios. Esta organización permite que diferentes miembros del equipo trabajen en paralelo sin comprometer la coherencia del sistema, mejorando los tiempos de entrega y asegurando la calidad del producto final.
+
+Finalmente, el equipo mantiene un repositorio paralelo denominado upc-pre-1ASI0730-7461-CcaritaTech (https://github.com/upc-pre-1ASI0730-7461-CcaritaTech), donde se gestionan versiones experimentales y entornos de prueba bajo un enfoque académico y exploratorio. Este repositorio funciona como un espacio seguro para validar prototipos, realizar pruebas funcionales y explorar nuevas características antes de ser integradas en el sistema principal. De esta manera, IoBuild asegura que las innovaciones sean evaluadas en un entorno controlado, evitando riesgos en la plataforma productiva y garantizando la estabilidad del proyecto central.
+
+![Repositorios de IoBuild](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Repositorios_de_IoBuild.png)
+
+- Mobile Applications
 
 La gestion del codigo fuente de **IoBuild** se realiza con Git y GitHub, siguiendo practicas estandar para asegurar trazabilidad, colaboracion efectiva y control de cambios durante todo el ciclo de desarrollo.
 
@@ -2480,6 +2512,29 @@ Tipos de commit mas usados:
 Esta convencion facilita auditoria de cambios y futura generacion automatica de changelogs.
 
 ### 6.1.3. Source Code Style Guide & Conventions.
+
+- Web Applications
+
+El uso de un estilo de código unificado y una arquitectura bien definida es clave para asegurar la escalabilidad, la mantenibilidad y la colaboración efectiva en el desarrollo de IoBuild. Para ello, el proyecto incorpora prácticas de programación y convenciones estructurales que promueven la calidad técnica, la claridad y la consistencia en cada módulo de la plataforma, tomando como referencia estándares reconocidos de la industria y metodologías actuales.
+
+**Arquitectura y organización del sistema**
+
+IoBuild adopta el modelo C4 de Simon Brown, lo que permite visualizar el sistema en distintos niveles de abstracción (contexto, contenedor, componente y código). Este enfoque ofrece una representación clara y comprensible, facilitando la comunicación entre desarrolladores, diseñadores y testers. Además, la arquitectura se fundamenta en los principios de Domain-Driven Design (DDD) y Clean Architecture, lo que garantiza una separación rigurosa entre capas (presentación, aplicación, dominio e infraestructura). Gracias a ello, se reduce el acoplamiento, se incrementa la mantenibilidad y se fortalece la capacidad de realizar pruebas automatizadas de manera eficiente.
+
+**Frontend: Vue.js**
+
+En el frontend, se emplea Vue.js como framework principal, implementando una arquitectura centrada en componentes reutilizables, organizados en directorios específicos como components, views y store. La convención de nombres establece el uso de PascalCase para los componentes (por ejemplo, DeviceCard.vue) y kebab-case para los archivos (device-card.vue), en concordancia con las recomendaciones de la comunidad Vue. Asimismo, se aplican buenas prácticas de desarrollo, entre ellas:
+
+- Separación de lógica y presentación mediante el patrón container/presentational components.
+- Uso de props y emits para la comunicación clara entre componentes.
+- Implementación de lazy loading y code splitting para optimizar el rendimiento.
+- Internacionalización con vue-i18n, gestionando archivos JSON para cada idioma.
+
+**Alineación con guías de estilo estándar**
+
+La estructura y nomenclatura utilizadas en IoBuild siguen convenciones reconocidas como la Vue Style Guide y lineamientos generales de HTML/CSS. Además, el uso del inglés en identificadores, clases y funciones garantiza coherencia en el trabajo colaborativo, simplifica la integración con librerías externas y favorece la comprensión del código por parte de equipos internacionales.
+
+- Mobile Applications
 
 El proyecto **IoBuild** define una guia de estilo comun para mantener consistencia, legibilidad y mantenibilidad en sus componentes de backend, aplicacion movil, landing page y documentacion tecnica.
 
@@ -2550,6 +2605,17 @@ Para la documentacion (`README`, diagramas y evidencias), se mantiene formato un
 Estas convenciones fortalecen la calidad del codigo y facilitan el trabajo colaborativo durante todo el ciclo de vida del producto.
 
 ### 6.1.4. Software Deployment Configuration.
+
+- Web Applications
+
+Para gestionar el desarrollo de IoBuild de manera colaborativa, el equipo utilizó la funcionalidad de forks en GitHub. Al crear un fork, cada integrante seleccionó la cuenta donde alojar su copia del repositorio principal de CcaritaTech/IoBuild, asignó un nombre identificador y, de ser necesario, añadió una breve descripción sobre el propósito del fork. También se podía optar por clonar únicamente la rama principal antes de confirmar la acción.
+
+Una vez creado, el fork quedaba disponible en el perfil del desarrollador como una copia independiente del repositorio original, lista para experimentar, implementar nuevas funcionalidades o realizar pruebas sin afectar directamente al código base. Este flujo permitió mantener la seguridad del repositorio upstream, al mismo tiempo que fomentó la autonomía y la organización del trabajo en equipo.
+![imagen deploy 1](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Imagen_deploy1.png)
+![imagen deploy 2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Imagen_deploy2.png)
+![imagen deploy 3](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Imagen_deploy3.png)
+
+- Mobile Applications
 
 El proyecto IoBuild implementa una estrategia de despliegue diferenciada por componente, utilizando servicios en la nube y canales de distribucion acordes al tipo de aplicacion. Esta aproximacion permite optimizar recursos y mantener una entrega continua para landing page, backend y aplicacion movil.
 
