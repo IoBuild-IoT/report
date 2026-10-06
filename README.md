@@ -2297,7 +2297,7 @@ Los propietarios cuentan con una experiencia centrada en su departamento: Dashbo
 
 - Web Applications User Flow Diagrams
 
-Los diagramas de User Flow describen el recorrido funcional paso a paso que un usuario realiza a través de la interfaz web para alcanzar metas de negocio y objetivos de usuario concretos (*User Goals*). Cada flujo modela las decisiones del usuario, validaciones del sistema, bifurcaciones de error y estados de confirmación.
+Los diagramas de User Flow describen el recorrido funcional paso a paso que un usuario realiza a través de la interfaz web para alcanzar metas de negocio y objetivos de usuario concretos (*User Goals*). Mientras que los Wireflows esquematizan la navegación con wireframes de baja fidelidad, los User Flows de IoBuild integran directamente los **Mock-ups de alta fidelidad** obtenidos de la plataforma web en producción (`https://iobuild-remix.arroz.dev/`). De esta manera, cada flujo permite examinar la experiencia de usuario real, los puntos de interacción, las validaciones del sistema, los comandos IoT y los estados de confirmación finales.
 
 ---
 
@@ -2358,8 +2358,8 @@ flowchart TD
 ```
 
 <div align="center">
-  <img src="assets/userflows/userflow_segmento1_builder.png" width="950" alt="User Flows Diagram - Segmento 1 Constructoras (Builders)" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
-  <p><em>Figura 5.4.4.1: Diagrama de User Flows de la Plataforma Web para el Segmento #1 (Constructoras, Arquitectos e Ingenieros Civiles).</em></p>
+  <img src="assets/userflows/userflow_segmento1_builder.png" width="950" alt="User Flows con Mock-ups - Segmento 1 Constructoras (Builders)" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <p><em>Figura 5.4.4.1: Diagrama de User Flows con Mock-ups de Alta Fidelidad para el Segmento #1 (Constructoras, Arquitectos e Ingenieros Civiles).</em></p>
 </div>
 
 ---
@@ -2416,8 +2416,8 @@ flowchart TD
 ```
 
 <div align="center">
-  <img src="assets/userflows/userflow_segmento2_owner.png" width="950" alt="User Flows Diagram - Segmento 2 Propietarios (Owners)" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
-  <p><em>Figura 5.4.4.2: Diagrama de User Flows de la Plataforma Web para el Segmento #2 (Dueños de Departamentos y Residentes).</em></p>
+  <img src="assets/userflows/userflow_segmento2_owner.png" width="950" alt="User Flows con Mock-ups - Segmento 2 Propietarios (Owners)" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <p><em>Figura 5.4.4.2: Diagrama de User Flows con Mock-ups de Alta Fidelidad para el Segmento #2 (Dueños de Departamentos y Residentes).</em></p>
 </div>
 
 ## 5.5. Applications Prototyping.
