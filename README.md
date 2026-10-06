@@ -32,7 +32,7 @@
 |Escalante Baygorrea, Janiel Franz|U201912668|
 
 
-<br> Setiembre 2026
+<br> Octubre 2026
 </center>  
 
 <div style="page-break-before: always;"></div>
@@ -194,6 +194,43 @@ A continuación, se presentan las métricas de participación de los miembros de
       - [4.2.4.4. Infrastructure Layer.](#4244-infrastructure-layer)
       - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams.](#4245-bounded-context-software-architecture-component-level-diagrams)
       - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams.](#4246-bounded-context-software-architecture-code-level-diagrams)
+- [Capítulo V: Solution UX/UI Design](#capítulo-v-solution-ux/ui-design)
+  - [5.1. Style Guidelines.](#51-style-guidelines)
+    - [5.1.1. General Style Guidelines.](#511-general-style-guidelines)
+    - [5.1.2. Web, Mobile and IoT Style Guidelines.](#512-web-mobile-and-iot-style-guidelines)
+  - [5.2. Information Architecture.](#52-information-architecture)
+    - [5.2.1. Organization Systems.](#521-organization-systems)
+    - [5.2.2. Labeling Systems.](#522-labeling-systems)
+    - [5.2.3. SEO Tags and Meta Tags.](#523-seo-tags-and-meta-tags)
+    - [5.2.4. Searching Systems.](#524-searching-systems)
+    - [5.2.5. Navigation Systems.](#525-navigation-systems)
+  - [5.3. Landing Page UI Design.](#53-landing-page-ui-design)
+    - [5.3.1. Landing Page Wireframe.](#531-landing-page-wireframe)
+    - [5.3.2. Landing Page Mock-up.](#532-landing-page-mock-up)
+  - [5.4. Applications UX/UI Design.](#54-applications-ux/ui-design)
+    - [5.4.1. Applications Wireframes.](#541-applications-wireframes)
+    - [5.4.2. Applications Wireflow Diagrams.](#542-applications-wireflow-diagrams)
+    - [5.4.3. Applications Mock-ups.](#543-applications-mock-ups)
+    - [5.4.4. Applications User Flow Diagrams.](#544-applications-user-flow-diagrams)
+  - [5.5. Applications Prototyping.](#55-applications-prototyping)
+  - [5.6. IoT Device Design.](#56-iot-device-design)
+- [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
+  - [6.1. Software Configuration Management.](#61-software-configuration-management)
+    - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
+    - [6.1.2. Source Code Management.](#612-source-code-management)
+    - [6.1.3. Source Code Style Guide & Conventions.](#613-source-code-style-guide--conventions)
+    - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
+  - [6.2. Landing Page, Services & Applications Implementation.](#62-landing-page-services--applications-implementation)
+    - [6.2.1. Sprint 1](#621-sprint-1)
+      - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
+      - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
+      - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
+      - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
+      - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
+      - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
+      - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
+      - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
+      - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
 - [Conclusiones y recomendaciones.](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)  
@@ -1791,9 +1828,2295 @@ En esta sección se presenta el detalle de implementación de **Energy Managemen
 
 ![Diagrama de Base de Datos - Energy Management](https://i.imgur.com/bxwcuZp.png)
 
+<div style="page-break-before: always;"></div>
+
+# Capítulo V: Solution UX/UI Design
+## 5.1. Style Guidelines.
+### 5.1.1. General Style Guidelines.
+
+En esta sección definimos los principios visuales y de interacción que rigen toda la experiencia Tavolo, asegurandocoherencia entre plataformas. Establecemos una identidad visual clara mediante el uso de paleta de colores,tipografía, iconografía, espaciado y tono comunicacional unificado
+
+### 5.1.2. Web, Mobile and IoT Style Guidelines.
+
+#### **Tipografía**
+La tipografía seleccionada para los encabezados de nuestra marca es **Poppins**, debido a su estilo moderno. Su diseño elegante permite destacar títulos y secciones importantes, generando un impacto claro y atractivo para los usuarios. Esto la convierte en una elección ideal para comunicar innovación y profesionalismo dentro de la identidad visual.
+
+Para el cuerpo de texto, se eligió **Roboto**, una tipografía ampliamente reconocida por su legibilidad en entornos digitales. Su diseño asegura una experiencia de lectura cómoda incluso en párrafos extensos. Al combinarse con Poppins, se logra un contraste armónico que refuerza la jerarquía tipográfica y facilita la comprensión del contenido.
+
+Los tamaños tipográficos definidos, desde los **12px (0.75rem)** para detalles secundarios hasta los **36px (2.25rem)** para títulos principales, garantizan una estructura clara y ordenada. En conjunto, las elecciones tipográficas y de tamaños consolidan una comunicación visual coherente y funcional.
+
+#### **Colores**
+La elección de la paleta de colores en nuestro proyecto obedece a una estrategia visual cuidadosamente planificada, orientada a reflejar tecnología, confianza y sofisticación, valores fundamentales en la propuesta de CcaritaTech.
+
+- **Landing Page** <br>
+  ![Imagen de la paleta de colores del landing page](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Paleta_Colores.png)
+
+En la identidad visual, el color **verde menta primario (#10B981)** cumple el rol principal como color distintivo de la marca. Su tono fresco y vibrante transmite innovación y confianza, características que refuerzan la propuesta de valor de nuestro proyecto. Al mismo tiempo, este color genera una sensación positiva y cercana, lo que ayuda a establecer una conexión emocional con el usuario desde el primer contacto.
+
+Para lograr versatilidad y equilibrio, se incorporan dos variaciones del color primario. El color **menta claro (#ECFDF5)** se utiliza en fondos y áreas de descanso visual, ofreciendo luminosidad y amplitud sin perder coherencia cromática. Por su parte, el color **menta oscuro (#059669)** se reserva para realizar el contraste en los botones ya que para estos se usa el color menta claro. Este color aporta estructura y profesionalismo, asegurando que la información crítica sea fácilmente distinguible.
+
+En cuanto a la gama neutra, el **gris muy claro (#F9FAFB)** funciona como base para pantallas y secciones de contenido. Su neutralidad transmite orden y simplicidad, garantizando legibilidad y claridad al dar protagonismo a los elementos interactivos. En contraste, el **gris muy oscuro (#111827)** se emplea en títulos, encabezados y áreas que requieren solidez visual. Este color aporta estructura y profesionalismo, asegurando que la información crítica sea fácilmente distinguible.
+
+Para complementar la lectura, el sistema tipográfico integra dos niveles de color en los textos. El **texto primario (#111827)**, de alto contraste sobre fondos claros, asegura una comprensión inmediata y sin esfuerzo. En paralelo, el **texto secundario (#6B7280)** se aplica en descripciones, anotaciones o contenidos de menor jerarquía. Este gris intermedio suaviza la presentación de la información y evita la saturación visual, manteniendo un estilo moderno y equilibrado.
+
+En conjunto, esta paleta de verdes menta combinados con grises neutros y acentos bien definidos construye una interfaz clara, fresca y profesional. La coherencia cromática no solo mejora la experiencia de usuario, sino que también refuerza los valores de accesibilidad, confianza y modernidad que nuestra marca desea transmitir.
+
+#### **Lenguaje**
+En IoBuild, utilizaremos un lenguaje que refleje nuestra visión de transformar la construcción residencial mediante la integración inteligente de tecnología desde el diseño. Queremos conectar tanto con constructoras y desarrolladores como con los futuros propietarios, manteniendo siempre una comunicación clara, cercana y profesional. La combinación de tonos que emplearemos es la siguiente:
+
+1. **Profesional pero accesible:** Nuestro objetivo es transmitir seriedad y conocimiento en la aplicación de soluciones tecnológicas a la construcción, sin dejar de ser comprensibles para todos los actores involucrados. Nuestro lenguaje estará planteado de manera clara y cercana, de modo que tanto expertos como clientes puedan comprender el valor de nuestra propuesta sin barreras.
+
+2. **Formal pero cálido:** Si bien mantenemos un tono formal que exprese compromiso, seguridad y confiabilidad, también buscamos acercarnos a nuestros usuarios de una manera humana y auténtica. Queremos que desarrolladores y propietarios sientan que IoBuild no solo ofrece tecnología, sino también acompañamiento y confianza en cada etapa del proceso.
+
+3. **Respetuoso y empático:** Reconocemos la diversidad de necesidades en el sector, desde constructoras que buscan eficiencia hasta propietarios que desean hogares adaptables y modernos. Nuestro lenguaje transmitirá respeto, promoviendo una relación colaborativa y de apoyo mutuo.
+
+4. **Inspirador y optimista:** En IoBuild creemos que el futuro de la construcción es más sostenible, adaptable y tecnológico. Por ello, nos comunicaremos con entusiasmo y convicción, motivando a nuestros usuarios a visualizar y construir una nueva forma de habitar hogares inteligentes.
+
+## 5.2. Information Architecture.
+
+UX Heuristics & Principles Evaluation<br>
+Usability – Inclusive Design – Information Architecture<br>
+CARRERA: Ingeniería de Software<br>
+CURSO: Desarrollo de Soluciones IOT<br>
+NRC: 3687<br>
+PROFESOR: Jimmy Enrique Sanchez Portugal<br>
+CLIENTE(S): Javier Maximo Ordoñez Cordova, Christy Karen Callata Alvarez<br>
+SITE o APP A EVALUAR: CcaritaTech
+
+TAREAS A EVALUAR:<br>
+El alcance de esta evaluación contempla el análisis de la usabilidad en la ejecución de las siguientes tareas:<br>
+
+Segmento Objetivo #1: Arquitectos e Ingenieros Civiles
+- **Configurar funcionalidades inteligentes:** Claridad y facilidad para integrar automatización (iluminación, climatización, seguridad, riego, etc.) dentro de la plataforma.
+- **Gestionar proyectos y roles técnicos:** Facilidad para asignar permisos y colaborar con otros profesionales dentro del mismo entorno.
+- **Acceder a documentación y guías técnicas:** Disponibilidad, organización y comprensión de recursos de soporte (manuales, tutoriales, BIM).
+
+Segmento Objetivo #2: Dueños de Apartamentos (Usuarios Finales)
+- **Controlar dispositivos desde un único panel:** Usabilidad de la interfaz centralizada para manejar iluminación, clima, seguridad y energía.
+- **Recibir notificaciones y alertas personalizadas:** Facilidad para activar, modificar y entender las notificaciones sobre consumo energético o seguridad.
+- **Acceder a reportes de consumo y eficiencia:** Claridad de la información mostrada y utilidad para la toma de decisiones sobre ahorro energético.
+
+### 5.2.1. Organization Systems.
+
+Dentro del diseño de interfaces digitales enfocadas en el usuario, el Organization System funciona como la base de la arquitectura de información, definiendo cómo se ordenan, agrupan y muestran los contenidos en la plataforma. Su propósito es facilitar la comprensión y la navegación, permitiendo que los usuarios encuentren de manera sencilla la propuesta de valor y los recursos más importantes. Este sistema ayuda a disminuir la carga mental, dirigir la atención hacia lo esencial y mejorar la experiencia general de interacción con el producto.
+
+En el caso de IoBuild, la Landing Page implementa un sistema de organización jerárquico y temático, pensado para comunicar de forma clara el propósito de la aplicación y dirigir la acción del visitante. La estructura se organiza en bloques que siguen una lógica de prioridad: en primer lugar, se despliega un hero section con un mensaje directo sobre la propuesta de valor y un llamado a la acción destacado (“Explora IoBuild”), seguido de secciones que detallan los beneficios de la plataforma para arquitectos, ingenieros y propietarios de viviendas. Posteriormente, se integran apartados complementarios como la presentación del equipo, los objetivos del proyecto y los canales de contacto.
+
+Tanto el header como el footer refuerzan esta organización al centralizar los accesos principales de navegación (inicio, características, contacto) y los secundarios (redes sociales y enlaces informativos). Esta disposición garantiza que los usuarios comprendan de manera inmediata qué es IoBuild, para quién está dirigido y cómo pueden empezar a interactuar con la solución. Además, la página aplica principios como la progressive disclosure y el diseño responsivo, asegurando una experiencia fluida y clara en dispositivos móviles y de escritorio.
+
+### 5.2.2. Labeling Systems.
+
+En el marco del diseño de la arquitectura de información, los Labeling Systems cumplen la función de comunicar de forma clara, coherente y predecible los elementos de interacción presentes en la interfaz. En IoBuild, cada etiqueta textual utilizada en botones, menús, enlaces y secciones está orientada a guiar al usuario en su recorrido por la Landing Page, facilitando la comprensión del propósito del proyecto y motivando la interacción con los elementos principales.
+
+La siguiente tabla resume las etiquetas implementadas, su ubicación y su función en la experiencia de usuario:
+
+| Etiqueta | Ubicación/Componente | Función |
+|----------|----------------------|---------|
+| Inicio | Header | Enlace a la página principal. Término estándar y familiar para usuarios. |
+| Sobre Nosotros | Header | Presentación del propósito y misión del proyecto. Genera cercanía y confianza. |
+| Equipo | Header | Sección dedicada al grupo desarrollador, destacando transparencia y credibilidad. |
+| Contacto | Header | Canal directo para comunicación con el equipo. Claro y orientado a la acción. |
+| Explora IoBuild | Hero Section (CTA principal) | Llamada a la acción inmediata para iniciar interacción con la plataforma. Imperativo motiva al usuario. |
+| Objetivos | Sección informativa | Describe las metas del proyecto. Etiqueta concisa y orientada al valor. |
+| Proyecto | Sección informativa | Explica en detalle la propuesta tecnológica. Término claro y descriptivo. |
+| Contáctanos | Footer | Refuerzo del canal de comunicación, mantiene consistencia semántica. |
+| Síguenos | Footer / Redes sociales | Agrupa accesos a redes sociales. Etiqueta convencional y reconocida globalmente. |
+| IoBuild | Marca | Nombre distintivo en mayúsculas. Actúa como ancla visual e identitaria del sitio. |
+
+El sistema de etiquetado en la Landing Page de IoBuild refleja una aplicación consistente de principios de usabilidad y arquitectura de información. Las etiquetas emplean un lenguaje simple, reconocible y orientado a la acción, lo que facilita tanto la navegación como la comprensión inmediata de los contenidos. Asimismo, existe una coherencia semántica entre el header, el cuerpo de la página y el footer, acompañada de un uso de imperativos y sustantivos comunes que refuerzan la accesibilidad cognitiva. Este Labeling System contribuye a la claridad, consistencia y escalabilidad de la experiencia web, garantizando que tanto profesionales técnicos como usuarios finales puedan interactuar sin fricciones con la plataforma.
+
+### 5.2.3. SEO Tags and Meta Tags.
+
+Los meta tags y etiquetas SEO son elementos esenciales dentro de la sección <head> de cualquier página web, ya que permiten definir cómo es interpretado, indexado y presentado el contenido de un sitio por parte de los motores de búsqueda (como Google) y las redes sociales (como Facebook, Twitter o LinkedIn). Aunque estos elementos no son visibles de forma directa para los usuarios, desempeñan un papel crucial en el posicionamiento orgánico, en la forma en que los enlaces se muestran al compartirse y en la claridad con la que se comunica la propuesta de valor del sitio.
+
+En el caso de la Landing Page de IoBuild, se han incorporado meta etiquetas específicas con el objetivo de optimizar la indexación y visibilidad de la plataforma. La meta descripción resume de manera breve y clara la propuesta de IoBuild como una solución tecnológica orientada a la gestión y personalización de espacios inteligentes. Asimismo, se han definido meta keywords que incluyen términos relevantes como IoT, domótica, arquitectura inteligente, automatización de espacios y gestión de hogares inteligentes, lo que refuerza la capacidad del sitio para aparecer en búsquedas relacionadas.
+
+#### 1. Index
+La página principal de IoBuild incorpora un conjunto de etiquetas SEO que fortalecen su posicionamiento y presencia digital. Se incluyen una meta descripción clara sobre la propuesta de valor, palabras clave relacionadas con IoT y automatización residencial, así como etiquetas Open Graph y Twitter Card que aseguran una visualización atractiva y coherente al compartir el sitio en redes sociales. Estas configuraciones, junto con el ajuste de vista responsiva y la codificación adecuada, contribuyen a una experiencia accesible, profesional y optimizada para buscadores y usuarios.
+![Imagen de Meta Tags Index](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Meta_Tags_Index.png)
+
+#### 2. About Us
+La página Sobre Nosotros de IoBuild incluye etiquetas SEO básicas que refuerzan su propósito informativo y de marca. Se define un título claro y directo, junto con una meta descripción que comunica la misión del proyecto y presenta al equipo como motor de la propuesta de innovación en la industria de la construcción mediante tecnología IoT. Además, se configuran los parámetros técnicos de codificación (UTF-8) y de vista responsiva, asegurando accesibilidad, correcta interpretación del contenido y una experiencia de navegación óptima en distintos dispositivos.
+![Imagen de Meta Tags About-Us](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Meta_Tags_AboutUs.png)
+
+#### 3. FAQ
+La página FAQ - Preguntas Frecuentes de IoBuild incorpora etiquetas SEO orientadas a brindar claridad y accesibilidad al usuario. Se define un título descriptivo y directo que comunica de inmediato el propósito de la sección, acompañado de una meta descripción que resume su función como espacio de resolución de dudas sobre la plataforma SaaS y sus aplicaciones en proyectos de construcción con IoT. Asimismo, se incluyen configuraciones técnicas esenciales como la codificación UTF-8 y la vista responsiva, garantizando una correcta interpretación del contenido y una experiencia de navegación fluida en diversos dispositivos.
+![Imagen de Meta Tags FAQ](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Meta_Tags_FAQ.png)
+
+### 5.2.4. Searching Systems.
+
+Al ingresar a la landing page de IoBuild, el usuario será recibido con una sección principal que introduce la propuesta de valor de la plataforma, acompañada de un botón destacado que invita a conocer más sobre sus funcionalidades. En la parte superior, la navegación se organiza mediante un menú claro y accesible que permite desplazarse hacia las secciones clave, como Sobre Nosotros, Preguntas Frecuentes y Contacto. Esta estructura busca brindar una experiencia fluida y ordenada, evitando confusiones y facilitando el acceso a la información más relevante.
+
+La navegación está reforzada con etiquetas descriptivas, jerarquía visual y un diseño responsivo, de manera que el usuario siempre tenga claridad sobre en qué parte del sitio se encuentra y cómo puede avanzar o retroceder dentro del flujo. El enfoque de la interfaz prioriza la simplicidad y la claridad, asegurando que el visitante pueda comprender rápidamente la misión de IoBuild y decidir explorar más a fondo sus soluciones tecnológicas.
+
+### 5.2.5. Navigation Systems.
+
+La navegación es un elemento central en la landing page de IoBuild, ya que estructura el recorrido del usuario y facilita el acceso a la información clave sobre la plataforma. Bajo principios de simplicidad, accesibilidad y jerarquía visual, el sistema de navegación ha sido diseñado para garantizar una experiencia clara e intuitiva, tanto en dispositivos de escritorio como en móviles.
+
+IoBuild implementa un sistema de navegación global, persistente y horizontal, ubicado en la parte superior de la página. Este está compuesto por siete elementos principales:
+- **Home:** vinculado al logotipo de IoBuild, que permite regresar a la página de inicio desde cualquier sección.
+- **Beneficios:** apartado que resalta las ventajas concretas para constructoras y propietarios.
+- **Características:** detalle funcional de la plataforma.
+- **Planes:** presenta las opciones comerciales y niveles de servicio adecuados para distintos tamaños de proyecto.
+- **Sobre Nosotros:** ofrece información acerca de la misión, visión y equipo detrás del proyecto.
+- **FAQ:** presenta un apartado de preguntas frecuentes que resuelve las dudas más comunes de los usuarios.
+- **Empezar ahora (CTA):** botón destacado que impulsa la conversión (registro o contacto para proyecto), visualmente diferenciado del resto de enlaces.
+
+El diseño del header utiliza un fondo uniforme y elementos textuales de alto contraste, siguiendo un estilo minimalista que evita distracciones y centra la atención en las decisiones de navegación. La organización de los enlaces sigue una estructura en tres zonas: el logotipo alineado a la izquierda, las secciones principales al centro y las acciones de contacto alineadas a la derecha.
+
+En cuanto a adaptabilidad, la barra de navegación está construida bajo un enfoque mobile-first, ajustándose dinámicamente a distintas resoluciones. En pantallas pequeñas, el menú horizontal se convierte en un menú tipo hamburguesa, asegurando que todas las secciones permanezcan accesibles sin comprometer la usabilidad.
+
+Finalmente, la navegación en IoBuild cumple con principios fundamentales de usabilidad:
+- **Claridad:** los enlaces son directos y fácilmente identificables.
+- **Consistencia:** la barra se mantiene visible y uniforme en todo momento.
+- **Jerarquía:** las secciones más consultadas están ubicadas estratégicamente en el centro de la navegación.
+- **Retroalimentación visual:** se incluyen estados hover y focus que refuerzan la interacción del usuario.
+
+## 5.3. Landing Page UI Design.
+
+La sección de Landing Page UI Design busca definir, estructurar y validar la interfaz visual de la página principal de IoBuild, garantizando una experiencia clara, accesible y centrada en los distintos perfiles de usuario interesados en soluciones IoT para la construcción. Para esta fase se diseñaron los primeros wireframes, los cuales permitieron organizar los contenidos clave como la propuesta de valor de la plataforma, los beneficios, características principales, planes de servicio, sección “Sobre Nosotros”, preguntas frecuentes y un footer con enlaces a contacto y redes sociales. Posteriormente, se elaboraron mockups de alta fidelidad aplicando un sistema de diseño minimalista y funcional, priorizando la jerarquía informativa, la coherencia visual y la consistencia entre dispositivos.
+
+
+El sitio web de "lobuild" está construido como un viaje lógico y persuasivo, diseñado para guiar a un potencial cliente desde la primera impresión hasta la conversión final, construyendo valor y confianza en cada paso.
+
+El recorrido comienza en la sección de inicio, que capta la atención de inmediato con un titular audaz: "Revoluciona Tus Proyectos Residenciales". Esta primera sección establece la propuesta de valor central, explicando que la plataforma beneficia tanto a los administradores (con gestión centralizada) como a los futuros propietarios (con control personalizado), posicionándose como una solución integral desde el principio.
+
+A continuación, la sección "¿Por qué elegir ioBuild?" profundiza en esta promesa inicial, desglosándola en seis beneficios claros y tangibles. Aborda directamente las motivaciones del cliente, hablando de valor agregado para el proyecto, ahorro de energía, y una integración desde la construcción que evita costos futuros. Esta parte responde a la pregunta fundamental del cliente: "¿Qué gano yo con esto?".
+
+Una vez que el cliente entiende los beneficios, el sitio pasa a demostrar su capacidad técnica en la sección de "Características Técnicas Avanzadas". Aquí se muestra cómo se cumplen las promesas, presentando el dashboard intuitivo, la compatibilidad con un amplio ecosistema de dispositivos y las herramientas especializadas para la gestión de áreas comunes. Esta sección es crucial para generar credibilidad y demostrar que la plataforma es robusta y bien diseñada.
+
+Con el valor y la tecnología ya establecidos, el enfoque se desplaza hacia la construcción de confianza a un nivel más humano. La sección de "Testimonios de clientes" utiliza la prueba social, mostrando a líderes de otras empresas constructoras que validan el éxito, la fiabilidad y el retorno de inversión de la plataforma. Poco después, la página "Sobre Nosotros" complementa esto humanizando la marca, presentando la misión, los valores y, más importante, al equipo de expertos detrás del proyecto. Juntas, estas secciones le dicen al cliente: "Somos expertos en lo que hacemos y otras empresas como la tuya ya confían en nosotros".
+
+Finalmente, el sitio se enfoca en eliminar las últimas barreras para la compra. La página de "Preguntas Frecuentes" se anticipa a cualquier duda restante sobre implementación, precios o soporte, ofreciendo respuestas claras y transparentes. Esto conduce de forma natural a la sección de "Planes de la aplicación", donde la decisión se vuelve tangible. Con una estructura de precios escalable y un plan "Más Popular" claramente destacado, se facilita al cliente la elección de la opción que mejor se adapte a su escala. Por último, el "Footer" o pie de página actúa como una red de seguridad: ofrece un último llamado a la acción y un mapa completo del sitio para quienes necesiten más información, asegurando que ninguna pregunta quede sin respuesta y que el camino para empezar sea siempre accesible.
+
+### 5.3.1. Landing Page Wireframe.
+
+[Link ded Figma]<https://shorturl.at/ZkQuE>
+
+#### 1. Home
+- La interfaz sigue una estructura en Z con un header fijo con logo y menú principal, un hero section con título, subtítulo y un llamado a la acción destacado (“Empezar ahora”). En las secciones intermedias se presentan los beneficios en formato de tarjetas, seguidos de testimonios y planes de precios. El footer reúne enlaces organizados por categorías, accesos a redes sociales y aviso de copyright. El diseño es claro, escaneable y enfocado en la conversión, guiando al usuario de manera natural desde el primer contacto hasta la acción final.<br>
+
+<img src="https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Landingpage_Home_Wireframe.png" style="page-break-inside: auto; break-inside: auto; display: block;">
+<br>
+
+#### 1. About Us
+- El wireframe de About se organiza en un esquema de columnas, a la izquierda se ubican el título y los párrafos descriptivos, mientras que a la derecha se reserva un espacio para la imagen. La página integra secciones jerarquizadas que construyen una narrativa clara sobre la identidad de la marca. En la parte inferior se disponen tarjetas con íconos y descripciones, seguidas de la presentación del equipo con un miembro destacado y cuatro integrantes adicionales. La composición se enmarca con una navegación principal en la parte superior y un footer completo al final, manteniendo coherencia visual y un flujo narrativo fluido.<br>
+
+![Landing page About-us Wireframe](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Landingpage_About-us_Wireframe.png)
+<br>
+
+#### 1. FAQ
+- La sección adopta un acordeón vertical, donde cada pregunta se despliega para mostrar respuestas detalladas. Los contenidos abarcan temas clave como precios, diseño, edición y alianzas. En la parte superior, filtros por categoría facilitan la exploración del material, mientras que en la parte inferior un CTA “Didn’t Find Your Answer?” dirige a la página de contacto. El diseño mantiene un estilo minimalista y ordenado, y una jerarquía visual clara, optimizada para la legibilidad y una experiencia sin distracciones.<br>
+
+![Landing page FAQ 1 Wireframe](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Landingpage_FAQ_Wireframe.png)
+
+![Landing page FAQ 2 Wireframe](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Landingpage_FAQ2_Wireframe.png)
+<br>
+
+### 5.3.2. Landing Page Mock-up.
+
+[Link ded Figma]<https://shorturl.at/ZkQuE>
+
+#### 1. Home
+- El mockup de la página principal presenta una estética moderna y minimalista, enfocada en la claridad y la atracción visual. En la parte superior, el header integra el logo junto con enlaces a Benefits, Features, Plans, About Us y FAQ, además de un botón de llamado a la acción “Get Started”. El hero section concentra la atención con un título llamativo y un botón CTA (“I want it!”) sobre un fondo verde claro. Más abajo, el contenido se organiza en bloques visuales con imágenes y una tipografía legible, destacando secciones como “Advanced Technical Features” y “Plans Designed for Your Scale”. Finalmente, el footer reúne enlaces estructurados (Home Page, Community, Legal, Company), íconos de redes sociales y un mensaje de marca que refuerza la identidad visual del sitio.
+
+![Landing page Home Mock-up](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Landingpage_Home_Mock-up.png)
+<br>
+
+#### 2. About Us
+- Esta sección presenta una introducción sobre la misión de CcaritaTech, destacando su enfoque en la innovación y el impacto social. Le siguen las secciones “Our Values” y “Our Team”, que reflejan los principios de la organización y presentan a su equipo. Cada apartado combina textos con imágenes representativas, creando una composición equilibrada. Predomina un estilo limpio y luminoso, con fondos claros, amplio espaciado y jerarquía tipográfica definida, lo que refuerza la coherencia visual y facilita una experiencia clara y atractiva para el usuario.
+
+![Landing page About-us Mock-up](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Landingpage_About-us_Mock-up.png)
+<br>
+
+#### 3. FAQ
+- El mockup de la sección FAQ utiliza una estructura de acordeón que organiza las preguntas frecuentes de forma clara y accesible. Al desplegar cada entrada, se muestra una respuesta concisa y comprensible, manteniendo la coherencia con el branding visual de la plataforma. Además, se incorpora una sección complementaria con canales de contacto para ofrecer soporte adicional. La interfaz destaca por su simplicidad, legibilidad y enfoque en la eficiencia, facilitando que el usuario encuentre rápidamente la información que necesita.
+
+![Landing page FAQ 1 Mock-up](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Landingpage_FAQ%201_Mock-up.png)
+
+![Landing page FAQ 2 Mock-up](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Landingpage_FAQ%202_Mock-up.png)
+<br>
+
+## 5.4. Applications UX/UI Design.
+
+La sección de Diseño UX/UI de Desarrollo de Soluciones IOT se enfoca en la creación de interfaces intuitivas y la definición de experiencias de usuario optimizadas para dispositivos móviles dentro de las soluciones de IoBuild. Este proceso comprende desde la conceptualización de pantallas funcionales hasta el diseño de flujos de interacción adaptados al entorno móvil, considerando las necesidades específicas de nuestros dos segmentos clave: Arquitectos/Ingenieros y Propietarios.
+
+En esta etapa inicial, se desarrollaron mockups de alta fidelidad alineados con el sistema visual y la identidad de marca de IoBuild, asegurando una experiencia coherente y moderna en cada pantalla de la aplicación móvil. El diseño prioriza la simplicidad, la claridad visual y la facilidad de uso en contextos de movilidad.
+
+Los componentes de la interfaz fueron organizados cuidadosamente siguiendo patrones de navegación mobile-first y flujos de usuario previamente validados, tomando como referencia los Empathy Map definidos en fases anteriores. Esto permite que cada interacción sea rápida, intuitiva y orientada a cumplir tareas específicas de manera eficiente desde dispositivos móviles.
+
+La estructura de navegación ha sido concebida para ofrecer una experiencia inclusiva y eficiente, aplicando criterios de accesibilidad (a11y) para garantizar que la plataforma sea usable para todos, y soporte multilenguaje (i18n) para una adopción global.
+
+Se integrarán servicios RESTful para la comunicación con el backend y se crearán prototipos navegables que permitan validar funcionalmente las interacciones más críticas del sistema con usuarios reales. Esto asegurará que la solución digital de IoBuild no solo sea atractiva visualmente, sino también robusta, intuitiva y alineada con las expectativas de sus usuarios.
+
+La arquitectura de navegación fue diseñada para ofrecer una experiencia fluida e inclusiva, incorporando principios de accesibilidad (a11y) y soporte multilenguaje (i18n), garantizando así que la aplicación pueda ser utilizada por una amplia variedad de usuarios en distintos contextos y regiones.
+
+Asimismo, la aplicación móvil integrará servicios RESTful para la comunicación con el backend y contará con prototipos interactivos que permitirán validar las funcionalidades críticas y la experiencia de usuario en escenarios reales. De esta manera, IoBuild busca ofrecer una solución móvil que combine eficiencia, usabilidad y una experiencia moderna alineada con las expectativas de sus usuarios.
+
+### 5.4.1. Applications Wireframes.
+
+- Web Applications Wireframes
+
+#### Vista del segmento #1: Arquitectos e Ingenieros Civiles
+#### 1. Home
+- El área principal está dedicada a la "Project Overview", que incluye varios gráficos informativos: un gráfico circular sobre el estado de los proyectos (diseño, planificación, implementación), gráficos de barras sobre el presupuesto y la asignación de dispositivos IoT, y un gráfico de líneas para el proceso general.
+
+![Segmento #1 Wireframe Home](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_Wireframe_Home.png)
+<br>
+
+#### 2. Proflie
+- El área principal de contenido está estructurada para mostrar primero un resumen del perfil del usuario ("Full Name", "Role") junto con un botón "Edit Profile". Debajo, se detallan los "Account Information", que incluyen campos para el nombre completo, correo electrónico y número de teléfono. Más abajo, se presentan opciones de configuración adicionales como el "Current Plan" con una opción para renovar, la "Time Zone"y el "App language".
+
+![Segmento #1 Wireframe Profile](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_Wireframe_Profile.png)
+<br>
+
+#### 3. Projects
+- El área principal de contenido presenta un encabezado "My Projects" y un botón prominente "+ Add Project", sugiriendo la capacidad de crear nuevas iniciativas. Debajo, se visualizan tres tarjetas de proyecto idénticas en su estructura, cada una con un marcador de posición para una imagen, un título "Name Project", etiquetas indicando "In implementation" y la cantidad de dispositivos asociados, y una barra de progreso.
+
+![Segmento #1 Wireframe Project](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_Wireframe_Projects.png)
+<br>
+
+#### 4. Client Managment
+- El área principal del contenido presenta el encabezado "My Clients" y un botón "+ Add Client" , lo que sugiere la capacidad de incorporar nuevos clientes al sistema. Debajo, se presenta una tabla organizada con columnas para "Full Name", "Associated Project", "Account Statement" y "Actions".
+
+![Segmento #1 Wireframe Management](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_Wireframe_Management.png)
+<br>
+
+#### 5. Configuration
+- El área principal del contenido se divide en tres secciones claras: "Notifications", "Security and Privacy", y "Support and Help". En la sección de Notificaciones, los usuarios pueden activar o desactivar alertas de expiración, actualizaciones del sistema y notificaciones de clientes mediante interruptores. La sección de Seguridad y Privacidad ofrece opciones para cambiar la contraseña, configurar la autenticación de dos factores y gestionar las sesiones activas, cada una con un icono de configuración para mayor detalle. Finalmente, la sección de Soporte y Ayuda proporciona enlaces a un Centro de ayuda y Contacto de Soporte.
+
+![Segmento #1 Wireframe Configuration](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_Wireframe_Configuration.png)
+<br><br>
+
+#### Vista del segmento #2: Propietarios de departamentos
+#### 1. Home
+- El área principal está dedicada a la "Project Overview", que incluye varios gráficos informativos: un gráfico circular sobre el estado de los proyectos (diseño, planificación, implementación), gráficos de barras sobre el presupuesto y la asignación de dispositivos IoT, y un gráfico de líneas para el proceso general.
+
+![Segmento #2 Wireframe Home](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_Wireframe_Home.png)
+<br>
+
+#### 2. Profile
+- El área principal de contenido está estructurada para mostrar primero un resumen del perfil del usuario ("Full Name", "Role") junto con un botón "Edit Profile". Debajo, se detallan los "Account Information", que incluyen campos para el nombre completo, correo electrónico y número de teléfono. Además, se introduce una nueva sección titulada "Favorite Scene Configuration" (Configuración de Escena Favorita), que lista múltiples opciones de "Energy-Saving Mode" con botones "Use", indicando la capacidad de configurar escenarios o modos preestablecidos para dispositivos. Más abajo, se presentan opciones de configuración adicionales como el "Current Plan" con una opción para renovar, la "Time Zone"y el "App language".
+
+![Segmento #2 Wireframe Profile](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_Wireframe_Profile.png)
+<br>
+
+#### 3. Device Management
+- El encabezado "My Devices" es prominente, acompañado de dos botones de acción principales: "+ Create Scene", que permite agrupar y automatizar múltiples dispositivos, y "+ Add Device", para incorporar nuevos equipos al sistema. La información de los dispositivos se presenta en una tabla con columnas para "Name", "Category", "Real-time status" y "Actions". La tabla lista dispositivos con estados alternos de "On" y "Off", y cada uno incluye un icono de configuración para acceder a ajustes específicos.
+
+![Segmento #2 Wireframe Management](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_Wireframe_Management.png)
+<br>
+
+#### 4. Configuration
+- El área principal del contenido se divide en tres secciones claras: "Notifications", "Security and Privacy", y "Support and Help". En la sección de Notificaciones, los usuarios pueden activar o desactivar alertas de expiración, actualizaciones del sistema y notificaciones de clientes mediante interruptores. La sección de Seguridad y Privacidad ofrece opciones para cambiar la contraseña, configurar la autenticación de dos factores y gestionar las sesiones activas, cada una con un icono de configuración para mayor detalle. Finalmente, la sección de Soporte y Ayuda proporciona enlaces a un Centro de ayuda y Contacto de Soporte. La sección "Advanced Device Management", que incluye opciones para "Automated Scenes" y "User Permissions".
+
+![Segmento #2 Wireframe Configuration](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_Wireframe_Configuration.png)
+<br>
+
+- Mobile Applications Wireframes
+
+#### Vista del segmento #1: Arquitectos e Ingenieros Civiles
+#### 1. Login
+-Esta interfaz muestra un formulario de acceso para la plataforma "IoBuild", subtitulado como "Builder Panel Access". Presenta un campo para el correo electrónico con un ejemplo predeterminado y un campo para la contraseña que incluye un icono de candado, la opción de visualizar el texto y un enlace para recuperar la cuenta titulado "Forgot Password?". En la parte inferior, destaca un botón negro sólido con el texto "Sign In" para iniciar sesión.
+
+![Segmento #1 Wireframe Login](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Login_Wireframe.jpeg)
+<br>
+
+#### 2. Dashboard
+- La pantalla muestra el "Builder Dashboard" para el monitoreo de instalaciones. Incluye cuatro tarjetas con indicadores sobre proyectos activos, dispositivos, unidades ocupadas y eficiencia energética. También presenta un gráfico circular de "Device Distribution" por categorías y una tarjeta inferior del proyecto "Torres del Pacífico" que detalla alertas, personal y actualizaciones, junto con un botón para "View Project Details".
+
+![Segmento #1 Wireframe Dashboard](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Dashboard_Wireframe.jpeg)
+<br>
+
+#### 3. Profile
+- La pantalla muestra el perfil de "Juan Pérez", incluyendo su foto y correo electrónico, con un botón destacado para "Edit Profile". Debajo, se presenta un menú de opciones que incluye Account, Notifications, Privacy y Help & Support, seguido de un botón de "Logout". En la parte inferior, se visualiza la versión de la aplicación y una barra de navegación con accesos a Home, Stats, Profile y Settings.
+
+![Segmento #1 Wireframe Profile](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Profile_Wireframe.jpeg)
+<br>
+
+#### 4. Projects
+- La pantalla muestra los "Project Details" del edificio "Torres del Pacífico". En la parte superior se observa un resumen del estado de los dispositivos (Total, Online y Offline), seguido de una "Device List" que detalla el estado en tiempo real de sensores de temperatura, medidores de energía, bombas de agua y sistemas de seguridad. Además, incluye un botón de "Filter" para organizar la lista y un botón flotante con el símbolo "+" para agregar nuevos dispositivos.
+
+![Segmento #1 Wireframe Projects](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Projects_Wireframe.jpeg)
+<br>
+
+### 5.4.2. Applications Wireflow Diagrams.
+
+- Web Applocations Wireflow Diagrams
+
+#### Segmento Objetivo #1: Arquitectos e Ingenieros Civiles
+Los arquitectos e ingenieros civiles utilizan la plataforma IoBuild para gestionar sus proyectos residenciales, centralizar la información de clientes, monitorear dispositivos IoT implementados en los edificios y configurar opciones de administración de manera eficiente.
+
+**Login / Create Account**
+
+**1. Login:**
+- El usuario de la constructora introduce su correo corporativo y contraseña.
+-  Selecciona la opción “Login” para acceder a su cuenta empresarial.
+
+**Create Account:**
+- Si es un nuevo usuario, completa un formulario con datos de la empresa, representante y correo corporativo.
+- Selecciona “Create” para registrar la cuenta en el sistema.
+
+**Acción esperada:** Autenticarse exitosamente en la plataforma y acceder al Dashboard principal.<br><br>
+
+**2. Dashboard**
+-	Una vez autenticado, el usuario accede al panel principal, donde se visualiza un menú lateral con accesos a secciones clave:
+     - Home
+     - Profile
+     - Projects
+     - Client Management
+     - Configuration
+-	El Dashboard sirve como centro de navegación para todas las funciones de la plataforma.
+
+**Acción esperada:** Orientarse rápidamente en la aplicación y seleccionar la sección que desea administrar.<br><br>
+
+**3. Profile**
+-	Visualiza y edita información del usuario administrador como el nombre, logo, contacto, etc.
+-	Opciones para gestionar miembros del equipo y asignar roles.
+
+**Acción esperada:** Actualizar datos corporativos, ver plan y administrar accesos del equipo.<br><br>
+
+**4. Project Management**
+-	El usuario accede a la sección Projects, donde puede ver un listado de proyectos residenciales activos.
+-	Cada proyecto incluye nombre, estado, fecha y acceso a detalles.
+-	Puede pulsar “+ Add Project” para registrar un nuevo proyecto en la plataforma.
+
+**Acción esperada:** Visualizar, gestionar o crear proyectos residenciales vinculados a la constructora.<br><br>
+
+**5. Client Management**
+-	En la sección Client Management, se despliega una tabla con los clientes asociados a cada proyecto.
+-	Se muestran datos como nombre completo, proyecto asociado, estado y opciones de acción.
+-	El usuario puede añadir nuevos clientes con el botón “+ Add Client”.
+
+**Acción esperada:** Gestionar información de clientes vinculados a los proyectos residenciales.<br><br>
+
+
+**6. Configuration**
+-	En el apartado Configuration, la constructora puede administrar aspectos como notificaciones, seguridad, idioma de la aplicación y soporte técnico.
+-	Incluye secciones de seguridad y privacidad (cambio de contraseña, autenticación en dos pasos), así como alertas del sistema.
+
+**Acción esperada:** Personalizar la configuración de la plataforma para ajustarla a las necesidades de la empresa.<br><br>
+
+[Web Applications Wireflow Diagrams - Arquitectos e Ingenieros Civiles] <https://shorturl.at/ORylU>
+![Web Aplication Wireflow Guest](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Wireflow_Segmento2.png)
+
+
+#### Segmento Objetivo #2: Dueños de apartamentos
+
+
+**Login / Create Account**
+
+**1. Login:**
+- El usuario introduce su correo electrónico y contraseña.
+- Pulsa “Login” para acceder a su cuenta personal.
+
+**Create Account:**
+- Si es nuevo, completa un formulario con nombre completo, correo, dirección (unidad), y contraseña.
+- Pulsa “Create” para registrar la cuenta.
+
+**Acción esperada:** Autenticarse correctamente y acceder al Dashboard personal.<br><br>
+
+**2. Dashboard**
+-	Una vez autenticado, el usuario accede al panel principal, donde se visualiza un menú lateral con accesos a secciones clave::
+     - Home
+     - Profile
+     - Device Management
+     - Configuration
+-	Al ingresar, el dueño visualiza un Dashboard con widgets clave: consumo energético mensual (gráfico), estado general de dispositivos (rueda/donut), resumen de ahorros por dispositivo (gráfica) y un Notifications feed con alertas recientes.
+
+**Acción esperada:** Obtener un panorama rápido del estado del apartamento y acceder en un clic a control de dispositivos o a la configuración.<br><br>
+
+**3. Profile**
+-	Vista para ver/editar datos personales y de la unidad: nombre, contacto, dirección vinculada, Current Plan, zona horaria e idioma.
+-	Secciones: Edit Profile, Favorite Scene Configuration (botones Use para escenas guardadas), opciones para invitar a familiares o delegar accesos.
+
+**Acción esperada:** Actualizar información del propietario, gestionar quién tiene acceso y elegir escenas favoritas para uso rápido.<br><br>
+
+**4. Device Management**
+-	Acciones principales: + Add Device y + Create Scene.
+-	Dentro de cada dispositivo: estado en tiempo real, historial básico y acceso a ajustes
+
+**Acción esperada:** Añadir, identificar y controlar dispositivos individuales de forma ágil.<br><br>
+
+**5. Configuration**
+-	Panel con secciones: Notifications, Security and Privacy (cambio de contraseña, 2FA, gestión de sesiones), Support and Help y Advanced Device Management
+-	Opciones para activar/desactivar notificaciones críticas, administrar permisos de invitados y configurar preferencias globales de la unidad.
+
+**Acción esperada:** Personalizar la experiencia y garantizar seguridad y soporte.<br><br>
+
+[Web Applications Wireflow Diagrams - Dueños de apartamentos] <https://shorturl.at/h1jhp>
+![Web Aplication Wireflow Guest](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Wireflow_Segmento1.png)
+
+- Mobile Applications Wireflow Diagrams
+
+#### Segmento Objetivo #1: Arquitectos e Ingenieros Civiles
+Los arquitectos e ingenieros civiles utilizan la plataforma IoBuild para gestionar sus proyectos residenciales, centralizar la información de clientes, monitorear dispositivos IoT implementados en los edificios y configurar opciones de administración de manera eficiente.
+
+**Login / Create Account**
+
+**1. Login:**
+- El usuario de la constructora introduce su correo corporativo y contraseña.
+-  Selecciona la opción “Login” para acceder a su cuenta empresarial.
+
+**Create Account:**
+- Si es un nuevo usuario, completa un formulario con datos de la empresa, representante y correo corporativo.
+- Selecciona “Create” para registrar la cuenta en el sistema.
+
+**Acción esperada:** Autenticarse exitosamente en la plataforma y acceder al Dashboard principal.<br><br>
+
+**2. Dashboard**
+-	Una vez autenticado, el usuario accede al panel principal, donde se visualiza un menú lateral con accesos a secciones clave:
+     - Home
+     - Profile
+     - Projects
+     - Client Management
+     - Configuration
+-	El Dashboard sirve como centro de navegación para todas las funciones de la plataforma.
+
+**Acción esperada:** Orientarse rápidamente en la aplicación y seleccionar la sección que desea administrar.<br><br>
+
+**3. Profile**
+-	Visualiza y edita información del usuario administrador como el nombre, logo, contacto, etc.
+-	Opciones para gestionar miembros del equipo y asignar roles.
+
+**Acción esperada:** Actualizar datos corporativos, ver plan y administrar accesos del equipo.<br><br>
+
+![Web Aplication Wireflow Guest](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Wireflow_Wireframe.jpeg)
+
+### 5.4.3. Applications Mock-ups.
+
+- Web Applications Mock-ups
+
+#### Vista del segmento #1: Arquitectos e Ingenieros Civiles
+#### 1. Home
+- En el área principal del panel, hay una sección de "Project Overview" que incluye dos gráficos: uno de barras titulado "Budget Allocated" y uno de líneas llamado "Devices Implemented", que proporcionan una visión rápida del rendimiento. A la derecha, se encuentra un "Notification Feed" con mensajes sobre la expiración de un proyecto y la adición de un nuevo cliente.
+
+![Segmento #1 Mock-up Home](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_Mock-up_Home.png)
+<br>
+
+#### 2. Proflie
+- En esta pantalla, se destacan los detalles del perfil del usuario, "Roberto Ccarita", con un botón prominente para "Edit Profile". La información se organiza en varias secciones claras: "Account Information", donde se muestran el nombre completo, el correo electrónico y el número de teléfono del usuario; "Time Zone", "Current Plan" y "App Language", establecido en "English".
+
+![Segmento #1 Mock-up Profile](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_Mock-up_Profile.png)
+<br>
+
+#### 3. Projects
+- En esta pantalla, se presenta una galería de proyectos individuales, cada uno ilustrado con una imagen de un edificio moderno. Cada tarjeta de proyecto incluye el nombre del proyecto, su estado y la fecha de su última actualización. Un botón "More Details" para acceder a información más profunda sobre cada proyecto. Además, en la parte superior derecha, un botón "+ Add Project" indica la funcionalidad para crear nuevos proyectos dentro de la aplicación.
+
+![Segmento #1 Mock-up Project](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_Mock-up_Projects.png)
+<br>
+
+#### 4. Clients
+- Esta vista presenta una tabla detallada con información de los clientes, incluyendo su "Full Name", "Associated Project", "Account Statement" y "Actions". El estado de la cuenta varía entre "Active", "Suspended" y "Stand by". Para cada cliente, se ofrecen opciones como "View Profile" y un icono de configuración, permitiendo al usuario gestionar los detalles del cliente. En la esquina superior derecha, un botón "+ Add Client" facilita la incorporación de nuevos clientes.
+
+![Segmento #1 Mock-up Management](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_Mock-up_Management.png)
+<br>
+
+#### 5. Configuration
+- Esta vista está organizada en tres áreas principales que permiten al usuario personalizar y gestionar su experiencia. La sección "Notifications" incluye toggles para activar o desactivar alertas de expiración, actualizaciones del sistema, notificaciones de clientes y notificaciones push. La sección "Security and Privacy" ofrece opciones para cambiar la contraseña, configurar la autenticación de dos factores, gestionar sesiones y añadir una dirección de correo electrónico alternativa, todas ellas con un icono de engranaje que sugiere configuraciones adicionales. Finalmente, la sección "Support and Help" proporciona enlaces a FAQs y contacto de soporte.
+
+![Segmento #1 Mock-up Configuration](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_Mock-up_Configuration.png)
+<br><br>
+
+#### Vista del segmento #2: Propietarios de departamentos
+#### 1. Home
+- La sección principal, "Overview" (Resumen), incluye dos gráficos: uno de líneas que detalla el "Energy Consumption" (Consumo de Energía) a lo largo del tiempo, y un gráfico de barras que ilustra los "Energy Savings By Device (%)" (Ahorros de Energía por Dispositivo) para elementos como luces, termostatos, aire acondicionado y cámaras. A la derecha, el "Notification Feed" (Feed de Notificaciones) alerta sobre "High power consumption detected" (Se detectó un alto consumo de energía) y "Air conditioner may need maintenance" (El aire acondicionado puede necesitar mantenimiento). Esta pantalla ofrece al propietario una visión integral y en tiempo real del consumo energético y el estado de los dispositivos, facilitando la gestión eficiente de las propiedades.
+
+![Segmento #2 Mock-up Home](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_Mock-up_Home.png)
+<br>
+
+#### 2. Proflie
+- En la sección "Account Information", se detallan los datos personales del usuario, incluyendo un campo adicional con una dirección. A la derecha, una sección llamada "Scenes", que presenta toggles para activar o desactivar modos como "Energy Saving Mode", "Movie" y varias opciones de "Push Notifications". La "Time Zone" (Zona Horaria) se mantiene como "UTC +5 Lima".
+
+![Segmento #2 Mock-up Profile](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_Mock-up_Profile.png)
+<br>
+
+#### 3. Device Management
+- Esta pantalla presenta una tabla que lista los dispositivos asociados al usuario, con columnas para "Name", "Category" y "Real Time Status". Los dispositivos mostrados incluyen termostatos, aire acondicionado, luces (exteriores e interiores), cerraduras inteligentes y cámaras de video, clasificados en categorías como "Climatization", "Zen Tower" y "Security". Los estados en tiempo real varían entre "Online", "Offline" y "Damaged", lo que proporciona una visión clara del funcionamiento de cada dispositivo. Para cada entrada, un icono de engranaje en la columna de configuración. En la parte superior derecha, un botón "+ Add Device" permite al usuario incorporar nuevos dispositivos a su sistema, lo que hace de esta sección una herramienta central para el control y monitoreo de la infraestructura inteligente.
+
+![Segmento #2 Mock-up Management](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_Mock-up_Management.png)
+<br>
+
+#### 4. Configuration
+- Esta vista está organizada en tres áreas principales que permiten al usuario personalizar y gestionar su experiencia. La sección "Notifications" incluye toggles para activar o desactivar alertas de expiración, actualizaciones del sistema, notificaciones de clientes y notificaciones push. La sección "Security and Privacy" ofrece opciones para cambiar la contraseña, configurar la autenticación de dos factores, gestionar sesiones y añadir una dirección de correo electrónico alternativa, todas ellas con un icono de engranaje que sugiere configuraciones adicionales. Finalmente, la sección "Support and Help" proporciona enlaces a FAQs y contacto de soporte.
+
+![Segmento #2 Mock-up Configuration](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_Mock-up_Configuration.png)
+<br>
+
+- Mobile Applications Mock-ups
+
+#### Vista del segmento #1: Arquitectos e Ingenieros Civiles
+#### 1. Login
+- La pantalla presenta una interfaz de inicio de sesión minimalista. El diseño incluye dos campos de entrada de texto: uno para el correo electrónico (Email) y otro para la contraseña (Password). Debajo de estos campos, destaca un botón principal de color verde con el texto "Sign In" para acceder al sistema, seguido de una opción de registro en la parte inferior que dice "Don’t have an account? Register".
+
+![Segmento #1 Mock-up Login](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Login_Mock-Up.jpeg)
+<br>
+
+#### 2. Dashboard
+- El "Builder Dashboard" muestra métricas clave como proyectos activos, dispositivos conectados y ocupación. Incluye un gráfico circular de "Device Distribution" (temperatura, agua, energía y control de acceso), un gráfico de líneas sobre la tasa de ocupación mensual y una sección de "Project Overview" con detalles específicos del proyecto "Torres del Pacífico".
+
+![Segmento #1 Mock-up Dashboard](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Dashboard_Mock-Up.jpeg)
+<br>
+
+#### 3. Profile
+- La pantalla muestra el perfil de usuario de "Juan Pérez", identificado con el cargo de "Builder". Incluye una sección con datos personales como nombre completo, nombre de usuario, teléfono, dirección en San Isidro, Lima, y edad. En la parte inferior, destaca un botón verde con la opción "Edit Profile".
+
+![Segmento #1 Mock-up-1 Profile](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Profile-1_Mock-Up.jpeg)
+<br>
+
+- Esta interfaz corresponde a la edición del perfil de "Juan Pérez", bajo el rol de "Builder". Presenta cinco campos de texto editables con la información del usuario: nombre completo, nombre de usuario, teléfono, dirección y edad. En la parte inferior, se incluyen dos opciones principales: un botón verde para "Save Changes" (Guardar cambios) y un enlace de texto para "Cancel" (Cancelar).
+
+![Segmento #1 Mock-up-2 Profile](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Profile-2_Mock-Up.jpeg)
+<br>
+
+#### 4. Projects
+- La interfaz muestra una lista de proyectos de "IoBuild" organizados en tarjetas cuadrículas. Cada tarjeta presenta el nombre del edificio, como "Torres del Pacífico" o "Torre Ccarita", su ubicación o descripción breve, y una barra de progreso que indica el estado de las unidades ocupadas (por ejemplo, 68/80 o 90/90 unidades). Además, la pantalla incluye un botón flotante en la esquina inferior derecha con el símbolo "+" para añadir nuevos elementos.
+
+![Segmento #1 Mock-up Projects](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Projects_Mock-Up.jpeg)
+<br>
+
+### 5.4.4. Applications User Flow Diagrams.
+
+- Web Applications User Flow Diagrams
+
+#### Segmento Objetivo #1: Arquitectos e Ingenieros Civiles
+
+**1. Profile**
+**User Goal:** Como ingeniero, quiero ver y editar mi infomación.
+![Segmento #1 User Flow #1](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_User-Flow%231.png)
+
+**2. Project Management**
+**User Goal:** Como ingeniero, quiero ver, editar y añadir projects en los que estoy trabajando.
+![Segmento #1 User Flow #2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_User-Flow%232.png)
+
+**3. Client Management**
+**User Goal:** Como ingeniero, quiero monitorear los dispositivos de los projectos en los que estoy trabajando.
+![Segmento #1 User Flow #3](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_User-Flow%233.png)
+
+**4. Configuration**
+**User Goal:** Como ingeniero, quiero personalizar la configuración de la plataforma.
+![Segmento #1 User Flow #4](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_User-Flow%234.png)
+
+#### Segmento Objetivo #2: Dueños de apartamentos
+
+**1. Profile**
+**User Goal:** Como propietario, quiero ver y editar mi infomación.
+![Segmento #2 User Flow #1](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_User-Flow%231.png)
+
+**2. Device Management**
+**User Goal:** Como propietario, quiero monitorear y configurar mis dispositivos.
+![Segmento #2 User Flow #2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_User-Flow%232.png)
+
+**3. Configuration**
+**User Goal:** Como propietario, quiero personalizar la configuración de la plataforma.
+![Segmento #2 User Flow #3](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_User-Flow%233.png)
+
+- Mobile Applications User Flow Diagrams
+
+#### Segmento Objetivo #1: Arquitectos e Ingenieros Civiles
+
+**1. Login**
+**User Goal:** Como ingeniero, poder ingresar a mi cuenta de IoBuild.
+![Segmento #1 User Flow #1](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Journey-Flow-2_Mock-Up.jpeg)
+
+**1. Profile**
+**User Goal:** Como ingeniero, quiero ver y editar mi infomación.
+![Segmento #1 User Flow #2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Moviles/Cap%C3%ADtulo%203/Journey-Flow-1_Mock-Up.jpeg)
+
+## 5.5. Applications Prototyping.
+
+- Web Applications Prototyping
+
+En esta etapa se presentan los prototipos de la aplicación web IoBuild, diseñados para navegadores de escritorio. El enfoque está en simular los flujos principales de cada segmento objetivo, garantizando una experiencia clara y funcional en pantallas grandes.
+
+**Segmento constructoras**
+<br>
+Los ingenieros usan la plataforma para gestionar proyectos residenciales, centralizar información de clientes, monitorear dispositivos IoT y configurar opciones de administración.
+
+- Desde el menú Home, acceden al Dashboard con datos de sus proyectos.
+
+- La barra lateral incluye cinco menús principales: Home, Profile, Project, Device Management y Configuration.
+
+- En Device Management se despliega la lista de clientes con datos como nombre, proyecto, estado de cuenta y opciones de gestión.
+
+- Al seleccionar un cliente, pueden visualizar el estado de los dispositivos IoT relacionados; si hay restricciones o errores, el sistema muestra un aviso.
+
+**Segmento Dueños de Departamentos**<br>
+Los propietarios buscan controlar de forma remota sus dispositivos y conocer su rendimiento.
+
+- El recorrido inicia en Home, donde se muestra un Dashboard con información general de los dispositivos.
+
+- En este caso, el menú lateral incluye cuatro opciones: Home, Profile, Device Management y Configuration.
+
+- En Device Management aparece la lista de aparatos conectados al departamento, con datos como nombre, categoría y estado.
+
+- El usuario puede ingresar al detalle de cada dispositivo o recibir un mensaje de error en caso de restricciones.
+
+Con estos flujos, los prototipos evidencian cómo cada tipo de usuario interactúa con la aplicación, asegurando una navegación coherente y ajustada a sus necesidades.
+
+A continuación se presenta el video con los prototipos navegables de ambos segmentos: https://goo.su/Cor4Q
+
+- Mobile Applications Prototyping
+
+En esta etapa se presentan los prototipos de la aplicación móvil IoBuild, diseñados para smartphones y tablets. El enfoque está en simular los flujos principales de cada segmento objetivo, garantizando una experiencia intuitiva, accesible y optimizada para pantallas táctiles y entornos de movilidad.
+
+**Segmento constructoras**
+<br>
+Los ingenieros utilizan la aplicación móvil para supervisar proyectos residenciales, acceder rápidamente a información de clientes, monitorear dispositivos IoT y gestionar configuraciones desde cualquier lugar y en tiempo real.
+
+- Desde la pantalla principal, pueden acceder al Dashboard móvil, donde se muestran indicadores clave de los proyectos, estados de dispositivos y notificaciones importantes en un formato adaptado a dispositivos móviles.
+
+- La navegación de la aplicación se organiza mediante una barra inferior y menús desplegables que incluyen las principales secciones: Home, Profile, Projects, Device Management y Configuration, permitiendo una interacción rápida y sencilla con una sola mano.
+
+- En la sección Device Management, los usuarios pueden visualizar la lista de clientes junto con información relevante como nombre, proyecto asociado, estado de cuenta y opciones de administración. El diseño prioriza tarjetas responsivas y elementos táctiles para facilitar la interacción.
+
+- Al seleccionar un cliente, la aplicación permite consultar el estado de los dispositivos IoT vinculados al proyecto, mostrando información en tiempo real y alertas visuales cuando existen restricciones, errores o problemas de conectividad. Esto facilita una supervisión eficiente y una rápida toma de decisiones desde cualquier ubicación.
+
+Con estos flujos, los prototipos evidencian cómo cada tipo de usuario interactúa con la aplicación, asegurando una navegación coherente y ajustada a sus necesidades.
+
+## 5.6. IoT Device Design.
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+## 6.1. Software Configuration Management.
+
+La gestion de configuracion de software del proyecto **IoBuild** define y controla el conjunto de herramientas, servicios y convenciones necesarios para asegurar un desarrollo movil consistente, trazable y reproducible.  
+En esta seccion se documentan los componentes del entorno de desarrollo, su proposito dentro del proyecto y su aporte a la calidad del producto final.
+
+### 6.1.1. Software Development Environment Configuration.
+
+- Web Applications
+
+| Producto                                                                                                                                                               | Propósito en el proyecto                                                      | Categoría | Ruta de descarga / acceso | Descripción |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|-----------|---------------------------|-------------|
+| JetBrains WebStorm  ![Logo de WebStorm](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Web_Storm_logo.png)  | Desarrollo web moderno utilizando tecnologías actuales como Vue y TypeScript. | Software Development | https://www.jetbrains.com/webstorm/ | IDE de JetBrains para desarrollo web moderno con soporte para JavaScript, TypeScript y frameworks frontend como Vue.js. |
+| Vue.js  ![Logo de Vue.js](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Vue_logo.png)                      | Administración del ciclo de vida en aplicaciones desarrolladas con Vue.js.    | Software Development | https://vuejs.org/guide/introduction.html | Framework progresivo de JavaScript para construir interfaces de usuario de forma declarativa y eficiente. |
+| UXPressia  ![Logo de UXPressia](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Uxpressia_logo.png)          | Representación gráfica de la experiencia del usuario.                         | Product UX/UI Design | https://uxpressia.com/ | Plataforma orientada a la elaboración de journey maps y perfiles de usuario, que permite representar y analizar de forma visual la experiencia dentro del sistema. |
+| Lucidchart  ![Logo de Lucidchart](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Lucidchart_logo.png)       | Planificación estructurada del software mediante representaciones gráficas.   | Product UX/UI Design | https://www.lucidchart.com/ | Herramienta diseñada para elaborar diagramas de procesos, flujos y arquitecturas de sistemas, que optimiza la planificación visual y la organización del software. |
+| Structurizr  ![Logo de Structurizr](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Structurizr_logo.png)    | Diseño y documentación de arquitecturas de software basadas en el modelo C4.  | Product UX/UI Design | https://structurizr.com/ | Aplicación especializada en la creación de modelos de arquitectura de software con base en el modelo C4, ideal para documentar y comprender sistemas complejos. |
+| GitHub  ![Logo de GitHub](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/GitHub_logo.png)                   | Plataforma para la gestión de código fuente y control de versiones.           | Collaboration & Version Control Tools | https://github.com/ | Plataforma de desarrollo colaborativo para alojar, revisar y gestionar proyectos de software. |
+| MySQL Workbench  ![Logo de MySQL Workbench](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/MySQL_logo.jpg) | Desarrollo y depuración del backend basado en .NET.                           |Software Development |https://dev.mysql.com/downloads/workbench/ | Aplicación visual para diseñar esquemas, ejecutar consultas SQL, gestionar usuarios y administrar servidores MySQL de manera integrada.|
+| Docker Desktop  ![Logo de Docker Desktop](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Docker_logo.jpg)   |Contenerización del backend y servicios asociados para facilitar despliegues.|DevOps / Containerization|https://www.docker.com/products/docker-desktop/|Herramienta que permite crear, ejecutar y gestionar contenedores Docker, asegurando entornos reproducibles para desarrollo y producción.   |
+| Swagger UI  ![Logo de Swagger UI](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Logo.jpg)           |Documentación interactiva de la API.|API Documentation Tool|https://swagger.io/tools/swagger-ui/|Interfaz que genera documentación dinámica de APIs REST, permitiendo visualizar rutas, parámetros y probar los endpoints directamente desde el navegador.|
+| Git CLI (Git)  ![Logo de Git CLI](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Git_logo.jpg)           |Manejo local de control de versiones.|Version Control|https://git-scm.com/|Sistema de control de versiones distribuido que permite gestionar cambios, trabajar con ramas y sincronizar código con repositorios remotos como GitHub.|
+
+
+- Mobile Applications
+
+Para la implementacion de la solucion, se configuro un entorno de desarrollo orientado a aplicaciones moviles Android, integracion con servicios backend y soporte para diseno UX/UI, documentacion y colaboracion del equipo.
+
+| Producto/Herramienta | Categoria | Ruta de Descarga/Acceso | Proposito en el Proyecto |
+|---|---|---|---|
+| OpenJDK | Desarrollo Backend | https://openjdk.org/ | Entorno de ejecucion para aplicaciones Java |
+| Apache Maven | Desarrollo Backend | https://maven.apache.org/ | Gestion de dependencias y construccion del proyecto |
+| Spring Boot | Desarrollo Backend | https://spring.io/projects/spring-boot | Framework para desarrollo de APIs RESTful |
+| Android Studio | Desarrollo Movil | https://developer.android.com/studio | IDE para desarrollo de aplicaciones Android nativas |
+| Kotlin | Desarrollo Movil | Incluido en Android Studio | Lenguaje de programacion para aplicacion movil |
+| Render PostgreSQL | Base de Datos | https://render.com/docs/postgresql | Base de datos relacional en la nube |
+| Material Design 3 | Diseno UX/UI | https://m3.material.io/ | Sistema de diseno para interfaces consistentes |
+| Jira | Gestion de Proyectos | https://www.atlassian.com/es/software/jira | Gestion de backlog y sprints |
+| UXPressia | Gestion de Requisitos | https://uxpressia.com/ | Creacion de User Personas, Journey Maps e Impact Mapping |
+| PlantUML | Documentacion | https://plantuml.com/ | Creacion de diagramas de arquitectura y flujos |
+| Postman | Testing APIs | https://www.postman.com/ | Pruebas de endpoints RESTful |
+| Git | Control de Versiones | https://git-scm.com/ | Control de versiones del codigo fuente |
+| GitHub | Repositorio | https://github.com/ | Almacenamiento y colaboracion en codigo |
+| Render | Despliegue Backend | https://render.com/ | Plataforma de despliegue para aplicaciones Spring Boot |
+| Firebase Cloud Messaging | Notificaciones Push | https://firebase.google.com/ | Servicio de notificaciones push para dispositivos moviles |
+
+### 6.1.2. Source Code Management.
+
+- Web Applications
+
+El proyecto IoBuild, una plataforma SaaS para la gestión y personalización de dispositivos IoT en entornos de construcción y apartamentos inteligentes, se desarrolla bajo un enfoque profesional que prioriza las buenas prácticas de arquitectura, la colaboración en equipo, la automatización de flujos y la estandarización del entorno de desarrollo. La configuración del entorno se ha diseñado con base en el modelo C4 (Context, Container, Component, Code) y en los principios de la Clean Architecture, lo que asegura una separación clara de responsabilidades, la reutilización de componentes y la escalabilidad del sistema a futuro.
+
+Para el frontend, el equipo utiliza WebStorm como IDE principal, administrado a través de JetBrains Toolbox, lo que garantiza una configuración uniforme en todos los integrantes del equipo. Este entorno de trabajo ofrece integración nativa con Vue.js, framework elegido para el desarrollo de la interfaz, lo que facilita la generación de componentes, servicios y módulos directamente desde el IDE. Además, se aprovechan funciones avanzadas como la navegación semántica, la refactorización inteligente, la depuración integrada y la administración de dependencias, optimizando la productividad y reduciendo errores en el proceso de implementación.
+
+Vue.js se seleccionó como la tecnología central para el frontend debido a su arquitectura reactiva y declarativa, basada en componentes reutilizables que permiten un diseño flexible y modular. Gracias a su Vue CLI, la integración de librerías externas y su compatibilidad con metodologías modernas de desarrollo, la plataforma puede estructurarse en torno a bounded contexts, separando de forma clara la vista, la lógica y los servicios. Esta organización permite que diferentes miembros del equipo trabajen en paralelo sin comprometer la coherencia del sistema, mejorando los tiempos de entrega y asegurando la calidad del producto final.
+
+Finalmente, el equipo mantiene un repositorio paralelo denominado upc-pre-1ASI0730-7461-CcaritaTech (https://github.com/upc-pre-1ASI0730-7461-CcaritaTech), donde se gestionan versiones experimentales y entornos de prueba bajo un enfoque académico y exploratorio. Este repositorio funciona como un espacio seguro para validar prototipos, realizar pruebas funcionales y explorar nuevas características antes de ser integradas en el sistema principal. De esta manera, IoBuild asegura que las innovaciones sean evaluadas en un entorno controlado, evitando riesgos en la plataforma productiva y garantizando la estabilidad del proyecto central.
+
+![Repositorios de IoBuild](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Repositorios_de_IoBuild.png)
+
+- Mobile Applications
+
+La gestion del codigo fuente de **IoBuild** se realiza con Git y GitHub, siguiendo practicas estandar para asegurar trazabilidad, colaboracion efectiva y control de cambios durante todo el ciclo de desarrollo.
+
+**Gestion de Repositorios**
+
+El proyecto utiliza GitHub como plataforma centralizada de control de versiones. La organizacion del codigo se separa por componente para facilitar mantenimiento independiente y evolucion controlada del sistema.
+
+| Producto | URL del Repositorio | Descripcion |
+|---|---|---|
+| Landing Page | Pendiente de registrar URL oficial | Sitio web de presentacion del producto |
+| Mobile Application Kotlin | Pendiente de registrar URL oficial | Aplicacion movil nativa Android |
+| Project Report | https://github.com/CcaritaTech/Report | Reporte tecnico y documentacion del proyecto |
+
+**Implementacion de GitFlow**
+
+Se adopta GitFlow como estrategia de branching para estructurar el trabajo del equipo. Este modelo define ramas principales para produccion e integracion, junto con ramas de soporte para nuevas funcionalidades, releases y hotfixes. Con ello se mantiene la estabilidad del codigo y se ordena el flujo de trabajo entre desarrollo, validacion y entrega.
+
+**Convenciones de Nomenclatura**
+
+Para mantener consistencia en el repositorio, se establecen convenciones de nombres para ramas:
+
+- `feature/<modulo>-<descripcion-corta>`
+- `release/v<major>.<minor>.<patch>`
+- `hotfix/v<major>.<minor>.<patch>`
+- `bugfix/<modulo>-<descripcion-corta>`
+
+Estas convenciones permiten identificar rapidamente el proposito de cada rama y mejoran la coordinacion entre integrantes.
+
+**Versionado Semantico**
+
+El proyecto sigue Semantic Versioning (`MAJOR.MINOR.PATCH`):
+
+- `MAJOR`: cambios incompatibles con versiones anteriores.
+- `MINOR`: nuevas funcionalidades compatibles.
+- `PATCH`: correcciones de errores sin romper compatibilidad.
+
+Este esquema comunica claramente el impacto de cada version y facilita la planificacion de despliegues.
+
+**Conventional Commits**
+
+Se utiliza la especificacion Conventional Commits para estandarizar los mensajes de commit y mejorar la trazabilidad del historial. Formato base:
+
+`<type>(<scope>): <description>`
+
+Tipos de commit mas usados:
+
+- `feat`: nueva funcionalidad.
+- `fix`: correccion de error.
+- `docs`: cambios en documentacion.
+- `refactor`: mejora interna sin cambiar comportamiento funcional.
+- `test`: incorporacion o ajuste de pruebas.
+- `chore`: tareas de mantenimiento o configuracion.
+
+Esta convencion facilita auditoria de cambios y futura generacion automatica de changelogs.
+
+### 6.1.3. Source Code Style Guide & Conventions.
+
+- Web Applications
+
+El uso de un estilo de código unificado y una arquitectura bien definida es clave para asegurar la escalabilidad, la mantenibilidad y la colaboración efectiva en el desarrollo de IoBuild. Para ello, el proyecto incorpora prácticas de programación y convenciones estructurales que promueven la calidad técnica, la claridad y la consistencia en cada módulo de la plataforma, tomando como referencia estándares reconocidos de la industria y metodologías actuales.
+
+**Arquitectura y organización del sistema**
+
+IoBuild adopta el modelo C4 de Simon Brown, lo que permite visualizar el sistema en distintos niveles de abstracción (contexto, contenedor, componente y código). Este enfoque ofrece una representación clara y comprensible, facilitando la comunicación entre desarrolladores, diseñadores y testers. Además, la arquitectura se fundamenta en los principios de Domain-Driven Design (DDD) y Clean Architecture, lo que garantiza una separación rigurosa entre capas (presentación, aplicación, dominio e infraestructura). Gracias a ello, se reduce el acoplamiento, se incrementa la mantenibilidad y se fortalece la capacidad de realizar pruebas automatizadas de manera eficiente.
+
+**Frontend: Vue.js**
+
+En el frontend, se emplea Vue.js como framework principal, implementando una arquitectura centrada en componentes reutilizables, organizados en directorios específicos como components, views y store. La convención de nombres establece el uso de PascalCase para los componentes (por ejemplo, DeviceCard.vue) y kebab-case para los archivos (device-card.vue), en concordancia con las recomendaciones de la comunidad Vue. Asimismo, se aplican buenas prácticas de desarrollo, entre ellas:
+
+- Separación de lógica y presentación mediante el patrón container/presentational components.
+- Uso de props y emits para la comunicación clara entre componentes.
+- Implementación de lazy loading y code splitting para optimizar el rendimiento.
+- Internacionalización con vue-i18n, gestionando archivos JSON para cada idioma.
+
+**Alineación con guías de estilo estándar**
+
+La estructura y nomenclatura utilizadas en IoBuild siguen convenciones reconocidas como la Vue Style Guide y lineamientos generales de HTML/CSS. Además, el uso del inglés en identificadores, clases y funciones garantiza coherencia en el trabajo colaborativo, simplifica la integración con librerías externas y favorece la comprensión del código por parte de equipos internacionales.
+
+- Mobile Applications
+
+El proyecto **IoBuild** define una guia de estilo comun para mantener consistencia, legibilidad y mantenibilidad en sus componentes de backend, aplicacion movil, landing page y documentacion tecnica.
+
+**1. Estandares de Nomenclatura y Estilo**
+
+Se adopta nomenclatura en ingles para elementos de codigo (clases, metodos, variables, paquetes y ramas). Esta decision reduce ambiguedades, facilita la colaboracion y mantiene alineacion con la documentacion oficial de las tecnologias utilizadas.
+
+Reglas generales aplicadas:
+
+- Nombres descriptivos y orientados a responsabilidad.
+- Una sola convencion por tipo de elemento en todo el proyecto.
+- Evitar abreviaciones no estandar.
+- Mantener consistencia entre codigo, pruebas y documentacion.
+
+**2. Convenciones para Backend y APIs**
+
+Para backend con Java y Spring Boot se toma como base **Google Java Style Guide** y buenas practicas del ecosistema Spring:
+
+- Clases en `PascalCase` y metodos/atributos en `camelCase`.
+- Paquetes en minusculas, organizados por dominio o responsabilidad.
+- Controladores REST con rutas claras, recursos en plural y uso correcto de verbos HTTP.
+- Separacion por capas: `controller`, `application/service`, `domain`, `infrastructure`.
+- DTOs para requests/responses y validaciones en capa de entrada.
+
+Esto permite una API consistente, facil de mantener y alineada con arquitectura limpia y DDD definido en el proyecto.
+
+**3. Estandares para Desarrollo Movil**
+
+Para la aplicacion Android en Kotlin se siguen las convenciones oficiales de Kotlin y Android:
+
+- Clases y composables en `PascalCase`.
+- Funciones, propiedades y variables en `camelCase`.
+- Constantes en `UPPER_SNAKE_CASE`.
+- Estructura por features/pantallas para mejorar escalabilidad.
+- Uso consistente de componentes Material Design 3 para UI.
+
+Estas reglas aseguran codigo idiomatico, legible y coherente con las practicas actuales de desarrollo movil nativo.
+
+**4. Convenciones para Pruebas y Especificaciones**
+
+Las pruebas unitarias y de integracion usan nombres descriptivos que explican escenario y resultado esperado.
+
+Convenciones aplicadas:
+
+- Nombre de test orientado a comportamiento: `shouldExpectedResultWhenCondition`.
+- Estructura `Arrange - Act - Assert`.
+- Separacion de pruebas por capa o feature.
+- En pruebas de aceptacion con Gherkin, uso de escenarios claros bajo `Given - When - Then`.
+
+Con este enfoque, las pruebas funcionan como evidencia tecnica y documentacion viva de los requisitos.
+
+**5. Guias para Frontend y Documentacion**
+
+Para la landing page (HTML/CSS/JS) se aplican buenas practicas de estilo inspiradas en guias de Google y estandares web:
+
+- HTML semantico y jerarquia clara de encabezados.
+- Clases CSS con nombres descriptivos y consistentes.
+- Separacion de estructura, estilos y comportamiento.
+- Diseno responsive para desktop y mobile.
+
+Para la documentacion (`README`, diagramas y evidencias), se mantiene formato uniforme:
+
+- Titulos y secciones con numeracion consistente.
+- Tablas para configuraciones, herramientas y trazabilidad.
+- Lenguaje tecnico claro y directo.
+- Actualizacion continua de evidencias por sprint.
+
+Estas convenciones fortalecen la calidad del codigo y facilitan el trabajo colaborativo durante todo el ciclo de vida del producto.
+
+### 6.1.4. Software Deployment Configuration.
+
+- Web Applications
+
+Para gestionar el desarrollo de IoBuild de manera colaborativa, el equipo utilizó la funcionalidad de forks en GitHub. Al crear un fork, cada integrante seleccionó la cuenta donde alojar su copia del repositorio principal de CcaritaTech/IoBuild, asignó un nombre identificador y, de ser necesario, añadió una breve descripción sobre el propósito del fork. También se podía optar por clonar únicamente la rama principal antes de confirmar la acción.
+
+Una vez creado, el fork quedaba disponible en el perfil del desarrollador como una copia independiente del repositorio original, lista para experimentar, implementar nuevas funcionalidades o realizar pruebas sin afectar directamente al código base. Este flujo permitió mantener la seguridad del repositorio upstream, al mismo tiempo que fomentó la autonomía y la organización del trabajo en equipo.
+![imagen deploy 1](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Imagen_deploy1.png)
+![imagen deploy 2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Imagen_deploy2.png)
+![imagen deploy 3](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Imagen_deploy3.png)
+
+- Mobile Applications
+
+El proyecto IoBuild implementa una estrategia de despliegue diferenciada por componente, utilizando servicios en la nube y canales de distribucion acordes al tipo de aplicacion. Esta aproximacion permite optimizar recursos y mantener una entrega continua para landing page, backend y aplicacion movil.
+
+**1. Landing Page**
+
+- **Tipo de aplicacion:** Sitio estatico (HTML, CSS, JavaScript)
+- **Plataforma de despliegue:** GitHub Pages (o Netlify, segun definicion del equipo)
+- **Fuente de despliegue:** Rama `main` del repositorio de Landing Page
+- **Estrategia:** Despliegue automatico por cada push/merge a `main`
+- **Objetivo:** Publicar una pagina informativa del producto con acceso web para stakeholders y usuarios objetivo
+
+**2. Backend (Web Service)**
+
+- **Tipo de servicio:** Web Service
+- **Plataforma:** Render
+- **Runtime:** Java (Spring Boot)
+- **Fuente de despliegue:** Rama `main` del repositorio backend
+- **Base de datos:** Render PostgreSQL
+- **Variables de entorno referenciales:** `DATABASE_URL`, `JWT_SECRET`, `FCM_SERVICE_ACCOUNT`
+- **Health checks:** Endpoint de verificacion de estado habilitado para monitoreo
+- **Objetivo:** Exponer APIs para autenticacion, gestion de proyectos/dispositivos y soporte a la aplicacion movil
+
+**3. Base de Datos**
+
+- **Tipo de servicio:** Database as a Service
+- **Plataforma:** Render PostgreSQL
+- **Caracteristicas:** backup automatico, conexiones SSL y monitoreo basico
+- **Objetivo:** Persistencia centralizada y segura para los datos del sistema
+
+**4. Mobile Application Kotlin (Android)**
+
+- **Tipo de aplicacion:** Aplicacion movil nativa Android (Kotlin)
+- **Entorno de build:** Android Studio + Gradle
+- **Artefacto generado:** APK (debug/release) o AAB
+- **Estrategia de distribucion actual:** Instalacion manual en dispositivos de prueba y emuladores
+- **Canal de publicacion:** No productivo (fase academica/prototipo)
+- **Objetivo:** Validar funcionalidades, flujo de navegacion y experiencia de usuario en entorno real de uso
+
+**5. Consideraciones de Configuracion**
+
+- Control de versiones con GitHub
+- Convenciones de ramas y commits definidas en `4.1.2`
+- Versionado incremental del aplicativo movil para control de entregas de sprint
+- Evidencias de despliegue y ejecucion registradas por sprint en la seccion 4.2
+
+**Deploy Diagram**
+
+El diagrama de despliegue de esta etapa representa:
+- Repositorio GitHub (Landing Page) -> Plataforma de hosting estatico -> Navegador web del usuario
+- Repositorio Backend -> Render Web Service -> Render PostgreSQL
+- Codigo Kotlin en repositorio -> Android Studio/Gradle -> APK/AAB -> Dispositivo Android (emulador o fisico)
+
+![Deploy Diagram](https://i.ibb.co/WYbfcRR/Deploy-Diagram.png) 
+
+## 6.2. Landing Page, Services & Applications Implementation.
+### 6.2.1. Sprint 1
+
+El Sprint 1 se enfocó en establecer los cimientos de la plataforma IoBuild, desarrollando secciones clave de la landing page (sobre nosotros, testimonios, contacto y FAQ), la opción de registro e internacionalización, y el dashboard inicial con acceso básico a proyectos y dispositivos. El equipo trabajó de manera colaborativa distribuyéndose las tareas según sus especialidades, logrando completar todas las user stories planificadas dentro del timeline estimado.
+
+#### 6.2.1.1. Sprint Planning 1.
+
+| Sprint # | Sprint 1 |
+|---|---|
+| **Sprint Planning Background** | |
+| Date | 05/05/2026 |
+| Time | 17:00 PM |
+| Location | Google Meet |
+| Prepared By | Fabrizio Martin Panta Castro |
+| Attendees | Fabrizio Martin Panta Castro, Iker Gabriel Barturen Panez, Axel Randall Ordonez Ricaldi, Brayan Roberto Ccarita Cruz, Mateo Italo Loechle Arias |
+| **Sprint Goal & User Stories** | |
+| Sprint 1 Goal | Our focus is on establishing the foundational layer of the IoBuild platform, delivering a fully functional landing page with internationalization and a basic authenticated dashboard with access to projects and connected devices. We believe it delivers immediate value to potential clients exploring the platform and to engineers who need a starting point to manage their IoT resources. This will be confirmed when the landing page is publicly deployed with EN/ES support and registered users can access the dashboard, view active projects and monitor connected devices. |
+| Sprint 1 Velocity | 36 |
+| Sum of Story Points | 36 |
+
+#### 6.2.1.2. Aspect Leaders and Collaborators.
+
+En este apartado se describen los aspectos funcionales más relevantes trabajados durante el Sprint 1 en el desarrollo de la plataforma IoBuild. Cada uno de ellos representa un subconjunto significativo dentro del alcance funcional de la solución, incluyendo componentes de interfaz, características técnicas (I18n), elementos de diseño visual y estructural (UX - UI) y preguntas frecuentes (FAQ).
+
+Para cada aspecto se asignó un responsable principal, denominado Líder (L), encargado de la dirección técnica o de la ejecución. De igual manera, se identificaron Colaboradores (C), miembros del equipo que participaron activamente en la implementación, validación o soporte.
+
+La Matriz LACX (Leadership and Collaboration Matrix) ofrece una representación clara y organizada de la distribución de responsabilidades, favoreciendo la trazabilidad y visibilidad del trabajo colaborativo desarrollado a lo largo del Sprint.
+
+| Team Member                   | GitHub Username | UX-UI | Home Page   | About Us | I18n | FAQ |
+|-------------------------------|-----------------|-------|-------------|----------|------|-----|
+| Arizabal Condori, Jean Niels  | JeanArizabal    | C     | C           | L        | C    | C   |
+| Ccarita Cruz, Roberto Brayan  | hallzyx         | C     | C           | C        | L    | C   |
+| Ordoñez Ricaldi, Axel Randall | nOOmzzzz        | C     | L           | C        | C    | C   |
+| Panta Castro, Fabrizio Martin | F4brizio24      | C     | C           | C        | C    | L   |
+| Olivos Huaman, Yeira Shari    | YeiShari        | L     | C           | C        | C    | C   |
+
+#### 6.2.1.3. Sprint Backlog 1.
+
+| Story ID | ID Task | Titulo | Descripción | Estimación (Horas) | Assigned To | Status |
+|---|---|---|---|---|---|---|
+| US01 | TK01 | Sección Sobre Nosotros | Como visitante del sitio, quiero conocer la historia y valores de la aplicación, para tener mayor conexión y confianza con la empresa. | 2 | Fabrizio Martin Panta Castro | Done |
+| US02 | TK02 | Sección testimonios del cliente | Como visitante del sitio, quiero consultar testimonios de otros clientes, para generar confianza en la propuesta de valor de la start up. | 5 | Iker Gabriel Barturen Panez | Done |
+| US03 | TK03 | Acceso a información de contacto | Como visitante del sitio, quiero acceder fácilmente a la información de contacto de IoBuild, para comunicarme en caso de dudas. | 5 | Axel Randall Ordonez Ricaldi | Done |
+| US04 | TK04 | Visualización de servicios principales | Como visitante del sitio, quiero conocer los servicios que ofrece IoBuild, para entender su propuesta de valor. | 3 | Brayan Roberto Ccarita Cruz | Done |
+| US05 | TK05 | Opción de registro | Como visitante del sitio, quiero registrarme en la aplicación, para tener acceso a las funcionalidades de la aplicación. | 3 | Axel Randall Ordonez Ricaldi | Done |
+| US06 | TK06 | Preguntas frecuentes | Como visitante del sitio, quiero consultar una sección de preguntas frecuentes, para resolver dudas comunes sin necesidad de contactar a la start up. | 5 | Mateo Italo Loechle Arias | Done |
+| US07 | TK07 | Internacionalización de la landing page | Como visitante del sitio, quiero poder encontrar más de un idioma disponible, para poder elegir el idioma de mi preferencia. | 3 | Axel Randall Ordonez Ricaldi | Done |
+| US08 | TK08 | Dashboard personalizado | Como usuario, quiero tener un dashboard personalizado, para visualizar la información relevante de manera rápida y eficiente. | 5 | Fabrizio Martin Panta Castro | Done |
+| US09 | TK09 | Acceso a proyectos activos | Como ingeniero, quiero tener acceso a los proyectos que se encuentran activos, para poder realizar un seguimiento de su progreso y gestionar los recursos necesarios. | 5 | Iker Gabriel Barturen Panez | Done |
+| US10 | TK10 | Acceso a dispositivos conectados | Como usuario, quiero tener acceso a los dispositivos conectados, para poder monitorear su estado y uso. | 5 | Mateo Italo Loechle Arias | Done |
+| US11     | TK11    | Capacidad de ocupación por proyecto     | Como ingeniero, quiero tener acceso a la capacidad de ocupación de cada proyecto, para poder analizar el uso de los recursos y planificar de manera eficiente.                                                   | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
+| US12     | TK12    | Gráfico de consumo de energía por hora  | Como ingeniero, quiero ver un gráfico sobre la energía que se consume por hora, para poder evaluar el rendimiento energético de los proyectos en tiempo real.                                                    | 8                  | Fabrizio Martin Panta Castro | Done   |
+| US13     | TK13    | Gráfico de registro de ocupación        | Como ingeniero, quiero ver un gráfico sobre el registro de ocupación, para poder analizar la evolución de la ocupación a lo largo del tiempo.                                                                    | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| US14     | TK14    | Resumen del proyecto                    | Como ingeniero, quiero ver un resumen sobre cada proyecto, para saber si está activo, su ubicación y cuántos departamentos están ocupados.                                                                       | 5                  | Mateo Italo Loechle Arias    | Done   |
+| US19     | TK15    | Visualización del rol de la cuenta      | Como usuario, quiero poder ver el rol de mi cuenta, para entender qué permisos tengo dentro de la aplicación.                                                                                                    | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| US20     | TK16    | Lista de proyectos                      | Como ingeniero, quiero ver una lista de todos mis proyectos para poder conocer el estado y detalles de cada uno.                                                                                                 | 5                  | Fabrizio Martin Panta Castro | Done   |
+| US21     | TK17    | Agregar nuevo proyecto                  | Como arquitecto, quiero agregar un nuevo proyecto para poder registrar nuevos desarrollos inmobiliarios.                                                                                                         | 8                  | Iker Gabriel Barturen Panez  | Done   |
+| US22     | TK18    | Detalles de un proyecto                 | Como arquitecto, quiero ver los detalles de un proyecto específico para poder revisar su información completa.                                                                                                   | 5                  | Mateo Italo Loechle Arias    | Done   |
+| US23     | TK19    | Lista de clientes                       | Como Arquitecto, quiero ver una lista de todos los clientes para poder gestionar sus proyectos asociados y el estado de su cuenta.                                                                               | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
+| US24     | TK20    | Buscar y ordenar clientes               | Como Ingeniero, quiero poder ordenar la lista de clientes por columnas (Nombre Completo, Proyecto Asociado, Estado de Cuenta) para poder encontrar u organizar clientes rápidamente según criterios específicos. | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| US26     | TK21    | Perfil del cliente | Como Ingeniero, quiero ver el perfil detallado de un cliente para poder acceder a toda su información y opciones de gestión. | 8                  | Fabrizio Martin Panta Castro | Done   |
+| US28     | TK21    | Plan de suscripción actual              | Como ingeniero, quiero ver mi plan de suscripción actual y su estado para confirmar los beneficios que tengo y el costo mensual.                                                                                 | 8                  | Fabrizio Martin Panta Castro | Done   |
+| US29     | TK22    | Planes de suscripción alternativos      | Como ingeniero, quiero ver planes de suscripción alternativos (Professional y Starter) para poder comparar sus precios y beneficios con mi plan actual.                                                          | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| US30     | TK23    | Cambio de plan                          | Como arquitecto, quiero iniciar el proceso de cambio de plan para poder seleccionar un nivel de servicio diferente que se ajuste mejor a mis necesidades.                                                        | 2                  | Mateo Italo Loechle Arias    | Done   |
+| US31     | TK24    | Renovar plan activo                     | Como arquitecto, quiero renovar mi plan actual para asegurar la continuidad del servicio si estoy cerca de la fecha de expiración o si mi plan no está configurado para renovación automática.                   | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
+| US32     | TK25    | Cancelar plan actual                    | Como ingeniero, quiero cancelar mi plan actual para finalizar mi suscripción al término del ciclo de facturación.                                                                                                | 8                  | Axel Randall Ordonez Ricaldi | Done   |
+| TS01     | TK26    | Listar proyectos por constructor        | Como desarrollador, quiero solicitar a la API que liste todos los proyectos asociados a un constructor específico, para poder mostrar la vista principal de Proyectos.                                           | 5                  | Fabrizio Martin Panta Castro | Done   |
+| TS02     | TK27    | Crear un proyecto                       | Como desarrollador, quiero añadir un nuevo proyecto a través de la API para poder implementar la funcionalidad de registro de nuevos desarrollos.                                                                | 2                  | Iker Gabriel Barturen Panez  | Done   |
+| TS03     | TK28    | Recuperar proyecto por ID               | Como desarrollador, quiero solicitar un proyecto por su {id} para poder mostrar la vista de detalles del proyecto.                                                                                               | 5                  | Mateo Italo Loechle Arias    | Done   |
+| TS04     | TK29    | Actualizar información de un cliente    | Como desarrollador, quiero enviar a la API una solicitud para modificar los datos de un cliente existente, para poder implementar la edición de su perfil y la gestión de su estado de cuenta.                   | 8                  | Brayan Roberto Ccarita Cruz  | Done   |
+| TS05     | TK30    | Eliminar un cliente                     | Como desarrollador, quiero solicitar a la API la eliminación de un cliente por su {id}, para poder implementar la funcionalidad de dar de baja clientes que ya no se utilizarán.                                 | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| TS06     | TK31    | Soportar ordenación de clientes         | Como desarrollador, quiero poder enviar parámetros de ordenación a la API (nombre de columna y dirección), para poder implementar las funcionalidades de Buscar/Ordenar Clientes.                                | 8                  | Fabrizio Martin Panta Castro | Done   |
+| TS07     | TK32    | Listar clientes                         | Como desarrollador, quiero solicitar a la API que liste los clientes, opcionalmente filtrados por estado o nombre, para poder mostrar la vista de la lista de clientes.                                          | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| TS08     | TK33    | Crear un cliente                        | Como desarrollador, quiero añadir un nuevo cliente a través de la API para poder implementar la funcionalidad de creación de clientes.                                                                           | 8                  | Mateo Italo Loechle Arias    | Done   |
+| TS09     | TK34    | Recuperar cliente por ID                | Como desarrollador, quiero solicitar un recurso de cliente por su {id} para poder implementar la vista detallada del perfil.                                                                                     | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
+| TS16     | TK35    | Obtener suscripción actual              | Como desarrollador, quiero solicitar la información de la suscripción activa del usuario actual, para mostrar el plan, costo y beneficios en la vista principal de suscripciones.                                | 3                  | Axel Randall Ordonez Ricaldi | Done   |
+| TS17     | TK36    | Listar catálogo de planes               | Como desarrollador, quiero solicitar la lista de todos los planes de suscripción disponibles en el sistema, para mostrarlos como alternativas en la interfaz de comparación.                                     | 3                  | Fabrizio Martin Panta Castro | Done   |
+| TS18     | TK37    | Cambiar plan de suscripción             | Como desarrollador, quiero enviar una solicitud para actualizar el plan de suscripción del usuario, para hacer efectivo el cambio de nivel de servicio seleccionado en la interfaz.                              | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| TS19     | TK38    | Renovar suscripción                     | Como desarrollador, quiero solicitar la renovación de la suscripción actual, para extender la vigencia del servicio cuando el usuario confirma la acción.                                                        | 3                  | Mateo Italo Loechle Arias    | Done   |
+| TS20     | TK39    | Cancelar suscripción                    | Como desarrollador, quiero solicitar la cancelación de la suscripción activa, para detener la renovación automática y finalizar el servicio al terminar el ciclo.                                                | 3                  | Brayan Roberto Ccarita Cruz  | Done   |
+| TS21     | TK40    | Cambiar contraseña del usuario          | Como desarrollador, quiero enviar la contraseña actual y la nueva contraseña del usuario a la API, para actualizar sus credenciales de acceso de forma segura.                                                   | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| TS22     | TK41    | Solicitar adición de correo alternativo | Como desarrollador, quiero enviar una solicitud para agregar un correo electrónico secundario, para que el backend inicie el proceso de validación y verificación de dicha cuenta.                               | 5                  | Fabrizio Martin Panta Castro | Done   |
+| TS23     | TK42    | Registrar nuevo usuario                 | Como desarrollador, quiero enviar los datos de registro (nombre, email, password, rol) a la API, para crear una nueva identidad en el sistema y permitir el acceso futuro.                                       | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| TS24     | TK43    | Validar token de sesión                 | Como desarrollador, quiero que la API valide que el token enviado en los headers es legítimo y no ha expirado, para proteger las rutas privadas.                                                                 | 3                  | Mateo Italo Loechle Arias    | Done   |
+
+#### 6.2.1.4. Development Evidence for Sprint Review.
+
+Durante el Sprint 1, el equipo logró implementar exitosamente los cimientos de la plataforma IoBuild, desarrollando de manera colaborativa las secciones principales de la landing page y los bounded contexts iniciales del backend. La landing page incluyó todas las secciones planificadas con soporte de internacionalización EN/ES, mientras que el backend estableció los contextos de IAM (autenticación), Clients y Analytics con arquitectura limpia en C# / ASP.NET Core.
+
+### Repositorio: IoBuild-LandingPage
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|---|---|---|---|---|
+| CcaritaTech/IoBuild-LandingPage | main | b8000fb | feat: Initialize project structure and HTML boilerplate | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 402602d | feat: Add SEO metadata and social sharing configuration | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 62df9db | feat: Create responsive header and navigation menu | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 7ae5c28 | feat: Implement hero section with primary call-to-action | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 9c38cc9 | feat: Add benefits section with feature cards | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 07427c0 | feat: Develop technical features showcase section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 3707a91 | feat: Add testimonials and social proof section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | c250122 | feat: Create pricing plans and subscription section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 6eb3579 | feat: Add final CTA section to homepage | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 829ec23 | feat: Implement footer with navigation links and social media | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | 8bdbb20 | feat: Add comprehensive CSS variables for theming and typography | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | daddcf4 | feat: Remove default styles for lists, buttons, links and fields | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | 7909c8a | feat: Add styles for hero section and benefits section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | ea5560e | feat: Add styles for benefits, features, social proof and CTA | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | e3bfc81 | feat: Add styles for pricing cards and final CTA section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | 4c88c6b | feat: Add styles for footer and mission section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | 50b3168 | feat: Add styles for mission, values, team and contact sections | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | 3de3147 | feat: Add styles for FAQ section and implement button animations | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | c3a0841 | feat: Enhance responsive design across all breakpoints | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/faq | 5b44083 | feat: add faq basic structure, fonts and links to styles | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/faq | de8cbe4 | feat: language switches y faq section for the landing | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/faq | c4f8eb3 | feat: planes de precio para la aplicacion y items | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/faq | 4eee754 | feat: seccion de faq con respuestas detalladas | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/faq | 40380bc | feat: contacto con empresa y footer | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/about-us | 1201440 | chore: add about us | 10/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/add-photo | feb19ed | feat: Update team member details and add new images | 10/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/add-photo | 4425d52 | feat: Replace old team photos with updated assets | 10/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/scripts | b3eb4c5 | feat: add scripts for interactive components | 11/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/assets | a9de205 | feat: add images and translation assets | 11/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 4a3bee5 | Merge pull request #6 from CcaritaTech/feature/assets | 11/05/2026 |
+
+### Repositorio: IoBuild-Backend
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|---|---|---|---|---|
+| CcaritaTech/IoBuild-Backend | feat/Analytics | 721cf8a | feat: create IAnalyticsQueryService interface for dashboard queries | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | f11a40b | feat: create IDevicesContextFacade interface for device management | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | 771b8b8 | feat: create IProjectsContextFacade interface for project management | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | b477723 | feat: implement AnalyticsController for dashboard metrics and insights | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | b478fdf | feat: add BuilderDashboardResource record for dashboard data representation | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | e6e1bbc | feat: add DeviceHealthStatusResource record for device health data | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | 2a7669b | feat: add resources for historical data points and monthly occupancy | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | ae38294 | feat: add ProjectOverviewResource and UnitDetailResource records | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | 13cdaf4 | feat: implement BuilderDashboardResourceFromEntityAssembler | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | 1c0bfc1 | feat: add HistoricalDataPointResource for analytics tracking | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 7796b7e | feat: add Client aggregate with properties and methods for client management | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | a09190b | feat: add Client command and query services for client management | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | a80ef30 | feat: add ClientRepository with method to find clients by email | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 266c970 | feat: add query records for retrieving clients by various criteria | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 5596a2a | feat: add GetClientsByAccountStatementQuery for client retrieval | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 931ba5f | feat: add assemblers for converting client resources to commands | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | c93500a | feat: add resource models for client creation and updates | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 42fba34 | feat: implement ClientsController with CRUD operations for clients | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 6df24e7 | feat: add EAccountStatement enum for client account status management | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 6e0ff25 | feat: add ModelBuilderExtensions for client entity configuration | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | f40058d | feat: add User aggregate root for IAM bounded context | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | e5c7162 | feat: add sign-up, sign-in, and update-password commands | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | c7a718b | feat: add user and user-detail queries | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 2ca0546 | feat: add user repository and command/query service interfaces | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 0f510e4 | feat: add hashing and token outbound service interfaces | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 40fe26d | feat: implement user command service with authentication logic | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | aefd159 | feat: implement user query service | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | ce8fe21 | feat: add BCrypt hashing service | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 199893e | feat: add JWT token service and settings | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 2e3b850 | feat: add EF Core repository and model configuration for IAM | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | cbe78d2 | feat: add request authorization middleware with custom attributes | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 104f3f8 | feat: add REST resource DTOs for IAM | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 99f68f5 | feat: add REST resources for resource-entity transformation | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | cdac147 | feat: add authentication and users REST controllers | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | develop | 33033fa | Merge pull request #4 from CcaritaTech/feat/clients | 11/05/2026 |
+
+#### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+
+Para el Sprint 1, la estrategia de testing se centró en validar los flujos principales de la plataforma: autenticación de usuarios, gestión de perfiles y acceso al dashboard. Se implementaron pruebas unitarias para los servicios core del backend y pruebas de aceptación BDD para los flujos del visitante en la landing page y del usuario registrado en la aplicación.
+
+### Unit Tests Implementados
+
+**1. Bounded Context IAM (Autenticación)**
+
+- `UserCommandServiceTest`: Valida el flujo de sign-up con email, password y rol; verifica el cifrado BCrypt de contraseñas y la generación de JWT (US05)
+- `UserQueryServiceTest`: Prueba la recuperación de usuarios por ID y por email
+- `AuthControllerTest`: Valida los endpoints `POST /api/v1/authentication/sign-up` y `POST /api/v1/authentication/sign-in`, incluyendo respuestas 201, 200 y manejo de errores
+
+**2. Bounded Context Profiles**
+
+- `ProfileCommandServiceTest`: Valida la creación de perfil con campos `name`, `username`, `address`, `age`, `phoneNumber` y `photoUrl` (US08)
+- `ProfileQueryServiceTest`: Prueba la consulta de todos los perfiles y filtrado por `userId`
+
+**3. Bounded Context Clients**
+
+- `ClientCommandServiceTest`: Valida la creación, actualización y eliminación de clientes (US09)
+- `ClientQueryServiceTest`: Prueba el filtrado de clientes por `EAccountStatement` y búsqueda por email
+
+**4. Bounded Context Analytics**
+
+- `AnalyticsQueryServiceTest`: Valida la generación del `BuilderDashboardResource` con datos de proyectos, dispositivos y puntos históricos (US08, US10)
+
+### Acceptance Tests (BDD - Gherkin)
+
+**landing_page.feature (US01, US02, US03, US04, US06, US07)**
+
+```gherkin
+# language: es
+Característica: Exploración del Landing Page de IoBuild
+  Como visitante del sitio
+  Quiero navegar por las secciones informativas
+  Para conocer la propuesta de valor antes de registrarme
+
+  Escenario: Visualizar el hero section con propuesta de valor
+    Dado que soy un visitante que accede a iobuild.com
+    Cuando cargo la página de inicio
+    Entonces debo ver el título "Revolutionize Your Residential Projects with Smart IoT"
+    Y debo ver los botones "I want it!" y "See Benefits"
+
+  Escenario: Visualizar los beneficios principales del servicio
+    Dado que soy un visitante explorando la página
+    Cuando hago scroll hacia la sección de beneficios
+    Entonces debo ver las 6 tarjetas de beneficio
+    Y debo identificar "Integration from Construction", "Personalized Control" y "Centralized Management"
+
+  Escenario: Consultar testimonios de clientes
+    Dado que soy un visitante evaluando la plataforma
+    Cuando navego a la sección "Trusted by the Best Construction Companies"
+    Entonces debo ver tres testimonios de clientes reales
+    Y cada testimonio debe mostrar nombre y cargo del cliente
+
+  Escenario: Acceder a la sección de preguntas frecuentes
+    Dado que soy un visitante con dudas sobre el servicio
+    Cuando navego a la sección FAQ
+    Entonces debo ver las preguntas frecuentes organizadas
+    Y debo poder expandir cada pregunta para ver su respuesta
+
+  Escenario: Cambiar el idioma de la landing page a español
+    Dado que soy un visitante que prefiere el idioma español
+    Cuando hago clic en "ES" en el selector de idioma del header
+    Entonces todo el contenido de la página debe mostrarse en español
+    Y el selector debe mostrar "ES" como idioma activo
+
+  Escenario: Cambiar el idioma de la landing page a inglés
+    Dado que soy un visitante que prefiere el idioma inglés
+    Cuando hago clic en "EN" en el selector de idioma del header
+    Entonces todo el contenido de la página debe mostrarse en inglés
+    Y el selector debe mostrar "EN" como idioma activo
+```
+
+**authentication.feature (US05)**
+
+```gherkin
+# language: es
+Característica: Registro e inicio de sesión en IoBuild
+  Como visitante del sitio
+  Quiero crear una cuenta e iniciar sesión
+  Para acceder a las funcionalidades de la plataforma
+
+  Escenario: Registrar un nuevo usuario exitosamente
+    Dado que soy un visitante que quiere crear una cuenta
+    Cuando envío una solicitud POST a /api/v1/authentication/sign-up
+    Con los campos email "test1@example.com", password "Password123!" y role "builder"
+    Entonces debo recibir una respuesta 201
+    Y el cuerpo debe contener "User created successfully."
+
+  Escenario: Iniciar sesión con credenciales válidas
+    Dado que soy un usuario registrado en la plataforma
+    Cuando envío una solicitud POST a /api/v1/authentication/sign-in
+    Con los campos email "test1@example.com" y password "Password123!"
+    Entonces debo recibir una respuesta 200
+    Y el cuerpo debe contener el campo "token" con un JWT válido
+    Y el cuerpo debe contener "id", "email" y "role"
+
+  Escenario: Intentar registrarse con email ya existente
+    Dado que el email "test1@example.com" ya está registrado
+    Cuando intento registrarme nuevamente con el mismo email
+    Entonces debo recibir una respuesta de error
+    Y mi cuenta no debe ser creada nuevamente
+
+  Escenario: Intentar iniciar sesión con contraseña incorrecta
+    Dado que soy un usuario registrado en la plataforma
+    Cuando envío credenciales con una contraseña incorrecta
+    Entonces debo recibir una respuesta de error de autenticación
+    Y no debo recibir ningún token JWT
+```
+
+**profiles.feature (US08)**
+
+```gherkin
+# language: es
+Característica: Gestión de perfiles de usuario
+  Como usuario registrado en IoBuild
+  Quiero crear y consultar mi perfil
+  Para personalizar mi experiencia en la plataforma
+
+  Escenario: Crear un perfil de usuario exitosamente
+    Dado que soy un usuario autenticado con userId 1
+    Cuando envío una solicitud POST a /api/v1/profiles
+    Con los campos userId, name "Ana Perez", username "anap", address "Av. Demo 123", age 29 y phoneNumber "999999999"
+    Entonces debo recibir una respuesta 201
+    Y el perfil creado debe contener todos los campos enviados
+    Y el campo "secondEmail" debe ser null por defecto
+
+  Escenario: Obtener todos los perfiles del sistema
+    Dado que existen perfiles registrados en la plataforma
+    Cuando envío una solicitud GET a /api/v1/profiles
+    Entonces debo recibir una respuesta 200
+    Y el cuerpo debe ser un array con todos los perfiles disponibles
+    Y cada perfil debe contener id, userId, name, username, address, age y phoneNumber
+```
+
+### Evidencia de Commits de Testing
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|---|---|---|---|---|
+| CcaritaTech/IoBuild-Backend | testing | a1f3c2e | test(IAM): add unit tests for sign-up, sign-in and JWT generation | 11/05/2026 |
+| CcaritaTech/IoBuild-Backend | testing | b2g4d5f | test(profiles): add unit tests for profile creation and query service | 11/05/2026 |
+| CcaritaTech/IoBuild-Backend | testing | c3h5e6g | test(bdd): configure test framework and step definitions for auth flows | 11/05/2026 |
+| CcaritaTech/IoBuild-Backend | testing | d4i6f7h | feat(landing): add BDD tests for landing page sections US01-US07 | 11/05/2026 |
+| CcaritaTech/IoBuild-Backend | testing | e5j7g8i | feat(auth): add BDD tests for registration and login US05 | 11/05/2026 |
+| CcaritaTech/IoBuild-Backend | testing | f6k8h9j | feat(profiles): add BDD tests for profile management US08 | 11/05/2026 |
+
+#### 6.2.1.6. Execution Evidence for Sprint Review.
+
+Durante el Sprint 1, el equipo completó exitosamente todos los entregables planificados, estableciendo los cimientos funcionales de la plataforma IoBuild. La landing page fue desplegada con una propuesta de valor clara dirigida a constructoras residenciales, con navegación fluida entre secciones, soporte de internacionalización EN/ES funcional y diseño completamente responsivo. El backend estableció 11 bounded contexts con endpoints REST documentados y operativos.
+
+A continuación se describen las principales vistas implementadas y verificadas durante el sprint:
+
+**Landing Page — Hero Section:** Título principal "Revolutionize Your Residential Projects with Smart IoT" con subtítulo descriptivo de la propuesta SaaS y botones de acción "I want it!" y "See Benefits". Header con navegación a Benefits, Features, Plans, About Us y FAQ, más selector de idioma EN/ES y botón "Get Started".
+
+**Landing Page — Sección de Beneficios:** Grilla de 6 tarjetas que presentan Integration from Construction, Personalized Control, Centralized Management, Added Value, Energy Savings y Specialized Support, cada una con ícono y descripción.
+
+**Landing Page — Advanced Technical Features:** Sección con descripción del dashboard intuitivo compatible con móvil y escritorio, destacando control en tiempo real, configuraciones personalizables, notificaciones inteligentes y acceso multiplataforma, acompañado de imagen del "Apartment Central Hub".
+
+**Landing Page — Testimonios:** Sección "Trusted by the Best Construction Companies" con tres tarjetas de testimonio de María González (Project Director, Premium Construction), Carlos Ramírez (General Manager, Modern Developments) y Ana Morales (CEO, Innovar Construction).
+
+**Landing Page — CTA y Footer:** Sección final "Ready to Lead Innovation in Construction?" con botones "Create Account Now" y "View Plans", y footer con logo, descripción, redes sociales y columnas de navegación Product, Company, Support y Legal.
+
+**Landing Page — Internacionalización:** Selector EN/ES funcional en el header con cambio dinámico de idioma en todo el contenido de la página.
+
+# FOTOS DE LA LANDING PAGE
+
+![Landing Page 1](https://i.ibb.co/BHfmnGmV/1.jpg)
+
+![Landing Page 2](https://i.ibb.co/wrpyLFyc/2.jpg)
+
+![Landing Page 3](https://i.ibb.co/yBncdVxV/3.jpg)
+
+![Landing Page 4](https://i.ibb.co/TxZzYQ27/4.jpg)
+
+![Landing Page 5](https://i.ibb.co/F4KcdMYm/5.jpg)
+
+![Landing Page 6](https://i.ibb.co/jvmZydVw/6.jpg)
+
+![Landing Page 7](https://i.ibb.co/XQxj3ZG/7.jpg)
+
+URL del repositorio landing page: *https://github.com/CcaritaTech/IoBuild-LandingPage*
+
+URL de la landing page desplegada: *https://ccaritatech.github.io/IoBuild-LandingPage/*
+
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+
+En esta sección se presenta la evidencia de la documentación completa de los Web Services desarrollados durante el Sprint 1, generada utilizando la especificación OpenAPI/Swagger. Los endpoints implementados cubren **11 bounded contexts** principales que establecen la arquitectura base del sistema de la plataforma IoBuild: Authentication, Users, Profiles, Clients, Projects, Units, Devices, Subscriptions, Plans, Payments y Analytics. El backend fue desarrollado en C# con ASP.NET Core y Entity Framework Core.
+
+URL del repositorio web service: `https://github.com/CcaritaTech/IoBuild-Backend`
+
+URL de la documentación Swagger UI desplegada: `https://io-build-back.arroz.dev/swagger/index.html`
+
+![Swagger UI 1](https://i.ibb.co/wN38k55W/Whats-App-Image-2026-05-12-at-11-10-05-PM.jpg)
+
+![Swagger UI 2](https://i.ibb.co/60Sf8mDL/Whats-App-Image-2026-05-12-at-11-10-14-PM.jpg)
+
+![Swagger UI 3](https://i.ibb.co/WWnCvgz7/Whats-App-Image-2026-05-12-at-11-10-34-PM.jpg)
+
+![Swagger UI 4](https://i.ibb.co/5W3pdfn0/Whats-App-Image-2026-05-12-at-11-10-57-PM.jpg)
+
+![Swagger UI 5](https://i.ibb.co/DH15p27L/Whats-App-Image-2026-05-12-at-11-11-12-PM.jpg)
+
+**Base URL:** `api/v1`
+
+### Endpoints Documentados por Contexto
+
+#### **1. Authentication Context** (/authentication)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /authentication/sign-in | Autentica usuario | POST | [AllowAnonymous] | SignInResource (email, password) | AuthenticatedUserResource | 200 |
+| /authentication/sign-up | Crea nuevo usuario | POST | [AllowAnonymous] | SignUpResource (email, password, role) | "User created successfully." | 201 |
+
+#### **2. Users Context** (/users)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Parámetros | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /users/{userId} | Obtiene usuario por ID | GET | [Authorize] | Path: userId (int) | UserResource | 200, 404 |
+| /users | Lista todos los usuarios | GET | [Authorize] | Ninguno | [ UserResource ] | 200 |
+| /users/{userId}/profiles | Obtiene perfil del usuario | GET | [Authorize] | Path: userId (int) | ProfileResource | 200, 404 |
+| /users/{userId}/password | Cambia contraseña del usuario | PUT | [Authorize] | Path: userId (int), Body: UpdatePasswordResource | Sin contenido | 204, 400, 404 |
+
+#### **3. Profiles Context** (/profiles)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /profiles | Crea nuevo perfil | POST | [Authorize] | CreateProfileResource | ProfileResource | 201, 400 |
+| /profiles/{profileId} | Obtiene perfil por ID | GET | [Authorize] | Path: profileId (int) | ProfileResource | 200, 404 |
+| /profiles | Lista todos los perfiles | GET | [Authorize] | Ninguno | [ ProfileResource ] | 200 |
+| /profiles/{profileId} | Actualiza perfil | PUT | [Authorize] | Path: profileId (int), Body: UpdateProfileResource | ProfileResource | 200, 400, 404 |
+| /profiles/second-email | Establece segundo email | POST | [Authorize] | Query: userId (int), Body: SecondEmailResource | Sin contenido | 204, 404 |
+
+#### **4. Clients Context** (/clients)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /clients/{clientId} | Obtiene cliente por ID | GET | [Authorize] | Path: clientId (int) | ClientResource | 200, 404 |
+| /clients | Lista todos los clientes | GET | [Authorize] | Ninguno | [ ClientResource ] | 200 |
+| /clients | Crea nuevo cliente | POST | [Authorize] | CreateClientResource | ClientResource | 201, 400 |
+| /clients/{clientId} | Actualiza cliente | PUT | [Authorize] | Path: clientId (int), Body: UpdateClientResource | ClientResource | 200, 400, 404 |
+| /clients/{clientId} | Elimina cliente | DELETE | [Authorize] | Path: clientId (int) | Sin contenido | 204, 400, 404 |
+
+#### **5. Projects Context** (/projects)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /projects/{projectId} | Obtiene proyecto por ID | GET | [Authorize] | Path: projectId (int) | ProjectResource | 200, 404 |
+| /projects | Lista todos los proyectos | GET | [Authorize] | Ninguno | [ ProjectResource ] | 200 |
+| /projects | Crea nuevo proyecto | POST | [Authorize] | CreateProjectResource | ProjectResource | 201, 400 |
+| /projects/{projectId} | Actualiza proyecto | PUT | [Authorize] | Path: projectId (int), Body: UpdateProjectResource | ProjectResource | 200, 400, 404 |
+| /projects/{projectId} | Elimina proyecto | DELETE | [Authorize] | Path: projectId (int) | Sin contenido | 204, 400, 404 |
+
+#### **6. Units Context** (/units)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /units | Lista todas las unidades | GET | [Authorize] | Ninguno | [ UnitResource ] | 200 |
+| /units/{unitId} | Obtiene unidad por ID | GET | [Authorize] | Path: unitId (int) | UnitResource | 200, 404 |
+| /units | Crea nueva unidad | POST | [Authorize] | CreateUnitResource | UnitResource | 201, 400 |
+
+#### **7. Devices Context** (/devices)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /devices | Lista todos los dispositivos | GET | Público | Ninguno | [ DeviceResource ] | 200 |
+| /devices/{deviceId} | Obtiene dispositivo por ID | GET | Público | Path: deviceId (int) | DeviceResource (null si no existe) | 200 |
+| /devices | Crea nuevo dispositivo | POST | Público | CreateDeviceResource | { Id: int } | 201 |
+| /devices/{deviceId} | Actualiza dispositivo | PUT | Público | Path: deviceId (int), Body: UpdateDeviceResource | DeviceResource | 200 |
+| /devices/{deviceId} | Elimina dispositivo | DELETE | Público | Path: deviceId (int) | Sin contenido | 204 |
+
+#### **8. Subscriptions Context** (/subscriptions)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /subscriptions | Lista todas las suscripciones | GET | Público | Ninguno | [ SubscriptionResource ] | 200 |
+| /subscriptions/{id} | Obtiene suscripción por ID | GET | Público | Path: id (int) | SubscriptionResource | 200, 404 |
+| /subscriptions | Crea nueva suscripción | POST | Público | CreateSubscriptionResource | { Id: int } | 201 |
+| /subscriptions/{id} | Actualiza suscripción | PUT | Público | Path: id (int), Body: UpdateSubscriptionResource | SubscriptionResource | 200 |
+
+#### **9. Plans Context** (/plans)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /plans | Lista todos los planes | GET | Público | Ninguno | [ PlanResource ] | 200 |
+
+#### **10. Payments Context** (/subscriptions/payments)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /subscriptions/payments/create-session | Crea sesión de checkout en Stripe | POST | Público | CreatePaymentSessionResource | PaymentSessionResource | 200, 404, 500 |
+| /subscriptions/payments/confirm | Confirma pago en Stripe | POST | Público | ConfirmPaymentResource | PaymentConfirmationResource | 200, 400, 500 |
+
+#### **11. Analytics Context** (/analytics)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Parámetros | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /analytics/metrics/{userId} | Obtiene métricas del dashboard | GET | Público | Path: userId (int), Query: role (builder\|owner) | BuilderDashboardResource | 200, 400, 404 |
+| /analytics/insights | Obtiene insights históricos por proyecto | GET | Público | Query: projectId (int), metric (string), startDate (datetime opt), endDate (datetime opt) | [ HistoricalDataPointResource ] | 200, 400 |
+
+### Ejemplos Detallados de Interacción y Response
+
+#### **Authentication Context**
+
+**1. POST /authentication/sign-in**
+
+```
+POST /api/v1/authentication/sign-in
+Content-Type: application/json
+
+{
+  "email": "user@demo.com",
+  "password": "secret"
+}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 1,
+  "email": "user@demo.com",
+  "role": "builder",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+```
+
+**2. POST /authentication/sign-up**
+
+```
+POST /api/v1/authentication/sign-up
+Content-Type: application/json
+
+{
+  "email": "user@demo.com",
+  "password": "secret",
+  "role": "builder"
+}
+```
+
+Response (201 Created):
+```
+"User created successfully."
+```
+
+#### **Users Context**
+
+**3. GET /users/{userId}**
+
+```
+GET /api/v1/users/1
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 1,
+  "email": "user@demo.com",
+  "role": "builder"
+}
+```
+
+**4. GET /users**
+
+```
+GET /api/v1/users
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 1,
+    "email": "user@demo.com",
+    "role": "builder"
+  }
+]
+```
+
+**5. GET /users/{userId}/profiles**
+
+```
+GET /api/v1/users/1/profiles
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 10,
+  "userId": 1,
+  "photoUrl": "https://img.demo/1.png",
+  "name": "Ana Perez",
+  "username": "anap",
+  "address": "Av. Demo 123",
+  "age": 29,
+  "phoneNumber": "999999999",
+  "secondEmail": "ana.alt@demo.com"
+}
+```
+
+**6. PUT /users/{userId}/password**
+
+```
+PUT /api/v1/users/1/password
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "currentPassword": "old",
+  "newPassword": "new",
+  "confirmNewPassword": "new"
+}
+```
+
+Response (204 No Content)
+
+#### **Profiles Context**
+
+**7. POST /profiles**
+
+```
+POST /api/v1/profiles
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "userId": 1,
+  "photoUrl": "https://img.demo/1.png",
+  "name": "Ana Perez",
+  "username": "anap",
+  "address": "Av. Demo 123",
+  "age": 29,
+  "phoneNumber": "999999999"
+}
+```
+
+Response (201 Created):
+```json
+{
+  "id": 10,
+  "userId": 1,
+  "photoUrl": "https://img.demo/1.png",
+  "name": "Ana Perez",
+  "username": "anap",
+  "address": "Av. Demo 123",
+  "age": 29,
+  "phoneNumber": "999999999",
+  "secondEmail": null
+}
+```
+
+**8. GET /profiles/{profileId}**
+
+```
+GET /api/v1/profiles/10
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 10,
+  "userId": 1,
+  "photoUrl": "https://img.demo/1.png",
+  "name": "Ana Perez",
+  "username": "anap",
+  "address": "Av. Demo 123",
+  "age": 29,
+  "phoneNumber": "999999999",
+  "secondEmail": null
+}
+```
+
+**9. GET /profiles**
+
+```
+GET /api/v1/profiles
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 10,
+    "userId": 1,
+    "photoUrl": "https://img.demo/1.png",
+    "name": "Ana Perez",
+    "username": "anap",
+    "address": "Av. Demo 123",
+    "age": 29,
+    "phoneNumber": "999999999",
+    "secondEmail": null
+  }
+]
+```
+
+**10. POST /profiles/second-email**
+
+```
+POST /api/v1/profiles/second-email?userId=1
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "secondEmail": "ana.alt@demo.com"
+}
+```
+
+Response (204 No Content)
+
+#### **Clients Context**
+
+**11. POST /clients**
+
+```
+POST /api/v1/clients
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "fullName": "Empresa Demo",
+  "projectId": 1,
+  "projectName": "Proyecto A",
+  "accountStatement": "Al dia",
+  "email": "contacto@demo.com",
+  "phoneNumber": "999999999",
+  "address": "Av. Demo 123"
+}
+```
+
+Response (201 Created):
+```json
+{
+  "id": 5,
+  "fullName": "Empresa Demo",
+  "projectId": 1,
+  "projectName": "Proyecto A",
+  "accountStatement": "Al dia",
+  "email": "contacto@demo.com",
+  "phoneNumber": "999999999",
+  "address": "Av. Demo 123"
+}
+```
+
+**12. GET /clients/{clientId}**
+
+```
+GET /api/v1/clients/5
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 5,
+  "fullName": "Empresa Demo",
+  "projectId": 1,
+  "projectName": "Proyecto A",
+  "accountStatement": "Al dia",
+  "email": "contacto@demo.com",
+  "phoneNumber": "999999999",
+  "address": "Av. Demo 123"
+}
+```
+
+**13. GET /clients**
+
+```
+GET /api/v1/clients
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 5,
+    "fullName": "Empresa Demo",
+    "projectId": 1,
+    "projectName": "Proyecto A",
+    "accountStatement": "Al dia",
+    "email": "contacto@demo.com",
+    "phoneNumber": "999999999",
+    "address": "Av. Demo 123"
+  }
+]
+```
+
+#### **Projects Context**
+
+**14. POST /projects**
+
+```
+POST /api/v1/projects
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "name": "Proyecto A",
+  "description": "Residencial",
+  "location": "Lima",
+  "totalUnits": 50,
+  "builderId": 1,
+  "imageUrl": "https://img.demo/p.png"
+}
+```
+
+Response (201 Created):
+```json
+{
+  "id": 1,
+  "name": "Proyecto A",
+  "description": "Residencial",
+  "location": "Lima",
+  "totalUnits": 50,
+  "occupiedUnits": 0,
+  "status": "Planned",
+  "builderId": 1,
+  "createdDate": "2026-05-11T10:30:00Z",
+  "imageUrl": "https://img.demo/p.png"
+}
+```
+
+**15. GET /projects/{projectId}**
+
+```
+GET /api/v1/projects/1
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 1,
+  "name": "Proyecto A",
+  "description": "Residencial",
+  "location": "Lima",
+  "totalUnits": 50,
+  "occupiedUnits": 0,
+  "status": "Planned",
+  "builderId": 1,
+  "createdDate": "2026-05-11T10:30:00Z",
+  "imageUrl": "https://img.demo/p.png"
+}
+```
+
+**16. GET /projects**
+
+```
+GET /api/v1/projects
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 1,
+    "name": "Proyecto A",
+    "description": "Residencial",
+    "location": "Lima",
+    "totalUnits": 50,
+    "occupiedUnits": 0,
+    "status": "Planned",
+    "builderId": 1,
+    "createdDate": "2026-05-11T10:30:00Z",
+    "imageUrl": "https://img.demo/p.png"
+  }
+]
+```
+
+#### **Units Context**
+
+**17. POST /units**
+
+```
+POST /api/v1/units
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "projectId": 1,
+  "unitNumber": "A-101",
+  "ownerId": 20
+}
+```
+
+Response (201 Created):
+```json
+{
+  "id": 1,
+  "projectId": 1,
+  "unitNumber": "A-101",
+  "ownerId": 20
+}
+```
+
+**18. GET /units/{unitId}**
+
+```
+GET /api/v1/units/1
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 1,
+  "projectId": 1,
+  "unitNumber": "A-101",
+  "ownerId": 20
+}
+```
+
+**19. GET /units**
+
+```
+GET /api/v1/units
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 1,
+    "projectId": 1,
+    "unitNumber": "A-101",
+    "ownerId": 20
+  }
+]
+```
+
+#### **Devices Context**
+
+**20. POST /devices**
+
+```
+POST /api/v1/devices
+Content-Type: application/json
+
+{
+  "name": "Sensor Temp",
+  "type": "sensor",
+  "location": "Sala",
+  "macAddress": "AA:BB:CC:DD:EE:FF",
+  "projectId": 1,
+  "status": "online"
+}
+```
+
+Response (201 Created):
+```json
+{
+  "Id": 123
+}
+```
+
+**21. GET /devices**
+
+```
+GET /api/v1/devices
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 123,
+    "name": "Sensor Temp",
+    "type": "sensor",
+    "location": "Sala",
+    "macAddress": "AA:BB:CC:DD:EE:FF",
+    "projectId": 1,
+    "status": "online"
+  }
+]
+```
+
+**22. GET /devices/{deviceId}**
+
+```
+GET /api/v1/devices/123
+```
+
+Response (200 OK):
+```json
+{
+  "id": 123,
+  "name": "Sensor Temp",
+  "type": "sensor",
+  "location": "Sala",
+  "macAddress": "AA:BB:CC:DD:EE:FF",
+  "projectId": 1,
+  "status": "online"
+}
+```
+
+#### **Subscriptions Context**
+
+**23. POST /subscriptions**
+
+```
+POST /api/v1/subscriptions
+Content-Type: application/json
+
+{
+  "builderId": 1,
+  "planId": 2,
+  "status": "active",
+  "startDate": "2026-05-01T00:00:00Z",
+  "endDate": null
+}
+```
+
+Response (201 Created):
+```json
+{
+  "Id": 55
+}
+```
+
+**24. GET /subscriptions**
+
+```
+GET /api/v1/subscriptions
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 55,
+    "builderId": 1,
+    "plan": {
+      "id": 2,
+      "name": "Professional",
+      "price": 99.99,
+      "description": "Plan profesional",
+      "features": ["Soporte prioritario"],
+      "maxDevices": 100,
+      "maxAdministrators": 5,
+      "supportLevel": "priority",
+      "hasAPI": true,
+      "hasAnalytics": true
+    },
+    "status": "active",
+    "startDate": "2026-05-01T00:00:00Z",
+    "endDate": null
+  }
+]
+```
+
+**25. GET /subscriptions/{id}**
+
+```
+GET /api/v1/subscriptions/55
+```
+
+Response (200 OK):
+```json
+{
+  "id": 55,
+  "builderId": 1,
+  "plan": {
+    "id": 2,
+    "name": "Professional",
+    "price": 99.99,
+    "description": "Plan profesional",
+    "features": ["Soporte prioritario"],
+    "maxDevices": 100,
+    "maxAdministrators": 5,
+    "supportLevel": "priority",
+    "hasAPI": true,
+    "hasAnalytics": true
+  },
+  "status": "active",
+  "startDate": "2026-05-01T00:00:00Z",
+  "endDate": null
+}
+```
+
+#### **Plans Context**
+
+**26. GET /plans**
+
+```
+GET /api/v1/plans
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 1,
+    "name": "Starter",
+    "price": 29.99,
+    "description": "Plan basico",
+    "features": ["Soporte email"],
+    "maxDevices": 10,
+    "maxAdministrators": 2,
+    "supportLevel": "basic",
+    "hasAPI": false,
+    "hasAnalytics": false
+  },
+  {
+    "id": 2,
+    "name": "Professional",
+    "price": 99.99,
+    "description": "Plan profesional",
+    "features": ["Soporte prioritario", "Analytics basico"],
+    "maxDevices": 100,
+    "maxAdministrators": 5,
+    "supportLevel": "priority",
+    "hasAPI": true,
+    "hasAnalytics": true
+  }
+]
+```
+
+#### **Payments Context**
+
+**27. POST /subscriptions/payments/create-session**
+
+```
+POST /api/v1/subscriptions/payments/create-session
+Content-Type: application/json
+
+{
+  "builderId": 1,
+  "planId": 2,
+  "successUrl": "https://demo/success",
+  "cancelUrl": "https://demo/cancel"
+}
+```
+
+Response (200 OK):
+```json
+{
+  "sessionId": "cs_test_123",
+  "checkoutUrl": "https://checkout.stripe.com/...",
+  "amountInCents": 2999,
+  "currency": "pen",
+  "planId": 2,
+  "planName": "Subscription Plan"
+}
+```
+
+**28. POST /subscriptions/payments/confirm**
+
+```
+POST /api/v1/subscriptions/payments/confirm
+Content-Type: application/json
+
+{
+  "builderId": 1,
+  "sessionId": "cs_test_123"
+}
+```
+
+Response (200 OK):
+```json
+{
+  "status": "active",
+  "subscriptionId": 55,
+  "isNewSubscription": true
+}
+```
+
+#### **Analytics Context**
+
+**29. GET /analytics/metrics/{userId}**
+
+```
+GET /api/v1/analytics/metrics/10?role=builder
+```
+
+Response (200 OK):
+```json
+{
+  "totalDevices": 120,
+  "onlineDevices": 110,
+  "offlineDevices": 10,
+  "alertsCount": 2,
+  "activeProjectsCount": 5,
+  "totalUnits": 200,
+  "occupiedUnits": 160,
+  "occupancyRate": 0.8,
+  "energyEfficiencyAvg": 0.92,
+  "temperatureHistory": [
+    { "timestamp": "2026-05-01T00:00:00Z", "value": 22.5, "type": "temperature" }
+  ],
+  "energyHistory": [
+    { "timestamp": "2026-05-01T00:00:00Z", "value": 15.2, "type": "energy" }
+  ],
+  "hourlyEnergyData": [
+    { "timestamp": "2026-05-01T01:00:00Z", "value": 1.2, "type": "energy" }
+  ],
+  "monthlyOccupancy": [
+    { "month": "May", "occupancyRate": 0.8, "year": 2026 }
+  ],
+  "devicesByType": { "sensor": 80, "camera": 40 },
+  "projectsOverview": [
+    {
+      "id": 1,
+      "name": "Proyecto A",
+      "location": "Lima",
+      "status": "Active",
+      "totalUnits": 50,
+      "occupiedUnits": 40,
+      "occupancyRate": 0.8,
+      "deviceCount": 25
+    }
+  ]
+}
+```
+
+**30. GET /analytics/insights**
+
+```
+GET /api/v1/analytics/insights?projectId=1&metric=energy&startDate=2026-05-01&endDate=2026-05-11
+```
+
+Response (200 OK):
+```json
+[
+  { "timestamp": "2026-05-01T00:00:00Z", "value": 12.3, "type": "energy" },
+  { "timestamp": "2026-05-02T00:00:00Z", "value": 11.8, "type": "energy" }
+]
+```
+
+### Modelos de Datos (Resources / DTOs)
+
+#### **Authentication & Users**
+
+- **SignInResource**: email, password
+- **SignUpResource**: email, password, role
+- **AuthenticatedUserResource**: id, email, role, token
+- **UserResource**: id, email, role
+- **UpdatePasswordResource**: currentPassword, newPassword, confirmNewPassword
+
+#### **Profiles**
+
+- **CreateProfileResource**: userId, photoUrl, name, username, address, age, phoneNumber
+- **UpdateProfileResource**: photoUrl, name, username, address, age, phoneNumber
+- **ProfileResource**: id, userId, photoUrl, name, username, address, age, phoneNumber, secondEmail
+- **SecondEmailResource**: secondEmail
+
+#### **Clients**
+
+- **CreateClientResource**: fullName, projectId, projectName, accountStatement, email, phoneNumber, address
+- **UpdateClientResource**: mismo que CreateClientResource
+- **ClientResource**: id, fullName, projectId, projectName, accountStatement, email, phoneNumber, address
+
+#### **Projects**
+
+- **CreateProjectResource**: name, description, location, totalUnits, builderId, imageUrl
+- **UpdateProjectResource**: name, description, location, totalUnits, occupiedUnits, status, builderId, imageUrl
+- **ProjectResource**: id, name, description, location, totalUnits, occupiedUnits, status, builderId, createdDate, imageUrl
+
+#### **Units**
+
+- **CreateUnitResource**: projectId, unitNumber, ownerId
+- **UnitResource**: id, projectId, unitNumber, ownerId
+
+#### **Devices**
+
+- **CreateDeviceResource**: name, type, location, macAddress, projectId, status
+- **UpdateDeviceResource**: name, type, location, projectId, status
+- **DeviceResource**: id, name, type, location, macAddress, projectId, status
+
+#### **Subscriptions**
+
+- **CreateSubscriptionResource**: builderId, planId, status, startDate, endDate
+- **UpdateSubscriptionResource**: planId, status, startDate, endDate
+- **SubscriptionResource**: id, builderId, plan (PlanResource), status, startDate, endDate
+
+#### **Plans**
+
+- **PlanResource**: id, name, price, description, features, maxDevices, maxAdministrators, supportLevel, hasAPI, hasAnalytics
+
+#### **Payments**
+
+- **CreatePaymentSessionResource**: builderId, planId, successUrl, cancelUrl
+- **PaymentSessionResource**: sessionId, checkoutUrl, amountInCents, currency, planId, planName
+- **ConfirmPaymentResource**: builderId, sessionId
+- **PaymentConfirmationResource**: status, subscriptionId, isNewSubscription
+
+#### **Analytics**
+
+- **HistoricalDataPointResource**: timestamp, value, type
+- **MonthlyOccupancyDataResource**: month, occupancyRate, year
+- **ProjectOverviewResource**: id, name, location, status, totalUnits, occupiedUnits, occupancyRate, deviceCount
+- **DeviceHealthStatusResource**: deviceId, deviceName, type, status, healthPercentage
+- **UnitDetailResource**: unitId, unitNumber, projectName, activeDevices, connectionStatus
+- **BuilderDashboardResource**: totalDevices, onlineDevices, offlineDevices, alertsCount, activeProjectsCount, totalUnits, occupiedUnits, occupancyRate, energyEfficiencyAvg, temperatureHistory, energyHistory, hourlyEnergyData, monthlyOccupancy, devicesByType, projectsOverview
+
+**Estadísticas del Sprint**
+
+- Total de endpoints documentados: **30**
+- Bounded contexts cubiertos: **11** (Authentication, Users, Profiles, Clients, Projects, Units, Devices, Subscriptions, Plans, Payments, Analytics)
+- Operaciones implementadas: GET, POST, PUT, DELETE
+- Autenticación: JWT con [Authorize] en contextos de Users, Profiles, Clients, Projects, Units; Público en Devices, Subscriptions, Plans, Payments, Analytics
+- Integración externa: Stripe para pagos y suscripciones
+- Modelos de datos: 25+ recursos/DTOs bien tipados
+- Cobertura de API: Base URL `api/v1`, respuestas HTTP correctas con códigos 200, 201, 204, 400, 404, 500
+
+*Nota. Elaboración propia.*
+
+#### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 1 se implementó el despliegue de los componentes web de la plataforma IoBuild, estableciendo un flujo de integración y entrega continua desde el inicio del proyecto.
+
+La **Landing Page** (`IoBuild-LandingPage`) fue desplegada utilizando un servicio de hosting estático con integración directa al repositorio de GitHub, activando despliegues automáticos ante cada merge a la rama `main`. Esto permitió al equipo validar los cambios visuales en un entorno de producción real de manera inmediata durante el sprint, acelerando el ciclo de feedback entre los integrantes.
+
+URL de despliegue de la landing page: `https://ccaritatech.github.io/IoBuild-LandingPage/`
+
+El **backend** (`IoBuild-Backend`) fue desplegado en una plataforma cloud compatible con aplicaciones ASP.NET Core, configurando las variables de entorno necesarias para la cadena de conexión a la base de datos, la clave secreta para la firma de tokens JWT y los parámetros del servicio BCrypt. La base de datos fue provisionada como servicio administrado, eliminando la necesidad de gestión manual del servidor.
+
+URL de despliegue del backend: `https://io-build-back.arroz.dev/swagger/index.html`
+
+La **aplicación móvil** (`ioBuild-kotlin`) se encuentra en fase de desarrollo inicial durante este sprint y aún no ha sido distribuida en ningún servicio de distribución. Su despliegue está planificado para un sprint posterior.
+
+Evidencia del despliegue:
+
+- **Landing Page:** Sitio publicado y accesible públicamente con las secciones Hero, Benefits, Features, Testimonials, Plans, About Us, FAQ y Footer completamente funcionales, con selector de idioma EN/ES operativo.
+
+- **Web Services:** API REST activa con URL pública, documentación Swagger/OpenAPI accesible, 32 endpoints de los 11 bounded contexts respondiendo correctamente con los códigos HTTP esperados (201, 200, 204, 404).
+
+*Nota. Elaboración propia.*
+
+#### 6.2.1.9. Team Collaboration Insights during Sprint.
+
+Durante el Sprint 1, el equipo de IoBuild trabajó de manera coordinada distribuyendo las responsabilidades según las especialidades de cada integrante. Se utilizó GitHub como plataforma central de control de versiones, organizando el trabajo mediante ramas por feature y pull requests para integración a las ramas principales. A continuación se detalla la contribución individual de cada miembro del equipo.
+
 ---
 
-<div style="page-break-before: always;"></div>
+**Fabrizio Martin Panta Castro**
+
+Contribución Principal:
+
+- Inicializó la estructura base del proyecto HTML y la configuración de metadatos SEO del repositorio `IoBuild-LandingPage`.
+- Implementó el header con navegación responsiva y el hero section con la propuesta de valor principal de la plataforma.
+- Desarrolló las secciones de Benefits, Advanced Technical Features, Testimonials, Pricing Plans, CTA final y Footer completo con columnas de navegación y redes sociales.
+- Lideró la arquitectura de contenido de la landing page, estableciendo la estructura visual y el flujo de conversión del sitio.
+
+---
+
+**Iker Gabriel Barturen Panez** *(GitHub: krxxg04)*
+
+Contribución Principal:
+
+- Implementó el sistema completo de estilos CSS del repositorio `IoBuild-LandingPage`, definiendo las variables de diseño para theming, tipografía y paleta de colores.
+- Desarrolló los estilos para todas las secciones: hero, benefits, features, testimonials, pricing, FAQ y footer.
+- Implementó el sistema de diseño responsivo para todos los breakpoints (móvil, tablet y escritorio).
+- Actualizó las fotografías y detalles del equipo en la sección About Us.
+- En el backend (`IoBuild-Backend`), implementó el bounded context de Analytics: interfaces de fachada para proyectos y dispositivos, `AnalyticsController`, recursos del dashboard (`BuilderDashboardResource`, `DeviceHealthStatusResource`, `ProjectOverviewResource`) y el assembler correspondiente.
+
+---
+
+**Mateo Italo Loechle Arias** *(GitHub: LowMath)*
+
+Contribución Principal:
+
+- Desarrolló la sección FAQ completa en `IoBuild-LandingPage` con estructura de acordeón, respuestas detalladas y planes de precio.
+- Implementó el selector de idioma y la internacionalización de la landing page con soporte para español e inglés.
+- En el backend (`IoBuild-Backend`), implementó el bounded context de Clients completo: aggregate root `Client`, comandos de creación/actualización/eliminación, repositorio con búsqueda por email, query service, assemblers de recursos y `ClientsController` con operaciones CRUD.
+
+---
+
+**Brayan Roberto Ccarita Cruz**
+
+Contribución Principal:
+
+- Agregó los assets de imágenes y scripts de interactividad al repositorio `IoBuild-LandingPage`.
+- En el backend (`IoBuild-Backend`), implementó el bounded context de IAM completo: aggregate root `User`, comandos de sign-up/sign-in/update-password, servicios de hashing con BCrypt, servicio y configuración de JWT, repositorio con EF Core, middleware de autorización con atributos personalizados, DTOs REST y los controllers de autenticación y usuarios.
+
+---
+
+**Axel Randall Ordonez Ricaldi** *(GitHub: nOOmz / nOOmzzzz)*
+
+Contribución Principal:
+
+- Contribuyó al desarrollo de la sección About Us en el repositorio `IoBuild-LandingPage`.
+- En el backend (`IoBuild-Backend`), participó en el desarrollo de múltiples bounded contexts: Profiles, Projects, Units, Devices y Payments, implementando controllers, servicios y modelos de datos para la gestión integral de recursos IoT y suscripciones.
+
+---
+
+*Colaboración en GitHub — IoBuild-LandingPage.*
+
+![Commits Landing Page](https://i.ibb.co/b5sHZjSQ/commitslanding.png)
+
+![Contribuidores Landing Page](https://i.ibb.co/nqyk8HXr/contribuidoreslanding.png)
+
+*Colaboración en GitHub — IoBuild-Backend.*
+
+![Commits Backend](https://i.ibb.co/SD1psTZN/commitsbackend.png)
+
+![Contribuidores Backend](https://i.ibb.co/1SPbRrD/contribuidoresbackend.png)
 
 # Conclusiones y recomendaciones.
 
