@@ -2131,110 +2131,83 @@ El segmento de residentes y dueños de departamentos cuenta con una interfaz sim
 
 ### 5.4.2. Applications Wireflow Diagrams.
 
-- Web Applocations Wireflow Diagrams
+- Web Applications Wireflow Diagrams
 
-#### Segmento Objetivo #1: Arquitectos e Ingenieros Civiles
-Los arquitectos e ingenieros civiles utilizan la plataforma IoBuild para gestionar sus proyectos residenciales, centralizar la información de clientes, monitorear dispositivos IoT implementados en los edificios y configurar opciones de administración de manera eficiente.
+Los diagramas de Wireflow combinan la representación esquemática de la interfaz de usuario (wireframes) con la lógica secuencial de navegación (flowcharts), permitiendo visualizar con precisión cómo los usuarios de cada segmento interactúan con las pantallas de la plataforma web IoBuild ante acciones específicas (clics en botones, envíos de formularios o selección de menús).
 
-**Login / Create Account**
+---
 
-**1. Login:**
-- El usuario de la constructora introduce su correo corporativo y contraseña.
--  Selecciona la opción “Login” para acceder a su cuenta empresarial.
+#### Segmento Objetivo #1: Arquitectos e Ingenieros Civiles (Builders / Constructoras)
 
-**Create Account:**
-- Si es un nuevo usuario, completa un formulario con datos de la empresa, representante y correo corporativo.
-- Selecciona “Create” para registrar la cuenta en el sistema.
+Las empresas constructoras y profesionales de ingeniería administran las obras civiles, catalogan los departamentos inteligentes, asignan clientes y supervisan las suscripciones corporativas de software. Este rol **no tiene acceso a la vista de dispositivos hogareños (Devices)**, manteniendo estricta separación de responsabilidades con respecto a los residentes.
 
-**Acción esperada:** Autenticarse exitosamente en la plataforma y acceder al Dashboard principal.<br><br>
+El wireflow de la constructora articula las siguientes transacciones y caminos de navegación:
 
-**2. Dashboard**
--	Una vez autenticado, el usuario accede al panel principal, donde se visualiza un menú lateral con accesos a secciones clave:
-     - Home
-     - Profile
-     - Projects
-     - Client Management
-     - Configuration
--	El Dashboard sirve como centro de navegación para todas las funciones de la plataforma.
+1. **Autenticación (Sign In / Register as Builder):**
+   - El usuario ingresa credenciales corporativas (email/contraseña) o hace clic en "Register as Builder" para completar el alta empresarial.
+   - Al pulsar `Sign In`, el sistema valida el token JWT y redirige automáticamente al **Builder Dashboard**.
 
-**Acción esperada:** Orientarse rápidamente en la aplicación y seleccionar la sección que desea administrar.<br><br>
+2. **Panel Principal (Builder Dashboard):**
+   - La barra de navegación lateral izquierda da acceso permanente a los 5 módulos del rol: **Dashboard**, **Projects**, **Clients**, **Subscriptions** y **Profile**.
+   - Muestra tarjetas de estado de obras en construcción, departamentos habilitados y gráfica analítica de consumo energético agregado.
+   - Desde la cabecera o el widget de proyectos, el usuario puede saltar directamente al catálogo de proyectos con un clic.
 
-**3. Profile**
--	Visualiza y edita información del usuario administrador como el nombre, logo, contacto, etc.
--	Opciones para gestionar miembros del equipo y asignar roles.
+3. **Gestión de Proyectos (Projects & New Project Modal):**
+   - **Vista de Lista:** Despliega las tarjetas y estado de cada edificio residencial inteligente (por ejemplo: "Torre Miraflores", "Residencial San Isidro").
+   - **Acción "+ New Project":** Al hacer clic en el botón superior, se despliega una modal o vista dedicada donde se ingresa el nombre de la obra, ubicación geográfica, fecha de entrega estimada y número total de unidades habitacionales.
+   - Al pulsar `Save Project`, el sistema persiste el registro y actualiza el listado.
 
-**Acción esperada:** Actualizar datos corporativos, ver plan y administrar accesos del equipo.<br><br>
+4. **Directorio de Clientes (Clients Management):**
+   - Presenta una tabla interactiva con el listado de residentes y propietarios vinculados a cada unidad de los proyectos construidos.
+   - Muestra datos de contacto, unidad asignada y estado de contrato. Permite filtrar y vincular nuevos residentes.
 
-**4. Project Management**
--	El usuario accede a la sección Projects, donde puede ver un listado de proyectos residenciales activos.
--	Cada proyecto incluye nombre, estado, fecha y acceso a detalles.
--	Puede pulsar “+ Add Project” para registrar un nuevo proyecto en la plataforma.
+5. **Planes y Facturación (Subscriptions):**
+   - Expone la comparativa de niveles de suscripción SaaS (Starter, Professional, Enterprise) con desglose de proyectos permitidos y analíticas avanzadas.
+   - Permite al administrador seleccionar planes, ver el estado de la suscripción y procesar pagos mediante pasarela de facturación Stripe.
 
-**Acción esperada:** Visualizar, gestionar o crear proyectos residenciales vinculados a la constructora.<br><br>
+6. **Perfil Corporativo (Builder Profile):**
+   - Gestión de identidad corporativa (nombre de la constructora, RUC/tax ID, representante técnico, correo de soporte).
+   - Opciones para configuración de seguridad, alertas críticas de la plataforma y cierre de sesión seguro (`Sign Out`).
 
-**5. Client Management**
--	En la sección Client Management, se despliega una tabla con los clientes asociados a cada proyecto.
--	Se muestran datos como nombre completo, proyecto asociado, estado y opciones de acción.
--	El usuario puede añadir nuevos clientes con el botón “+ Add Client”.
+<div align="center">
+  <img src="assets/wireflows/wireflow_segmento1_builder.png" width="950" alt="Wireflow Diagram - Segmento 1 Constructoras (Builders)" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <p><em>Figura 5.4.2.1: Diagrama de Wireflow de la Plataforma Web para el Segmento #1 (Constructoras, Arquitectos e Ingenieros Civiles).</em></p>
+</div>
 
-**Acción esperada:** Gestionar información de clientes vinculados a los proyectos residenciales.<br><br>
+---
 
+#### Segmento Objetivo #2: Dueños de Departamentos (Owners / Residentes)
 
-**6. Configuration**
--	En el apartado Configuration, la constructora puede administrar aspectos como notificaciones, seguridad, idioma de la aplicación y soporte técnico.
--	Incluye secciones de seguridad y privacidad (cambio de contraseña, autenticación en dos pasos), así como alertas del sistema.
+Los dueños e inquilinos de los departamentos interactúan con una interfaz optimizada para el confort doméstico, la seguridad hídrica/eléctrica y el control de actuadores IoT en tiempo real dentro de su unidad habitacional. Este rol cuenta con acceso exclusivo a **Dashboard**, **Devices** y **Profile**:
 
-**Acción esperada:** Personalizar la configuración de la plataforma para ajustarla a las necesidades de la empresa.<br><br>
+El wireflow del propietario articula las siguientes transacciones y pantallas:
 
-[Web Applications Wireflow Diagrams - Arquitectos e Ingenieros Civiles] <https://shorturl.at/ORylU>
-![Web Aplication Wireflow Guest](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Wireflow_Segmento2.png)
+1. **Autenticación y Registro con Clave (Sign In / Register as Owner):**
+   - El propietario puede ingresar con sus credenciales habituales o hacer clic en "Register as Owner".
+   - En el formulario de registro, además de sus datos personales, ingresa obligatoriamente la **Unit Activation Key** suministrada por la constructora al entregarle las llaves del departamento, enlazando automáticamente su usuario con los sensores y actuadores del inmueble.
+   - Al validar, el sistema redirige al **Owner Dashboard**.
 
+2. **Panel Doméstico (Owner Dashboard):**
+   - Menú lateral simplificado con acceso a las 3 secciones exclusivas: **Dashboard**, **Devices** y **Profile**.
+   - Visualiza métricas instantáneas de consumo eléctrico mensual (kWh), flujo de agua (L/min) y calidad ambiental.
+   - Incluye interruptores de acción rápida para corte general de breaker eléctrico y válvula principal de agua, permitiendo desconectar el departamento ante emergencias con un solo clic.
 
-#### Segmento Objetivo #2: Dueños de apartamentos
+3. **Supervisión y Control Remoto (Devices Control):**
+   - Catálogo interactivo de dispositivos inteligentes instalados en el departamento (medidor de corriente SCT-013, electroválvula de corte de agua, sensor de inundación, termostato digital e iluminación smart).
+   - Cada tarjeta de dispositivo muestra el estado de conexión (Online/Offline), valor de telemetría actual y un control de palanca (Toggle Switch) o botón de acción para encendido/apagado remoto.
+   - Permite consultar el historial de eventos recientes y configurar umbrales de alerta individuales.
 
+4. **Perfil del Residente y Preferencias de Seguridad (Owner Profile):**
+   - Permite actualizar información personal, correo y teléfono de contacto para emergencias.
+   - Muestra el detalle del departamento asignado (Torre, Piso, Número de Unidad).
+   - Configuración de reglas automatizadas de seguridad (por ejemplo: "Cierre automático de válvula si se detecta fuga de agua" y "Notificaciones críticas vía SMS/Email").
+   - Opción para cerrar sesión segura (`Sign Out`).
 
-**Login / Create Account**
+<div align="center">
+  <img src="assets/wireflows/wireflow_segmento2_owner.png" width="950" alt="Wireflow Diagram - Segmento 2 Propietarios (Owners)" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <p><em>Figura 5.4.2.2: Diagrama de Wireflow de la Plataforma Web para el Segmento #2 (Dueños de Departamentos y Residentes).</em></p>
+</div>
 
-**1. Login:**
-- El usuario introduce su correo electrónico y contraseña.
-- Pulsa “Login” para acceder a su cuenta personal.
-
-**Create Account:**
-- Si es nuevo, completa un formulario con nombre completo, correo, dirección (unidad), y contraseña.
-- Pulsa “Create” para registrar la cuenta.
-
-**Acción esperada:** Autenticarse correctamente y acceder al Dashboard personal.<br><br>
-
-**2. Dashboard**
--	Una vez autenticado, el usuario accede al panel principal, donde se visualiza un menú lateral con accesos a secciones clave::
-     - Home
-     - Profile
-     - Device Management
-     - Configuration
--	Al ingresar, el dueño visualiza un Dashboard con widgets clave: consumo energético mensual (gráfico), estado general de dispositivos (rueda/donut), resumen de ahorros por dispositivo (gráfica) y un Notifications feed con alertas recientes.
-
-**Acción esperada:** Obtener un panorama rápido del estado del apartamento y acceder en un clic a control de dispositivos o a la configuración.<br><br>
-
-**3. Profile**
--	Vista para ver/editar datos personales y de la unidad: nombre, contacto, dirección vinculada, Current Plan, zona horaria e idioma.
--	Secciones: Edit Profile, Favorite Scene Configuration (botones Use para escenas guardadas), opciones para invitar a familiares o delegar accesos.
-
-**Acción esperada:** Actualizar información del propietario, gestionar quién tiene acceso y elegir escenas favoritas para uso rápido.<br><br>
-
-**4. Device Management**
--	Acciones principales: + Add Device y + Create Scene.
--	Dentro de cada dispositivo: estado en tiempo real, historial básico y acceso a ajustes
-
-**Acción esperada:** Añadir, identificar y controlar dispositivos individuales de forma ágil.<br><br>
-
-**5. Configuration**
--	Panel con secciones: Notifications, Security and Privacy (cambio de contraseña, 2FA, gestión de sesiones), Support and Help y Advanced Device Management
--	Opciones para activar/desactivar notificaciones críticas, administrar permisos de invitados y configurar preferencias globales de la unidad.
-
-**Acción esperada:** Personalizar la experiencia y garantizar seguridad y soporte.<br><br>
-
-[Web Applications Wireflow Diagrams - Dueños de apartamentos] <https://shorturl.at/h1jhp>
-![Web Aplication Wireflow Guest](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Wireflow_Segmento1.png)
 
 ### 5.4.3. Applications Mock-ups.
 
@@ -2324,37 +2297,128 @@ Los propietarios cuentan con una experiencia centrada en su departamento: Dashbo
 
 - Web Applications User Flow Diagrams
 
-#### Segmento Objetivo #1: Arquitectos e Ingenieros Civiles
+Los diagramas de User Flow describen el recorrido funcional paso a paso que un usuario realiza a través de la interfaz web para alcanzar metas de negocio y objetivos de usuario concretos (*User Goals*). Cada flujo modela las decisiones del usuario, validaciones del sistema, bifurcaciones de error y estados de confirmación.
 
-**1. Profile**
-**User Goal:** Como ingeniero, quiero ver y editar mi infomación.
-![Segmento #1 User Flow #1](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_User-Flow%231.png)
+---
 
-**2. Project Management**
-**User Goal:** Como ingeniero, quiero ver, editar y añadir projects en los que estoy trabajando.
-![Segmento #1 User Flow #2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_User-Flow%232.png)
+#### Segmento Objetivo #1: Arquitectos e Ingenieros Civiles (Builders / Constructoras)
 
-**3. Client Management**
-**User Goal:** Como ingeniero, quiero monitorear los dispositivos de los projectos en los que estoy trabajando.
-![Segmento #1 User Flow #3](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_User-Flow%233.png)
+Las empresas constructoras realizan actividades de gestión a macro-escala: administración de edificios, vinculación de inquilinos, monitoreo de métricas analíticas agregadas y gestión del plan SaaS. **La constructora no tiene acceso al control de dispositivos hogareños individuales (Devices)**.
 
-**4. Configuration**
-**User Goal:** Como ingeniero, quiero personalizar la configuración de la plataforma.
-![Segmento #1 User Flow #4](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%231_User-Flow%234.png)
+##### Flujo 1.1: Inicio de Sesión y Acceso al Dashboard Analítico
+- **User Goal:** Como ingeniero o administrador de la constructora, quiero iniciar sesión de forma segura y acceder al panel analítico general para supervisar el rendimiento de los edificios.
+- **Paso a paso:** El usuario accede a la URL `/login`, ingresa su correo electrónico corporativo y contraseña, y pulsa "Sign In". El backend valida el token JWT corporativo; si es exitoso, carga los indicadores globales de ocupación y consumo en el Builder Dashboard; en caso contrario, muestra un mensaje de credenciales no válidas.
 
-#### Segmento Objetivo #2: Dueños de apartamentos
+##### Flujo 1.2: Creación y Registro de un Nuevo Proyecto Residencial
+- **User Goal:** Como ingeniero civil, quiero registrar un nuevo edificio inteligente en la plataforma para habilitar el despliegue de unidades y clientes.
+- **Paso a paso:** Desde el menú lateral selecciona "Projects", hace clic en "+ New Project", completa el formulario modal con los datos de la obra (Nombre, Ubicación, Fecha estimada de entrega y Número de unidades) y pulsa "Save Project". El sistema valida los campos requeridos, persiste el proyecto en la base de datos y actualiza la lista de proyectos activos con una alerta de éxito.
 
-**1. Profile**
-**User Goal:** Como propietario, quiero ver y editar mi infomación.
-![Segmento #2 User Flow #1](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_User-Flow%231.png)
+##### Flujo 1.3: Gestión y Monitoreo del Directorio de Clientes
+- **User Goal:** Como administrador de la constructora, quiero consultar el estado de los propietarios y residentes asignados a cada unidad residencial.
+- **Paso a paso:** El usuario navega a la sección "Clients", aplica filtros por proyecto o busca por nombre de residente. Visualiza la tabla con los datos de contacto, unidad asignada y estado contractual.
 
-**2. Device Management**
-**User Goal:** Como propietario, quiero monitorear y configurar mis dispositivos.
-![Segmento #2 User Flow #2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_User-Flow%232.png)
+##### Flujo 1.4: Selección y Actualización del Plan de Suscripción SaaS
+- **User Goal:** Como director de proyecto, quiero ampliar el plan SaaS de la constructora para soportar un mayor número de edificios inteligentes mediante pasarela segura.
+- **Paso a paso:** El usuario ingresa a "Subscriptions", revisa la comparativa de planes (Starter, Professional, Enterprise), selecciona el nivel deseado y pulsa "Upgrade Plan". Se conecta con el checkout seguro de Stripe, ingresa los datos de pago y, al confirmarse la transacción, el sistema actualiza el estado de la cuenta inmediatamente.
 
-**3. Configuration**
-**User Goal:** Como propietario, quiero personalizar la configuración de la plataforma.
-![Segmento #2 User Flow #3](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%204/Segmento%232_User-Flow%233.png)
+##### Flujo 1.5: Configuración del Perfil Corporativo y Alertas de Sistema
+- **User Goal:** Como administrador, quiero actualizar los datos institucionales de la empresa constructora y definir preferencias de notificaciones críticas.
+- **Paso a paso:** Accede a "Profile", modifica la información corporativa (Razón Social, RUC, teléfono, contacto técnico), configura los umbrales de alerta y pulsa "Save Changes".
+
+```mermaid
+flowchart TD
+    A([Inicio: Acceso a IoBuild]) --> B[Ingreso de Credenciales en Sign In]
+    B --> C{¿Credenciales Válidas?}
+    C -- No --> D[Mostrar Error de Autenticación] --> B
+    C -- Sí --> E[Cargar Builder Dashboard]
+    
+    E --> F{Selección de Módulo}
+    
+    F -->|Projects| G[Listado de Proyectos]
+    G --> H[Clic en + New Project]
+    H --> I[Completar Formulario Modal]
+    I --> J{¿Campos Válidos?}
+    J -- No --> I
+    J -- Sí --> K[Persistir Proyecto y Actualizar Lista]
+    
+    F -->|Clients| L[Directorio de Clientes / Residentes]
+    L --> M[Filtrar por Obra / Consultar Contacto]
+    
+    F -->|Subscriptions| N[Comparativa de Planes SaaS]
+    N --> O[Seleccionar Nivel y Clic en Upgrade]
+    O --> P[Checkout Stripe y Confirmación de Pago]
+    
+    F -->|Profile| Q[Editar Perfil Corporativo y Alertas]
+    Q --> R[Guardar Cambios]
+    
+    K --> S([Fin de Tarea])
+    M --> S
+    P --> S
+    R --> S
+```
+
+<div align="center">
+  <img src="assets/userflows/userflow_segmento1_builder.png" width="950" alt="User Flows Diagram - Segmento 1 Constructoras (Builders)" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <p><em>Figura 5.4.4.1: Diagrama de User Flows de la Plataforma Web para el Segmento #1 (Constructoras, Arquitectos e Ingenieros Civiles).</em></p>
+</div>
+
+---
+
+#### Segmento Objetivo #2: Dueños de Departamentos (Owners / Residentes)
+
+Los propietarios interactúan con un entorno centrado en el confort, la eficiencia energética y la seguridad inmediata de su unidad habitacional. Tienen acceso exclusivo al control directo de **Devices**.
+
+##### Flujo 2.1: Registro de Residente con Clave de Activación de Departamento
+- **User Goal:** Como nuevo dueño de departamento, quiero crear mi cuenta utilizando la clave de activación de mi unidad habitacional para vincular mis sensores IoT.
+- **Paso a paso:** El usuario accede a la pantalla de registro de propietario, completa sus nombres, correo y contraseña, e ingresa la **Unit Activation Key** entregada por la constructora. El sistema verifica la autenticidad de la clave, crea el perfil del propietario, asocia los dispositivos físicos instalados a su cuenta y redirige al Owner Dashboard.
+
+##### Flujo 2.2: Monitoreo en Dashboard y Acciones Rápidas de Emergencia
+- **User Goal:** Como residente, quiero supervisar el consumo eléctrico/agua instantáneo y ejecutar cortes preventivos ante cualquier sospecha de avería.
+- **Paso a paso:** Al ingresar al Dashboard, el residente observa las tarjetas de telemetría de consumo eléctrico mensual y caudal de agua. Si requiere ausentarse o realizar mantenimiento, activa los interruptores rápidos ("Corte General Breaker" o "Válvula Principal de Agua"), enviando una orden MQTT de apertura/cierre al actuador en milisegundos.
+
+##### Flujo 2.3: Supervisión y Control Remoto de Dispositivos Domésticos (Devices)
+- **User Goal:** Como propietario, quiero encender, apagar y verificar el estado en tiempo real de cada dispositivo inteligente de mi departamento.
+- **Paso a paso:** Navega al módulo "Devices", donde se listan los equipos (medidor SCT-013, electroválvula de corte de agua, sensor de inundación, termostato digital, luces). Selecciona un dispositivo, interactúa con el botón o toggle switch de encendido/apagado, y la interfaz confirma el cambio de estado físico tras recibir el acuse de recibo del microcontrolador ESP32.
+
+##### Flujo 2.4: Gestión de Perfil, Contacto de Emergencia y Reglas de Seguridad
+- **User Goal:** Como residente, quiero configurar contactos de emergencia y reglas de corte automatizado para proteger mi hogar en caso de fuga.
+- **Paso a paso:** En el módulo "Profile", el usuario revisa los datos de su unidad residencial (Torre y Número), añade un teléfono de emergencia y activa la regla de seguridad automática: "Corte automático de válvula si el sensor detecta inundación". Hace clic en "Save Changes" y el sistema confirma la persistencia de las reglas.
+
+```mermaid
+flowchart TD
+    A([Inicio: Registro o Acceso]) --> B[Formulario Register as Owner]
+    B --> C[Ingreso de Datos y Unit Activation Key]
+    C --> D{¿Key Válida?}
+    D -- No --> E[Mostrar Error de Clave Inválida] --> B
+    D -- Sí --> F[Asociar Sensores/Actuadores y Entrar al Dashboard]
+    
+    F --> G{Selección de Módulo}
+    
+    G -->|Dashboard| H[Visualizar Consumo Eléctrico y Caudal de Agua]
+    H --> I{¿Acción Rápida de Emergencia?}
+    I -- Sí --> J[Toggle Corte Breaker / Válvula Principal]
+    J --> K[Envío de Comando MQTT a ESP32]
+    I -- No --> L[Continuar Monitoreo]
+    
+    G -->|Devices| M[Catálogo de Dispositivos Domésticos]
+    M --> N[Seleccionar Actuador / Sensor]
+    N --> O[Accionar Toggle Switch On/Off]
+    O --> P[Actualización de Estado en Tiempo Real]
+    
+    G -->|Profile| Q[Editar Perfil y Contacto de Emergencia]
+    Q --> R[Activar Regla: Corte Automático ante Fuga]
+    R --> S[Guardar Preferencias de Seguridad]
+    
+    K --> T([Fin de Tarea])
+    L --> T
+    P --> T
+    S --> T
+```
+
+<div align="center">
+  <img src="assets/userflows/userflow_segmento2_owner.png" width="950" alt="User Flows Diagram - Segmento 2 Propietarios (Owners)" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <p><em>Figura 5.4.4.2: Diagrama de User Flows de la Plataforma Web para el Segmento #2 (Dueños de Departamentos y Residentes).</em></p>
+</div>
 
 ## 5.5. Applications Prototyping.
 
