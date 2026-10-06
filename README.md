@@ -2454,26 +2454,25 @@ El diseño físico y funcional de los nodos y dispositivos IoT de IoBuild contem
 # Capítulo VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management.
 
-La gestion de configuracion de software del proyecto **IoBuild** define y controla el conjunto de herramientas, servicios y convenciones necesarios para asegurar un desarrollo movil consistente, trazable y reproducible.  
-En esta seccion se documentan los componentes del entorno de desarrollo, su proposito dentro del proyecto y su aporte a la calidad del producto final.
+La gestión de configuración de software del proyecto **IoBuild** define y controla el conjunto de herramientas, servicios y convenciones necesarios para asegurar un desarrollo web, cloud e IoT consistente, trazable y reproducible.  
+En esta sección se documentan los componentes del entorno de desarrollo, su propósito dentro del proyecto y su aporte a la calidad del producto final.
 
 ### 6.1.1. Software Development Environment Configuration.
 
 - Web Applications
 
-| Producto                                                                                                                                                               | Propósito en el proyecto                                                      | Categoría | Ruta de descarga / acceso | Descripción |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|-----------|---------------------------|-------------|
-| JetBrains WebStorm  ![Logo de WebStorm](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Web_Storm_logo.png)  | Desarrollo web moderno utilizando tecnologías actuales como Vue y TypeScript. | Software Development | https://www.jetbrains.com/webstorm/ | IDE de JetBrains para desarrollo web moderno con soporte para JavaScript, TypeScript y frameworks frontend como Vue.js. |
-| Vue.js  ![Logo de Vue.js](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Vue_logo.png)                      | Administración del ciclo de vida en aplicaciones desarrolladas con Vue.js.    | Software Development | https://vuejs.org/guide/introduction.html | Framework progresivo de JavaScript para construir interfaces de usuario de forma declarativa y eficiente. |
-| UXPressia  ![Logo de UXPressia](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Uxpressia_logo.png)          | Representación gráfica de la experiencia del usuario.                         | Product UX/UI Design | https://uxpressia.com/ | Plataforma orientada a la elaboración de journey maps y perfiles de usuario, que permite representar y analizar de forma visual la experiencia dentro del sistema. |
-| Lucidchart  ![Logo de Lucidchart](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Lucidchart_logo.png)       | Planificación estructurada del software mediante representaciones gráficas.   | Product UX/UI Design | https://www.lucidchart.com/ | Herramienta diseñada para elaborar diagramas de procesos, flujos y arquitecturas de sistemas, que optimiza la planificación visual y la organización del software. |
-| Structurizr  ![Logo de Structurizr](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Structurizr_logo.png)    | Diseño y documentación de arquitecturas de software basadas en el modelo C4.  | Product UX/UI Design | https://structurizr.com/ | Aplicación especializada en la creación de modelos de arquitectura de software con base en el modelo C4, ideal para documentar y comprender sistemas complejos. |
-| GitHub  ![Logo de GitHub](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/GitHub_logo.png)                   | Plataforma para la gestión de código fuente y control de versiones.           | Collaboration & Version Control Tools | https://github.com/ | Plataforma de desarrollo colaborativo para alojar, revisar y gestionar proyectos de software. |
-| MySQL Workbench  ![Logo de MySQL Workbench](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/MySQL_logo.jpg) | Desarrollo y depuración del backend basado en .NET.                           |Software Development |https://dev.mysql.com/downloads/workbench/ | Aplicación visual para diseñar esquemas, ejecutar consultas SQL, gestionar usuarios y administrar servidores MySQL de manera integrada.|
-| Docker Desktop  ![Logo de Docker Desktop](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Docker_logo.jpg)   |Contenerización del backend y servicios asociados para facilitar despliegues.|DevOps / Containerization|https://www.docker.com/products/docker-desktop/|Herramienta que permite crear, ejecutar y gestionar contenedores Docker, asegurando entornos reproducibles para desarrollo y producción.   |
-| Swagger UI  ![Logo de Swagger UI](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Logo.jpg)           |Documentación interactiva de la API.|API Documentation Tool|https://swagger.io/tools/swagger-ui/|Interfaz que genera documentación dinámica de APIs REST, permitiendo visualizar rutas, parámetros y probar los endpoints directamente desde el navegador.|
-| Git CLI (Git)  ![Logo de Git CLI](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Git_logo.jpg)           |Manejo local de control de versiones.|Version Control|https://git-scm.com/|Sistema de control de versiones distribuido que permite gestionar cambios, trabajar con ramas y sincronizar código con repositorios remotos como GitHub.|
-
+| Producto | Propósito en el proyecto | Categoría | Ruta de descarga / acceso | Descripción |
+|---|---|---|---|---|
+| **JetBrains WebStorm** | Desarrollo web moderno utilizando tecnologías actuales como Vue y TypeScript. | Software Development | https://www.jetbrains.com/webstorm/ | IDE de JetBrains para desarrollo web moderno con soporte para JavaScript, TypeScript y frameworks frontend como Vue.js. |
+| **Vue.js 3** | Administración del ciclo de vida en aplicaciones desarrolladas con Vue.js y PrimeVue. | Software Development | https://vuejs.org/guide/introduction.html | Framework progresivo de JavaScript para construir interfaces de usuario de forma declarativa, reactiva y eficiente. |
+| **UXPressia** | Representación gráfica de la experiencia del usuario y Customer Journey Maps. | Product UX/UI Design | https://uxpressia.com/ | Plataforma orientada a la elaboración de journey maps y perfiles de usuario, que permite analizar de forma visual la experiencia del usuario. |
+| **Lucidchart** | Planificación estructurada del software mediante representaciones gráficas y flujos. | Product UX/UI Design | https://www.lucidchart.com/ | Herramienta diseñada para elaborar diagramas de procesos, flujos y arquitecturas de sistemas, optimizando la planificación visual. |
+| **Structurizr** | Diseño y documentación de arquitecturas de software basadas en el modelo C4. | Product UX/UI Design | https://structurizr.com/ | Aplicación especializada en la creación de modelos de arquitectura de software con base en el modelo C4 para documentar sistemas complejos. |
+| **GitHub** | Plataforma para la gestión de código fuente, CI/CD y control de versiones. | Collaboration & Version Control | https://github.com/ | Plataforma de desarrollo colaborativo para alojar, revisar, automatizar y gestionar repositorios de software. |
+| **MySQL Workbench** | Diseño relacional y administración de base de datos para la API .NET. | Software Development / Database | https://dev.mysql.com/downloads/workbench/ | Aplicación visual para diseñar esquemas, ejecutar consultas SQL, gestionar usuarios y administrar servidores MySQL de manera integrada. |
+| **Docker Desktop** | Contenerización del backend y servicios asociados para facilitar despliegues reproducibles. | DevOps / Containerization | https://www.docker.com/products/docker-desktop/ | Herramienta que permite crear, ejecutar y gestionar contenedores Docker, asegurando entornos consistentes para desarrollo y producción. |
+| **Swagger UI** | Documentación interactiva y especificación OpenAPI de la API RESTful. | API Documentation Tool | https://swagger.io/tools/swagger-ui/ | Interfaz que genera documentación dinámica de APIs REST, permitiendo visualizar rutas, contratos DTO y probar endpoints directamente. |
+| **Git CLI** | Manejo local de control de versiones y branching strategy. | Version Control | https://git-scm.com/ | Sistema de control de versiones distribuido que permite gestionar cambios, trabajar con ramas y sincronizar código con repositorios remotos. |
 
 - Cloud & IoT Development Environment Configuration
 
@@ -2499,19 +2498,30 @@ Para el frontend, el equipo utiliza WebStorm como IDE principal, administrado a 
 
 Vue.js se seleccionó como la tecnología central para el frontend debido a su arquitectura reactiva y declarativa, basada en componentes reutilizables que permiten un diseño flexible y modular. Gracias a su Vue CLI, la integración de librerías externas y su compatibilidad con metodologías modernas de desarrollo, la plataforma puede estructurarse en torno a bounded contexts, separando de forma clara la vista, la lógica y los servicios. Esta organización permite que diferentes miembros del equipo trabajen en paralelo sin comprometer la coherencia del sistema, mejorando los tiempos de entrega y asegurando la calidad del producto final.
 
-Finalmente, el equipo mantiene un repositorio paralelo denominado upc-pre-1ASI0730-7461-CcaritaTech (https://github.com/upc-pre-1ASI0730-7461-CcaritaTech), donde se gestionan versiones experimentales y entornos de prueba bajo un enfoque académico y exploratorio. Este repositorio funciona como un espacio seguro para validar prototipos, realizar pruebas funcionales y explorar nuevas características antes de ser integradas en el sistema principal. De esta manera, IoBuild asegura que las innovaciones sean evaluadas en un entorno controlado, evitando riesgos en la plataforma productiva y garantizando la estabilidad del proyecto central.
+Finalmente, el equipo mantiene la organización en GitHub denominada **IoBuild-IoT / CcaritaTech**, donde se gestionan los diferentes componentes desacoplados del sistema: Landing Page, Aplicación Web Frontend, Backend Web API y Reporte del proyecto.
 
-![Repositorios de IoBuild](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Repositorios_de_IoBuild.png)
+```mermaid
+graph TD
+    Org[Organización GitHub: IoBuild-IoT / CcaritaTech]
+    
+    Org --> Repo1[IoBuild-LandingPage<br/>HTML5 / CSS3 / Vanilla JS<br/>GitHub Pages CDN]
+    Org --> Repo2[IoBuild-Frontend<br/>Vue.js 3 / PrimeVue / Tailwind<br/>Despliegue: iobuild-remix.arroz.dev]
+    Org --> Repo3[IoBuild-Backend<br/>.NET 8 ASP.NET Core Web API<br/>Despliegue: io-build-back.arroz.dev]
+    Org --> Repo4[Report<br/>Documentación Técnica & Evidencias<br/>GitHub Repository]
+    
+    Repo2 -->|Consume REST API / JWT| Repo3
+    Repo3 -->|Persiste datos| DB[(MySQL Cloud Database)]
+```
 
-- Mobile Applications
+- Estrategia de Control de Versiones y Repositorios
 
-La gestion del codigo fuente de **IoBuild** se realiza con Git y GitHub, siguiendo practicas estandar para asegurar trazabilidad, colaboracion efectiva y control de cambios durante todo el ciclo de desarrollo.
+La gestión del código fuente de **IoBuild** se realiza con Git y GitHub, siguiendo prácticas estándar para asegurar trazabilidad, colaboración efectiva y control de cambios durante todo el ciclo de desarrollo web y de servicios.
 
-**Gestion de Repositorios**
+**Gestión de Repositorios**
 
-El proyecto utiliza GitHub como plataforma centralizada de control de versiones. La organizacion del codigo se separa por componente para facilitar mantenimiento independiente y evolucion controlada del sistema.
+El proyecto utiliza GitHub como plataforma centralizada de control de versiones. La organización del código se separa por componente para facilitar mantenimiento independiente y evolución controlada del sistema:
 
-| Producto | URL del Repositorio | Descripcion |
+| Producto | URL del Repositorio | Descripción |
 |---|---|---|
 | Landing Page | https://github.com/CcaritaTech/IoBuild-LandingPage | Sitio web de presentacion y marketing del producto |
 | Web Application (Frontend) | https://github.com/CcaritaTech/IoBuild-Frontend | Aplicación web SPA desplegada en producción (https://iobuild-remix.arroz.dev/) |
@@ -2655,9 +2665,30 @@ Estas convenciones fortalecen la calidad del codigo y facilitan el trabajo colab
 Para gestionar el desarrollo de IoBuild de manera colaborativa, el equipo utilizó la funcionalidad de forks en GitHub. Al crear un fork, cada integrante seleccionó la cuenta donde alojar su copia del repositorio principal de CcaritaTech/IoBuild, asignó un nombre identificador y, de ser necesario, añadió una breve descripción sobre el propósito del fork. También se podía optar por clonar únicamente la rama principal antes de confirmar la acción.
 
 Una vez creado, el fork quedaba disponible en el perfil del desarrollador como una copia independiente del repositorio original, lista para experimentar, implementar nuevas funcionalidades o realizar pruebas sin afectar directamente al código base. Este flujo permitió mantener la seguridad del repositorio upstream, al mismo tiempo que fomentó la autonomía y la organización del trabajo en equipo.
-![imagen deploy 1](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Imagen_deploy1.png)
-![imagen deploy 2](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Imagen_deploy2.png)
-![imagen deploy 3](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Imagenes/Cap%C3%ADtulo%205/Imagen_deploy3.png)
+
+```mermaid
+flowchart TD
+    subgraph Upstream ["Repositorio Central (Upstream: CcaritaTech)"]
+        MainBranch["main (Producción)"]
+        DevBranch["develop (Integración)"]
+    end
+    
+    subgraph DevFork ["Fork del Desarrollador"]
+        ForkRepo["Fork en Perfil Personal"]
+        FeatureBranch["feature/<nombre-funcionalidad>"]
+    end
+    
+    subgraph LocalEnv ["Entorno Local del Ingeniero"]
+        LocalRepo["Git Clone / WebStorm IDE"]
+    end
+    
+    DevBranch -->|Fork / Sync| ForkRepo
+    ForkRepo -->|git clone| LocalRepo
+    LocalRepo -->|git commit & push| FeatureBranch
+    FeatureBranch -->|Pull Request con Code Review| DevBranch
+    DevBranch -->|Merge verificado| MainBranch
+    MainBranch -->|CI/CD Pipeline| CloudDeploy["Despliegue Automático Cloud"]
+```
 
 - Applications Deployment Architecture
 
@@ -2714,7 +2745,38 @@ El diagrama de despliegue representa la topología en producción:
 - Repositorio Frontend Web -> Cloud Host -> Navegador del usuario (SPA interactiva)
 - Repositorio Backend -> Cloud Host (.NET 8 Web API) -> Base de Datos Cloud Relacional
 
-![Deploy Diagram](https://i.ibb.co/WYbfcRR/Deploy-Diagram.png) 
+```mermaid
+graph LR
+    User([Navegador Usuario / Cliente])
+    
+    subgraph CDN ["GitHub Pages CDN"]
+        Landing["Landing Page Estática<br/>ccaritatech.github.io/IoBuild-LandingPage/"]
+    end
+    
+    subgraph FrontendHost ["Cloud Frontend Host"]
+        WebApp["IoBuild Web App (SPA)<br/>iobuild-remix.arroz.dev"]
+    end
+    
+    subgraph BackendHost ["Cloud Backend Host"]
+        API[".NET 8 Web API RESTful<br/>io-build-back.arroz.dev"]
+        Swagger["OpenAPI / Swagger UI"]
+    end
+    
+    subgraph DataStorage ["Cloud Database"]
+        MySQL[(MySQL Relational DB)]
+    end
+    
+    User -->|HTTPS| Landing
+    User -->|HTTPS| WebApp
+    WebApp -->|HTTPS / REST / JWT| API
+    User -->|Pruebas & Docs| Swagger
+    API -->|TCP / SSL| MySQL
+```
+
+<div align="center">
+  <img src="https://i.ibb.co/WYbfcRR/Deploy-Diagram.png" width="850" alt="Deploy Diagram de Producción IoBuild" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+  <p><em>Figura 6.1.4.1: Diagrama de Despliegue de la Plataforma IoBuild en Producción.</em></p>
+</div> 
 
 ## 6.2. Landing Page, Services & Applications Implementation.
 ### 6.2.1. Sprint 1
@@ -3045,90 +3107,263 @@ A continuación se describen las principales vistas implementadas y verificadas 
 
 **Landing Page — Internacionalización:** Selector EN/ES funcional en el header con cambio dinámico de idioma en todo el contenido de la página.
 
-# FOTOS DE LA LANDING PAGE
+##### Evidencia Fotográfica de la Landing Page en Producción
 
-![Landing Page 1](https://i.ibb.co/BHfmnGmV/1.jpg)
+<div align="center">
+  <img src="https://i.ibb.co/BHfmnGmV/1.jpg" width="850" alt="Landing Page - Hero Section" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.1.1: Landing Page IoBuild — Hero Section y Propuesta de Valor en Producción.</em></p>
+</div>
 
-![Landing Page 2](https://i.ibb.co/wrpyLFyc/2.jpg)
+<div align="center">
+  <img src="https://i.ibb.co/wrpyLFyc/2.jpg" width="850" alt="Landing Page - Benefits Section" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.1.2: Landing Page IoBuild — Sección de Beneficios de la Plataforma IoT.</em></p>
+</div>
 
-![Landing Page 3](https://i.ibb.co/yBncdVxV/3.jpg)
+<div align="center">
+  <img src="https://i.ibb.co/yBncdVxV/3.jpg" width="850" alt="Landing Page - Technical Features" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.1.3: Landing Page IoBuild — Características Técnicas Avanzadas y Hub Central.</em></p>
+</div>
 
-![Landing Page 4](https://i.ibb.co/TxZzYQ27/4.jpg)
+<div align="center">
+  <img src="https://i.ibb.co/TxZzYQ27/4.jpg" width="850" alt="Landing Page - Testimonials" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.1.4: Landing Page IoBuild — Testimonios de Empresas Constructoras Aliadas.</em></p>
+</div>
 
-![Landing Page 5](https://i.ibb.co/F4KcdMYm/5.jpg)
+<div align="center">
+  <img src="https://i.ibb.co/F4KcdMYm/5.jpg" width="850" alt="Landing Page - Pricing Plans" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.1.5: Landing Page IoBuild — Catálogo de Planes de Precios y Suscripción.</em></p>
+</div>
 
-![Landing Page 6](https://i.ibb.co/jvmZydVw/6.jpg)
+<div align="center">
+  <img src="https://i.ibb.co/jvmZydVw/6.jpg" width="850" alt="Landing Page - FAQ" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.1.6: Landing Page IoBuild — Preguntas Frecuentes (FAQ) e Internacionalización Dinámica (EN/ES).</em></p>
+</div>
 
-![Landing Page 7](https://i.ibb.co/XQxj3ZG/7.jpg)
+<div align="center">
+  <img src="https://i.ibb.co/XQxj3ZG/7.jpg" width="850" alt="Landing Page - CTA y Footer" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.1.7: Landing Page IoBuild — Call To Action Final y Footer Institucional.</em></p>
+</div>
 
-URL del repositorio landing page: *https://github.com/CcaritaTech/IoBuild-LandingPage*
+- **URL del repositorio Landing Page:** [https://github.com/CcaritaTech/IoBuild-LandingPage](https://github.com/CcaritaTech/IoBuild-LandingPage)
+- **URL de la Landing Page desplegada en producción:** [https://ccaritatech.github.io/IoBuild-LandingPage/](https://ccaritatech.github.io/IoBuild-LandingPage/)
 
-URL de la landing page desplegada: *https://ccaritatech.github.io/IoBuild-LandingPage/*
+---
 
-# EVIDENCIA DE EJECUCIÓN: APLICACIÓN WEB EN PRODUCCIÓN (IOBUILD WEB APP)
+### 6.2.2. Sprint 2: Web Applications Frontend Implementation (IoBuild Web App)
 
-A continuación se presenta la evidencia de ejecución de la aplicación web de IoBuild desplegada y conectada en producción en `https://iobuild-remix.arroz.dev/`, demostrando la operatividad de los flujos de autenticación, visualización analítica de telemetría IoT, administración de proyectos residenciales, clientes, inventario de dispositivos y planes de suscripción.
+El Sprint 2 se centró en la implementación completa, validación y despliegue en producción de la **Aplicación Web Frontend (IoBuild Web App)**, desarrollada como una Single Page Application (SPA) sobre Vue.js 3, PrimeVue y Tailwind CSS, desplegada en `https://iobuild-remix.arroz.dev/`. Durante este sprint se materializó la separación estricta de vistas y permisos según el rol:
+1. **Segmento Constructoras (Builders):** Panel analítico global, gestión de proyectos residenciales (+ New Project), directorio de clientes y gestión de planes SaaS con pasarela Stripe. **Sin acceso a dispositivos (Devices).**
+2. **Segmento Propietarios (Owners):** Panel residencial doméstico con telemetría en tiempo real, catálogo interactivo de control de dispositivos IoT (Devices) y perfil con reglas de corte automático de emergencia.
 
-URL de la aplicación web desplegada: *https://iobuild-remix.arroz.dev/*  
-Credenciales de acceso de demostración: `admin@iobuild.com` / `Admin01!`
+#### 6.2.2.1. Sprint Planning 2.
 
-##### 1. Autenticación y Registro Multi-Rol
-- **Inicio de Sesión:** Validación con JWT contra el backend en producción, redirección contextual según el rol de usuario (`builder` o `owner`).
-<img src="assets/webapp/01_login.png" width="900" alt="Inicio de Sesión en Producción" />
+| Sprint # | Sprint 2 |
+|---|---|
+| **Sprint Planning Background** | |
+| Date | 12/05/2026 |
+| Time | 18:00 PM |
+| Location | Google Meet |
+| Prepared By | Fabrizio Martin Panta Castro |
+| Attendees | Fabrizio Martin Panta Castro, Iker Gabriel Barturen Panez, Axel Randall Ordonez Ricaldi, Brayan Roberto Ccarita Cruz, Mateo Italo Loechle Arias |
+| **Sprint Goal & User Stories** | |
+| Sprint 2 Goal | Implementar, validar y desplegar en producción la aplicación web frontend interactiva de IoBuild (SPA en Vue.js 3 / PrimeVue / Tailwind CSS) en `https://iobuild-remix.arroz.dev/`, integrando los flujos de autenticación multi-rol (Builder y Owner), los dashboards analíticos con métricas en tiempo real, el catálogo de proyectos y clientes, la facturación de planes SaaS mediante Stripe, y el control remoto y telemetría de dispositivos IoT para los propietarios de departamentos. |
+| Sprint 2 Velocity | 45 |
+| Sum of Story Points | 45 |
 
-- **Registro de Empresa Constructora:** Alta de organizaciones y profesionales de ingeniería civil y arquitectura.
-<img src="assets/webapp/02_register_builder.png" width="900" alt="Registro de Constructora" />
+#### 6.2.2.2. Aspect Leaders and Collaborators.
 
-- **Registro de Propietario / Residente:** Registro de propietarios vinculados a unidades departamentales.
-<img src="assets/webapp/03_register_owner.png" width="900" alt="Registro de Propietario" />
+Para el desarrollo del frontend de la aplicación web, se distribuyeron los aspectos modulares de la interfaz mediante la matriz LACX:
 
-##### 2. Segmento Constructoras — Dashboard Analítico y Gestión de Proyectos
-- **Dashboard Analítico en Tiempo Real:** Métricas de consumo energético en tiempo real (kWh), tasa de ocupación departamental mensual, proyectos activos y clientes gestionados.
-<img src="assets/webapp/04_builder_dashboard_full.png" width="900" alt="Dashboard Analítico de Constructora" />
+| Team Member | GitHub Username | Builder Dashboard & Analytics | Projects Management | Clients Management | Devices Control (IoT) | Subscriptions & Stripe | Owner Experience |
+|---|---|---|---|---|---|---|---|
+| Ordoñez Ricaldi, Axel Randall | nOOmzzzz | **L** | C | C | C | C | C |
+| Panta Castro, Fabrizio Martin | F4brizio24 | C | **L** | **L** | C | C | C |
+| Loechle Arias, Mateo Italo | LowMath | C | C | C | **L** | C | C |
+| Ccarita Cruz, Roberto Brayan | hallzyx | C | C | C | C | **L** | C |
+| Barturen Panez, Iker Gabriel | krxxg04 | C | C | C | C | C | **L** |
 
-- **Catálogo de Proyectos Residenciales:** Visualización en grilla interactiva de proyectos residenciales (nombre, ubicación, fecha estimada de entrega y accesos rápidos).
-<img src="assets/webapp/05_builder_projects.png" width="900" alt="Catálogo de Proyectos Residenciales" />
+#### 6.2.2.3. Sprint Backlog 2.
 
-- **Formulario de Creación de Proyecto:** Interfaz para el registro de nuevos condominios y edificios inteligentes.
-<img src="assets/webapp/06_builder_new_project.png" width="900" alt="Registro de Nuevo Proyecto" />
+| Story ID | ID Task | Título | Descripción | Estimación (Horas) | Assigned To | Status |
+|---|---|---|---|---|---|---|
+| US08 | TK08 | Dashboard personalizado | Como usuario de constructora, quiero tener un dashboard con métricas clave de ocupación y energía en tiempo real. | 5 | Axel Randall Ordonez Ricaldi | Done |
+| US09 | TK09 | Acceso a proyectos activos | Como ingeniero, quiero ver los proyectos residenciales activos para supervisar su estado. | 5 | Fabrizio Martin Panta Castro | Done |
+| US10 | TK10 | Monitoreo de dispositivos conectados | Como propietario, quiero supervisar el estado de mis dispositivos IoT conectados en el departamento. | 5 | Mateo Italo Loechle Arias | Done |
+| US11 | TK11 | Tasa de ocupación mensual | Como ingeniero, quiero visualizar el porcentaje de ocupación por proyecto para evaluar el aforo. | 5 | Axel Randall Ordonez Ricaldi | Done |
+| US12 | TK12 | Gráfico de consumo por hora | Como usuario, quiero ver una gráfica horaria de consumo de energía (kWh) para detectar picos inusuales. | 8 | Axel Randall Ordonez Ricaldi | Done |
+| US14 | TK14 | Resumen de proyectos | Como ingeniero, quiero consultar un resumen de cada proyecto con su ubicación y total de unidades. | 5 | Fabrizio Martin Panta Castro | Done |
+| US19 | TK15 | Identificación de rol en barra de estado | Como usuario, quiero visualizar el rol activo (`builder` o `owner`) para conocer mis accesos disponibles. | 3 | Iker Gabriel Barturen Panez | Done |
+| US20 | TK16 | Lista de proyectos residenciales | Como ingeniero, quiero ver una cuadrícula interactiva con los edificios inteligentes registrados. | 5 | Fabrizio Martin Panta Castro | Done |
+| US21 | TK17 | Formulario "+ Add Project" | Como arquitecto, quiero registrar una nueva obra indicando nombre, dirección, fecha y unidades. | 8 | Fabrizio Martin Panta Castro | Done |
+| US23 | TK19 | Lista de clientes | Como administrador, quiero consultar la lista de propietarios y departamentos habitados. | 5 | Fabrizio Martin Panta Castro | Done |
+| US24 | TK20 | Búsqueda y filtrado de clientes | Como ingeniero, quiero filtrar el directorio de clientes por nombre o proyecto asociado. | 5 | Fabrizio Martin Panta Castro | Done |
+| US28 | TK21 | Vista de plan actual | Como ingeniero, quiero consultar mi plan de suscripción actual y su estado de vigencia. | 5 | Roberto Brayan Ccarita Cruz | Done |
+| US29 | TK22 | Comparativa de planes SaaS | Como usuario de constructora, quiero comparar los planes Starter, Professional y Enterprise. | 5 | Roberto Brayan Ccarita Cruz | Done |
+| US30 | TK23 | Checkout con pasarela Stripe | Como director de constructora, quiero actualizar mi plan mediante el checkout seguro de Stripe. | 8 | Roberto Brayan Ccarita Cruz | Done |
+| US33 | TK24 | Catálogo de dispositivos del departamento | Como propietario, quiero listar los dispositivos IoT instalados en mi departamento. | 5 | Mateo Italo Loechle Arias | Done |
+| US34 | TK25 | Conmutación remota de actuadores (On/Off) | Como residente, quiero accionar interruptores y válvulas a distancia con actualización en tiempo real. | 8 | Mateo Italo Loechle Arias | Done |
+| US35 | TK26 | Acciones rápidas de corte de breaker y agua | Como residente, quiero ejecutar cortes preventivos de energía o agua ante emergencias en un clic. | 5 | Mateo Italo Loechle Arias | Done |
+| US16 | TK27 | Perfil del usuario y seguridad | Como usuario, quiero actualizar mis datos de contacto, teléfono de emergencia y contraseña. | 5 | Iker Gabriel Barturen Panez | Done |
 
-##### 3. Segmento Constructoras — Gestión de Clientes, Suscripción y Perfil
-- **Directorio de Clientes / Residentes:** Lista de inquilinos y propietarios registrados con asignación de departamento y estado de cuenta.
-<img src="assets/webapp/07_builder_clients.png" width="900" alt="Gestión de Clientes" />
+#### 6.2.2.4. Development Evidence for Sprint Review.
 
-- **Planes de Suscripción SaaS:** Comparativa de planes (Basic, Pro, Enterprise) e integración con pasarela de pagos Stripe.
-<img src="assets/webapp/09_builder_subscription.png" width="900" alt="Planes de Suscripción SaaS" />
+El desarrollo del frontend se concentró en el repositorio centralizado `CcaritaTech/IoBuild-Frontend`:
 
-- **Perfil Organizacional de la Constructora:** Configuración de perfil empresarial y datos de contacto.
-<img src="assets/webapp/10_builder_profile.png" width="900" alt="Perfil Organizacional" />
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|---|---|---|---|---|
+| CcaritaTech/IoBuild-Frontend | main | e41a29f | feat: Initialize Vue 3, PrimeVue theme and Tailwind CSS integration | 13/05/2026 |
+| CcaritaTech/IoBuild-Frontend | main | f802b11 | feat: Implement authentication views (Sign In, Builder & Owner register) | 14/05/2026 |
+| CcaritaTech/IoBuild-Frontend | feature/dashboard | a7c3910 | feat: Build Builder Dashboard with Chart.js KPIs and occupancy charts | 15/05/2026 |
+| CcaritaTech/IoBuild-Frontend | feature/projects | c2810de | feat: Create Projects view with card grid and modal "+ New Project" form | 16/05/2026 |
+| CcaritaTech/IoBuild-Frontend | feature/clients | 84e18ac | feat: Develop Clients directory with PrimeVue DataTable, search and filters | 17/05/2026 |
+| CcaritaTech/IoBuild-Frontend | feature/subscriptions | d9041fa | feat: Implement Subscriptions comparison view and Stripe checkout redirect | 18/05/2026 |
+| CcaritaTech/IoBuild-Frontend | feature/owner | 5b19c28 | feat: Implement Owner Dashboard with quick breakers and water valve toggles | 19/05/2026 |
+| CcaritaTech/IoBuild-Frontend | feature/devices | 7e2a901 | feat: Develop Devices management view with real-time MQTT status and switches | 20/05/2026 |
+| CcaritaTech/IoBuild-Frontend | feature/profile | 30c5e7b | feat: Add Profile views with emergency contacts and leak shut-off safety rules | 21/05/2026 |
+| CcaritaTech/IoBuild-Frontend | main | 92f8a44 | chore: Production deployment build optimization and CI/CD workflow | 22/05/2026 |
 
-##### 4. Segmento Residentes — Dashboard de Propietario, Dispositivos y Perfil
-- **Dashboard de Propietario de Departamento:** Resumen de consumo energético mensual, estado general del hogar y alertas automáticas.
-<img src="assets/webapp/13_owner_dashboard.png" width="900" alt="Dashboard de Propietario" />
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
-- **Lista y Control de Dispositivos del Departamento:** Control remoto y monitoreo del ecosistema IoT por unidad habitacional (sensores y actuadores asignados al hogar).
-<img src="assets/webapp/14_devices_list.png" width="900" alt="Dispositivos del Departamento" />
+Para el frontend de la aplicación web, se implementaron pruebas automatizadas de componentes mediante Vitest y pruebas de aceptación BDD (Gherkin):
 
-- **Perfil y Preferencias del Residente:** Configuración de información de contacto ante emergencias y alertas departamentales.
-<img src="assets/webapp/12_owner_profile.png" width="900" alt="Perfil del Residente" />
+```gherkin
+# language: es
+Característica: Navegación y Control en la Aplicación Web IoBuild
+  Como usuario autenticado de IoBuild
+  Quiero navegar según mis permisos de rol
+  Para operar eficientemente la plataforma
 
-#### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+  Escenario: Acceso exclusivo de constructora al catálogo de proyectos
+    Dado que he iniciado sesión con credenciales de rol "builder"
+    Cuando navego a la sección "/projects"
+    Entonces debo ver la lista de obras inmobiliarias activas
+    Y debo visualizar el botón "+ Add Project"
+    Y la barra lateral NO debe incluir la opción "Devices"
 
-En esta sección se presenta la evidencia de la documentación completa de los Web Services desarrollados durante el Sprint 1, generada utilizando la especificación OpenAPI/Swagger. Los endpoints implementados cubren **11 bounded contexts** principales que establecen la arquitectura base del sistema de la plataforma IoBuild: Authentication, Users, Profiles, Clients, Projects, Units, Devices, Subscriptions, Plans, Payments y Analytics. El backend fue desarrollado en C# con ASP.NET Core y Entity Framework Core.
+  Escenario: Control remoto de dispositivos para propietario
+    Dado que he iniciado sesión con credenciales de rol "owner"
+    Cuando navego a la sección "/devices"
+    Entonces debo ver el medidor de corriente SCT-013 y la electroválvula de agua
+    Y al accionar el interruptor de corte
+    Entonces el estado visual debe actualizarse a "Off" inmediatamente
+```
 
-URL del repositorio web service: `https://github.com/CcaritaTech/IoBuild-Backend`
+#### 6.2.2.6. Execution Evidence for Sprint Review: Aplicación Web en Producción (IoBuild Web App).
 
-URL de la documentación Swagger UI desplegada: `https://io-build-back.arroz.dev/swagger/index.html`
+A continuación se presenta la evidencia completa de ejecución de la aplicación web de IoBuild desplegada y conectada en producción en **`https://iobuild-remix.arroz.dev/`**, demostrando la operatividad de los flujos de autenticación, visualización analítica de telemetría IoT, administración de proyectos residenciales, clientes, inventario de dispositivos y planes de suscripción.
 
-![Swagger UI 1](https://i.ibb.co/wN38k55W/Whats-App-Image-2026-05-12-at-11-10-05-PM.jpg)
+- **URL de la aplicación web desplegada:** [https://iobuild-remix.arroz.dev/](https://iobuild-remix.arroz.dev/)  
+- **Credenciales de acceso de demostración:** `admin@iobuild.com` / `Admin01!`
 
-![Swagger UI 2](https://i.ibb.co/60Sf8mDL/Whats-App-Image-2026-05-12-at-11-10-14-PM.jpg)
+---
 
-![Swagger UI 3](https://i.ibb.co/WWnCvgz7/Whats-App-Image-2026-05-12-at-11-10-34-PM.jpg)
+##### A. Vistas de Autenticación e Incorporación Multi-Rol
 
-![Swagger UI 4](https://i.ibb.co/5W3pdfn0/Whats-App-Image-2026-05-12-at-11-10-57-PM.jpg)
+<div align="center">
+  <img src="assets/webapp/01_login.png" width="850" alt="Inicio de Sesión en Producción" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.1: Pantalla de Inicio de Sesión (Sign In) en Producción con Autenticación JWT y accesos rápidos a registro por rol.</em></p>
+</div>
 
-![Swagger UI 5](https://i.ibb.co/DH15p27L/Whats-App-Image-2026-05-12-at-11-11-12-PM.jpg)
+<div align="center">
+  <img src="assets/webapp/02_register_builder.png" width="850" alt="Registro de Constructora" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.2: Pantalla de Registro para Empresas Constructoras (Register as Builder) con datos corporativos y razón social.</em></p>
+</div>
+
+<div align="center">
+  <img src="assets/webapp/03_register_owner.png" width="850" alt="Registro de Propietario" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.3: Pantalla de Registro para Propietarios (Register as Owner) con validación obligatoria de la Unit Activation Key del departamento.</em></p>
+</div>
+
+---
+
+##### B. Segmento #1: Constructoras (Builders) — Gestión Analítica, Proyectos, Clientes y Planes
+
+Las empresas constructoras disponen de un entorno exclusivo de control a macro-escala:
+
+<div align="center">
+  <img src="assets/webapp/04_builder_dashboard_full.png" width="850" alt="Dashboard Analítico de Constructora" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.4: Builder Dashboard en Producción con KPIs de ocupación departamental, consumo eléctrico agregado (kWh) y barra lateral con los 5 módulos exclusivos.</em></p>
+</div>
+
+<div align="center">
+  <img src="assets/webapp/05_builder_projects.png" width="850" alt="Catálogo de Proyectos Residenciales" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.5: Catálogo de Proyectos Residenciales Inteligentes con tarjetas informativas y botón de acción "+ Add Project".</em></p>
+</div>
+
+<div align="center">
+  <img src="assets/webapp/06_builder_new_project.png" width="850" alt="Registro de Nuevo Proyecto" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.6: Formulario Modal para el Alta de un Nuevo Proyecto Inmobiliario con asignación de unidades y ubicación.</em></p>
+</div>
+
+<div align="center">
+  <img src="assets/webapp/07_builder_clients.png" width="850" alt="Gestión de Clientes" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.7: Directorio de Clientes y Residentes con tabla PrimeVue, búsqueda interactiva y estado de cuenta.</em></p>
+</div>
+
+<div align="center">
+  <img src="assets/webapp/09_builder_subscription.png" width="850" alt="Planes de Suscripción SaaS" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.8: Módulo de Suscripciones SaaS con comparativa de niveles de servicio (Starter, Professional, Enterprise) y checkout Stripe.</em></p>
+</div>
+
+<div align="center">
+  <img src="assets/webapp/10_builder_profile.png" width="850" alt="Perfil Organizacional" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.9: Perfil Institucional de la Constructora con edición de datos empresariales, RUC y alertas del sistema.</em></p>
+</div>
+
+---
+
+##### C. Segmento #2: Residentes (Owners) — Dashboard Doméstico, Control de Dispositivos y Perfil
+
+Los propietarios acceden exclusivamente a la supervisión y control de su departamento particular:
+
+<div align="center">
+  <img src="assets/webapp/13_owner_dashboard.png" width="850" alt="Dashboard de Propietario" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.10: Owner Dashboard Residencial con monitoreo de consumo eléctrico mensual, caudal de agua y switches rápidos de corte preventivo.</em></p>
+</div>
+
+<div align="center">
+  <img src="assets/webapp/14_devices_list.png" width="850" alt="Dispositivos del Departamento" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.11: Catálogo y Control Remoto de Dispositivos IoT del Departamento (medidor SCT-013, electroválvula, luces y sensores) con conmutación en tiempo real.</em></p>
+</div>
+
+<div align="center">
+  <img src="assets/webapp/12_owner_profile.png" width="850" alt="Perfil del Residente" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.12: Perfil del Residente con datos de la unidad habitacional, teléfono de emergencia y configuración de corte automático ante fuga de agua.</em></p>
+</div>
+
+---
+
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+
+En esta sección se presenta la evidencia de la documentación completa de los Web Services desarrollados e integrados para el soporte de la Aplicación Web Frontend, generada utilizando la especificación OpenAPI/Swagger. Los endpoints implementados cubren **11 bounded contexts** principales que establecen la arquitectura base del sistema de la plataforma IoBuild: Authentication, Users, Profiles, Clients, Projects, Units, Devices, Subscriptions, Plans, Payments y Analytics. El backend fue desarrollado en C# con ASP.NET Core (.NET 8) y Entity Framework Core.
+
+- **URL del repositorio backend:** [https://github.com/CcaritaTech/IoBuild-Backend](https://github.com/CcaritaTech/IoBuild-Backend)
+- **URL de la documentación Swagger UI en producción:** [https://io-build-back.arroz.dev/swagger/index.html](https://io-build-back.arroz.dev/swagger/index.html)
+
+<div align="center">
+  <img src="https://i.ibb.co/wN38k55W/Whats-App-Image-2026-05-12-at-11-10-05-PM.jpg" width="850" alt="Swagger UI - Authentication & Users" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.13: Swagger UI — Bounded Contexts de Authentication, Users y Profiles.</em></p>
+</div>
+
+<div align="center">
+  <img src="https://i.ibb.co/60Sf8mDL/Whats-App-Image-2026-05-12-at-11-10-14-PM.jpg" width="850" alt="Swagger UI - Clients & Projects" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.14: Swagger UI — Bounded Contexts de Clients y Projects.</em></p>
+</div>
+
+<div align="center">
+  <img src="https://i.ibb.co/WWnCvgz7/Whats-App-Image-2026-05-12-at-11-10-34-PM.jpg" width="850" alt="Swagger UI - Units & Devices" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.15: Swagger UI — Bounded Contexts de Units y Devices (Hardware IoT).</em></p>
+</div>
+
+<div align="center">
+  <img src="https://i.ibb.co/5W3pdfn0/Whats-App-Image-2026-05-12-at-11-10-57-PM.jpg" width="850" alt="Swagger UI - Subscriptions & Plans" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.16: Swagger UI — Bounded Contexts de Subscriptions, Plans y Payments (Stripe).</em></p>
+</div>
+
+<div align="center">
+  <img src="https://i.ibb.co/DH15p27L/Whats-App-Image-2026-05-12-at-11-11-12-PM.jpg" width="850" alt="Swagger UI - Analytics" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.17: Swagger UI — Bounded Context de Analytics y Telemetría en Tiempo Real.</em></p>
+</div>
 
 **Base URL:** `api/v1`
 
@@ -4039,21 +4274,21 @@ Response (200 OK):
 
 *Nota. Elaboración propia.*
 
-#### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 
-Durante el Sprint 1 se implementó el despliegue continuo de los componentes de la plataforma IoBuild en entornos productivos basados en la nube, garantizando disponibilidad y validación inmediata con stakeholders y usuarios reales.
+Durante los sprints de desarrollo se implementó el despliegue continuo de los componentes de la plataforma IoBuild en entornos productivos basados en la nube, garantizando disponibilidad y validación inmediata con stakeholders y usuarios reales.
 
 **1. Landing Page (`IoBuild-LandingPage`)**  
 Desplegada mediante un servicio de hosting estático con integración CI/CD directa al repositorio de GitHub, activando builds y despliegues automáticos ante cada merge a la rama `main`. Permite la captación y presentación comercial de la plataforma con soporte multi-idioma (EN/ES).
-- URL de despliegue: `https://ccaritatech.github.io/IoBuild-LandingPage/`
+- URL de despliegue: [https://ccaritatech.github.io/IoBuild-LandingPage/](https://ccaritatech.github.io/IoBuild-LandingPage/)
 
 **2. Backend Web Services (`IoBuild-Backend`)**  
 Desplegado en un clúster en la nube optimizado para aplicaciones ASP.NET Core (.NET 8), integrando persistencia de datos relacional administrada, cifrado de credenciales con BCrypt y autenticación de tokens JWT. Expone la documentación OpenAPI interactiva para consumo de clientes y pruebas directas.
-- URL de despliegue: `https://io-build-back.arroz.dev/swagger/index.html`
+- URL de despliegue: [https://io-build-back.arroz.dev/swagger/index.html](https://io-build-back.arroz.dev/swagger/index.html)
 
 **3. Aplicación Web Frontend (`IoBuild Web Application`)**  
 La aplicación web de administración y monitoreo IoT se encuentra totalmente desplegada y operativa en producción, sirviendo interfaces reactivas basadas en Vue.js / Remix conectadas en tiempo real a la API de backend y a los servicios analíticos de telemetría departamental.
-- URL de despliegue en producción: `https://iobuild-remix.arroz.dev/`
+- URL de despliegue en producción: [https://iobuild-remix.arroz.dev/](https://iobuild-remix.arroz.dev/)
 - Credenciales demo: `admin@iobuild.com` / `Admin01!`
 
 Evidencia consolidada del despliegue:
@@ -4063,31 +4298,27 @@ Evidencia consolidada del despliegue:
 
 *Nota. Elaboración propia.*
 
-#### 6.2.1.9. Team Collaboration Insights during Sprint.
+#### 6.2.2.9. Team Collaboration Insights during Sprint.
 
-Durante el Sprint 1, el equipo de IoBuild trabajó de manera coordinada distribuyendo las responsabilidades según las especialidades de cada integrante. Se utilizó GitHub como plataforma central de control de versiones, organizando el trabajo mediante ramas por feature y pull requests para integración a las ramas principales. A continuación se detalla la contribución individual de cada miembro del equipo.
+Durante el desarrollo de IoBuild, el equipo trabajó de manera coordinada distribuyendo las responsabilidades según las especialidades de cada integrante. Se utilizó GitHub como plataforma central de control de versiones, organizando el trabajo mediante ramas por feature y pull requests para integración a las ramas principales. A continuación se detalla la contribución individual de cada miembro del equipo:
 
 ---
 
 **Fabrizio Martin Panta Castro**
 
 Contribución Principal:
-
 - Inicializó la estructura base del proyecto HTML y la configuración de metadatos SEO del repositorio `IoBuild-LandingPage`.
 - Implementó el header con navegación responsiva y el hero section con la propuesta de valor principal de la plataforma.
-- Desarrolló las secciones de Benefits, Advanced Technical Features, Testimonials, Pricing Plans, CTA final y Footer completo con columnas de navegación y redes sociales.
-- Lideró la arquitectura de contenido de la landing page, estableciendo la estructura visual y el flujo de conversión del sitio.
+- Desarrolló las secciones de Projects y Clients en el frontend web (`IoBuild-Frontend`), asegurando la integración con los servicios de backend.
+- Lideró la arquitectura de contenido de la plataforma web, estableciendo los flujos de interacción y las tablas interactivas de administración.
 
 ---
 
 **Iker Gabriel Barturen Panez** *(GitHub: krxxg04)*
 
 Contribución Principal:
-
 - Implementó el sistema completo de estilos CSS del repositorio `IoBuild-LandingPage`, definiendo las variables de diseño para theming, tipografía y paleta de colores.
-- Desarrolló los estilos para todas las secciones: hero, benefits, features, testimonials, pricing, FAQ y footer.
-- Implementó el sistema de diseño responsivo para todos los breakpoints (móvil, tablet y escritorio).
-- Actualizó las fotografías y detalles del equipo en la sección About Us.
+- Desarrolló los componentes de autenticación y experiencia de usuario residencial en `IoBuild-Frontend`.
 - En el backend (`IoBuild-Backend`), implementó el bounded context de Analytics: interfaces de fachada para proyectos y dispositivos, `AnalyticsController`, recursos del dashboard (`BuilderDashboardResource`, `DeviceHealthStatusResource`, `ProjectOverviewResource`) y el assembler correspondiente.
 
 ---
@@ -4095,42 +4326,54 @@ Contribución Principal:
 **Mateo Italo Loechle Arias** *(GitHub: LowMath)*
 
 Contribución Principal:
-
-- Desarrolló la sección FAQ completa en `IoBuild-LandingPage` con estructura de acordeón, respuestas detalladas y planes de precio.
-- Implementó el selector de idioma y la internacionalización de la landing page con soporte para español e inglés.
-- En el backend (`IoBuild-Backend`), implementó el bounded context de Clients completo: aggregate root `Client`, comandos de creación/actualización/eliminación, repositorio con búsqueda por email, query service, assemblers de recursos y `ClientsController` con operaciones CRUD.
+- Desarrolló la sección FAQ completa e internacionalización en `IoBuild-LandingPage`.
+- En el frontend web (`IoBuild-Frontend`), implementó el catálogo interactivo de dispositivos IoT (Devices) para residentes, con interruptores de corte de breaker y válvula de agua en tiempo real.
+- En el backend (`IoBuild-Backend`), implementó el bounded context de Clients completo: aggregate root `Client`, comandos de creación/actualización/eliminación, repositorio con búsqueda por email, query service, assemblers de recursos y `ClientsController`.
 
 ---
 
 **Brayan Roberto Ccarita Cruz**
 
 Contribución Principal:
-
-- Agregó los assets de imágenes y scripts de interactividad al repositorio `IoBuild-LandingPage`.
-- En el backend (`IoBuild-Backend`), implementó el bounded context de IAM completo: aggregate root `User`, comandos de sign-up/sign-in/update-password, servicios de hashing con BCrypt, servicio y configuración de JWT, repositorio con EF Core, middleware de autorización con atributos personalizados, DTOs REST y los controllers de autenticación y usuarios.
+- Agregó los assets y scripts de interactividad al repositorio `IoBuild-LandingPage`.
+- En el frontend web (`IoBuild-Frontend`), implementó el módulo de suscripciones SaaS con pasarela Stripe y la gestión de planes.
+- En el backend (`IoBuild-Backend`), implementó el bounded context de IAM completo: aggregate root `User`, comandos de autenticación, servicios de hashing con BCrypt, configuración de JWT, middleware de autorización y controllers de autenticación.
 
 ---
 
 **Axel Randall Ordonez Ricaldi** *(GitHub: nOOmz / nOOmzzzz)*
 
 Contribución Principal:
-
-- Contribuyó al desarrollo de la sección About Us en el repositorio `IoBuild-LandingPage`.
-- En el backend (`IoBuild-Backend`), participó en el desarrollo de múltiples bounded contexts: Profiles, Projects, Units, Devices y Payments, implementando controllers, servicios y modelos de datos para la gestión integral de recursos IoT y suscripciones.
+- En el frontend web (`IoBuild-Frontend`), desarrolló el Builder Dashboard analítico con gráficos interactivos de ocupación y telemetría de energía horaria en tiempo real.
+- En el backend (`IoBuild-Backend`), participó en el desarrollo de los bounded contexts de Profiles, Projects, Units, Devices y Payments, implementando controllers, servicios y modelos de datos para la gestión integral de recursos IoT y suscripciones.
 
 ---
 
-*Colaboración en GitHub — IoBuild-LandingPage.*
+##### Métricas de Colaboración en GitHub
 
-![Commits Landing Page](https://i.ibb.co/b5sHZjSQ/commitslanding.png)
+<div align="center">
+  <img src="https://i.ibb.co/b5sHZjSQ/commitslanding.png" width="850" alt="Commits Landing Page" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.18: Historial y frecuencia de commits en el repositorio IoBuild-LandingPage.</em></p>
+</div>
 
-![Contribuidores Landing Page](https://i.ibb.co/nqyk8HXr/contribuidoreslanding.png)
+<div align="center">
+  <img src="https://i.ibb.co/nqyk8HXr/contribuidoreslanding.png" width="850" alt="Contribuidores Landing Page" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.19: Distribución de contribuciones por integrante en IoBuild-LandingPage.</em></p>
+</div>
 
-*Colaboración en GitHub — IoBuild-Backend.*
+<div align="center">
+  <img src="https://i.ibb.co/SD1psTZN/commitsbackend.png" width="850" alt="Commits Backend" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.20: Historial y frecuencia de commits en el repositorio IoBuild-Backend.</em></p>
+</div>
 
-![Commits Backend](https://i.ibb.co/SD1psTZN/commitsbackend.png)
+<div align="center">
+  <img src="https://i.ibb.co/1SPbRrD/contribuidoresbackend.png" width="850" alt="Contribuidores Backend" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.2.2.21: Distribución de contribuciones por integrante en IoBuild-Backend.</em></p>
+</div>
 
-![Contribuidores Backend](https://i.ibb.co/1SPbRrD/contribuidoresbackend.png)
+> [!IMPORTANT]
+> **Delimitación del Alcance del Hito de Desarrollo:**
+> El desarrollo de software, documentación técnica y validación del presente proyecto se ha completado rigurosamente hasta los sprints correspondientes a la implementación, integración y despliegue productivo de la **Aplicación Web Frontend (IoBuild Web App)** y sus correspondientes servicios backend en la nube. De acuerdo con los objetivos y requisitos académicos de esta entrega, los sprints posteriores relativos a aplicaciones móviles no forman parte de este informe.
 
 # Conclusiones y recomendaciones.
 
@@ -4144,7 +4387,7 @@ Contribución Principal:
 - **Fidelidad al Modelo de Dominio:** Se recomienda preservar la integridad de los Bounded Contexts y el Lenguaje Ubicuo durante las etapas de codificación y construcción de servicios, evitando la filtración de lógica de negocio en las capas de controladores o persistencia.
 - **Estrategia de Pruebas Tempranas en Firmware y Telemetría:** Es recomendable implementar bancos de pruebas automatizadas y simuladores de dispositivos IoT antes de la integración física final, validando la estabilidad en la reconexión de red Wi-Fi, la tolerancia a fallas de conexión y la gestión de la concurrencia en la ingesta de telemetría ambiental.
 - **Monitoreo de Eficiencia y Latencia:** Para los servicios encargados de la ejecución de comandos y el procesamiento de reglas de automatización, se sugiere establecer métricas estrictas de latencia y consumo de memoria, asegurando tiempos de respuesta inmediatos ante eventos ambientales o solicitudes del usuario.
-- **Consistencia en la Experiencia de Usuario (UI/UX):** Al abordar los siguientes hitos de implementación de las interfaces de usuario (web y móvil), se recomienda mantener una guía de estilos visuales unificada, con especial atención a la claridad en el reporte de estados de dispositivos y la simplicidad en la configuración de zonas comunes y privadas.
+- **Consistencia en la Experiencia de Usuario (UI/UX):** Al abordar los siguientes hitos de implementación de las interfaces de usuario (aplicación web y arquitectura IoT), se recomienda mantener una guía de estilos visuales unificada, con especial atención a la claridad en el reporte de estados de dispositivos y la simplicidad en la configuración de zonas comunes y privadas.
 
 <div style="page-break-before: always;"></div>
 
