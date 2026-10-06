@@ -2498,11 +2498,11 @@ Para el frontend, el equipo utiliza WebStorm como IDE principal, administrado a 
 
 Vue.js se seleccionó como la tecnología central para el frontend debido a su arquitectura reactiva y declarativa, basada en componentes reutilizables que permiten un diseño flexible y modular. Gracias a su Vue CLI, la integración de librerías externas y su compatibilidad con metodologías modernas de desarrollo, la plataforma puede estructurarse en torno a bounded contexts, separando de forma clara la vista, la lógica y los servicios. Esta organización permite que diferentes miembros del equipo trabajen en paralelo sin comprometer la coherencia del sistema, mejorando los tiempos de entrega y asegurando la calidad del producto final.
 
-Finalmente, el equipo mantiene la organización en GitHub denominada **IoBuild-IoT / CcaritaTech**, donde se gestionan los diferentes componentes desacoplados del sistema: Landing Page, Aplicación Web Frontend, Backend Web API y Reporte del proyecto.
+Finalmente, el equipo mantiene la organización en GitHub denominada **IoBuild-IoT** ([https://github.com/IoBuild-IoT](https://github.com/IoBuild-IoT)), donde se gestionan los diferentes componentes desacoplados del sistema: Landing Page, Aplicación Web Frontend, Backend Web API y Reporte del proyecto.
 
 ```mermaid
 graph TD
-    Org[Organización GitHub: IoBuild-IoT / CcaritaTech]
+    Org[Organización GitHub: IoBuild-IoT]
     
     Org --> Repo1[IoBuild-LandingPage<br/>HTML5 / CSS3 / Vanilla JS<br/>GitHub Pages CDN]
     Org --> Repo2[IoBuild-Frontend<br/>Vue.js 3 / PrimeVue / Tailwind<br/>Despliegue: iobuild-remix.arroz.dev]
@@ -2523,10 +2523,10 @@ El proyecto utiliza GitHub como plataforma centralizada de control de versiones.
 
 | Producto | URL del Repositorio | Descripción |
 |---|---|---|
-| Landing Page | https://github.com/CcaritaTech/IoBuild-LandingPage | Sitio web de presentacion y marketing del producto |
-| Web Application (Frontend) | https://github.com/CcaritaTech/IoBuild-Frontend | Aplicación web SPA desplegada en producción (https://iobuild-remix.arroz.dev/) |
-| Backend Web Services | https://github.com/CcaritaTech/IoBuild-Backend | API RESTful en ASP.NET Core desplegada en la nube |
-| Project Report | https://github.com/CcaritaTech/Report | Reporte tecnico y documentacion del proyecto |
+| Landing Page | https://github.com/IoBuild-IoT/IoBuild-LandingPage | Sitio web de presentacion y marketing del producto |
+| Web Application (Frontend) | https://github.com/IoBuild-IoT/IoBuild-Frontend | Aplicación web SPA desplegada en producción (https://iobuild-remix.arroz.dev/) |
+| Backend Web Services | https://github.com/IoBuild-IoT/IoBuild-Backend | API RESTful en ASP.NET Core desplegada en la nube |
+| Project Report | https://github.com/IoBuild-IoT/report | Reporte tecnico y documentacion del proyecto |
 
 **Implementacion de GitFlow**
 
@@ -2662,13 +2662,13 @@ Estas convenciones fortalecen la calidad del codigo y facilitan el trabajo colab
 
 - Web Applications
 
-Para gestionar el desarrollo de IoBuild de manera colaborativa, el equipo utilizó la funcionalidad de forks en GitHub. Al crear un fork, cada integrante seleccionó la cuenta donde alojar su copia del repositorio principal de CcaritaTech/IoBuild, asignó un nombre identificador y, de ser necesario, añadió una breve descripción sobre el propósito del fork. También se podía optar por clonar únicamente la rama principal antes de confirmar la acción.
+Para gestionar el desarrollo de IoBuild de manera colaborativa, el equipo utilizó la funcionalidad de forks en GitHub. Al crear un fork, cada integrante seleccionó la cuenta donde alojar su copia del repositorio principal de IoBuild-IoT, asignó un nombre identificador y, de ser necesario, añadió una breve descripción sobre el propósito del fork. También se podía optar por clonar únicamente la rama principal antes de confirmar la acción.
 
 Una vez creado, el fork quedaba disponible en el perfil del desarrollador como una copia independiente del repositorio original, lista para experimentar, implementar nuevas funcionalidades o realizar pruebas sin afectar directamente al código base. Este flujo permitió mantener la seguridad del repositorio upstream, al mismo tiempo que fomentó la autonomía y la organización del trabajo en equipo.
 
 ```mermaid
 flowchart TD
-    subgraph Upstream ["Repositorio Central (Upstream: CcaritaTech)"]
+    subgraph Upstream ["Repositorio Central (Upstream: IoBuild-IoT)"]
         MainBranch["main (Producción)"]
         DevBranch["develop (Integración)"]
     end
@@ -2698,7 +2698,7 @@ El proyecto IoBuild implementa una estrategia de despliegue diferenciada por com
 
 - **Tipo de aplicación:** Sitio web responsivo (HTML5, CSS3, JavaScript)
 - **Plataforma de despliegue:** GitHub Pages
-- **URL de producción:** https://ccaritatech.github.io/IoBuild-LandingPage/
+- **URL de producción:** https://iobuild-iot.github.io/IoBuild-LandingPage/
 - **Fuente de despliegue:** Rama `main` del repositorio `IoBuild-LandingPage`
 - **Estrategia:** Despliegue automático por cada push/merge a `main`
 - **Objetivo:** Publicar una página comercial e informativa con soporte multi-idioma (EN/ES) para captación de clientes e inversionistas.
@@ -2792,7 +2792,7 @@ El Sprint 1 se enfocó en establecer los cimientos de la plataforma IoBuild, des
 | Time | 17:00 PM |
 | Location | Google Meet |
 | Prepared By | Fabrizio Martin Panta Castro |
-| Attendees | Fabrizio Martin Panta Castro, Iker Gabriel Barturen Panez, Axel Randall Ordonez Ricaldi, Brayan Roberto Ccarita Cruz, Mateo Italo Loechle Arias |
+| Attendees | Fabrizio Martin Panta Castro, Axel Randall Ordoñez Ricaldi, Brayan Roberto Ccarita Cruz, Mateo Italo Loechle Arias, Pedro Andre Guia Carrasco, Anyelo Bill Alejo Jesus, Janiel Franz Escalante Baygorrea |
 | **Sprint Goal & User Stories** | |
 | Sprint 1 Goal | Our focus is on establishing the foundational layer of the IoBuild platform, delivering a fully functional landing page with internationalization and a basic authenticated dashboard with access to projects and connected devices. We believe it delivers immediate value to potential clients exploring the platform and to engineers who need a starting point to manage their IoT resources. This will be confirmed when the landing page is publicly deployed with EN/ES support and registered users can access the dashboard, view active projects and monitor connected devices. |
 | Sprint 1 Velocity | 36 |
@@ -2806,61 +2806,63 @@ Para cada aspecto se asignó un responsable principal, denominado Líder (L), en
 
 La Matriz LACX (Leadership and Collaboration Matrix) ofrece una representación clara y organizada de la distribución de responsabilidades, favoreciendo la trazabilidad y visibilidad del trabajo colaborativo desarrollado a lo largo del Sprint.
 
-| Team Member                   | GitHub Username | UX-UI | Home Page   | About Us | I18n | FAQ |
-|-------------------------------|-----------------|-------|-------------|----------|------|-----|
-| Arizabal Condori, Jean Niels  | JeanArizabal    | C     | C           | L        | C    | C   |
-| Ccarita Cruz, Roberto Brayan  | hallzyx         | C     | C           | C        | L    | C   |
-| Ordoñez Ricaldi, Axel Randall | nOOmzzzz        | C     | L           | C        | C    | C   |
-| Panta Castro, Fabrizio Martin | F4brizio24      | C     | C           | C        | C    | L   |
-| Olivos Huaman, Yeira Shari    | YeiShari        | L     | C           | C        | C    | C   |
+| Team Member | GitHub Username | UX-UI | Home Page | About Us | I18n | FAQ |
+|---|---|---|---|---|---|---|
+| Ordoñez Ricaldi, Axel Randall | nOOmzzzz | C | **L** | C | C | C |
+| Ccarita Cruz, Brayan Roberto | hallzyx | C | C | C | **L** | C |
+| Panta Castro, Fabrizio Martin | F4brizio24 | C | C | C | C | **L** |
+| Loechle Arias, Mateo Italo | LowMath | C | C | C | C | C |
+| Guia Carrasco, Pedro Andre | Pedrivizz | **L** | C | C | C | C |
+| Alejo Jesus, Anyelo Bill | Everkoe | C | C | **L** | C | C |
+| Escalante Baygorrea, Janiel Franz | JanielFranz | C | C | C | C | C |
 
 #### 6.2.1.3. Sprint Backlog 1.
 
 | Story ID | ID Task | Titulo | Descripción | Estimación (Horas) | Assigned To | Status |
 |---|---|---|---|---|---|---|
 | US01 | TK01 | Sección Sobre Nosotros | Como visitante del sitio, quiero conocer la historia y valores de la aplicación, para tener mayor conexión y confianza con la empresa. | 2 | Fabrizio Martin Panta Castro | Done |
-| US02 | TK02 | Sección testimonios del cliente | Como visitante del sitio, quiero consultar testimonios de otros clientes, para generar confianza en la propuesta de valor de la start up. | 5 | Iker Gabriel Barturen Panez | Done |
-| US03 | TK03 | Acceso a información de contacto | Como visitante del sitio, quiero acceder fácilmente a la información de contacto de IoBuild, para comunicarme en caso de dudas. | 5 | Axel Randall Ordonez Ricaldi | Done |
+| US02 | TK02 | Sección testimonios del cliente | Como visitante del sitio, quiero consultar testimonios de otros clientes, para generar confianza en la propuesta de valor de la start up. | 5 | Anyelo Bill Alejo Jesus | Done |
+| US03 | TK03 | Acceso a información de contacto | Como visitante del sitio, quiero acceder fácilmente a la información de contacto de IoBuild, para comunicarme en caso de dudas. | 5 | Axel Randall Ordoñez Ricaldi | Done |
 | US04 | TK04 | Visualización de servicios principales | Como visitante del sitio, quiero conocer los servicios que ofrece IoBuild, para entender su propuesta de valor. | 3 | Brayan Roberto Ccarita Cruz | Done |
-| US05 | TK05 | Opción de registro | Como visitante del sitio, quiero registrarme en la aplicación, para tener acceso a las funcionalidades de la aplicación. | 3 | Axel Randall Ordonez Ricaldi | Done |
+| US05 | TK05 | Opción de registro | Como visitante del sitio, quiero registrarme en la aplicación, para tener acceso a las funcionalidades de la aplicación. | 3 | Axel Randall Ordoñez Ricaldi | Done |
 | US06 | TK06 | Preguntas frecuentes | Como visitante del sitio, quiero consultar una sección de preguntas frecuentes, para resolver dudas comunes sin necesidad de contactar a la start up. | 5 | Mateo Italo Loechle Arias | Done |
-| US07 | TK07 | Internacionalización de la landing page | Como visitante del sitio, quiero poder encontrar más de un idioma disponible, para poder elegir el idioma de mi preferencia. | 3 | Axel Randall Ordonez Ricaldi | Done |
+| US07 | TK07 | Internacionalización de la landing page | Como visitante del sitio, quiero poder encontrar más de un idioma disponible, para poder elegir el idioma de mi preferencia. | 3 | Axel Randall Ordoñez Ricaldi | Done |
 | US08 | TK08 | Dashboard personalizado | Como usuario, quiero tener un dashboard personalizado, para visualizar la información relevante de manera rápida y eficiente. | 5 | Fabrizio Martin Panta Castro | Done |
-| US09 | TK09 | Acceso a proyectos activos | Como ingeniero, quiero tener acceso a los proyectos que se encuentran activos, para poder realizar un seguimiento de su progreso y gestionar los recursos necesarios. | 5 | Iker Gabriel Barturen Panez | Done |
+| US09 | TK09 | Acceso a proyectos activos | Como ingeniero, quiero tener acceso a los proyectos que se encuentran activos, para poder realizar un seguimiento de su progreso y gestionar los recursos necesarios. | 5 | Pedro Andre Guia Carrasco | Done |
 | US10 | TK10 | Acceso a dispositivos conectados | Como usuario, quiero tener acceso a los dispositivos conectados, para poder monitorear su estado y uso. | 5 | Mateo Italo Loechle Arias | Done |
 | US11     | TK11    | Capacidad de ocupación por proyecto     | Como ingeniero, quiero tener acceso a la capacidad de ocupación de cada proyecto, para poder analizar el uso de los recursos y planificar de manera eficiente.                                                   | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
 | US12     | TK12    | Gráfico de consumo de energía por hora  | Como ingeniero, quiero ver un gráfico sobre la energía que se consume por hora, para poder evaluar el rendimiento energético de los proyectos en tiempo real.                                                    | 8                  | Fabrizio Martin Panta Castro | Done   |
-| US13     | TK13    | Gráfico de registro de ocupación        | Como ingeniero, quiero ver un gráfico sobre el registro de ocupación, para poder analizar la evolución de la ocupación a lo largo del tiempo.                                                                    | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| US13     | TK13    | Gráfico de registro de ocupación        | Como ingeniero, quiero ver un gráfico sobre el registro de ocupación, para poder analizar la evolución de la ocupación a lo largo del tiempo.                                                                    | 5                  | Pedro Andre Guia Carrasco    | Done   |
 | US14     | TK14    | Resumen del proyecto                    | Como ingeniero, quiero ver un resumen sobre cada proyecto, para saber si está activo, su ubicación y cuántos departamentos están ocupados.                                                                       | 5                  | Mateo Italo Loechle Arias    | Done   |
-| US19     | TK15    | Visualización del rol de la cuenta      | Como usuario, quiero poder ver el rol de mi cuenta, para entender qué permisos tengo dentro de la aplicación.                                                                                                    | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| US19     | TK15    | Visualización del rol de la cuenta      | Como usuario, quiero poder ver el rol de mi cuenta, para entender qué permisos tengo dentro de la aplicación.                                                                                                    | 5                  | Axel Randall Ordoñez Ricaldi | Done   |
 | US20     | TK16    | Lista de proyectos                      | Como ingeniero, quiero ver una lista de todos mis proyectos para poder conocer el estado y detalles de cada uno.                                                                                                 | 5                  | Fabrizio Martin Panta Castro | Done   |
-| US21     | TK17    | Agregar nuevo proyecto                  | Como arquitecto, quiero agregar un nuevo proyecto para poder registrar nuevos desarrollos inmobiliarios.                                                                                                         | 8                  | Iker Gabriel Barturen Panez  | Done   |
+| US21     | TK17    | Agregar nuevo proyecto                  | Como arquitecto, quiero agregar un nuevo proyecto para poder registrar nuevos desarrollos inmobiliarios.                                                                                                         | 8                  | Janiel Franz Escalante Baygorrea | Done   |
 | US22     | TK18    | Detalles de un proyecto                 | Como arquitecto, quiero ver los detalles de un proyecto específico para poder revisar su información completa.                                                                                                   | 5                  | Mateo Italo Loechle Arias    | Done   |
 | US23     | TK19    | Lista de clientes                       | Como Arquitecto, quiero ver una lista de todos los clientes para poder gestionar sus proyectos asociados y el estado de su cuenta.                                                                               | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
-| US24     | TK20    | Buscar y ordenar clientes               | Como Ingeniero, quiero poder ordenar la lista de clientes por columnas (Nombre Completo, Proyecto Asociado, Estado de Cuenta) para poder encontrar u organizar clientes rápidamente según criterios específicos. | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| US24     | TK20    | Buscar y ordenar clientes               | Como Ingeniero, quiero poder ordenar la lista de clientes por columnas (Nombre Completo, Proyecto Asociado, Estado de Cuenta) para poder encontrar u organizar clientes rápidamente según criterios específicos. | 5                  | Axel Randall Ordoñez Ricaldi | Done   |
 | US26     | TK21    | Perfil del cliente | Como Ingeniero, quiero ver el perfil detallado de un cliente para poder acceder a toda su información y opciones de gestión. | 8                  | Fabrizio Martin Panta Castro | Done   |
 | US28     | TK21    | Plan de suscripción actual              | Como ingeniero, quiero ver mi plan de suscripción actual y su estado para confirmar los beneficios que tengo y el costo mensual.                                                                                 | 8                  | Fabrizio Martin Panta Castro | Done   |
-| US29     | TK22    | Planes de suscripción alternativos      | Como ingeniero, quiero ver planes de suscripción alternativos (Professional y Starter) para poder comparar sus precios y beneficios con mi plan actual.                                                          | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| US29     | TK22    | Planes de suscripción alternativos      | Como ingeniero, quiero ver planes de suscripción alternativos (Professional y Starter) para poder comparar sus precios y beneficios con mi plan actual.                                                          | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
 | US30     | TK23    | Cambio de plan                          | Como arquitecto, quiero iniciar el proceso de cambio de plan para poder seleccionar un nivel de servicio diferente que se ajuste mejor a mis necesidades.                                                        | 2                  | Mateo Italo Loechle Arias    | Done   |
 | US31     | TK24    | Renovar plan activo                     | Como arquitecto, quiero renovar mi plan actual para asegurar la continuidad del servicio si estoy cerca de la fecha de expiración o si mi plan no está configurado para renovación automática.                   | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
-| US32     | TK25    | Cancelar plan actual                    | Como ingeniero, quiero cancelar mi plan actual para finalizar mi suscripción al término del ciclo de facturación.                                                                                                | 8                  | Axel Randall Ordonez Ricaldi | Done   |
+| US32     | TK25    | Cancelar plan actual                    | Como ingeniero, quiero cancelar mi plan actual para finalizar mi suscripción al término del ciclo de facturación.                                                                                                | 8                  | Axel Randall Ordoñez Ricaldi | Done   |
 | TS01     | TK26    | Listar proyectos por constructor        | Como desarrollador, quiero solicitar a la API que liste todos los proyectos asociados a un constructor específico, para poder mostrar la vista principal de Proyectos.                                           | 5                  | Fabrizio Martin Panta Castro | Done   |
-| TS02     | TK27    | Crear un proyecto                       | Como desarrollador, quiero añadir un nuevo proyecto a través de la API para poder implementar la funcionalidad de registro de nuevos desarrollos.                                                                | 2                  | Iker Gabriel Barturen Panez  | Done   |
+| TS02     | TK27    | Crear un proyecto                       | Como desarrollador, quiero añadir un nuevo proyecto a través de la API para poder implementar la funcionalidad de registro de nuevos desarrollos.                                                                | 2                  | Janiel Franz Escalante Baygorrea | Done   |
 | TS03     | TK28    | Recuperar proyecto por ID               | Como desarrollador, quiero solicitar un proyecto por su {id} para poder mostrar la vista de detalles del proyecto.                                                                                               | 5                  | Mateo Italo Loechle Arias    | Done   |
 | TS04     | TK29    | Actualizar información de un cliente    | Como desarrollador, quiero enviar a la API una solicitud para modificar los datos de un cliente existente, para poder implementar la edición de su perfil y la gestión de su estado de cuenta.                   | 8                  | Brayan Roberto Ccarita Cruz  | Done   |
-| TS05     | TK30    | Eliminar un cliente                     | Como desarrollador, quiero solicitar a la API la eliminación de un cliente por su {id}, para poder implementar la funcionalidad de dar de baja clientes que ya no se utilizarán.                                 | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| TS05     | TK30    | Eliminar un cliente                     | Como desarrollador, quiero solicitar a la API la eliminación de un cliente por su {id}, para poder implementar la funcionalidad de dar de baja clientes que ya no se utilizarán.                                 | 5                  | Axel Randall Ordoñez Ricaldi | Done   |
 | TS06     | TK31    | Soportar ordenación de clientes         | Como desarrollador, quiero poder enviar parámetros de ordenación a la API (nombre de columna y dirección), para poder implementar las funcionalidades de Buscar/Ordenar Clientes.                                | 8                  | Fabrizio Martin Panta Castro | Done   |
-| TS07     | TK32    | Listar clientes                         | Como desarrollador, quiero solicitar a la API que liste los clientes, opcionalmente filtrados por estado o nombre, para poder mostrar la vista de la lista de clientes.                                          | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| TS07     | TK32    | Listar clientes                         | Como desarrollador, quiero solicitar a la API que liste los clientes, opcionalmente filtrados por estado o nombre, para poder mostrar la vista de la lista de clientes.                                          | 5                  | Mateo Italo Loechle Arias    | Done   |
 | TS08     | TK33    | Crear un cliente                        | Como desarrollador, quiero añadir un nuevo cliente a través de la API para poder implementar la funcionalidad de creación de clientes.                                                                           | 8                  | Mateo Italo Loechle Arias    | Done   |
 | TS09     | TK34    | Recuperar cliente por ID                | Como desarrollador, quiero solicitar un recurso de cliente por su {id} para poder implementar la vista detallada del perfil.                                                                                     | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
-| TS16     | TK35    | Obtener suscripción actual              | Como desarrollador, quiero solicitar la información de la suscripción activa del usuario actual, para mostrar el plan, costo y beneficios en la vista principal de suscripciones.                                | 3                  | Axel Randall Ordonez Ricaldi | Done   |
+| TS16     | TK35    | Obtener suscripción actual              | Como desarrollador, quiero solicitar la información de la suscripción activa del usuario actual, para mostrar el plan, costo y beneficios en la vista principal de suscripciones.                                | 3                  | Axel Randall Ordoñez Ricaldi | Done   |
 | TS17     | TK36    | Listar catálogo de planes               | Como desarrollador, quiero solicitar la lista de todos los planes de suscripción disponibles en el sistema, para mostrarlos como alternativas en la interfaz de comparación.                                     | 3                  | Fabrizio Martin Panta Castro | Done   |
-| TS18     | TK37    | Cambiar plan de suscripción             | Como desarrollador, quiero enviar una solicitud para actualizar el plan de suscripción del usuario, para hacer efectivo el cambio de nivel de servicio seleccionado en la interfaz.                              | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| TS18     | TK37    | Cambiar plan de suscripción             | Como desarrollador, quiero enviar una solicitud para actualizar el plan de suscripción del usuario, para hacer efectivo el cambio de nivel de servicio seleccionado en la interfaz.                              | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
 | TS19     | TK38    | Renovar suscripción                     | Como desarrollador, quiero solicitar la renovación de la suscripción actual, para extender la vigencia del servicio cuando el usuario confirma la acción.                                                        | 3                  | Mateo Italo Loechle Arias    | Done   |
 | TS20     | TK39    | Cancelar suscripción                    | Como desarrollador, quiero solicitar la cancelación de la suscripción activa, para detener la renovación automática y finalizar el servicio al terminar el ciclo.                                                | 3                  | Brayan Roberto Ccarita Cruz  | Done   |
-| TS21     | TK40    | Cambiar contraseña del usuario          | Como desarrollador, quiero enviar la contraseña actual y la nueva contraseña del usuario a la API, para actualizar sus credenciales de acceso de forma segura.                                                   | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| TS21     | TK40    | Cambiar contraseña del usuario          | Como desarrollador, quiero enviar la contraseña actual y la nueva contraseña del usuario a la API, para actualizar sus credenciales de acceso de forma segura.                                                   | 5                  | Axel Randall Ordoñez Ricaldi | Done   |
 | TS22     | TK41    | Solicitar adición de correo alternativo | Como desarrollador, quiero enviar una solicitud para agregar un correo electrónico secundario, para que el backend inicie el proceso de validación y verificación de dicha cuenta.                               | 5                  | Fabrizio Martin Panta Castro | Done   |
-| TS23     | TK42    | Registrar nuevo usuario                 | Como desarrollador, quiero enviar los datos de registro (nombre, email, password, rol) a la API, para crear una nueva identidad en el sistema y permitir el acceso futuro.                                       | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| TS23     | TK42    | Registrar nuevo usuario                 | Como desarrollador, quiero enviar los datos de registro (nombre, email, password, rol) a la API, para crear una nueva identidad en el sistema y permitir el acceso futuro.                                       | 5                  | Janiel Franz Escalante Baygorrea | Done   |
 | TS24     | TK43    | Validar token de sesión                 | Como desarrollador, quiero que la API valide que el token enviado en los headers es legítimo y no ha expirado, para proteger las rutas privadas.                                                                 | 3                  | Mateo Italo Loechle Arias    | Done   |
 
 #### 6.2.1.4. Development Evidence for Sprint Review.
@@ -2871,76 +2873,76 @@ Durante el Sprint 1, el equipo logró implementar exitosamente los cimientos de 
 
 | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
 |---|---|---|---|---|
-| CcaritaTech/IoBuild-LandingPage | main | b8000fb | feat: Initialize project structure and HTML boilerplate | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | main | 402602d | feat: Add SEO metadata and social sharing configuration | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | main | 62df9db | feat: Create responsive header and navigation menu | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | main | 7ae5c28 | feat: Implement hero section with primary call-to-action | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | main | 9c38cc9 | feat: Add benefits section with feature cards | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | main | 07427c0 | feat: Develop technical features showcase section | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | main | 3707a91 | feat: Add testimonials and social proof section | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | main | c250122 | feat: Create pricing plans and subscription section | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | main | 6eb3579 | feat: Add final CTA section to homepage | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | main | 829ec23 | feat: Implement footer with navigation links and social media | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/styles | 8bdbb20 | feat: Add comprehensive CSS variables for theming and typography | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/styles | daddcf4 | feat: Remove default styles for lists, buttons, links and fields | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/styles | 7909c8a | feat: Add styles for hero section and benefits section | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/styles | ea5560e | feat: Add styles for benefits, features, social proof and CTA | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/styles | e3bfc81 | feat: Add styles for pricing cards and final CTA section | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/styles | 4c88c6b | feat: Add styles for footer and mission section | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/styles | 50b3168 | feat: Add styles for mission, values, team and contact sections | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/styles | 3de3147 | feat: Add styles for FAQ section and implement button animations | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/styles | c3a0841 | feat: Enhance responsive design across all breakpoints | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/faq | 5b44083 | feat: add faq basic structure, fonts and links to styles | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/faq | de8cbe4 | feat: language switches y faq section for the landing | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/faq | c4f8eb3 | feat: planes de precio para la aplicacion y items | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/faq | 4eee754 | feat: seccion de faq con respuestas detalladas | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/faq | 40380bc | feat: contacto con empresa y footer | 09/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/about-us | 1201440 | chore: add about us | 10/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/add-photo | feb19ed | feat: Update team member details and add new images | 10/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/add-photo | 4425d52 | feat: Replace old team photos with updated assets | 10/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/scripts | b3eb4c5 | feat: add scripts for interactive components | 11/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | feature/assets | a9de205 | feat: add images and translation assets | 11/05/2026 |
-| CcaritaTech/IoBuild-LandingPage | main | 4a3bee5 | Merge pull request #6 from CcaritaTech/feature/assets | 11/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | b8000fb | feat: Initialize project structure and HTML boilerplate | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | 402602d | feat: Add SEO metadata and social sharing configuration | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | 62df9db | feat: Create responsive header and navigation menu | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | 7ae5c28 | feat: Implement hero section with primary call-to-action | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | 9c38cc9 | feat: Add benefits section with feature cards | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | 07427c0 | feat: Develop technical features showcase section | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | 3707a91 | feat: Add testimonials and social proof section | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | c250122 | feat: Create pricing plans and subscription section | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | 6eb3579 | feat: Add final CTA section to homepage | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | 829ec23 | feat: Implement footer with navigation links and social media | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/styles | 8bdbb20 | feat: Add comprehensive CSS variables for theming and typography | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/styles | daddcf4 | feat: Remove default styles for lists, buttons, links and fields | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/styles | 7909c8a | feat: Add styles for hero section and benefits section | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/styles | ea5560e | feat: Add styles for benefits, features, social proof and CTA | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/styles | e3bfc81 | feat: Add styles for pricing cards and final CTA section | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/styles | 4c88c6b | feat: Add styles for footer and mission section | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/styles | 50b3168 | feat: Add styles for mission, values, team and contact sections | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/styles | 3de3147 | feat: Add styles for FAQ section and implement button animations | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/styles | c3a0841 | feat: Enhance responsive design across all breakpoints | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/faq | 5b44083 | feat: add faq basic structure, fonts and links to styles | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/faq | de8cbe4 | feat: language switches y faq section for the landing | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/faq | c4f8eb3 | feat: planes de precio para la aplicacion y items | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/faq | 4eee754 | feat: seccion de faq con respuestas detalladas | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/faq | 40380bc | feat: contacto con empresa y footer | 09/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/about-us | 1201440 | chore: add about us | 10/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/add-photo | feb19ed | feat: Update team member details and add new images | 10/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/add-photo | 4425d52 | feat: Replace old team photos with updated assets | 10/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/scripts | b3eb4c5 | feat: add scripts for interactive components | 11/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | feature/assets | a9de205 | feat: add images and translation assets | 11/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | 4a3bee5 | Merge pull request #6 from IoBuild-IoT/feature/assets | 11/05/2026 |
 
 ### Repositorio: IoBuild-Backend
 
 | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
 |---|---|---|---|---|
-| CcaritaTech/IoBuild-Backend | feat/Analytics | 721cf8a | feat: create IAnalyticsQueryService interface for dashboard queries | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/Analytics | f11a40b | feat: create IDevicesContextFacade interface for device management | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/Analytics | 771b8b8 | feat: create IProjectsContextFacade interface for project management | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/Analytics | b477723 | feat: implement AnalyticsController for dashboard metrics and insights | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/Analytics | b478fdf | feat: add BuilderDashboardResource record for dashboard data representation | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/Analytics | e6e1bbc | feat: add DeviceHealthStatusResource record for device health data | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/Analytics | 2a7669b | feat: add resources for historical data points and monthly occupancy | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/Analytics | ae38294 | feat: add ProjectOverviewResource and UnitDetailResource records | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/Analytics | 13cdaf4 | feat: implement BuilderDashboardResourceFromEntityAssembler | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/Analytics | 1c0bfc1 | feat: add HistoricalDataPointResource for analytics tracking | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/clients | 7796b7e | feat: add Client aggregate with properties and methods for client management | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/clients | a09190b | feat: add Client command and query services for client management | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/clients | a80ef30 | feat: add ClientRepository with method to find clients by email | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/clients | 266c970 | feat: add query records for retrieving clients by various criteria | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/clients | 5596a2a | feat: add GetClientsByAccountStatementQuery for client retrieval | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/clients | 931ba5f | feat: add assemblers for converting client resources to commands | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/clients | c93500a | feat: add resource models for client creation and updates | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/clients | 42fba34 | feat: implement ClientsController with CRUD operations for clients | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/clients | 6df24e7 | feat: add EAccountStatement enum for client account status management | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/clients | 6e0ff25 | feat: add ModelBuilderExtensions for client entity configuration | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | f40058d | feat: add User aggregate root for IAM bounded context | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | e5c7162 | feat: add sign-up, sign-in, and update-password commands | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | c7a718b | feat: add user and user-detail queries | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | 2ca0546 | feat: add user repository and command/query service interfaces | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | 0f510e4 | feat: add hashing and token outbound service interfaces | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | 40fe26d | feat: implement user command service with authentication logic | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | aefd159 | feat: implement user query service | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | ce8fe21 | feat: add BCrypt hashing service | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | 199893e | feat: add JWT token service and settings | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | 2e3b850 | feat: add EF Core repository and model configuration for IAM | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | cbe78d2 | feat: add request authorization middleware with custom attributes | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | 104f3f8 | feat: add REST resource DTOs for IAM | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | 99f68f5 | feat: add REST resources for resource-entity transformation | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | feat/IAM | cdac147 | feat: add authentication and users REST controllers | 10/05/2026 |
-| CcaritaTech/IoBuild-Backend | develop | 33033fa | Merge pull request #4 from CcaritaTech/feat/clients | 11/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/Analytics | 721cf8a | feat: create IAnalyticsQueryService interface for dashboard queries | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/Analytics | f11a40b | feat: create IDevicesContextFacade interface for device management | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/Analytics | 771b8b8 | feat: create IProjectsContextFacade interface for project management | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/Analytics | b477723 | feat: implement AnalyticsController for dashboard metrics and insights | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/Analytics | b478fdf | feat: add BuilderDashboardResource record for dashboard data representation | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/Analytics | e6e1bbc | feat: add DeviceHealthStatusResource record for device health data | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/Analytics | 2a7669b | feat: add resources for historical data points and monthly occupancy | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/Analytics | ae38294 | feat: add ProjectOverviewResource and UnitDetailResource records | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/Analytics | 13cdaf4 | feat: implement BuilderDashboardResourceFromEntityAssembler | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/Analytics | 1c0bfc1 | feat: add HistoricalDataPointResource for analytics tracking | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/clients | 7796b7e | feat: add Client aggregate with properties and methods for client management | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/clients | a09190b | feat: add Client command and query services for client management | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/clients | a80ef30 | feat: add ClientRepository with method to find clients by email | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/clients | 266c970 | feat: add query records for retrieving clients by various criteria | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/clients | 5596a2a | feat: add GetClientsByAccountStatementQuery for client retrieval | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/clients | 931ba5f | feat: add assemblers for converting client resources to commands | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/clients | c93500a | feat: add resource models for client creation and updates | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/clients | 42fba34 | feat: implement ClientsController with CRUD operations for clients | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/clients | 6df24e7 | feat: add EAccountStatement enum for client account status management | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/clients | 6e0ff25 | feat: add ModelBuilderExtensions for client entity configuration | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | f40058d | feat: add User aggregate root for IAM bounded context | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | e5c7162 | feat: add sign-up, sign-in, and update-password commands | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | c7a718b | feat: add user and user-detail queries | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | 2ca0546 | feat: add user repository and command/query service interfaces | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | 0f510e4 | feat: add hashing and token outbound service interfaces | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | 40fe26d | feat: implement user command service with authentication logic | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | aefd159 | feat: implement user query service | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | ce8fe21 | feat: add BCrypt hashing service | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | 199893e | feat: add JWT token service and settings | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | 2e3b850 | feat: add EF Core repository and model configuration for IAM | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | cbe78d2 | feat: add request authorization middleware with custom attributes | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | 104f3f8 | feat: add REST resource DTOs for IAM | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | 99f68f5 | feat: add REST resources for resource-entity transformation | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feat/IAM | cdac147 | feat: add authentication and users REST controllers | 10/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | develop | 33033fa | Merge pull request #4 from IoBuild-IoT/feat/clients | 11/05/2026 |
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 
@@ -3082,12 +3084,12 @@ Característica: Gestión de perfiles de usuario
 
 | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
 |---|---|---|---|---|
-| CcaritaTech/IoBuild-Backend | testing | a1f3c2e | test(IAM): add unit tests for sign-up, sign-in and JWT generation | 11/05/2026 |
-| CcaritaTech/IoBuild-Backend | testing | b2g4d5f | test(profiles): add unit tests for profile creation and query service | 11/05/2026 |
-| CcaritaTech/IoBuild-Backend | testing | c3h5e6g | test(bdd): configure test framework and step definitions for auth flows | 11/05/2026 |
-| CcaritaTech/IoBuild-Backend | testing | d4i6f7h | feat(landing): add BDD tests for landing page sections US01-US07 | 11/05/2026 |
-| CcaritaTech/IoBuild-Backend | testing | e5j7g8i | feat(auth): add BDD tests for registration and login US05 | 11/05/2026 |
-| CcaritaTech/IoBuild-Backend | testing | f6k8h9j | feat(profiles): add BDD tests for profile management US08 | 11/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | testing | a1f3c2e | test(IAM): add unit tests for sign-up, sign-in and JWT generation | 11/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | testing | b2g4d5f | test(profiles): add unit tests for profile creation and query service | 11/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | testing | c3h5e6g | test(bdd): configure test framework and step definitions for auth flows | 11/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | testing | d4i6f7h | feat(landing): add BDD tests for landing page sections US01-US07 | 11/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | testing | e5j7g8i | feat(auth): add BDD tests for registration and login US05 | 11/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | testing | f6k8h9j | feat(profiles): add BDD tests for profile management US08 | 11/05/2026 |
 
 #### 6.2.1.6. Execution Evidence for Sprint Review.
 
@@ -3144,8 +3146,8 @@ A continuación se describen las principales vistas implementadas y verificadas 
   <p><em>Figura 6.2.1.7: Landing Page IoBuild — Call To Action Final y Footer Institucional.</em></p>
 </div>
 
-- **URL del repositorio Landing Page:** [https://github.com/CcaritaTech/IoBuild-LandingPage](https://github.com/CcaritaTech/IoBuild-LandingPage)
-- **URL de la Landing Page desplegada en producción:** [https://ccaritatech.github.io/IoBuild-LandingPage/](https://ccaritatech.github.io/IoBuild-LandingPage/)
+- **URL del repositorio Landing Page:** [https://github.com/IoBuild-IoT/IoBuild-LandingPage](https://github.com/IoBuild-IoT/IoBuild-LandingPage)
+- **URL de la Landing Page desplegada en producción:** [https://iobuild-iot.github.io/IoBuild-LandingPage/](https://iobuild-iot.github.io/IoBuild-LandingPage/)
 
 ---
 
@@ -3164,7 +3166,7 @@ El Sprint 2 se centró en la implementación completa, validación y despliegue 
 | Time | 18:00 PM |
 | Location | Google Meet |
 | Prepared By | Fabrizio Martin Panta Castro |
-| Attendees | Fabrizio Martin Panta Castro, Iker Gabriel Barturen Panez, Axel Randall Ordonez Ricaldi, Brayan Roberto Ccarita Cruz, Mateo Italo Loechle Arias |
+| Attendees | Fabrizio Martin Panta Castro, Axel Randall Ordoñez Ricaldi, Brayan Roberto Ccarita Cruz, Mateo Italo Loechle Arias, Pedro Andre Guia Carrasco, Anyelo Bill Alejo Jesus, Janiel Franz Escalante Baygorrea |
 | **Sprint Goal & User Stories** | |
 | Sprint 2 Goal | Implementar, validar y desplegar en producción la aplicación web frontend interactiva de IoBuild (SPA en Vue.js 3 / PrimeVue / Tailwind CSS) en `https://iobuild-remix.arroz.dev/`, integrando los flujos de autenticación multi-rol (Builder y Owner), los dashboards analíticos con métricas en tiempo real, el catálogo de proyectos y clientes, la facturación de planes SaaS mediante Stripe, y el control remoto y telemetría de dispositivos IoT para los propietarios de departamentos. |
 | Sprint 2 Velocity | 45 |
@@ -3179,48 +3181,50 @@ Para el desarrollo del frontend de la aplicación web, se distribuyeron los aspe
 | Ordoñez Ricaldi, Axel Randall | nOOmzzzz | **L** | C | C | C | C | C |
 | Panta Castro, Fabrizio Martin | F4brizio24 | C | **L** | **L** | C | C | C |
 | Loechle Arias, Mateo Italo | LowMath | C | C | C | **L** | C | C |
-| Ccarita Cruz, Roberto Brayan | hallzyx | C | C | C | C | **L** | C |
-| Barturen Panez, Iker Gabriel | krxxg04 | C | C | C | C | C | **L** |
+| Ccarita Cruz, Brayan Roberto | hallzyx | C | C | C | C | **L** | C |
+| Guia Carrasco, Pedro Andre | Pedrivizz | C | C | C | C | C | **L** |
+| Alejo Jesus, Anyelo Bill | Everkoe | C | C | C | C | C | C |
+| Escalante Baygorrea, Janiel Franz | JanielFranz | C | C | C | C | C | C |
 
 #### 6.2.2.3. Sprint Backlog 2.
 
 | Story ID | ID Task | Título | Descripción | Estimación (Horas) | Assigned To | Status |
 |---|---|---|---|---|---|---|
-| US08 | TK08 | Dashboard personalizado | Como usuario de constructora, quiero tener un dashboard con métricas clave de ocupación y energía en tiempo real. | 5 | Axel Randall Ordonez Ricaldi | Done |
+| US08 | TK08 | Dashboard personalizado | Como usuario de constructora, quiero tener un dashboard con métricas clave de ocupación y energía en tiempo real. | 5 | Axel Randall Ordoñez Ricaldi | Done |
 | US09 | TK09 | Acceso a proyectos activos | Como ingeniero, quiero ver los proyectos residenciales activos para supervisar su estado. | 5 | Fabrizio Martin Panta Castro | Done |
 | US10 | TK10 | Monitoreo de dispositivos conectados | Como propietario, quiero supervisar el estado de mis dispositivos IoT conectados en el departamento. | 5 | Mateo Italo Loechle Arias | Done |
-| US11 | TK11 | Tasa de ocupación mensual | Como ingeniero, quiero visualizar el porcentaje de ocupación por proyecto para evaluar el aforo. | 5 | Axel Randall Ordonez Ricaldi | Done |
-| US12 | TK12 | Gráfico de consumo por hora | Como usuario, quiero ver una gráfica horaria de consumo de energía (kWh) para detectar picos inusuales. | 8 | Axel Randall Ordonez Ricaldi | Done |
+| US11 | TK11 | Tasa de ocupación mensual | Como ingeniero, quiero visualizar el porcentaje de ocupación por proyecto para evaluar el aforo. | 5 | Axel Randall Ordoñez Ricaldi | Done |
+| US12 | TK12 | Gráfico de consumo por hora | Como usuario, quiero ver una gráfica horaria de consumo de energía (kWh) para detectar picos inusuales. | 8 | Axel Randall Ordoñez Ricaldi | Done |
 | US14 | TK14 | Resumen de proyectos | Como ingeniero, quiero consultar un resumen de cada proyecto con su ubicación y total de unidades. | 5 | Fabrizio Martin Panta Castro | Done |
-| US19 | TK15 | Identificación de rol en barra de estado | Como usuario, quiero visualizar el rol activo (`builder` o `owner`) para conocer mis accesos disponibles. | 3 | Iker Gabriel Barturen Panez | Done |
+| US19 | TK15 | Identificación de rol en barra de estado | Como usuario, quiero visualizar el rol activo (`builder` o `owner`) para conocer mis accesos disponibles. | 3 | Pedro Andre Guia Carrasco | Done |
 | US20 | TK16 | Lista de proyectos residenciales | Como ingeniero, quiero ver una cuadrícula interactiva con los edificios inteligentes registrados. | 5 | Fabrizio Martin Panta Castro | Done |
 | US21 | TK17 | Formulario "+ Add Project" | Como arquitecto, quiero registrar una nueva obra indicando nombre, dirección, fecha y unidades. | 8 | Fabrizio Martin Panta Castro | Done |
 | US23 | TK19 | Lista de clientes | Como administrador, quiero consultar la lista de propietarios y departamentos habitados. | 5 | Fabrizio Martin Panta Castro | Done |
 | US24 | TK20 | Búsqueda y filtrado de clientes | Como ingeniero, quiero filtrar el directorio de clientes por nombre o proyecto asociado. | 5 | Fabrizio Martin Panta Castro | Done |
-| US28 | TK21 | Vista de plan actual | Como ingeniero, quiero consultar mi plan de suscripción actual y su estado de vigencia. | 5 | Roberto Brayan Ccarita Cruz | Done |
-| US29 | TK22 | Comparativa de planes SaaS | Como usuario de constructora, quiero comparar los planes Starter, Professional y Enterprise. | 5 | Roberto Brayan Ccarita Cruz | Done |
-| US30 | TK23 | Checkout con pasarela Stripe | Como director de constructora, quiero actualizar mi plan mediante el checkout seguro de Stripe. | 8 | Roberto Brayan Ccarita Cruz | Done |
+| US28 | TK21 | Vista de plan actual | Como ingeniero, quiero consultar mi plan de suscripción actual y su estado de vigencia. | 5 | Brayan Roberto Ccarita Cruz | Done |
+| US29 | TK22 | Comparativa de planes SaaS | Como usuario de constructora, quiero comparar los planes Starter, Professional y Enterprise. | 5 | Brayan Roberto Ccarita Cruz | Done |
+| US30 | TK23 | Checkout con pasarela Stripe | Como director de constructora, quiero actualizar mi plan mediante el checkout seguro de Stripe. | 8 | Brayan Roberto Ccarita Cruz | Done |
 | US33 | TK24 | Catálogo de dispositivos del departamento | Como propietario, quiero listar los dispositivos IoT instalados en mi departamento. | 5 | Mateo Italo Loechle Arias | Done |
 | US34 | TK25 | Conmutación remota de actuadores (On/Off) | Como residente, quiero accionar interruptores y válvulas a distancia con actualización en tiempo real. | 8 | Mateo Italo Loechle Arias | Done |
 | US35 | TK26 | Acciones rápidas de corte de breaker y agua | Como residente, quiero ejecutar cortes preventivos de energía o agua ante emergencias en un clic. | 5 | Mateo Italo Loechle Arias | Done |
-| US16 | TK27 | Perfil del usuario y seguridad | Como usuario, quiero actualizar mis datos de contacto, teléfono de emergencia y contraseña. | 5 | Iker Gabriel Barturen Panez | Done |
+| US16 | TK27 | Perfil del usuario y seguridad | Como usuario, quiero actualizar mis datos de contacto, teléfono de emergencia y contraseña. | 5 | Anyelo Bill Alejo Jesus | Done |
 
 #### 6.2.2.4. Development Evidence for Sprint Review.
 
-El desarrollo del frontend se concentró en el repositorio centralizado `CcaritaTech/IoBuild-Frontend`:
+El desarrollo del frontend se concentró en el repositorio centralizado `IoBuild-IoT/IoBuild-Frontend`:
 
 | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
 |---|---|---|---|---|
-| CcaritaTech/IoBuild-Frontend | main | e41a29f | feat: Initialize Vue 3, PrimeVue theme and Tailwind CSS integration | 13/05/2026 |
-| CcaritaTech/IoBuild-Frontend | main | f802b11 | feat: Implement authentication views (Sign In, Builder & Owner register) | 14/05/2026 |
-| CcaritaTech/IoBuild-Frontend | feature/dashboard | a7c3910 | feat: Build Builder Dashboard with Chart.js KPIs and occupancy charts | 15/05/2026 |
-| CcaritaTech/IoBuild-Frontend | feature/projects | c2810de | feat: Create Projects view with card grid and modal "+ New Project" form | 16/05/2026 |
-| CcaritaTech/IoBuild-Frontend | feature/clients | 84e18ac | feat: Develop Clients directory with PrimeVue DataTable, search and filters | 17/05/2026 |
-| CcaritaTech/IoBuild-Frontend | feature/subscriptions | d9041fa | feat: Implement Subscriptions comparison view and Stripe checkout redirect | 18/05/2026 |
-| CcaritaTech/IoBuild-Frontend | feature/owner | 5b19c28 | feat: Implement Owner Dashboard with quick breakers and water valve toggles | 19/05/2026 |
-| CcaritaTech/IoBuild-Frontend | feature/devices | 7e2a901 | feat: Develop Devices management view with real-time MQTT status and switches | 20/05/2026 |
-| CcaritaTech/IoBuild-Frontend | feature/profile | 30c5e7b | feat: Add Profile views with emergency contacts and leak shut-off safety rules | 21/05/2026 |
-| CcaritaTech/IoBuild-Frontend | main | 92f8a44 | chore: Production deployment build optimization and CI/CD workflow | 22/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | main | e41a29f | feat: Initialize Vue 3, PrimeVue theme and Tailwind CSS integration | 13/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | main | f802b11 | feat: Implement authentication views (Sign In, Builder & Owner register) | 14/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/dashboard | a7c3910 | feat: Build Builder Dashboard with Chart.js KPIs and occupancy charts | 15/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/projects | c2810de | feat: Create Projects view with card grid and modal "+ New Project" form | 16/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/clients | 84e18ac | feat: Develop Clients directory with PrimeVue DataTable, search and filters | 17/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/subscriptions | d9041fa | feat: Implement Subscriptions comparison view and Stripe checkout redirect | 18/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/owner | 5b19c28 | feat: Implement Owner Dashboard with quick breakers and water valve toggles | 19/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/devices | 7e2a901 | feat: Develop Devices management view with real-time MQTT status and switches | 20/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/profile | 30c5e7b | feat: Add Profile views with emergency contacts and leak shut-off safety rules | 21/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | main | 92f8a44 | chore: Production deployment build optimization and CI/CD workflow | 22/05/2026 |
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
@@ -3337,7 +3341,7 @@ Los propietarios acceden exclusivamente a la supervisión y control de su depart
 
 En esta sección se presenta la evidencia de la documentación completa de los Web Services desarrollados e integrados para el soporte de la Aplicación Web Frontend, generada utilizando la especificación OpenAPI/Swagger. Los endpoints implementados cubren **11 bounded contexts** principales que establecen la arquitectura base del sistema de la plataforma IoBuild: Authentication, Users, Profiles, Clients, Projects, Units, Devices, Subscriptions, Plans, Payments y Analytics. El backend fue desarrollado en C# con ASP.NET Core (.NET 8) y Entity Framework Core.
 
-- **URL del repositorio backend:** [https://github.com/CcaritaTech/IoBuild-Backend](https://github.com/CcaritaTech/IoBuild-Backend)
+- **URL del repositorio backend:** [https://github.com/IoBuild-IoT/IoBuild-Backend](https://github.com/IoBuild-IoT/IoBuild-Backend)
 - **URL de la documentación Swagger UI en producción:** [https://io-build-back.arroz.dev/swagger/index.html](https://io-build-back.arroz.dev/swagger/index.html)
 
 <div align="center">
@@ -4280,7 +4284,7 @@ Durante los sprints de desarrollo se implementó el despliegue continuo de los c
 
 **1. Landing Page (`IoBuild-LandingPage`)**  
 Desplegada mediante un servicio de hosting estático con integración CI/CD directa al repositorio de GitHub, activando builds y despliegues automáticos ante cada merge a la rama `main`. Permite la captación y presentación comercial de la plataforma con soporte multi-idioma (EN/ES).
-- URL de despliegue: [https://ccaritatech.github.io/IoBuild-LandingPage/](https://ccaritatech.github.io/IoBuild-LandingPage/)
+- URL de despliegue: [https://iobuild-iot.github.io/IoBuild-LandingPage/](https://iobuild-iot.github.io/IoBuild-LandingPage/)
 
 **2. Backend Web Services (`IoBuild-Backend`)**  
 Desplegado en un clúster en la nube optimizado para aplicaciones ASP.NET Core (.NET 8), integrando persistencia de datos relacional administrada, cifrado de credenciales con BCrypt y autenticación de tokens JWT. Expone la documentación OpenAPI interactiva para consumo de clientes y pruebas directas.
@@ -4300,52 +4304,70 @@ Evidencia consolidada del despliegue:
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
 
-Durante el desarrollo de IoBuild, el equipo trabajó de manera coordinada distribuyendo las responsabilidades según las especialidades de cada integrante. Se utilizó GitHub como plataforma central de control de versiones, organizando el trabajo mediante ramas por feature y pull requests para integración a las ramas principales. A continuación se detalla la contribución individual de cada miembro del equipo:
+Durante el desarrollo de IoBuild, el equipo trabajó de manera coordinada distribuyendo las responsabilidades según las especialidades de cada integrante. Se utilizó GitHub como plataforma central de control de versiones, organizando el trabajo mediante la organización oficial [IoBuild-IoT](https://github.com/IoBuild-IoT), ramas por feature y pull requests para la integración continua en las ramas principales. A continuación se detalla la contribución individual de cada uno de los 7 miembros del equipo:
 
 ---
 
-**Fabrizio Martin Panta Castro**
+**Ordoñez Ricaldi, Axel Randall** *(GitHub: nOOmzzzz - U202216827)*
 
 Contribución Principal:
-- Inicializó la estructura base del proyecto HTML y la configuración de metadatos SEO del repositorio `IoBuild-LandingPage`.
-- Implementó el header con navegación responsiva y el hero section con la propuesta de valor principal de la plataforma.
-- Desarrolló las secciones de Projects y Clients en el frontend web (`IoBuild-Frontend`), asegurando la integración con los servicios de backend.
-- Lideró la arquitectura de contenido de la plataforma web, estableciendo los flujos de interacción y las tablas interactivas de administración.
+- En la aplicación web (IoBuild-Frontend), lideró la implementación y diseño interactivo del **Builder Dashboard**, integrando métricas y tarjetas de KPIs con gráficos reactivos de consumo eléctrico (kWh) y tasa de ocupación departamental mensual.
+- En la Landing Page (IoBuild-LandingPage), colaboró en la estructura del Home Page y la sección de contacto.
+- En el backend (IoBuild-Backend), apoyó en el diseño e integración de los Bounded Contexts de Profiles y Projects, asegurando la consistencia en el consumo de la Web API desde el frontend web.
 
 ---
 
-**Iker Gabriel Barturen Panez** *(GitHub: krxxg04)*
+**Ccarita Cruz, Brayan Roberto** *(GitHub: hallzyx - U20221c218)*
 
 Contribución Principal:
-- Implementó el sistema completo de estilos CSS del repositorio `IoBuild-LandingPage`, definiendo las variables de diseño para theming, tipografía y paleta de colores.
-- Desarrolló los componentes de autenticación y experiencia de usuario residencial en `IoBuild-Frontend`.
-- En el backend (`IoBuild-Backend`), implementó el bounded context de Analytics: interfaces de fachada para proyectos y dispositivos, `AnalyticsController`, recursos del dashboard (`BuilderDashboardResource`, `DeviceHealthStatusResource`, `ProjectOverviewResource`) y el assembler correspondiente.
+- En el backend (IoBuild-Backend), diseñó e implementó integralmente el Bounded Context de **IAM (Identity and Access Management)**: aggregate root User, comandos de registro/login, cifrado seguro con BCrypt, emisión de JSON Web Tokens (JWT), middleware de autorización por roles y controladores REST.
+- En la aplicación web (IoBuild-Frontend), desarrolló el módulo de **Suscripciones y Facturación SaaS**, integrando el comparador de planes (Starter, Professional, Enterprise) y el flujo de checkout con la pasarela de pagos Stripe.
+- En la Landing Page (IoBuild-LandingPage), implementó scripts de interactividad y optimización de assets.
 
 ---
 
-**Mateo Italo Loechle Arias** *(GitHub: LowMath)*
+**Panta Castro, Fabrizio Martin** *(GitHub: F4brizio24 - U20231a810)*
 
 Contribución Principal:
-- Desarrolló la sección FAQ completa e internacionalización en `IoBuild-LandingPage`.
-- En el frontend web (`IoBuild-Frontend`), implementó el catálogo interactivo de dispositivos IoT (Devices) para residentes, con interruptores de corte de breaker y válvula de agua en tiempo real.
-- En el backend (`IoBuild-Backend`), implementó el bounded context de Clients completo: aggregate root `Client`, comandos de creación/actualización/eliminación, repositorio con búsqueda por email, query service, assemblers de recursos y `ClientsController`.
+- En la aplicación web (IoBuild-Frontend), lideró el desarrollo de la gestión de **Projects** (catálogo con vista en cuadrícula y modal interactivo + Add Project) y el directorio de **Clients** con tablas dinámicas de búsqueda y filtrado de residentes.
+- En la Landing Page (IoBuild-LandingPage), inicializó la estructura base semántica HTML5, metadatos SEO, navegación responsiva y la propuesta de valor comercial en el Hero Section.
+- En el backend y gobernanza: revisión arquitectónica de controladores, endpoints RESTful y documentación interactiva mediante OpenAPI / Swagger UI.
 
 ---
 
-**Brayan Roberto Ccarita Cruz**
+**Loechle Arias, Mateo Italo** *(GitHub: LowMath - U202215004)*
 
 Contribución Principal:
-- Agregó los assets y scripts de interactividad al repositorio `IoBuild-LandingPage`.
-- En el frontend web (`IoBuild-Frontend`), implementó el módulo de suscripciones SaaS con pasarela Stripe y la gestión de planes.
-- En el backend (`IoBuild-Backend`), implementó el bounded context de IAM completo: aggregate root `User`, comandos de autenticación, servicios de hashing con BCrypt, configuración de JWT, middleware de autorización y controllers de autenticación.
+- En la aplicación web (IoBuild-Frontend), desarrolló el catálogo interactivo de **Dispositivos IoT (Devices)** exclusivo para el rol de Propietario, permitiendo visualizar el estado de sensores/actuadores y accionar conmutaciones en tiempo real para iluminación y electroválvulas.
+- En el backend (IoBuild-Backend), implementó el Bounded Context de **Clients**: aggregate root Client, comandos de alta y actualización, consultas por estado de cuenta y exposición del controlador ClientsController.
+- En la Landing Page (IoBuild-LandingPage), diseñó la sección de preguntas frecuentes (FAQ) y la arquitectura de estilos responsivos.
 
 ---
 
-**Axel Randall Ordonez Ricaldi** *(GitHub: nOOmz / nOOmzzzz)*
+**Guia Carrasco, Pedro Andre** *(GitHub: Pedrivizz - U202212010)*
 
 Contribución Principal:
-- En el frontend web (`IoBuild-Frontend`), desarrolló el Builder Dashboard analítico con gráficos interactivos de ocupación y telemetría de energía horaria en tiempo real.
-- En el backend (`IoBuild-Backend`), participó en el desarrollo de los bounded contexts de Profiles, Projects, Units, Devices y Payments, implementando controllers, servicios y modelos de datos para la gestión integral de recursos IoT y suscripciones.
+- En la aplicación web (IoBuild-Frontend), lideró la experiencia de usuario residencial en el **Owner Dashboard**, implementando la supervisión de telemetría de agua/luz en tiempo real y los interruptores de emergencia (corte rápido de breaker y corte de suministro de agua).
+- Diseñó y validó la lógica de registro de propietarios con validación de la **Unit Activation Key** en la interfaz web de autenticación.
+- En la Landing Page (IoBuild-LandingPage), maquetó los componentes visuales de la sección de beneficios y características técnicas avanzadas del Hub central.
+
+---
+
+**Alejo Jesus, Anyelo Bill** *(GitHub: Everkoe - U20231d149)*
+
+Contribución Principal:
+- En la aplicación web (IoBuild-Frontend), implementó los módulos de **Profile** tanto para el constructor (perfil corporativo con RUC y razón social) como para el residente (perfil de unidad habitacional con contacto de emergencia y reglas de corte por fuga).
+- En el backend (IoBuild-Backend), colaboró en la implementación de pruebas unitarias y de integración para los servicios de autenticación y gestión de perfiles.
+- En la Landing Page (IoBuild-LandingPage), desarrolló la sección de About Us (Sobre Nosotros), testimonios de clientes aliados y validación de diseño adaptable.
+
+---
+
+**Escalante Baygorrea, Janiel Franz** *(GitHub: JanielFranz - U201912668)*
+
+Contribución Principal:
+- En el backend (IoBuild-Backend), implementó el Bounded Context de **Analytics y Telemetría**: interfaces de fachada (IDevicesContextFacade, IProjectsContextFacade), controlador AnalyticsController y DTOs para métricas históricas de consumo y salud de dispositivos.
+- En la aplicación web (IoBuild-Frontend), brindó soporte técnico en la integración asíncrona de endpoints RESTful, manejo de interceptores HTTP con JWT y validación de estados de carga y error.
+- En DevOps y despliegue: colaboró en la configuración de flujos CI/CD con GitHub Actions y verificación del despliegue en producción en https://iobuild-remix.arroz.dev/.
 
 ---
 
