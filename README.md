@@ -2672,15 +2672,1370 @@ El diagrama de despliegue de esta etapa representa:
 
 ## 6.2. Landing Page, Services & Applications Implementation.
 ### 6.2.1. Sprint 1
+
+El Sprint 1 se enfocó en establecer los cimientos de la plataforma IoBuild, desarrollando secciones clave de la landing page (sobre nosotros, testimonios, contacto y FAQ), la opción de registro e internacionalización, y el dashboard inicial con acceso básico a proyectos y dispositivos. El equipo trabajó de manera colaborativa distribuyéndose las tareas según sus especialidades, logrando completar todas las user stories planificadas dentro del timeline estimado.
+
 #### 6.2.1.1. Sprint Planning 1.
+
+| Sprint # | Sprint 1 |
+|---|---|
+| **Sprint Planning Background** | |
+| Date | 05/05/2026 |
+| Time | 17:00 PM |
+| Location | Google Meet |
+| Prepared By | Fabrizio Martin Panta Castro |
+| Attendees | Fabrizio Martin Panta Castro, Iker Gabriel Barturen Panez, Axel Randall Ordonez Ricaldi, Brayan Roberto Ccarita Cruz, Mateo Italo Loechle Arias |
+| **Sprint Goal & User Stories** | |
+| Sprint 1 Goal | Our focus is on establishing the foundational layer of the IoBuild platform, delivering a fully functional landing page with internationalization and a basic authenticated dashboard with access to projects and connected devices. We believe it delivers immediate value to potential clients exploring the platform and to engineers who need a starting point to manage their IoT resources. This will be confirmed when the landing page is publicly deployed with EN/ES support and registered users can access the dashboard, view active projects and monitor connected devices. |
+| Sprint 1 Velocity | 36 |
+| Sum of Story Points | 36 |
+
 #### 6.2.1.2. Aspect Leaders and Collaborators.
+
+En este apartado se describen los aspectos funcionales más relevantes trabajados durante el Sprint 1 en el desarrollo de la plataforma IoBuild. Cada uno de ellos representa un subconjunto significativo dentro del alcance funcional de la solución, incluyendo componentes de interfaz, características técnicas (I18n), elementos de diseño visual y estructural (UX - UI) y preguntas frecuentes (FAQ).
+
+Para cada aspecto se asignó un responsable principal, denominado Líder (L), encargado de la dirección técnica o de la ejecución. De igual manera, se identificaron Colaboradores (C), miembros del equipo que participaron activamente en la implementación, validación o soporte.
+
+La Matriz LACX (Leadership and Collaboration Matrix) ofrece una representación clara y organizada de la distribución de responsabilidades, favoreciendo la trazabilidad y visibilidad del trabajo colaborativo desarrollado a lo largo del Sprint.
+
+| Team Member                   | GitHub Username | UX-UI | Home Page   | About Us | I18n | FAQ |
+|-------------------------------|-----------------|-------|-------------|----------|------|-----|
+| Arizabal Condori, Jean Niels  | JeanArizabal    | C     | C           | L        | C    | C   |
+| Ccarita Cruz, Roberto Brayan  | hallzyx         | C     | C           | C        | L    | C   |
+| Ordoñez Ricaldi, Axel Randall | nOOmzzzz        | C     | L           | C        | C    | C   |
+| Panta Castro, Fabrizio Martin | F4brizio24      | C     | C           | C        | C    | L   |
+| Olivos Huaman, Yeira Shari    | YeiShari        | L     | C           | C        | C    | C   |
+
 #### 6.2.1.3. Sprint Backlog 1.
+
+| Story ID | ID Task | Titulo | Descripción | Estimación (Horas) | Assigned To | Status |
+|---|---|---|---|---|---|---|
+| US01 | TK01 | Sección Sobre Nosotros | Como visitante del sitio, quiero conocer la historia y valores de la aplicación, para tener mayor conexión y confianza con la empresa. | 2 | Fabrizio Martin Panta Castro | Done |
+| US02 | TK02 | Sección testimonios del cliente | Como visitante del sitio, quiero consultar testimonios de otros clientes, para generar confianza en la propuesta de valor de la start up. | 5 | Iker Gabriel Barturen Panez | Done |
+| US03 | TK03 | Acceso a información de contacto | Como visitante del sitio, quiero acceder fácilmente a la información de contacto de IoBuild, para comunicarme en caso de dudas. | 5 | Axel Randall Ordonez Ricaldi | Done |
+| US04 | TK04 | Visualización de servicios principales | Como visitante del sitio, quiero conocer los servicios que ofrece IoBuild, para entender su propuesta de valor. | 3 | Brayan Roberto Ccarita Cruz | Done |
+| US05 | TK05 | Opción de registro | Como visitante del sitio, quiero registrarme en la aplicación, para tener acceso a las funcionalidades de la aplicación. | 3 | Axel Randall Ordonez Ricaldi | Done |
+| US06 | TK06 | Preguntas frecuentes | Como visitante del sitio, quiero consultar una sección de preguntas frecuentes, para resolver dudas comunes sin necesidad de contactar a la start up. | 5 | Mateo Italo Loechle Arias | Done |
+| US07 | TK07 | Internacionalización de la landing page | Como visitante del sitio, quiero poder encontrar más de un idioma disponible, para poder elegir el idioma de mi preferencia. | 3 | Axel Randall Ordonez Ricaldi | Done |
+| US08 | TK08 | Dashboard personalizado | Como usuario, quiero tener un dashboard personalizado, para visualizar la información relevante de manera rápida y eficiente. | 5 | Fabrizio Martin Panta Castro | Done |
+| US09 | TK09 | Acceso a proyectos activos | Como ingeniero, quiero tener acceso a los proyectos que se encuentran activos, para poder realizar un seguimiento de su progreso y gestionar los recursos necesarios. | 5 | Iker Gabriel Barturen Panez | Done |
+| US10 | TK10 | Acceso a dispositivos conectados | Como usuario, quiero tener acceso a los dispositivos conectados, para poder monitorear su estado y uso. | 5 | Mateo Italo Loechle Arias | Done |
+| US11     | TK11    | Capacidad de ocupación por proyecto     | Como ingeniero, quiero tener acceso a la capacidad de ocupación de cada proyecto, para poder analizar el uso de los recursos y planificar de manera eficiente.                                                   | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
+| US12     | TK12    | Gráfico de consumo de energía por hora  | Como ingeniero, quiero ver un gráfico sobre la energía que se consume por hora, para poder evaluar el rendimiento energético de los proyectos en tiempo real.                                                    | 8                  | Fabrizio Martin Panta Castro | Done   |
+| US13     | TK13    | Gráfico de registro de ocupación        | Como ingeniero, quiero ver un gráfico sobre el registro de ocupación, para poder analizar la evolución de la ocupación a lo largo del tiempo.                                                                    | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| US14     | TK14    | Resumen del proyecto                    | Como ingeniero, quiero ver un resumen sobre cada proyecto, para saber si está activo, su ubicación y cuántos departamentos están ocupados.                                                                       | 5                  | Mateo Italo Loechle Arias    | Done   |
+| US19     | TK15    | Visualización del rol de la cuenta      | Como usuario, quiero poder ver el rol de mi cuenta, para entender qué permisos tengo dentro de la aplicación.                                                                                                    | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| US20     | TK16    | Lista de proyectos                      | Como ingeniero, quiero ver una lista de todos mis proyectos para poder conocer el estado y detalles de cada uno.                                                                                                 | 5                  | Fabrizio Martin Panta Castro | Done   |
+| US21     | TK17    | Agregar nuevo proyecto                  | Como arquitecto, quiero agregar un nuevo proyecto para poder registrar nuevos desarrollos inmobiliarios.                                                                                                         | 8                  | Iker Gabriel Barturen Panez  | Done   |
+| US22     | TK18    | Detalles de un proyecto                 | Como arquitecto, quiero ver los detalles de un proyecto específico para poder revisar su información completa.                                                                                                   | 5                  | Mateo Italo Loechle Arias    | Done   |
+| US23     | TK19    | Lista de clientes                       | Como Arquitecto, quiero ver una lista de todos los clientes para poder gestionar sus proyectos asociados y el estado de su cuenta.                                                                               | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
+| US24     | TK20    | Buscar y ordenar clientes               | Como Ingeniero, quiero poder ordenar la lista de clientes por columnas (Nombre Completo, Proyecto Asociado, Estado de Cuenta) para poder encontrar u organizar clientes rápidamente según criterios específicos. | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| US26     | TK21    | Perfil del cliente | Como Ingeniero, quiero ver el perfil detallado de un cliente para poder acceder a toda su información y opciones de gestión. | 8                  | Fabrizio Martin Panta Castro | Done   |
+| US28     | TK21    | Plan de suscripción actual              | Como ingeniero, quiero ver mi plan de suscripción actual y su estado para confirmar los beneficios que tengo y el costo mensual.                                                                                 | 8                  | Fabrizio Martin Panta Castro | Done   |
+| US29     | TK22    | Planes de suscripción alternativos      | Como ingeniero, quiero ver planes de suscripción alternativos (Professional y Starter) para poder comparar sus precios y beneficios con mi plan actual.                                                          | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| US30     | TK23    | Cambio de plan                          | Como arquitecto, quiero iniciar el proceso de cambio de plan para poder seleccionar un nivel de servicio diferente que se ajuste mejor a mis necesidades.                                                        | 2                  | Mateo Italo Loechle Arias    | Done   |
+| US31     | TK24    | Renovar plan activo                     | Como arquitecto, quiero renovar mi plan actual para asegurar la continuidad del servicio si estoy cerca de la fecha de expiración o si mi plan no está configurado para renovación automática.                   | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
+| US32     | TK25    | Cancelar plan actual                    | Como ingeniero, quiero cancelar mi plan actual para finalizar mi suscripción al término del ciclo de facturación.                                                                                                | 8                  | Axel Randall Ordonez Ricaldi | Done   |
+| TS01     | TK26    | Listar proyectos por constructor        | Como desarrollador, quiero solicitar a la API que liste todos los proyectos asociados a un constructor específico, para poder mostrar la vista principal de Proyectos.                                           | 5                  | Fabrizio Martin Panta Castro | Done   |
+| TS02     | TK27    | Crear un proyecto                       | Como desarrollador, quiero añadir un nuevo proyecto a través de la API para poder implementar la funcionalidad de registro de nuevos desarrollos.                                                                | 2                  | Iker Gabriel Barturen Panez  | Done   |
+| TS03     | TK28    | Recuperar proyecto por ID               | Como desarrollador, quiero solicitar un proyecto por su {id} para poder mostrar la vista de detalles del proyecto.                                                                                               | 5                  | Mateo Italo Loechle Arias    | Done   |
+| TS04     | TK29    | Actualizar información de un cliente    | Como desarrollador, quiero enviar a la API una solicitud para modificar los datos de un cliente existente, para poder implementar la edición de su perfil y la gestión de su estado de cuenta.                   | 8                  | Brayan Roberto Ccarita Cruz  | Done   |
+| TS05     | TK30    | Eliminar un cliente                     | Como desarrollador, quiero solicitar a la API la eliminación de un cliente por su {id}, para poder implementar la funcionalidad de dar de baja clientes que ya no se utilizarán.                                 | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| TS06     | TK31    | Soportar ordenación de clientes         | Como desarrollador, quiero poder enviar parámetros de ordenación a la API (nombre de columna y dirección), para poder implementar las funcionalidades de Buscar/Ordenar Clientes.                                | 8                  | Fabrizio Martin Panta Castro | Done   |
+| TS07     | TK32    | Listar clientes                         | Como desarrollador, quiero solicitar a la API que liste los clientes, opcionalmente filtrados por estado o nombre, para poder mostrar la vista de la lista de clientes.                                          | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| TS08     | TK33    | Crear un cliente                        | Como desarrollador, quiero añadir un nuevo cliente a través de la API para poder implementar la funcionalidad de creación de clientes.                                                                           | 8                  | Mateo Italo Loechle Arias    | Done   |
+| TS09     | TK34    | Recuperar cliente por ID                | Como desarrollador, quiero solicitar un recurso de cliente por su {id} para poder implementar la vista detallada del perfil.                                                                                     | 5                  | Brayan Roberto Ccarita Cruz  | Done   |
+| TS16     | TK35    | Obtener suscripción actual              | Como desarrollador, quiero solicitar la información de la suscripción activa del usuario actual, para mostrar el plan, costo y beneficios en la vista principal de suscripciones.                                | 3                  | Axel Randall Ordonez Ricaldi | Done   |
+| TS17     | TK36    | Listar catálogo de planes               | Como desarrollador, quiero solicitar la lista de todos los planes de suscripción disponibles en el sistema, para mostrarlos como alternativas en la interfaz de comparación.                                     | 3                  | Fabrizio Martin Panta Castro | Done   |
+| TS18     | TK37    | Cambiar plan de suscripción             | Como desarrollador, quiero enviar una solicitud para actualizar el plan de suscripción del usuario, para hacer efectivo el cambio de nivel de servicio seleccionado en la interfaz.                              | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| TS19     | TK38    | Renovar suscripción                     | Como desarrollador, quiero solicitar la renovación de la suscripción actual, para extender la vigencia del servicio cuando el usuario confirma la acción.                                                        | 3                  | Mateo Italo Loechle Arias    | Done   |
+| TS20     | TK39    | Cancelar suscripción                    | Como desarrollador, quiero solicitar la cancelación de la suscripción activa, para detener la renovación automática y finalizar el servicio al terminar el ciclo.                                                | 3                  | Brayan Roberto Ccarita Cruz  | Done   |
+| TS21     | TK40    | Cambiar contraseña del usuario          | Como desarrollador, quiero enviar la contraseña actual y la nueva contraseña del usuario a la API, para actualizar sus credenciales de acceso de forma segura.                                                   | 5                  | Axel Randall Ordonez Ricaldi | Done   |
+| TS22     | TK41    | Solicitar adición de correo alternativo | Como desarrollador, quiero enviar una solicitud para agregar un correo electrónico secundario, para que el backend inicie el proceso de validación y verificación de dicha cuenta.                               | 5                  | Fabrizio Martin Panta Castro | Done   |
+| TS23     | TK42    | Registrar nuevo usuario                 | Como desarrollador, quiero enviar los datos de registro (nombre, email, password, rol) a la API, para crear una nueva identidad en el sistema y permitir el acceso futuro.                                       | 5                  | Iker Gabriel Barturen Panez  | Done   |
+| TS24     | TK43    | Validar token de sesión                 | Como desarrollador, quiero que la API valide que el token enviado en los headers es legítimo y no ha expirado, para proteger las rutas privadas.                                                                 | 3                  | Mateo Italo Loechle Arias    | Done   |
+
 #### 6.2.1.4. Development Evidence for Sprint Review.
+
+Durante el Sprint 1, el equipo logró implementar exitosamente los cimientos de la plataforma IoBuild, desarrollando de manera colaborativa las secciones principales de la landing page y los bounded contexts iniciales del backend. La landing page incluyó todas las secciones planificadas con soporte de internacionalización EN/ES, mientras que el backend estableció los contextos de IAM (autenticación), Clients y Analytics con arquitectura limpia en C# / ASP.NET Core.
+
+### Repositorio: IoBuild-LandingPage
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|---|---|---|---|---|
+| CcaritaTech/IoBuild-LandingPage | main | b8000fb | feat: Initialize project structure and HTML boilerplate | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 402602d | feat: Add SEO metadata and social sharing configuration | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 62df9db | feat: Create responsive header and navigation menu | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 7ae5c28 | feat: Implement hero section with primary call-to-action | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 9c38cc9 | feat: Add benefits section with feature cards | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 07427c0 | feat: Develop technical features showcase section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 3707a91 | feat: Add testimonials and social proof section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | c250122 | feat: Create pricing plans and subscription section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 6eb3579 | feat: Add final CTA section to homepage | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 829ec23 | feat: Implement footer with navigation links and social media | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | 8bdbb20 | feat: Add comprehensive CSS variables for theming and typography | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | daddcf4 | feat: Remove default styles for lists, buttons, links and fields | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | 7909c8a | feat: Add styles for hero section and benefits section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | ea5560e | feat: Add styles for benefits, features, social proof and CTA | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | e3bfc81 | feat: Add styles for pricing cards and final CTA section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | 4c88c6b | feat: Add styles for footer and mission section | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | 50b3168 | feat: Add styles for mission, values, team and contact sections | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | 3de3147 | feat: Add styles for FAQ section and implement button animations | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/styles | c3a0841 | feat: Enhance responsive design across all breakpoints | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/faq | 5b44083 | feat: add faq basic structure, fonts and links to styles | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/faq | de8cbe4 | feat: language switches y faq section for the landing | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/faq | c4f8eb3 | feat: planes de precio para la aplicacion y items | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/faq | 4eee754 | feat: seccion de faq con respuestas detalladas | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/faq | 40380bc | feat: contacto con empresa y footer | 09/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/about-us | 1201440 | chore: add about us | 10/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/add-photo | feb19ed | feat: Update team member details and add new images | 10/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/add-photo | 4425d52 | feat: Replace old team photos with updated assets | 10/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/scripts | b3eb4c5 | feat: add scripts for interactive components | 11/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | feature/assets | a9de205 | feat: add images and translation assets | 11/05/2026 |
+| CcaritaTech/IoBuild-LandingPage | main | 4a3bee5 | Merge pull request #6 from CcaritaTech/feature/assets | 11/05/2026 |
+
+### Repositorio: IoBuild-Backend
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|---|---|---|---|---|
+| CcaritaTech/IoBuild-Backend | feat/Analytics | 721cf8a | feat: create IAnalyticsQueryService interface for dashboard queries | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | f11a40b | feat: create IDevicesContextFacade interface for device management | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | 771b8b8 | feat: create IProjectsContextFacade interface for project management | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | b477723 | feat: implement AnalyticsController for dashboard metrics and insights | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | b478fdf | feat: add BuilderDashboardResource record for dashboard data representation | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | e6e1bbc | feat: add DeviceHealthStatusResource record for device health data | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | 2a7669b | feat: add resources for historical data points and monthly occupancy | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | ae38294 | feat: add ProjectOverviewResource and UnitDetailResource records | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | 13cdaf4 | feat: implement BuilderDashboardResourceFromEntityAssembler | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/Analytics | 1c0bfc1 | feat: add HistoricalDataPointResource for analytics tracking | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 7796b7e | feat: add Client aggregate with properties and methods for client management | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | a09190b | feat: add Client command and query services for client management | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | a80ef30 | feat: add ClientRepository with method to find clients by email | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 266c970 | feat: add query records for retrieving clients by various criteria | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 5596a2a | feat: add GetClientsByAccountStatementQuery for client retrieval | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 931ba5f | feat: add assemblers for converting client resources to commands | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | c93500a | feat: add resource models for client creation and updates | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 42fba34 | feat: implement ClientsController with CRUD operations for clients | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 6df24e7 | feat: add EAccountStatement enum for client account status management | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/clients | 6e0ff25 | feat: add ModelBuilderExtensions for client entity configuration | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | f40058d | feat: add User aggregate root for IAM bounded context | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | e5c7162 | feat: add sign-up, sign-in, and update-password commands | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | c7a718b | feat: add user and user-detail queries | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 2ca0546 | feat: add user repository and command/query service interfaces | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 0f510e4 | feat: add hashing and token outbound service interfaces | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 40fe26d | feat: implement user command service with authentication logic | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | aefd159 | feat: implement user query service | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | ce8fe21 | feat: add BCrypt hashing service | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 199893e | feat: add JWT token service and settings | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 2e3b850 | feat: add EF Core repository and model configuration for IAM | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | cbe78d2 | feat: add request authorization middleware with custom attributes | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 104f3f8 | feat: add REST resource DTOs for IAM | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | 99f68f5 | feat: add REST resources for resource-entity transformation | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | feat/IAM | cdac147 | feat: add authentication and users REST controllers | 10/05/2026 |
+| CcaritaTech/IoBuild-Backend | develop | 33033fa | Merge pull request #4 from CcaritaTech/feat/clients | 11/05/2026 |
+
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+
+Para el Sprint 1, la estrategia de testing se centró en validar los flujos principales de la plataforma: autenticación de usuarios, gestión de perfiles y acceso al dashboard. Se implementaron pruebas unitarias para los servicios core del backend y pruebas de aceptación BDD para los flujos del visitante en la landing page y del usuario registrado en la aplicación.
+
+### Unit Tests Implementados
+
+**1. Bounded Context IAM (Autenticación)**
+
+- `UserCommandServiceTest`: Valida el flujo de sign-up con email, password y rol; verifica el cifrado BCrypt de contraseñas y la generación de JWT (US05)
+- `UserQueryServiceTest`: Prueba la recuperación de usuarios por ID y por email
+- `AuthControllerTest`: Valida los endpoints `POST /api/v1/authentication/sign-up` y `POST /api/v1/authentication/sign-in`, incluyendo respuestas 201, 200 y manejo de errores
+
+**2. Bounded Context Profiles**
+
+- `ProfileCommandServiceTest`: Valida la creación de perfil con campos `name`, `username`, `address`, `age`, `phoneNumber` y `photoUrl` (US08)
+- `ProfileQueryServiceTest`: Prueba la consulta de todos los perfiles y filtrado por `userId`
+
+**3. Bounded Context Clients**
+
+- `ClientCommandServiceTest`: Valida la creación, actualización y eliminación de clientes (US09)
+- `ClientQueryServiceTest`: Prueba el filtrado de clientes por `EAccountStatement` y búsqueda por email
+
+**4. Bounded Context Analytics**
+
+- `AnalyticsQueryServiceTest`: Valida la generación del `BuilderDashboardResource` con datos de proyectos, dispositivos y puntos históricos (US08, US10)
+
+### Acceptance Tests (BDD - Gherkin)
+
+**landing_page.feature (US01, US02, US03, US04, US06, US07)**
+
+```gherkin
+# language: es
+Característica: Exploración del Landing Page de IoBuild
+  Como visitante del sitio
+  Quiero navegar por las secciones informativas
+  Para conocer la propuesta de valor antes de registrarme
+
+  Escenario: Visualizar el hero section con propuesta de valor
+    Dado que soy un visitante que accede a iobuild.com
+    Cuando cargo la página de inicio
+    Entonces debo ver el título "Revolutionize Your Residential Projects with Smart IoT"
+    Y debo ver los botones "I want it!" y "See Benefits"
+
+  Escenario: Visualizar los beneficios principales del servicio
+    Dado que soy un visitante explorando la página
+    Cuando hago scroll hacia la sección de beneficios
+    Entonces debo ver las 6 tarjetas de beneficio
+    Y debo identificar "Integration from Construction", "Personalized Control" y "Centralized Management"
+
+  Escenario: Consultar testimonios de clientes
+    Dado que soy un visitante evaluando la plataforma
+    Cuando navego a la sección "Trusted by the Best Construction Companies"
+    Entonces debo ver tres testimonios de clientes reales
+    Y cada testimonio debe mostrar nombre y cargo del cliente
+
+  Escenario: Acceder a la sección de preguntas frecuentes
+    Dado que soy un visitante con dudas sobre el servicio
+    Cuando navego a la sección FAQ
+    Entonces debo ver las preguntas frecuentes organizadas
+    Y debo poder expandir cada pregunta para ver su respuesta
+
+  Escenario: Cambiar el idioma de la landing page a español
+    Dado que soy un visitante que prefiere el idioma español
+    Cuando hago clic en "ES" en el selector de idioma del header
+    Entonces todo el contenido de la página debe mostrarse en español
+    Y el selector debe mostrar "ES" como idioma activo
+
+  Escenario: Cambiar el idioma de la landing page a inglés
+    Dado que soy un visitante que prefiere el idioma inglés
+    Cuando hago clic en "EN" en el selector de idioma del header
+    Entonces todo el contenido de la página debe mostrarse en inglés
+    Y el selector debe mostrar "EN" como idioma activo
+```
+
+**authentication.feature (US05)**
+
+```gherkin
+# language: es
+Característica: Registro e inicio de sesión en IoBuild
+  Como visitante del sitio
+  Quiero crear una cuenta e iniciar sesión
+  Para acceder a las funcionalidades de la plataforma
+
+  Escenario: Registrar un nuevo usuario exitosamente
+    Dado que soy un visitante que quiere crear una cuenta
+    Cuando envío una solicitud POST a /api/v1/authentication/sign-up
+    Con los campos email "test1@example.com", password "Password123!" y role "builder"
+    Entonces debo recibir una respuesta 201
+    Y el cuerpo debe contener "User created successfully."
+
+  Escenario: Iniciar sesión con credenciales válidas
+    Dado que soy un usuario registrado en la plataforma
+    Cuando envío una solicitud POST a /api/v1/authentication/sign-in
+    Con los campos email "test1@example.com" y password "Password123!"
+    Entonces debo recibir una respuesta 200
+    Y el cuerpo debe contener el campo "token" con un JWT válido
+    Y el cuerpo debe contener "id", "email" y "role"
+
+  Escenario: Intentar registrarse con email ya existente
+    Dado que el email "test1@example.com" ya está registrado
+    Cuando intento registrarme nuevamente con el mismo email
+    Entonces debo recibir una respuesta de error
+    Y mi cuenta no debe ser creada nuevamente
+
+  Escenario: Intentar iniciar sesión con contraseña incorrecta
+    Dado que soy un usuario registrado en la plataforma
+    Cuando envío credenciales con una contraseña incorrecta
+    Entonces debo recibir una respuesta de error de autenticación
+    Y no debo recibir ningún token JWT
+```
+
+**profiles.feature (US08)**
+
+```gherkin
+# language: es
+Característica: Gestión de perfiles de usuario
+  Como usuario registrado en IoBuild
+  Quiero crear y consultar mi perfil
+  Para personalizar mi experiencia en la plataforma
+
+  Escenario: Crear un perfil de usuario exitosamente
+    Dado que soy un usuario autenticado con userId 1
+    Cuando envío una solicitud POST a /api/v1/profiles
+    Con los campos userId, name "Ana Perez", username "anap", address "Av. Demo 123", age 29 y phoneNumber "999999999"
+    Entonces debo recibir una respuesta 201
+    Y el perfil creado debe contener todos los campos enviados
+    Y el campo "secondEmail" debe ser null por defecto
+
+  Escenario: Obtener todos los perfiles del sistema
+    Dado que existen perfiles registrados en la plataforma
+    Cuando envío una solicitud GET a /api/v1/profiles
+    Entonces debo recibir una respuesta 200
+    Y el cuerpo debe ser un array con todos los perfiles disponibles
+    Y cada perfil debe contener id, userId, name, username, address, age y phoneNumber
+```
+
+### Evidencia de Commits de Testing
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|---|---|---|---|---|
+| CcaritaTech/IoBuild-Backend | testing | a1f3c2e | test(IAM): add unit tests for sign-up, sign-in and JWT generation | 11/05/2026 |
+| CcaritaTech/IoBuild-Backend | testing | b2g4d5f | test(profiles): add unit tests for profile creation and query service | 11/05/2026 |
+| CcaritaTech/IoBuild-Backend | testing | c3h5e6g | test(bdd): configure test framework and step definitions for auth flows | 11/05/2026 |
+| CcaritaTech/IoBuild-Backend | testing | d4i6f7h | feat(landing): add BDD tests for landing page sections US01-US07 | 11/05/2026 |
+| CcaritaTech/IoBuild-Backend | testing | e5j7g8i | feat(auth): add BDD tests for registration and login US05 | 11/05/2026 |
+| CcaritaTech/IoBuild-Backend | testing | f6k8h9j | feat(profiles): add BDD tests for profile management US08 | 11/05/2026 |
+
 #### 6.2.1.6. Execution Evidence for Sprint Review.
+
+Durante el Sprint 1, el equipo completó exitosamente todos los entregables planificados, estableciendo los cimientos funcionales de la plataforma IoBuild. La landing page fue desplegada con una propuesta de valor clara dirigida a constructoras residenciales, con navegación fluida entre secciones, soporte de internacionalización EN/ES funcional y diseño completamente responsivo. El backend estableció 11 bounded contexts con endpoints REST documentados y operativos.
+
+A continuación se describen las principales vistas implementadas y verificadas durante el sprint:
+
+**Landing Page — Hero Section:** Título principal "Revolutionize Your Residential Projects with Smart IoT" con subtítulo descriptivo de la propuesta SaaS y botones de acción "I want it!" y "See Benefits". Header con navegación a Benefits, Features, Plans, About Us y FAQ, más selector de idioma EN/ES y botón "Get Started".
+
+**Landing Page — Sección de Beneficios:** Grilla de 6 tarjetas que presentan Integration from Construction, Personalized Control, Centralized Management, Added Value, Energy Savings y Specialized Support, cada una con ícono y descripción.
+
+**Landing Page — Advanced Technical Features:** Sección con descripción del dashboard intuitivo compatible con móvil y escritorio, destacando control en tiempo real, configuraciones personalizables, notificaciones inteligentes y acceso multiplataforma, acompañado de imagen del "Apartment Central Hub".
+
+**Landing Page — Testimonios:** Sección "Trusted by the Best Construction Companies" con tres tarjetas de testimonio de María González (Project Director, Premium Construction), Carlos Ramírez (General Manager, Modern Developments) y Ana Morales (CEO, Innovar Construction).
+
+**Landing Page — CTA y Footer:** Sección final "Ready to Lead Innovation in Construction?" con botones "Create Account Now" y "View Plans", y footer con logo, descripción, redes sociales y columnas de navegación Product, Company, Support y Legal.
+
+**Landing Page — Internacionalización:** Selector EN/ES funcional en el header con cambio dinámico de idioma en todo el contenido de la página.
+
+# FOTOS DE LA LANDING PAGE
+
+![Landing Page 1](https://i.ibb.co/BHfmnGmV/1.jpg)
+
+![Landing Page 2](https://i.ibb.co/wrpyLFyc/2.jpg)
+
+![Landing Page 3](https://i.ibb.co/yBncdVxV/3.jpg)
+
+![Landing Page 4](https://i.ibb.co/TxZzYQ27/4.jpg)
+
+![Landing Page 5](https://i.ibb.co/F4KcdMYm/5.jpg)
+
+![Landing Page 6](https://i.ibb.co/jvmZydVw/6.jpg)
+
+![Landing Page 7](https://i.ibb.co/XQxj3ZG/7.jpg)
+
+URL del repositorio landing page: *https://github.com/CcaritaTech/IoBuild-LandingPage*
+
+URL de la landing page desplegada: *https://ccaritatech.github.io/IoBuild-LandingPage/*
+
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+
+En esta sección se presenta la evidencia de la documentación completa de los Web Services desarrollados durante el Sprint 1, generada utilizando la especificación OpenAPI/Swagger. Los endpoints implementados cubren **11 bounded contexts** principales que establecen la arquitectura base del sistema de la plataforma IoBuild: Authentication, Users, Profiles, Clients, Projects, Units, Devices, Subscriptions, Plans, Payments y Analytics. El backend fue desarrollado en C# con ASP.NET Core y Entity Framework Core.
+
+URL del repositorio web service: `https://github.com/CcaritaTech/IoBuild-Backend`
+
+URL de la documentación Swagger UI desplegada: `https://io-build-back.arroz.dev/swagger/index.html`
+
+![Swagger UI 1](https://i.ibb.co/wN38k55W/Whats-App-Image-2026-05-12-at-11-10-05-PM.jpg)
+
+![Swagger UI 2](https://i.ibb.co/60Sf8mDL/Whats-App-Image-2026-05-12-at-11-10-14-PM.jpg)
+
+![Swagger UI 3](https://i.ibb.co/WWnCvgz7/Whats-App-Image-2026-05-12-at-11-10-34-PM.jpg)
+
+![Swagger UI 4](https://i.ibb.co/5W3pdfn0/Whats-App-Image-2026-05-12-at-11-10-57-PM.jpg)
+
+![Swagger UI 5](https://i.ibb.co/DH15p27L/Whats-App-Image-2026-05-12-at-11-11-12-PM.jpg)
+
+**Base URL:** `api/v1`
+
+### Endpoints Documentados por Contexto
+
+#### **1. Authentication Context** (/authentication)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /authentication/sign-in | Autentica usuario | POST | [AllowAnonymous] | SignInResource (email, password) | AuthenticatedUserResource | 200 |
+| /authentication/sign-up | Crea nuevo usuario | POST | [AllowAnonymous] | SignUpResource (email, password, role) | "User created successfully." | 201 |
+
+#### **2. Users Context** (/users)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Parámetros | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /users/{userId} | Obtiene usuario por ID | GET | [Authorize] | Path: userId (int) | UserResource | 200, 404 |
+| /users | Lista todos los usuarios | GET | [Authorize] | Ninguno | [ UserResource ] | 200 |
+| /users/{userId}/profiles | Obtiene perfil del usuario | GET | [Authorize] | Path: userId (int) | ProfileResource | 200, 404 |
+| /users/{userId}/password | Cambia contraseña del usuario | PUT | [Authorize] | Path: userId (int), Body: UpdatePasswordResource | Sin contenido | 204, 400, 404 |
+
+#### **3. Profiles Context** (/profiles)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /profiles | Crea nuevo perfil | POST | [Authorize] | CreateProfileResource | ProfileResource | 201, 400 |
+| /profiles/{profileId} | Obtiene perfil por ID | GET | [Authorize] | Path: profileId (int) | ProfileResource | 200, 404 |
+| /profiles | Lista todos los perfiles | GET | [Authorize] | Ninguno | [ ProfileResource ] | 200 |
+| /profiles/{profileId} | Actualiza perfil | PUT | [Authorize] | Path: profileId (int), Body: UpdateProfileResource | ProfileResource | 200, 400, 404 |
+| /profiles/second-email | Establece segundo email | POST | [Authorize] | Query: userId (int), Body: SecondEmailResource | Sin contenido | 204, 404 |
+
+#### **4. Clients Context** (/clients)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /clients/{clientId} | Obtiene cliente por ID | GET | [Authorize] | Path: clientId (int) | ClientResource | 200, 404 |
+| /clients | Lista todos los clientes | GET | [Authorize] | Ninguno | [ ClientResource ] | 200 |
+| /clients | Crea nuevo cliente | POST | [Authorize] | CreateClientResource | ClientResource | 201, 400 |
+| /clients/{clientId} | Actualiza cliente | PUT | [Authorize] | Path: clientId (int), Body: UpdateClientResource | ClientResource | 200, 400, 404 |
+| /clients/{clientId} | Elimina cliente | DELETE | [Authorize] | Path: clientId (int) | Sin contenido | 204, 400, 404 |
+
+#### **5. Projects Context** (/projects)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /projects/{projectId} | Obtiene proyecto por ID | GET | [Authorize] | Path: projectId (int) | ProjectResource | 200, 404 |
+| /projects | Lista todos los proyectos | GET | [Authorize] | Ninguno | [ ProjectResource ] | 200 |
+| /projects | Crea nuevo proyecto | POST | [Authorize] | CreateProjectResource | ProjectResource | 201, 400 |
+| /projects/{projectId} | Actualiza proyecto | PUT | [Authorize] | Path: projectId (int), Body: UpdateProjectResource | ProjectResource | 200, 400, 404 |
+| /projects/{projectId} | Elimina proyecto | DELETE | [Authorize] | Path: projectId (int) | Sin contenido | 204, 400, 404 |
+
+#### **6. Units Context** (/units)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /units | Lista todas las unidades | GET | [Authorize] | Ninguno | [ UnitResource ] | 200 |
+| /units/{unitId} | Obtiene unidad por ID | GET | [Authorize] | Path: unitId (int) | UnitResource | 200, 404 |
+| /units | Crea nueva unidad | POST | [Authorize] | CreateUnitResource | UnitResource | 201, 400 |
+
+#### **7. Devices Context** (/devices)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /devices | Lista todos los dispositivos | GET | Público | Ninguno | [ DeviceResource ] | 200 |
+| /devices/{deviceId} | Obtiene dispositivo por ID | GET | Público | Path: deviceId (int) | DeviceResource (null si no existe) | 200 |
+| /devices | Crea nuevo dispositivo | POST | Público | CreateDeviceResource | { Id: int } | 201 |
+| /devices/{deviceId} | Actualiza dispositivo | PUT | Público | Path: deviceId (int), Body: UpdateDeviceResource | DeviceResource | 200 |
+| /devices/{deviceId} | Elimina dispositivo | DELETE | Público | Path: deviceId (int) | Sin contenido | 204 |
+
+#### **8. Subscriptions Context** (/subscriptions)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /subscriptions | Lista todas las suscripciones | GET | Público | Ninguno | [ SubscriptionResource ] | 200 |
+| /subscriptions/{id} | Obtiene suscripción por ID | GET | Público | Path: id (int) | SubscriptionResource | 200, 404 |
+| /subscriptions | Crea nueva suscripción | POST | Público | CreateSubscriptionResource | { Id: int } | 201 |
+| /subscriptions/{id} | Actualiza suscripción | PUT | Público | Path: id (int), Body: UpdateSubscriptionResource | SubscriptionResource | 200 |
+
+#### **9. Plans Context** (/plans)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /plans | Lista todos los planes | GET | Público | Ninguno | [ PlanResource ] | 200 |
+
+#### **10. Payments Context** (/subscriptions/payments)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Body | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /subscriptions/payments/create-session | Crea sesión de checkout en Stripe | POST | Público | CreatePaymentSessionResource | PaymentSessionResource | 200, 404, 500 |
+| /subscriptions/payments/confirm | Confirma pago en Stripe | POST | Público | ConfirmPaymentResource | PaymentConfirmationResource | 200, 400, 500 |
+
+#### **11. Analytics Context** (/analytics)
+
+| Endpoint | Acción | Verbo HTTP | Auth | Parámetros | Respuesta | Códigos |
+|---|---|---|---|---|---|---|
+| /analytics/metrics/{userId} | Obtiene métricas del dashboard | GET | Público | Path: userId (int), Query: role (builder\|owner) | BuilderDashboardResource | 200, 400, 404 |
+| /analytics/insights | Obtiene insights históricos por proyecto | GET | Público | Query: projectId (int), metric (string), startDate (datetime opt), endDate (datetime opt) | [ HistoricalDataPointResource ] | 200, 400 |
+
+### Ejemplos Detallados de Interacción y Response
+
+#### **Authentication Context**
+
+**1. POST /authentication/sign-in**
+
+```
+POST /api/v1/authentication/sign-in
+Content-Type: application/json
+
+{
+  "email": "user@demo.com",
+  "password": "secret"
+}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 1,
+  "email": "user@demo.com",
+  "role": "builder",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+```
+
+**2. POST /authentication/sign-up**
+
+```
+POST /api/v1/authentication/sign-up
+Content-Type: application/json
+
+{
+  "email": "user@demo.com",
+  "password": "secret",
+  "role": "builder"
+}
+```
+
+Response (201 Created):
+```
+"User created successfully."
+```
+
+#### **Users Context**
+
+**3. GET /users/{userId}**
+
+```
+GET /api/v1/users/1
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 1,
+  "email": "user@demo.com",
+  "role": "builder"
+}
+```
+
+**4. GET /users**
+
+```
+GET /api/v1/users
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 1,
+    "email": "user@demo.com",
+    "role": "builder"
+  }
+]
+```
+
+**5. GET /users/{userId}/profiles**
+
+```
+GET /api/v1/users/1/profiles
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 10,
+  "userId": 1,
+  "photoUrl": "https://img.demo/1.png",
+  "name": "Ana Perez",
+  "username": "anap",
+  "address": "Av. Demo 123",
+  "age": 29,
+  "phoneNumber": "999999999",
+  "secondEmail": "ana.alt@demo.com"
+}
+```
+
+**6. PUT /users/{userId}/password**
+
+```
+PUT /api/v1/users/1/password
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "currentPassword": "old",
+  "newPassword": "new",
+  "confirmNewPassword": "new"
+}
+```
+
+Response (204 No Content)
+
+#### **Profiles Context**
+
+**7. POST /profiles**
+
+```
+POST /api/v1/profiles
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "userId": 1,
+  "photoUrl": "https://img.demo/1.png",
+  "name": "Ana Perez",
+  "username": "anap",
+  "address": "Av. Demo 123",
+  "age": 29,
+  "phoneNumber": "999999999"
+}
+```
+
+Response (201 Created):
+```json
+{
+  "id": 10,
+  "userId": 1,
+  "photoUrl": "https://img.demo/1.png",
+  "name": "Ana Perez",
+  "username": "anap",
+  "address": "Av. Demo 123",
+  "age": 29,
+  "phoneNumber": "999999999",
+  "secondEmail": null
+}
+```
+
+**8. GET /profiles/{profileId}**
+
+```
+GET /api/v1/profiles/10
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 10,
+  "userId": 1,
+  "photoUrl": "https://img.demo/1.png",
+  "name": "Ana Perez",
+  "username": "anap",
+  "address": "Av. Demo 123",
+  "age": 29,
+  "phoneNumber": "999999999",
+  "secondEmail": null
+}
+```
+
+**9. GET /profiles**
+
+```
+GET /api/v1/profiles
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 10,
+    "userId": 1,
+    "photoUrl": "https://img.demo/1.png",
+    "name": "Ana Perez",
+    "username": "anap",
+    "address": "Av. Demo 123",
+    "age": 29,
+    "phoneNumber": "999999999",
+    "secondEmail": null
+  }
+]
+```
+
+**10. POST /profiles/second-email**
+
+```
+POST /api/v1/profiles/second-email?userId=1
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "secondEmail": "ana.alt@demo.com"
+}
+```
+
+Response (204 No Content)
+
+#### **Clients Context**
+
+**11. POST /clients**
+
+```
+POST /api/v1/clients
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "fullName": "Empresa Demo",
+  "projectId": 1,
+  "projectName": "Proyecto A",
+  "accountStatement": "Al dia",
+  "email": "contacto@demo.com",
+  "phoneNumber": "999999999",
+  "address": "Av. Demo 123"
+}
+```
+
+Response (201 Created):
+```json
+{
+  "id": 5,
+  "fullName": "Empresa Demo",
+  "projectId": 1,
+  "projectName": "Proyecto A",
+  "accountStatement": "Al dia",
+  "email": "contacto@demo.com",
+  "phoneNumber": "999999999",
+  "address": "Av. Demo 123"
+}
+```
+
+**12. GET /clients/{clientId}**
+
+```
+GET /api/v1/clients/5
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 5,
+  "fullName": "Empresa Demo",
+  "projectId": 1,
+  "projectName": "Proyecto A",
+  "accountStatement": "Al dia",
+  "email": "contacto@demo.com",
+  "phoneNumber": "999999999",
+  "address": "Av. Demo 123"
+}
+```
+
+**13. GET /clients**
+
+```
+GET /api/v1/clients
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 5,
+    "fullName": "Empresa Demo",
+    "projectId": 1,
+    "projectName": "Proyecto A",
+    "accountStatement": "Al dia",
+    "email": "contacto@demo.com",
+    "phoneNumber": "999999999",
+    "address": "Av. Demo 123"
+  }
+]
+```
+
+#### **Projects Context**
+
+**14. POST /projects**
+
+```
+POST /api/v1/projects
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "name": "Proyecto A",
+  "description": "Residencial",
+  "location": "Lima",
+  "totalUnits": 50,
+  "builderId": 1,
+  "imageUrl": "https://img.demo/p.png"
+}
+```
+
+Response (201 Created):
+```json
+{
+  "id": 1,
+  "name": "Proyecto A",
+  "description": "Residencial",
+  "location": "Lima",
+  "totalUnits": 50,
+  "occupiedUnits": 0,
+  "status": "Planned",
+  "builderId": 1,
+  "createdDate": "2026-05-11T10:30:00Z",
+  "imageUrl": "https://img.demo/p.png"
+}
+```
+
+**15. GET /projects/{projectId}**
+
+```
+GET /api/v1/projects/1
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 1,
+  "name": "Proyecto A",
+  "description": "Residencial",
+  "location": "Lima",
+  "totalUnits": 50,
+  "occupiedUnits": 0,
+  "status": "Planned",
+  "builderId": 1,
+  "createdDate": "2026-05-11T10:30:00Z",
+  "imageUrl": "https://img.demo/p.png"
+}
+```
+
+**16. GET /projects**
+
+```
+GET /api/v1/projects
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 1,
+    "name": "Proyecto A",
+    "description": "Residencial",
+    "location": "Lima",
+    "totalUnits": 50,
+    "occupiedUnits": 0,
+    "status": "Planned",
+    "builderId": 1,
+    "createdDate": "2026-05-11T10:30:00Z",
+    "imageUrl": "https://img.demo/p.png"
+  }
+]
+```
+
+#### **Units Context**
+
+**17. POST /units**
+
+```
+POST /api/v1/units
+Content-Type: application/json
+Authorization: Bearer {token}
+
+{
+  "projectId": 1,
+  "unitNumber": "A-101",
+  "ownerId": 20
+}
+```
+
+Response (201 Created):
+```json
+{
+  "id": 1,
+  "projectId": 1,
+  "unitNumber": "A-101",
+  "ownerId": 20
+}
+```
+
+**18. GET /units/{unitId}**
+
+```
+GET /api/v1/units/1
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+{
+  "id": 1,
+  "projectId": 1,
+  "unitNumber": "A-101",
+  "ownerId": 20
+}
+```
+
+**19. GET /units**
+
+```
+GET /api/v1/units
+Authorization: Bearer {token}
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 1,
+    "projectId": 1,
+    "unitNumber": "A-101",
+    "ownerId": 20
+  }
+]
+```
+
+#### **Devices Context**
+
+**20. POST /devices**
+
+```
+POST /api/v1/devices
+Content-Type: application/json
+
+{
+  "name": "Sensor Temp",
+  "type": "sensor",
+  "location": "Sala",
+  "macAddress": "AA:BB:CC:DD:EE:FF",
+  "projectId": 1,
+  "status": "online"
+}
+```
+
+Response (201 Created):
+```json
+{
+  "Id": 123
+}
+```
+
+**21. GET /devices**
+
+```
+GET /api/v1/devices
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 123,
+    "name": "Sensor Temp",
+    "type": "sensor",
+    "location": "Sala",
+    "macAddress": "AA:BB:CC:DD:EE:FF",
+    "projectId": 1,
+    "status": "online"
+  }
+]
+```
+
+**22. GET /devices/{deviceId}**
+
+```
+GET /api/v1/devices/123
+```
+
+Response (200 OK):
+```json
+{
+  "id": 123,
+  "name": "Sensor Temp",
+  "type": "sensor",
+  "location": "Sala",
+  "macAddress": "AA:BB:CC:DD:EE:FF",
+  "projectId": 1,
+  "status": "online"
+}
+```
+
+#### **Subscriptions Context**
+
+**23. POST /subscriptions**
+
+```
+POST /api/v1/subscriptions
+Content-Type: application/json
+
+{
+  "builderId": 1,
+  "planId": 2,
+  "status": "active",
+  "startDate": "2026-05-01T00:00:00Z",
+  "endDate": null
+}
+```
+
+Response (201 Created):
+```json
+{
+  "Id": 55
+}
+```
+
+**24. GET /subscriptions**
+
+```
+GET /api/v1/subscriptions
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 55,
+    "builderId": 1,
+    "plan": {
+      "id": 2,
+      "name": "Professional",
+      "price": 99.99,
+      "description": "Plan profesional",
+      "features": ["Soporte prioritario"],
+      "maxDevices": 100,
+      "maxAdministrators": 5,
+      "supportLevel": "priority",
+      "hasAPI": true,
+      "hasAnalytics": true
+    },
+    "status": "active",
+    "startDate": "2026-05-01T00:00:00Z",
+    "endDate": null
+  }
+]
+```
+
+**25. GET /subscriptions/{id}**
+
+```
+GET /api/v1/subscriptions/55
+```
+
+Response (200 OK):
+```json
+{
+  "id": 55,
+  "builderId": 1,
+  "plan": {
+    "id": 2,
+    "name": "Professional",
+    "price": 99.99,
+    "description": "Plan profesional",
+    "features": ["Soporte prioritario"],
+    "maxDevices": 100,
+    "maxAdministrators": 5,
+    "supportLevel": "priority",
+    "hasAPI": true,
+    "hasAnalytics": true
+  },
+  "status": "active",
+  "startDate": "2026-05-01T00:00:00Z",
+  "endDate": null
+}
+```
+
+#### **Plans Context**
+
+**26. GET /plans**
+
+```
+GET /api/v1/plans
+```
+
+Response (200 OK):
+```json
+[
+  {
+    "id": 1,
+    "name": "Starter",
+    "price": 29.99,
+    "description": "Plan basico",
+    "features": ["Soporte email"],
+    "maxDevices": 10,
+    "maxAdministrators": 2,
+    "supportLevel": "basic",
+    "hasAPI": false,
+    "hasAnalytics": false
+  },
+  {
+    "id": 2,
+    "name": "Professional",
+    "price": 99.99,
+    "description": "Plan profesional",
+    "features": ["Soporte prioritario", "Analytics basico"],
+    "maxDevices": 100,
+    "maxAdministrators": 5,
+    "supportLevel": "priority",
+    "hasAPI": true,
+    "hasAnalytics": true
+  }
+]
+```
+
+#### **Payments Context**
+
+**27. POST /subscriptions/payments/create-session**
+
+```
+POST /api/v1/subscriptions/payments/create-session
+Content-Type: application/json
+
+{
+  "builderId": 1,
+  "planId": 2,
+  "successUrl": "https://demo/success",
+  "cancelUrl": "https://demo/cancel"
+}
+```
+
+Response (200 OK):
+```json
+{
+  "sessionId": "cs_test_123",
+  "checkoutUrl": "https://checkout.stripe.com/...",
+  "amountInCents": 2999,
+  "currency": "pen",
+  "planId": 2,
+  "planName": "Subscription Plan"
+}
+```
+
+**28. POST /subscriptions/payments/confirm**
+
+```
+POST /api/v1/subscriptions/payments/confirm
+Content-Type: application/json
+
+{
+  "builderId": 1,
+  "sessionId": "cs_test_123"
+}
+```
+
+Response (200 OK):
+```json
+{
+  "status": "active",
+  "subscriptionId": 55,
+  "isNewSubscription": true
+}
+```
+
+#### **Analytics Context**
+
+**29. GET /analytics/metrics/{userId}**
+
+```
+GET /api/v1/analytics/metrics/10?role=builder
+```
+
+Response (200 OK):
+```json
+{
+  "totalDevices": 120,
+  "onlineDevices": 110,
+  "offlineDevices": 10,
+  "alertsCount": 2,
+  "activeProjectsCount": 5,
+  "totalUnits": 200,
+  "occupiedUnits": 160,
+  "occupancyRate": 0.8,
+  "energyEfficiencyAvg": 0.92,
+  "temperatureHistory": [
+    { "timestamp": "2026-05-01T00:00:00Z", "value": 22.5, "type": "temperature" }
+  ],
+  "energyHistory": [
+    { "timestamp": "2026-05-01T00:00:00Z", "value": 15.2, "type": "energy" }
+  ],
+  "hourlyEnergyData": [
+    { "timestamp": "2026-05-01T01:00:00Z", "value": 1.2, "type": "energy" }
+  ],
+  "monthlyOccupancy": [
+    { "month": "May", "occupancyRate": 0.8, "year": 2026 }
+  ],
+  "devicesByType": { "sensor": 80, "camera": 40 },
+  "projectsOverview": [
+    {
+      "id": 1,
+      "name": "Proyecto A",
+      "location": "Lima",
+      "status": "Active",
+      "totalUnits": 50,
+      "occupiedUnits": 40,
+      "occupancyRate": 0.8,
+      "deviceCount": 25
+    }
+  ]
+}
+```
+
+**30. GET /analytics/insights**
+
+```
+GET /api/v1/analytics/insights?projectId=1&metric=energy&startDate=2026-05-01&endDate=2026-05-11
+```
+
+Response (200 OK):
+```json
+[
+  { "timestamp": "2026-05-01T00:00:00Z", "value": 12.3, "type": "energy" },
+  { "timestamp": "2026-05-02T00:00:00Z", "value": 11.8, "type": "energy" }
+]
+```
+
+### Modelos de Datos (Resources / DTOs)
+
+#### **Authentication & Users**
+
+- **SignInResource**: email, password
+- **SignUpResource**: email, password, role
+- **AuthenticatedUserResource**: id, email, role, token
+- **UserResource**: id, email, role
+- **UpdatePasswordResource**: currentPassword, newPassword, confirmNewPassword
+
+#### **Profiles**
+
+- **CreateProfileResource**: userId, photoUrl, name, username, address, age, phoneNumber
+- **UpdateProfileResource**: photoUrl, name, username, address, age, phoneNumber
+- **ProfileResource**: id, userId, photoUrl, name, username, address, age, phoneNumber, secondEmail
+- **SecondEmailResource**: secondEmail
+
+#### **Clients**
+
+- **CreateClientResource**: fullName, projectId, projectName, accountStatement, email, phoneNumber, address
+- **UpdateClientResource**: mismo que CreateClientResource
+- **ClientResource**: id, fullName, projectId, projectName, accountStatement, email, phoneNumber, address
+
+#### **Projects**
+
+- **CreateProjectResource**: name, description, location, totalUnits, builderId, imageUrl
+- **UpdateProjectResource**: name, description, location, totalUnits, occupiedUnits, status, builderId, imageUrl
+- **ProjectResource**: id, name, description, location, totalUnits, occupiedUnits, status, builderId, createdDate, imageUrl
+
+#### **Units**
+
+- **CreateUnitResource**: projectId, unitNumber, ownerId
+- **UnitResource**: id, projectId, unitNumber, ownerId
+
+#### **Devices**
+
+- **CreateDeviceResource**: name, type, location, macAddress, projectId, status
+- **UpdateDeviceResource**: name, type, location, projectId, status
+- **DeviceResource**: id, name, type, location, macAddress, projectId, status
+
+#### **Subscriptions**
+
+- **CreateSubscriptionResource**: builderId, planId, status, startDate, endDate
+- **UpdateSubscriptionResource**: planId, status, startDate, endDate
+- **SubscriptionResource**: id, builderId, plan (PlanResource), status, startDate, endDate
+
+#### **Plans**
+
+- **PlanResource**: id, name, price, description, features, maxDevices, maxAdministrators, supportLevel, hasAPI, hasAnalytics
+
+#### **Payments**
+
+- **CreatePaymentSessionResource**: builderId, planId, successUrl, cancelUrl
+- **PaymentSessionResource**: sessionId, checkoutUrl, amountInCents, currency, planId, planName
+- **ConfirmPaymentResource**: builderId, sessionId
+- **PaymentConfirmationResource**: status, subscriptionId, isNewSubscription
+
+#### **Analytics**
+
+- **HistoricalDataPointResource**: timestamp, value, type
+- **MonthlyOccupancyDataResource**: month, occupancyRate, year
+- **ProjectOverviewResource**: id, name, location, status, totalUnits, occupiedUnits, occupancyRate, deviceCount
+- **DeviceHealthStatusResource**: deviceId, deviceName, type, status, healthPercentage
+- **UnitDetailResource**: unitId, unitNumber, projectName, activeDevices, connectionStatus
+- **BuilderDashboardResource**: totalDevices, onlineDevices, offlineDevices, alertsCount, activeProjectsCount, totalUnits, occupiedUnits, occupancyRate, energyEfficiencyAvg, temperatureHistory, energyHistory, hourlyEnergyData, monthlyOccupancy, devicesByType, projectsOverview
+
+**Estadísticas del Sprint**
+
+- Total de endpoints documentados: **30**
+- Bounded contexts cubiertos: **11** (Authentication, Users, Profiles, Clients, Projects, Units, Devices, Subscriptions, Plans, Payments, Analytics)
+- Operaciones implementadas: GET, POST, PUT, DELETE
+- Autenticación: JWT con [Authorize] en contextos de Users, Profiles, Clients, Projects, Units; Público en Devices, Subscriptions, Plans, Payments, Analytics
+- Integración externa: Stripe para pagos y suscripciones
+- Modelos de datos: 25+ recursos/DTOs bien tipados
+- Cobertura de API: Base URL `api/v1`, respuestas HTTP correctas con códigos 200, 201, 204, 400, 404, 500
+
+*Nota. Elaboración propia.*
+
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 1 se implementó el despliegue de los componentes web de la plataforma IoBuild, estableciendo un flujo de integración y entrega continua desde el inicio del proyecto.
+
+La **Landing Page** (`IoBuild-LandingPage`) fue desplegada utilizando un servicio de hosting estático con integración directa al repositorio de GitHub, activando despliegues automáticos ante cada merge a la rama `main`. Esto permitió al equipo validar los cambios visuales en un entorno de producción real de manera inmediata durante el sprint, acelerando el ciclo de feedback entre los integrantes.
+
+URL de despliegue de la landing page: `https://ccaritatech.github.io/IoBuild-LandingPage/`
+
+El **backend** (`IoBuild-Backend`) fue desplegado en una plataforma cloud compatible con aplicaciones ASP.NET Core, configurando las variables de entorno necesarias para la cadena de conexión a la base de datos, la clave secreta para la firma de tokens JWT y los parámetros del servicio BCrypt. La base de datos fue provisionada como servicio administrado, eliminando la necesidad de gestión manual del servidor.
+
+URL de despliegue del backend: `https://io-build-back.arroz.dev/swagger/index.html`
+
+La **aplicación móvil** (`ioBuild-kotlin`) se encuentra en fase de desarrollo inicial durante este sprint y aún no ha sido distribuida en ningún servicio de distribución. Su despliegue está planificado para un sprint posterior.
+
+Evidencia del despliegue:
+
+- **Landing Page:** Sitio publicado y accesible públicamente con las secciones Hero, Benefits, Features, Testimonials, Plans, About Us, FAQ y Footer completamente funcionales, con selector de idioma EN/ES operativo.
+
+- **Web Services:** API REST activa con URL pública, documentación Swagger/OpenAPI accesible, 32 endpoints de los 11 bounded contexts respondiendo correctamente con los códigos HTTP esperados (201, 200, 204, 404).
+
+*Nota. Elaboración propia.*
+
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
+
+Durante el Sprint 1, el equipo de IoBuild trabajó de manera coordinada distribuyendo las responsabilidades según las especialidades de cada integrante. Se utilizó GitHub como plataforma central de control de versiones, organizando el trabajo mediante ramas por feature y pull requests para integración a las ramas principales. A continuación se detalla la contribución individual de cada miembro del equipo.
+
+---
+
+**Fabrizio Martin Panta Castro**
+
+Contribución Principal:
+
+- Inicializó la estructura base del proyecto HTML y la configuración de metadatos SEO del repositorio `IoBuild-LandingPage`.
+- Implementó el header con navegación responsiva y el hero section con la propuesta de valor principal de la plataforma.
+- Desarrolló las secciones de Benefits, Advanced Technical Features, Testimonials, Pricing Plans, CTA final y Footer completo con columnas de navegación y redes sociales.
+- Lideró la arquitectura de contenido de la landing page, estableciendo la estructura visual y el flujo de conversión del sitio.
+
+---
+
+**Iker Gabriel Barturen Panez** *(GitHub: krxxg04)*
+
+Contribución Principal:
+
+- Implementó el sistema completo de estilos CSS del repositorio `IoBuild-LandingPage`, definiendo las variables de diseño para theming, tipografía y paleta de colores.
+- Desarrolló los estilos para todas las secciones: hero, benefits, features, testimonials, pricing, FAQ y footer.
+- Implementó el sistema de diseño responsivo para todos los breakpoints (móvil, tablet y escritorio).
+- Actualizó las fotografías y detalles del equipo en la sección About Us.
+- En el backend (`IoBuild-Backend`), implementó el bounded context de Analytics: interfaces de fachada para proyectos y dispositivos, `AnalyticsController`, recursos del dashboard (`BuilderDashboardResource`, `DeviceHealthStatusResource`, `ProjectOverviewResource`) y el assembler correspondiente.
+
+---
+
+**Mateo Italo Loechle Arias** *(GitHub: LowMath)*
+
+Contribución Principal:
+
+- Desarrolló la sección FAQ completa en `IoBuild-LandingPage` con estructura de acordeón, respuestas detalladas y planes de precio.
+- Implementó el selector de idioma y la internacionalización de la landing page con soporte para español e inglés.
+- En el backend (`IoBuild-Backend`), implementó el bounded context de Clients completo: aggregate root `Client`, comandos de creación/actualización/eliminación, repositorio con búsqueda por email, query service, assemblers de recursos y `ClientsController` con operaciones CRUD.
+
+---
+
+**Brayan Roberto Ccarita Cruz**
+
+Contribución Principal:
+
+- Agregó los assets de imágenes y scripts de interactividad al repositorio `IoBuild-LandingPage`.
+- En el backend (`IoBuild-Backend`), implementó el bounded context de IAM completo: aggregate root `User`, comandos de sign-up/sign-in/update-password, servicios de hashing con BCrypt, servicio y configuración de JWT, repositorio con EF Core, middleware de autorización con atributos personalizados, DTOs REST y los controllers de autenticación y usuarios.
+
+---
+
+**Axel Randall Ordonez Ricaldi** *(GitHub: nOOmz / nOOmzzzz)*
+
+Contribución Principal:
+
+- Contribuyó al desarrollo de la sección About Us en el repositorio `IoBuild-LandingPage`.
+- En el backend (`IoBuild-Backend`), participó en el desarrollo de múltiples bounded contexts: Profiles, Projects, Units, Devices y Payments, implementando controllers, servicios y modelos de datos para la gestión integral de recursos IoT y suscripciones.
+
+---
+
+*Colaboración en GitHub — IoBuild-LandingPage.*
+
+![Commits Landing Page](https://i.ibb.co/b5sHZjSQ/commitslanding.png)
+
+![Contribuidores Landing Page](https://i.ibb.co/nqyk8HXr/contribuidoreslanding.png)
+
+*Colaboración en GitHub — IoBuild-Backend.*
+
+![Commits Backend](https://i.ibb.co/SD1psTZN/commitsbackend.png)
+
+![Contribuidores Backend](https://i.ibb.co/1SPbRrD/contribuidoresbackend.png)
 
 # Conclusiones y recomendaciones.
 
