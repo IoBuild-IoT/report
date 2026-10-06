@@ -2049,86 +2049,84 @@ Los componentes de la interfaz fueron organizados cuidadosamente siguiendo patro
 
 - Web Applications Wireframes
 
+Los wireframes de la plataforma web IoBuild han sido diseñados siguiendo un esquema de baja/media fidelidad estructural y esquemática, con cajas de delimitación ortogonal, indicadores de posición para imágenes y diagramas (cajas 'X'), jerarquías tipográficas en escala de grises y componentes de interacción consistentes con la estética de los wireframes de la landing page.
+
 #### Vista del segmento #1: Arquitectos e Ingenieros Civiles (Builders)
+El segmento de empresas constructoras cuenta con acceso exclusivo a la gestión analítica, portafolio de proyectos, directorio de clientes, suscripción corporativa y perfil de la organización:
 
 #### 1. Login / Sign In
-- Estructura de acceso a la plataforma con campos para correo electrónico corporativo y contraseña, botón de envío principal y accesos directos diferenciados para el registro según el rol del usuario ("Register as Builder" y "Register as Owner").
+- Estructura de acceso a la plataforma con distribución dividida: panel ilustrativo de propuesta de valor a la izquierda y formulario de autenticación a la derecha, con campos para correo electrónico corporativo y contraseña, botón de envío y accesos de registro directo.
 
 <img src="assets/wireframes/wf_01_login.png" alt="Segmento #1 Wireframe Login" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
 #### 2. Register as Builder
-- Flujo de incorporación guiado por pasos (Step 1: Account Information, Step 2: Company Information) con campos para correo, contraseña y confirmación de credenciales para empresas constructoras.
+- Formulario de alta para empresas constructoras e ingenieros, con campos de información corporativa (Razón Social, RUC), representante técnico, credenciales de acceso seguras y aceptación de términos de servicio.
 
 <img src="assets/wireframes/wf_02_register_builder.png" alt="Segmento #1 Wireframe Register Builder" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
 #### 3. Builder Dashboard / Telemetría IoT
-- Panel central de supervisión de infraestructura inteligente. Incluye tarjetas de métricas de alto nivel: Active Projects, Connected Devices (con indicador de dispositivos online), Occupied Units, Total Units, Alerts Count y Energy Efficiency Average. En la zona inferior se integran visualizaciones esquemáticas de consumo energético por hora en las últimas 24 horas y tasa de ocupación mensual proyectada.
+- Panel central de supervisión de infraestructura inteligente. Incluye 4 tarjetas KPI de alto nivel (Total Active Projects, Managed Clients, Total Energy Monitored en kWh y Average Occupancy Rate) junto con dos visualizaciones esquemáticas de telemetría: gráfico de consumo horario en tiempo real y gráfico de tasa de ocupación mensual.
 
-<img src="assets/wireframes/wf_04_builder_dashboard.png" alt="Segmento #1 Wireframe Dashboard" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
+<img src="assets/wireframes/wf_03_builder_dashboard.png" alt="Segmento #1 Wireframe Dashboard" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
 #### 4. Projects Management
-- Galería de proyectos inmobiliarios organizados en tarjetas modulares. Cada tarjeta expone el nombre del proyecto, ubicación/anexo, estado operativo (On going, Planned), Total Units, Occupied Units, barra de progreso de tasa de ocupación y botón de acción directa "View Details". En la cabecera destaca el botón "+ Add Project".
+- Galería de proyectos inmobiliarios organizados en tarjetas modulares con barra de búsqueda y filtros. Cada tarjeta incluye render arquitectónico, nombre del proyecto, dirección, conteo de unidades habitacionales, barra de progreso de entrega y botones de gestión. En la cabecera destaca el botón "+ Add New Project".
 
-<img src="assets/wireframes/wf_05_builder_projects.png" alt="Segmento #1 Wireframe Projects" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
+<img src="assets/wireframes/wf_04_builder_projects.png" alt="Segmento #1 Wireframe Projects" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
 #### 5. Create New Project
-- Formulario de creación de proyectos residenciales con campos obligatorios para Project Name, Description, Location, enlace o carga de imagen del complejo inmobiliario y botón de confirmación "Save & Configure Structure".
+- Formulario modal de alta para nuevos complejos habitacionales y condominios residenciales, con campos para nombre oficial del proyecto, total de departamentos, dirección, distrito, fecha estimada de entrega y carga de plano o render de fachada.
 
-<img src="assets/wireframes/wf_06_builder_new_project.png" alt="Segmento #1 Wireframe New Project" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
+<img src="assets/wireframes/wf_05_builder_new_project.png" alt="Segmento #1 Wireframe New Project" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
 #### 6. Clients Management
-- Tabla analítica de administración de clientes y residentes asignados a los proyectos. Presenta columnas con ordenamiento dinámico: Full Name, Associated Project, Unit / Apartment, Account Statement (Active, Suspended) y columna de acciones (View Profile y engranaje de configuración).
+- Directorio de administración de clientes y propietarios residenciales. Presenta una tabla estructurada con columnas para nombre completo del cliente, proyecto asociado, departamento/unidad asignada, información de contacto, estado de cuenta y botones de edición y administración.
 
-<img src="assets/wireframes/wf_07_builder_clients.png" alt="Segmento #1 Wireframe Clients" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
+<img src="assets/wireframes/wf_06_builder_clients.png" alt="Segmento #1 Wireframe Clients" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
-#### 7. Device Management
-- Tabla de supervisión integral de hardware IoT instalado en los edificios. Desglosa los dispositivos por Name, Type (SmartMeter, SmartLight, SmokeDetector, WaterSensor, AirConditioner), Location (Torre y piso), Real-time Status (Online / Offline) y acciones de configuración y desvinculación.
+#### 7. Subscriptions & Plans
+- Módulo de suscripciones SaaS de la constructora con comparador de tres niveles (Basic Builder, Pro Builder y Enterprise) detallando límites de proyectos residenciales, cuotas de unidades conectadas, características de telemetría y soporte técnico.
 
-<img src="assets/wireframes/wf_08_builder_devices.png" alt="Segmento #1 Wireframe Devices" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
+<img src="assets/wireframes/wf_07_builder_subscription.png" alt="Segmento #1 Wireframe Subscriptions" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
-#### 8. Subscriptions & Plans
-- Módulo de suscripciones SaaS de la constructora. Presenta la tarjeta de plan activo con tarifa mensual, cuotas de consumo de dispositivos IoT (IoT Devices Quotas), proyectos activos y fecha de renovación. En la parte inferior se exhiben los planes disponibles (Starter, Professional, Enterprise) con listas detalladas de características incluidas y botón de selección.
+#### 8. Profile & Account Settings
+- Vista de configuración corporativa de la constructora. Presenta la tarjeta de perfil organizacional con avatar, RUC y representante técnico, junto al formulario de actualización de datos de contacto y preferencias de alertas críticas por correo o SMS.
 
-<img src="assets/wireframes/wf_09_builder_subscription.png" alt="Segmento #1 Wireframe Subscriptions" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
-<br>
-
-#### 9. Profile & Account Settings
-- Vista de configuración del perfil del usuario corporativo. Muestra la tarjeta del perfil con avatar, nombre, rol y botón "Edit Profile", acompañada del formulario de información de cuenta (Full Name, Email, Phone Number, Address, Alternate Email y Years in Business).
-
-<img src="assets/wireframes/wf_10_builder_profile.png" alt="Segmento #1 Wireframe Profile" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
+<img src="assets/wireframes/wf_08_builder_profile.png" alt="Segmento #1 Wireframe Profile" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br><br>
 
 #### Vista del segmento #2: Propietarios de departamentos (Owners)
+El segmento de residentes y dueños de departamentos cuenta con una interfaz simplificada orientada exclusivamente a su hogar: Dashboard residencial, gestión y control de dispositivos IoT vinculados a su unidad, y su perfil personal:
 
 #### 1. Register as Owner
-- Formulario de registro en dos pasos para propietarios y residentes de condominios, con campos de credenciales de acceso (Email, Password, Confirm Password) y posterior vinculación de información personal y número de departamento.
+- Formulario de autoservicio para nuevos residentes con código de activación provisto por la constructora, datos personales (DNI, nombres), teléfono, correo y contraseña.
 
-<img src="assets/wireframes/wf_03_register_owner.png" alt="Segmento #2 Wireframe Register Owner" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
+<img src="assets/wireframes/wf_09_register_owner.png" alt="Segmento #2 Wireframe Register Owner" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
 #### 2. My Unit Dashboard
-- Panel de control doméstico inteligente para el residente. Expone indicadores de sus unidades asignadas (My Units), dispositivos instalados (My Devices), alertas activas y módulos de consumo energético de los últimos 30 días, confort térmico (temperatura) y consumo hídrico.
+- Panel de control doméstico inteligente para el residente. Expone tarjetas de resumen para consumo eléctrico del mes (kWh), caudal de agua instantáneo (L/min) y estado de dispositivos conectados, junto a un gráfico semanal de consumo energético y panel de control rápido para interruptores principales y válvulas solenoides.
 
-<img src="assets/wireframes/wf_11_owner_dashboard.png" alt="Segmento #2 Wireframe Owner Dashboard" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
+<img src="assets/wireframes/wf_10_owner_dashboard.png" alt="Segmento #2 Wireframe Owner Dashboard" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
 #### 3. Device Management
-- Tabla de monitoreo y control en tiempo real de los dispositivos inteligentes instalados dentro del departamento privado del residente (iluminación inteligente, sensores de temperatura, detectores de humo y aire acondicionado), visualizando el estado de conexión Online/Offline y opciones de ajuste.
+- Vista de control y supervisión en tiempo real de todos los dispositivos IoT instalados en el departamento (medidor de corriente SCT-013, válvula inteligente de agua, termostato, actuador de aire acondicionado y detector de fugas), con telemetría en vivo, botones de encendido/apagado y estado de conexión al gateway.
 
-<img src="assets/wireframes/wf_08_builder_devices.png" alt="Segmento #2 Wireframe Devices" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
+<img src="assets/wireframes/wf_11_owner_devices.png" alt="Segmento #2 Wireframe Devices" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
 #### 4. Profile & Preferences
-- Vista de gestión de datos personales del propietario, información de contacto de emergencia, unidad asociada y personalización de preferencias.
+- Vista de gestión de datos personales del residente, información de contacto ante emergencias, unidad asignada y preferencias de automatización (corte automático de agua ante fuga, alertas de consumo energético).
 
-<img src="assets/wireframes/wf_10_builder_profile.png" alt="Segmento #2 Wireframe Profile" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
+<img src="assets/wireframes/wf_12_owner_profile.png" alt="Segmento #2 Wireframe Profile" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
 ### 5.4.2. Applications Wireflow Diagrams.
@@ -2245,9 +2243,10 @@ Los arquitectos e ingenieros civiles utilizan la plataforma IoBuild para gestion
 Los mock-ups de alta fidelidad han sido implementados y validados directamente en el entorno de producción desplegado de la plataforma web IoBuild (`https://iobuild-remix.arroz.dev/`). Reflejan con exactitud los componentes PrimeVue, estilos Tailwind CSS, iconografía PrimeIcons y la arquitectura modular para los roles de empresa constructora (Builder) y propietario particular (Owner).
 
 #### Vista del segmento #1: Arquitectos e Ingenieros Civiles (Builders)
+Las constructoras tienen acceso al panel analítico global, gestión de proyectos inmobiliarios, clientes residentes, planes SaaS y perfil institucional:
 
 #### 1. Login / Sign In
-- Pantalla de inicio de sesión de la plataforma IoBuild. Presenta un formulario centrado sobre una imagen de fondo arquitectónico contemporáneo con superposición de cuadrícula técnica. Incluye los campos obligatorios para Email y Password, botón de acción "Sign In", y dos accesos destacados en tarjetas inferiores para el registro rápido según el rol: "Register as Builder" y "Register as Owner".
+- Pantalla de inicio de sesión de la plataforma IoBuild en producción. Presenta un formulario centrado sobre una imagen de fondo arquitectónico contemporáneo con superposición de cuadrícula técnica. Incluye los campos obligatorios para Email y Password, botón de acción "Sign In", y dos accesos destacados en tarjetas inferiores para el registro rápido según el rol: "Register as Builder" y "Register as Owner".
 
 <img src="assets/webapp/01_login.png" alt="Segmento #1 Mock-up Login" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
@@ -2282,25 +2281,20 @@ Los mock-ups de alta fidelidad han sido implementados y validados directamente e
 <img src="assets/webapp/07_builder_clients.png" alt="Segmento #1 Mock-up Clients" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
-#### 7. Device Management & Telemetry Status
-- Centro de supervisión y gestión del inventario de dispositivos IoT instalados en las torres y áreas comunes. Presenta una tabla con ordenamiento por "Name" (ej. Sensor de Temperatura - Torre A, Monitor de Humedad - Torre B), "Type" (SmartMeter, SmartLight, SmokeDetector, WaterSensor, AirConditioner), "Location" (Torre y piso) y "Real-time Status" con etiquetas dinámicas en verde ("Online") y rojo ("Offline"), junto con acciones para editar y desvincular hardware.
-
-<img src="assets/webapp/08_builder_devices.png" alt="Segmento #1 Mock-up Devices" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
-<br>
-
-#### 8. Subscriptions & Billing Plans
+#### 7. Subscriptions & Billing Plans
 - Panel de gestión de suscripciones SaaS integrado con Stripe. Expone el plan actual activo ("Professional" a $799/mes), métricas de cuota de dispositivos IoT asignados (0 / 200 cuotas utilizadas), proyectos activos permitidos y fecha del próximo ciclo de facturación. En la parte inferior permite explorar y cambiar a los planes "Starter" ($299/mes) o "Enterprise" ($1299/mes) con detalles pormenorizados de funcionalidades.
 
 <img src="assets/webapp/09_builder_subscription.png" alt="Segmento #1 Mock-up Subscriptions" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
-#### 9. Profile & Account Settings
+#### 8. Profile & Account Settings
 - Vista de configuración y administración del perfil del constructor. Incorpora tarjeta de cabecera con avatar personalizado, nombre de usuario corporativo ("ccaritatech"), rol asignado ("Builder") y botón "Edit Profile". En el bloque "Account Information" se visualizan los campos editables: Full Name, Email corporativo, Phone Number, Address, Alternate Email y Years in Business.
 
 <img src="assets/webapp/10_builder_profile.png" alt="Segmento #1 Mock-up Profile" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br><br>
 
 #### Vista del segmento #2: Propietarios de departamentos (Owners)
+Los propietarios cuentan con una experiencia centrada en su departamento: Dashboard residencial, administración de dispositivos inteligentes y perfil de usuario:
 
 #### 1. Register as Owner
 - Formulario de autoservicio para nuevos propietarios de unidades inteligentes. Permite crear la cuenta de residente mediante credenciales seguras (Email y contraseña con validación de seguridad y visor de caracteres) antes de asociar el departamento correspondiente.
@@ -2323,7 +2317,7 @@ Los mock-ups de alta fidelidad han sido implementados y validados directamente e
 #### 4. Profile & Preferences
 - Vista de administración de datos personales del residente, información de contacto ante emergencias y preferencias de notificaciones sobre el estado de su unidad habitacional.
 
-<img src="assets/webapp/10_builder_profile.png" alt="Segmento #2 Mock-up Owner Profile" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
+<img src="assets/webapp/12_owner_profile.png" alt="Segmento #2 Mock-up Owner Profile" width="850" style="max-width: 100%; height: auto; border-radius: 6px;" />
 <br>
 
 ### 5.4.4. Applications User Flow Diagrams.
@@ -2369,17 +2363,17 @@ Los mock-ups de alta fidelidad han sido implementados y validados directamente e
 En esta etapa se presentan los prototipos funcionales y navegables de la aplicación web IoBuild, diseñados para entornos de escritorio y estaciones de trabajo de alta resolución. El enfoque está en validar los flujos principales de cada segmento objetivo, garantizando una experiencia clara, accesible y de alta usabilidad.
 
 **Segmento constructoras (Arquitectos e Ingenieros Civiles)**  
-Los ingenieros usan la plataforma web para gestionar proyectos residenciales, centralizar información de clientes, supervisar telemetría y dispositivos IoT en tiempo real y gestionar suscripciones y perfiles organizacionales:
-- Desde el módulo principal, acceden al Dashboard con métricas de consumo energético (kWh) y ocupación mensual analítica en tiempo real.
-- La barra lateral de navegación persistente incluye acceso directo a: Dashboard, Projects, Add Project, Clients, Device Management, Subscription y Profile.
-- En la vista de Clientes y Proyectos, se administra la asignación de inquilinos, estados contractuales e inventario de hardware IoT por departamento.
-- En Device Management se supervisa el estado operativo, telemetría y conectividad de cada actuador y sensor instalado.
+Los ingenieros y administradores usan la plataforma web para gestionar proyectos residenciales, centralizar información de clientes, supervisar indicadores analíticos globales de la obra y administrar suscripciones y perfiles organizacionales:
+- Desde el módulo principal, acceden al Dashboard con métricas agregadas de consumo energético (kWh), tasa de ocupación mensual y estado general de las obras.
+- La barra lateral de navegación persistente incluye acceso directo a las cinco secciones exclusivas de la constructora: Dashboard, Projects (con creación de proyectos), Clients, Subscriptions y Profile.
+- En la vista de Proyectos y Clientes, se administra el catálogo de edificios inteligentes, departamentos y la asignación contractual de los propietarios.
+- En Subscriptions y Profile, gestionan el plan SaaS corporativo mediante Stripe y configuran la identidad y contactos de la empresa.
 
 **Segmento Dueños de Departamentos (Propietarios e Inquilinos)**  
-Los residentes interactúan con el portal para monitorear el consumo de sus unidades departamentales y controlar sus dispositivos inteligentes:
-- El recorrido inicia en el Dashboard de Propietario con tarjetas de resumen de consumo mensual y estado de los dispositivos vinculados.
-- Menú simplificado y contextual con accesos a Dashboard, Dispositivos vinculados, Notificaciones de consumo y Perfil personal.
-- Capacidad de encendido/apagado remoto, configuración de umbrales de alerta y visualización histórica de consumo energético y agua.
+Los residentes interactúan con un portal enfocado en su unidad habitacional con acceso a tres secciones clave: Dashboard, Devices y Profile:
+- El recorrido inicia en el Dashboard de Propietario con tarjetas de resumen de consumo mensual (kWh), caudal de agua instantáneo y panel de control rápido para interruptores y válvulas principales.
+- En el módulo Devices (Dispositivos), el propietario tiene acceso exclusivo a la supervisión y control remoto en tiempo real de los actuadores y sensores IoT instalados en su departamento (medidor SCT-013, electroválvula de agua, termostato, aire acondicionado y detector de fugas).
+- En el módulo Profile, el residente gestiona su información personal, teléfono de emergencia, unidad asignada y preferencias de corte automático y alertas de consumo.
 
 **Acceso al Prototipo Navegable y Entorno de Producción:**
 - Prototipo interactivo navegable: [https://goo.su/Cor4Q](https://goo.su/Cor4Q)
@@ -3034,12 +3028,9 @@ Credenciales de acceso de demostración: `admin@iobuild.com` / `Admin01!`
 - **Formulario de Creación de Proyecto:** Interfaz para el registro de nuevos condominios y edificios inteligentes.
 <img src="assets/webapp/06_builder_new_project.png" width="900" alt="Registro de Nuevo Proyecto" />
 
-##### 3. Segmento Constructoras — Gestión de Clientes, Dispositivos y Suscripción
+##### 3. Segmento Constructoras — Gestión de Clientes, Suscripción y Perfil
 - **Directorio de Clientes / Residentes:** Lista de inquilinos y propietarios registrados con asignación de departamento y estado de cuenta.
 <img src="assets/webapp/07_builder_clients.png" width="900" alt="Gestión de Clientes" />
-
-- **Inventario y Monitoreo de Dispositivos IoT:** Supervisión de sensores y actuadores con telemetría en tiempo real y estado operativo.
-<img src="assets/webapp/08_builder_devices.png" width="900" alt="Gestión de Dispositivos IoT" />
 
 - **Planes de Suscripción SaaS:** Comparativa de planes (Basic, Pro, Enterprise) e integración con pasarela de pagos Stripe.
 <img src="assets/webapp/09_builder_subscription.png" width="900" alt="Planes de Suscripción SaaS" />
@@ -3047,12 +3038,15 @@ Credenciales de acceso de demostración: `admin@iobuild.com` / `Admin01!`
 - **Perfil Organizacional de la Constructora:** Configuración de perfil empresarial y datos de contacto.
 <img src="assets/webapp/10_builder_profile.png" width="900" alt="Perfil Organizacional" />
 
-##### 4. Segmento Residentes — Dashboard de Propietario y Control de Dispositivos
+##### 4. Segmento Residentes — Dashboard de Propietario, Dispositivos y Perfil
 - **Dashboard de Propietario de Departamento:** Resumen de consumo energético mensual, estado general del hogar y alertas automáticas.
 <img src="assets/webapp/13_owner_dashboard.png" width="900" alt="Dashboard de Propietario" />
 
-- **Lista de Dispositivos Departamentales:** Control remoto y monitoreo del ecosistema IoT por unidad habitacional.
+- **Lista y Control de Dispositivos del Departamento:** Control remoto y monitoreo del ecosistema IoT por unidad habitacional (sensores y actuadores asignados al hogar).
 <img src="assets/webapp/14_devices_list.png" width="900" alt="Dispositivos del Departamento" />
+
+- **Perfil y Preferencias del Residente:** Configuración de información de contacto ante emergencias y alertas departamentales.
+<img src="assets/webapp/12_owner_profile.png" width="900" alt="Perfil del Residente" />
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
