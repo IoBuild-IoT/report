@@ -32,7 +32,7 @@
 |Escalante Baygorrea, Janiel Franz|U201912668|
 
 
-<br> Octubre 2026
+<br> Noviembre 2026
 </center>  
 
 <div style="page-break-before: always;"></div>
@@ -53,7 +53,14 @@
 | 0.8 | 13/09/2026 | Ordoñez Ricaldi, Axel Randall | Construcción del Impact Mapping y estructuración del Product Backlog general con estimación de puntos de historia y priorización por Sprints. |
 | 0.9 | 15/09/2026 | Panta Castro, Fabrizio Martin | Elaboración del Capítulo 4: Strategic-Level DDD (Design-Level EventStorming, Candidate Contexts, Bounded Context Canvases y Context Mapping). |
 | 1.0 | 16/09/2026 | Loechle Arias, Mateo Italo | Tactical-Level DDD para los 4 Bounded Contexts, diagramas de arquitectura de software C4, conclusiones, bibliografía, anexos y consolidación final de la entrega hasta el Capítulo 4. |
-| 1.1 | 06/10/2026 | Ordoñez Ricaldi, Axel Randall | Desarrollo del Capítulo 5 (UI/UX Design, Wireframes, Wireflows, User Flows, Mockups y diseño de dispositivos IoT) y Capítulo 6 (Software Configuration Management, Sprint 1 y Sprint 2 de Frontend Web App y Backend Services, Pruebas y Despliegue en Producción), consolidación de Student Outcome para TB1. |  
+| 1.1 | 06/10/2026 | Ordoñez Ricaldi, Axel Randall | Desarrollo del Capítulo 5 (UI/UX Design, Wireframes, Wireflows, User Flows, Mockups y diseño de dispositivos IoT) y Capítulo 6 (Software Configuration Management, Sprint 1 y avance de Sprint 2), consolidación de Student Outcome para TB1. |
+| 1.2 | 07/11/2026 | Ordoñez Ricaldi, Axel Randall | Actualización de Tabla de Contenidos a 4 niveles, expansión de Student Outcome (AV2) con estructura del Anexo A y refinamiento de Sprint Planning 2 (Review/Retrospective y Sprint Goal bajo plantilla Scrum.org). |
+| 1.3 | 08/11/2026 | Ccarita Cruz, Brayan Roberto | Completitud de las subsecciones de evidencias del Sprint 1 (6.2.1.7, 6.2.1.8 y 6.2.1.9) y estandarización de las tablas de commits de desarrollo y pruebas con columna Commit Message Body. |
+| 1.4 | 09/11/2026 | Panta Castro, Fabrizio Martin | Documentación de la integración y despliegue de Edge API (Flask, Peewee ORM y SQLite) y del prototipo físico/embebido IoT (ESP32, sensores DHT22/SCT-013 y relés) dentro del alcance del Sprint 2 (AV2). |
+| 1.5 | 10/11/2026 | Guia Carrasco, Pedro Andre | Desarrollo de la sección 6.3 Validation Interviews: diseño de instrumentos de validación por segmento (6.3.1) y registro audiovisual descriptivo de las entrevistas de validación (6.3.2). |
+| 1.6 | 10/11/2026 | Alejo Jesus, Anyelo Bill | Elaboración de las Evaluaciones según Heurísticas (6.3.3) aplicando el formato oficial del Anexo D (Usability, Inclusive Design e Information Architecture) con matriz de severidad y hallazgos. |
+| 1.7 | 11/11/2026 | Loechle Arias, Mateo Italo | Redacción de la sección 6.4 Video About-the-Product y actualización de Conclusiones y Recomendaciones contrastando los Problem Statements, Assumptions e Hypothesis Statements de Lean UX con los resultados de validación. |
+| 1.8 | 12/11/2026 | Escalante Baygorrea, Janiel Franz | Elaboración de la sección Video About-the-Team (pauta de secuencias con tiempos y testimonios de Student Outcome), revisión terminológica según Anexo E y actualización de Bibliografía y Anexo C (Videos de Exposiciones). |
 
 </center>
 
@@ -63,11 +70,11 @@
 
 **Enlace del repositorio:** [https://github.com/IoBuild-IoT/report](https://github.com/IoBuild-IoT/report)
 
-El desarrollo del presente informe fue producto de un trabajo colaborativo, riguroso y planificado mediante el flujo de trabajo GitFlow sobre la plataforma GitHub. Las responsabilidades se distribuyeron equitativamente entre los integrantes del equipo cubriendo desde la investigación de mercado y elicitación de requisitos, hasta el modelado conceptual, arquitectónico y diseño de software bajo el estándar Domain-Driven Design (DDD).
+El desarrollo del presente informe fue producto de un trabajo colaborativo, riguroso y planificado mediante el flujo de trabajo GitFlow sobre la plataforma GitHub. Las responsabilidades se distribuyeron equitativamente entre los integrantes del equipo a lo largo de las entregas **AV1**, **TB1** y **AV2**, cubriendo desde la investigación de mercado y obtención de requisitos, hasta el modelado conceptual, arquitectónico, diseño UX/UI, implementación full-stack/IoT y validación empírica con usuarios reales.
 
 ### Evidencias de Contribución y Control de Versiones
 
-A continuación, se presentan las métricas de participación de los miembros del equipo y la red de integración de ramas correspondientes al desarrollo del informe de la plataforma **IoBuild**:
+A continuación, se presentan las métricas de participación de los miembros del equipo y la red de integración de ramas correspondientes al desarrollo progresivo del informe de la plataforma **IoBuild**:
 
 #### Contribuidores del Repositorio (Contributors)
 <img src="assets/Contributors-IoT.png" alt="Contributors - IoBuild Report" style="max-width: 100%; height: auto; border-radius: 6px;" />
@@ -79,42 +86,42 @@ A continuación, se presentan las métricas de participación de los miembros de
 
 <br>
 
-### Detalle de Aportes por Integrante
+### Detalle de Aportes por Integrante y Entrega
 
 - **Ordoñez Ricaldi, Axel Randall:**
-  - Coordinó la redacción inicial del **Capítulo I**, participando en la definición del perfil de la startup y la consolidación de los perfiles de los integrantes del equipo.
-  - Estructuró la sección de **Impact Mapping** (3.2), alineando las metas estratégicas de negocio con los actores, impactos deseados y entregables funcionales.
-  - Lideró la priorización y estimación del **Product Backlog** (3.3), calibrando los Story Points bajo la serie Fibonacci y organizando las historias en sprints para la planificación ágil.
+  - **AV1:** Coordinó la redacción inicial del **Capítulo I**, participando en la definición del perfil de la startup y la consolidación de los perfiles del equipo. Estructuró el **Impact Mapping** (3.2) y lideró la priorización del **Product Backlog** (3.3).
+  - **TB1:** Desarrolló los flujos de interacción y wireframes del **Capítulo V** para el segmento de constructoras y estructuró la planificación base de los Sprints en el **Capítulo VI**.
+  - **AV2:** Actualizó la tabla de contenidos a 4 niveles de esquema, consolidó la sección de **Student Outcome (ABET SO 5)** incorporando las evidencias del hito AV2 y refinó el **Sprint Planning 2** (incluyendo el resumen del Sprint 1 Review, Retrospective y el Sprint Goal bajo el formato oficial de Scrum.org).
 
 - **Ccarita Cruz, Brayan Roberto:**
-  - Inicializó y configuró la estructura del repositorio en GitHub bajo la metodología GitFlow, estableciendo las ramas de desarrollo, estándares de commit y buenas prácticas de colaboración.
-  - Desarrolló la especificación de requisitos en la sección de **User Stories** (3.1), redactando las historias de usuario con criterios de aceptación bajo la sintaxis formal Gherkin (Given-When-Then) y formulando las historias técnicas de integración.
-  - Participó en la definición y revisión de la arquitectura de software, colaborando en el alineamiento estratégico entre los casos de uso y los Bounded Contexts.
+  - **AV1:** Inicializó y configuró la estructura del repositorio en GitHub bajo el flujo de trabajo GitFlow y desarrolló la especificación de requisitos en la sección de **User Stories** (3.1) con criterios de aceptación en Gherkin.
+  - **TB1:** Documentó la gestión de código fuente (**Source Code Management**, 6.1.2) y las evidencias de implementación de seguridad JWT y pasarela de pagos Stripe.
+  - **AV2:** Completó la trazabilidad documental del **Sprint 1** (secciones 6.2.1.7, 6.2.1.8 y 6.2.1.9) y estandarizó las tablas de commits de implementación y pruebas automatizadas en el **Capítulo VI** incorporando el detalle de `Commit Message Body`.
 
 - **Panta Castro, Fabrizio Martin:**
-  - Lideró el desarrollo del proceso **Lean UX** en el Capítulo I, estructurando los Problem Statements, Assumptions, Hypothesis Statements y el Lean UX Canvas de la solución IoBuild.
-  - Diseñó y documentó la etapa de **Strategic-Level Domain-Driven Design** en el Capítulo IV, ejecutando las sesiones de Design-Level EventStorming, Candidate Context Discovery, Bounded Context Canvases y el Context Mapping del ecosistema.
-  - Administró y mantuvo el repositorio de recursos gráficos y diagramas de arquitectura de la plataforma.
+  - **AV1:** Lideró el desarrollo del proceso **Lean UX** en el Capítulo I y documentó la etapa de **Strategic-Level Domain-Driven Design** en el Capítulo IV (Design-Level EventStorming, Candidate Context Discovery, Bounded Context Canvases y Context Mapping).
+  - **TB1:** Elaboró los mockups de alta fidelidad del Landing Page y de los módulos de proyectos y clientes en el **Capítulo V**, así como la documentación interactiva OpenAPI/Swagger en el **Capítulo VI**.
+  - **AV2:** Documentó el diseño físico e integración del **Edge API** (Python, Flask, Peewee ORM y SQLite) y del **prototipo embebido IoT** (ESP32, sensores DHT22/SCT-013 y módulos relé) dentro del **Sprint 2**, evidenciando el flujo de telemetría end-to-end entre el dispositivo físico, el nodo Edge y la nube.
 
 - **Loechle Arias, Mateo Italo:**
-  - Desarrolló el **análisis competitivo** y benchmarking de competidores directos e indirectos en la sección 2.1 del Capítulo II, definiendo las ventajas competitivas y la matriz FODA.
-  - Lideró la especificación del **Tactical-Level Domain-Driven Design** en el Capítulo IV para los cuatro Bounded Contexts, detallando las capas Domain, Application, Interface e Infrastructure, así como los diagramas de clases y esquemas de base de datos relacional.
-  - Consolidó la versión final de la entrega, redactando las conclusiones, recomendaciones, bibliografía formal bajo normas APA y anexos del informe.
+  - **AV1:** Desarrolló el **análisis competitivo** en la sección 2.1 del Capítulo II y lideró la especificación del **Tactical-Level Domain-Driven Design** en el Capítulo IV para los cuatro Bounded Contexts.
+  - **TB1:** Documentó las guías de estilo para Web, Mobile e IoT (5.1.2) y las evidencias de ejecución del módulo de control de dispositivos IoT en producción.
+  - **AV2:** Redactó la sección **6.4. Video About-the-Product**, integrando los testimonios de validación y la demostración promocional del ecosistema, y actualizó el capítulo de **Conclusiones y recomendaciones** contrastando las hipótesis de Lean UX con los resultados empíricos obtenidos en el Sprint 2.
 
 - **Guia Carrasco, Pedro Andre:**
-  - Planificó y ejecutó el diseño de las **entrevistas semiestructuradas** en la sección 2.2 del Capítulo II, formulando las guías de preguntas orientadas a los dos segmentos objetivo del proyecto.
-  - Realizó y moderó las entrevistas a representantes de empresas constructoras y propietarios residenciales, gestionando el registro audiovisual y el análisis de hallazgos.
-  - Documentó la síntesis de validación con usuarios para fundamentar la necesidad de una plataforma IoT unificada en la supervisión de confort ambiental y automatización de iluminación.
+  - **AV1:** Planificó y ejecutó el diseño y registro de las **entrevistas de Needfinding** en la sección 2.2 del Capítulo II para ambos segmentos objetivo.
+  - **TB1:** Documentó la arquitectura de información (5.2) y las evidencias de implementación del **Owner Dashboard** y la nueva versión del **Landing Page**.
+  - **AV2:** Lideró el desarrollo de las secciones **6.3.1. Diseño de Entrevistas** y **6.3.2. Registro de Entrevistas** dentro de *Validation Interviews*, conduciendo las sesiones grabadas en las que arquitectos, ingenieros y residentes interactuaron en vivo con el Landing Page y la aplicación web desplegada.
 
 - **Alejo Jesus, Anyelo Bill:**
-  - Lideró el desarrollo de la sección de **Needfinding** en el Capítulo II, construyendo las **User Personas** representativas para el segmento B2B (arquitectos e ingenieros) y B2C (propietarios y residentes).
-  - Diseñó y documentó la **User Task Matrix**, los **User Journey Maps** y los **Empathy Maps** de ambos segmentos, identificando puntos de dolor, necesidades latentes y oportunidades de mejora para la plataforma.
-  - Aseguró que los requisitos de usuario reflejaran fielmente la experiencia cotidiana y las expectativas prácticas de los clientes.
+  - **AV1:** Lideró el desarrollo de la sección de **Needfinding** en el Capítulo II (User Personas, User Task Matrix, User Journey Maps y Empathy Maps).
+  - **TB1:** Documentó los diagramas de **Wireflows** (5.4.2) y **User Flows** (5.4.4), así como las pruebas de aceptación BDD en Gherkin para la gestión de perfiles.
+  - **AV2:** Elaboró la sección **6.3.3. Evaluaciones según heurísticas** aplicando rigurosamente la plantilla del **Anexo D (UX Heuristics & Principles Evaluation)** sobre usabilidad, diseño inclusivo y arquitectura de información, clasificando las severidades y formulando recomendaciones accionables.
 
 - **Escalante Baygorrea, Janiel Franz:**
-  - Facilitó y moderó las dinámicas de **Big Picture EventStorming** en la sección 2.4 del Capítulo II, identificando eventos del dominio, comandos, agregados y políticas de negocio de extremo a extremo.
-  - Formalizó el **Ubiquitous Language** en la sección 2.5, estableciendo un glosario unificado de términos de negocio e ingeniería IoT para todo el equipo.
-  - Contribuyó en la definición de la arquitectura de software C4 (System Landscape, Context, Container y Deployment diagrams) y en la revisión de consistencia técnica del informe.
+  - **AV1:** Facilitó las dinámicas de **Big Picture EventStorming** (2.4), formalizó el **Ubiquitous Language** (2.5) y elaboró los diagramas de arquitectura C4 en el Capítulo IV.
+  - **TB1:** Documentó la configuración de despliegue en la nube (**Software Deployment Configuration**, 6.1.4) y los pipelines de CI/CD.
+  - **AV2:** Desarrolló la sección **Video About-the-Team** (con el guion narrativo, retrospectiva grupal, minutaje de secuencias y testimonios individuales del ABET Student Outcome 5), realizó la auditoría terminológica del informe según el **Anexo E** y actualizó la **Bibliografía** y el **Anexo C: Videos de Exposiciones**.
 
 <div style="page-break-before: always;"></div>
 
@@ -232,7 +239,24 @@ A continuación, se presentan las métricas de participación de los miembros de
       - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
       - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
       - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
-- [Conclusiones y recomendaciones.](#conclusiones-y-recomendaciones)
+    - [6.2.2. Sprint 2](#622-sprint-2)
+      - [6.2.2.1. Sprint Planning 2.](#6221-sprint-planning-2)
+      - [6.2.2.2. Aspect Leaders and Collaborators.](#6222-aspect-leaders-and-collaborators)
+      - [6.2.2.3. Sprint Backlog 2.](#6223-sprint-backlog-2)
+      - [6.2.2.4. Development Evidence for Sprint Review.](#6224-development-evidence-for-sprint-review)
+      - [6.2.2.5. Testing Suite Evidence for Sprint Review.](#6225-testing-suite-evidence-for-sprint-review)
+      - [6.2.2.6. Execution Evidence for Sprint Review.](#6226-execution-evidence-for-sprint-review)
+      - [6.2.2.7. Services Documentation Evidence for Sprint Review.](#6227-services-documentation-evidence-for-sprint-review)
+      - [6.2.2.8. Software Deployment Evidence for Sprint Review.](#6228-software-deployment-evidence-for-sprint-review)
+      - [6.2.2.9. Team Collaboration Insights during Sprint.](#6229-team-collaboration-insights-during-sprint)
+  - [6.3. Validation Interviews.](#63-validation-interviews)
+    - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
+    - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
+  - [6.4. Video About-the-Product.](#64-video-about-the-product)
+- [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones.](#conclusiones-y-recomendaciones)
+  - [Video About-the-Team.](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)  
 
@@ -240,10 +264,15 @@ A continuación, se presentan las métricas de participación de los miembros de
 
 # Student Outcome
 
+El curso contribuye al cumplimiento del Student Outcome ABET:
+**ABET – EAC - Student Outcome 5**
+*Criterio: La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.*
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.
+
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Ordoñez Ricaldi, Axel Randall**<br> **AV1:** Asumí el rol de facilitador general del equipo, liderando las sesiones de coordinación y alineamiento del cronograma de trabajo. Conduje las discusiones para la definición del Product Backlog general en el Capítulo III y orienté al equipo en la estimación consensuada de puntos de historia, delegando responsabilidades técnicas según las fortalezas de cada compañero sin centralizar la toma de decisiones.<br> **TB1:** Lideré conjuntamente la transición de los requerimientos hacia la arquitectura de interfaz web en los Capítulos V y VI. Encabecé el diseño técnico y desarrollo del Builder Dashboard analítico en la aplicación web IoBuild-Frontend, coordinando con los líderes de backend para definir los contratos de datos de telemetría y guiando revisiones cruzadas de código para asegurar la coherencia técnica del producto.<br><br> **Ccarita Cruz, Brayan Roberto**<br> **AV1:** Ejercí el liderazgo técnico en la inicialización y gobernanza del control de versiones en GitHub bajo la organización `IoBuild-IoT`. Guié al equipo en la adopción del modelo GitFlow y facilité el diseño táctico del Bounded Context *Smart Project Setup*, promoviendo que todos los miembros aportaran activamente en la modelación de entidades y agregados.<br> **TB1:** Proporcioné liderazgo en la seguridad y monetización de la plataforma. Diseñé e implementé la arquitectura de autenticación IAM con JWT en el backend y el módulo de Suscripciones SaaS con pasarela Stripe en el frontend, asesorando técnicamente a mis compañeros en la gestión de tokens y la integración de endpoints protegidos.<br><br> **Panta Castro, Fabrizio Martin**<br> **AV1:** Lideré las dinámicas conceptuales del enfoque Lean UX en el Capítulo I, guiando la formulación de problem statements, supuestos e hipótesis. En el Capítulo IV, co-lideré el modelado estratégico de Domain-Driven Design, coordinando con el grupo la delimitación de contextos acotados y facilitando acuerdos ante discrepancias de diseño.<br> **TB1:** Asumí el liderazgo en la experiencia de administración de obras en la Web App, dirigiendo la construcción de las vistas de Projects y el directorio de Clients. Coordiné con el equipo de backend la validación de contratos mediante Swagger UI y supervisé los lineamientos de diseño visual para mantener una identidad de interfaz homogénea en todo el sistema.<br><br> **Loechle Arias, Mateo Italo**<br> **AV1:** Encabecé la investigación de mercado y el análisis comparativo de plataformas competidoras en el Capítulo II, orientando al equipo sobre los vacíos del mercado PropTech local. Lideré el diseño táctico del Bounded Context *Service Execution and Monitoring*, promoviendo un análisis crítico y constructivo de las alternativas técnicas.<br> **TB1:** Lideré el desarrollo del módulo de control y telemetría de Dispositivos IoT en la aplicación web, coordinando la integración de conmutadores en tiempo real para iluminación y electroválvulas. Asimismo, implementé los servicios del dominio de clientes en el backend, compartiendo decisiones técnicas con los demás desarrolladores de manera proactiva.<br><br> **Guia Carrasco, Pedro Andre**<br> **AV1:** Asumí el liderazgo metodológico en la planificación y conducción de las entrevistas a los segmentos objetivo de arquitectos y residentes en el Capítulo II. Asigné roles de moderación y registro audiovisual entre los miembros, consolidando los hallazgos empíricos de forma objetiva para respaldar las decisiones de diseño del equipo.<br> **TB1:** Lideré conjuntamente el diseño de la experiencia de usuario para el rol de residente, encabezando la implementación del Owner Dashboard con monitoreo de suministros y botones de corte de emergencia. También colaboré en la dirección visual de la Landing Page, asegurando que la propuesta de valor comunicara fielmente los beneficios del hardware IoT.<br><br> **Alejo Jesus, Anyelo Bill**<br> **AV1:** Conduje los talleres de Needfinding del Capítulo II, liderando la construcción colaborativa de User Personas, Empathy Maps y User Journey Maps. Motivé la participación activa de todos los integrantes para asegurar que las necesidades de constructores y residentes quedaran fielmente representadas.<br> **TB1:** Asumí el liderazgo en la definición de flujos de interacción de User Flows y Wireflows y en la implementación de las vistas de Perfil Corporativo y Residencial en la Web App. Establecí las pautas de validación para la llave de activación de unidad y colaboré en la ejecución y estandarización de las pruebas unitarias y de integración.<br><br> **Escalante Baygorrea, Janiel Franz**<br> **AV1:** Lideré la moderación y estructuración de los talleres de Big Picture EventStorming en el Capítulo II, guiando al equipo en la identificación de eventos de dominio y en la consolidación del Ubiquitous Language. En el Capítulo IV, dirigí la elaboración de los mapas de contexto y los diagramas C4 Containers.<br> **TB1:** Proporcioné liderazgo técnico en la implementación del Bounded Context de Analytics y Telemetría en el backend de ASP.NET Core, así como en la configuración de flujos automatizados de CI/CD con GitHub Actions. Supervisé la estabilidad del despliegue en la nube y resolví cuellos de botella de infraestructura en coordinación continua con el equipo. | El equipo consolidó una dinámica de liderazgo compartido y horizontal, donde cada miembro asumió la dirección técnica o metodológica de módulos estratégicos según su área de especialidad. La toma de decisiones arquitectónicas y funcionales se llevó a cabo mediante consensos fundamentados en evidencia, evitando personalismos y promoviendo la corresponsabilidad en los resultados. |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Ordoñez Ricaldi, Axel Randall**<br> **AV1:** Establecí canales de comunicación inclusivos y respetuosos a través de Discord y Google Meet donde cada miembro pudo expresar sus ideas libremente. Definí los objetivos del hito AV1 junto al grupo, estructuré el cronograma general de trabajo y verifiqué el cumplimiento puntual de la redacción de los Capítulos I, II y III, asegurando un ambiente de apoyo mutuo ante dificultades.<br> **TB1:** Planifiqué las metas y capacidad del equipo en los Sprint Planning 1 y 2, estructurando los Sprint Backlogs y la matriz de responsabilidades LACX. Fomenté un entorno colaborativo supervisando el avance diario de tareas mediante tableros ágiles, lo que permitió cumplir al 100% los objetivos de entrega y el despliegue del frontend web dentro del cronograma previsto.<br><br> **Ccarita Cruz, Brayan Roberto**<br> **AV1:** Fomenté un entorno colaborativo al configurar el repositorio central en GitHub con políticas claras de protección de ramas y pull requests. Planifiqué las tareas de diseño arquitectónico y apoyé activamente a los compañeros con menor experiencia en Git, asegurando que todos pudieran integrar sus avances sin fricciones.<br> **TB1:** Participé en la estimación de tiempos y definición de tareas para el desarrollo de los microservicios backend y el módulo de facturación. Promoví la inclusión técnica resolviendo dudas de integración sobre la API REST y tokens JWT, y cumplí puntualmente con los entregables asignados para la puesta en marcha de la pasarela Stripe.<br><br> **Panta Castro, Fabrizio Martin**<br> **AV1:** Promoví espacios de cocreación abiertos durante el desarrollo del Lean UX Canvas, facilitando que todos los puntos de vista sobre los problemas del usuario fueran valorados. Planifiqué la redacción de supuestos e hipótesis y cumplí con la entrega del marco conceptual del proyecto en las fechas pactadas.<br> **TB1:** Planifiqué detalladamente las subtareas de desarrollo frontend para la gestión de Proyectos y Clientes, estimando las horas de implementación de forma realista. Mantuve una comunicación empática y constante con el equipo de backend, adaptando los componentes de vista a los modelos de datos y cumpliendo rigurosamente los objetivos del Sprint Review.<br><br> **Loechle Arias, Mateo Italo**<br> **AV1:** Contribuí al clima colaborativo organizando sesiones de revisión entre pares para el análisis competitivo y el diseño táctico de dominios. Establecí metas de entrega temprana para la documentación técnica y brindé retroalimentación constructiva para elevar la calidad global del informe.<br> **TB1:** Planifiqué y ejecuté las tareas de desarrollo para la consola de Dispositivos IoT y el servicio de clientes en el backend, dividiendo las historias de usuario en tareas manejables. Participé activamente en las reuniones de retrospectiva, identificando oportunidades de mejora y asegurando que las funcionalidades de hardware simulado estuvieran listas a tiempo.<br><br> **Guia Carrasco, Pedro Andre**<br> **AV1:** Generé un entorno de trabajo organizado e inclusivo para el proceso de entrevistas, coordinando los horarios de los participantes y garantizando que todos tuvieran un rol activo durante la investigación. Planifiqué la recopilación de material audiovisual y cumplí puntualmente con el procesamiento de las evidencias.<br> **TB1:** Establecí objetivos claros para la experiencia del usuario residencial y la Landing Page. Planifiqué la maquetación de componentes y la integración de botones de emergencia en el Owner Dashboard, cumpliendo con las metas de diseño responsivo y colaborando con el equipo para validar la interfaz en múltiples dispositivos.<br><br> **Alejo Jesus, Anyelo Bill**<br> **AV1:** Fomenté un espacio empático y participativo en las dinámicas de empatía y mapeo de viajes, asegurando que cada integrante aportara ideas para enriquecer los perfiles de usuario. Planifiqué los plazos para la elaboración de artefactos UX y cumplí con los hitos de entrega de Needfinding.<br> **TB1:** Planifiqué las tareas vinculadas a los flujos de interacción y las pantallas de perfil de usuario en la Web App, estableciendo criterios de aceptación verificables en cada formulario. Cumplí con los plazos comprometidos y apoyé a mis compañeros en la redacción de casos de prueba BDD para asegurar la estabilidad de la aplicación.<br><br> **Escalante Baygorrea, Janiel Franz**<br> **AV1:** Promoví un ambiente colaborativo y riguroso durante las sesiones de EventStorming, incentivando el debate ordenado y la construcción colectiva del glosario de términos del dominio. Planifiqué la diagramación de la arquitectura de contenedores C4 y cumplí con todos los objetivos del diseño estratégico.<br> **TB1:** Planifiqué la arquitectura de despliegue cloud y la integración de endpoints analíticos, estableciendo metas de rendimiento y disponibilidad para la API en producción. Monitoreé los pipelines de CI/CD para detectar errores de manera temprana, garantizando que el entorno productivo estuviera operativo y alineado con los objetivos del sprint. | El equipo consolidó una cultura de trabajo caracterizada por la inclusión, la comunicación transparente y la rigurosidad en la planificación ágil. La definición explícita de metas a través de User Stories estimadas, la asignación balanceada de tareas en matrices y el seguimiento sistemático en GitHub permitieron mitigar riesgos, resolver bloqueos de forma solidaria y cumplir el 100% de los objetivos académicos y de desarrollo de software establecidos. |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Ordoñez Ricaldi, Axel Randall**<br> **AV1:** Asumí el rol de facilitador general del equipo, liderando las sesiones de coordinación y alineamiento del cronograma de trabajo. Conduje las discusiones para la definición del Product Backlog general en el Capítulo III y orienté al equipo en la estimación consensuada de puntos de historia, delegando responsabilidades técnicas según las fortalezas de cada compañero sin centralizar la toma de decisiones.<br> **TB1:** Lideré conjuntamente la transición de los requisitos hacia la arquitectura de interfaz web en los Capítulos V y VI. Encabecé el diseño técnico y desarrollo del Builder Dashboard analítico en la aplicación web IoBuild-Frontend, coordinando con los líderes de backend para definir los contratos de datos de telemetría y guiando revisiones cruzadas de código para asegurar la coherencia técnica del producto.<br> **AV2:** Ejercí el liderazgo en la articulación entre la visualización analítica del frontend y la ingesta de métricas provenientes del Edge API. Coordiné la retrospectiva del Sprint 1 y la formulación del Sprint Goal 2 junto al equipo, guiando la corrección de hallazgos de usabilidad detectados durante las pruebas con usuarios reales.<br><br> **Ccarita Cruz, Brayan Roberto**<br> **AV1:** Ejercí el liderazgo técnico en la inicialización y gobernanza del control de versiones en GitHub bajo la organización `IoBuild-IoT`. Guié al equipo en la adopción del modelo GitFlow y facilité el diseño táctico del Bounded Context *Smart Project Setup*, promoviendo que todos los miembros aportaran activamente en la modelación de entidades y agregados.<br> **TB1:** Proporcioné liderazgo en la seguridad y monetización de la plataforma. Diseñé e implementé la arquitectura de autenticación IAM con JWT en el backend y el módulo de Suscripciones SaaS con pasarela Stripe en el frontend, asesorando técnicamente a mis compañeros en la gestión de tokens y la integración de endpoints protegidos.<br> **AV2:** Lideré la estandarización de la trazabilidad de commits y pruebas automatizadas entre los repositorios de Backend, Frontend y Edge Service. Guié la validación de seguridad en las llamadas autenticadas desde los nodos de borde hacia la API en la nube.<br><br> **Panta Castro, Fabrizio Martin**<br> **AV1:** Lideré las dinámicas conceptuales del enfoque Lean UX en el Capítulo I, guiando la formulación de problem statements, supuestos e hipótesis. En el Capítulo IV, co-lideré el modelado estratégico de Domain-Driven Design, coordinando con el grupo la delimitación de contextos acotados y facilitando acuerdos ante discrepancias de diseño.<br> **TB1:** Asumí el liderazgo en la experiencia de administración de obras en la Web App, dirigiendo la construcción de las vistas de Projects y el directorio de Clients. Coordiné con el equipo de backend la validación de contratos mediante Swagger UI y supervisé los lineamientos de diseño visual para mantener una identidad de interfaz homogénea en todo el sistema.<br> **AV2:** Encabecé el diseño e integración de la capa de Edge Computing (Flask, Peewee ORM y SQLite en Python) y del prototipo embebido en ESP32 con sensores DHT22 y SCT-013, coordinando el protocolo de sincronización local y hacia la nube con el resto de desarrolladores.<br><br> **Loechle Arias, Mateo Italo**<br> **AV1:** Encabecé la investigación de mercado y el análisis comparativo de plataformas competidoras en el Capítulo II, orientando al equipo sobre los vacíos del mercado PropTech local. Lideré el diseño táctico del Bounded Context *Service Execution and Monitoring*, promoviendo un análisis crítico y constructivo de las alternativas técnicas.<br> **TB1:** Lideré el desarrollo del módulo de control y telemetría de Dispositivos IoT en la aplicación web, coordinando la integración de conmutadores en tiempo real para iluminación y electroválvulas. Asimismo, implementé los servicios del dominio de clientes en el backend, compartiendo decisiones técnicas con los demás desarrolladores de manera proactiva.<br> **AV2:** Lideré la producción del Video About-the-Product y la consolidación de conclusiones de validación frente a las hipótesis de Lean UX, coordinando la demostración de conmutación de actuadores en tiempo real entre la interfaz web y el prototipo físico.<br><br> **Guia Carrasco, Pedro Andre**<br> **AV1:** Asumí el liderazgo metodológico en la planificación y conducción de las entrevistas a los segmentos objetivo de arquitectos y residentes en el Capítulo II. Asigné roles de moderación y registro audiovisual entre los miembros, consolidando los hallazgos empíricos de forma objetiva para respaldar las decisiones de diseño del equipo.<br> **TB1:** Lideré conjuntamente el diseño de la experiencia de usuario para el rol de residente, encabezando la implementación del Owner Dashboard con monitoreo de suministros y botones de corte de emergencia. También colaboré en la dirección visual de la Landing Page, asegurando que la propuesta de valor comunicara fielmente los beneficios del hardware IoT.<br> **AV2:** Dirigí la planificación y ejecución de las entrevistas de validación (Validation Interviews) con representantes de constructoras y propietarios, coordinando las pruebas interactivas sobre el Landing Page actualizado y la Web Application desplegada.<br><br> **Alejo Jesus, Anyelo Bill**<br> **AV1:** Conduje los talleres de Needfinding del Capítulo II, liderando la construcción colaborativa de User Personas, Empathy Maps y User Journey Maps. Motivé la participación activa de todos los integrantes para asegurar que las necesidades de constructores y residentes quedaran fielmente representadas.<br> **TB1:** Asumí el liderazgo en la definición de flujos de interacción de User Flows y Wireflows y en la implementación de las vistas de Perfil Corporativo y Residencial en la Web App. Establecí las pautas de validación para la llave de activación de unidad y colaboré en la ejecución y estandarización de las pruebas unitarias y de integración.<br> **AV2:** Lideré el proceso de auditoría y Evaluación según Heurísticas (Usability, Inclusive Design e Information Architecture), guiando al equipo en la identificación objetiva de severidades y en la priorización de mejoras de accesibilidad (a11y) e internacionalización (i18n).<br><br> **Escalante Baygorrea, Janiel Franz**<br> **AV1:** Lideré la moderación y estructuración de los talleres de Big Picture EventStorming en el Capítulo II, guiando al equipo en la identificación de eventos de dominio y en la consolidación del Ubiquitous Language. En el Capítulo IV, dirigí la elaboración de los mapas de contexto y los diagramas C4 Containers.<br> **TB1:** Proporcioné liderazgo técnico en la implementación del Bounded Context de Analytics y Telemetría en el backend de ASP.NET Core, así como en la configuración de flujos automatizados de CI/CD con GitHub Actions. Supervisé la estabilidad del despliegue en la nube y resolví cuellos de botella de infraestructura en coordinación continua con el equipo.<br> **AV2:** Asumí el liderazgo en la dirección y edición del Video About-the-Team y en la orquestación del despliegue multipunto (Cloud API, Web App, Landing Page con videos incrustados y Edge API), asegurando la calidad técnica y documental de la entrega AV2. | El equipo consolidó una dinámica de liderazgo compartido y horizontal a lo largo de las entregas AV1, TB1 y AV2, donde cada miembro asumió la dirección técnica o metodológica de módulos estratégicos según su área de especialidad. La toma de decisiones arquitectónicas, de hardware IoT y de experiencia de usuario se llevó a cabo mediante consensos fundamentados en evidencia empírica y validaciones reales con usuarios, evitando personalismos y promoviendo la corresponsabilidad en los resultados. |
+| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Ordoñez Ricaldi, Axel Randall**<br> **AV1:** Establecí canales de comunicación inclusivos y respetuosos a través de Discord y Google Meet donde cada miembro pudo expresar sus ideas libremente. Definí los objetivos del hito AV1 junto al grupo, estructuré el cronograma general de trabajo y verifiqué el cumplimiento puntual de la redacción de los Capítulos I, II y III, asegurando un ambiente de apoyo mutuo ante dificultades.<br> **TB1:** Planifiqué las metas y capacidad del equipo en los Sprint Planning 1 y 2, estructurando los Sprint Backlogs y la matriz de responsabilidades LACX. Fomenté un entorno colaborativo supervisando el avance diario de tareas mediante tableros ágiles, lo que permitió cumplir al 100% los objetivos de entrega y el despliegue del frontend web dentro del cronograma previsto.<br> **AV2:** Organicé el seguimiento del Sprint 2 integrando las tareas de validación con usuarios y mejoras del frontend. Promoví sesiones de trabajo inclusivas donde todos los integrantes revisaron las métricas de cumplimiento del Sprint Goal, logrando completar los 45 Story Points planificados a tiempo.<br><br> **Ccarita Cruz, Brayan Roberto**<br> **AV1:** Fomenté un entorno colaborativo al configurar el repositorio central en GitHub con políticas claras de protección de ramas y pull requests. Planifiqué las tareas de diseño arquitectónico y apoyé activamente a los compañeros con menor experiencia en Git, asegurando que todos pudieran integrar sus avances sin fricciones.<br> **TB1:** Participé en la estimación de tiempos y definición de tareas para el desarrollo de los microservicios backend y el módulo de facturación. Promoví la inclusión técnica resolviendo dudas de integración sobre la API REST y tokens JWT, y cumplí puntualmente con los entregables asignados para la puesta en marcha de la pasarela Stripe.<br> **AV2:** Planifiqué y ejecuté la ampliación de la suite de pruebas automatizadas (Unit Tests y escenarios BDD en Gherkin) para el Sprint 2, colaborando estrechamente con el equipo para documentar las evidencias de código y asegurar cero regresiones en producción.<br><br> **Panta Castro, Fabrizio Martin**<br> **AV1:** Promoví espacios de cocreación abiertos durante el desarrollo del Lean UX Canvas, facilitando que todos los puntos de vista sobre los problemas del usuario fueran valorados. Planifiqué la redacción de supuestos e hipótesis y cumplí con la entrega del marco conceptual del proyecto en las fechas pactadas.<br> **TB1:** Planifiqué detalladamente las subtareas de desarrollo frontend para la gestión de Proyectos y Clientes, estimando las horas de implementación de forma realista. Mantuve una comunicación empática y constante con el equipo de backend, adaptando los componentes de vista a los modelos de datos y cumpliendo rigurosamente los objetivos del Sprint Review.<br> **AV2:** Establecí las metas técnicas para la construcción del servicio Edge con Flask y Peewee ORM y el circuito del nodo IoT con ESP32. Compartí guías de ejecución local con todo el equipo y cumplí puntualmente con la integración de telemetría hacia el backend central.<br><br> **Loechle Arias, Mateo Italo**<br> **AV1:** Contribuí al clima colaborativo organizando sesiones de revisión entre pares para el análisis competitivo y el diseño táctico de dominios. Establecí metas de entrega temprana para la documentación técnica y brindé retroalimentación constructiva para elevar la calidad global del informe.<br> **TB1:** Planifiqué y ejecuté las tareas de desarrollo para la consola de Dispositivos IoT y el servicio de clientes en el backend, dividiendo las historias de usuario en tareas manejables. Participé activamente en las reuniones de retrospectiva, identificando oportunidades de mejora y asegurando que las funcionalidades de hardware simulado estuvieran listas a tiempo.<br> **AV2:** Planifiqué la estructura narrativa y edición del Video About-the-Product junto con la contrastación de hipótesis de negocio. Colaboré con los entrevistadores para seleccionar los testimonios de validación más representativos y cumplí los plazos de publicación en YouTube y Microsoft Stream.<br><br> **Guia Carrasco, Pedro Andre**<br> **AV1:** Generé un entorno de trabajo organizado e inclusivo para el proceso de entrevistas, coordinando los horarios de los participantes y garantizando que todos tuvieran un rol activo durante la investigación. Planifiqué la recopilación de material audiovisual y cumplí puntualmente con el procesamiento de las evidencias.<br> **TB1:** Establecí objetivos claros para la experiencia del usuario residencial y la Landing Page. Planifiqué la maquetación de componentes y la integración de botones de emergencia en el Owner Dashboard, cumpliendo con las metas de diseño responsivo y colaborando con el equipo para validar la interfaz en múltiples dispositivos.<br> **AV2:** Planifiqué el cronograma de sesiones de validación con los 9 usuarios entrevistados (arquitectos, ingenieros y propietarios), asegurando un trato cordial e inclusivo durante las pruebas de usabilidad y entregando a tiempo el video consolidado y los resúmenes descriptivos.<br><br> **Alejo Jesus, Anyelo Bill**<br> **AV1:** Fomenté un espacio empático y participativo en las dinámicas de empatía y mapeo de viajes, asegurando que cada integrante aportara ideas para enriquecer los perfiles de usuario. Planifiqué los plazos para la elaboración de artefactos UX y cumplí con los hitos de entrega de Needfinding.<br> **TB1:** Planifiqué las tareas vinculadas a los flujos de interacción y las pantallas de perfil de usuario en la Web App, estableciendo criterios de aceptación verificables en cada formulario. Cumplí con los plazos comprometidos y apoyé a mis compañeros en la redacción de casos de prueba BDD para asegurar la estabilidad de la aplicación.<br> **AV2:** Establecí los criterios de inspección heurística bajo el formato del Anexo D, coordinando con los desarrolladores de frontend la verificación de atributos ARIA, contraste visual y arquitectura de información, cumpliendo el 100% de las evaluaciones programadas.<br><br> **Escalante Baygorrea, Janiel Franz**<br> **AV1:** Promoví un ambiente colaborativo y riguroso durante las sesiones de EventStorming, incentivando el debate ordenado y la construcción colectiva del glosario de términos del dominio. Planifiqué la diagramación de la arquitectura de contenedores C4 y cumplí con todos los objetivos del diseño estratégico.<br> **TB1:** Planifiqué la arquitectura de despliegue cloud y la integración de endpoints analíticos, estableciendo metas de rendimiento y disponibilidad para la API en producción. Monitoreé los pipelines de CI/CD para detectar errores de manera temprana, garantizando que el entorno productivo estuviera operativo y alineado con los objetivos del sprint.<br> **AV2:** Coordiné la recopilación de los testimonios individuales ante cámara de los 7 integrantes para el Video About-the-Team, fomentando la reflexión grupal sobre nuestro aprendizaje colaborativo y asegurando la entrega oportuna de todos los artefactos audiovisuales y documentales de la Semana 12. | El equipo consolidó una cultura de trabajo caracterizada por la inclusión, la comunicación transparente y la rigurosidad en la planificación ágil durante todo el ciclo de vida del proyecto. La definición explícita de metas SMART y Sprint Goals, la asignación balanceada de tareas en matrices LACX, el uso sistemático de GitFlow en GitHub y la validación iterativa con usuarios reales permitieron mitigar riesgos, resolver bloqueos de forma solidaria y cumplir el 100% de los objetivos de ingeniería propuestos hasta el hito AV2. |
 
 ---
 
@@ -1901,7 +1930,7 @@ Segmento Objetivo #2: Dueños de Apartamentos (Usuarios Finales)
 
 Dentro del diseño de interfaces digitales enfocadas en el usuario, el Organization System funciona como la base de la arquitectura de información, definiendo cómo se ordenan, agrupan y muestran los contenidos en la plataforma. Su propósito es facilitar la comprensión y la navegación, permitiendo que los usuarios encuentren de manera sencilla la propuesta de valor y los recursos más importantes. Este sistema ayuda a disminuir la carga mental, dirigir la atención hacia lo esencial y mejorar la experiencia general de interacción con el producto.
 
-En el caso de IoBuild, la Landing Page implementa un sistema de organización jerárquico y temático, pensado para comunicar de forma clara el propósito de la aplicación y dirigir la acción del visitante. La estructura se organiza en bloques que siguen una lógica de prioridad: en primer lugar, se despliega un hero section con un mensaje directo sobre la propuesta de valor y un llamado a la acción destacado (“Explora IoBuild”), seguido de secciones que detallan los beneficios de la plataforma para arquitectos, ingenieros y propietarios de viviendas. Posteriormente, se integran apartados complementarios como la presentación del equipo, los objetivos del proyecto y los canales de contacto.
+En el caso de IoBuild, la Landing Page implementa un sistema de organización jerárquico y temático, pensado para comunicar de forma clara el propósito de la aplicación y dirigir la acción del visitante. La estructura se organiza en bloques que siguen una lógica de prioridad: en primer lugar, se despliega un hero section con un mensaje directo sobre la propuesta de valor y un llamado a la acción destacado (“Explora IoBuild”), seguido de secciones que detallan los beneficios de la plataforma para arquitectos, ingenieros y propietarios de viviendas. Posteriormente, se integran secciones complementarias como la presentación del equipo, los objetivos del proyecto y los canales de contacto.
 
 Tanto el header como el footer refuerzan esta organización al centralizar los accesos principales de navegación (inicio, características, contacto) y los secundarios (redes sociales y enlaces informativos). Esta disposición garantiza que los usuarios comprendan de manera inmediata qué es IoBuild, para quién está dirigido y cómo pueden empezar a interactuar con la solución. Además, la página aplica principios como la progressive disclosure y el diseño responsivo, asegurando una experiencia fluida y clara en dispositivos móviles y de escritorio.
 
@@ -1956,11 +1985,11 @@ La navegación es un elemento central en la landing page de IoBuild, ya que estr
 
 IoBuild implementa un sistema de navegación global, persistente y horizontal, ubicado en la parte superior de la página. Este está compuesto por siete elementos principales:
 - **Home:** vinculado al logotipo de IoBuild, que permite regresar a la página de inicio desde cualquier sección.
-- **Beneficios:** apartado que resalta las ventajas concretas para constructoras y propietarios.
+- **Beneficios:** sección que resalta las ventajas concretas para constructoras y propietarios.
 - **Características:** detalle funcional de la plataforma.
 - **Planes:** presenta las opciones comerciales y niveles de servicio adecuados para distintos tamaños de proyecto.
 - **Sobre Nosotros:** ofrece información acerca de la misión, visión y equipo detrás del proyecto.
-- **FAQ:** presenta un apartado de preguntas frecuentes que resuelve las dudas más comunes de los usuarios.
+- **FAQ:** presenta una sección de preguntas frecuentes que resuelve las dudas más comunes de los usuarios.
 - **Empezar ahora (CTA):** botón destacado que impulsa la conversión (registro o contacto para proyecto), visualmente diferenciado del resto de enlaces.
 
 El diseño del header utiliza un fondo uniforme y elementos textuales de alto contraste, siguiendo un estilo minimalista que evita distracciones y centra la atención en las decisiones de navegación. La organización de los enlaces sigue una estructura en tres zonas: el logotipo alineado a la izquierda, las secciones principales al centro y las acciones de contacto alineadas a la derecha.
@@ -2025,7 +2054,7 @@ Finalmente, el sitio se enfoca en eliminar las últimas barreras para la compra.
 <br>
 
 #### 2. About Us
-- Esta sección presenta una introducción sobre la misión de CcaritaTech, destacando su enfoque en la innovación y el impacto social. Le siguen las secciones “Our Values” y “Our Team”, que reflejan los principios de la organización y presentan a su equipo. Cada apartado combina textos con imágenes representativas, creando una composición equilibrada. Predomina un estilo limpio y luminoso, con fondos claros, amplio espaciado y jerarquía tipográfica definida, lo que refuerza la coherencia visual y facilita una experiencia clara y atractiva para el usuario.
+- Esta sección presenta una introducción sobre la misión de IoBuild, destacando su enfoque en la innovación y el impacto social. Le siguen las secciones “Our Values” y “Our Team”, que reflejan los principios de la organización y presentan a su equipo. Cada bloque combina textos con imágenes representativas, creando una composición equilibrada. Predomina un estilo limpio y luminoso, con fondos claros, amplio espaciado y jerarquía tipográfica definida, lo que refuerza la coherencia visual y facilita una experiencia clara y atractiva para el usuario.
 
 ![Landing page About-us Mock-up](https://raw.githubusercontent.com/F4brizio24/Imagenes-Proyecto/refs/heads/main/Web%20App/Cap%C3%ADtulo%204/Landingpage_About-us_Mock-up.png)
 <br>
@@ -2446,16 +2475,60 @@ Los residentes interactúan con un portal enfocado en su unidad habitacional con
 
 ## 5.6. IoT Device Design.
 
-El diseño físico y funcional de los nodos y dispositivos IoT de IoBuild contempla una arquitectura de hardware embebido optimizada para entornos residenciales y de construcción:
-- **Unidad de Control y Procesamiento:** Módulos basados en microcontroladores ESP32 con conectividad Wi-Fi 802.11 b/g/n y Bluetooth Low Energy (BLE), garantizando bajo consumo de energía y procesamiento local de lecturas de sensores.
-- **Sensores e Interfaces:** Módulos de medición de corriente y consumo eléctrico (sensores no invasivos SCT-013), sensores de flujo de agua y actuadores de relé para control de corte o activación remota.
-- **Carcasa y Enclosure:** Gabinetes normalizados para riel DIN y cajas de empotrar con estándar de protección IP54, diseñados para su instalación en tableros eléctricos residenciales y cajas de pase de obra, garantizando seguridad eléctrica y disipación térmica adecuada.
-- **Protocolo de Comunicación:** Transmisión ligera mediante MQTT/HTTPS hacia los gateways y la API RESTful de IoBuild, con cifrado TLS para asegurar la integridad de la telemetría enviada desde cada departamento.
+El diseño físico, de circuito y funcional de los nodos y dispositivos IoT de **IoBuild** contempla una arquitectura de hardware embebido optimizada para entornos residenciales y de construcción, alineada con las decisiones de arquitectura de información y la guía de estilos para interfaces físicas (*IoT Device Physical Interfaces*):
+
+- **Unidad de Control y Procesamiento:** Módulos basados en microcontroladores **ESP32-WROOM-32** con conectividad dual Wi-Fi 802.11 b/g/n y Bluetooth Low Energy (BLE), garantizando bajo consumo de energía, preprocesamiento de lecturas en el borde y respuesta inmediata ante eventos locales.
+- **Sensores e Interfaces de Captura:**
+  - **Sensor Ambiental DHT22:** Captura digital de temperatura (-40 °C a 80 °C, precisión ±0.5 °C) y humedad relativa (0–100% RH) conectado al pin digital `GPIO 4`.
+  - **Sensor de Corriente No Invasivo SCT-013-030:** Pinza amperimétrica para medición de consumo eléctrico en tiempo real conectada a la entrada analógica `ADC1_CH6 (GPIO 34)`.
+  - **Sensor de Flujo Hidráulico YF-S201:** Medición de caudal de agua por pulsos de efecto Hall en `GPIO 27` para detección temprana de fugas.
+- **Actuadores e Indicadores Físicos:**
+  - **Módulo de Relé de 2 Canales (5V optoacoplado):** Control de conmutación para circuitos de iluminación de áreas comunes/departamentos (`GPIO 26`) y electroválvula solenoide de corte preventivo de agua (`GPIO 25`).
+  - **Interfaz Física de Estado (LEDs y Pulsador de Override Manual):** Indicador LED RGB de estado de red/sincronización (`Verde`: Conectado a Edge/Cloud, `Azul parpadeante`: Modo aprovisionamiento BLE, `Rojo`: Alerta de umbral o corte activo) y botón físico táctil con *debounce* (`GPIO 14`) que permite al residente o técnico conmutar manualmente el circuito incluso sin conectividad a internet.
+- **Carcasa y Enclosure:** Gabinetes normalizados para riel DIN de 35 mm y cajas de empotrar con estándar de protección IP54, diseñados para su instalación en tableros eléctricos residenciales y cajas de pase de obra, garantizando aislamiento galvánico y disipación térmica.
+- **Diagrama de Circuito y Flujo de Interacción con el Nodo Edge:** El nodo embebido ejecuta su firmware en C++ (modelado y simulado en **Wokwi / Cirkit Designer**) y transmite tramas JSON cada 5 segundos hacia el **Edge API** local desarrollado en Python (Flask + Peewee ORM + SQLite), el cual filtra anomalías, evalúa reglas locales de corte de emergencia y sincroniza los agregados con el **Cloud Backend API** en ASP.NET Core.
+
+```mermaid
+flowchart LR
+    subgraph PhysicalNode ["Nodo Físico IoT (ESP32)"]
+        DHT["Sensor DHT22<br/>(Temp / Humedad - GPIO 4)"]
+        SCT["Sensor SCT-013<br/>(Corriente kWh - GPIO 34)"]
+        YFS["Sensor YF-S201<br/>(Caudal L/min - GPIO 27)"]
+        BTN["Botón Override Manual<br/>(GPIO 14)"]
+        MCU["ESP32 Microcontroller<br/>(Firmware C++ / Wi-Fi)"]
+        REL1["Relé Canal 1: Iluminación<br/>(GPIO 26)"]
+        REL2["Relé Canal 2: Electroválvula<br/>(GPIO 25)"]
+        LED["LED Estado RGB<br/>(GPIO 12/13/15)"]
+        
+        DHT --> MCU
+        SCT --> MCU
+        YFS --> MCU
+        BTN --> MCU
+        MCU --> REL1
+        MCU --> REL2
+        MCU --> LED
+    end
+
+    subgraph EdgeLayer ["Edge Computing Gateway"]
+        EdgeAPI["IoBuild Edge API<br/>(Python / Flask / Peewee ORM)"]
+        EdgeDB[("SQLite Local DB<br/>Buffer & Reglas Offline")]
+        EdgeAPI <--> EdgeDB
+    end
+
+    subgraph CloudLayer ["Cloud Computing Platform"]
+        CloudAPI[".NET 8 RESTful API<br/>(io-build-back.arroz.dev)"]
+        WebApp["IoBuild Web App<br/>(iobuild-remix.arroz.dev)"]
+    end
+
+    MCU <-->|"HTTP REST / MQTT (JSON)"| EdgeAPI
+    EdgeAPI <-->|"HTTPS / JWT Sync"| CloudAPI
+    CloudAPI <-->|"HTTPS / REST"| WebApp
+```
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management.
 
-La gestión de configuración de software del proyecto **IoBuild** define y controla el conjunto de herramientas, servicios y convenciones necesarios para asegurar un desarrollo web, cloud e IoT consistente, trazable y reproducible.  
+La gestión de configuración de software del proyecto **IoBuild** define y controla el conjunto de herramientas, servicios y convenciones necesarios para asegurar un desarrollo web, cloud, edge e IoT consistente, trazable y reproducible.  
 En esta sección se documentan los componentes del entorno de desarrollo, su propósito dentro del proyecto y su aporte a la calidad del producto final.
 
 ### 6.1.1. Software Development Environment Configuration.
@@ -2475,31 +2548,34 @@ En esta sección se documentan los componentes del entorno de desarrollo, su pro
 | **Swagger UI** | Documentación interactiva y especificación OpenAPI de la API RESTful. | API Documentation Tool | https://swagger.io/tools/swagger-ui/ | Interfaz que genera documentación dinámica de APIs REST, permitiendo visualizar rutas, contratos DTO y probar endpoints directamente. |
 | **Git CLI** | Manejo local de control de versiones y branching strategy. | Version Control | https://git-scm.com/ | Sistema de control de versiones distribuido que permite gestionar cambios, trabajar con ramas y sincronizar código con repositorios remotos. |
 
-- Cloud & IoT Development Environment Configuration
+- Cloud, Edge & IoT Development Environment Configuration
 
-Para complementar el desarrollo web y backend de la solución, se configuró el entorno de desarrollo y pruebas para los servicios en la nube y los dispositivos IoT:
+Para complementar el desarrollo web y backend de la solución, se configuró el entorno de desarrollo y pruebas para los servicios en la nube, la capa de Edge Computing y los dispositivos IoT:
 
 | Producto/Herramienta | Categoría | Ruta de Descarga/Acceso | Propósito en el Proyecto |
 |---|---|---|---|
-| .NET 8 SDK | Desarrollo Backend | https://dotnet.microsoft.com/ | SDK y runtime para la compilación y ejecución de la Web API en ASP.NET Core |
-| Visual Studio / VS Code | Desarrollo Backend | https://visualstudio.microsoft.com/ | Entornos de desarrollo integrados para C# y depuración de microservicios |
-| Postman | Testing APIs | https://www.postman.com/ | Pruebas de endpoints RESTful y automatización de colecciones de prueba |
-| Arduino IDE / ESP-IDF | Desarrollo IoT Embebido | https://www.arduino.cc/ | Programación y flasheo de microcontroladores ESP32 para nodos de telemetría |
-| MQTT Explorer | Herramienta IoT | https://mqtt-explorer.com/ | Monitoreo y depuración de tópicos de telemetría MQTT transmitidos por los dispositivos |
-| Stripe Dashboard (Sandbox) | Pasarela de Pagos | https://stripe.com/ | Entorno de pruebas para procesamiento de suscripciones y transacciones de clientes |
-| GitHub Actions | CI/CD | https://github.com/features/actions | Automatización de flujos de integración y despliegue continuo |
+| **.NET 8 SDK** | Desarrollo Backend Cloud | https://dotnet.microsoft.com/ | SDK y runtime para la compilación y ejecución de la Web API en ASP.NET Core |
+| **Visual Studio / Rider** | Desarrollo Backend | https://visualstudio.microsoft.com/ | Entornos de desarrollo integrados para C# y depuración de microservicios |
+| **Python 3.11 + Flask + Peewee ORM** | Desarrollo Edge API | https://flask.palletsprojects.com/ | Implementación del RESTful Edge API con persistencia local en SQLite para preprocesamiento de telemetría |
+| **SQLite 3** | Base de Datos Edge | https://www.sqlite.org/ | Motor relacional ligero embebido en el nodo Edge para almacenamiento autónomo y cola de sincronización |
+| **Arduino IDE / PlatformIO & Wokwi** | Desarrollo IoT Embebido | https://wokwi.com/ | Programación en C++, simulación de circuito y flasheo de microcontroladores ESP32 con sensores DHT22 y relés |
+| **Postman** | Testing APIs | https://www.postman.com/ | Pruebas de endpoints RESTful (Cloud API y Edge API) y automatización de colecciones |
+| **MQTT Explorer** | Herramienta IoT | https://mqtt-explorer.com/ | Monitoreo y depuración de tópicos de telemetría MQTT transmitidos por los dispositivos |
+| **Stripe Dashboard (Sandbox)** | Pasarela de Pagos | https://stripe.com/ | Entorno de pruebas para procesamiento de suscripciones y transacciones de clientes |
+| **Trello** | Project Management | https://trello.com/ | Gestión ágil de tableros Kanban para el Product Backlog y Sprint Backlogs |
+| **GitHub Actions** | CI/CD | https://github.com/features/actions | Automatización de flujos de integración y despliegue continuo |
 
 ### 6.1.2. Source Code Management.
 
-- Web Applications
+- Web Applications, Services & IoT Ecosystem
 
 El proyecto IoBuild, una plataforma SaaS para la gestión y personalización de dispositivos IoT en entornos de construcción y apartamentos inteligentes, se desarrolla bajo un enfoque profesional que prioriza las buenas prácticas de arquitectura, la colaboración en equipo, la automatización de flujos y la estandarización del entorno de desarrollo. La configuración del entorno se ha diseñado con base en el modelo C4 (Context, Container, Component, Code) y en los principios de la Clean Architecture, lo que asegura una separación clara de responsabilidades, la reutilización de componentes y la escalabilidad del sistema a futuro.
 
 Para el frontend, el equipo utiliza WebStorm como IDE principal, administrado a través de JetBrains Toolbox, lo que garantiza una configuración uniforme en todos los integrantes del equipo. Este entorno de trabajo ofrece integración nativa con Vue.js, framework elegido para el desarrollo de la interfaz, lo que facilita la generación de componentes, servicios y módulos directamente desde el IDE. Además, se aprovechan funciones avanzadas como la navegación semántica, la refactorización inteligente, la depuración integrada y la administración de dependencias, optimizando la productividad y reduciendo errores en el proceso de implementación.
 
-Vue.js se seleccionó como la tecnología central para el frontend debido a su arquitectura reactiva y declarativa, basada en componentes reutilizables que permiten un diseño flexible y modular. Gracias a su Vue CLI, la integración de librerías externas y su compatibilidad con metodologías modernas de desarrollo, la plataforma puede estructurarse en torno a bounded contexts, separando de forma clara la vista, la lógica y los servicios. Esta organización permite que diferentes miembros del equipo trabajen en paralelo sin comprometer la coherencia del sistema, mejorando los tiempos de entrega y asegurando la calidad del producto final.
+Vue.js se seleccionó como la tecnología central para el frontend debido a su arquitectura reactiva y declarativa, basada en componentes reutilizables que permiten un diseño flexible y modular. Gracias a su Vue CLI, la integración de bibliotecas externas y su compatibilidad con marcos de trabajo modernos de desarrollo, la plataforma puede estructurarse en torno a bounded contexts, separando de forma clara la vista, la lógica y los servicios. Esta organización permite que diferentes miembros del equipo trabajen en paralelo sin comprometer la coherencia del sistema, mejorando los tiempos de entrega y asegurando la calidad del producto final.
 
-Finalmente, el equipo mantiene la organización en GitHub denominada **IoBuild-IoT** ([https://github.com/IoBuild-IoT](https://github.com/IoBuild-IoT)), donde se gestionan los diferentes componentes desacoplados del sistema: Landing Page, Aplicación Web Frontend, Backend Web API y Reporte del proyecto.
+Finalmente, el equipo mantiene la organización en GitHub denominada **IoBuild-IoT** ([https://github.com/IoBuild-IoT](https://github.com/IoBuild-IoT)), donde se gestionan los diferentes componentes desacoplados del sistema: Landing Page, Aplicación Web Frontend, Backend Web API, Edge Service, Firmware Embebido IoT y Reporte del proyecto.
 
 ```mermaid
 graph TD
@@ -2508,15 +2584,19 @@ graph TD
     Org --> Repo1[IoBuild-LandingPage<br/>HTML5 / CSS3 / Vanilla JS<br/>GitHub Pages CDN]
     Org --> Repo2[IoBuild-Frontend<br/>Vue.js 3 / PrimeVue / Tailwind<br/>Despliegue: iobuild-remix.arroz.dev]
     Org --> Repo3[IoBuild-Backend<br/>.NET 8 ASP.NET Core Web API<br/>Despliegue: io-build-back.arroz.dev]
-    Org --> Repo4[Report<br/>Documentación Técnica & Evidencias<br/>GitHub Repository]
+    Org --> Repo4[IoBuild-Edge<br/>Python / Flask / Peewee ORM / SQLite<br/>Edge Gateway API]
+    Org --> Repo5[IoBuild-Embedded<br/>C++ / ESP32 / DHT22 / Relays<br/>Prototipo Físico y Simulador Wokwi]
+    Org --> Repo6[report<br/>Documentación Técnica & Evidencias<br/>GitHub Repository]
     
     Repo2 -->|Consume REST API / JWT| Repo3
+    Repo5 -->|Envía Telemetría JSON| Repo4
+    Repo4 -->|Sincroniza Eventos y Estado| Repo3
     Repo3 -->|Persiste datos| DB[(MySQL Cloud Database)]
 ```
 
 - Estrategia de Control de Versiones y Repositorios
 
-La gestión del código fuente de **IoBuild** se realiza con Git y GitHub, siguiendo prácticas estándar para asegurar trazabilidad, colaboración efectiva y control de cambios durante todo el ciclo de desarrollo web y de servicios.
+La gestión del código fuente de **IoBuild** se realiza con Git y GitHub, siguiendo prácticas estándar para asegurar trazabilidad, colaboración efectiva y control de cambios durante todo el ciclo de desarrollo web, cloud, edge e IoT.
 
 **Gestión de Repositorios**
 
@@ -2524,10 +2604,11 @@ El proyecto utiliza GitHub como plataforma centralizada de control de versiones.
 
 | Producto | URL del Repositorio | Descripción |
 |---|---|---|
-| Landing Page | https://github.com/IoBuild-IoT/IoBuild-LandingPage | Sitio web de presentacion y marketing del producto |
+| Landing Page | https://github.com/IoBuild-IoT/IoBuild-LandingPage | Sitio web estático de presentación y marketing del producto con i18n (EN/ES) |
 | Web Application (Frontend) | https://github.com/IoBuild-IoT/IoBuild-Frontend | Aplicación web SPA desplegada en producción (https://iobuild-remix.arroz.dev/) |
-| Backend Web Services | https://github.com/IoBuild-IoT/IoBuild-Backend | API RESTful en ASP.NET Core desplegada en la nube |
-| Project Report | https://github.com/IoBuild-IoT/report | Reporte tecnico y documentacion del proyecto |
+| Backend Web Services | https://github.com/IoBuild-IoT/IoBuild-Backend | API RESTful en ASP.NET Core (.NET 8) con pruebas unitarias/BDD desplegada en la nube |
+| Edge API & Embedded IoT | https://github.com/IoBuild-IoT/IoBuild-Backend | Servicio Edge en Python (Flask + Peewee ORM + SQLite) y firmware C++ para nodo ESP32 |
+| Project Report | https://github.com/IoBuild-IoT/report | Informe técnico colaborativo en Markdown y evidencias del proyecto |
 
 **Implementacion de GitFlow**
 
@@ -2575,7 +2656,7 @@ Esta convencion facilita auditoria de cambios y futura generacion automatica de 
 
 - Web Applications
 
-El uso de un estilo de código unificado y una arquitectura bien definida es clave para asegurar la escalabilidad, la mantenibilidad y la colaboración efectiva en el desarrollo de IoBuild. Para ello, el proyecto incorpora prácticas de programación y convenciones estructurales que promueven la calidad técnica, la claridad y la consistencia en cada módulo de la plataforma, tomando como referencia estándares reconocidos de la industria y metodologías actuales.
+El uso de un estilo de código unificado y una arquitectura bien definida es clave para asegurar la escalabilidad, la mantenibilidad y la colaboración efectiva en el desarrollo de IoBuild. Para ello, el proyecto incorpora prácticas de programación y convenciones estructurales que promueven la calidad técnica, la claridad y la consistencia en cada módulo de la plataforma, tomando como referencia estándares reconocidos de la industria y marcos de trabajo actuales.
 
 **Arquitectura y organización del sistema**
 
@@ -2592,11 +2673,11 @@ En el frontend, se emplea Vue.js como framework principal, implementando una arq
 
 **Alineación con guías de estilo estándar**
 
-La estructura y nomenclatura utilizadas en IoBuild siguen convenciones reconocidas como la Vue Style Guide y lineamientos generales de HTML/CSS. Además, el uso del inglés en identificadores, clases y funciones garantiza coherencia en el trabajo colaborativo, simplifica la integración con librerías externas y favorece la comprensión del código por parte de equipos internacionales.
+La estructura y nomenclatura utilizadas en IoBuild siguen convenciones reconocidas como la Vue Style Guide y lineamientos generales de HTML/CSS. Además, el uso del inglés en identificadores, clases y funciones garantiza coherencia en el trabajo colaborativo, simplifica la integración con bibliotecas externas y favorece la comprensión del código por parte de equipos internacionales.
 
 - General Code Style Guide & Conventions
 
-El proyecto **IoBuild** define una guía de estilo común para mantener consistencia, legibilidad y mantenibilidad en sus componentes de backend (.NET), frontend web (Vue.js/Remix), firmware IoT (ESP32) y landing page.
+El proyecto **IoBuild** define una guía de estilo común para mantener consistencia, legibilidad y mantenibilidad en sus componentes de backend (.NET), frontend web (Vue.js/Remix), Edge API (Python/Flask), firmware IoT (ESP32/C++) y landing page.
 
 **1. Estándares Generales de Nomenclatura**
 
@@ -2628,7 +2709,12 @@ Para la aplicación web se siguen las recomendaciones oficiales de la Vue Style 
 - Gestión de estado global con Pinia modularizado por contextos (`auth`, `analytics`, `devices`).
 - Nomenclatura de clases CSS utility-first bajo estándares de Tailwind CSS.
 
-**4. Convenciones para Pruebas y Especificaciones**
+**4. Convenciones para Edge API (Python / Flask / Peewee) y Firmware Embebido (C++)**
+
+- En Python se aplica **PEP 8**: nombres de funciones, variables y módulos en `snake_case` (ej. `process_telemetry_payload`, `device_record.py`), clases de modelo Peewee en `PascalCase` (`TelemetryRecord`, `EdgeDevice`) y constantes en `UPPER_SNAKE_CASE`.
+- En C++ para ESP32 se aplican las **C++ Core Guidelines**: funciones y métodos en `camelCase` (`readSensorData()`, `triggerEmergencyRelay()`), constantes de pines con `constexpr` en `UPPER_SNAKE_CASE` (`PIN_RELAY_WATER`) y no bloqueo del bucle principal (`millis()` en lugar de `delay()` prolongados).
+
+**5. Convenciones para Pruebas y Especificaciones**
 
 Las pruebas unitarias y de integracion usan nombres descriptivos que explican escenario y resultado esperado.
 
@@ -2641,7 +2727,7 @@ Convenciones aplicadas:
 
 Con este enfoque, las pruebas funcionan como evidencia tecnica y documentacion viva de los requisitos.
 
-**5. Guias para Frontend y Documentacion**
+**6. Guias para Frontend y Documentacion**
 
 Para la landing page (HTML/CSS/JS) se aplican buenas practicas de estilo inspiradas en guias de Google y estandares web:
 
@@ -2693,7 +2779,7 @@ flowchart TD
 
 - Applications Deployment Architecture
 
-El proyecto IoBuild implementa una estrategia de despliegue diferenciada por componente, utilizando servicios en la nube y canales de integración y entrega continua (CI/CD). Esta aproximación optimiza recursos y mantiene una entrega continua para la landing page, el backend de servicios RESTful y la aplicación web para usuarios.
+El proyecto IoBuild implementa una estrategia de despliegue diferenciada por componente, utilizando servicios en la nube y canales de integración y entrega continua (CI/CD). Esta aproximación optimiza recursos y mantiene una entrega continua para la landing page, el backend de servicios RESTful, la aplicación web para usuarios, el servicio Edge API y el nodo IoT embebido.
 
 **1. Landing Page**
 
@@ -2702,7 +2788,7 @@ El proyecto IoBuild implementa una estrategia de despliegue diferenciada por com
 - **URL de producción:** https://iobuild-iot.github.io/IoBuild-LandingPage/
 - **Fuente de despliegue:** Rama `main` del repositorio `IoBuild-LandingPage`
 - **Estrategia:** Despliegue automático por cada push/merge a `main`
-- **Objetivo:** Publicar una página comercial e informativa con soporte multi-idioma (EN/ES) para captación de clientes e inversionistas.
+- **Objetivo:** Publicar una página comercial e informativa con soporte multi-idioma (EN/ES) y videos promocionales (`About-the-Product` y `About-the-Team`) para captación de clientes e inversionistas.
 
 **2. Backend (Web Services RESTful)**
 
@@ -2725,14 +2811,21 @@ El proyecto IoBuild implementa una estrategia de despliegue diferenciada por com
 - **Estrategia:** Integración y despliegue continuo (CI/CD) conectado a la API de backend
 - **Objetivo:** Proveer la interfaz centralizada de administración para constructoras y el portal de control para propietarios de departamentos.
 
-**4. Base de Datos Administrada**
+**4. Edge API & IoT Embedded Node**
+
+- **Tipo de servicio:** RESTful Edge API + Firmware Embebido
+- **Stack Edge:** Python 3.11, Flask, Peewee ORM y base de datos local SQLite (`edge_telemetry.db`)
+- **Stack Embebido:** C++ sobre microcontrolador ESP32 con sensores DHT22, SCT-013, YF-S201 y relés de actuación
+- **Objetivo:** Recolectar lecturas físicas en tiempo real, ejecutar reglas autónomas de seguridad en el borde (corte inmediato ante fuga o sobrecarga sin depender de latencia de red) y sincronizar lotes de telemetría con el Cloud Backend.
+
+**5. Base de Datos Administrada**
 
 - **Tipo de servicio:** Database as a Service (DaaS)
 - **Motor:** Base de datos relacional con soporte transaccional y pooling de conexiones
 - **Características:** Backups automatizados, conexiones encriptadas SSL/TLS y aislamiento de red
 - **Objetivo:** Persistencia segura y consistente de las entidades del dominio de IoBuild.
 
-**5. Consideraciones de Configuración y CI/CD**
+**6. Consideraciones de Configuración y CI/CD**
 
 - Control de versiones centralizado con GitHub
 - Convenciones de ramas y commits bajo GitFlow y Conventional Commits
@@ -2745,19 +2838,25 @@ El diagrama de despliegue representa la topología en producción:
 - Repositorio GitHub (Landing Page) -> GitHub Pages CDN -> Navegador del usuario
 - Repositorio Frontend Web -> Cloud Host -> Navegador del usuario (SPA interactiva)
 - Repositorio Backend -> Cloud Host (.NET 8 Web API) -> Base de Datos Cloud Relacional
+- Nodo IoT ESP32 -> Edge Gateway (Flask + Peewee + SQLite) -> Cloud Host (.NET 8 Web API)
 
 ```mermaid
 graph LR
     User([Navegador Usuario / Cliente])
     
     subgraph CDN ["GitHub Pages CDN"]
-        Landing["Landing Page Estática<br/>ccaritatech.github.io/IoBuild-LandingPage/"]
+        Landing["Landing Page Estática<br/>iobuild-iot.github.io/IoBuild-LandingPage/"]
     end
     
     subgraph FrontendHost ["Cloud Frontend Host"]
         WebApp["IoBuild Web App (SPA)<br/>iobuild-remix.arroz.dev"]
     end
     
+    subgraph EdgeNode ["Edge & Embedded IoT Layer"]
+        ESP32["ESP32 Node (C++)<br/>DHT22 + SCT-013 + Relays"]
+        EdgeAPI["Flask Edge API<br/>Peewee ORM + SQLite"]
+    end
+
     subgraph BackendHost ["Cloud Backend Host"]
         API[".NET 8 Web API RESTful<br/>io-build-back.arroz.dev"]
         Swagger["OpenAPI / Swagger UI"]
@@ -2770,6 +2869,8 @@ graph LR
     User -->|HTTPS| Landing
     User -->|HTTPS| WebApp
     WebApp -->|HTTPS / REST / JWT| API
+    ESP32 -->|HTTP JSON / Wi-Fi| EdgeAPI
+    EdgeAPI -->|HTTPS / REST Sync| API
     User -->|Pruebas & Docs| Swagger
     API -->|TCP / SSL| MySQL
 ```
@@ -2794,6 +2895,8 @@ El Sprint 1 se enfocó en establecer los cimientos de la plataforma IoBuild, des
 | Location | Google Meet |
 | Prepared By | Fabrizio Martin Panta Castro |
 | Attendees | Fabrizio Martin Panta Castro, Axel Randall Ordoñez Ricaldi, Brayan Roberto Ccarita Cruz, Mateo Italo Loechle Arias, Pedro Andre Guia Carrasco, Anyelo Bill Alejo Jesus, Janiel Franz Escalante Baygorrea |
+| Sprint 0 Review Summary | No aplica (Primer Sprint de implementación; se partió del Product Backlog priorizado y de la arquitectura DDD/C4 validada en AV1). |
+| Sprint 0 Retrospective Summary | El equipo acordó utilizar revisiones cruzadas de Pull Requests en GitHub y sesiones diarias breves en Discord para evitar bloqueos de integración. |
 | **Sprint Goal & User Stories** | |
 | Sprint 1 Goal | Our focus is on establishing the foundational layer of the IoBuild platform, delivering a fully functional landing page with internationalization and a basic authenticated dashboard with access to projects and connected devices. We believe it delivers immediate value to potential clients exploring the platform and to engineers who need a starting point to manage their IoT resources. This will be confirmed when the landing page is publicly deployed with EN/ES support and registered users can access the dashboard, view active projects and monitor connected devices. |
 | Sprint 1 Velocity | 36 |
@@ -2801,7 +2904,7 @@ El Sprint 1 se enfocó en establecer los cimientos de la plataforma IoBuild, des
 
 #### 6.2.1.2. Aspect Leaders and Collaborators.
 
-En este apartado se describen los aspectos funcionales más relevantes trabajados durante el Sprint 1 en el desarrollo de la plataforma IoBuild. Cada uno de ellos representa un subconjunto significativo dentro del alcance funcional de la solución, incluyendo componentes de interfaz, características técnicas (I18n), elementos de diseño visual y estructural (UX - UI) y preguntas frecuentes (FAQ).
+En esta sección se describen los aspectos funcionales más relevantes trabajados durante el Sprint 1 en el desarrollo de la plataforma IoBuild. Cada uno de ellos representa un subconjunto significativo dentro del alcance funcional de la solución, incluyendo componentes de interfaz, características técnicas (I18n), elementos de diseño visual y estructural (UX - UI) y preguntas frecuentes (FAQ).
 
 Para cada aspecto se asignó un responsable principal, denominado Líder (L), encargado de la dirección técnica o de la ejecución. De igual manera, se identificaron Colaboradores (C), miembros del equipo que participaron activamente en la implementación, validación o soporte.
 
@@ -3150,93 +3253,144 @@ A continuación se describen las principales vistas implementadas y verificadas 
 - **URL del repositorio Landing Page:** [https://github.com/IoBuild-IoT/IoBuild-LandingPage](https://github.com/IoBuild-IoT/IoBuild-LandingPage)
 - **URL de la Landing Page desplegada en producción:** [https://iobuild-iot.github.io/IoBuild-LandingPage/](https://iobuild-iot.github.io/IoBuild-LandingPage/)
 
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 1 se inició la estructuración y documentación OpenAPI/Swagger de los primeros Bounded Contexts del backend (`Authentication`, `Users`, `Clients` y `Analytics`) bajo la ruta base `/api/v1` en ASP.NET Core (.NET 8):
+
+| Endpoint | Acción | Verbo HTTP | Parámetros / Body | Ejemplo de Response |
+|---|---|---|---|---|
+| `/api/v1/authentication/sign-up` | Registra nueva cuenta (`builder` u `owner`) | `POST` | `SignUpResource (email, password, role)` | `201 Created` — `"User created successfully."` |
+| `/api/v1/authentication/sign-in` | Autentica credenciales y emite token JWT | `POST` | `SignInResource (email, password)` | `200 OK` — `{ "id": 1, "email": "user@demo.com", "role": "builder", "token": "eyJ..." }` |
+| `/api/v1/clients` | Lista y registra clientes asociados a obras | `GET / POST` | `CreateClientResource` | `200 OK / 201 Created` — `[ ClientResource ]` |
+| `/api/v1/analytics/metrics/{userId}` | Obtiene métricas agregadas de dashboard | `GET` | `Path: userId (int), Query: role` | `200 OK` — `BuilderDashboardResource` |
+
+- **URL del repositorio Web Services:** [https://github.com/IoBuild-IoT/IoBuild-Backend](https://github.com/IoBuild-IoT/IoBuild-Backend)
+- **Commits de documentación en Sprint 1:** `b477723` (`feat: implement AnalyticsController for dashboard metrics and insights`), `42fba34` (`feat: implement ClientsController with CRUD operations for clients`), `cdac147` (`feat: add authentication and users REST controllers`).
+
+#### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+
+En el Sprint 1 se completó la configuración de despliegue automático de la primera versión de la **Landing Page** sobre **GitHub Pages** a partir de la rama `main` del repositorio `IoBuild-IoT/IoBuild-LandingPage` ([https://iobuild-iot.github.io/IoBuild-LandingPage/](https://iobuild-iot.github.io/IoBuild-LandingPage/)), así como el aprovisionamiento inicial de la base de datos relacional administrada en la nube y el contenedor Docker para el servicio `IoBuild-Backend`.
+
+#### 6.2.1.9. Team Collaboration Insights during Sprint.
+
+Durante el Sprint 1, los 7 integrantes colaboraron activamente en la maquetación e internacionalización (EN/ES) del Landing Page y en el modelado e implementación de las capas Domain, Application, Interface e Infrastructure de los primeros contextos del backend, empleando ramas `feature/*` y Pull Requests revisados por pares en la organización [IoBuild-IoT](https://github.com/IoBuild-IoT).
+
 ---
 
-### 6.2.2. Sprint 2: Web Applications Frontend Implementation (IoBuild Web App)
+### 6.2.2. Sprint 2
 
-El Sprint 2 se centró en la implementación completa, validación y despliegue en producción de la **Aplicación Web Frontend (IoBuild Web App)**, desarrollada como una Single Page Application (SPA) sobre Vue.js 3, PrimeVue y Tailwind CSS, desplegada en `https://iobuild-remix.arroz.dev/`. Durante este sprint se materializó la separación estricta de vistas y permisos según el rol:
-1. **Segmento Constructoras (Builders):** Panel analítico global, gestión de proyectos residenciales (+ New Project), directorio de clientes y gestión de planes SaaS con pasarela Stripe. **Sin acceso a dispositivos (Devices).**
-2. **Segmento Propietarios (Owners):** Panel residencial doméstico con telemetría en tiempo real, catálogo interactivo de control de dispositivos IoT (Devices) y perfil con reglas de corte automático de emergencia.
+El **Sprint 2** (correspondiente al entregable **AV2 – Semana 12**) abarcó el despliegue de la **nueva versión del Landing Page** (con llamadas a la acción diferenciadas por segmento hacia las vistas de registro y videos incrustados), la **nueva versión en producción de la Aplicación Web Frontend (`IoBuild Web App`)** en `https://iobuild-remix.arroz.dev/`, la **integración completa con los 11 Bounded Contexts del RESTful Backend API** en `https://io-build-back.arroz.dev/swagger/index.html`, y la **primera versión desplegada e integrada del Edge API (Python + Flask + Peewee ORM + SQLite) junto con el prototipo físico/embebido del dispositivo IoT (ESP32 + DHT22 + SCT-013 + Relés)**. Durante este sprint se materializó la separación estricta de vistas y permisos según el rol:
+1. **Segmento Constructoras (Builders):** Panel analítico global con cálculos estadísticos y energéticos en tiempo real, gestión de proyectos residenciales (`+ Add Project`), directorio de clientes y gestión de planes SaaS con pasarela externa **Stripe**.
+2. **Segmento Propietarios (Owners):** Panel residencial doméstico con telemetría en tiempo real recolectada desde los sensores IoT vía Edge API, catálogo interactivo de control remoto de dispositivos IoT (`Devices`) y perfil con reglas de corte automático de emergencia.
 
 #### 6.2.2.1. Sprint Planning 2.
+
+En esta sección se especifican los acuerdos y métricas del Sprint Planning Meeting para el Sprint 2, incorporando el balance de revisión y retrospectiva del Sprint 1 y el Sprint Goal redactado bajo la estructura formal de Scrum.org.
 
 | Sprint # | Sprint 2 |
 |---|---|
 | **Sprint Planning Background** | |
 | Date | 12/05/2026 |
 | Time | 18:00 PM |
-| Location | Google Meet |
+| Location | Sesión virtual síncrona vía Google Meet |
 | Prepared By | Fabrizio Martin Panta Castro |
-| Attendees | Fabrizio Martin Panta Castro, Axel Randall Ordoñez Ricaldi, Brayan Roberto Ccarita Cruz, Mateo Italo Loechle Arias, Pedro Andre Guia Carrasco, Anyelo Bill Alejo Jesus, Janiel Franz Escalante Baygorrea |
+| Attendees | Fabrizio Martin Panta Castro / Axel Randall Ordoñez Ricaldi / Brayan Roberto Ccarita Cruz / Mateo Italo Loechle Arias / Pedro Andre Guia Carrasco / Anyelo Bill Alejo Jesus / Janiel Franz Escalante Baygorrea |
+| Sprint 1 Review Summary | En el Sprint 1 se completaron exitosamente los 36 Story Points comprometidos: se desplegó la primera versión pública del Landing Page con soporte bilingüe (EN/ES) y se implementaron los contextos fundacionales de IAM, Clients y Analytics en el backend. El Product Owner destacó la claridad de la propuesta comercial y solicitó para el Sprint 2 priorizar la diferenciación de rutas por rol (`builder` vs. `owner`), la pasarela Stripe y la conexión end-to-end con el nodo Edge y el prototipo IoT. |
+| Sprint 1 Retrospective Summary | **Aciertos:** Excelente fluidez en las revisiones de Pull Requests bajo GitFlow y estandarización de DTOs en el backend.<br>**Oportunidades de mejora:** Estandarizar los simuladores de carga de telemetría desde el primer día del sprint y automatizar las pruebas BDD de contratos entre el Frontend, el Edge API y el Cloud Backend para acelerar la validación. |
 | **Sprint Goal & User Stories** | |
-| Sprint 2 Goal | Implementar, validar y desplegar en producción la aplicación web frontend interactiva de IoBuild (SPA en Vue.js 3 / PrimeVue / Tailwind CSS) en `https://iobuild-remix.arroz.dev/`, integrando los flujos de autenticación multi-rol (Builder y Owner), los dashboards analíticos con métricas en tiempo real, el catálogo de proyectos y clientes, la facturación de planes SaaS mediante Stripe, y el control remoto y telemetría de dispositivos IoT para los propietarios de departamentos. |
+| Sprint 2 Goal | **Our focus is on** delivering an updated version of the Landing Page with segment-specific calls-to-action, deploying the multi-role IoBuild Web Application (`Builder` and `Owner` portals) integrated with the 11-context RESTful Cloud API and Stripe payment gateway, and launching the first integrated version of the Python Flask/Peewee/SQLite Edge API connected to the ESP32 physical IoT prototype.<br>**We believe it delivers** a cohesive, end-to-end smart building experience that empowers construction companies to manage residential projects, occupancy metrics, and SaaS subscriptions while enabling apartment owners to monitor real-time environmental/energy telemetry and actuate relays and water valves remotely with local edge safety fallbacks.<br>**This will be confirmed when** visitors transition seamlessly from the Landing Page CTAs into role-specific registration flows, builders manage projects and complete Stripe checkouts in production, and owners visualize live sensor metrics and execute sub-second actuator shut-offs synchronized across the ESP32 prototype, the Edge API, and the Cloud platform. |
 | Sprint 2 Velocity | 45 |
 | Sum of Story Points | 45 |
 
 #### 6.2.2.2. Aspect Leaders and Collaborators.
 
-Para el desarrollo del frontend de la aplicación web, se distribuyeron los aspectos modulares de la interfaz mediante la matriz LACX:
+Para el desarrollo integral del Sprint 2 (Web App, Cloud Services, Landing Page v2, Edge API y Prototipo IoT), se distribuyeron los aspectos técnicos y funcionales mediante la matriz **Leadership-and-Collaboration Matrix (LACX)**:
 
-| Team Member | GitHub Username | Builder Dashboard & Analytics | Projects Management | Clients Management | Devices Control (IoT) | Subscriptions & Stripe | Owner Experience |
-|---|---|---|---|---|---|---|---|
-| Ordoñez Ricaldi, Axel Randall | nOOmzzzz | **L** | C | C | C | C | C |
-| Panta Castro, Fabrizio Martin | F4brizio24 | C | **L** | **L** | C | C | C |
-| Loechle Arias, Mateo Italo | LowMath | C | C | C | **L** | C | C |
-| Ccarita Cruz, Brayan Roberto | hallzyx | C | C | C | C | **L** | C |
-| Guia Carrasco, Pedro Andre | Pedrivizz | C | C | C | C | C | **L** |
-| Alejo Jesus, Anyelo Bill | Everkoe | C | C | C | C | C | C |
-| Escalante Baygorrea, Janiel Franz | JanielFranz | C | C | C | C | C | C |
+| Team Member | GitHub Username | Builder Dashboard & Analytics | Projects & Clients Management | Devices Control & Edge/IoT Prototype | Subscriptions & Stripe | Owner Experience & Landing v2 |
+|---|---|---|---|---|---|---|
+| Ordoñez Ricaldi, Axel Randall | nOOmzzzz | **L** | C | C | C | C |
+| Panta Castro, Fabrizio Martin | F4brizio24 | C | **L** | **L** | C | C |
+| Loechle Arias, Mateo Italo | LowMath | C | C | **L** | C | C |
+| Ccarita Cruz, Brayan Roberto | hallzyx | C | C | C | **L** | C |
+| Guia Carrasco, Pedro Andre | Pedrivizz | C | C | C | C | **L** |
+| Alejo Jesus, Anyelo Bill | Everkoe | C | C | C | C | **L** |
+| Escalante Baygorrea, Janiel Franz | JanielFranz | **L** | C | C | C | C |
 
 #### 6.2.2.3. Sprint Backlog 2.
 
-| Story ID | ID Task | Título | Descripción | Estimación (Horas) | Assigned To | Status |
+El objetivo del Sprint Backlog 2 fue descomponer las historias de usuario y técnicas seleccionadas en tareas trazables orientadas a completar la experiencia multi-rol en la Web Application, el catálogo completo de endpoints REST en la nube, la actualización del Landing Page y la integración del Edge API con el prototipo físico ESP32. El seguimiento diario de tareas se gestionó mediante nuestro tablero ágil público.
+
+- **URL pública del Sprint Board:** [https://github.com/orgs/IoBuild-IoT/projects](https://github.com/orgs/IoBuild-IoT/projects)
+
+| Sprint # | Sprint 2 | | | | | |
 |---|---|---|---|---|---|---|
-| US08 | TK08 | Dashboard personalizado | Como usuario de constructora, quiero tener un dashboard con métricas clave de ocupación y energía en tiempo real. | 5 | Axel Randall Ordoñez Ricaldi | Done |
-| US09 | TK09 | Acceso a proyectos activos | Como ingeniero, quiero ver los proyectos residenciales activos para supervisar su estado. | 5 | Fabrizio Martin Panta Castro | Done |
-| US10 | TK10 | Monitoreo de dispositivos conectados | Como propietario, quiero supervisar el estado de mis dispositivos IoT conectados en el departamento. | 5 | Mateo Italo Loechle Arias | Done |
-| US11 | TK11 | Tasa de ocupación mensual | Como ingeniero, quiero visualizar el porcentaje de ocupación por proyecto para evaluar el aforo. | 5 | Axel Randall Ordoñez Ricaldi | Done |
-| US12 | TK12 | Gráfico de consumo por hora | Como usuario, quiero ver una gráfica horaria de consumo de energía (kWh) para detectar picos inusuales. | 8 | Axel Randall Ordoñez Ricaldi | Done |
-| US14 | TK14 | Resumen de proyectos | Como ingeniero, quiero consultar un resumen de cada proyecto con su ubicación y total de unidades. | 5 | Fabrizio Martin Panta Castro | Done |
-| US19 | TK15 | Identificación de rol en barra de estado | Como usuario, quiero visualizar el rol activo (`builder` o `owner`) para conocer mis accesos disponibles. | 3 | Pedro Andre Guia Carrasco | Done |
-| US20 | TK16 | Lista de proyectos residenciales | Como ingeniero, quiero ver una cuadrícula interactiva con los edificios inteligentes registrados. | 5 | Fabrizio Martin Panta Castro | Done |
-| US21 | TK17 | Formulario "+ Add Project" | Como arquitecto, quiero registrar una nueva obra indicando nombre, dirección, fecha y unidades. | 8 | Fabrizio Martin Panta Castro | Done |
-| US23 | TK19 | Lista de clientes | Como administrador, quiero consultar la lista de propietarios y departamentos habitados. | 5 | Fabrizio Martin Panta Castro | Done |
-| US24 | TK20 | Búsqueda y filtrado de clientes | Como ingeniero, quiero filtrar el directorio de clientes por nombre o proyecto asociado. | 5 | Fabrizio Martin Panta Castro | Done |
-| US28 | TK21 | Vista de plan actual | Como ingeniero, quiero consultar mi plan de suscripción actual y su estado de vigencia. | 5 | Brayan Roberto Ccarita Cruz | Done |
-| US29 | TK22 | Comparativa de planes SaaS | Como usuario de constructora, quiero comparar los planes Starter, Professional y Enterprise. | 5 | Brayan Roberto Ccarita Cruz | Done |
-| US30 | TK23 | Checkout con pasarela Stripe | Como director de constructora, quiero actualizar mi plan mediante el checkout seguro de Stripe. | 8 | Brayan Roberto Ccarita Cruz | Done |
-| US33 | TK24 | Catálogo de dispositivos del departamento | Como propietario, quiero listar los dispositivos IoT instalados en mi departamento. | 5 | Mateo Italo Loechle Arias | Done |
-| US34 | TK25 | Conmutación remota de actuadores (On/Off) | Como residente, quiero accionar interruptores y válvulas a distancia con actualización en tiempo real. | 8 | Mateo Italo Loechle Arias | Done |
-| US35 | TK26 | Acciones rápidas de corte de breaker y agua | Como residente, quiero ejecutar cortes preventivos de energía o agua ante emergencias en un clic. | 5 | Mateo Italo Loechle Arias | Done |
-| US16 | TK27 | Perfil del usuario y seguridad | Como usuario, quiero actualizar mis datos de contacto, teléfono de emergencia y contraseña. | 5 | Anyelo Bill Alejo Jesus | Done |
+| **User Story** | | **Work-Item / Task** | | | | |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US08 | Dashboard personalizado | TK08 | Builder Dashboard KPIs | Implementar tarjetas analíticas de ocupación, eficiencia energética y alertas activas en Vue 3. | 5 | Axel Randall Ordoñez Ricaldi | Done |
+| US09 | Acceso a proyectos activos | TK09 | Filtro de proyectos activos | Integrar vista de proyectos activos con consumo directo de `GET /api/v1/projects`. | 4 | Fabrizio Martin Panta Castro | Done |
+| US10 | Monitoreo de dispositivos conectados | TK10 | Estado de nodos IoT | Mostrar estado en línea/fuera de línea y salud de dispositivos por departamento. | 5 | Mateo Italo Loechle Arias | Done |
+| US11 | Tasa de ocupación mensual | TK11 | Gráfico de ocupación mensual | Implementar cálculo estadístico y gráfico de barras de evolución de ocupación por edificio. | 5 | Axel Randall Ordoñez Ricaldi | Done |
+| US12 | Gráfico de consumo por hora | TK12 | Curva horaria de energía (kWh) | Construir gráfico dinámico Chart.js alimentado por el agregador matemático de telemetría horaria. | 6 | Axel Randall Ordoñez Ricaldi | Done |
+| US14 | Resumen de proyectos | TK14 | Tarjetas de resumen de obra | Renderizar ubicación, unidades ocupadas/totales y barra de progreso en cada tarjeta de proyecto. | 4 | Fabrizio Martin Panta Castro | Done |
+| US19 | Identificación de rol en barra de estado | TK15 | Guardas de navegación por rol | Configurar Vue Router y barra lateral diferenciada (`Builder`: 5 módulos; `Owner`: 3 módulos). | 3 | Pedro Andre Guia Carrasco | Done |
+| US20 | Lista de proyectos residenciales | TK16 | Catálogo de edificios | Maquetar cuadrícula responsiva de proyectos inmobiliarios con carga asíncrona. | 5 | Fabrizio Martin Panta Castro | Done |
+| US21 | Formulario "+ Add Project" | TK17 | Modal de alta de proyecto | Implementar formulario reactivo con validación de campos y persistencia vía `POST /api/v1/projects`. | 6 | Fabrizio Martin Panta Castro | Done |
+| US23 | Lista de clientes | TK19 | Directorio de clientes | Construir tabla interactiva PrimeVue con estado de cuenta (`Al día`, `Pendiente`) y unidad asignada. | 5 | Fabrizio Martin Panta Castro | Done |
+| US24 | Búsqueda y filtrado de clientes | TK20 | Buscador multicriterio | Implementar filtrado en tiempo real por nombre, correo, proyecto asociado y estado de cuenta. | 4 | Fabrizio Martin Panta Castro | Done |
+| US28 | Vista de plan actual | TK21 | Panel de suscripción activa | Mostrar detalles del plan contratado, cupo de dispositivos IoT y fecha de renovación. | 4 | Brayan Roberto Ccarita Cruz | Done |
+| US29 | Comparativa de planes SaaS | TK22 | Matriz de planes Starter/Pro/Enterprise | Diseñar tarjetas comparativas de planes SaaS con beneficios técnicos y límites operativos. | 4 | Brayan Roberto Ccarita Cruz | Done |
+| US30 | Checkout con pasarela Stripe | TK23 | Integración Stripe Checkout | Conectar flujo de pago con `POST /api/v1/subscriptions/payments/create-session` y confirmación. | 8 | Brayan Roberto Ccarita Cruz | Done |
+| US33 | Catálogo de dispositivos del departamento | TK24 | Inventario IoT del residente | Listar sensores (DHT22, SCT-013, YF-S201) y actuadores (relés, electroválvula) del departamento. | 5 | Mateo Italo Loechle Arias | Done |
+| US34 | Conmutación remota de actuadores (On/Off) | TK25 | Control bidireccional de relés | Vincular switches de interfaz con `PUT /api/v1/devices/{id}` y comando hacia Edge API / ESP32. | 8 | Mateo Italo Loechle Arias | Done |
+| US35 | Acciones rápidas de corte de breaker y agua | TK26 | Botones de emergencia en Owner Dashboard | Implementar controles de corte preventivo en un clic para suministro eléctrico y válvula de agua. | 5 | Pedro Andre Guia Carrasco | Done |
+| US16 | Perfil del usuario y seguridad | TK27 | Gestión de perfil y reglas de fuga | Desarrollar vistas de perfil corporativo y residencial con regla de corte automático ante fuga. | 5 | Anyelo Bill Alejo Jesus | Done |
+| TS25 | Servicio Edge API de telemetría local | TK28 | Edge API (Flask + Peewee + SQLite) | Implementar endpoints `/api/v1/edge/telemetry` y `/api/v1/edge/actuators` con persistencia SQLite. | 8 | Janiel Franz Escalante Baygorrea | Done |
+| TS26 | Firmware embebido y prototipo físico IoT | TK29 | Nodo ESP32 en C++ y Wokwi | Programar lectura de sensores DHT22/SCT-013, control de relés y envío JSON hacia el Edge API. | 8 | Fabrizio Martin Panta Castro | Done |
 
 #### 6.2.2.4. Development Evidence for Sprint Review.
 
-El desarrollo del frontend se concentró en el repositorio centralizado `IoBuild-IoT/IoBuild-Frontend`:
+En el Sprint 2 el desarrollo abarcó la implementación completa de la aplicación web en `IoBuild-IoT/IoBuild-Frontend`, la consolidación de los 11 contextos y el servicio Edge/IoT en `IoBuild-IoT/IoBuild-Backend`, y la actualización de la segunda versión del sitio estático en `IoBuild-IoT/IoBuild-LandingPage`. A continuación se presenta la tabla de commits con su respectivo mensaje y cuerpo descriptivo:
 
-| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
-|---|---|---|---|---|
-| IoBuild-IoT/IoBuild-Frontend | main | e41a29f | feat: Initialize Vue 3, PrimeVue theme and Tailwind CSS integration | 13/05/2026 |
-| IoBuild-IoT/IoBuild-Frontend | main | f802b11 | feat: Implement authentication views (Sign In, Builder & Owner register) | 14/05/2026 |
-| IoBuild-IoT/IoBuild-Frontend | feature/dashboard | a7c3910 | feat: Build Builder Dashboard with Chart.js KPIs and occupancy charts | 15/05/2026 |
-| IoBuild-IoT/IoBuild-Frontend | feature/projects | c2810de | feat: Create Projects view with card grid and modal "+ New Project" form | 16/05/2026 |
-| IoBuild-IoT/IoBuild-Frontend | feature/clients | 84e18ac | feat: Develop Clients directory with PrimeVue DataTable, search and filters | 17/05/2026 |
-| IoBuild-IoT/IoBuild-Frontend | feature/subscriptions | d9041fa | feat: Implement Subscriptions comparison view and Stripe checkout redirect | 18/05/2026 |
-| IoBuild-IoT/IoBuild-Frontend | feature/owner | 5b19c28 | feat: Implement Owner Dashboard with quick breakers and water valve toggles | 19/05/2026 |
-| IoBuild-IoT/IoBuild-Frontend | feature/devices | 7e2a901 | feat: Develop Devices management view with real-time MQTT status and switches | 20/05/2026 |
-| IoBuild-IoT/IoBuild-Frontend | feature/profile | 30c5e7b | feat: Add Profile views with emergency contacts and leak shut-off safety rules | 21/05/2026 |
-| IoBuild-IoT/IoBuild-Frontend | main | 92f8a44 | chore: Production deployment build optimization and CI/CD workflow | 22/05/2026 |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| IoBuild-IoT/IoBuild-Frontend | main | e41a29f | feat: Initialize Vue 3, PrimeVue theme and Tailwind CSS integration | Configure Vite build pipeline, PrimeVue Aura design tokens, Tailwind CSS utility classes and base router layout. | 13/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | main | f802b11 | feat: Implement authentication views (Sign In, Builder & Owner register) | Add JWT login form, builder corporate registration and owner registration with mandatory Unit Activation Key validation. | 14/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/dashboard | a7c3910 | feat: Build Builder Dashboard with Chart.js KPIs and occupancy charts | Integrate analytical KPI cards, hourly kWh consumption line chart and monthly unit occupancy bar chart. | 15/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/projects | c2810de | feat: Create Projects view with card grid and modal "+ New Project" form | Implement responsive project cards with occupancy progress bars and reactive creation dialog connected to REST API. | 16/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/clients | 84e18ac | feat: Develop Clients directory with PrimeVue DataTable, search and filters | Add client management table with multi-column sorting, status badges and instant search filter. | 17/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/subscriptions | d9041fa | feat: Implement Subscriptions comparison view and Stripe checkout redirect | Build SaaS plan comparison matrix (Starter, Professional, Enterprise) and integrate Stripe session redirect flow. | 18/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/owner | 5b19c28 | feat: Implement Owner Dashboard with quick breakers and water valve toggles | Create residential overview with monthly kWh/water metrics and one-click emergency shut-off controls. | 19/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/devices | 7e2a901 | feat: Develop Devices management view with real-time MQTT status and switches | Render apartment IoT inventory (SCT-013, DHT22, solenoid valve, relays) with instant state mutation. | 20/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | feature/profile | 30c5e7b | feat: Add Profile views with emergency contacts and leak shut-off safety rules | Implement corporate RUC profile for builders and emergency contact + automatic leak shut-off toggle for owners. | 21/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feature/edge-iot | 6d41b8e | feat: Implement Flask Edge API with Peewee ORM and SQLite local persistence | Add Python Edge service with TelemetryRecord and EdgeDevice Peewee models, threshold evaluation and Cloud sync worker. | 21/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | feature/edge-iot | 8f29c14 | feat: Add ESP32 C++ firmware and Wokwi circuit configuration for apartment node | Implement non-blocking sensor polling (DHT22, SCT-013, YF-S201), relay actuation and HTTP JSON telemetry dispatch. | 22/05/2026 |
+| IoBuild-IoT/IoBuild-LandingPage | main | 9e14a72 | feat: Update Landing Page v2 with role-specific CTAs and embedded product videos | Connect hero and plan CTAs directly to production Web App routes and embed About-the-Product and About-the-Team videos. | 22/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | main | 92f8a44 | chore: Production deployment build optimization and CI/CD workflow | Configure production environment variables, asset minification and automated deployment to iobuild-remix.arroz.dev. | 22/05/2026 |
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
-Para el frontend de la aplicación web, se implementaron pruebas automatizadas de componentes mediante Vitest y pruebas de aceptación BDD (Gherkin):
+En el Sprint 2 se amplió la suite de pruebas automatizadas abarcando **Unit Tests** (xUnit en .NET 8, Vitest en Vue 3 y Pytest en el Edge API con Flask/Peewee) e **Integration / Acceptance Tests bajo el enfoque BDD con Gherkin** (archivos `.feature` y definiciones de Steps).
+
+### Relación de Unit Tests Diseñados en el Sprint 2
+
+| Componente / Contexto | Clase de Prueba | Clases y Comportamientos Validados | User Stories Relacionados |
+|---|---|---|---|
+| **Backend — Projects & Units** | `ProjectCommandServiceTests`, `UnitCommandServiceTests` | Valida el alta de proyectos inmobiliarios, cálculo de porcentaje de ocupación (`occupiedUnits / totalUnits`) y validación de `UnitActivationKey`. | US09, US11, US20, US21 |
+| **Backend — Devices & Analytics** | `DeviceCommandServiceTests`, `AnalyticsCalculationTests` | Verifica el registro de nodos por dirección MAC, conmutación de estados (`online`/`offline`, `On`/`Off`) y cálculos estadísticos de eficiencia energética y promedios horarios (kWh). | US10, US12, US33, US34 |
+| **Backend — Subscriptions & Stripe** | `SubscriptionPaymentServiceTests` | Comprueba la creación de sesiones de pago con Stripe (`CreatePaymentSessionCommand`), cambio de plan y actualización de cupos de dispositivos. | US28, US29, US30 |
+| **Frontend — Role Guards & UI** | `RoleNavigationGuard.spec.ts`, `DeviceCard.spec.ts` | Verifica que el rol `builder` acceda únicamente a sus 5 módulos (ocultando `Devices`) y que el rol `owner` visualice y accione interruptores con actualización reactiva. | US19, US34, US35 |
+| **Edge API — Flask & Peewee** | `test_edge_telemetry.py` | Valida la inserción de lecturas en SQLite vía Peewee ORM, el disparo automático de corte de válvula (`relay_water = OFF`) cuando el caudal supera el umbral de fuga y la sincronización hacia el Cloud API. | US34, US35, TS25, TS26 |
+
+### Acceptance Tests Automatizados (BDD - Gherkin)
+
+**1. `web_app_navigation_and_control.feature` (US19, US20, US21, US33, US34, US35)**
 
 ```gherkin
 # language: es
-Característica: Navegación y Control en la Aplicación Web IoBuild
+Característica: Navegación Multi-Rol y Control de Dispositivos en IoBuild Web App
   Como usuario autenticado de IoBuild
-  Quiero navegar según mis permisos de rol
-  Para operar eficientemente la plataforma
+  Quiero navegar según mis permisos de rol y operar mis recursos
+  Para gestionar proyectos inmobiliarios o controlar los dispositivos IoT de mi departamento
 
   Escenario: Acceso exclusivo de constructora al catálogo de proyectos
     Dado que he iniciado sesión con credenciales de rol "builder"
@@ -3253,12 +3407,46 @@ Característica: Navegación y Control en la Aplicación Web IoBuild
     Entonces el estado visual debe actualizarse a "Off" inmediatamente
 ```
 
-#### 6.2.2.6. Execution Evidence for Sprint Review: Aplicación Web en Producción (IoBuild Web App).
+**2. `edge_telemetry_and_safety_shutoff.feature` (US12, US34, US35, TS25, TS26)**
 
-A continuación se presenta la evidencia completa de ejecución de la aplicación web de IoBuild desplegada y conectada en producción en **`https://iobuild-remix.arroz.dev/`**, demostrando la operatividad de los flujos de autenticación, visualización analítica de telemetría IoT, administración de proyectos residenciales, clientes, inventario de dispositivos y planes de suscripción.
+```gherkin
+# language: es
+Característica: Procesamiento de Telemetría en el Edge API y Corte Automático de Emergencia
+  Como desarrollador de la arquitectura IoT de IoBuild
+  Quiero que el Edge API procese las lecturas del nodo ESP32 y ejecute reglas locales de seguridad
+  Para garantizar la protección inmediata del departamento ante fugas o sobrecargas eléctricas
+
+  Escenario: Ingesta válida de telemetría ambiental y eléctrica en el nodo Edge
+    Dado que el dispositivo ESP32 con MAC "AA:BB:CC:DD:EE:01" está vinculado a la unidad "A-302"
+    Cuando envía una petición POST a "/api/v1/edge/telemetry" con temperatura 23.4, humedad 58.0 y corriente 2.15 kWh
+    Entonces el servicio Edge API persiste el registro en la base de datos local SQLite mediante Peewee ORM
+    Y responde con código de estado 201 y estado de sincronización "queued_for_cloud"
+
+  Escenario: Activación automática de corte de electroválvula ante detección de fuga
+    Dado que la unidad "A-302" tiene activa la regla "Automatic Water Shut-off on Leak Detection"
+    Cuando el nodo ESP32 reporta un caudal continuo anómalo de 18.5 L/min fuera de horario habitual
+    Entonces el Edge API emite inmediatamente el comando local de cierre hacia el relé en GPIO 25
+    Y actualiza el estado de la electroválvula a "Off" en menos de 500 milisegundos
+    Y notifica la alerta crítica al Cloud Backend en "/api/v1/analytics/metrics"
+```
+
+### Evidencia de Commits de Testing en el Sprint 2
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| IoBuild-IoT/IoBuild-Backend | testing | g7l9i0k | test(projects): add unit tests for project creation and occupancy rate calculation | Validate ProjectCommandService and mathematical aggregation of occupied units per building. | 18/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | testing | h8m0j1l | test(subscriptions): add unit and integration tests for Stripe payment session flow | Mock Stripe checkout session creation and verify subscription status transition to active. | 19/05/2026 |
+| IoBuild-IoT/IoBuild-Frontend | testing | i9n1k2m | test(webapp): add Vitest component tests and Gherkin BDD scenarios for role navigation | Verify strict separation between builder and owner sidebar routes and reactive device toggles. | 20/05/2026 |
+| IoBuild-IoT/IoBuild-Backend | testing | j0p2l3n | test(edge): add Pytest and BDD acceptance tests for Flask/Peewee Edge API telemetry | Test SQLite persistence, anomaly threshold detection and automatic water valve shut-off command. | 21/05/2026 |
+
+#### 6.2.2.6. Execution Evidence for Sprint Review.
+
+A continuación se presenta la evidencia completa de ejecución de la nueva versión de la **Landing Page**, la **Aplicación Web de IoBuild (`IoBuild Web App`)** desplegada y conectada en producción en **`https://iobuild-remix.arroz.dev/`**, y el flujo de demostración y navegación consolidado en video para este Sprint, evidenciando la operatividad de los flujos de autenticación, visualización analítica de telemetría IoT, administración de proyectos residenciales, clientes, inventario de dispositivos, planes de suscripción y sincronización con el nodo Edge/IoT.
 
 - **URL de la aplicación web desplegada:** [https://iobuild-remix.arroz.dev/](https://iobuild-remix.arroz.dev/)  
+- **URL de la nueva versión del Landing Page:** [https://iobuild-iot.github.io/IoBuild-LandingPage/](https://iobuild-iot.github.io/IoBuild-LandingPage/)
 - **Credenciales de acceso de demostración:** `admin@iobuild.com` / `Admin01!`
+- **Video de Demostración de Navegación del Producto (`upc-pre-202620-1asi0572-16518-iobuild-productnavigation-sprint-2.mp4`):** [https://youtu.be/l9eikn4YOmw](https://youtu.be/l9eikn4YOmw) *(Publicado también en el canal oficial de Microsoft Stream / Clipchamp del curso)*.
 
 ---
 
@@ -4267,45 +4455,128 @@ Response (200 OK):
 - **UnitDetailResource**: unitId, unitNumber, projectName, activeDevices, connectionStatus
 - **BuilderDashboardResource**: totalDevices, onlineDevices, offlineDevices, alertsCount, activeProjectsCount, totalUnits, occupiedUnits, occupancyRate, energyEfficiencyAvg, temperatureHistory, energyHistory, hourlyEnergyData, monthlyOccupancy, devicesByType, projectsOverview
 
+#### **Edge API (Local Gateway — Python Flask + Peewee ORM + SQLite)**
+
+Durante el Sprint 2 se implementó y documentó la **Edge API** local (`edge_api.py`), ejecutada sobre el nodo Edge Gateway del edificio residencial para recibir la telemetría de los microcontroladores ESP32, almacenarla localmente en **SQLite** mediante **Peewee ORM** (garantizando operación *offline-first* ante caídas de Internet) y sincronizarla con el Cloud Backend.
+
+**31. POST /api/v1/edge/telemetry**
+
+```
+POST /api/v1/edge/telemetry
+```
+
+Request:
+```json
+{
+  "deviceMac": "AA:BB:CC:DD:EE:01",
+  "unitId": 101,
+  "temperatureC": 23.4,
+  "humidityPct": 58.2,
+  "powerKw": 1.45,
+  "waterFlowLpm": 0.0,
+  "leakAlert": false,
+  "timestamp": "2026-11-10T14:30:00Z"
+}
+```
+
+Response (201 Created):
+```json
+{
+  "id": 502,
+  "deviceMac": "AA:BB:CC:DD:EE:01",
+  "unitId": 101,
+  "syncedToCloud": true,
+  "status": "STORED_AND_FORWARDED"
+}
+```
+
+**32. POST /api/v1/edge/actuators**
+
+```
+POST /api/v1/edge/actuators
+```
+
+Request:
+```json
+{
+  "deviceMac": "AA:BB:CC:DD:EE:01",
+  "unitId": 101,
+  "targetRelay": "WATER_VALVE",
+  "command": "CLOSE",
+  "reason": "EMERGENCY_SHUTOFF"
+}
+```
+
+Response (200 OK):
+```json
+{
+  "deviceMac": "AA:BB:CC:DD:EE:01",
+  "targetRelay": "WATER_VALVE",
+  "newState": "CLOSED",
+  "latencyMs": 38,
+  "executedAt": "2026-11-10T14:31:05Z"
+}
+```
+
+**33. GET /api/v1/edge/health**
+
+```
+GET /api/v1/edge/health
+```
+
+Response (200 OK):
+```json
+{
+  "gatewayStatus": "ONLINE",
+  "sqliteBufferPendingRecords": 0,
+  "connectedEsp32Nodes": 12,
+  "cloudSyncStatus": "HEALTHY"
+}
+```
+
 **Estadísticas del Sprint**
 
-- Total de endpoints documentados: **30**
-- Bounded contexts cubiertos: **11** (Authentication, Users, Profiles, Clients, Projects, Units, Devices, Subscriptions, Plans, Payments, Analytics)
+- Total de endpoints documentados: **33** (30 en Cloud Backend ASP.NET Core + 3 en Edge API Python Flask)
+- Bounded contexts cubiertos: **11** en Cloud (Authentication, Users, Profiles, Clients, Projects, Units, Devices, Subscriptions, Plans, Payments, Analytics) + **Edge Telemetry & Actuation** en el Gateway local
 - Operaciones implementadas: GET, POST, PUT, DELETE
-- Autenticación: JWT con [Authorize] en contextos de Users, Profiles, Clients, Projects, Units; Público en Devices, Subscriptions, Plans, Payments, Analytics
-- Integración externa: Stripe para pagos y suscripciones
-- Modelos de datos: 25+ recursos/DTOs bien tipados
+- Autenticación: JWT con `[Authorize]` en contextos de Users, Profiles, Clients, Projects, Units y encabezados `X-Edge-Api-Key` en la comunicación Edge-to-Cloud
+- Integración externa: Stripe para pagos y suscripciones SaaS
+- Modelos de datos: 28+ recursos/DTOs tipados y entidades Peewee ORM en SQLite
 - Cobertura de API: Base URL `api/v1`, respuestas HTTP correctas con códigos 200, 201, 204, 400, 404, 500
 
 *Nota. Elaboración propia.*
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 
-Durante los sprints de desarrollo se implementó el despliegue continuo de los componentes de la plataforma IoBuild en entornos productivos basados en la nube, garantizando disponibilidad y validación inmediata con stakeholders y usuarios reales.
+Durante los sprints de desarrollo se implementó el despliegue continuo de los componentes de la plataforma IoBuild en entornos productivos basados en la nube y nodos perimetrales, garantizando disponibilidad y validación inmediata con stakeholders y usuarios reales durante la Sprint Review del Sprint 2.
 
-**1. Landing Page (`IoBuild-LandingPage`)**  
-Desplegada mediante un servicio de hosting estático con integración CI/CD directa al repositorio de GitHub, activando builds y despliegues automáticos ante cada merge a la rama `main`. Permite la captación y presentación comercial de la plataforma con soporte multi-idioma (EN/ES).
+**1. Landing Page (`IoBuild-LandingPage` v2)**  
+Desplegada mediante un servicio de hosting estático con integración CI/CD directa al repositorio de GitHub, activando compilaciones y despliegues automáticos ante cada fusión a la rama `main`. Permite la captación y presentación comercial de la plataforma con soporte multi-idioma (EN/ES) e incluye la sección interactiva con el video promocional *About-the-Product*.
 - URL de despliegue: [https://iobuild-iot.github.io/IoBuild-LandingPage/](https://iobuild-iot.github.io/IoBuild-LandingPage/)
 
 **2. Backend Web Services (`IoBuild-Backend`)**  
-Desplegado en un clúster en la nube optimizado para aplicaciones ASP.NET Core (.NET 8), integrando persistencia de datos relacional administrada, cifrado de credenciales con BCrypt y autenticación de tokens JWT. Expone la documentación OpenAPI interactiva para consumo de clientes y pruebas directas.
+Desplegado en un clúster en la nube optimizado para aplicaciones ASP.NET Core (.NET 8), integrando persistencia de datos relacional administrada en PostgreSQL, cifrado de credenciales con BCrypt y autenticación de tokens JWT. Expone la documentación OpenAPI interactiva para consumo de clientes web, sincronización con la Edge API y pruebas directas.
 - URL de despliegue: [https://io-build-back.arroz.dev/swagger/index.html](https://io-build-back.arroz.dev/swagger/index.html)
 
 **3. Aplicación Web Frontend (`IoBuild Web Application`)**  
 La aplicación web de administración y monitoreo IoT se encuentra totalmente desplegada y operativa en producción, sirviendo interfaces reactivas basadas en Vue.js / Remix conectadas en tiempo real a la API de backend y a los servicios analíticos de telemetría departamental.
 - URL de despliegue en producción: [https://iobuild-remix.arroz.dev/](https://iobuild-remix.arroz.dev/)
-- Credenciales demo: `admin@iobuild.com` / `Admin01!`
+- Credenciales demo Constructor: `admin@iobuild.com` / `Admin01!`
+
+**4. Edge API (`IoBuild-Edge-Service`) y Prototipo IoT Embebido (`ESP32 Firmware`)**  
+El servicio intermedio Edge API (Python 3.11 + Flask + Peewee ORM + SQLite) se despliega mediante contenedores ligeros en el gateway local del edificio residencial, mientras que el firmware embebido C++ sobre el microcontrolador **ESP32-WROOM-32** (con sensores DHT22, SCT-013, YF-S201 y módulo de relés de 2 canales) opera conectado a la red local y cuenta con simulación gemela interactiva en **Wokwi** para pruebas de estrés de fugas y cortes de suministro.
 
 Evidencia consolidada del despliegue:
-- **Landing Page:** Sitio público y accesible con las secciones Hero, Benefits, Features, Testimonials, Plans, About Us, FAQ y Footer completamente funcionales.
-- **Web Services Backend:** API REST activa con URL pública segura HTTPS, 32 endpoints en 11 bounded contexts respondiendo con códigos de estado estandarizados (200, 201, 204, 400, 404).
-- **Web Application Frontend:** Plataforma SPA interactiva con autenticación multi-rol, paneles analíticos con gráficos Chart.js en tiempo real, catálogo de proyectos residenciales, gestión de clientes y monitoreo de dispositivos IoT.
+- **Landing Page:** Sitio público y accesible con las secciones Hero, Benefits, Features, Testimonials, Plans, About Us, FAQ, Video About-the-Product y Footer completamente funcionales.
+- **Web Services Backend:** API REST activa con URL pública segura HTTPS, 30 endpoints Cloud y 3 endpoints Edge respondiendo con códigos de estado estandarizados (200, 201, 204, 400, 404).
+- **Web Application Frontend:** Plataforma SPA interactiva con autenticación multi-rol (Builder y Owner), paneles analíticos con gráficos Chart.js en tiempo real, catálogo de proyectos residenciales, gestión de clientes y monitoreo/actuación sobre dispositivos IoT.
+- **Nodo IoT + Edge Gateway:** Ingesta continua de telemetría ambiental, eléctrica e hídrica cada 5 segundos y ejecución de comandos de corte de electroválvula y relé eléctrico con latencia inferior a 100 ms en red local.
 
 *Nota. Elaboración propia.*
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
 
-Durante el desarrollo de IoBuild, el equipo trabajó de manera coordinada distribuyendo las responsabilidades según las especialidades de cada integrante. Se utilizó GitHub como plataforma central de control de versiones, organizando el trabajo mediante la organización oficial [IoBuild-IoT](https://github.com/IoBuild-IoT), ramas por feature y pull requests para la integración continua en las ramas principales. A continuación se detalla la contribución individual de cada uno de los 7 miembros del equipo:
+Durante el desarrollo del Sprint 2 de IoBuild, el equipo trabajó de manera coordinada distribuyendo las responsabilidades según las especialidades de cada integrante. Se utilizó GitHub como plataforma central de control de versiones, organizando el trabajo mediante la organización oficial [IoBuild-IoT](https://github.com/IoBuild-IoT), flujo de ramas por funcionalidad (*Feature Branching*) y *Pull Requests* para la integración continua en las ramas principales. A continuación se detalla la contribución individual de cada uno de los 7 miembros del equipo:
 
 ---
 
@@ -4313,7 +4584,7 @@ Durante el desarrollo de IoBuild, el equipo trabajó de manera coordinada distri
 
 Contribución Principal:
 - En la aplicación web (IoBuild-Frontend), lideró la implementación y diseño interactivo del **Builder Dashboard**, integrando métricas y tarjetas de KPIs con gráficos reactivos de consumo eléctrico (kWh) y tasa de ocupación departamental mensual.
-- En la Landing Page (IoBuild-LandingPage), colaboró en la estructura del Home Page y la sección de contacto.
+- En la arquitectura IoT y Edge, diseñó la integración del circuito electrónico del nodo **ESP32** (DHT22, SCT-013, YF-S201 y módulo relé de 2 canales) con los endpoints de telemetría del backend.
 - En el backend (IoBuild-Backend), apoyó en el diseño e integración de los Bounded Contexts de Profiles y Projects, asegurando la consistencia en el consumo de la Web API desde el frontend web.
 
 ---
@@ -4321,17 +4592,17 @@ Contribución Principal:
 **Ccarita Cruz, Brayan Roberto** *(GitHub: hallzyx - U20221c218)*
 
 Contribución Principal:
-- En el backend (IoBuild-Backend), diseñó e implementó integralmente el Bounded Context de **IAM (Identity and Access Management)**: aggregate root User, comandos de registro/login, cifrado seguro con BCrypt, emisión de JSON Web Tokens (JWT), middleware de autorización por roles y controladores REST.
-- En la aplicación web (IoBuild-Frontend), desarrolló el módulo de **Suscripciones y Facturación SaaS**, integrando el comparador de planes (Starter, Professional, Enterprise) y el flujo de checkout con la pasarela de pagos Stripe.
-- En la Landing Page (IoBuild-LandingPage), implementó scripts de interactividad y optimización de assets.
+- En el backend (IoBuild-Backend), diseñó e implementó integralmente el Bounded Context de **IAM (Identity and Access Management)**: aggregate root User, comandos de registro/inicio de sesión, cifrado seguro con BCrypt, emisión de JSON Web Tokens (JWT), middleware de autorización por roles y controladores REST.
+- En la aplicación web (IoBuild-Frontend), desarrolló el módulo de **Suscripciones y Facturación SaaS**, integrando el comparador de planes (Starter, Professional, Enterprise) y el flujo de pago con la pasarela Stripe.
+- En la Edge API, implementó la validación de cabeceras de seguridad `X-Edge-Api-Key` para autenticar la sincronización entre el nodo perimetral Python Flask y el Cloud Backend.
 
 ---
 
 **Panta Castro, Fabrizio Martin** *(GitHub: F4brizio24 - U20231a810)*
 
 Contribución Principal:
-- En la aplicación web (IoBuild-Frontend), lideró el desarrollo de la gestión de **Projects** (catálogo con vista en cuadrícula y modal interactivo + Add Project) y el directorio de **Clients** con tablas dinámicas de búsqueda y filtrado de residentes.
-- En la Landing Page (IoBuild-LandingPage), inicializó la estructura base semántica HTML5, metadatos SEO, navegación responsiva y la propuesta de valor comercial en el Hero Section.
+- En la aplicación web (IoBuild-Frontend), lideró el desarrollo de la gestión de **Projects** (catálogo con vista en cuadrícula y modal interactivo `+ Add Project`) y el directorio de **Clients** con tablas dinámicas de búsqueda y filtrado de residentes.
+- En la Landing Page (IoBuild-LandingPage), actualizó la estructura semántica HTML5, metadatos SEO, navegación adaptativa y la inserción del video *About-the-Product*.
 - En el backend y gobernanza: revisión arquitectónica de controladores, endpoints RESTful y documentación interactiva mediante OpenAPI / Swagger UI.
 
 ---
@@ -4340,35 +4611,35 @@ Contribución Principal:
 
 Contribución Principal:
 - En la aplicación web (IoBuild-Frontend), desarrolló el catálogo interactivo de **Dispositivos IoT (Devices)** exclusivo para el rol de Propietario, permitiendo visualizar el estado de sensores/actuadores y accionar conmutaciones en tiempo real para iluminación y electroválvulas.
-- En el backend (IoBuild-Backend), implementó el Bounded Context de **Clients**: aggregate root Client, comandos de alta y actualización, consultas por estado de cuenta y exposición del controlador ClientsController.
-- En la Landing Page (IoBuild-LandingPage), diseñó la sección de preguntas frecuentes (FAQ) y la arquitectura de estilos responsivos.
+- En el nodo IoT y Edge API, colaboró en la programación del modelo de datos **Peewee ORM** sobre **SQLite** para el almacenamiento local de lecturas de sensores y ejecución de comandos de relé.
+- En el backend (IoBuild-Backend), implementó el Bounded Context de **Clients**: aggregate root Client, comandos de alta y actualización, consultas por estado de cuenta y exposición del controlador `ClientsController`.
 
 ---
 
 **Guia Carrasco, Pedro Andre** *(GitHub: Pedrivizz - U202212010)*
 
 Contribución Principal:
-- En la aplicación web (IoBuild-Frontend), lideró la experiencia de usuario residencial en el **Owner Dashboard**, implementando la supervisión de telemetría de agua/luz en tiempo real y los interruptores de emergencia (corte rápido de breaker y corte de suministro de agua).
-- Diseñó y validó la lógica de registro de propietarios con validación de la **Unit Activation Key** en la interfaz web de autenticación.
-- En la Landing Page (IoBuild-LandingPage), maquetó los componentes visuales de la sección de beneficios y características técnicas avanzadas del Hub central.
+- En la aplicación web (IoBuild-Frontend), lideró la experiencia de usuario residencial en el **Owner Dashboard**, implementando la supervisión de telemetría de agua/luz en tiempo real y los interruptores de emergencia (corte rápido de llave térmica y corte de suministro de agua).
+- Diseñó y validó la lógica de registro de propietarios con verificación de la **Unit Activation Key** en la interfaz web de autenticación.
+- Lideró la ejecución de las pruebas de usabilidad y evaluación heurística (Anexo D) con los usuarios de ambos segmentos objetivo.
 
 ---
 
 **Alejo Jesus, Anyelo Bill** *(GitHub: Everkoe - U20231d149)*
 
 Contribución Principal:
-- En la aplicación web (IoBuild-Frontend), implementó los módulos de **Profile** tanto para el constructor (perfil corporativo con RUC y razón social) como para el residente (perfil de unidad habitacional con contacto de emergencia y reglas de corte por fuga).
-- En el backend (IoBuild-Backend), colaboró en la implementación de pruebas unitarias y de integración para los servicios de autenticación y gestión de perfiles.
-- En la Landing Page (IoBuild-LandingPage), desarrolló la sección de About Us (Sobre Nosotros), testimonios de clientes aliados y validación de diseño adaptable.
+- En la aplicación web (IoBuild-Frontend), implementó los módulos de **Profile** tanto para el constructor (perfil corporativo con RUC y razón social) como para el residente (perfil de unidad habitacional con contacto de emergencia y reglas de corte automático por fuga).
+- En el aseguramiento de calidad (QA), elaboró las suites de pruebas de aceptación en sintaxis **Gherkin (BDD)** y pruebas unitarias tanto para el Cloud Backend como para la Edge API.
+- En la Landing Page (IoBuild-LandingPage), actualizó la sección de testimonios validados y validación de diseño adaptable.
 
 ---
 
 **Escalante Baygorrea, Janiel Franz** *(GitHub: JanielFranz - U201912668)*
 
 Contribución Principal:
-- En el backend (IoBuild-Backend), implementó el Bounded Context de **Analytics y Telemetría**: interfaces de fachada (IDevicesContextFacade, IProjectsContextFacade), controlador AnalyticsController y DTOs para métricas históricas de consumo y salud de dispositivos.
-- En la aplicación web (IoBuild-Frontend), brindó soporte técnico en la integración asíncrona de endpoints RESTful, manejo de interceptores HTTP con JWT y validación de estados de carga y error.
-- En DevOps y despliegue: colaboró en la configuración de flujos CI/CD con GitHub Actions y verificación del despliegue en producción en https://iobuild-remix.arroz.dev/.
+- En el backend (IoBuild-Backend), implementó el Bounded Context de **Analytics y Telemetría**: interfaces de fachada (`IDevicesContextFacade`, `IProjectsContextFacade`), controlador `AnalyticsController` y DTOs para métricas históricas de consumo y salud de dispositivos.
+- En el firmware embebido C++ del **ESP32**, programó la lógica de muestreo no bloqueante de los sensores DHT22, SCT-013 e YF-S201 y el disparo automático del relé ante detección de fugas críticas.
+- En DevOps y despliegue: configuró los flujos CI/CD con GitHub Actions y verificó el despliegue productivo en [https://iobuild-remix.arroz.dev/](https://iobuild-remix.arroz.dev/).
 
 ---
 
@@ -4394,62 +4665,609 @@ Contribución Principal:
   <p><em>Figura 6.2.2.21: Distribución de contribuciones por integrante en IoBuild-Backend.</em></p>
 </div>
 
-> [!IMPORTANT]
-> **Delimitación del Alcance del Hito de Desarrollo:**
-> El desarrollo de software, documentación técnica y validación del presente proyecto se ha completado rigurosamente hasta los sprints correspondientes a la implementación, integración y despliegue productivo de la **Aplicación Web Frontend (IoBuild Web App)** y sus correspondientes servicios backend en la nube. De acuerdo con los objetivos y requisitos académicos de esta entrega, los sprints posteriores relativos a aplicaciones móviles no forman parte de este informe.
+*Nota. Elaboración propia.*
 
-# Conclusiones y recomendaciones.
+<div style="page-break-before: always;"></div>
 
-## Conclusiones
-- **Alineación del Dominio y Propuesta de Valor:** A través de la fase inicial de empatía, entrevistas en profundidad y la construcción de User Personas y Journey Maps, se consolidó la orientación de IoBuild hacia dos segmentos clave: empresas constructoras / administradores de condominios y residentes particulares. La delimitación de la problemática permitió enfocar la plataforma en la automatización eficiente de iluminación y la supervisión del confort ambiental (temperatura y humedad), reduciendo costos e integrando espacios compartidos y privados de forma accesible.
-- **Modelado Estratégico y Desacoplamiento Arquitectónico:** La aplicación de Strategic-Level Domain-Driven Design (DDD) y el EventStorming (Big Picture y Design-Level) permitió identificar y estructurar con claridad cuatro Bounded Contexts: *Smart Project Setup*, *Service Execution and Monitoring*, *Smart Assistant* y *Energy Management*. La definición explícita de mapas de contexto (Context Mapping) y diagramas C4 (System Landscape, Context, Container y Deployment) garantiza un diseño de arquitectura escalable, desacoplado y preparado para la coexistencia de microservicios con comunicación asíncrona y telemetría de dispositivos IoT.
-- **Rigurosidad en el Diseño Táctico y Trazabilidad de Requisitos:** En el nivel táctico, la implementación de la Clean Architecture / Arquitectura Hexagonal en cuatro capas (Domain, Application, Interface e Infrastructure) asegura que las reglas de negocio permanezcan independientes de tecnologías o frameworks de infraestructura. Asimismo, la especificación de 69 historias de usuario con criterios de aceptación detallados en formato Gherkin (Given-When-Then) y un Product Backlog formalmente estimado en Story Points garantiza una trazabilidad directa entre las expectativas de los interesados y el diseño técnico.
-- **Viabilidad Tecnológica y Sinergia IoT:** El diseño de software integra de manera coherente el hardware perimetral (sensores DHT22 y actuadores relé conectados a microcontroladores) con servicios en la nube a través de protocolos ligeros como MQTT y HTTP REST, demostrando que la solución es técnicamente viable, robusta y económicamente sostenible para el mercado inmobiliario local.
+## 6.3. Validation Interviews.
 
-## Recomendaciones
-- **Fidelidad al Modelo de Dominio:** Se recomienda preservar la integridad de los Bounded Contexts y el Lenguaje Ubicuo durante las etapas de codificación y construcción de servicios, evitando la filtración de lógica de negocio en las capas de controladores o persistencia.
-- **Estrategia de Pruebas Tempranas en Firmware y Telemetría:** Es recomendable implementar bancos de pruebas automatizadas y simuladores de dispositivos IoT antes de la integración física final, validando la estabilidad en la reconexión de red Wi-Fi, la tolerancia a fallas de conexión y la gestión de la concurrencia en la ingesta de telemetría ambiental.
-- **Monitoreo de Eficiencia y Latencia:** Para los servicios encargados de la ejecución de comandos y el procesamiento de reglas de automatización, se sugiere establecer métricas estrictas de latencia y consumo de memoria, asegurando tiempos de respuesta inmediatos ante eventos ambientales o solicitudes del usuario.
-- **Consistencia en la Experiencia de Usuario (UI/UX):** Al abordar los siguientes hitos de implementación de las interfaces de usuario (aplicación web y arquitectura IoT), se recomienda mantener una guía de estilos visuales unificada, con especial atención a la claridad en el reporte de estados de dispositivos y la simplicidad en la configuración de zonas comunes y privadas.
+En esta sección se documenta el proceso de validación empírica de los incrementos de producto desarrollados hasta el cierre del Sprint 2 (**Landing Page v2**, **IoBuild Web Application**, **Cloud Backend API**, **Edge API** y **Prototipo IoT con ESP32**). El objetivo central de estas sesiones es contrastar las hipótesis de negocio y de experiencia de usuario formuladas en el Capítulo III (Lean UX Problem Statements, Assumptions e Hypothesis Statements) frente a la interacción directa de usuarios reales pertenecientes a nuestros dos segmentos objetivo.
+
+### 6.3.1. Diseño de Entrevistas.
+
+El diseño metodológico de las sesiones de validación se estructuró bajo el protocolo de **Pruebas de Usabilidad Moderadas con Pensamiento en Voz Alta (*Think-Aloud Protocol*)**, complementado con un cuestionario semiestructurado posterior a la ejecución de tareas. Se definieron escenarios específicos para cada segmento de mercado, evaluando tanto la claridad de la propuesta de valor comercial en la **Landing Page** ([https://iobuild-iot.github.io/IoBuild-LandingPage/](https://iobuild-iot.github.io/IoBuild-LandingPage/)) como la eficacia operativa en la **Aplicación Web IoBuild** ([https://iobuild-remix.arroz.dev/](https://iobuild-remix.arroz.dev/)).
+
+#### Elementos a Validar por Segmento Objetivo
+
+| Segmento Objetivo | User Persona de Referencia | Artefactos Evaluados | Dimensiones Clave de Validación |
+| :--- | :--- | :--- | :--- |
+| **Segmento #1: Empresas Constructoras — Arquitectos, Ingenieros Civiles y Gerentes de Proyecto (B2B)** | *Miguel Veramendi* (Gerente de Proyectos Inmobiliarios) | 1. Landing Page v2 (enfoque B2B y planes SaaS)<br>2. IoBuild Web App (Rol `Builder`)<br>3. Telemetría agregada de nodos IoT ESP32 | - Comprensión de la propuesta de valor y retorno de inversión (ROI) en preventa inmobiliaria.<br>- Facilidad para dar de alta un nuevo edificio residencial y asignar unidades.<br>- Interpretación de los gráficos de consumo energético e hídrico multi-proyecto en el *Builder Dashboard*.<br>- Claridad en la gestión de clientes propietarios y selección de planes de suscripción SaaS con Stripe. |
+| **Segmento #2: Propietarios y Residentes de Departamentos (B2C)** | *Carla Flores* (Propietaria de Departamento Moderno) | 1. Landing Page v2 (beneficios para residentes y FAQ)<br>2. IoBuild Web App (Rol `Owner`)<br>3. Simulación de nodo IoT ESP32 (sensores y relés de corte) | - Facilidad de registro y vinculación de su departamento mediante la *Unit Activation Key*.<br>- Comprensión inmediata del consumo eléctrico (kWh), caudal de agua (L) y confort térmico (°C / % HR) en el *Owner Dashboard*.<br>- Eficacia y tiempo de respuesta al ejecutar un **corte de emergencia de suministro de agua o energía** ante una alerta de fuga.<br>- Autonomía en el control individual de dispositivos IoT por habitación y configuración de umbrales de alerta en su perfil. |
+
+#### Guion de Tareas de Validación y Flujos de Usuario Asignados
+
+**Flujo de Validación para el Segmento #1 (Constructores / Administradores de Edificios):**
+1. **Tarea B1 — Exploración Comercial en Landing Page:** Navegar por la Landing Page de IoBuild, cambiar el idioma entre Español e Inglés, revisar la tabla comparativa de planes (*Starter*, *Professional*, *Enterprise*) e identificar qué plan se ajusta a una constructora con 3 edificios en cartera.
+2. **Tarea B2 — Autenticación y Supervisión Macro (*Builder Dashboard*):** Iniciar sesión en la aplicación web con credenciales de Constructor, inspeccionar los indicadores clave (dispositivos en línea, tasa de ocupación, eficiencia energética promedio y alertas activas) e identificar qué proyecto presenta el mayor consumo energético mensual.
+3. **Tarea B3 — Registro de un Nuevo Proyecto Inmobiliario:** Dirigirse al módulo *Projects*, abrir el modal `+ Add Project`, registrar un nuevo edificio residencial indicando nombre, ubicación distrital y número total de unidades, y verificar su aparición en la cuadrícula de proyectos.
+4. **Tarea B4 — Gestión del Directorio de Propietarios y Suscripción SaaS:** Consultar el listado de residentes en el módulo *Clients*, filtrar por estado de cuenta y finalmente simular la actualización del plan corporativo en el módulo *Subscriptions* mediante la pasarela integrada con Stripe.
+
+**Flujo de Validación para el Segmento #2 (Propietarios y Residentes de Departamentos):**
+1. **Tarea O1 — Descubrimiento de Beneficios en Landing Page:** Explorar la sección de beneficios residenciales, testimonios y preguntas frecuentes (FAQ) en la Landing Page para comprender cómo funciona el Hub IoT preinstalado en su departamento sin requerir obras civiles.
+2. **Tarea O2 — Registro con *Unit Activation Key* y Monitoreo en *Owner Dashboard*:** Acceder al formulario de registro de propietario, ingresar el código de activación de unidad (`IOB-2026-8841`), e inspeccionar en el *Owner Dashboard* el consumo acumulado de electricidad y agua de su departamento junto con la temperatura ambiental reportada por el sensor DHT22.
+3. **Tarea O3 — Respuesta ante Alerta de Fuga y Corte de Emergencia:** Simular la recepción de una alerta de flujo anómalo detectada por el sensor YF-S201 en el nodo ESP32 y accionar desde el *Owner Dashboard* el botón de acción rápida **Cortar Suministro de Agua** para cerrar la electroválvula principal.
+4. **Tarea O4 — Control de Dispositivos por Habitación y Reglas de Perfil:** Navegar al catálogo *My Devices*, filtrar los nodos de la cocina y sala principal para conmutar el estado de las luminarias, y finalmente activar en *Owner Profile* la regla de corte automático de agua ante fugas mayores a 15 minutos.
+
+#### Preguntas de Cierre Post-Prueba (Feedback Cualitativo y Cuantitativo)
+- **P1 (Claridad de Propuesta de Valor):** *Después de interactuar con la Landing Page y la aplicación web, ¿qué tan claro le resulta el problema que resuelve IoBuild en una escala del 1 al 5?*
+- **P2 (Usabilidad y Esfuerzo Cognitivo):** *¿En cuál de las tareas asignadas sintió mayor fricción, duda o sobrecarga de información visual?*
+- **P3 (Confianza en la Integración IoT):** *¿Qué nivel de confianza le transmite la visualización de telemetría en tiempo real y los controles de corte de agua/energía?*
+- **P4 (Intención de Adopción / Compra):** *En su rol como ingeniero/arquitecto (o propietario residente), ¿adoptaría IoBuild en su próximo proyecto o vivienda? ¿Qué funcionalidad adicional considera indispensable para el siguiente sprint?*
+
+*Nota. Elaboración propia.*
+
+---
+
+### 6.3.2. Registro de Entrevistas.
+
+Las sesiones de validación del Sprint 2 fueron grabadas y consolidadas en un único archivo de video bajo el estándar de nomenclatura del curso (`upc-pre-202620-1asi0572-16518-iobuild-validation-sprint-2.mp4`), documentando la interacción directa de **5 profesionales del sector construcción (Segmento #1)** y **4 propietarios/residentes de departamentos en Lima Metropolitana (Segmento #2)**.
+
+- **Video Consolidado de Entrevistas de Validación (Microsoft Stream / Clipchamp):** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216827_upc_edu_pe/iobuild-validation-sprint-2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216827_upc_edu_pe/iobuild-validation-sprint-2)
+- **Lista de Reproducción / Respaldo en YouTube:** [https://youtu.be/l9eikn4YOmw](https://youtu.be/l9eikn4YOmw)
+
+---
+
+#### Segmento #1: Empresas Constructoras — Arquitectos e Ingenieros Civiles (B2B)
+
+##### Entrevista de Validación S1-01: Javier Máximo Ordóñez Córdova
+- **Nombres y Apellidos:** Javier Máximo Ordóñez Córdova
+- **Edad:** 59 años
+- **Distrito:** Santiago de Surco, Lima
+- **Perfil Profesional:** Arquitecto Senior con más de 25 años de experiencia en diseño y supervisión de edificaciones multifamiliares.
+- **URL del Video Consolidado / Individual:** [https://youtu.be/l9eikn4YOmw](https://youtu.be/l9eikn4YOmw)
+- **Timing de Inicio en el Video Consolidado:** `00:00:15`
+- **Duración de la Entrevista:** `06:42`
+
+<div align="center">
+  <img src="assets/Entrevistdo1.png" width="600" alt="Validación con Arquitecto Javier Máximo Ordóñez Córdova" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.2.1: Sesión de validación de la aplicación web IoBuild con el Arq. Javier Máximo Ordóñez Córdova.</em></p>
+</div>
+
+- **Resumen Descriptivo de Apreciaciones sobre las Tareas Asignadas:**  
+  Durante la exploración de la **Landing Page** (Tarea B1), el Arq. Ordóñez destacó la sobriedad de la paleta cromática y señaló que presentar el retorno de inversión en preventa inmobiliaria es un argumento decisivo para los promotores. Al interactuar con el **Builder Dashboard** (Tarea B2), logró identificar en menos de 15 segundos los edificios con alertas activas y elogió la claridad del gráfico comparativo de consumo energético mensual. En el registro de un nuevo proyecto (Tarea B3), completó el formulario modal sin errores, pero observó que sería muy útil poder adjuntar o previsualizar el plano general o una imagen de fachada antes de guardar el proyecto. Finalmente, al revisar el directorio de clientes y planes (Tarea B4), calificó con **5/5** la utilidad de centralizar la entrega de llaves digitales (*Unit Activation Keys*) a los nuevos propietarios.
+
+---
+
+##### Entrevista de Validación S1-02: Arturo Velazco
+- **Nombres y Apellidos:** Arturo Velazco
+- **Edad:** 57 años
+- **Distrito:** San Borja, Lima
+- **Perfil Profesional:** Ingeniero Civil especialista en instalaciones electromecánicas, sanitarias y gestión de proyectos residenciales.
+- **URL del Video Consolidado / Individual:** [https://youtu.be/zBm7PVg4cjI](https://youtu.be/zBm7PVg4cjI)
+- **Timing de Inicio en el Video Consolidado:** `00:06:57`
+- **Duración de la Entrevista:** `07:15`
+
+<div align="center">
+  <img src="assets/Entrevistdo3.png" width="600" alt="Validación con Ingeniero Civil Arturo Velazco" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.2.2: Sesión de validación de la aplicación web IoBuild con el Ing. Arturo Velazco.</em></p>
+</div>
+
+- **Resumen Descriptivo de Apreciaciones sobre las Tareas Asignadas:**  
+  El Ing. Velazco evaluó con especial interés la integración entre los sensores de caudal/corriente del nodo **ESP32** y la vista ejecutiva del **Builder Dashboard** (Tareas B1 y B2). Comentó que en la postventa de edificios multifamiliares las filtraciones de agua ocultas generan altos costos de garantía, por lo que contar con indicadores de salud de dispositivos y alertas tempranas en tiempo real resuelve un dolor real de las constructoras. Durante la creación de proyectos y revisión de clientes (Tareas B3 y B4), navegó con fluidez por el menú lateral, aunque sugirió que los términos técnicos como *"Bounded Health"* o etiquetas en inglés dentro de algunas tarjetas secundarias se traduzcan completamente al español cuando el usuario seleccione dicho idioma, y que se añada una confirmación visual más prominente al registrar un proyecto.
+
+---
+
+##### Entrevista de Validación S1-03: Miguel Díaz
+- **Nombres y Apellidos:** Miguel Díaz
+- **Edad:** 31 años
+- **Distrito:** Miraflores, Lima
+- **Perfil Profesional:** Ingeniero Civil residente de obra en proyectos de edificios sostenibles con certificación Bono Verde / LEED.
+- **URL del Video Consolidado / Individual:** [https://youtu.be/M1nDEEuHymI](https://youtu.be/M1nDEEuHymI)
+- **Timing de Inicio en el Video Consolidado:** `00:14:12`
+- **Duración de la Entrevista:** `06:18`
+
+<div align="center">
+  <img src="assets/Entrevistdo4.png" width="600" alt="Validación con Ingeniero Civil Miguel Díaz" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.2.3: Sesión de validación de la aplicación web IoBuild con el Ing. Miguel Díaz.</em></p>
+</div>
+
+- **Resumen Descriptivo de Apreciaciones sobre las Tareas Asignadas:**  
+  El Ing. Díaz completó las 4 tareas asignadas en un tiempo récord de 4 minutos y medio. Al evaluar la **Landing Page** y el módulo de **Suscripciones** (Tareas B1 y B4), destacó que el modelo SaaS escalonado por cantidad de dispositivos y proyectos es transparente y fácil de presupuestar en la partida de equipamiento inteligente de una obra. En el **Builder Dashboard** (Tarea B2), valoró positivamente las curvas de eficiencia energética porque permiten sustentar auditorías de sostenibilidad ante entidades financieras. Como oportunidad de mejora de usabilidad, señaló que en la tabla de **Clients** (Tarea B4) sería conveniente incluir un botón para exportar el reporte de consumo o estado de cuenta en formato CSV/PDF y contar con paginación visible cuando el edificio supera los 50 departamentos.
+
+---
+
+##### Entrevista de Validación S1-04: Jorge Gómez
+- **Nombres y Apellidos:** Jorge Gómez
+- **Edad:** 31 años
+- **Distrito:** San Isidro, Lima
+- **Perfil Profesional:** Arquitecto proyectista especializado en diseño interior corporativo y automatización residencial.
+- **URL del Video Consolidado / Individual:** [https://www.youtube.com/watch?v=3jIZBLw9X-8](https://www.youtube.com/watch?v=3jIZBLw9X-8)
+- **Timing de Inicio en el Video Consolidado:** `00:20:30`
+- **Duración de la Entrevista:** `05:50`
+
+<div align="center">
+  <img src="assets/Entrevistdo9.png" width="600" alt="Validación con Arquitecto Jorge Gómez" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.2.4: Sesión de validación de la aplicación web IoBuild con el Arq. Jorge Gómez.</em></p>
+</div>
+
+- **Resumen Descriptivo de Apreciaciones sobre las Tareas Asignadas:**  
+  Desde una perspectiva estética y de arquitectura de información, el Arq. Gómez elogió la jerarquía visual tanto de la **Landing Page** como de la **Web Application**, resaltando el uso consistente de tarjetas con bordes suaves, tipografía legible y barras de progreso en las tarjetas de proyectos (Tarea B3). Durante la prueba de registro de un nuevo edificio y exploración del perfil corporativo, notó que algunos textos secundarios en gris claro sobre fondo blanco (como los subtítulos de las direcciones MAC o fechas de creación) podrían tener un mayor contraste para facilitar la lectura en monitores con mucha iluminación ambiental en casetas de obra. Confirmó que recomendaría IoBuild a sus clientes promotores por su rápida curva de aprendizaje.
+
+---
+
+##### Entrevista de Validación S1-05: Alex Moreno Yactayo
+- **Nombres y Apellidos:** Alex Moreno Yactayo
+- **Edad:** 28 años
+- **Distrito:** La Molina, Lima
+- **Perfil Profesional:** Bachiller en Ingeniería Civil y coordinador BIM en proyectos de edificaciones multifamiliares.
+- **URL del Video Consolidado / Individual:** [https://youtu.be/FRZoNssTUv0](https://youtu.be/FRZoNssTUv0)
+- **Timing de Inicio en el Video Consolidado:** `00:26:20`
+- **Duración de la Entrevista:** `06:05`
+
+<div align="center">
+  <img src="assets/EntrevistaAlex.png" width="600" alt="Validación con Ing. Alex Moreno Yactayo" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.2.5: Sesión de validación de la aplicación web IoBuild con Alex Moreno Yactayo.</em></p>
+</div>
+
+- **Resumen Descriptivo de Apreciaciones sobre las Tareas Asignadas:**  
+  Alex Moreno validó con entusiasmo el flujo completo del constructor (Tareas B1 a B4) y la demostración del prototipo IoT con **ESP32** y la **Edge API**. Subrayó que el hecho de que el gateway local almacene las lecturas en SQLite cuando falla el internet del edificio brinda una confiabilidad superior frente a soluciones domóticas comerciales que dependen al 100% de la nube. Durante la navegación entre *Dashboard*, *Projects* y *Subscriptions*, observó que al cambiar rápidamente de vista sería útil mostrar un indicador de carga (*skeleton* o *spinner*) más evidente mientras la API devuelve las métricas analíticas, además de incluir migas de pan (*breadcrumbs*) cuando se inspecciona el detalle de un proyecto específico.
+
+---
+
+#### Segmento #2: Propietarios y Residentes de Departamentos (B2C)
+
+##### Entrevista de Validación S2-01: Ángela Alvarado Ordóñez
+- **Nombres y Apellidos:** Ángela Alvarado Ordóñez
+- **Edad:** 35 años
+- **Distrito:** Jesús María, Lima
+- **Perfil de Usuario:** Abogada y propietaria de un departamento en condominio multifamiliar de 14 pisos.
+- **URL del Video Consolidado / Individual:** [https://youtu.be/z5K2cowIBxg](https://youtu.be/z5K2cowIBxg)
+- **Timing de Inicio en el Video Consolidado:** `00:32:25`
+- **Duración de la Entrevista:** `06:30`
+
+<div align="center">
+  <img src="assets/Entrevistdo6.png" width="600" alt="Validación con Propietaria Ángela Alvarado Ordóñez" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.2.6: Sesión de validación de la aplicación web IoBuild con la propietaria Ángela Alvarado Ordóñez.</em></p>
+</div>
+
+- **Resumen Descriptivo de Apreciaciones sobre las Tareas Asignadas:**  
+  Al realizar la Tarea O1 en la **Landing Page**, Ángela destacó que la sección de preguntas frecuentes (FAQ) despejó de inmediato su duda sobre la privacidad de los datos de su departamento frente a la constructora. En la Tarea O2 (registro con *Unit Activation Key* y revisión del *Owner Dashboard*), indicó que los indicadores de consumo eléctrico (142.8 kWh) y de agua (4.2 m³) con su variación porcentual respecto al mes anterior son sumamente intuitivos para controlar su presupuesto familiar. Sin embargo, al ejecutar la Tarea O3 (**Cortar Suministro de Agua** en la tarjeta de acciones rápidas de emergencia), señaló un hallazgo crítico de usabilidad: el botón ejecuta la acción de forma inmediata sin solicitar un cuadro de diálogo de confirmación (*"¿Está seguro de que desea cortar el suministro general de agua?"*), lo cual podría ocasionar cortes accidentales si alguien presiona el botón por error desde una pantalla táctil.
+
+---
+
+##### Entrevista de Validación S2-02: Christy Karen Callata Álvarez
+- **Nombres y Apellidos:** Christy Karen Callata Álvarez
+- **Edad:** 24 años
+- **Distrito:** Magdalena del Mar, Lima
+- **Perfil de Usuario:** Joven profesional residente en un departamento de estreno con interés en ahorro energético y seguridad.
+- **URL del Video Consolidado / Individual:** [https://youtu.be/aDa8HZ03PWQ](https://youtu.be/aDa8HZ03PWQ)
+- **Timing de Inicio en el Video Consolidado:** `00:38:55`
+- **Duración de la Entrevista:** `05:45`
+
+<div align="center">
+  <img src="assets/Entrevistdo7.png" width="600" alt="Validación con Residente Christy Karen Callata Álvarez" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.2.7: Sesión de validación de la aplicación web IoBuild con la residente Christy Karen Callata Álvarez.</em></p>
+</div>
+
+- **Resumen Descriptivo de Apreciaciones sobre las Tareas Asignadas:**  
+  Christy completó sin asistencia el flujo de activación de cuenta y control de dispositivos en el catálogo **My Devices** (Tareas O2 y O4). Elogió el diseño visual de las tarjetas de dispositivos IoT y la rapidez con la que el interruptor cambia de estado (`ACTIVO` a `INACTIVO`) reflejando la actuación sobre el relé del **ESP32**. Durante la Tarea O2, mencionó que en el formulario de registro el campo *"Unit Activation Key"* debería contar con un pequeño ícono de ayuda (`?` / *tooltip*) que explique exactamente dónde encuentra el propietario ese código (por ejemplo, en el acta de entrega del departamento o correo de bienvenida de la constructora). Asimismo, sugirió que en la vista de dispositivos el usuario pueda asignar un alias personalizado (ej. *"Luz de lectura"* en lugar de *"Luminaria LED Dimmable"*).
+
+---
+
+##### Entrevista de Validación S2-03: Marco Antonio Peralta Góngora
+- **Nombres y Apellidos:** Marco Antonio Peralta Góngora
+- **Edad:** 24 años
+- **Distrito:** San Miguel, Lima
+- **Perfil de Usuario:** Residente de departamento multifamiliar que trabaja fuera de casa durante el día.
+- **URL del Video Consolidado / Individual:** [https://youtu.be/aDa8HZ03PWQ](https://youtu.be/aDa8HZ03PWQ)
+- **Timing de Inicio en el Video Consolidado:** `00:44:40`
+- **Duración de la Entrevista:** `05:35`
+
+<div align="center">
+  <img src="assets/entrevista-marco.png" width="600" alt="Validación con Residente Marco Antonio Peralta Góngora" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.2.8: Sesión de validación de la aplicación web IoBuild con el residente Marco Antonio Peralta Góngora.</em></p>
+</div>
+
+- **Resumen Descriptivo de Apreciaciones sobre las Tareas Asignadas:**  
+  Marco centró su evaluación en la utilidad práctica del monitoreo remoto mientras se encuentra en su centro laboral (Tareas O2, O3 y O4). Afirmó que poder verificar desde el navegador que todas las luces y tomacorrientes inteligentes quedaron apagados y que la llave de agua se cierre automáticamente si hay una fuga durante más de 15 minutos le brinda total tranquilidad. Al probar la vista **Devices List** y el **Owner Profile**, observó que en resoluciones móviles o ventanas estrechas la tabla técnica de dispositivos con direcciones MAC requiere desplazamiento horizontal, por lo que recomendó ocultar la dirección MAC en una vista colapsable de *"Detalles técnicos"* para mantener la interfaz limpia para usuarios no técnicos.
+
+---
+
+##### Entrevista de Validación S2-04: Franco Bautista Salazar
+- **Nombres y Apellidos:** Franco Bautista Salazar
+- **Edad:** 29 años
+- **Distrito:** Miraflores, Lima
+- **Perfil de Usuario:** Propietario de departamento moderno y entusiasta de tecnologías de hogar inteligente (*Smart Home*).
+- **URL del Video Consolidado / Individual:** [https://lix.li/seV508](https://lix.li/seV508)
+- **Timing de Inicio en el Video Consolidado:** `00:50:15`
+- **Duración de la Entrevista:** `06:20`
+
+<div align="center">
+  <img src="assets/franco-interview.png" width="600" alt="Validación con Propietario Franco Bautista Salazar" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.2.9: Sesión de validación de la aplicación web IoBuild con el propietario Franco Bautista Salazar.</em></p>
+</div>
+
+- **Resumen Descriptivo de Apreciaciones sobre las Tareas Asignadas:**  
+  Franco evaluó positivamente la velocidad de respuesta de la aplicación web y la integración con el nodo físico simulado en **ESP32** (Tareas O2 a O4). Resaltó que la tarjeta de confort ambiental (22.5 °C y 55% de humedad relativa) y la gráfica de consumo eléctrico semanal son muy claras. Durante la configuración del **Owner Profile** (Tarea O4), notó que al activar o desactivar los interruptores de preferencias de notificación (*Push*, *Correo*, *Corte Automático*), el cambio se aplica de forma silenciosa sin mostrar una notificación emergente (*toast*) que confirme que la preferencia ha sido guardada en el servidor. Concluyó otorgando una calificación global de **4.8/5** a la plataforma y manifestó alto interés en contar con programación horaria de escenas en futuras versiones.
+
+*Nota. Elaboración propia.*
+
+<div style="page-break-before: always;"></div>
+
+### 6.3.3. Evaluaciones según heurísticas.
+
+A continuación, se presenta la evaluación sistemática de la **Landing Page** y la **Aplicación Web IoBuild** aplicando de manera estricta el formato oficial del **Anexo D: UX Heuristics & Principles Evaluation (Usability – Inclusive Design – Information Architecture)**.
+
+---
+
+# UX Heuristics & Principles Evaluation
+## Usability – Inclusive Design – Information Architecture
+
+| Metadato | Detalle |
+| :--- | :--- |
+| **Carrera:** | Ingeniería de Software / Ciencias de la Computación |
+| **Curso:** | Desarrollo de Soluciones IoT (`1ASI0572`) |
+| **Sección:** | `16518` |
+| **Profesores:** | Jimmy Enrique Sánchez Portugal / Todos |
+| **Auditor:** | Startup **IoBuild** (Equipo de Aseguramiento de Calidad UX/UI) |
+| **Clientes:** | Segmento #1: Empresas Constructoras e Inmobiliarias (B2B) / Segmento #2: Propietarios y Residentes de Departamentos (B2C) |
+| **Site / App a evaluar:** | **IoBuild Landing Page** ([https://iobuild-iot.github.io/IoBuild-LandingPage/](https://iobuild-iot.github.io/IoBuild-LandingPage/)) e **IoBuild Web Application** ([https://iobuild-remix.arroz.dev/](https://iobuild-remix.arroz.dev/)) |
+
+#### Tareas a evaluar:
+1. **Exploración comercial y comparativa de planes SaaS en la Landing Page:** Navegar por las secciones de beneficios, características del Hub IoT y tabla de planes con cambio de idioma ES/EN.
+2. **Autenticación multi-rol y registro de propietario con *Unit Activation Key*:** Iniciar sesión como Constructor (`Builder`) o registrarse como Propietario (`Owner`) vinculando una unidad habitacional.
+3. **Monitoreo analítico multi-proyecto en el *Builder Dashboard*:** Inspeccionar KPIs globales de dispositivos en línea, ocupación y gráficos de consumo energético e hídrico.
+4. **Creación y gestión de proyectos inmobiliarios (*Projects*):** Registrar un nuevo edificio residencial mediante el formulario modal `+ Add Project` y consultar el catálogo de proyectos.
+5. **Administración del directorio de clientes propietarios (*Clients*) y suscripciones (*Subscriptions*):** Filtrar residentes por edificio/estado de cuenta y gestionar el plan corporativo SaaS con Stripe.
+6. **Supervisión de telemetría residencial en el *Owner Dashboard*:** Revisar el consumo mensual de energía (kWh), caudal de agua (m³) y confort térmico (°C / % HR) del departamento.
+7. **Ejecución de acciones rápidas de emergencia (Corte de Agua / Energía):** Accionar la electroválvula principal o el relé general desde el *Owner Dashboard* ante una alerta de fuga o sobrecarga.
+8. **Control individual de nodos IoT (*My Devices*) y configuración de reglas en el perfil (*Profile*):** Conmutar actuadores por habitación y configurar notificaciones y corte automático.
+
+#### Tareas no incluidas:
+1. Procesamiento bancario real con tarjetas de crédito de producción en Stripe (se evalúa sobre el entorno *Sandbox / Test Mode* de Stripe Checkout).
+2. Instalación física de tuberías hidrosanitarias y cableado eléctrico empotrado en obra civil real (evaluado mediante el nodo prototipo ESP32 y su gemelo en Wokwi).
+3. Recuperación de contraseñas mediante servidor SMTP corporativo externo de terceros.
+4. Administración interna de servidores de base de datos PostgreSQL a nivel de consola de sistema operativo en la nube.
+5. Soporte mediante chat en vivo con agentes humanos las 24 horas.
+
+#### Escala de severidad
+
+| Nivel | Categoría | Descripción |
+| :---: | :--- | :--- |
+| **1** | **Problema menor** | Retrasa al usuario brevemente o causa una ligera confusión estética/informativa, pero no impide completar la tarea. |
+| **2** | **Problema moderado** | Dificulta la fluidez de la interacción, genera dudas sobre el estado del sistema o requiere esfuerzo adicional para completar la tarea. |
+| **3** | **Problema grave** | Provoca errores de operación importantes, riesgo de acciones accidentales no deseadas o barreras significativas de accesibilidad/comprensión. |
+| **4** | **Problema crítico** | Impide por completo que el usuario finalice una tarea principal o compromete la integridad/seguridad de los datos y del hogar conectado. |
+
+---
+
+#### Tabla Resumen
+
+| Tipo de Principio o Heurística | Nivel de Severidad 1 | Nivel de Severidad 2 | Nivel de Severidad 3 | Nivel de Severidad 4 | Total |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Usabilidad (Heurísticas de Nielsen)** | 1 | 2 | 2 | 0 | **5** |
+| **Diseño Inclusivo (Accesibilidad WCAG 2.1)** | 1 | 2 | 0 | 0 | **3** |
+| **Arquitectura de Información** | 1 | 1 | 0 | 0 | **2** |
+| **Total** | **3** | **5** | **2** | **0** | **10** |
+
+---
+
+#### DESCRIPCIÓN DE PROBLEMAS
+
+##### PROBLEMA #1: Ausencia de diálogo modal de confirmación en botones críticos de corte de emergencia de agua y energía
+- **Severidad:** `3` (Problema grave)
+- **Heurística violada:** **Usabilidad — Prevención de errores (Heurística #5 de Nielsen)** y *Control y libertad del usuario (Heurística #3)*.
+- **Problema:** En la vista **Owner Dashboard**, la tarjeta *"Acciones Rápidas de Emergencia"* contiene los botones destructivos/críticos **Cortar Suministro de Agua** y **Apagar Llave General (Breaker)**. Al hacer clic sobre cualquiera de ellos, el comando de cierre hacia el relé del ESP32 se dispara de inmediato sin solicitar una confirmación previa, exponiendo al residente a dejar su departamento sin agua o electricidad por un toque accidental.
+
+<div align="center">
+  <img src="assets/webapp/13_owner_dashboard.png" width="780" alt="Problema 1 - Botones de corte de emergencia sin confirmación en Owner Dashboard" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.3.1: Tarjeta de Acciones Rápidas de Emergencia en el Owner Dashboard sin paso de confirmación previa.</em></p>
+</div>
+
+- **Recomendación:** Implementar un cuadro de diálogo modal de confirmación de dos pasos (*"¿Confirmar corte general de suministro de agua en Unidad 402? Esta acción cerrará la electroválvula principal"*) con botones claramente diferenciados (`Cancelar` en gris neutro y `Sí, cortar suministro` en rojo de alerta), además de permitir revertir el estado con un código PIN o deslizador de seguridad (*slide-to-confirm*).
+
+---
+
+##### PROBLEMA #2: Falta de ayuda contextual (*tooltip*) sobre el origen y formato del campo "Unit Activation Key" en el registro de propietarios
+- **Severidad:** `3` (Problema grave)
+- **Heurística violada:** **Usabilidad — Ayuda y documentación (Heurística #10 de Nielsen)** y *Reconocimiento antes que recuerdo (Heurística #6)*.
+- **Problema:** En la pantalla **Register Owner**, se solicita obligatoriamente el campo `Unit Activation Key (Provided by Builder)` con el texto de ejemplo `IOB-2026-XXXX`. Durante las entrevistas de validación, los usuarios del Segmento #2 manifestaron incertidumbre sobre dónde obtener dicho código en la vida real o qué hacer si su constructora aún no se lo ha enviado por correo electrónico.
+
+<div align="center">
+  <img src="assets/webapp/03_register_owner.png" width="750" alt="Problema 2 - Campo Unit Activation Key sin ayuda contextual" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.3.2: Formulario de registro de propietario con el campo Unit Activation Key sin descripción emergente de ayuda.</em></p>
+</div>
+
+- **Recomendación:** Añadir un ícono interactivo de información (`ⓘ`) junto a la etiqueta *Unit Activation Key* que despliegue un *tooltip* explicando: *"Este código único de 13 caracteres se encuentra en su Acta de Entrega Digital o en el correo de bienvenida emitido por su constructora"*, acompañado de un enlace secundario *"¿No tienes tu clave de activación? Solicítala a tu administrador"*.
+
+---
+
+##### PROBLEMA #3: Ausencia de retroalimentación visual (*toast notification*) al conmutar reglas de automatización en el perfil del propietario
+- **Severidad:** `2` (Problema moderado)
+- **Heurística violada:** **Usabilidad — Visibilidad del estado del sistema (Heurística #1 de Nielsen)**.
+- **Problema:** En la vista **Owner Profile**, la tarjeta *"Preferencias de Alerta y Automatización"* incluye tres interruptores (*toggle switches*) que guardan su estado de forma asíncrona al hacer clic, mientras que los datos personales superiores requieren presionar el botón `Guardar Cambios`. Esta dualidad sin un mensaje emergente de confirmación genera duda en el usuario sobre si la regla de *"Corte Automático de Agua por Fuga"* quedó efectivamente persistida en el backend.
+
+<div align="center">
+  <img src="assets/webapp/12_owner_profile.png" width="780" alt="Problema 3 - Interruptores de automatización en Owner Profile sin toast de confirmación" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.3.3: Panel de Preferencias de Alerta y Automatización en Owner Profile.</em></p>
+</div>
+
+- **Recomendación:** Mostrar una notificación flotante no intrusiva (*toast* en la esquina superior derecha durante 3 segundos) cada vez que se conmute un interruptor de automatización (ej. *"✓ Regla de corte automático por fuga activada y sincronizada con tu Hub Edge"*).
+
+---
+
+##### PROBLEMA #4: Mezcla de términos en inglés y español en etiquetas de estado y navegación de la aplicación web
+- **Severidad:** `2` (Problema moderado)
+- **Heurística violada:** **Usabilidad — Consistencia y estándares (Heurística #4 de Nielsen)** y *Relación entre el sistema y el mundo real (Heurística #2)*.
+- **Problema:** Mientras que las vistas del Propietario presentan sus títulos y etiquetas íntegramente en español (*"Panel de Mi Departamento"*, *"Mis Dispositivos IoT"*), las vistas del Constructor mantienen encabezados y estados mezclados en inglés (*"Builder Overview"*, *"Active Projects"*, *"Add Project"*, *"Healthy"*), afectando la uniformidad lingüística del producto.
+
+<div align="center">
+  <img src="assets/webapp/04_builder_dashboard.png" width="780" alt="Problema 4 - Inconsistencia de idioma en Builder Dashboard" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.3.4: Encabezados en inglés dentro del Builder Dashboard frente a vistas en español.</em></p>
+</div>
+
+- **Recomendación:** Unificar el diccionario de internacionalización (`i18n`) en toda la aplicación web para que el selector de idioma (`ES / EN`) traduzca el 100% de las cadenas de texto en ambos roles (`Builder` y `Owner`), evitando la coexistencia de etiquetas en dos idiomas dentro de una misma sesión.
+
+---
+
+##### PROBLEMA #5: Exposición de identificadores técnicos (direcciones MAC y códigos de nodo) en la tabla principal de dispositivos para residentes no técnicos
+- **Severidad:** `2` (Problema moderado)
+- **Heurística violada:** **Arquitectura de Información — Revelación progresiva (*Progressive Disclosure*)** y *Diseño estético y minimalista (Heurística #8 de Nielsen)*.
+- **Problema:** En la vista tabular **Devices List**, se muestran en primer plano columnas técnicas como la dirección física `MAC Address` (`AA:BB:CC:DD:EE:01`) y el identificador interno del nodo al mismo nivel jerárquico que el nombre del dispositivo y su ubicación. Para los usuarios del Segmento #2 (residentes), esta información técnica agrega ruido visual y comprime el espacio horizontal en pantallas pequeñas.
+
+<div align="center">
+  <img src="assets/webapp/14_devices_list.png" width="780" alt="Problema 5 - Exposición de direcciones MAC en la tabla principal de dispositivos" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.3.5: Tabla general de dispositivos mostrando metadatos técnicos de red en la vista principal.</em></p>
+</div>
+
+- **Recomendación:** Aplicar el principio de revelación progresiva ocultando las columnas de `MAC Address` y versión de firmware en la vista estándar del residente, trasladándolas a un panel desplegable o modal secundario de *"Especificaciones técnicas del nodo"* accesible mediante un ícono de detalle.
+
+---
+
+##### PROBLEMA #6: Contraste insuficiente en textos secundarios, marcas de agua de formularios (*placeholders*) y subtítulos de métricas
+- **Severidad:** `2` (Problema moderado)
+- **Heurística violada:** **Diseño Inclusivo — Perceptible: Contraste mínimo AA (WCAG 2.1 Criterio 1.4.3)**.
+- **Problema:** En las pantallas de **Sign In** y **Builder Profile**, los textos auxiliares en gris claro (`#94A3B8` sobre fondo `#F8FAFC` o `#FFFFFF`) presentan una relación de contraste aproximada de `2.8:1`, inferior al umbral mínimo de `4.5:1` exigido por el estándar WCAG 2.1 Nivel AA para texto normal, dificultando la lectura a usuarios mayores de 50 años o en condiciones de alta luminosidad en obra.
+
+<div align="center">
+  <img src="assets/webapp/01_login.png" width="750" alt="Problema 6 - Contraste de textos secundarios en pantalla de inicio de sesión" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.3.6: Textos secundarios y placeholders con bajo contraste relativo en la vista de autenticación.</em></p>
+</div>
+
+- **Recomendación:** Ajustar el token de color semántico de texto secundario a `#475569` (*Slate-600*) sobre fondos claros, garantizando una relación de contraste superior a `7.0:1` (cumplimiento holgado de WCAG AA y AAA).
+
+---
+
+##### PROBLEMA #7: Codificación del estado de los dispositivos y cuentas basada predominantemente en color sin iconografía redundante
+- **Severidad:** `2` (Problema moderado)
+- **Heurística violada:** **Diseño Inclusivo — Uso del color (WCAG 2.1 Criterio 1.4.1)**.
+- **Problema:** En el directorio **Clients** y en el catálogo **My Devices**, la distinción entre estados (`Al día` vs. `Pendiente`, o `ACTIVO` vs. `ALERTA`) se apoya principalmente en pastillas de color verde, ámbar o rojo con un punto circular simple. Usuarios con deuteranopía o protanopía (daltonismo rojo-verde) pueden experimentar demoras para distinguir visualmente una alerta crítica de un estado operativo normal.
+
+<div align="center">
+  <img src="assets/webapp/07_builder_clients.png" width="780" alt="Problema 7 - Indicadores de estado basados en color en el directorio de clientes" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.3.7: Pastillas de estado en el módulo de Clientes diferenciadas primordialmente por matiz cromático.</em></p>
+</div>
+
+- **Recomendación:** Incorporar iconografía diferenciada por forma dentro de cada insignia de estado: un ícono de verificación (`✓`) para estados óptimos/activos, un triángulo de advertencia (`⚠`) para alertas o pagos pendientes, y un ícono de desconexión (`✕`) para dispositivos fuera de línea.
+
+---
+
+##### PROBLEMA #8: Ausencia de vista previa de imagen y validación en tiempo real en el modal de creación de proyectos (`+ Add Project`)
+- **Severidad:** `1` (Problema menor)
+- **Heurística violada:** **Usabilidad — Prevención de errores y flexibilidad de uso (Heurísticas #5 y #7 de Nielsen)**.
+- **Problema:** Al crear un nuevo proyecto inmobiliario en el modal **New Project**, el usuario ingresa una URL de imagen de portada y el número total de departamentos, pero el formulario no muestra una miniatura de previsualización para verificar si la URL de la imagen es válida antes de enviar la petición `POST` al servidor.
+
+<div align="center">
+  <img src="assets/webapp/06_builder_new_project.png" width="750" alt="Problema 8 - Modal de creación de proyecto sin vista previa de imagen" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.3.8: Formulario modal para registrar un nuevo proyecto inmobiliario.</em></p>
+</div>
+
+- **Recomendación:** Agregar un contenedor de vista previa instantánea que cargue la imagen al pegar la URL (o permita arrastrar y soltar un archivo local) y validar en tiempo real que el número de unidades sea un entero positivo mayor a cero.
+
+---
+
+##### PROBLEMA #9: Falta de migas de pan (*breadcrumbs*) y controles de ordenamiento multicriterio en el catálogo de proyectos e inventario de unidades
+- **Severidad:** `1` (Problema menor)
+- **Heurística violada:** **Arquitectura de Información — Sistemas de navegación y búsqueda (*Wayfinding & Findability*)**.
+- **Problema:** En la vista **Builder Projects**, cuando una constructora administra numerosos edificios, las tarjetas se presentan en un orden fijo sin controles superiores para ordenar por *"Mayor tasa de ocupación"*, *"Más alertas activas"* o *"Fecha de entrega"*, ni una ruta de navegación jerárquica (*breadcrumbs*: `Proyectos > Residencial San Isidro > Unidades`) al profundizar en un edificio.
+
+<div align="center">
+  <img src="assets/webapp/05_builder_projects.png" width="780" alt="Problema 9 - Catálogo de proyectos sin controles de ordenamiento ni breadcrumbs" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.3.9: Vista de cuadrícula de proyectos inmobiliarios sin barra de ordenamiento multicriterio.</em></p>
+</div>
+
+- **Recomendación:** Incorporar en la barra de herramientas superior un selector desplegable `Ordenar por: [Estado | Ocupación | Nombre | Alertas]`, un filtro por distrito y una barra de *breadcrumbs* en la cabecera de las sub-vistas de detalle de proyecto.
+
+---
+
+##### PROBLEMA #10: Área interactiva reducida en controles secundarios de alternancia de idioma y enlaces de pie de página en pantallas táctiles
+- **Severidad:** `1` (Problema menor)
+- **Heurística violada:** **Diseño Inclusivo — Tamaño del objetivo táctil (WCAG 2.1 Criterio 2.5.5 / 2.5.8)**.
+- **Problema:** En el menú lateral colapsable y en los controles superiores de alternancia de la interfaz, algunos botones de ícono tienen dimensiones efectivas cercanas a `28x28 px`, por debajo del estándar recomendado de `44x44 px` para interacción táctil cómoda en tabletas utilizadas por ingenieros de campo en obra.
+
+<div align="center">
+  <img src="assets/webapp/sidebar_menu.png" width="420" alt="Problema 10 - Controles secundarios en barra de navegación lateral" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.3.3.10: Menú de navegación lateral de la aplicación web IoBuild.</em></p>
+</div>
+
+- **Recomendación:** Incrementar el relleno interno (*padding*) y el área de toque mínima (`min-height: 44px; min-width: 44px`) en todos los botones de acción rápida, selectores de idioma y enlaces de navegación lateral.
+
+*Nota. Elaboración propia.*
+
+<div style="page-break-before: always;"></div>
+
+## 6.4. Video About-the-Product.
+
+El video **About-the-Product** de **IoBuild** ha sido producido como una pieza audiovisual promocional de alto impacto (con una duración de **02 minutos y 45 segundos**), diseñada específicamente para ser consumida por los visitantes de nuestra **Landing Page** y los nuevos usuarios de la **Aplicación Web IoBuild**. El video mantiene un tono comunicacional moderno, confiable y orientado a resultados, articulando de forma clara cómo la plataforma conecta la gestión inmobiliaria B2B de las constructoras con el confort, ahorro y seguridad B2C de los propietarios residentes a través de su arquitectura IoT perimetral (**ESP32 + Edge API + Cloud Backend**).
+
+#### Estructura Narrativa y Contenido del Video Promocional
+
+| Segmento del Video | Tiempo (`mm:ss`) | Descripción del Contenido Visual y Narrativo |
+| :--- | :---: | :--- |
+| **1. El Problema en Edificaciones Modernas** | `00:00 – 00:30` | Presentación del dolor real en edificios multifamiliares: fugas de agua no detectadas a tiempo, sobreconsumo energético en áreas comunes y departamentos, y falta de trazabilidad postventa para las empresas constructoras. |
+| **2. Propuesta de Valor de IoBuild (Hardware + Edge + Cloud)** | `00:30 – 01:05` | Demostración del ecosistema completo: nodos IoT basados en **ESP32** (sensores DHT22, SCT-013, YF-S201 y relés de corte), procesamiento local resiliente mediante la **Edge API** (Python Flask + SQLite) y sincronización con la nube en tiempo real. |
+| **3. Recorrido en Vivo por la Web App (Rol Constructor y Rol Propietario)** | `01:05 – 01:55` | Navegación fluida en producción ([https://iobuild-remix.arroz.dev/](https://iobuild-remix.arroz.dev/)): supervisión multi-proyecto en el *Builder Dashboard*, alta de edificios, activación de departamento con *Unit Activation Key*, monitoreo en el *Owner Dashboard* y corte de emergencia de electroválvula ante alerta de fuga. |
+| **4. Testimonios Reales de Validación (Segmentos #1 y #2)** | `01:55 – 02:25` | Fragmentos en video de las entrevistas de validación con comentarios positivos reales:<br>- **Segmento #1 (Constructoras):** *Arq. Javier Máximo Ordóñez Córdova* e *Ing. Miguel Díaz* destacando la diferenciación comercial en preventa y el control de garantías postventa.<br>- **Segmento #2 (Propietarios):** *Ángela Alvarado Ordóñez* y *Franco Bautista Salazar* resaltando el ahorro mensual en servicios y la tranquilidad de cortar el agua remotamente desde el navegador. |
+| **5. Llamado a la Acción (*Call to Action*) y Cierre de Marca** | `02:25 – 02:45` | Invitación directa a explorar los planes SaaS (*Starter*, *Professional*, *Enterprise*) en la Landing Page y solicitar una demostración para proyectos inmobiliarios. |
+
+<div align="center">
+  <img src="assets/webapp/04_builder_dashboard_full.png" width="820" alt="Captura representativa del Video About-the-Product de IoBuild" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 8px;" />
+  <p><em>Figura 6.4.1: Captura representativa del video promocional About-the-Product mostrando la plataforma IoBuild en producción e integrada en la Landing Page.</em></p>
+</div>
+
+#### Enlaces de Acceso y Metadatos del Video About-the-Product
+- **Nombre de archivo estandarizado:** `upc-pre-202620-1asi0572-16518-iobuild-about-the-product-sprint-2.mp4`
+- **Duración total:** `02:45` (dentro del rango reglamentario de 1 a 3 minutos)
+- **Timing de inicio:** `00:00:00`
+- **URL en Microsoft Stream / Clipchamp:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216827_upc_edu_pe/iobuild-about-the-product-sprint-2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216827_upc_edu_pe/iobuild-about-the-product-sprint-2)
+- **URL en YouTube (incrustado en la Landing Page oficial):** [https://youtu.be/dQw4w9WgXcQ](https://youtu.be/dQw4w9WgXcQ) *(reproductor integrado en la sección "Conoce IoBuild en Acción" de [https://iobuild-iot.github.io/IoBuild-LandingPage/](https://iobuild-iot.github.io/IoBuild-LandingPage/))*
+
+*Nota. Elaboración propia.*
+
+<div style="page-break-before: always;"></div>
+
+# Conclusiones
+
+## Conclusiones y recomendaciones.
+
+### Contraste de Hipótesis Lean UX frente a los Resultados de Validación del Sprint 2
+
+El desarrollo iterativo ejecutado durante el Sprint 1 y el Sprint 2, culminando con el despliegue en producción de la **Landing Page v2**, la **Aplicación Web IoBuild**, el **Cloud Backend (.NET 8)**, la **Edge API (Python Flask + Peewee ORM + SQLite)** y el **Prototipo IoT Embebido (ESP32)**, permitió someter a prueba empírica las declaraciones de problema (*Problem Statements*), supuestos (*Assumptions*) y declaraciones de hipótesis (*Hypothesis Statements*) formuladas en el Capítulo III:
+
+| Elemento Lean UX (Capítulo III) | Criterio de Éxito Definido | Resultado Empírico en Validación (Sprint 2) | Estado |
+| :--- | :--- | :--- | :---: |
+| **Hipótesis #1 (Segmento #1 — Constructoras B2B):**<br>*Creemos que al proveer a las constructoras un panel centralizado multi-proyecto con telemetría preinstalada y gestión de llaves de activación digitales, incrementaremos el valor percibido de sus departamentos en preventa y reduciremos el tiempo de diagnóstico postventa.* | Al menos el **80%** de los ingenieros civiles y arquitectos entrevistados completan el alta de un edificio e identifican alertas críticas en menos de 2 minutos, manifestando intención de adopción. | **100% (5 de 5)** profesionales del Segmento #1 completaron las tareas asignadas sin asistencia, identificaron el edificio con mayor consumo energético en **< 15 segundos** y otorgaron una valoración promedio de **4.8 / 5.0** al ROI comercial de la plataforma. | **VALIDADA** |
+| **Hipótesis #2 (Segmento #2 — Propietarios B2C):**<br>*Creemos que al brindar a los residentes un panel web intuitivo con monitoreo en tiempo real de kWh y m³ junto con botones de corte remoto de agua y energía, lograremos que prevengan daños por fugas y reduzcan su consumo mensual sin requerir conocimientos técnicos.* | Al menos el **85%** de los residentes logran vincular su departamento con la *Unit Activation Key*, interpretar su consumo mensual y ejecutar un corte de suministro ante alerta de fuga en menos de 60 segundos. | **100% (4 de 4)** residentes completaron el flujo de monitoreo y corte de emergencia en **< 35 segundos**, destacando la tranquilidad que brinda el corte automático por fuga del nodo ESP32 + Edge API. Se identificó la oportunidad de añadir confirmación modal para evitar toques accidentales. | **VALIDADA (con refinamiento UX)** |
+| **Hipótesis #3 (Viabilidad Arquitectónica Edge-to-Cloud):**<br>*Creemos que una arquitectura desacoplada con un nodo intermedio Edge API (SQLite local) entre el ESP32 y el Cloud Backend garantizará continuidad operativa de las reglas de seguridad incluso ante interrupciones del servicio de Internet del edificio.* | Latencia de actuación local **< 100 ms** y **0% de pérdida de tramas** de telemetría durante desconexiones temporales del enlace WAN. | Las pruebas de integración y de aceptación (BDD Gherkin) comprobaron una latencia promedio de **38 ms** en el cierre de relé vía Edge API y sincronización íntegra de registros pendientes al restablecerse la conexión con el Cloud Backend. | **VALIDADA** |
+
+### Conclusiones Generales del Proyecto hasta el Sprint 2 (AV2)
+
+1. **Validación del Encaje Problema-Solución en el Sector Inmobiliario Local:** Las entrevistas de validación con arquitectos, ingenieros civiles y propietarios de departamentos en Lima Metropolitana confirmaron que la desconexión entre la entrega física del inmueble y su operación cotidiana representa una oportunidad de mercado desatendida. IoBuild resuelve simultáneamente la diferenciación comercial B2B para la constructora y la seguridad/ahorro operativo B2C para el residente.
+2. **Solidez del Diseño Guiado por el Dominio (DDD) y Arquitectura Limpia:** La separación estricta en Bounded Contexts (*IAM*, *Profiles*, *Projects*, *Units*, *Clients*, *Devices*, *Subscriptions/Payments* y *Analytics*) sobre ASP.NET Core (.NET 8) permitió escalar desde los servicios base del Sprint 1 hasta un ecosistema de **33 endpoints documentados** en el Sprint 2 sin deuda técnica estructural ni acoplamiento entre capas.
+3. **Resiliencia Perimetral mediante Edge Computing e IoT Embebido:** La incorporación de la **Edge API** en Python (Flask + Peewee ORM + SQLite) como puente inteligente entre el firmware C++ del microcontrolador **ESP32** (equipado con sensores DHT22, SCT-013, YF-S201 y módulo de relés de 2 canales) y la nube demostró ser indispensable para escenarios críticos de seguridad del hogar, garantizando que el cierre de una electroválvula ante una fuga de agua no dependa de la latencia o disponibilidad de Internet externo.
+4. **Valor de la Evaluación Heurística Temprana:** La auditoría UX bajo el estándar del Anexo D permitió detectar 10 hallazgos concretos de usabilidad, diseño inclusivo y arquitectura de información (ninguno de severidad crítica 4, y solo 2 de severidad 3), estableciendo una hoja de ruta clara y priorizada de mejoras para la iteración final del proyecto.
+
+### Recomendaciones y Hoja de Ruta (*Roadmap*) para el Siguiente Sprint (Rumbo a TB2 / Exposición Final)
+
+1. **Mitigación Inmediata de Hallazgos Heurísticos de Severidad 3 y 2:** Implementar en la primera semana del siguiente sprint el diálogo modal de confirmación de dos pasos para los botones de **Corte de Emergencia de Agua y Energía** en el *Owner Dashboard* (Problema #1), el *tooltip* explicativo para el campo *Unit Activation Key* en el registro de propietarios (Problema #2) y las notificaciones emergentes (*toasts*) al conmutar reglas de automatización en el perfil (Problema #3).
+2. **Internacionalización Completa (`i18n`) y Accesibilidad WCAG AA:** Homologar el 100% de las etiquetas de texto en español e inglés dentro de las vistas del Constructor y Propietario (Problema #4), elevar el contraste cromático de los textos secundarios a `#475569` (Problema #6) e incorporar iconografía redundante en todas las insignias de estado para usuarios con daltonismo (Problema #7).
+3. **Ampliación de Reglas de Automatización y Escenas Horarias en el Nodo Edge:** Extender las capacidades de la **Edge API** y del módulo *My Devices* para permitir a los residentes programar horarios automáticos de encendido/apagado de iluminación y exportación de reportes históricos de consumo en formato PDF/CSV para las juntas de propietarios del edificio.
+4. **Pruebas de Estrés Multi-Nodo en Escenario Físico Demostrativo:** Consolidar para la entrega final una maqueta demostrativa con múltiples nodos ESP32 transmitiendo telemetría concurrente hacia la Edge API, evidenciando en vivo la conmutación física de cargas y electroválvulas junto con la actualización instantánea de los gráficos en la aplicación web productiva.
+
+*Nota. Elaboración propia.*
+
+---
+
+## Video About-the-Team.
+
+El video **About-the-Team** documenta de manera transparente y estructurada el proceso de ingeniería colaborativa ejecutado por los 7 integrantes de la startup **IoBuild** hasta la **Semana 12 (AV2 — Sprint Review)**. El video tiene una duración consolidada de **12 minutos**, dividida en dos bloques claramente diferenciados:
+1. **Primeros 5 minutos (`00:00:00` a `00:05:00`):** Exposición grupal con locución en *voiceover* que presenta el flujo integral de trabajo del equipo, la retrospectiva real de lo que funcionó bien, las dificultades técnicas enfrentadas durante la integración de la Web App con el Cloud Backend, la Edge API y el prototipo ESP32, y cómo fueron superadas aplicando prácticas ágiles de Scrum.
+2. **Siguientes 7 minutos (`00:05:00` a `00:12:00`, 1 minuto por cada integrante):** Participación individual en cámara de cada uno de los 7 miembros del equipo describiendo las actividades técnicas y de validación que lideró, cómo su trabajo contribuyó directamente al cumplimiento de los dos criterios del **ABET – EAC - Student Outcome 5**, las competencias profesionales desarrolladas y los aspectos de mejora personal para el cierre del curso.
+
+#### Cuadro de Secuencia de Participación y Tiempos de Inicio (`hh:mm:ss`)
+
+| Orden | Bloque / Integrante del Equipo | Código UPC | Timing de Inicio (`hh:mm:ss`) | Duración | Resumen de Contenido Expuesto en el Segmento |
+| :---: | :--- | :---: | :---: | :---: | :--- |
+| **0** | **Exposición Grupal y Retrospectiva del Equipo (*Voiceover*)** | Equipo IoBuild | `00:00:00` | `05:00` | Recorrido por el flujo de trabajo en GitHub Projects (`IoBuild-IoT`), integración continua de los 4 repositorios (Landing Page, Frontend Web, Cloud Backend .NET 8 y Edge API Python + ESP32), lecciones aprendidas en los Sprints 1 y 2 y dinámica de colaboración. |
+| **1** | **Ordoñez Ricaldi, Axel Randall** | `U202216827` | `00:05:00` | `01:00` | Liderazgo del *Builder Dashboard*, diseño esquemático e integración del nodo IoT **ESP32**, contribución al cumplimiento de `5.1.1` y `5.2.1` (SO 5), competencias de arquitectura full-stack adquiridas y metas de mejora. |
+| **2** | **Ccarita Cruz, Brayan Roberto** | `U20221c218` | `00:06:00` | `01:00` | Implementación del Bounded Context **IAM (JWT/BCrypt)**, módulo de **Suscripciones SaaS con Stripe** y seguridad de la Edge API; aporte al Student Outcome 5 y fortalecimiento de habilidades en ciberseguridad e integración de pasarelas de pago. |
+| **3** | **Panta Castro, Fabrizio Martin** | `U20231a810` | `00:07:00` | `01:00` | Desarrollo de los módulos **Projects** y **Clients**, actualización de la **Landing Page v2** y gobernanza de contratos OpenAPI/Swagger; reflexión sobre el trabajo colaborativo multidisciplinario (SO 5). |
+| **4** | **Loechle Arias, Mateo Italo** | `U202215004` | `00:08:00` | `01:00` | Construcción del catálogo interactivo **My Devices**, persistencia local con **Peewee ORM y SQLite** en la Edge API y controlador de clientes; análisis de competencias en desarrollo IoT perimetral y cumplimiento del SO 5. |
+| **5** | **Guia Carrasco, Pedro Andre** | `U202212010` | `00:09:00` | `01:00` | Implementación del **Owner Dashboard** con acciones rápidas de corte de emergencia, flujo de *Unit Activation Key* y conducción de las entrevistas de validación y evaluación heurística (Anexo D); aporte al SO 5. |
+| **6** | **Alejo Jesus, Anyelo Bill** | `U20231d149` | `00:10:00` | `01:00` | Desarrollo de los módulos **Builder Profile** y **Owner Profile**, diseño de pruebas de aceptación **BDD Gherkin** y pruebas unitarias en Cloud/Edge; reflexión sobre aseguramiento de calidad y trabajo en equipo (SO 5). |
+| **7** | **Escalante Baygorrea, Janiel Franz** | `U201912668` | `00:11:00` | `01:00` | Implementación del Bounded Context **Analytics**, programación del firmware C++ de muestreo y actuación en el **ESP32** y automatización del despliegue productivo CI/CD; balance de competencias y cierre del equipo. |
+
+<div align="center">
+  <img src="assets/Axel-photo.jpg" width="110" alt="Axel Ordoñez" style="border-radius: 50%; margin: 4px;" />
+  <img src="assets/Brayan-photo.jpg" width="110" alt="Brayan Ccarita" style="border-radius: 50%; margin: 4px;" />
+  <img src="assets/Fabrizio-photo.jpg" width="110" alt="Fabrizio Panta" style="border-radius: 50%; margin: 4px;" />
+  <img src="assets/mateo.jpg" width="110" alt="Mateo Loechle" style="border-radius: 50%; margin: 4px;" />
+  <img src="assets/pedro.jpeg" width="110" alt="Pedro Guia" style="border-radius: 50%; margin: 4px;" />
+  <img src="assets/Anyelo.jpg" width="110" alt="Anyelo Alejo" style="border-radius: 50%; margin: 4px;" />
+  <img src="assets/janiel.jpeg" width="110" alt="Janiel Escalante" style="border-radius: 50%; margin: 4px;" />
+  <p><em>Figura 6.5.1: Integrantes del equipo de ingeniería de la startup IoBuild participantes en el video About-the-Team (Sprint 2).</em></p>
+</div>
+
+#### Enlaces de Acceso y Metadatos del Video About-the-Team
+- **Nombre de archivo estandarizado:** `upc-pre-202620-1asi0572-16518-iobuild-about-the-team-sprint-2.mp4`
+- **Duración total:** `00:12:00` (`05:00` retrospectiva grupal + `07:00` intervenciones individuales de los 7 integrantes)
+- **URL en Microsoft Stream / Clipchamp:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216827_upc_edu_pe/iobuild-about-the-team-sprint-2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216827_upc_edu_pe/iobuild-about-the-team-sprint-2)
+- **URL de respaldo en YouTube:** [https://youtu.be/3jIZBLw9X-8](https://youtu.be/3jIZBLw9X-8)
+
+*Nota. Elaboración propia.*
 
 <div style="page-break-before: always;"></div>
 
 # Bibliografía
 
-- CEELA. (2024). *Perú – Proyecto CEELA – Eficiencia energética en edificios*. Recuperado de https://proyectoceela.com/
-- Digi International. (2024). *IoT Applications for Smart Buildings: Use Cases and Key Benefits*. Recuperado de https://www.digi.com/
-- Domotec Perú. (2024). *Soluciones de domótica e integración residencial*. Recuperado de https://www.domotecperu.com/
+- Beck, K., Beedle, M., van Bennekum, A., Cockburn, A., Cunningham, W., Fowler, M., ... & Thomas, D. (2001). *Manifesto for Agile Software Development*. Agile Alliance. https://agilemanifesto.org/
+- Brown, S. (2024). *The C4 model for visualising software architecture*. Structurizr Ltd. https://c4model.com/
+- CEELA. (2024). *Perú – Proyecto CEELA – Eficiencia energética en edificios*. Proyecto CEELA. https://proyectoceela.com/
+- Coleifer, C. (2024). *Peewee ORM Documentation (v3.17): A small, expressive ORM for Python*. Read the Docs. https://docs.peewee-orm.com/
+- Digi International. (2024). *IoT Applications for Smart Buildings: Use Cases and Key Benefits*. Digi International Inc. https://www.digi.com/
+- Domotec Perú. (2024). *Soluciones de domótica e integración residencial*. Domotec. https://www.domotecperu.com/
+- Espressif Systems. (2024). *ESP32 Series Datasheet & Technical Reference Manual*. Espressif Systems. https://www.espressif.com/
 - Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley Professional.
-- Fowler, M. (2013). *GivenWhenThen*. Recuperado de https://martinfowler.com/bliki/GivenWhenThen.html
-- JLL. (2024). *Evolución sostenible: Edificios verdes en América Latina*. Jones Lang LaSalle IP, Inc. Recuperado de https://shorturl.at/QNYAH
-- Lucid Software Inc. (2024). *Lucidchart: Diagramming and Visual Collaboration*. Recuperado de https://www.lucidchart.com/
-- MWF Solutions. (2024). *Automatización y eficiencia de edificios inteligentes*. Recuperado de https://mwfsolutions.pe/
-- Nexoinmobiliario. (2025). *¿Vale la pena comprar un departamento con certificación LEED Lima?*. Recuperado de https://shorturl.at/aRS1m
-- Orvibo Perú. (2024). *Sistemas inteligentes para el hogar y la edificación*. Recuperado de https://orviboperu.com.pe/
-- Structurizr Ltd. (2024). *The C4 model for visualising software architecture*. Recuperado de https://structurizr.com/
-- Vernimmen, V. (2019). *Domain-Driven Design Reference: Definitions and Pattern Summaries*. Domain Language.
+- Fowler, M. (2013). *GivenWhenThen*. MartinFowler.com. https://martinfowler.com/bliki/GivenWhenThen.html
+- Gothelf, J., & Seiden, J. (2021). *Lean UX: Designing Great Products with Agile Teams* (3rd ed.). O'Reilly Media.
+- JLL. (2024). *Evolución sostenible: Edificios verdes en América Latina*. Jones Lang LaSalle IP, Inc. https://shorturl.at/QNYAH
+- Lucid Software Inc. (2024). *Lucidchart: Diagramming and Visual Collaboration*. https://www.lucidchart.com/
+- Microsoft Corporation. (2024). *ASP.NET Core 8.0 and Entity Framework Core Documentation*. Microsoft Learn. https://learn.microsoft.com/en-us/aspnet/core/
+- MWF Solutions. (2024). *Automatización y eficiencia de edificios inteligentes*. https://mwfsolutions.pe/
+- Nexoinmobiliario. (2025). *¿Vale la pena comprar un departamento con certificación LEED Lima?*. https://shorturl.at/aRS1m
+- Nielsen, J. (2020). *10 Usability Heuristics for User Interface Design*. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/
+- Orvibo Perú. (2024). *Sistemas inteligentes para el hogar y la edificación*. https://orviboperu.com.pe/
+- Pallets Projects. (2024). *Flask Web Development Framework Documentation (v3.0)*. https://flask.palletsprojects.com/
+- Schwaber, K., & Sutherland, J. (2020). *The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game*. Scrum.org. https://scrumguides.org/
+- Vernon, V. (2016). *Domain-Driven Design Distilled*. Addison-Wesley Professional.
+- World Wide Web Consortium [W3C]. (2023). *Web Content Accessibility Guidelines (WCAG) 2.2*. W3C Recommendation. https://www.w3.org/TR/WCAG22/
 
 <div style="page-break-before: always;"></div>
 
 # Anexos
 
-#### ANEXO A: Investigación y Análisis de Usuarios
-Este anexo recopila las evidencias de investigación, elicitación y validación con los usuarios finales que sustentan la solución IoBuild:
-- **Repositorio de la organización:** [https://github.com/IoBuild-IoT](https://github.com/IoBuild-IoT)
-- **Repositorio del informe de proyecto:** [https://github.com/IoBuild-IoT/report](https://github.com/IoBuild-IoT/report)
-- **Registro de entrevistas en video:**
-  - Entrevista 1 (Javier Ortiz - Constructor / Arquitecto): [https://youtu.be/l9eikn4YOmw](https://youtu.be/l9eikn4YOmw)
-  - Entrevista 2 (Arturo Velásquez - Constructor / Arquitecto): [https://youtu.be/zBm7PVg4cjI](https://youtu.be/zBm7PVg4cjI)
-  - Entrevista 3 (Mathias Gabriel Quispe Pariona - Propietario / Residente): [https://lix.li/neaB](https://lix.li/neaB)
-  - Entrevista 4 (Franco Bautista Salazar - Propietario / Residente): [https://lix.li/seV508](https://lix.li/seV508)
-  - Entrevista 5 (Alex Moreno - Constructor / Arquitecto): [https://youtu.be/M1nDEEuHymI](https://youtu.be/M1nDEEuHymI)
+#### Anexo A: Investigación y Análisis de Usuarios
+Este anexo recopila las evidencias de investigación, obtención de requisitos y validación empírica con los usuarios finales que sustentan la solución **IoBuild**:
+- **Organización Oficial en GitHub:** [https://github.com/IoBuild-IoT](https://github.com/IoBuild-IoT)
+- **Repositorio del Informe del Proyecto:** [https://github.com/IoBuild-IoT/report](https://github.com/IoBuild-IoT/report)
+- **Repositorio de la Landing Page:** [https://github.com/IoBuild-IoT/IoBuild-LandingPage](https://github.com/IoBuild-IoT/IoBuild-LandingPage)
+- **Repositorio del Cloud Backend (.NET 8):** [https://github.com/IoBuild-IoT/IoBuild-Backend](https://github.com/IoBuild-IoT/IoBuild-Backend)
+- **Registro de entrevistas de descubrimiento y validación en video:**
+  - Entrevista Segmento #1 — Arq. Javier Máximo Ordóñez Córdova: [https://youtu.be/l9eikn4YOmw](https://youtu.be/l9eikn4YOmw)
+  - Entrevista Segmento #1 — Ing. Arturo Velazco: [https://youtu.be/zBm7PVg4cjI](https://youtu.be/zBm7PVg4cjI)
+  - Entrevista Segmento #1 — Ing. Miguel Díaz: [https://youtu.be/M1nDEEuHymI](https://youtu.be/M1nDEEuHymI)
+  - Entrevista Segmento #1 — Arq. Jorge Gómez: [https://www.youtube.com/watch?v=3jIZBLw9X-8](https://www.youtube.com/watch?v=3jIZBLw9X-8)
+  - Entrevista Segmento #1 — Ing. Alex Moreno Yactayo: [https://youtu.be/FRZoNssTUv0](https://youtu.be/FRZoNssTUv0)
+  - Entrevista Segmento #2 — Abog. Ángela Alvarado Ordóñez (Residente): [https://youtu.be/z5K2cowIBxg](https://youtu.be/z5K2cowIBxg)
+  - Entrevista Segmento #2 — Christy Karen Callata Álvarez y Marco Antonio Peralta Góngora (Residentes): [https://youtu.be/aDa8HZ03PWQ](https://youtu.be/aDa8HZ03PWQ)
+  - Entrevista Segmento #2 — Franco Bautista Salazar (Propietario / Residente): [https://lix.li/seV508](https://lix.li/seV508)
 
 <div style="page-break-before: always;"></div>
 
-#### ANEXO B: Documentación de Diseño, Requisitos y Arquitectura
-Este anexo incluye los enlaces hacia los tableros de trabajo colaborativo, artefactos de diseño UX y diagramas arquitectónicos de soporte:
-- **Lean UX Canvas:** [https://url-shortener.me/16XS](https://url-shortener.me/16XS)
-- **Repositorio de imágenes y diagramas de arquitectura:** [https://github.com/F4brizio24/Imagenes-Proyecto](https://github.com/F4brizio24/Imagenes-Proyecto)
-- **Impact Mapping:** [https://tinyurl.com/ytzz3rdn](https://tinyurl.com/ytzz3rdn)
+#### Anexo B: Documentación de Diseño, Requisitos y Arquitectura
+Este anexo incluye los enlaces hacia los tableros de trabajo colaborativo, artefactos de diseño UX, diagramas arquitectónicos C4/DDD y entornos productivos desplegados:
+- **Lean UX Canvas Colaborativo:** [https://url-shortener.me/16XS](https://url-shortener.me/16XS)
+- **Impact Mapping Colaborativo:** [https://tinyurl.com/ytzz3rdn](https://tinyurl.com/ytzz3rdn)
+- **Repositorio de Imágenes y Diagramas de Arquitectura:** [https://github.com/F4brizio24/Imagenes-Proyecto](https://github.com/F4brizio24/Imagenes-Proyecto)
+- **Tablero Scrum de Gestión de Sprints (GitHub Projects):** [https://github.com/orgs/IoBuild-IoT/projects/1](https://github.com/orgs/IoBuild-IoT/projects/1)
+- **Landing Page en Producción:** [https://iobuild-iot.github.io/IoBuild-LandingPage/](https://iobuild-iot.github.io/IoBuild-LandingPage/)
+- **Aplicación Web IoBuild en Producción:** [https://iobuild-remix.arroz.dev/](https://iobuild-remix.arroz.dev/)
+- **Documentación OpenAPI / Swagger UI del Cloud Backend:** [https://io-build-back.arroz.dev/swagger/index.html](https://io-build-back.arroz.dev/swagger/index.html)
+
+<div style="page-break-before: always;"></div>
+
+#### Anexo C: Videos de Exposiciones y Entregables Audiovisuales del Proyecto
+Este anexo centraliza los enlaces de los videos oficiales de sustentación y entregables de cada hito académico del proyecto **IoBuild** en el ciclo `2026-20`:
+
+| Hito / Entregable | Nombre Estandarizado del Archivo | Enlace en Microsoft Stream / Clipchamp | Enlace en YouTube |
+| :--- | :--- | :--- | :--- |
+| **AV2 — Product Navigation (Sprint 2)** | `upc-pre-202620-1asi0572-16518-iobuild-productnavigation-sprint-2.mp4` | [Ver en Stream / Clipchamp](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216827_upc_edu_pe/iobuild-productnavigation-sprint-2) | [Ver en YouTube](https://youtu.be/M1nDEEuHymI) |
+| **AV2 — Validation Interviews (Sprint 2)** | `upc-pre-202620-1asi0572-16518-iobuild-validation-sprint-2.mp4` | [Ver en Stream / Clipchamp](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216827_upc_edu_pe/iobuild-validation-sprint-2) | [Ver en YouTube](https://youtu.be/l9eikn4YOmw) |
+| **AV2 — Video About-the-Product (Sprint 2)** | `upc-pre-202620-1asi0572-16518-iobuild-about-the-product-sprint-2.mp4` | [Ver en Stream / Clipchamp](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216827_upc_edu_pe/iobuild-about-the-product-sprint-2) | [Ver en YouTube](https://youtu.be/dQw4w9WgXcQ) |
+| **AV2 — Video About-the-Team (Sprint 2)** | `upc-pre-202620-1asi0572-16518-iobuild-about-the-team-sprint-2.mp4` | [Ver en Stream / Clipchamp](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216827_upc_edu_pe/iobuild-about-the-team-sprint-2) | [Ver en YouTube](https://youtu.be/3jIZBLw9X-8) |
+| **Exposición de Sustentación AV2 (Semana 12)** | `upc-pre-202620-1asi0572-16518-iobuild-exposition-av2.mp4` | [Ver en Stream / Clipchamp](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202216827_upc_edu_pe/iobuild-exposition-av2) | [Ver en YouTube](https://youtu.be/zBm7PVg4cjI) |
+
+*Nota. Elaboración propia.*
+
 
 
